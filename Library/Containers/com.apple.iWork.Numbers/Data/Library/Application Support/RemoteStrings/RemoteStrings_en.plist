@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KNGalleryFadeAndMove</key>
+	<string>Fade and Move Builds on Image Galleries</string>
+	<key>TPPageBackgrounds</key>
+	<string>Page Backgrounds</string>
+	<key>TPPageTemplates</key>
+	<string>Page Templates</string>
+	<key>TSAGalleries</key>
+	<string>Image Galleries</string>
+	<key>TSCHDonutCharts</key>
+	<string>Donut Charts</string>
+	<key>TSCHLeaderLines</key>
+	<string>Chart Leader Lines</string>
+	<key>TSCHRoundedCorners</key>
+	<string>Rounded corners in charts</string>
+	<key>TSDFreehandDrawings</key>
+	<string>Drawings</string>
+	<key>TSDThreadedComments</key>
+	<string>Threaded Comments</string>
+	<key>TSKImprovedPencilAnnotations</key>
+	<string>Improved Annotations</string>
+	<key>TSKPencilAnnotations</key>
+	<string>Annotations</string>
+	<key>TSWPChangeTrackingInTextBoxes</key>
+	<string>Change tracking in text boxes and shapes</string>
+	<key>TSWPEquations</key>
+	<string>Equations</string>
+	<key>TSWPFloatingEquations</key>
+	<string>Floating Equations</string>
+	<key>TSWPLinkedTextBoxes</key>
+	<string>Linked Text Boxes</string>
+	<key>TSWPOverlappingComments</key>
+	<string>Overlapping Comments</string>
+</dict>
+</plist>

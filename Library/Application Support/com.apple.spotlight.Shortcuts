@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ch</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Google Chrome</string>
+		<key>LAST_USED</key>
+		<date>2018-07-23T12:10:40Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Google%20Chrome.app/</string>
+	</dict>
+	<key>sub</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Sublime Text</string>
+		<key>LAST_USED</key>
+		<date>2018-07-23T10:32:07Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Sublime%20Text.app/</string>
+	</dict>
+	<key>ter</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2018-07-27T08:46:55Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+	<key>term</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2018-07-30T11:03:49Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+</dict>
+</plist>

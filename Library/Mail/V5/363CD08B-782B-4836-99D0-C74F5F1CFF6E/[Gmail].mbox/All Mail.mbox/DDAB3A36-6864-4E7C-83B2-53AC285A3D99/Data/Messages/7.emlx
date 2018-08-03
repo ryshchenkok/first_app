@@ -1,0 +1,206 @@
+15229     
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a0c:81f4:0:0:0:0:0 with SMTP id 49-v6csp1360877qve;
+        Mon, 23 Jul 2018 04:32:25 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpeu+OrVWvs0EwvVYm8D0n1JaVv78Mt+RXojHfmRIt6DYkcAJJu6hUvRkroVnCgGyciIdWyX
+X-Received: by 2002:a25:6083:: with SMTP id u125-v6mr2598643ybb.13.1532345545704;
+        Mon, 23 Jul 2018 04:32:25 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532345545; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WiUPfEnF+KgsIGPqDdvfq4jIn1NgKCyCGl+W88flGxbzPGZveOLhAZNIVjJlyf+kov
+         VlrA3nzLeUPvxStlSLkdh6j+xxAvvb0SYwMjoQJc3IpbZuyo4dveT/Y5Zol9qi6SyEze
+         lH8e/ozB6BlWxr4x7S1RqmurU0+ql1kIDMPa8uBmXDG+2Gu4Hfhx3cFs++xLETyrac7j
+         1FkGjiF/LLgLbAAeu3R49EDpzAHFliisFla1kbQ4S6Zd1MORicRwZsN8kGw7A25g2TW4
+         DvZ8ybtfnBJ1Et8XcuPRx/iplAFRxyYEpgYcLaJLGNHhNKAxojperuGI/E6k3hjMVO0/
+         gfFA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=spamdiagnosticmetadata:spamdiagnosticoutput:mime-version:message-id
+         :to:subject:date:from:dkim-signature:arc-authentication-results;
+        bh=gnZLjrgvJuu4/ILg0s1o1QL241dE00SzQ4XWl+uSJO8=;
+        b=V+CZ+VQg3GdMldcuxjydsvurhOUkMK8V3b4tWdO4OD/vYtQ/jHwq+Sh7wiKMXHG3Tn
+         DDdHocfi8ZaLA3TwNdyrbOf7Kb7VG0nndpKxGlZ27TL3FHCz2KH0HGc8YtoLLIefNnZP
+         IKH8SukvDjWJebbJP1I0Tin73bHRRtj2I3IpWSNi34Ib7N0C2F44nYoHvFxl36gapWEw
+         snVbO0vMxQ/s35MNvSeN/ichT2mCmIiswFHE57ZcNnNneDrrsiAoN4fqPAes4OupvJXD
+         VAyyEyonOvNboTXXMItIU+R0Ysqk5g77f+r8nZWqdMrO7Asc77tDEmoa8JYv6NvK2Wy5
+         gFXw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accountprotection.microsoft.com header.s=selector1 header.b=OKx6IdrP;
+       spf=pass (google.com: domain of account-security-noreply@accountprotection.microsoft.com designates 104.47.42.51 as permitted sender) smtp.mailfrom=account-security-noreply@accountprotection.microsoft.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accountprotection.microsoft.com
+Return-Path: <account-security-noreply@accountprotection.microsoft.com>
+Received: from NAM03-BY2-obe.outbound.protection.outlook.com (mail-by2nam03on0051.outbound.protection.outlook.com. [104.47.42.51])
+        by mx.google.com with ESMTPS id a63-v6si2088155ywb.422.2018.07.23.04.32.25
+        for <kr@anadeainc.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 23 Jul 2018 04:32:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of account-security-noreply@accountprotection.microsoft.com designates 104.47.42.51 as permitted sender) client-ip=104.47.42.51;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@accountprotection.microsoft.com header.s=selector1 header.b=OKx6IdrP;
+       spf=pass (google.com: domain of account-security-noreply@accountprotection.microsoft.com designates 104.47.42.51 as permitted sender) smtp.mailfrom=account-security-noreply@accountprotection.microsoft.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accountprotection.microsoft.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=accountprotection.microsoft.com; s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=gnZLjrgvJuu4/ILg0s1o1QL241dE00SzQ4XWl+uSJO8=;
+ b=OKx6IdrPX9X+vI0IJ+Deta2u+zlyyESfP/ER7Xn1CuVhNxY+D7Blp5Buhh6EyUqHMUa0cLxqblYOnWcN9sQq2xqOlBDszPWhseN6VdZ5CBvvs1ks5XpyQ/2d8jsMyd/4zT9dWrtf6WdwwVTGGCQuwLnbhymdLJ01P774TZXOcMo=
+Received: from CO1NAM03FT004.eop-NAM03.prod.protection.outlook.com
+ (10.152.80.53) by CO1NAM03HT137.eop-NAM03.prod.protection.outlook.com
+ (10.152.81.36) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id 15.20.995.12; Mon, 23
+ Jul 2018 11:32:24 +0000
+Received-SPF: Pass (protection.outlook.com: domain of
+ accountprotection.microsoft.com designates 157.55.103.193 as permitted
+ sender) receiver=protection.outlook.com; client-ip=157.55.103.193;
+ helo=accountprotection.microsoft.com;
+Received: from accountprotection.microsoft.com (157.55.103.193) by
+ CO1NAM03FT004.mail.protection.outlook.com (10.152.80.154) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id
+ 15.20.995.12 via Frontend Transport; Mon, 23 Jul 2018 11:32:23 +0000
+From: Microsoft account team
+	<account-security-noreply@accountprotection.microsoft.com>
+Date: Mon, 23 Jul 2018 04:32:23 -0700
+Subject: Verify your email address
+To: <kr@anadeainc.com>
+X-Priority: 3
+X-MSAPipeline: MessageDispatcherEOP
+Message-ID: <S0UZDJHXZ4U4.QNX5LADB5CJV2@CY1SCH030011758>
+X-MSAMetaData: =?us-ascii?q?DVc0ZSlIeS8UbY40HEI3TsnmuK1oxeT3KssfU6q!Dek*IPf7L5nlMFGJ2yAvu?=
+ =?us-ascii?q?oIXqoW5of4738LL6RvnxxeagtjBltskp5oygCg!iIqwRjEAdUVv6kjGZRpnUf?=
+ =?us-ascii?q?N7Q0FaVQ$$?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-guIYoNWqwquvSq8KOggPeQ=="
+Return-Path: account-security-noreply@accountprotection.microsoft.com
+X-EOPAttributedMessage: 0
+X-Forefront-Antispam-Report:
+	CIP:157.55.103.193;IPV:NLI;CTRY:US;EFV:NLI;SFV:NSPM;SFS:(10009020)(7916004)(136003)(396003)(34036004)(39860400002)(346002)(376002)(2980300002)(438002)(47530400004)(199004)(189003)(589834003)(6486002)(25786009)(14444005)(118246002)(476003)(126002)(486006)(84326002)(956004)(6306002)(9686003)(6512007)(5000100001)(69596002)(10290500003)(575854001)(86362001)(508600001)(356003)(106466001)(15650500001)(106002)(52230400001)(81166006)(81156014)(53416004)(81686011)(8676002)(16586007)(2420400007)(270700001)(2906002)(520700007)(8936002)(10090500001)(22452003)(5660300001)(2351001)(33716001)(33656002)(316002)(5180700001)(6916009)(336012)(3480700004)(36736006)(26005)(6346003)(186003)(10710500007)(140573002)(224973001);DIR:OUT;SFP:1101;SCL:1;SRVR:CO1NAM03HT137;H:accountprotection.microsoft.com;FPR:;SPF:Pass;PTR:msnbot-157-55-103-193.search.msn.com;A:0;MX:1;
+X-Microsoft-Exchange-Diagnostics: 1;CO1NAM03FT004;1:8QSpWPppLUa1KA9KEaSHRhcrP4aeiqLfExIxQlyZE/KHZMeIwnvizRJspduQpy1nf+tnXwsyH+uxnCcp5AodvfZ/+H86AUZ/uDR1X6bkwMMr5fUrw7Fpz+1aCttpxjdp
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 12fb9d4c-9689-4428-137f-08d5f08ff602
+X-Microsoft-Antispam:
+	BCL:0;PCL:0;RULEID:(7020095)(4652040)(8989117)(5600073)(711020)(4608076)(4534165)(4627221)(201703031133081)(201702281549075)(8990107)(2017052603328);SRVR:CO1NAM03HT137;
+X-Microsoft-Exchange-Diagnostics:
+	1;CO1NAM03HT137;3:FH20Jf/et6XCn2AmgEdzJnvXVaUkEoMX43afYYVj4UqQyUm8jV21ut/VZn2gM8Xy7J94XfCuA65eQeQgcCZCJ/7OW2Bwl2jl+/Vp323jE/QiOvBNJg3y2X+hjZ4Hf11hJOFYOgNAwqvAmiG5/YqYimxJHH1eSMwolJxAHzUcInaJ0aVZBwqIXUGBATvb5a6N/9lMHL2Yu28v+Y9vFYNLJNQ6L86zamAEBCDi3eiw/22SWw7jHmgH4466jCdrMdGA7E/75xa6VnY65TVdk2BC05UG2n3AWBoCYQcsQINqmJXIrX7Iw9Ou46zOrwLLj2n5D8I0aMYZDyJVuZpxisozLAGaJ6Vd7iPPKRwdX85nbkA=;25:ZE4C64tvwhNSBtEIwf0nediGlHbYEzypyxfSAIuTY4VSSHhbRFn6ET2sjJwRU++vHJcYZFnjVf2BgWIO/Z2kOqTfkwYtzMuSS0dzdZ4depc4DzhvQsHle1c4wh5zbGqqVAGzPpczoqnjA/GcyiYI1KltuYukqKjBxu8D5lJFmVgPF0p1mZHLf/4rVoQR9eourgbKeMCpVeVbQq6R1Ev6rVIULm24rtiR96vlOEt4YGETFr7Dzy1ZcmWQnIeMEqAFdUxfRl/dabys2eXyYcrfzDvh/JHHQhBc7OqCvTFbwTqMUznzjJ0exBLpeGI29mtF29NotPgKaLzjGogKB9KYLA==
+X-MS-TrafficTypeDiagnostic: CO1NAM03HT137:
+X-Microsoft-Exchange-Diagnostics:
+	1;CO1NAM03HT137;31:7g1B1+4ceHcq21M2EU4LaAf/Mgp8/0IUKH0ax9f701ycp1DusdN7EM0/90rEN/L2n4j1xoQ87Zh26z4/UCPmqci5Zr8ntBAWSCpJmGa5P35WKGvP+lpaFb9Ovna2BmGUQlgwq9cWi7v/t/1ceqLG0c8An1W793al49oxUQEk1CXD6VuZNvuIWXsfq3ZvVAdW1mrpVNzmbWVv1kGYmD1oaX+ZSwvZV5byoRzC32glHuU=;4:+vt4euWeLaX93QPDlf/4RO5eZoDSYzqe27c4B4y3DjKSr4S/2STYwDwVau/vWcxtYHkmnRU596DsFs/ZdldjDV22fPpf3FnI+yCGhZBR80Rf5R0WWdtVyED5qlmdSeZYSPb0ARAl/IokjZ7CYODCJeBrCE3Jo6f60lfH1oJ6YyDSUAoQx98wkQyS2czdoZfE9Orf+AXxxajmI5kvgDFoF1O6nfazAfHwomd9srUKCWX+sYAWwVoAzAIgEF/gETAQT+ChZTe6wDsbxoBTtPwpf97BWZ5uyuQtl2nv1EWJfJ7KqfsxhGTH+cciZXDttiuG
+X-Microsoft-Antispam-PRVS:
+	<CO1NAM03HT137A5D7203C0D02175B968689560@CO1NAM03HT137.eop-NAM03.prod.protection.outlook.com>
+X-Exchange-Antispam-Report-Test: UriScan:(192374486261705);
+X-MS-Exchange-SenderADCheck: 1
+X-Exchange-Antispam-Report-CFA-Test:
+	BCL:0;PCL:0;RULEID:(6040522)(2401047)(8121501046)(5005006)(3231311)(2017060910176)(944501410)(52105095)(10201501046)(3002001)(93006095)(93004095)(6055026)(149027)(150027)(6041310)(201703131423095)(201702281528075)(20161123555045)(201703061421075)(20161123562045)(20161123558120)(20161123560045)(20161123564045)(6072148)(201708071742011)(7699016);SRVR:CO1NAM03HT137;BCL:0;PCL:0;RULEID:;SRVR:CO1NAM03HT137;
+X-Forefront-PRVS: 0742443479
+X-Microsoft-Exchange-Diagnostics:
+	=?us-ascii?Q?1;CO1NAM03HT137;23:UvHj8lfyQ9Q91+KYyInsrTfO5JqfnXQYoJAHhSZnf?=
+ =?us-ascii?Q?5hBFRI6He4hduA4lxaYl/oqGeF1jDuEeRbQ8tGg0jLjdnGkefsQLovO9bE+O?=
+ =?us-ascii?Q?JnuIfmEkDnl2MP5OC6ha03O4WBAXNA9DDW+iM+Ml2InjcwsMSjCv0gyvmPL4?=
+ =?us-ascii?Q?H77LGyFEkFb31aTzqUnV1jkozaxwLiKmFS9VtZA9423Q+oM/+4hIF0+qI1uz?=
+ =?us-ascii?Q?XElrsJPoR6pTNUvREgIR+e8LyFvVfQHKNmMWZ/LKH801IQwjg3TJiqXL53Fp?=
+ =?us-ascii?Q?5DiYhJ64jCWChBz6lmTcrugw9fmQh2Hc60klN5CNfxS83Tn+GZeM47G78dCt?=
+ =?us-ascii?Q?gQUuUb8B1fkhOVLb+ZF+0MtcvaSXIyLIseosNk7yHVLy7xkoTOhtqp2jB6Ce?=
+ =?us-ascii?Q?3OhGEsa+2MJAYOHEXuNH3nYCKAbAkq3z95pIiB5rjK7g1XnjhlUgZq9YXWTQ?=
+ =?us-ascii?Q?eKu+RyK8+erWNcg5dLdJCNYcJ1dKdZ2GUmFLBvePrkkFF/iRQnMlybq7S9MV?=
+ =?us-ascii?Q?CrWlIoB7yCuzAoAFuYo3oO+D4yUBvk16wbjDjh1lF98XTIZLKlQS+yHLdcmd?=
+ =?us-ascii?Q?7z5QrfP5mwBGTL2wY36zHhM8+dnTepv2QtIGRvV5rlgo8VzS1AqUbjsR+v/0?=
+ =?us-ascii?Q?ez5Od9QpLzhXbos3l4c7xyIRLNiEa1QyMSeNPxPGsm/MAsT9vgoQ0HXt3NsV?=
+ =?us-ascii?Q?Y2rN+vrUXKhePN7kXAuZaOjQsoIZrxXv16xmNbn588kSu4nrj81Nbcb/AI7a?=
+ =?us-ascii?Q?TuTUDA5Y/cURpeHe/AcB2D6CwaNF57f6HXw1S7aeGJHZI6dAMaDi6RERxNk6?=
+ =?us-ascii?Q?bxQnOOXiqbVuo2h5pfqGTsqfEGq8i6CFTfXdueLatzAjz7EWXi6TOJMff6Wd?=
+ =?us-ascii?Q?fMgkA8mWgJLnBAo4zh2pAxum5+rZsPNdOYSe1t+LNYePlmZ0ePR4yWgPRbAC?=
+ =?us-ascii?Q?YPnls1LGwjbXQD4faIxRR5ErG8WNPho2LBxAKahScQ20UAXr6YSu8akw6G7O?=
+ =?us-ascii?Q?D5k6DLDb9qXk55HUxwvhA1IHXyZlVAl4p69m1QxQbQwvrmZtuLiaVSbDXA8U?=
+ =?us-ascii?Q?1IL+p760RLMVHZ2gqvFRv6NJV3jWFg7ptA2gI9qHJAPKDZbcIdAQ1jA6lYof?=
+ =?us-ascii?Q?30TDnS4xeQHeZ/mujuKQJKsAEcp4QQ5ctarfGcZAZBgVWhsav8v6zoPi7uvo?=
+ =?us-ascii?Q?A6/unV+u8zhofi2BxkcPR/pttjuhrhbRprVGhMK+8Zo/lzXqVKearwy6nxwj?=
+ =?us-ascii?Q?mUraAmZWKBzAVftKM4t1bCZ2l5lU9j917kpD32IktN7uY3EIRWxwuBeglRb7?=
+ =?us-ascii?Q?H/UiXnhW4+9l5w4OTiH+EQImJx667nTsBVkpp7YFk+PZ251gOrVgeUZCTez9?=
+ =?us-ascii?Q?gLwBaU26v9uDeDTLXiz12qd4iV4hUUgTGq3ZTT9n93KzGaj4N6h9T5fi0QpR?=
+ =?us-ascii?Q?iee9wNzGuyCES3eAw8I5cxvLEVWx2szLnWYW28svavrfXt5ky1AUDNSHYnFn?=
+ =?us-ascii?Q?sWUGNFkgshZOA=3D=3D?=
+X-Microsoft-Antispam-Message-Info:
+	LE5mPZ9r50it3OGGXiAZFA3ta8Zfd8ywuzuUL1MZQZKIs2wwGcFHZ5+Dkiow1shkGNtOjWRD3Vo1FZWDM7dM0RPdOwEsYF1YoXkJ+T+01Sanv1F2ZDJhA6P83VIJML67E5kHeXnnTa2KJL2wKiPfEt7kTI5+jCEk8KXvbU6wkaFakOuJqt6DT1fDQHJjckSkaDk+6VObKuR09ns0OEYYohb56agsnNa4lTgQ+PUPR8A42KgNC8ebZPcLBtAEdsNOW8a9w2MiNcYwdBX/Sm5PNGyyx1YUXtu/3305R+wn+D9g6w02OYCVB+MLVuUbBewL05KsWxFz72KxWG8+ywr3TKzzw9EssYLk5cf84m4L6M0=
+X-Microsoft-Exchange-Diagnostics:
+	1;CO1NAM03HT137;6:8tNqD2DI583HV9aVTsxZqLgAahLKZRk5DB6vkKftyXDt5t1IA4G6ThgpQpe1SXMzJOrZibAOpzepMIGZL/rU8j33PpDEB1iA7wJamyEjlpgfSMzlzMWjLq+fwaU4MEM9w5Nd7XMC9CphAQ5Zdo0QjT3aa1xlG1qIxA6uNmxr5Cr787XYJ4XR9EluaHlq1MPVJ2P+fHrMAA6UVaCi6+xLT9I/fwObFDIxgZfmnlz9UCuCqntKdB54cGYLnYaklI+YKsqaZMbnPa0QvcoyWlXN5FWM3v3nvadQ2MeR6HLhrjJStSfraIYtvz3P5xACaZ6AZzpOx3iUnUjWAaon9GSRsG7T+C08Vs7rAx7KIjzQU6ee1BZkLPGm5pVJOiUh2Z+mw0x+Ad9WQrKqg80QNfvvBs4TAi5jP7nqtqQjXdBOmA0CCCmje2spo7maHwbFV/qoNcuiZ4BPMfaDGw/m1QqH1w==;5:TZ+QvEXWnmiSHPMROcWJsWlf5sfT4rJTFn+txSqKvCvt3uTFifc65nH8ow1VDlNOkTNQR5Hg5I8+FIGYqhDw8jLtMhPIZ4F8903Z2FPVWvtqRawNJsElUlXLD1XMcPt/7YgOCjt64/yvLGSWkNg1klqo0apNni+kt58OM0fZ6lo=;7:kxHuCoqG4A+4ukEYzALf51OcScEzYB7qYQEM2mtiQ/pIWPjqtAOC99vOnv2l3bYfuZIe0dhAc/m8APFP5JMJhMGUTBuYQqdEiR3SmlrcDq1mw9XgG/W7oO1ppqbfTlsp/vppmOOqJnYS87LvFLPqG0XM/MIlo9zcCImcq4fQ1k0BR4VGxMmSEd26zxIZ05vRkAnt+ONqIzGeUKmVgRb2dyO3mKpQtYjVPq1Uy0VD15UFEG8wROOFKEfYWLzDWHyT
+SpamDiagnosticOutput: 1:99
+SpamDiagnosticMetadata: NSPM
+X-OriginatorOrg: accountprotection.microsoft.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Jul 2018 11:32:23.9707
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 12fb9d4c-9689-4428-137f-08d5f08ff602
+X-MS-Exchange-CrossTenant-Id: 5ba90553-c2cd-460e-b5fd-ab93ad9155c7
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=5ba90553-c2cd-460e-b5fd-ab93ad9155c7;Ip=[157.55.103.193];Helo=[accountprotection.microsoft.com]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO1NAM03HT137
+
+--=-guIYoNWqwquvSq8KOggPeQ==
+Content-Type: text/plain; charset="windows-1252"
+Content-Transfer-Encoding: 7bit
+
+Microsoft account
+
+Verify your email address
+
+To finish setting up your Microsoft account, we just need to make sure this email address is yours.
+
+To verify your email address use this security code: 9162
+
+If you didn't request this code, you can safely ignore this email. Someone else might have typed your email address by mistake.
+
+Thanks,
+The Microsoft account team 
+--=-guIYoNWqwquvSq8KOggPeQ==
+Content-Type: text/html; charset="windows-1252"
+Content-Transfer-Encoding: 7bit
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"> 
+<head>
+<style type="text/css">
+ .link:link, .link:active, .link:visited {
+       color:#2672ec !important;
+       text-decoration:none !important;
+ }
+
+ .link:hover {
+       color:#4284ee !important;
+       text-decoration:none !important;
+ }
+</style>
+<title></title>
+</head>
+<body>
+<table dir="ltr">
+      <tr><td id="i1" style="padding:0; font-family:'Segoe UI Semibold', 'Segoe UI Bold', 'Segoe UI', 'Helvetica Neue Medium', Arial, sans-serif; font-size:17px; color:#707070;">Microsoft account</td></tr>
+      <tr><td id="i2" style="padding:0; font-family:'Segoe UI Light', 'Segoe UI', 'Helvetica Neue Medium', Arial, sans-serif; font-size:41px; color:#2672ec;">Verify your email address</td></tr>
+      <tr><td id="i4" style="padding:0; padding-top:25px; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">To finish setting up your Microsoft account, we just need to make sure this email address is yours.</td></tr>
+      <tr><td style="padding:0; padding-top:25px; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">To verify your email address use this security code: <span style="font-family:'Segoe UI Bold', 'Segoe UI Semibold', 'Segoe UI', 'Helvetica Neue Medium', Arial, sans-serif; font-size:14px; font-weight:bold; color:#2a2a2a;">9162</span></td></tr>
+      <tr><td id="i6" style="padding:0; padding-top:25px; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">If you didn't request this code, you can safely ignore this email. Someone else might have typed your email address by mistake.</td></tr>
+      <tr><td style="padding:0; padding-top:25px; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">Thanks,</td></tr>
+      <tr><td id="i8" style="padding:0; font-family:'Segoe UI', Tahoma, Verdana, Arial, sans-serif; font-size:14px; color:#2a2a2a;">The Microsoft account team</td></tr>
+</table>
+</body>
+</html>
+--=-guIYoNWqwquvSq8KOggPeQ==--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>7</integer>
+	<key>date-last-viewed</key>
+	<integer>1532348473</integer>
+	<key>date-received</key>
+	<integer>1532345545</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+	</array>
+	<key>remote-id</key>
+	<string>11</string>
+</dict>
+</plist>

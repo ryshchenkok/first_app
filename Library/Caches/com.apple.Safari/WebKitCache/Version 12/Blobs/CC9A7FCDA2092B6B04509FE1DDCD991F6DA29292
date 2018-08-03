@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru_RU" lang="ru_RU">
+<head>
+<title> EmployeeDocumentation &lt; Anahoret &lt; Anadea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="http://anahoret.com/wiki/bin/edit/Anahoret/EmployeeDocumentation?t=1532332208" type="application/x-wiki" title="edit EmployeeDocumentation" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/wiki/bin/view/Anahoret/WebRss" />
+
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/SkinTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/layout.css');
+@import url('/wiki/pub/System/PatternSkinTheme/style.css');
+@import url('/wiki/pub/System/PatternSkinTheme/colors.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/column_left.css');
+@import url('/wiki/pub/System/PatternSkinTheme/variant_foswiki_print.css');
+</style><style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#99CC99;
+	}
+	#patternTopBarContents { background-image:url(/wiki/pub/System/PatternSkin/header5.gif); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#ffffff;}
+.patternBookView {
+	border-color:#99CC99;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<style type="text/css" media="print">
+	@import url("/wiki/pub/System/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	height:1%;
+	overflow-x:auto;
+}
+.foswikiAttachments,
+.foswikiForm,
+.foswikiHelp,
+.foswikiPreviewArea,
+.patternPreviewPage .foswikiForm,
+.patternSigLine,
+.patternToolBar,
+.patternTop,
+.patternTopicAction,
+#patternSideBarContents .patternLeftBarPersonal,
+#patternSideBarContents h2,
+#patternSideBarContents li,
+#patternTopBarButtons ul {
+	height:1%;
+}
+#patternSideBarContents .patternLeftBarPersonal {
+	width:100%;
+}
+.foswikiFormStep {
+	height:100%;
+}
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:2px solid #ccc;
+}
+</style><![endif]-->
+<!--[if gt IE 8 ]><style type="text/css" media="screen">
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow: 0 0 10px #ccc;
+}
+</style><![endif]-->
+<meta name="foswiki.TWISTYANIMATIONSPEED" content="fast" /><!--TWISTYPLUGIN::META-->
+<!--[if lte IE 9]>
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.11.2.uncompressed.js'></script>
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.8.0.uncompressed.js'></script>
+<!--<![endif]-->
+<!--JQUERYPLUGIN-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/livequery/jquery.livequery.uncompressed.js?version=1.3.1'></script><!--JQUERYPLUGIN::LIVEQUERY-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/foswiki/jquery.foswiki.uncompressed.js?version=2.01'></script><!--JQUERYPLUGIN::FOSWIKI: requires= missing ids: JQUERYPLUGIN::MIGRATE-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiPref.js"></script><!--JavascriptFiles/foswikiPref-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiString.js"></script><!--JavascriptFiles/foswikiString-->
+<script type='text/javascript'>
+jQuery.extend(foswiki, {
+ "preferences": {
+    "PUBURL": "http://anahoret.com/wiki/pub",
+    "PUBURLPATH": "/wiki/pub",
+    "SCRIPTSUFFIX": "",
+    "SCRIPTURL": "http://anahoret.com/wiki/bin",
+    "SCRIPTURLPATH": "/wiki/bin",
+    "SERVERTIME": "23 Jul 2018 - 10:50",
+    "SKIN": "pdf,pattern",
+    "SYSTEMWEB": "System",
+    "TOPIC": "EmployeeDocumentation",
+    "USERNAME": "kr",
+    "USERSWEB": "Main",
+    "WEB": "Anahoret",
+    "WIKINAME": "KonstantinRyshchenko",
+    "WIKIUSERNAME": "Main.KonstantinRyshchenko",
+    "NAMEFILTER": "[\s\*?~^\$@%`\"'&;|<>\[\]#\x00-\x1f]"
+}});
+</script><!--JQUERYPLUGIN::FOSWIKI::PREFERENCES-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiForm.js"></script><!--JavascriptFiles/foswikiForm-->
+<script type="text/javascript" src="/wiki/pub/System/PatternSkin/pattern.js"></script><!--PatternSkin/pattern-->
+</head>
+<body class="foswikiNoJs patternViewPage">
+<a name="PageTop"></a><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="/wiki/bin/view/Main/WebHome">Anadea</a><span class='foswikiSeparator'>&gt;</span><a href="/wiki/bin/view/Anahoret/WebHome">Anahoret Web</a><span class='foswikiSeparator'>&gt;</span><a href="http://anahoret.com/wiki/bin/view/Anahoret/EmployeeDocumentation" title='Topic revision: 8 (10 Apr 2018 - 13:10:12)'>EmployeeDocumentation</a> <span class='patternRevInfo'>(10 Apr 2018, <a href="/wiki/bin/view/Main/AndreyBulava">AndreyBulava</a>)</span></span><span class="patternToolBar foswikiRight"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/EmployeeDocumentation?t=1532332208;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/EmployeeDocumentation' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span><a href='/wiki/bin/view/Anahoret/EmployeeDocumentation?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span></span><div class="foswikiClear"></div></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><h1><a name="A_208_159_208_176_208_188_209_143_209_130_208_186_208_176_209_129_208_190_209_130_209_128_209_131_208_180_208_189_208_184_208_186_208_176_Anadea"></a>  Памятка сотрудника Anadea </h1>
+В этом "путеводителе" собраны общие сведения о компании, которые помогут быстрее освоиться, если вы - новичок, и не потеряться в повседневной жизни после, так как написанное здесь время от времени будет меняться вместе с компанией.
+<p></p>
+<a name="foswikiTOC"></a><div class="foswikiToc"> <ul>
+<li> <a href="#A_208_163_209_135_208_181_209_130_208_189_209_139_208_181_208_183_208_176_208_191_208_184_209_129_208_184_44_209_129_208_179_209_128_209_131_208_191_208_191_208_184_209_128_208_190_208_178_208_176_208_189_208_189_209_139_208_181_208_191_208_190_209_130_208_184_208_191_208_176_208_188_208_176_209_131_209_130_208_181_208_189_209_130_208_184_209_132_208_184_208_186_208_176_209_134_208_184_208_184"> Учетные записи, сгруппированные по типам аутентификации </a>
+</li> <li> <a href="#A_208_158_208_177_209_137_208_181_208_189_208_184_208_181_209_129_208_180_209_128_209_131_208_179_208_184_208_188_208_184_209_129_208_190_209_130_209_128_209_131_208_180_208_189_208_184_208_186_208_176_208_188_208_184_Anadea"> Общение с другими сотрудниками Anadea </a>
+</li> <li> <a href="#A_208_146_208_176_208_182_208_189_209_139_208_181_208_186_208_190_208_189_209_130_208_176_208_186_209_130_209_139_44_209_129_208_179_209_128_209_131_208_191_208_191_208_184_209_128_208_190_208_178_208_176_208_189_208_189_209_139_208_181_208_191_208_190_208_190_208_177_208_187_208_176_209_129_209_130_209_143_208_188_208_190_209_130_208_178_208_181_209_130_209_129_209_130_208_178_208_181_208_189_208_189_208_190_209_129_209_130_208_184"> Важные контакты, сгруппированные по областям ответственности </a> <ul>
+<li> <a href="#A_208_158_209_132_208_184_209_129_45_208_188_208_181_208_189_208_181_208_180_208_182_208_181_209_128_209_139_40aka_209_133_208_190_208_183_209_143_208_185_209_129_209_130_208_178_208_181_208_189_208_189_209_139_208_185_208_190_209_130_208_180_208_181_208_187_41"> Офис-менеджеры (aka хозяйственный отдел) </a>
+</li> <li> <a href="#Human_Resources_40aka_208_186_208_176_208_180_209_128_208_190_208_178_209_139_208_185_208_190_209_130_208_180_208_181_208_187_41"> Human Resources (aka кадровый отдел) </a>
+</li> <li> <a href="#Developers_in_Operations_40aka_IT_Support_41"> Developers in Operations (aka IT Support) </a>
+</li></ul> 
+</li></ul> 
+</div>
+<h2><a name="A_208_163_209_135_208_181_209_130_208_189_209_139_208_181_208_183_208_176_208_191_208_184_209_129_208_184_44_209_129_208_179_209_128_209_131_208_191_208_191_208_184_209_128_208_190_208_178_208_176_208_189_208_189_209_139_208_181_208_191_208_190_209_130_208_184_208_191_208_176_208_188_208_176_209_131_209_130_208_181_208_189_209_130_208_184_209_132_208_184_208_186_208_176_209_134_208_184_208_184"></a>  Учетные записи, сгруппированные по типам аутентификации </h2>
+Типов аутентификации 3 (три), для каждого логин/пароль устанавливаются независимо от других. <ol>
+<li> <a href="/wiki/bin/view/Anahoret/GoogleForWorkAnadea">Google for Work - Anadea Inc (anadeainc.com)</a> - можно самостоятельно сменить пароль <ul>
+<li> <a href="/wiki/bin/view/Anahoret/GoogleAppsForAnadeaEmail">Gmail for Work</a>
+</li></ul> 
+</li> <li> <a href="https://tracker.anahoret.com" target="_top">Anahoret Tracker</a> - можно самостоятельно сменить пароль и/или логин, первый вход происходит <a href="https://tracker.anahoret.com/users/password/new" target="_top">через сброс пароля</a> на ваш адрес @anadeinc.com
+</li> <li> LDAP-based accounts - самостоятельно сменить пароль можно, но <a href="https://www.digitalocean.com/community/tutorials/how-to-change-account-passwords-on-an-openldap-server" target="_top">сложно</a> <ul>
+<li> <a href="https://anahoret.com/wiki/Anahoret" target="_top">Anahoret Wiki</a> (вы сейчас здесь)
+</li> <li> <a href="https://journal.anahoret.com/" target="_top">Журнал начисления заработной платы</a>
+</li> <li> mail.anahoret.com (устарело, но еще не выведено из эксплуатации)
+</li> <li> <a href="https://gitlab.anahoret.com/" target="_top">https://gitlab.anahoret.com/</a>
+</li></ul> 
+</li></ol> 
+<h2><a name="A_208_158_208_177_209_137_208_181_208_189_208_184_208_181_209_129_208_180_209_128_209_131_208_179_208_184_208_188_208_184_209_129_208_190_209_130_209_128_209_131_208_180_208_189_208_184_208_186_208_176_208_188_208_184_Anadea"></a>  Общение с другими сотрудниками Anadea </h2> <ul>
+<li> <a href="/wiki/bin/view/Anahoret/EMailAliases">Общий список контактов</a>
+</li> <li> Все пользователи доступны <a href="https://anadea.slack.com/" target="_top">через корпоративный Slack</a>
+</li></ul> 
+<h2><a name="A_208_146_208_176_208_182_208_189_209_139_208_181_208_186_208_190_208_189_209_130_208_176_208_186_209_130_209_139_44_209_129_208_179_209_128_209_131_208_191_208_191_208_184_209_128_208_190_208_178_208_176_208_189_208_189_209_139_208_181_208_191_208_190_208_190_208_177_208_187_208_176_209_129_209_130_209_143_208_188_208_190_209_130_208_178_208_181_209_130_209_129_209_130_208_178_208_181_208_189_208_189_208_190_209_129_209_130_208_184"></a>  Важные контакты, сгруппированные по областям ответственности </h2>
+<strong>Disclaimer:</strong> work in progress, дописывайтесь без стеснения. Этот черновик появился на основе письма-приветствия за коллективным авторством отдела DevOps.
+<h3><a name="A_208_158_209_132_208_184_209_129_45_208_188_208_181_208_189_208_181_208_180_208_182_208_181_209_128_209_139_40aka_209_133_208_190_208_183_209_143_208_185_209_129_209_130_208_178_208_181_208_189_208_189_209_139_208_185_208_190_209_130_208_180_208_181_208_187_41"></a>  Офис-менеджеры (aka хозяйственный отдел) </h3>
+<strong>NB!</strong> Если вы знаете о том, что вы не будете обедать, просьба заранее предупреждать офис-менеджера в своей локации любым удобным способом до 10 часов утра актуального дня. <ul>
+<li> В Днепропетровске: Юлия Дикуха (<a href="mailto&#58;jd&#64;anahoret&#46;com">jd&#64;anahoret.com</a>),  Людмила Катасонова (<a href="mailto&#58;lnk&#64;anahoret&#46;com">lnk&#64;anahoret.com</a>)
+</li> <li> В Гродно: Надежда Скуба (<a href="mailto&#58;ns&#64;anadeainc&#46;com">ns&#64;anadeainc.com</a>)
+</li> <li> В Минске: Надежда Скуба (<a href="mailto&#58;ns&#64;anadeainc&#46;com">ns&#64;anadeainc.com</a>)
+</li></ul> 
+<h3><a name="Human_Resources_40aka_208_186_208_176_208_180_209_128_208_190_208_178_209_139_208_185_208_190_209_130_208_180_208_181_208_187_41"></a>  Human Resources (aka кадровый отдел) </h3> <ul>
+<li> Вера Глушкова (<a href="mailto&#58;vg&#64;anadeainc&#46;com">vg&#64;anadeainc.com</a>)
+</li></ul> 
+<h3><a name="Developers_in_Operations_40aka_IT_Support_41"></a>  Developers in Operations (aka IT Support) </h3> <ul>
+<li> <a href="mailto&#58;itsupport&#64;anadea&#46;info">itsupport&#64;anadea.info</a> <a href="https://anadea.slack.com/app_redirect?channel=itsupport" target="_top">https://anadea.slack.com/app_redirect?channel=itsupport</a>
+</li></ul>  </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><a name="topic-actions"></a><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/EmployeeDocumentation?t=1532332208;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/EmployeeDocumentation' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/EmployeeDocumentation?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/EmployeeDocumentation?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/oops/Anahoret/EmployeeDocumentation?template=oopshistory' rel='nofollow' title='View total topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a></span>: r8&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/EmployeeDocumentation?rev1=7;rev2=8">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/EmployeeDocumentation?rev=7">r7</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/EmployeeDocumentation?rev1=6;rev2=7">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/EmployeeDocumentation?rev=6">r6</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/EmployeeDocumentation?rev1=5;rev2=6">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/EmployeeDocumentation?rev=5">r5</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/EmployeeDocumentation?template=backlinksweb' rel='nofollow' title='Search the Anahoret Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/EmployeeDocumentation?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/EmployeeDocumentation?template=more&amp;maxrev=8&amp;currrev=8' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: 10 Apr 2018, <a href="/wiki/bin/view/Main/AndreyBulava">AndreyBulava</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator" style="border-color:#99CC99">
+<a href='http://anahoret.com/wiki/bin/view/Anahoret/WebHome'>Anahoret</a>
+</div> <ul>
+<li> <strong><a href="/wiki/bin/view/Anahoret/DeveloperDocumentation">Документация</a></strong> <hr />
+</li> <li> <strong><a href="/wiki/bin/view/Anahoret/WebHome" class="foswikiCurrentWebHomeLink"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/home.png" width="16" height="16" alt="home" /></span> Anahoret Web</a></strong>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicCreator?parent=EmployeeDocumentation" target="_top"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/newtopic.png" width="16" height="16" alt="newtopic" /></span> Create New Topic</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicList"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/index.png" width="16" height="16" alt="index" /></span> Index</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebSearch"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/searchtopic.png" width="16" height="16" alt="searchtopic" /></span> Search</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebChanges"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/changes.png" width="16" height="16" alt="changes" /></span> Changes</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebNotify"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/notify.png" width="16" height="16" alt="notify" /></span> Notifications</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebStatistics"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/statistics.png" width="16" height="16" alt="statistics" /></span> Statistics</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebPreferences"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/wrench.png" width="16" height="16" alt="wrench" /></span> Preferences</a> <hr />
+</li> <li> <strong>Webs</strong>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#99CC99" />&nbsp;Anahoret</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Getsocio/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Getsocio</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Mailinator/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Mailinator</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Main/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFEFA6" />&nbsp;Main</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Projects/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFCC00" />&nbsp;Projects</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Sandbox/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#B9DAFF" />&nbsp;Sandbox</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Skills/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#ffa199" />&nbsp;Skills</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/System/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFD8AA" />&nbsp;System</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Tracker/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#33CC99" />&nbsp;Tracker</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Trash/InVision/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;<span class='foswikiWebIndent'></span>InVision</a></span>
+</li></ul> 
+<p></p>
+</div></div>
+</div>
+<div class="clear">&nbsp;</div>
+</div></div><div id="patternTopBar"><div id="patternTopBarContentsWrapper"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="http://anahoret.com/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/Main/WebHome/anadea-logo.png" border="0" alt="Anahoret wiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+ <ul>
+<li> <form name="jumpForm" action="/wiki/bin/view/Anahoret/EmployeeDocumentation"><input id="jumpFormField" title="Jump" type="text" class="foswikiInputField foswikiDefaultText" name="topic" value="" size="18" /><noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript>   </form>
+</li> <li> <form name="quickSearchForm" action="/wiki/bin/view/Anahoret/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Anahoret" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript>   </form>
+</li></ul> 
+<p></p>
+</td></tr></table></div></div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"></div></div></div>
+</div>
+</div>
+</div>
+</div></body></html>

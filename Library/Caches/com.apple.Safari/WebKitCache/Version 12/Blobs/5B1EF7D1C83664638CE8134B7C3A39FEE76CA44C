@@ -1,0 +1,1774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru_RU" lang="ru_RU">
+<head>
+<title> ElanceProjects &lt; Anahoret &lt; Anadea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="http://anahoret.com/wiki/bin/edit/Anahoret/ElanceProjects?t=1532341361" type="application/x-wiki" title="edit ElanceProjects" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/wiki/bin/view/Anahoret/WebRss" />
+
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/SkinTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/layout.css');
+@import url('/wiki/pub/System/PatternSkinTheme/style.css');
+@import url('/wiki/pub/System/PatternSkinTheme/colors.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/column_left.css');
+@import url('/wiki/pub/System/PatternSkinTheme/variant_foswiki_print.css');
+</style><style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#99CC99;
+	}
+	#patternTopBarContents { background-image:url(/wiki/pub/System/PatternSkin/header5.gif); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#ffffff;}
+.patternBookView {
+	border-color:#99CC99;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<style type="text/css" media="print">
+	@import url("/wiki/pub/System/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	height:1%;
+	overflow-x:auto;
+}
+.foswikiAttachments,
+.foswikiForm,
+.foswikiHelp,
+.foswikiPreviewArea,
+.patternPreviewPage .foswikiForm,
+.patternSigLine,
+.patternToolBar,
+.patternTop,
+.patternTopicAction,
+#patternSideBarContents .patternLeftBarPersonal,
+#patternSideBarContents h2,
+#patternSideBarContents li,
+#patternTopBarButtons ul {
+	height:1%;
+}
+#patternSideBarContents .patternLeftBarPersonal {
+	width:100%;
+}
+.foswikiFormStep {
+	height:100%;
+}
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:2px solid #ccc;
+}
+</style><![endif]-->
+<!--[if gt IE 8 ]><style type="text/css" media="screen">
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow: 0 0 10px #ccc;
+}
+</style><![endif]-->
+<meta name="foswiki.TWISTYANIMATIONSPEED" content="fast" /><!--TWISTYPLUGIN::META-->
+<style type="text/css" media="all">
+.foswikiTable {border-width:1px}
+.foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+.foswikiTable td {border-style:solid none; vertical-align:top}
+.foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+.foswikiTable th a:link {color:#000000}
+.foswikiTable th a:visited {color:#000000}
+.foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+.foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+.foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style><!--TABLEPLUGIN_default-->
+<style type="text/css" media="all">
+.foswikiTable#tableElanceProjects6 td {vertical-align:middle; vertical-align:top}
+.foswikiTable#tableElanceProjects6 td.foswikiTableCol0 {text-align:left}
+.foswikiTable#tableElanceProjects6 td.foswikiTableCol1 {text-align:left}
+.foswikiTable#tableElanceProjects6 td.foswikiTableCol2 {text-align:left}
+.foswikiTable#tableElanceProjects6 td.foswikiTableCol3 {text-align:right}
+.foswikiTable#tableElanceProjects6 td.foswikiTableCol4 {text-align:left}
+.foswikiTable#tableElanceProjects6 td.foswikiTableCol5 {text-align:left}
+.foswikiTable#tableElanceProjects6 td.foswikiTableCol6 {text-align:left}
+.foswikiTable#tableElanceProjects6 td.foswikiTableCol7 {text-align:left}
+.foswikiTable#tableElanceProjects6 th {vertical-align:middle; background-color:#ffffff; color:#0066cc; text-align:left}
+.foswikiTable#tableElanceProjects6 th a:link {color:#0066cc}
+.foswikiTable#tableElanceProjects6 th a:visited {color:#0066cc}
+.foswikiTable#tableElanceProjects6 th a:hover {color:#0066cc; background-color:#ffffff}
+.foswikiTable#tableElanceProjects6 th.foswikiSortedCol {background-color:#eeeeee}
+.foswikiTable#tableElanceProjects6 tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable#tableElanceProjects6 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f5f5f5}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 td {vertical-align:middle; vertical-align:top}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 td.foswikiTableCol0 {text-align:left}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 td.foswikiTableCol1 {text-align:left}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 td.foswikiTableCol2 {text-align:left}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 td.foswikiTableCol3 {text-align:right}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 td.foswikiTableCol4 {text-align:left}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 td.foswikiTableCol5 {text-align:left}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 td.foswikiTableCol6 {text-align:left}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 td.foswikiTableCol7 {text-align:left}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 th {vertical-align:middle; background-color:#ffffff; color:#0066cc; text-align:left}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 th a:link {color:#0066cc}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 th a:visited {color:#0066cc}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 th a:hover {color:#0066cc; background-color:#ffffff}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 th.foswikiSortedCol {background-color:#eeeeee}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable#tablePowerOfAttorneyAnadeaBvi201708171 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f5f5f5}
+</style><!--TABLEPLUGIN_specific-->
+<link rel='stylesheet' href='/wiki/pub/System/TwistyPlugin/twisty.uncompressed.css?version=1.6.0' type='text/css' media='all' /><!--JQUERYPLUGIN::TWISTY: requires= missing ids: JavascriptFiles/foswikiPref-->
+<!--[if lte IE 9]>
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.11.2.uncompressed.js'></script>
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.8.0.uncompressed.js'></script>
+<!--<![endif]-->
+<!--JQUERYPLUGIN-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/livequery/jquery.livequery.uncompressed.js?version=1.3.1'></script><!--JQUERYPLUGIN::LIVEQUERY-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/foswiki/jquery.foswiki.uncompressed.js?version=2.01'></script><!--JQUERYPLUGIN::FOSWIKI: requires= missing ids: JQUERYPLUGIN::MIGRATE-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiPref.js"></script><!--JavascriptFiles/foswikiPref-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiString.js"></script><!--JavascriptFiles/foswikiString-->
+<script type='text/javascript'>
+jQuery.extend(foswiki, {
+ "preferences": {
+    "PUBURL": "http://anahoret.com/wiki/pub",
+    "PUBURLPATH": "/wiki/pub",
+    "SCRIPTSUFFIX": "",
+    "SCRIPTURL": "http://anahoret.com/wiki/bin",
+    "SCRIPTURLPATH": "/wiki/bin",
+    "SERVERTIME": "23 Jul 2018 - 13:22",
+    "SKIN": "pdf,pattern",
+    "SYSTEMWEB": "System",
+    "TOPIC": "ElanceProjects",
+    "USERNAME": "kr",
+    "USERSWEB": "Main",
+    "WEB": "Anahoret",
+    "WIKINAME": "KonstantinRyshchenko",
+    "WIKIUSERNAME": "Main.KonstantinRyshchenko",
+    "NAMEFILTER": "[\s\*?~^\$@%`\"'&;|<>\[\]#\x00-\x1f]"
+}});
+</script><!--JQUERYPLUGIN::FOSWIKI::PREFERENCES-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiForm.js"></script><!--JavascriptFiles/foswikiForm-->
+<script type="text/javascript" src="/wiki/pub/System/PatternSkin/pattern.js"></script><!--PatternSkin/pattern-->
+<script type='text/javascript' src='/wiki/pub/System/TwistyPlugin/jquery.twisty.uncompressed.js?version=1.6.0'></script><!--JQUERYPLUGIN::TWISTY-->
+</head>
+<body class="foswikiNoJs patternViewPage">
+<a name="PageTop"></a><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="/wiki/bin/view/Main/WebHome">Anadea</a><span class='foswikiSeparator'>&gt;</span><a href="/wiki/bin/view/Anahoret/WebHome">Anahoret Web</a><span class='foswikiSeparator'>&gt;</span><a href="http://anahoret.com/wiki/bin/view/Anahoret/ElanceProjects" title='Topic revision: 53 (20 Jan 2012 - 11:51:40)'>ElanceProjects</a> <span class='patternRevInfo'>(20 Jan 2012, <a href="/wiki/bin/view/Main/AlexanderMikhalchuk">AlexanderMikhalchuk</a>)</span></span><span class="patternToolBar foswikiRight"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/ElanceProjects?t=1532341361;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/ElanceProjects' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span><a href='/wiki/bin/view/Anahoret/ElanceProjects?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span></span><div class="foswikiClear"></div></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic">Если есть интересный нам проект, надо сделать следующее <ol>
+<li> Изменить статус проекта. Добавить себя в колонку <em>Assigned To</em>
+</li> <li> Подготовить Anahoret Offer документ по шаблону. Внимательно проверить, что содержание соответствует описанию проекта: стек технологий, размер команды, вопросы по проекту.
+</li> <li> Подготовить Anahoret Project Plan документ. Это список юзер стори с оценками в днях. Если в процессе оценивания появились вопросы, добавить раздел с вопросами.
+</li></ol> 
+<p></p>
+Для каждого проекта, который просматривали, пишите таги.
+<p></p>
+При подготовке документов старайтесь, чтобы они были готовы к отправке без дополнительных правок и изменений (без лишнего текста, без русского текста, без цветных выделений, с правильным форматом).
+<p></p>
+Пояснения к статусам <ul>
+<li> <strong>New</strong> - новый, как можно скорее прочитать описание и принять решение, что делать с проектом
+</li> <li> <strong>Skipped</strong> - нами принято решение, пропустить проект
+</li> <li> <strong>Possible</strong> - возможно; поскорее принять решение и перевести его либо в <strong>Skipped</strong> либо в другой
+</li> <li> <strong>Offer</strong> - подготовлено и отправлено предложение
+</li> <li> <strong>Estimating</strong> - идет оценка
+</li> <li> <strong>Estimated</strong> - оценка подготовлена и отправлена
+</li> <li> <strong>Rejected</strong> - клиент отклонил наше предложение
+</li> <li> <strong>Missed</strong> - клиент выбрал другого исполнителя
+</li></ul> 
+<p></p>
+При изменении статуса надо добавить пояснение, кто его поменял и почему.
+<p></p>
+<form action='/wiki/bin/edit/Anahoret/'> 
+  <input type="hidden" name="onlywikiname" value="on" />
+  <input type="hidden" name="onlynewtopic" value="on" />
+  <input type="hidden" name="templatetopic" value="ProjectTemplate" />
+  <input type="hidden" name="formtemplate" value="ProjectForm" />
+  <input type="hidden" name="Status" value="New" />
+  <input type="hidden" name="topicparent" value="ElanceProjects" />
+<p></p>
+  <strong>Add new Elance project:</strong> <br />
+       <table class="foswikiTable" rules="none" border="1">  
+	<tbody>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Topic name (wiki word): </td>
+			<td class="foswikiTableCol1 foswikiLastCol"> <input class="twikiInputField" type="text" name="topic" size="40"/> </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Name: </td>
+			<td class="foswikiTableCol1 foswikiLastCol"> <input class="twikiInputField" type="text" name="Name" size="40"/> </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> URL: </td>
+			<td class="foswikiTableCol1 foswikiLastCol"> <input class="twikiInputField" type="text" name="URL" size="40"/> </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Description: </td>
+			<td class="foswikiTableCol1 foswikiLastCol"> <textarea class="twikiInputField" name="Description" rows="5" cols="40"></textarea> </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> Elance Info: </td>
+			<td class="foswikiTableCol1 foswikiLastCol foswikiLast"> <textarea class="twikiInputField" name="Info" rows="5" cols="40"></textarea> </td>
+		</tr>
+	</tbody>  </table>
+<p></p>
+  <input type="submit" class="twikiSubmit" value="Add">
+</form>
+<p></p>
+<strong>New projects:</strong>
+<table class="foswikiTable" rules="none" border="1">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=0;table=2;up=0#sorted_table" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol1"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=1;table=2;up=0#sorted_table" title="Sort by this column">Client</a> </th>
+			<th class="foswikiTableCol2"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=2;table=2;up=0#sorted_table" title="Sort by this column">Project</a> </th>
+			<th class="foswikiTableCol3"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=3;table=2;up=0#sorted_table" title="Sort by this column">Status</a> </th>
+			<th class="foswikiTableCol4"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=4;table=2;up=0#sorted_table" title="Sort by this column">Tags</a> </th>
+			<th class="foswikiTableCol5"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=5;table=2;up=0#sorted_table" title="Sort by this column">Assigned To</a> </th>
+			<th align="right" class="foswikiTableCol6 foswikiLastCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=6;table=2;up=0#sorted_table" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-07-11 </td>
+			<td class="foswikiTableCol1"> DJBart New Zealand </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LinuxMultimediaSoftwareDevelopmentOnPandaboard">linux multimedia software development on Pandaboard</a> </td>
+			<td class="foswikiTableCol3"> New </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-05-23 </td>
+			<td class="foswikiTableCol1"> dcjackson   Palo Alto, California, United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/BuildAutocompleteSuggestBackendUsingLuceneAndClojure">Build autocomplete/suggest backend using Lucene and Clojure</a> </td>
+			<td class="foswikiTableCol3"> New </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> 2012-05-23 </td>
+			<td class="foswikiTableCol1 foswikiLast"> wuxil Germany </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="/wiki/bin/view/Anahoret/FindAlternativeDatabaseAwareImplementations">SCALA: Find alternative database aware implementations (like Delphi ones)</a> </td>
+			<td class="foswikiTableCol3 foswikiLast"> New </td>
+			<td class="foswikiTableCol4 foswikiLast"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLast"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> &nbsp; </td>
+		</tr>
+	</tbody></table>
+<p></p>
+<strong>Estimated projects:</strong>
+<table class="foswikiTable" rules="none" border="1">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=0;table=3;up=0#sorted_table" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol1"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=1;table=3;up=0#sorted_table" title="Sort by this column">Client</a> </th>
+			<th class="foswikiTableCol2"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=2;table=3;up=0#sorted_table" title="Sort by this column">Project</a> </th>
+			<th class="foswikiTableCol3"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=3;table=3;up=0#sorted_table" title="Sort by this column">Status</a> </th>
+			<th class="foswikiTableCol4"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=4;table=3;up=0#sorted_table" title="Sort by this column">Tags</a> </th>
+			<th class="foswikiTableCol5"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=5;table=3;up=0#sorted_table" title="Sort by this column">Assigned To</a> </th>
+			<th align="right" class="foswikiTableCol6 foswikiLastCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=6;table=3;up=0#sorted_table" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Oct 31, 2011 </td>
+			<td class="foswikiTableCol1"> socialcognition Singapore </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/AndroidBackgroundAppForStreaming">Create Android background app for streaming user data to server</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Oct 31, 2011 </td>
+			<td class="foswikiTableCol1"> socialcognition Singapore </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/CreateAtomLikeServer">Create Atom-like server with Amazon Java SDK + RDS</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> aat </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 30, 2011 </td>
+			<td class="foswikiTableCol1"> webdesignZ Peru </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaFreelancer27340756">Java Freelancer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 2 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 29, 2011 </td>
+			<td class="foswikiTableCol1"> dprichards </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/RedesignApp27331455">Redesign app (iOS, Android, BB)</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 28, 2011 </td>
+			<td class="foswikiTableCol1"> Jedliu Canada </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/BuildSearchEngineToFindProfessionals">Build a search engine to find professionals</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 22, 2011 </td>
+			<td class="foswikiTableCol1"> delloyealexis </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/FinancialConsolidation">Financial Consolidation</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> pem, aat </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 21, 2011 </td>
+			<td class="foswikiTableCol1"> asherakhet06 </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/NYStartUp">NY Start Up</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 21, 2011 </td>
+			<td class="foswikiTableCol1"> easc Australia </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/HousingRepairProgram">Web Developer/programmer for Housing Repair Program</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 20, 2011 </td>
+			<td class="foswikiTableCol1"> hgalois China </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaDeveloper27177975">Java Developer</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 18, 2011 </td>
+			<td class="foswikiTableCol1"> UK_Singles_Websites </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/UKDatingApplication27154900">UK Dating Website Client Application</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 18, 2011 </td>
+			<td class="foswikiTableCol1"> dipz19 US </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/FrontEndJavaDeveloper">Front End Java Developer</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 17, 2011 </td>
+			<td class="foswikiTableCol1"> rafaelspaiva Brazil </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SeniorJavaDeveloper27146834">Senior Java Developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 17, 2011 </td>
+			<td class="foswikiTableCol1"> socialcognition </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/DominoesMoveEvaluatorInJava">Dominoes move evaluator in Java</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Android, Java EE, Java Algorithm </td>
+			<td class="foswikiTableCol5"> aat </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 17, 2011 </td>
+			<td class="foswikiTableCol1"> metronconsulting US </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SocialTravelGuide">Social Travel Guide</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Dec 12, 2011 </td>
+			<td class="foswikiTableCol1"> mkdir5019 </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/CustomIndieArtistMusicSite">Custom Indie Artist Music Site</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-17 </td>
+			<td class="foswikiTableCol1"> ras777 United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/OnlineCalculatorProgramming">Online Calculator Programming</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-10 </td>
+			<td class="foswikiTableCol1"> assaf_kamil </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LookingForProfessionalJ2EESpring3HibernateDevelopers">Looking for professional J2EE/Spring 3/Hibernate Developers</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> am </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-30 </td>
+			<td class="foswikiTableCol1"> kepler22 United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaStandaloneApplicationDevelopment">Java standalone application development</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> aat </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 4 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-25 </td>
+			<td class="foswikiTableCol1"> Msiperek United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SoftwareDeveloper28295521">Software developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Priority 1 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-24 </td>
+			<td class="foswikiTableCol1"> proofofdelivery United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/WebDeveloper28265603">Web Developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Invite </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-16 </td>
+			<td class="foswikiTableCol1"> thinktechlabs United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SalesforceDeveloper">Salesforce.com Developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-05 </td>
+			<td class="foswikiTableCol1"> gapicco United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/PerDiemJavaSpringDeveloper">Per Diem Java / Spring Developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> am </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-27 </td>
+			<td class="foswikiTableCol1"> projectsprojects </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LongTermWebAndMobileDeveloper">Long term Web and Mobile Developer(s) needed to start as part time</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-27 </td>
+			<td class="foswikiTableCol1"> antoniodjones United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/EnterpriseJavaEEDevelopmentPartnerNeeded">ENTERPRISE JAVA EE DEVELOPMENT PARTNER NEEDED</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-26 </td>
+			<td class="foswikiTableCol1"> beastie United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/ContentSellingBuyingsystem">Content Selling/Buying system</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-25 </td>
+			<td class="foswikiTableCol1"> beastie United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/DevelopContentSellingBuyingSystem">Develop a Content Selling/Buying system from scratch</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz, ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-20 </td>
+			<td class="foswikiTableCol1"> &nbsp; </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/GenerateQuickbooksFiles">Generate Quickbooks Files for Desktop &amp; Online</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> am </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> 2011-12-14 </td>
+			<td class="foswikiTableCol1 foswikiLast"> c_tech United States </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="/wiki/bin/view/Anahoret/PlayWebFrameworkJava">Play Web Framework (Java)</a> </td>
+			<td class="foswikiTableCol3 foswikiLast"> Offer </td>
+			<td class="foswikiTableCol4 foswikiLast"> Java EE </td>
+			<td class="foswikiTableCol5 foswikiLast"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> am, ds </td>
+		</tr>
+	</tbody></table>
+<p></p>
+<strong>Estimating in progress:</strong>
+<table class="foswikiTable" rules="none" border="1">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=0;table=4;up=0#sorted_table" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol1"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=1;table=4;up=0#sorted_table" title="Sort by this column">Client</a> </th>
+			<th class="foswikiTableCol2"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=2;table=4;up=0#sorted_table" title="Sort by this column">Project</a> </th>
+			<th class="foswikiTableCol3"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=3;table=4;up=0#sorted_table" title="Sort by this column">Status</a> </th>
+			<th class="foswikiTableCol4"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=4;table=4;up=0#sorted_table" title="Sort by this column">Tags</a> </th>
+			<th class="foswikiTableCol5"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=5;table=4;up=0#sorted_table" title="Sort by this column">Assigned To</a> </th>
+			<th align="right" class="foswikiTableCol6 foswikiLastCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=6;table=4;up=0#sorted_table" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-05 </td>
+			<td class="foswikiTableCol1"> woahoa </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/ChangesToAnInventoryTrackingWebApplication">Changes to an inventory tracking web application</a> </td>
+			<td class="foswikiTableCol3"> Estimating </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 2 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> 2011-12-14 </td>
+			<td class="foswikiTableCol1 foswikiLast"> rikrex07675 United States </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="/wiki/bin/view/Anahoret/LazerTagAndroidApp">Lazer Tag Android App</a> </td>
+			<td class="foswikiTableCol3 foswikiLast"> Estimating </td>
+			<td class="foswikiTableCol4 foswikiLast"> Android </td>
+			<td class="foswikiTableCol5 foswikiLast"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> ds </td>
+		</tr>
+	</tbody></table>
+<p></p>
+<strong>All projects:</strong>
+<table class="foswikiTable" rules="none" border="1">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=0;table=5;up=0#sorted_table" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol1"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=1;table=5;up=0#sorted_table" title="Sort by this column">Client</a> </th>
+			<th class="foswikiTableCol2"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=2;table=5;up=0#sorted_table" title="Sort by this column">Project</a> </th>
+			<th class="foswikiTableCol3"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=3;table=5;up=0#sorted_table" title="Sort by this column">Status</a> </th>
+			<th class="foswikiTableCol4"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=4;table=5;up=0#sorted_table" title="Sort by this column">Tags</a> </th>
+			<th class="foswikiTableCol5"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=5;table=5;up=0#sorted_table" title="Sort by this column">Assigned To</a> </th>
+			<th align="right" class="foswikiTableCol6 foswikiLastCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=6;table=5;up=0#sorted_table" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Oct 31, 2011 </td>
+			<td class="foswikiTableCol1"> socialcognition Singapore </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/AndroidBackgroundAppForStreaming">Create Android background app for streaming user data to server</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Oct 31, 2011 </td>
+			<td class="foswikiTableCol1"> socialcognition Singapore </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/CreateAtomLikeServer">Create Atom-like server with Amazon Java SDK + RDS</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> aat </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 30, 2011 </td>
+			<td class="foswikiTableCol1"> michaelricketts Australia </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/MobilePhoneAppForOnlineGroceryShopping">Mobile Phone App For Online Grocery Shopping</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 30, 2011 </td>
+			<td class="foswikiTableCol1"> dillons United Kingdom </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/ExpertIphoneAndAndroidDeveloper">Expert Iphone and Android developer required to start now.</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 30, 2011 </td>
+			<td class="foswikiTableCol1"> webdesignZ Peru </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaFreelancer27340756">Java Freelancer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 2 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 29, 2011 </td>
+			<td class="foswikiTableCol1"> mandelabrooks United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/TrysttSocialMediaProject">Trystt Social Media Project</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 29, 2011 </td>
+			<td class="foswikiTableCol1"> smoracle United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LiferayPortalDevelopment27331398">Liferay Portal Development</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 29, 2011 </td>
+			<td class="foswikiTableCol1"> dprichards </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/RedesignApp27331455">Redesign app (iOS, Android, BB)</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 29, 2011 </td>
+			<td class="foswikiTableCol1"> shongx China </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaSeniorEngineer27332391">Java senior engineer</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 28, 2011 </td>
+			<td class="foswikiTableCol1"> edine United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/DiningPaymentAppDesigner">Dining Payment App Designer</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 28, 2011 </td>
+			<td class="foswikiTableCol1"> topicpls United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/RSSFeedApplicationForWebsite">RSS Feed Application for Website</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 28, 2011 </td>
+			<td class="foswikiTableCol1"> Jedliu Canada </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/BuildSearchEngineToFindProfessionals">Build a search engine to find professionals</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 28, 2011 </td>
+			<td class="foswikiTableCol1"> <span class="foswikiNewLink">CrawlingSystems<a href="/wiki/bin/edit/Anahoret/CrawlingSystems?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> United Kingdom </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/InformationCrawlerOnGAE">Information Crawler on GAE</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 28, 2011 </td>
+			<td class="foswikiTableCol1"> writeent United Kingdom </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaTorrentDevelopmentJob">Java / Torrent development job</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 25, 2011 </td>
+			<td class="foswikiTableCol1"> <span class="foswikiNewLink">EncompassMedia<a href="/wiki/bin/edit/Anahoret/EncompassMedia?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> United Kingdom </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/ExpandingOnOurExistingWebCrawler">Expanding on our existing web crawler</a> </td>
+			<td class="foswikiTableCol3"> Missed </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 25, 2011 </td>
+			<td class="foswikiTableCol1"> alltechneeds United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaAudio">Java Audio</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 24, 2011 </td>
+			<td class="foswikiTableCol1"> Chmkwan Australia </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/MobileLoyaltyCouponApp">Mobile loyalty coupon app</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 24, 2011 </td>
+			<td class="foswikiTableCol1"> zealousco </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/GaeGwtSuperstarForStartup">GAE /GWT Superstar needed for Startup in London, UK</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 24, 2011 </td>
+			<td class="foswikiTableCol1"> Sanjay_10 India </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/EnhanceWebmailClient">Enhance open source java webmail client - Claros intouch2</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 24, 2011 </td>
+			<td class="foswikiTableCol1"> gsanna86 Italy </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/AlgorithimTrading">Algorithim trading</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Algorithm </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 24, 2011 </td>
+			<td class="foswikiTableCol1"> Akamaz Canada </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/MatlabWebService">Web Service</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 24, 2011 </td>
+			<td class="foswikiTableCol1"> James_Bamboo Romania </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/AndroidAppBugFixes">Android app bug fixes</a> </td>
+			<td class="foswikiTableCol3"> Cancelled </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Cancellation Reason: I opted to complete my project through another source </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 24, 2011 </td>
+			<td class="foswikiTableCol1"> jonrosenbeerg United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LookingForTechnicalWebDeveloperAthlete">Looking for technical web developer athlete</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 23, 2011 </td>
+			<td class="foswikiTableCol1"> epekltd </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/PostingPublicMessages">twitter, facebook, google plus API - post a public message</a> </td>
+			<td class="foswikiTableCol3"> Missed </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 23, 2011 </td>
+			<td class="foswikiTableCol1"> <span class="foswikiNewLink">NewsadN1<a href="/wiki/bin/edit/Anahoret/NewsadN1?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/TweakPDFRedactionToolforIE">Tweak PDF Redaction Tool for IE7 and IE8</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 22, 2011 </td>
+			<td class="foswikiTableCol1"> EHennessey United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaMobileApplicationProgrammer">Java/Mobile Application Programmer</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 22, 2011 </td>
+			<td class="foswikiTableCol1"> contactragu United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SeniorJavaJ2eeDeveloperArchitectProgrammer">Senior Java J2ee Developer/Architect Programmer</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 22, 2011 </td>
+			<td class="foswikiTableCol1"> delloyealexis </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/FinancialConsolidation">Financial Consolidation</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> pem, aat </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 21, 2011 </td>
+			<td class="foswikiTableCol1"> giftinginc </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/CustomizationOfOpenemmInstallation">Customization of Openemm installation</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 21, 2011 </td>
+			<td class="foswikiTableCol1"> asherakhet06 </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/NYStartUp">NY Start Up</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 21, 2011 </td>
+			<td class="foswikiTableCol1"> giftinginc </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/CustomizationOfOfbizSurveyComponent">Customization of Ofbiz Survey Component for ratings and reviews</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 21, 2011 </td>
+			<td class="foswikiTableCol1"> easc Australia </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/HousingRepairProgram">Web Developer/programmer for Housing Repair Program</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 20, 2011 </td>
+			<td class="foswikiTableCol1"> sivnan </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/FinancialApplicationsForMobileDevices">Financial applications for Mobile Devices</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 20, 2011 </td>
+			<td class="foswikiTableCol1"> Vamsi91 India </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/WebDevelopmentInJ2EEStack">Web development in Java/J2EE stack</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 20, 2011 </td>
+			<td class="foswikiTableCol1"> rajeevmehta Nepal </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/UrgentlyWanted">Urgently Wanted</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 20, 2011 </td>
+			<td class="foswikiTableCol1"> potomactrading US </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LocationBasedMessagingApp">Location Based Messaging App</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 20, 2011 </td>
+			<td class="foswikiTableCol1"> hgalois China </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaDeveloper27177975">Java Developer</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 20, 2011 </td>
+			<td class="foswikiTableCol1"> ePerfections </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaHibernateAssignment">Java Hibernate Assignment</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 19, 2011 </td>
+			<td class="foswikiTableCol1"> srokx </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SmartGWTDMIJavaMaps">SmartGWT DMI Java Maps</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 18, 2011 </td>
+			<td class="foswikiTableCol1"> yambay Australia </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/WebApplicationDeveloperUsingSeam">Web Application Developer - Using JBOSS Seam</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 18, 2011 </td>
+			<td class="foswikiTableCol1"> hhamilton US </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaDeveloperIrving27156108">Java Developer - Irving, TX ( C &amp; CTH ) - No third parties please!</a> </td>
+			<td class="foswikiTableCol3"> Missed </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 18, 2011 </td>
+			<td class="foswikiTableCol1"> olegula US </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/ImplementStandaloneBusinessMethods">Implement standalone business methods in java</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 18, 2011 </td>
+			<td class="foswikiTableCol1"> Rich2012 US </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JBossAS7Troubleshoot">JBoss AS 7 troubleshoot/debug .ear deployment failure</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 18, 2011 </td>
+			<td class="foswikiTableCol1"> UK_Singles_Websites </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/UKDatingApplication27154900">UK Dating Website Client Application</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 18, 2011 </td>
+			<td class="foswikiTableCol1"> dipz19 US </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/FrontEndJavaDeveloper">Front End Java Developer</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 17, 2011 </td>
+			<td class="foswikiTableCol1"> bjw211 China </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaSoftwareEngineer">JavaSoftware Engineer</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 17, 2011 </td>
+			<td class="foswikiTableCol1"> epicsauce US </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JiraPluginCompleteIssue">Jira Plugin - Complete Issue</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 17, 2011 </td>
+			<td class="foswikiTableCol1"> rafaelspaiva Brazil </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SeniorJavaDeveloper27146834">Senior Java Developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 17, 2011 </td>
+			<td class="foswikiTableCol1"> socialcognition </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/DominoesMoveEvaluatorInJava">Dominoes move evaluator in Java</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Android, Java EE, Java Algorithm </td>
+			<td class="foswikiTableCol5"> aat </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 17, 2011 </td>
+			<td class="foswikiTableCol1"> metronconsulting US </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SocialTravelGuide">Social Travel Guide</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 14, 2011 </td>
+			<td class="foswikiTableCol1"> Verins </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaWorkIVRProgram">Java Work (IVRProgram)</a> </td>
+			<td class="foswikiTableCol3"> Missed </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Nov 11, 2011 </td>
+			<td class="foswikiTableCol1"> mooshark </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/ImageEditorCaptureUtility">Seeking Pro Java Developer to build image editor/capture utility</a> </td>
+			<td class="foswikiTableCol3"> Missed </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Dec 12, 2011 </td>
+			<td class="foswikiTableCol1"> mkdir5019 </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/CustomIndieArtistMusicSite">Custom Indie Artist Music Site</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Dec 1, 2011 </td>
+			<td class="foswikiTableCol1"> sherafat Brazil </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaWebDevelopmentAndSupport">Java Web 2.0 Development and Support</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Dec 1, 2011 </td>
+			<td class="foswikiTableCol1"> subodh_goyal Canada </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/WebServicesRelatedWork">Web-services related work</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Dec 1, 2011 </td>
+			<td class="foswikiTableCol1"> <span class="foswikiNewLink">BobbyBedi<a href="/wiki/bin/edit/Anahoret/BobbyBedi?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> Canada </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/EcommerceWebsite27366035">Ecommerce website</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Dec 1, 2011 </td>
+			<td class="foswikiTableCol1"> sasmohan India </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaJbossAndMysqlDataEntryApplication">JAVA, JBOSS and MYSQL Data Entry Application</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Dec 1, 2011 </td>
+			<td class="foswikiTableCol1"> rickdeet </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/IPhoneiPadApptoGrabAndPushDataToWordpressSite">iPhone/iPad App to grab and push data to a Wordpress site</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-07-11 </td>
+			<td class="foswikiTableCol1"> DJBart New Zealand </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LinuxMultimediaSoftwareDevelopmentOnPandaboard">linux multimedia software development on Pandaboard</a> </td>
+			<td class="foswikiTableCol3"> New </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-05-23 </td>
+			<td class="foswikiTableCol1"> dcjackson   Palo Alto, California, United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/BuildAutocompleteSuggestBackendUsingLuceneAndClojure">Build autocomplete/suggest backend using Lucene and Clojure</a> </td>
+			<td class="foswikiTableCol3"> New </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-05-23 </td>
+			<td class="foswikiTableCol1"> wuxil Germany </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/FindAlternativeDatabaseAwareImplementations">SCALA: Find alternative database aware implementations (like Delphi ones)</a> </td>
+			<td class="foswikiTableCol3"> New </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-21 </td>
+			<td class="foswikiTableCol1"> brian_walker Germany </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/AndroidGiftCardApplicationAndWebAdminPanel">Android Gift Card Application and Web Admin Panel</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> прошло много времени </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-17 </td>
+			<td class="foswikiTableCol1"> ras777 United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/OnlineCalculatorProgramming">Online Calculator Programming</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-13 </td>
+			<td class="foswikiTableCol1"> SUPERARR United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/IReportsPrintoutFromDB4o">iReports printout from a DB4o database</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> прошло много времени </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-10 </td>
+			<td class="foswikiTableCol1"> assaf_kamil </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LookingForProfessionalJ2EESpring3HibernateDevelopers">Looking for professional J2EE/Spring 3/Hibernate Developers</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> am </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-06 </td>
+			<td class="foswikiTableCol1"> devheads United Kingdom </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/TechnicalAuthorityOnJBossProject">Technical Authority on JBoss Project</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> прошло много времени </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-06 </td>
+			<td class="foswikiTableCol1"> langomatic United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SpeechTranslationSoftware">Speech Translation Software</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-05 </td>
+			<td class="foswikiTableCol1"> JMRA United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SocialNetworkingSiteJavaSpring">Social Networking Site - Java / Spring</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 2, Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-02-05 </td>
+			<td class="foswikiTableCol1"> woahoa </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/ChangesToAnInventoryTrackingWebApplication">Changes to an inventory tracking web application</a> </td>
+			<td class="foswikiTableCol3"> Estimating </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 2 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-31 </td>
+			<td class="foswikiTableCol1"> josezald Canada </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/PdfCertificateGenerator">PDF Certificate Generator</a> </td>
+			<td class="foswikiTableCol3"> Missed </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1, Вышло по времени </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-30 </td>
+			<td class="foswikiTableCol1"> knaack United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/CreateRotatingBanner">Create rotating banner</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, подрядчик был найден раньше </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-30 </td>
+			<td class="foswikiTableCol1"> monlyu China </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaLang28362543">Java</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 3, <span class="foswikiNewLink">ExtJS<a href="/wiki/bin/edit/Anahoret/ExtJS?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> пока нам не подходит </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-30 </td>
+			<td class="foswikiTableCol1"> cpeinc1 United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/AutomatePopulatingOfPDF">Automate Populating of PDF Forms and Merging of Documents</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-30 </td>
+			<td class="foswikiTableCol1"> nvallinger United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/TdAmeritradeAutomatedTrading">TD Ameritrade Automated Trading</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority2, у нас был проект трейдер, большая вероятность что у проекта не будет старта </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-30 </td>
+			<td class="foswikiTableCol1"> <span class="foswikiNewLink">HablameSLP<a href="/wiki/bin/edit/Anahoret/HablameSLP?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SpeechPathologyArticulationApp">Speech pathology articulation app</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 2, Заказчик захотел iPad-iTunes связку без распознавания </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-30 </td>
+			<td class="foswikiTableCol1"> Kumar66 Canada </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/J2EEWebdeveloper28382293">J2EE Web developer</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Низкий рейт </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-30 </td>
+			<td class="foswikiTableCol1"> kepler22 United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaStandaloneApplicationDevelopment">Java standalone application development</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> aat </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 4 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-29 </td>
+			<td class="foswikiTableCol1"> myplt United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaProgrammer28359533">Java Programmer</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority2 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-29 </td>
+			<td class="foswikiTableCol1"> <span class="foswikiNewLink">PalInfoCom<a href="/wiki/bin/edit/Anahoret/PalInfoCom?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/WebServiceDevelopment28359706">web service development</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 3, Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-26 </td>
+			<td class="foswikiTableCol1"> samroberts1980 United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/NeedGrailsExpertise">Need Grails Expertise</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-25 </td>
+			<td class="foswikiTableCol1"> kparamsothy Canada </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/HelpWithImprovingGwtApplication">Help with improving an existing GWT application (Sencha ExtGWT widgets)</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Требовалось портфолио GWT/Sencha <span class="foswikiNewLink">ExtGWT<a href="/wiki/bin/edit/Anahoret/ExtGWT?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-25 </td>
+			<td class="foswikiTableCol1"> Msiperek United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SoftwareDeveloper28295521">Software developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Priority 1 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-24 </td>
+			<td class="foswikiTableCol1"> proofofdelivery United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/WebDeveloper28265603">Web Developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Invite </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-17 </td>
+			<td class="foswikiTableCol1"> Item4u </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaProgrammeCode">we need a java programme code</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 4. Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-17 </td>
+			<td class="foswikiTableCol1"> mfarah01 </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaDeveloperRequiredForOngoingWork">Java Developer Required for Ongoing Work</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 4. Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-17 </td>
+			<td class="foswikiTableCol1"> <span class="foswikiNewLink">OutputLogic<a href="/wiki/bin/edit/Anahoret/OutputLogic?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/TopologyViewerJavaApplication">Topology Viewer Java application</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 2, Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-16 </td>
+			<td class="foswikiTableCol1"> tjtechllc United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaDev28121793">Java dev</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1, Быстро не обработан, пропустить. </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-16 </td>
+			<td class="foswikiTableCol1"> Archanacc United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SrJavaDevelopers">Sr. Java Developers</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1, Не подходит нам </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-16 </td>
+			<td class="foswikiTableCol1"> thinktechlabs United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SalesforceDeveloper">Salesforce.com Developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-16 </td>
+			<td class="foswikiTableCol1"> GLENNGAMES </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/BoardGame">COMPUTER GAME</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-15 </td>
+			<td class="foswikiTableCol1"> Udope United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/AutomateDesktopApplication">Automate a Desktop Application</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-14 </td>
+			<td class="foswikiTableCol1"> eResearchAnalysis United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/SingleLoginPerUser">Single Login per user</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Вышел по времени в процессе обработки </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2012-01-05 </td>
+			<td class="foswikiTableCol1"> gapicco United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/PerDiemJavaSpringDeveloper">Per Diem Java / Spring Developer</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> am </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-28 </td>
+			<td class="foswikiTableCol1"> champion001 Australia </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/MillionDatabaseCvsFile">1.7 MILLION DATABASE CSV FILE INTO EASY SEARCHABLE SOFTWARE APPLICATION</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-28 </td>
+			<td class="foswikiTableCol1"> coolapps United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/ForumAdminUiUsingJQueryibernatePostgres">Forum + Admin UI using jQuery+Hibernate+Postgres</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-28 </td>
+			<td class="foswikiTableCol1"> awaqac Turkey </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaDevelopersNeededForStructuralDesignAndAnalysisToolProject">java developers needed for a structural design and analysis tool project</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-27 </td>
+			<td class="foswikiTableCol1"> BJ1200 United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/PicasaImageCroppingApplication">Picasa Image Cropping Application - Face Detection</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-27 </td>
+			<td class="foswikiTableCol1"> projectsprojects </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LongTermWebAndMobileDeveloper">Long term Web and Mobile Developer(s) needed to start as part time</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-27 </td>
+			<td class="foswikiTableCol1"> antoniodjones United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/EnterpriseJavaEEDevelopmentPartnerNeeded">ENTERPRISE JAVA EE DEVELOPMENT PARTNER NEEDED</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-26 </td>
+			<td class="foswikiTableCol1"> beastie United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/ContentSellingBuyingsystem">Content Selling/Buying system</a> </td>
+			<td class="foswikiTableCol3"> Estimated </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-25 </td>
+			<td class="foswikiTableCol1"> sales_voip-monitor Austria </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/PostgreSQLImportProgramPpdmldbimport">PDML (XML) -&gt; PostgreSQL import program (pdmldbimport)</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-25 </td>
+			<td class="foswikiTableCol1"> beastie United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/DevelopContentSellingBuyingSystem">Develop a Content Selling/Buying system from scratch</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> vz, ds </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-20 </td>
+			<td class="foswikiTableCol1"> mlewis1 </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/DevelopJavaAppletThatTakesImagesFromWebcam">develop java applet that takes images from webcam</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-20 </td>
+			<td class="foswikiTableCol1"> &nbsp; </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/GenerateQuickbooksFiles">Generate Quickbooks Files for Desktop &amp; Online</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> am </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-19 </td>
+			<td class="foswikiTableCol1"> trevkin </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JqueryMobileApplicationDeveloperNeeded">Jquery Mobile Application developer needed</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-18 </td>
+			<td class="foswikiTableCol1"> hwaite </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaProofOfConceptKioskApp">Java 'proof of concept' kiosk app (X11, XCB, JNI, Swing)</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-18 </td>
+			<td class="foswikiTableCol1"> &nbsp; </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaZKFrameworkSpringAppCustomization">Java / ZK Framework / Spring app customization</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-16 </td>
+			<td class="foswikiTableCol1"> &nbsp; </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/InvestmentManagementApplication">Investment Management Application</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Вышел по времени в процессе обработки </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-15 </td>
+			<td class="foswikiTableCol1"> tonygavan </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/UiIntegrationForEcommenceSite">UI integration for E-commence site (sturts+hibernate+mysql)</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-15 </td>
+			<td class="foswikiTableCol1"> cisglobal United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/DesktopApplicationForPublicRecordsSearches">Desktop Application for Public Records Searches</a> </td>
+			<td class="foswikiTableCol3"> Missed </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> priority 1 <strong>оновились аттачменты</strong> </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-14 </td>
+			<td class="foswikiTableCol1"> konfrst United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/UpdateJavaApplicationforMacAppStoreAndWindows">Update Java Application &amp; Ready it for Mac App Store and Windows</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-14 </td>
+			<td class="foswikiTableCol1"> obi-one United Kingdom </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/TimeAndDateApplet">A Time &amp; Date Applet required</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-14 </td>
+			<td class="foswikiTableCol1"> rikrex07675 United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LazerTagAndroidApp">Lazer Tag Android App</a> </td>
+			<td class="foswikiTableCol3"> Estimating </td>
+			<td class="foswikiTableCol4"> Android </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> ds </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-14 </td>
+			<td class="foswikiTableCol1"> c_tech United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/PlayWebFrameworkJava">Play Web Framework (Java)</a> </td>
+			<td class="foswikiTableCol3"> Offer </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> am, ds </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-14 </td>
+			<td class="foswikiTableCol1"> jumpaustralia Australia </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LearningWebsite">Learning Website</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-13 </td>
+			<td class="foswikiTableCol1"> pramodkrjsr India </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/JavaFtpInSpringProject">Java FTP in spring project</a> </td>
+			<td class="foswikiTableCol3"> Declined </td>
+			<td class="foswikiTableCol4"> Java EE </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Client Reason: Bid is too high </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-12 </td>
+			<td class="foswikiTableCol1"> <span class="foswikiNewLink">MadisonDevGroup<a href="/wiki/bin/edit/Anahoret/MadisonDevGroup?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span> United States </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/BrowserBasedVideoChatting">Browser-Based Video Chatting using JVM</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не оработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-11 </td>
+			<td class="foswikiTableCol1"> dracofrank </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/LicensingInstallerWebsite">Licensing/Installer/Website to Sell Java Desktop Application</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java EE, Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> 2011-12-11 </td>
+			<td class="foswikiTableCol1"> javissupreme </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/view/Anahoret/MinecraftGamePluginDevelopment">Minecraft game plugin development</a> </td>
+			<td class="foswikiTableCol3"> Skipped </td>
+			<td class="foswikiTableCol4"> Java Algorithm, Java Swing </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Быстро не обработан, пропустить </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> 2011-12-11 </td>
+			<td class="foswikiTableCol1 foswikiLast"> vrieling1 United States </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="/wiki/bin/view/Anahoret/CustomDesktopApplicationDevelopement">Custom Desktop Application Developement</a> </td>
+			<td class="foswikiTableCol3 foswikiLast"> Skipped </td>
+			<td class="foswikiTableCol4 foswikiLast"> Java EE, Java Swing </td>
+			<td class="foswikiTableCol5 foswikiLast"> vz </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> priority 1 </td>
+		</tr>
+	</tbody></table>
+<p></p>
+<a href="/wiki/bin/view/Anahoret/OldElanceProjectList">OldElanceProjectList</a> </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><div class="foswikiAttachments foswikiFormStep">
+<div class="twistyPlugin foswikiMakeVisible"><span id="topicattachmentslist1show" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited1"><a href="#" class="patternTwistyButton"><img src="/wiki/pub/System/DocumentGraphics/toggleopen.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>4</span></span></a></span><span id="topicattachmentslist1hide" style="" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited1"><a href="#" class="patternTwistyButton"><img src="/wiki/pub/System/DocumentGraphics/toggleclose.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>4</span></span></a></span></div><div class="twistyPlugin"><div id="topicattachmentslist1toggle" style="" class="twistyRememberSetting twistyContent twistyInited1">
+<table summary="Topic attachments" id="tableElanceProjects6" class="foswikiTable" rules="none" border="1"><caption>Topic attachments</caption>
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=0;table=6;up=0#sorted_table" title="Sort by this column">I</a> </th>
+			<th class="foswikiTableCol1"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=1;table=6;up=0#sorted_table" title="Sort by this column">Attachment</a> </th>
+			<th class="foswikiTableCol2"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=2;table=6;up=0#sorted_table" title="Sort by this column">Action</a> </th>
+			<th class="foswikiTableCol3"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=3;table=6;up=0#sorted_table" title="Sort by this column">Size</a> </th>
+			<th class="foswikiTableCol4"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=4;table=6;up=0#sorted_table" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol5"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=5;table=6;up=0#sorted_table" title="Sort by this column">Who</a> </th>
+			<th class="foswikiTableCol6 foswikiLastCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?sortcol=6;table=6;up=0#sorted_table" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Commercial_offer_rev_1.0.odt" /></span><span class="foswikiHidden">odt</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/ElanceProjects/Commercial_offer_rev_1.0.odt">Commercial_offer_rev_1.0.odt</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/ElanceProjects?filename=Commercial_offer_rev_1.0.odt;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 15.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">24 Nov 2011 - 10:24</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Commercial_offer_rev_1.1.odt" /></span><span class="foswikiHidden">odt</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/ElanceProjects/Commercial_offer_rev_1.1.odt">Commercial_offer_rev_1.1.odt</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/ElanceProjects?filename=Commercial_offer_rev_1.1.odt;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 72.2&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">29 Nov 2011 - 14:36</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> NDA added </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Commercial_offer_rev_1.2.odt" /></span><span class="foswikiHidden">odt</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/ElanceProjects/Commercial_offer_rev_1.2.odt">Commercial_offer_rev_1.2.odt</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/ElanceProjects?filename=Commercial_offer_rev_1.2.odt;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 71.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">05 Dec 2011 - 09:49</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Изменен первый абзац и название раздела, сокращен первый абзац в стеке и добавлены пробелы, добавлен опыт разработчиков, в стек добавлено <span class="foswikiNewLink">J2EE<a href="/wiki/bin/edit/Anahoret/J2EE?topicparent=Anahoret.ElanceProjects" rel="nofollow" title="Create this topic">?</a></span>?/JEE </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Commercial_offer_rev_1.3.odt" /></span><span class="foswikiHidden">odt</span> </td>
+			<td class="foswikiTableCol1 foswikiLast"> <a href="/wiki/pub/Anahoret/ElanceProjects/Commercial_offer_rev_1.3.odt">Commercial_offer_rev_1.3.odt</a> </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="/wiki/bin/attach/Anahoret/ElanceProjects?filename=Commercial_offer_rev_1.3.odt;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3 foswikiLast"> 70.6&nbsp;K </td>
+			<td class="foswikiTableCol4 foswikiLast"> <span class="foswikiNoBreak">05 Dec 2011 - 09:53</span> </td>
+			<td class="foswikiTableCol5 foswikiLast"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> Упрощен стек </td>
+		</tr>
+	</tbody></table>
+</div></div></div><a name="topic-actions"></a><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/ElanceProjects?t=1532341362;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/ElanceProjects' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/ElanceProjects?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/ElanceProjects?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/oops/Anahoret/ElanceProjects?template=oopshistory' rel='nofollow' title='View total topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a></span>: r53&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/ElanceProjects?rev1=52;rev2=53">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?rev=52">r52</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/ElanceProjects?rev1=51;rev2=52">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?rev=51">r51</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/ElanceProjects?rev1=50;rev2=51">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/ElanceProjects?rev=50">r50</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/ElanceProjects?template=backlinksweb' rel='nofollow' title='Search the Anahoret Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/ElanceProjects?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/ElanceProjects?template=more&amp;maxrev=53&amp;currrev=53' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: 20 Jan 2012, <a href="/wiki/bin/view/Main/AlexanderMikhalchuk">AlexanderMikhalchuk</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator" style="border-color:#99CC99">
+<a href='http://anahoret.com/wiki/bin/view/Anahoret/WebHome'>Anahoret</a>
+</div> <ul>
+<li> <strong><a href="/wiki/bin/view/Anahoret/DeveloperDocumentation">Документация</a></strong> <hr />
+</li> <li> <strong><a href="/wiki/bin/view/Anahoret/WebHome" class="foswikiCurrentWebHomeLink"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/home.png" width="16" height="16" alt="home" /></span> Anahoret Web</a></strong>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicCreator?parent=ElanceProjects" target="_top"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/newtopic.png" width="16" height="16" alt="newtopic" /></span> Create New Topic</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicList"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/index.png" width="16" height="16" alt="index" /></span> Index</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebSearch"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/searchtopic.png" width="16" height="16" alt="searchtopic" /></span> Search</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebChanges"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/changes.png" width="16" height="16" alt="changes" /></span> Changes</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebNotify"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/notify.png" width="16" height="16" alt="notify" /></span> Notifications</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebStatistics"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/statistics.png" width="16" height="16" alt="statistics" /></span> Statistics</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebPreferences"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/wrench.png" width="16" height="16" alt="wrench" /></span> Preferences</a> <hr />
+</li> <li> <strong>Webs</strong>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#99CC99" />&nbsp;Anahoret</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Getsocio/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Getsocio</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Mailinator/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Mailinator</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Main/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFEFA6" />&nbsp;Main</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Projects/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFCC00" />&nbsp;Projects</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Sandbox/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#B9DAFF" />&nbsp;Sandbox</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Skills/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#ffa199" />&nbsp;Skills</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/System/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFD8AA" />&nbsp;System</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Tracker/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#33CC99" />&nbsp;Tracker</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Trash/InVision/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;<span class='foswikiWebIndent'></span>InVision</a></span>
+</li></ul> 
+<p></p>
+</div></div>
+</div>
+<div class="clear">&nbsp;</div>
+</div></div><div id="patternTopBar"><div id="patternTopBarContentsWrapper"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="http://anahoret.com/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/Main/WebHome/anadea-logo.png" border="0" alt="Anahoret wiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+ <ul>
+<li> <form name="jumpForm" action="/wiki/bin/view/Anahoret/ElanceProjects"><input id="jumpFormField" title="Jump" type="text" class="foswikiInputField foswikiDefaultText" name="topic" value="" size="18" /><noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript>   </form>
+</li> <li> <form name="quickSearchForm" action="/wiki/bin/view/Anahoret/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Anahoret" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript>   </form>
+</li></ul> 
+<p></p>
+</td></tr></table></div></div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"></div></div></div>
+</div>
+</div>
+</div>
+</div></body></html>

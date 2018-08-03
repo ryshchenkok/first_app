@@ -1,0 +1,13 @@
+[07/23/18, 09:30:29:220] info: ╔═══════════════════════════════════════════════════════════════════════╗
+[07/23/18, 09:30:29:221] info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 07/23/18, 09:30:29:217      ║
+[07/23/18, 09:30:29:221] info: ╚═══════════════════════════════════════════════════════════════════════╝
+[07/23/18, 09:30:29:313] info: Initializing local storage instance at path: /Users/kr/Library/Application Support/Slack/local-settings.json
+[07/23/18, 09:30:29:779] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[07/23/18, 09:30:29:783] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[07/23/18, 09:30:30:411] info: Store: SET_NETWORK_STATUS online
+[07/23/18, 09:30:30:412] info: Store: MAIN_WINDOW_SHOWN
+[07/23/18, 09:30:30:426] info: Store: ADD_WINDOW
+{
+  "id": 3,
+  "type": "sign-in"
+}

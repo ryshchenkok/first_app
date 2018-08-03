@@ -1,0 +1,3410 @@
+Drupal.locale = { 'pluralFormula': function ($n) { return Number((((($n%10)==1)&&(($n%100)!=11))?(0):((((($n%10)>=2)&&(($n%10)<=4))&&((($n%100)<10)||(($n%100)>=20)))?(1):2))); }, 'strings': {"":{"An AJAX HTTP error occurred.":"\u0412\u043e\u0437\u043d\u0438\u043a\u043b\u0430 AJAX HTTP \u043e\u0448\u0438\u0431\u043a\u0430.","HTTP Result Code: !status":"\u041f\u043e\u043b\u0443\u0447\u0435\u043d\u043d\u044b\u0439 \u043a\u043e\u0434 HTTP: !status","An AJAX HTTP request terminated abnormally.":"HTTP \u0437\u0430\u043f\u0440\u043e\u0441 AJAX \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d \u043d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e.","Debugging information follows.":"\u0421\u043b\u0435\u0434\u0443\u0435\u0442 \u043e\u0442\u043b\u0430\u0434\u043e\u0447\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f.","Path: !uri":"\u041f\u0443\u0442\u044c: !uri","StatusText: !statusText":"\u0421\u0442\u0430\u0442\u0443\u0441\u0422\u0435\u043a\u0441\u0442\u043e\u043c","ResponseText: !responseText":"\u041e\u0442\u0432\u0435\u0442\u0422\u0435\u043a\u0441\u0442\u043e\u043c: !responseText","ReadyState: !readyState":"ReadyState: !readyState","Hide":"\u0421\u043a\u0440\u044b\u0442\u044c","Show":"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c","Re-order rows by numerical weight instead of dragging.":"\u0423\u043f\u043e\u0440\u044f\u0434\u043e\u0447\u0438\u0442\u044c \u0441\u0442\u0440\u043e\u043a\u0438 \u043f\u043e \u0432\u0435\u0441\u0443 \u0432\u043c\u0435\u0441\u0442\u043e \u043f\u0435\u0440\u0435\u0442\u0430\u0441\u043a\u0438\u0432\u0430\u043d\u0438\u044f.","Show row weights":"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0432\u0435\u0441 \u0441\u0442\u0440\u043e\u043a","Hide row weights":"\u0421\u043a\u0440\u044b\u0442\u044c \u0432\u0435\u0441 \u0441\u0442\u0440\u043e\u043a","Drag to re-order":"\u0418\u0437\u043c\u0435\u043d\u0438\u0442\u044c \u043f\u043e\u0440\u044f\u0434\u043e\u043a \u043c\u043e\u0436\u043d\u043e, \u043f\u0435\u0440\u0435\u0442\u0430\u0449\u0438\u0432 \u043f\u0443\u043d\u043a\u0442 \u043c\u044b\u0448\u043a\u043e\u0439.","Changes made in this table will not be saved until the form is submitted.":"\u0421\u0434\u0435\u043b\u0430\u043d\u043d\u044b\u0435 \u0432 \u0441\u043f\u0438\u0441\u043a\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u043d\u0435 \u0432\u0441\u0442\u0443\u043f\u044f\u0442 \u0432 \u0441\u0438\u043b\u0443, \u043f\u043e\u043a\u0430 \u0432\u044b \u043d\u0435 \u0441\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u0435 \u0438\u0445.","Mar":"\u041c\u0430\u0440","Edit":"\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c","Configure":"\u041d\u0430\u0441\u0442\u0440\u043e\u0438\u0442\u044c","Not published":"\u041d\u0435 \u043e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043d\u043e","None":"\u041d\u0435\u0442","Yes":"\u0414\u0430","No":"\u041d\u0435\u0442","Enabled":"\u0412\u043a\u043b\u044e\u0447\u0435\u043d\u043e","Disabled":"\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u043e","(active tab)":"(\u0430\u043a\u0442\u0438\u0432\u043d\u0430\u044f \u0432\u043a\u043b\u0430\u0434\u043a\u0430)","This field is required.":"\u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0434\u043b\u044f \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f.","Please wait...":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435...","Upload":"\u0417\u0430\u043a\u0430\u0447\u0430\u0442\u044c","Only files with the following extensions are allowed: %files-allowed.":"\u041f\u0440\u0438\u043a\u0440\u0435\u043f\u043b\u044f\u0442\u044c \u043c\u043e\u0436\u043d\u043e \u0442\u043e\u043b\u044c\u043a\u043e \u0444\u0430\u0439\u043b\u044b \u0441 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u044f\u043c\u0438: %files-allowed.","The selected file %filename cannot be uploaded. Only files with the following extensions are allowed: %extensions.":"\u0412\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0439 \u0444\u0430\u0439\u043b %filename \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043d. \u0412\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430 \u0444\u0430\u0439\u043b\u043e\u0432 \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u043e \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u043c\u0438 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u044f\u043c\u0438: %extensions.","Not in menu":"\u041d\u0435 \u0432 \u043c\u0435\u043d\u044e","Alias: @alias":"\u0421\u0438\u043d\u043e\u043d\u0438\u043c: @alias","No alias":"\u0421\u0438\u043d\u043e\u043d\u0438\u043c \u043d\u0435 \u0437\u0430\u0434\u0430\u043d","Autocomplete popup":"\u0412\u0441\u043f\u043b\u044b\u0432\u0430\u044e\u0449\u0435\u0435 \u0430\u0432\u0442\u043e\u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435","Searching for matches...":"\u041f\u043e\u0438\u0441\u043a \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439...","Select all rows in this table":"\u041e\u0442\u043c\u0435\u0442\u0438\u0442\u044c \u0432\u0441\u0435 \u0441\u0442\u0440\u043e\u043a\u0438 \u0442\u0430\u0431\u043b\u0438\u0446\u044b","Deselect all rows in this table":"\u0421\u043d\u044f\u0442\u044c \u043e\u0442\u043c\u0435\u0442\u043a\u0443 \u0441\u043e \u0432\u0441\u0435\u0445 \u043a\u043e\u043b\u043e\u043d\u043e\u043a \u0442\u0430\u0431\u043b\u0438\u0446\u044b","Cancel":"\u041e\u0442\u043c\u0435\u043d\u0438\u0442\u044c","Add":"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c","Hide summary":"\u0421\u043a\u0440\u044b\u0442\u044c \u0430\u043d\u043e\u043d\u0441","Edit summary":"\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0430\u043d\u043e\u043d\u0441","New revision":"\u041d\u043e\u0432\u0430\u044f \u0440\u0435\u0434\u0430\u043a\u0446\u0438\u044f","No revision":"\u041d\u0435\u0442 \u0440\u0435\u0434\u0430\u043a\u0446\u0438\u0438","By @name on @date":"@name, @date","By @name":"@name","Next":"\u0414\u0430\u043b\u0435\u0435","Sunday":"\u0432\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u044c\u0435","Monday":"\u043f\u043e\u043d\u0435\u0434\u0435\u043b\u044c\u043d\u0438\u043a","Tuesday":"\u0432\u0442\u043e\u0440\u043d\u0438\u043a","Wednesday":"\u0441\u0440\u0435\u0434\u0430","Thursday":"\u0447\u0435\u0442\u0432\u0435\u0440\u0433","Friday":"\u043f\u044f\u0442\u043d\u0438\u0446\u0430","Saturday":"\u0441\u0443\u0431\u0431\u043e\u0442\u0430","Done":"\u0413\u043e\u0442\u043e\u0432\u043e","Prev":"\u041d\u0430\u0437\u0430\u0434","Mon":"\u043f\u043d","Tue":"\u0432\u0442","Wed":"\u0441\u0440","Thu":"\u0447\u0442","Fri":"\u043f\u0442","Sat":"\u0441\u0431","Sun":"\u0432\u0441","January":"\u044f\u043d\u0432\u0430\u0440\u044f","February":"\u0444\u0435\u0432\u0440\u0430\u043b\u044f","March":"\u043c\u0430\u0440\u0442\u0430","April":"\u0430\u043f\u0440\u0435\u043b\u044f","May":"\u043c\u0430\u044f","June":"\u0438\u044e\u043d\u044f","July":"\u0438\u044e\u043b\u044f","August":"\u0430\u0432\u0433\u0443\u0441\u0442\u0430","September":"\u0441\u0435\u043d\u0442\u044f\u0431\u0440\u044f","October":"\u043e\u043a\u0442\u044f\u0431\u0440\u044f","November":"\u043d\u043e\u044f\u0431\u0440\u044f","December":"\u0434\u0435\u043a\u0430\u0431\u0440\u044f","Today":"\u0421\u0435\u0433\u043e\u0434\u043d\u044f","Jan":"\u042f\u043d\u0432","Feb":"\u0424\u0435\u0432","Apr":"\u0410\u043f\u0440","Jun":"\u0418\u044e\u043d","Jul":"\u0418\u044e\u043b","Aug":"\u0410\u0432\u0433","Sep":"\u0421\u0435\u043d","Oct":"\u041e\u043a\u0442","Nov":"\u041d\u043e\u044f","Dec":"\u0414\u0435\u043a","Su":"\u0412\u0441","Mo":"\u041f\u043d","Tu":"\u0412\u0442","We":"\u0421\u0440","Th":"\u0427\u0442","Fr":"\u041f\u0442","Sa":"\u0421\u0431","Show descriptions":"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u044f","Not supported!":"\u041d\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044f!","Hide descriptions":"\u0421\u043a\u0440\u044b\u0442\u044c \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u044f","mm\/dd\/yy":"\u043c\u043c\/\u0434\u0434\/\u0433\u0433","The changes to these blocks will not be saved until the \u003Cem\u003ESave blocks\u003C\/em\u003E button is clicked.":"\u0418\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f, \u0441\u0434\u0435\u043b\u0430\u043d\u043d\u044b\u0435 \u0432 \u0431\u043b\u043e\u043a\u0430\u0445 \u043d\u0435 \u0432\u0441\u0442\u0443\u043f\u044f\u0442 \u0432 \u0441\u0438\u043b\u0443 \u043f\u043e\u043a\u0430 \u0432\u044b \u043d\u0435 \u043d\u0430\u0436\u043c\u0435\u0442\u0435 \u043a\u043d\u043e\u043f\u043a\u0443 \u003Cem\u003E\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0431\u043b\u043e\u043a\u0438\u003C\/em\u003E.","Flag translations as outdated":"\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430","This permission is inherited from the authenticated user role.":"\u042d\u0442\u043e \u043f\u0440\u0430\u0432\u043e \u043d\u0430\u0441\u043b\u0435\u0434\u0443\u0435\u0442\u0441\u044f \u043e\u0442 \u0440\u043e\u043b\u0438 \u00ab\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u00bb.","@number comments per page":"@number \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0435\u0432 \u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443","Requires a title":"\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a","Not restricted":"\u0411\u0435\u0437 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u0439","Not customizable":"\u041d\u0435 \u043d\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u043c\u044b\u0439","Restricted to certain pages":"\u041e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043e \u0434\u043b\u044f \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0451\u043d\u043d\u044b\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446","The block cannot be placed in this region.":"\u0411\u043b\u043e\u043a \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0440\u0430\u0437\u043c\u0435\u0449\u0451\u043d \u0432 \u044d\u0442\u043e\u043c \u0440\u0435\u0433\u0438\u043e\u043d\u0435.","Customize dashboard":"\u041d\u0430\u0441\u0442\u0440\u043e\u0438\u0442\u044c \u043f\u0430\u043d\u0435\u043b\u044c","Don\u0027t display post information":"\u041d\u0435 \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0442\u044c \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044e \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u0430","Don\u0027t follow me!":"\u0425\u0432\u0430\u0442\u0438\u0442 \u043f\u0440\u0435\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u044c \u043c\u0435\u043d\u044f!","Saving vote...":"\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u043c...","Read more":"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0431\u043e\u043b\u044c\u0448\u0435","You are":"\u0412\u044b \u043d\u0430\u0445\u043e\u0434\u0438\u0442\u0435\u0441\u044c","in Russia":"\u0432 \u0420\u043e\u0441\u0441\u0438\u0438","in Belarus":"\u0432 \u0411\u0435\u043b\u043e\u0440\u0443\u0441\u0441\u0438\u0438","in Kazakhstan":"\u0432 \u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d\u0435","Yeah, right":"\u0414\u0430, \u0432\u0435\u0440\u043d\u043e","in Ukraine":"\u0432 \u0423\u043a\u0440\u0430\u0438\u043d\u0435","Hey, stop chasing me!":"\u0425\u0432\u0430\u0442\u0438\u0442 \u043f\u0440\u0435\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u044c \u043c\u0435\u043d\u044f!","Read more:":"\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a:","eSputnik.com - Marketing Automation Service":"eSputnik.com - \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438 \u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u0430"}} };;
+/*
+ * FancyBox - jQuery Plugin
+ * Simple and fancy lightbox alternative
+ *
+ * Examples and documentation at: http://fancybox.net
+ *
+ * Copyright (c) 2008 - 2010 Janis Skarnelis
+ * That said, it is hardly a one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
+ *
+ * Version: 1.3.4 (11/11/2010)
+ * Requires: jQuery v1.3+
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+
+;(function($) {
+	var tmp, loading, overlay, wrap, outer, content, close, title, nav_left, nav_right,
+
+		selectedIndex = 0, selectedOpts = {}, selectedArray = [], currentIndex = 0, currentOpts = {}, currentArray = [],
+
+		ajaxLoader = null, imgPreloader = new Image(), imgRegExp = /\.(jpg|gif|png|bmp|jpeg)(.*)?$/i, swfRegExp = /[^\.]\.(swf)\s*$/i,
+
+		loadingTimer, loadingFrame = 1,
+
+		titleHeight = 0, titleStr = '', start_pos, final_pos, busy = false, fx = $.extend($('<div/>')[0], { prop: 0 }),
+
+		isIE6 = $.browser.msie && $.browser.version < 7 && !window.XMLHttpRequest,
+
+		/*
+		 * Private methods 
+		 */
+
+		_abort = function() {
+			loading.hide();
+
+			imgPreloader.onerror = imgPreloader.onload = null;
+
+			if (ajaxLoader) {
+				ajaxLoader.abort();
+			}
+
+			tmp.empty();
+		},
+
+		_error = function() {
+			if (false === selectedOpts.onError(selectedArray, selectedIndex, selectedOpts)) {
+				loading.hide();
+				busy = false;
+				return;
+			}
+
+			selectedOpts.titleShow = false;
+
+			selectedOpts.width = 'auto';
+			selectedOpts.height = 'auto';
+
+			tmp.html( '<p id="fancybox-error">The requested content cannot be loaded.<br />Please try again later.</p>' );
+
+			_process_inline();
+		},
+
+		_start = function() {
+			var obj = selectedArray[ selectedIndex ],
+				href, 
+				type, 
+				title,
+				str,
+				emb,
+				ret;
+
+			_abort();
+
+			selectedOpts = $.extend({}, $.fn.fancybox.defaults, (typeof $(obj).data('fancybox') == 'undefined' ? selectedOpts : $(obj).data('fancybox')));
+
+			ret = selectedOpts.onStart(selectedArray, selectedIndex, selectedOpts);
+
+			if (ret === false) {
+				busy = false;
+				return;
+			} else if (typeof ret == 'object') {
+				selectedOpts = $.extend(selectedOpts, ret);
+			}
+
+			title = selectedOpts.title || (obj.nodeName ? $(obj).attr('title') : obj.title) || '';
+
+			if (obj.nodeName && !selectedOpts.orig) {
+				selectedOpts.orig = $(obj).children("img:first").length ? $(obj).children("img:first") : $(obj);
+			}
+
+			if (title === '' && selectedOpts.orig && selectedOpts.titleFromAlt) {
+				title = selectedOpts.orig.attr('alt');
+			}
+
+			href = selectedOpts.href || (obj.nodeName ? $(obj).attr('href') : obj.href) || null;
+
+			if ((/^(?:javascript)/i).test(href) || href == '#') {
+				href = null;
+			}
+
+			if (selectedOpts.type) {
+				type = selectedOpts.type;
+
+				if (!href) {
+					href = selectedOpts.content;
+				}
+
+			} else if (selectedOpts.content) {
+				type = 'html';
+
+			} else if (href) {
+				if (href.match(imgRegExp)) {
+					type = 'image';
+
+				} else if (href.match(swfRegExp)) {
+					type = 'swf';
+
+				} else if ($(obj).hasClass("iframe")) {
+					type = 'iframe';
+
+				} else if (href.indexOf("#") === 0) {
+					type = 'inline';
+
+				} else {
+					type = 'ajax';
+				}
+			}
+
+			if (!type) {
+				_error();
+				return;
+			}
+
+			if (type == 'inline') {
+				obj	= href.substr(href.indexOf("#"));
+				type = $(obj).length > 0 ? 'inline' : 'ajax';
+			}
+
+			selectedOpts.type = type;
+			selectedOpts.href = href;
+			selectedOpts.title = title;
+
+			if (selectedOpts.autoDimensions) {
+				if (selectedOpts.type == 'html' || selectedOpts.type == 'inline' || selectedOpts.type == 'ajax') {
+					selectedOpts.width = 'auto';
+					selectedOpts.height = 'auto';
+				} else {
+					selectedOpts.autoDimensions = false;	
+				}
+			}
+
+			if (selectedOpts.modal) {
+				selectedOpts.overlayShow = true;
+				selectedOpts.hideOnOverlayClick = false;
+				selectedOpts.hideOnContentClick = false;
+				selectedOpts.enableEscapeButton = false;
+				selectedOpts.showCloseButton = false;
+			}
+
+			selectedOpts.padding = parseInt(selectedOpts.padding, 10);
+			selectedOpts.margin = parseInt(selectedOpts.margin, 10);
+
+			tmp.css('padding', (selectedOpts.padding + selectedOpts.margin));
+
+			$('.fancybox-inline-tmp').unbind('fancybox-cancel').bind('fancybox-change', function() {
+				$(this).replaceWith(content.children());				
+			});
+
+			switch (type) {
+				case 'html' :
+					tmp.html( selectedOpts.content );
+					_process_inline();
+				break;
+
+				case 'inline' :
+					if ( $(obj).parent().is('#fancybox-content') === true) {
+						busy = false;
+						return;
+					}
+
+					$('<div class="fancybox-inline-tmp" />')
+						.hide()
+						.insertBefore( $(obj) )
+						.bind('fancybox-cleanup', function() {
+							$(this).replaceWith(content.children());
+						}).bind('fancybox-cancel', function() {
+							$(this).replaceWith(tmp.children());
+						});
+
+					$(obj).appendTo(tmp);
+
+					_process_inline();
+				break;
+
+				case 'image':
+					busy = false;
+
+					$.fancybox.showActivity();
+
+					imgPreloader = new Image();
+
+					imgPreloader.onerror = function() {
+						_error();
+					};
+
+					imgPreloader.onload = function() {
+						busy = true;
+
+						imgPreloader.onerror = imgPreloader.onload = null;
+
+						_process_image();
+					};
+
+					imgPreloader.src = href;
+				break;
+
+				case 'swf':
+					selectedOpts.scrolling = 'no';
+
+					str = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="' + selectedOpts.width + '" height="' + selectedOpts.height + '"><param name="movie" value="' + href + '"></param>';
+					emb = '';
+
+					$.each(selectedOpts.swf, function(name, val) {
+						str += '<param name="' + name + '" value="' + val + '"></param>';
+						emb += ' ' + name + '="' + val + '"';
+					});
+
+					str += '<embed src="' + href + '" type="application/x-shockwave-flash" width="' + selectedOpts.width + '" height="' + selectedOpts.height + '"' + emb + '></embed></object>';
+
+					tmp.html(str);
+
+					_process_inline();
+				break;
+
+				case 'ajax':
+					busy = false;
+
+					$.fancybox.showActivity();
+
+					selectedOpts.ajax.win = selectedOpts.ajax.success;
+
+					ajaxLoader = $.ajax($.extend({}, selectedOpts.ajax, {
+						url	: href,
+						data : selectedOpts.ajax.data || {},
+						error : function(XMLHttpRequest, textStatus, errorThrown) {
+							if ( XMLHttpRequest.status > 0 ) {
+								_error();
+							}
+						},
+						success : function(data, textStatus, XMLHttpRequest) {
+							var o = typeof XMLHttpRequest == 'object' ? XMLHttpRequest : ajaxLoader;
+							if (o.status == 200) {
+								if ( typeof selectedOpts.ajax.win == 'function' ) {
+									ret = selectedOpts.ajax.win(href, data, textStatus, XMLHttpRequest);
+
+									if (ret === false) {
+										loading.hide();
+										return;
+									} else if (typeof ret == 'string' || typeof ret == 'object') {
+										data = ret;
+									}
+								}
+
+								tmp.html( data );
+								_process_inline();
+							}
+						}
+					}));
+
+				break;
+
+				case 'iframe':
+					_show();
+				break;
+			}
+		},
+
+		_process_inline = function() {
+			var
+				w = selectedOpts.width,
+				h = selectedOpts.height;
+
+			if (w.toString().indexOf('%') > -1) {
+				w = parseInt( ($(window).width() - (selectedOpts.margin * 2)) * parseFloat(w) / 100, 10) + 'px';
+
+			} else {
+				w = w == 'auto' ? 'auto' : w + 'px';	
+			}
+
+			if (h.toString().indexOf('%') > -1) {
+				h = parseInt( ($(window).height() - (selectedOpts.margin * 2)) * parseFloat(h) / 100, 10) + 'px';
+
+			} else {
+				h = h == 'auto' ? 'auto' : h + 'px';	
+			}
+
+			tmp.wrapInner('<div style="width:' + w + ';height:' + h + ';overflow: ' + (selectedOpts.scrolling == 'auto' ? 'auto' : (selectedOpts.scrolling == 'yes' ? 'scroll' : 'hidden')) + ';position:relative;"></div>');
+
+			selectedOpts.width = tmp.width();
+			selectedOpts.height = tmp.height();
+
+			_show();
+		},
+
+		_process_image = function() {
+			selectedOpts.width = imgPreloader.width;
+			selectedOpts.height = imgPreloader.height;
+
+			$("<img />").attr({
+				'id' : 'fancybox-img',
+				'src' : imgPreloader.src,
+				'alt' : selectedOpts.title
+			}).appendTo( tmp );
+
+			_show();
+		},
+
+		_show = function() {
+			var pos, equal;
+
+			loading.hide();
+
+			if (wrap.is(":visible") && false === currentOpts.onCleanup(currentArray, currentIndex, currentOpts)) {
+				$.event.trigger('fancybox-cancel');
+
+				busy = false;
+				return;
+			}
+
+			busy = true;
+
+			$(content.add( overlay )).unbind();
+
+			$(window).unbind("resize.fb scroll.fb");
+			$(document).unbind('keydown.fb');
+
+			if (wrap.is(":visible") && currentOpts.titlePosition !== 'outside') {
+				wrap.css('height', wrap.height());
+			}
+
+			currentArray = selectedArray;
+			currentIndex = selectedIndex;
+			currentOpts = selectedOpts;
+
+			if (currentOpts.overlayShow) {
+				overlay.css({
+					'background-color' : currentOpts.overlayColor,
+					'opacity' : currentOpts.overlayOpacity,
+					'cursor' : currentOpts.hideOnOverlayClick ? 'pointer' : 'auto',
+					'height' : $(document).height()
+				});
+
+				if (!overlay.is(':visible')) {
+					if (isIE6) {
+						$('select:not(#fancybox-tmp select)').filter(function() {
+							return this.style.visibility !== 'hidden';
+						}).css({'visibility' : 'hidden'}).one('fancybox-cleanup', function() {
+							this.style.visibility = 'inherit';
+						});
+					}
+
+					overlay.show();
+				}
+			} else {
+				overlay.hide();
+			}
+
+			final_pos = _get_zoom_to();
+
+			_process_title();
+
+			if (wrap.is(":visible")) {
+				$( close.add( nav_left ).add( nav_right ) ).hide();
+
+				pos = wrap.position(),
+
+				start_pos = {
+					top	 : pos.top,
+					left : pos.left,
+					width : wrap.width(),
+					height : wrap.height()
+				};
+
+				equal = (start_pos.width == final_pos.width && start_pos.height == final_pos.height);
+
+				content.fadeTo(currentOpts.changeFade, 0.3, function() {
+					var finish_resizing = function() {
+						content.html( tmp.contents() ).fadeTo(currentOpts.changeFade, 1, _finish);
+					};
+
+					$.event.trigger('fancybox-change');
+
+					content
+						.empty()
+						.removeAttr('filter')
+						.css({
+							'border-width' : currentOpts.padding,
+							'width'	: final_pos.width - currentOpts.padding * 2,
+							'height' : selectedOpts.autoDimensions ? 'auto' : final_pos.height - titleHeight - currentOpts.padding * 2
+						});
+
+					if (equal) {
+						finish_resizing();
+
+					} else {
+						fx.prop = 0;
+
+						$(fx).animate({prop: 1}, {
+							 duration : currentOpts.changeSpeed,
+							 easing : currentOpts.easingChange,
+							 step : _draw,
+							 complete : finish_resizing
+						});
+					}
+				});
+
+				return;
+			}
+
+			wrap.removeAttr("style");
+
+			content.css('border-width', currentOpts.padding);
+
+			if (currentOpts.transitionIn == 'elastic') {
+				start_pos = _get_zoom_from();
+
+				content.html( tmp.contents() );
+
+				wrap.show();
+
+				if (currentOpts.opacity) {
+					final_pos.opacity = 0;
+				}
+
+				fx.prop = 0;
+
+				$(fx).animate({prop: 1}, {
+					 duration : currentOpts.speedIn,
+					 easing : currentOpts.easingIn,
+					 step : _draw,
+					 complete : _finish
+				});
+
+				return;
+			}
+
+			if (currentOpts.titlePosition == 'inside' && titleHeight > 0) {	
+				title.show();	
+			}
+
+			content
+				.css({
+					'width' : final_pos.width - currentOpts.padding * 2,
+					'height' : selectedOpts.autoDimensions ? 'auto' : final_pos.height - titleHeight - currentOpts.padding * 2
+				})
+				.html( tmp.contents() );
+
+			wrap
+				.css(final_pos)
+				.fadeIn( currentOpts.transitionIn == 'none' ? 0 : currentOpts.speedIn, _finish );
+		},
+
+		_format_title = function(title) {
+			if (title && title.length) {
+				if (currentOpts.titlePosition == 'float') {
+					return '<table id="fancybox-title-float-wrap" cellpadding="0" cellspacing="0"><tr><td id="fancybox-title-float-left"></td><td id="fancybox-title-float-main">' + title + '</td><td id="fancybox-title-float-right"></td></tr></table>';
+				}
+
+				return '<div id="fancybox-title-' + currentOpts.titlePosition + '">' + title + '</div>';
+			}
+
+			return false;
+		},
+
+		_process_title = function() {
+			titleStr = currentOpts.title || '';
+			titleHeight = 0;
+
+			title
+				.empty()
+				.removeAttr('style')
+				.removeClass();
+
+			if (currentOpts.titleShow === false) {
+				title.hide();
+				return;
+			}
+
+			titleStr = $.isFunction(currentOpts.titleFormat) ? currentOpts.titleFormat(titleStr, currentArray, currentIndex, currentOpts) : _format_title(titleStr);
+
+			if (!titleStr || titleStr === '') {
+				title.hide();
+				return;
+			}
+
+			title
+				.addClass('fancybox-title-' + currentOpts.titlePosition)
+				.html( titleStr )
+				.appendTo( 'body' )
+				.show();
+
+			switch (currentOpts.titlePosition) {
+				case 'inside':
+					title
+						.css({
+							'width' : final_pos.width - (currentOpts.padding * 2),
+							'marginLeft' : currentOpts.padding,
+							'marginRight' : currentOpts.padding
+						});
+
+					titleHeight = title.outerHeight(true);
+
+					title.appendTo( outer );
+
+					final_pos.height += titleHeight;
+				break;
+
+				case 'over':
+					title
+						.css({
+							'marginLeft' : currentOpts.padding,
+							'width'	: final_pos.width - (currentOpts.padding * 2),
+							'bottom' : currentOpts.padding
+						})
+						.appendTo( outer );
+				break;
+
+				case 'float':
+					title
+						.css('left', parseInt((title.width() - final_pos.width - 40)/ 2, 10) * -1)
+						.appendTo( wrap );
+				break;
+
+				default:
+					title
+						.css({
+							'width' : final_pos.width - (currentOpts.padding * 2),
+							'paddingLeft' : currentOpts.padding,
+							'paddingRight' : currentOpts.padding
+						})
+						.appendTo( wrap );
+				break;
+			}
+
+			title.hide();
+		},
+
+		_set_navigation = function() {
+			if (currentOpts.enableEscapeButton || currentOpts.enableKeyboardNav) {
+				$(document).bind('keydown.fb', function(e) {
+					if (e.keyCode == 27 && currentOpts.enableEscapeButton) {
+						e.preventDefault();
+						$.fancybox.close();
+
+					} else if ((e.keyCode == 37 || e.keyCode == 39) && currentOpts.enableKeyboardNav && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA' && e.target.tagName !== 'SELECT') {
+						e.preventDefault();
+						$.fancybox[ e.keyCode == 37 ? 'prev' : 'next']();
+					}
+				});
+			}
+
+			if (!currentOpts.showNavArrows) { 
+				nav_left.hide();
+				nav_right.hide();
+				return;
+			}
+
+			if ((currentOpts.cyclic && currentArray.length > 1) || currentIndex !== 0) {
+				nav_left.show();
+			}
+
+			if ((currentOpts.cyclic && currentArray.length > 1) || currentIndex != (currentArray.length -1)) {
+				nav_right.show();
+			}
+		},
+
+		_finish = function () {
+			if (!$.support.opacity) {
+				content.get(0).style.removeAttribute('filter');
+				wrap.get(0).style.removeAttribute('filter');
+			}
+
+			if (selectedOpts.autoDimensions) {
+				content.css('height', 'auto');
+			}
+
+			wrap.css('height', 'auto');
+
+			if (titleStr && titleStr.length) {
+				title.show();
+			}
+
+			if (currentOpts.showCloseButton) {
+				close.show();
+			}
+
+			_set_navigation();
+	
+			if (currentOpts.hideOnContentClick)	{
+				content.bind('click', $.fancybox.close);
+			}
+
+			if (currentOpts.hideOnOverlayClick)	{
+				overlay.bind('click', $.fancybox.close);
+			}
+
+			$(window).bind("resize.fb", $.fancybox.resize);
+
+			if (currentOpts.centerOnScroll) {
+				$(window).bind("scroll.fb", $.fancybox.center);
+			}
+
+			if (currentOpts.type == 'iframe') {
+				$('<iframe id="fancybox-frame" name="fancybox-frame' + new Date().getTime() + '" frameborder="0" hspace="0" ' + ($.browser.msie ? 'allowtransparency="true""' : '') + ' scrolling="' + selectedOpts.scrolling + '" src="' + currentOpts.href + '"></iframe>').appendTo(content);
+			}
+
+			wrap.show();
+
+			busy = false;
+
+			$.fancybox.center();
+
+			currentOpts.onComplete(currentArray, currentIndex, currentOpts);
+
+			_preload_images();
+		},
+
+		_preload_images = function() {
+			var href, 
+				objNext;
+
+			if ((currentArray.length -1) > currentIndex) {
+				href = currentArray[ currentIndex + 1 ].href;
+
+				if (typeof href !== 'undefined' && href.match(imgRegExp)) {
+					objNext = new Image();
+					objNext.src = href;
+				}
+			}
+
+			if (currentIndex > 0) {
+				href = currentArray[ currentIndex - 1 ].href;
+
+				if (typeof href !== 'undefined' && href.match(imgRegExp)) {
+					objNext = new Image();
+					objNext.src = href;
+				}
+			}
+		},
+
+		_draw = function(pos) {
+			var dim = {
+				width : parseInt(start_pos.width + (final_pos.width - start_pos.width) * pos, 10),
+				height : parseInt(start_pos.height + (final_pos.height - start_pos.height) * pos, 10),
+
+				top : parseInt(start_pos.top + (final_pos.top - start_pos.top) * pos, 10),
+				left : parseInt(start_pos.left + (final_pos.left - start_pos.left) * pos, 10)
+			};
+
+			if (typeof final_pos.opacity !== 'undefined') {
+				dim.opacity = pos < 0.5 ? 0.5 : pos;
+			}
+
+			wrap.css(dim);
+
+			content.css({
+				'width' : dim.width - currentOpts.padding * 2,
+				'height' : dim.height - (titleHeight * pos) - currentOpts.padding * 2
+			});
+		},
+
+		_get_viewport = function() {
+			return [
+				$(window).width() - (currentOpts.margin * 2),
+				$(window).height() - (currentOpts.margin * 2),
+				$(document).scrollLeft() + currentOpts.margin,
+				$(document).scrollTop() + currentOpts.margin
+			];
+		},
+
+		_get_zoom_to = function () {
+			var view = _get_viewport(),
+				to = {},
+				resize = currentOpts.autoScale,
+				double_padding = currentOpts.padding * 2,
+				ratio;
+
+			if (currentOpts.width.toString().indexOf('%') > -1) {
+				to.width = parseInt((view[0] * parseFloat(currentOpts.width)) / 100, 10);
+			} else {
+				to.width = currentOpts.width + double_padding;
+			}
+
+			if (currentOpts.height.toString().indexOf('%') > -1) {
+				to.height = parseInt((view[1] * parseFloat(currentOpts.height)) / 100, 10);
+			} else {
+				to.height = currentOpts.height + double_padding;
+			}
+
+			if (resize && (to.width > view[0] || to.height > view[1])) {
+				if (selectedOpts.type == 'image' || selectedOpts.type == 'swf') {
+					ratio = (currentOpts.width ) / (currentOpts.height );
+
+					if ((to.width ) > view[0]) {
+						to.width = view[0];
+						to.height = parseInt(((to.width - double_padding) / ratio) + double_padding, 10);
+					}
+
+					if ((to.height) > view[1]) {
+						to.height = view[1];
+						to.width = parseInt(((to.height - double_padding) * ratio) + double_padding, 10);
+					}
+
+				} else {
+					to.width = Math.min(to.width, view[0]);
+					to.height = Math.min(to.height, view[1]);
+				}
+			}
+
+			to.top = parseInt(Math.max(view[3] - 20, view[3] + ((view[1] - to.height - 40) * 0.5)), 10);
+			to.left = parseInt(Math.max(view[2] - 20, view[2] + ((view[0] - to.width - 40) * 0.5)), 10);
+
+			return to;
+		},
+
+		_get_obj_pos = function(obj) {
+			var pos = obj.offset();
+
+			pos.top += parseInt( obj.css('paddingTop'), 10 ) || 0;
+			pos.left += parseInt( obj.css('paddingLeft'), 10 ) || 0;
+
+			pos.top += parseInt( obj.css('border-top-width'), 10 ) || 0;
+			pos.left += parseInt( obj.css('border-left-width'), 10 ) || 0;
+
+			pos.width = obj.width();
+			pos.height = obj.height();
+
+			return pos;
+		},
+
+		_get_zoom_from = function() {
+			var orig = selectedOpts.orig ? $(selectedOpts.orig) : false,
+				from = {},
+				pos,
+				view;
+
+			if (orig && orig.length) {
+				pos = _get_obj_pos(orig);
+
+				from = {
+					width : pos.width + (currentOpts.padding * 2),
+					height : pos.height + (currentOpts.padding * 2),
+					top	: pos.top - currentOpts.padding - 20,
+					left : pos.left - currentOpts.padding - 20
+				};
+
+			} else {
+				view = _get_viewport();
+
+				from = {
+					width : currentOpts.padding * 2,
+					height : currentOpts.padding * 2,
+					top	: parseInt(view[3] + view[1] * 0.5, 10),
+					left : parseInt(view[2] + view[0] * 0.5, 10)
+				};
+			}
+
+			return from;
+		},
+
+		_animate_loading = function() {
+			if (!loading.is(':visible')){
+				clearInterval(loadingTimer);
+				return;
+			}
+
+			$('div', loading).css('top', (loadingFrame * -40) + 'px');
+
+			loadingFrame = (loadingFrame + 1) % 12;
+		};
+
+	/*
+	 * Public methods 
+	 */
+
+	$.fn.fancybox = function(options) {
+		if (!$(this).length) {
+			return this;
+		}
+
+		$(this)
+			.data('fancybox', $.extend({}, options, ($.metadata ? $(this).metadata() : {})))
+			.unbind('click.fb')
+			.bind('click.fb', function(e) {
+				e.preventDefault();
+
+				if (busy) {
+					return;
+				}
+
+				busy = true;
+
+				$(this).blur();
+
+				selectedArray = [];
+				selectedIndex = 0;
+
+				var rel = $(this).attr('rel') || '';
+
+				if (!rel || rel == '' || rel === 'nofollow') {
+					selectedArray.push(this);
+
+				} else {
+					selectedArray = $("a[rel=" + rel + "], area[rel=" + rel + "]");
+					selectedIndex = selectedArray.index( this );
+				}
+
+				_start();
+
+				return;
+			});
+
+		return this;
+	};
+
+	$.fancybox = function(obj) {
+		var opts;
+
+		if (busy) {
+			return;
+		}
+
+		busy = true;
+		opts = typeof arguments[1] !== 'undefined' ? arguments[1] : {};
+
+		selectedArray = [];
+		selectedIndex = parseInt(opts.index, 10) || 0;
+
+		if ($.isArray(obj)) {
+			for (var i = 0, j = obj.length; i < j; i++) {
+				if (typeof obj[i] == 'object') {
+					$(obj[i]).data('fancybox', $.extend({}, opts, obj[i]));
+				} else {
+					obj[i] = $({}).data('fancybox', $.extend({content : obj[i]}, opts));
+				}
+			}
+
+			selectedArray = jQuery.merge(selectedArray, obj);
+
+		} else {
+			if (typeof obj == 'object') {
+				$(obj).data('fancybox', $.extend({}, opts, obj));
+			} else {
+				obj = $({}).data('fancybox', $.extend({content : obj}, opts));
+			}
+
+			selectedArray.push(obj);
+		}
+
+		if (selectedIndex > selectedArray.length || selectedIndex < 0) {
+			selectedIndex = 0;
+		}
+
+		_start();
+	};
+
+	$.fancybox.showActivity = function() {
+		clearInterval(loadingTimer);
+
+		loading.show();
+		loadingTimer = setInterval(_animate_loading, 66);
+	};
+
+	$.fancybox.hideActivity = function() {
+		loading.hide();
+	};
+
+	$.fancybox.next = function() {
+		return $.fancybox.pos( currentIndex + 1);
+	};
+
+	$.fancybox.prev = function() {
+		return $.fancybox.pos( currentIndex - 1);
+	};
+
+	$.fancybox.pos = function(pos) {
+		if (busy) {
+			return;
+		}
+
+		pos = parseInt(pos);
+
+		selectedArray = currentArray;
+
+		if (pos > -1 && pos < currentArray.length) {
+			selectedIndex = pos;
+			_start();
+
+		} else if (currentOpts.cyclic && currentArray.length > 1) {
+			selectedIndex = pos >= currentArray.length ? 0 : currentArray.length - 1;
+			_start();
+		}
+
+		return;
+	};
+
+	$.fancybox.cancel = function() {
+		if (busy) {
+			return;
+		}
+
+		busy = true;
+
+		$.event.trigger('fancybox-cancel');
+
+		_abort();
+
+		selectedOpts.onCancel(selectedArray, selectedIndex, selectedOpts);
+
+		busy = false;
+	};
+
+	// Note: within an iframe use - parent.$.fancybox.close();
+	$.fancybox.close = function() {
+		if (busy || wrap.is(':hidden')) {
+			return;
+		}
+
+		busy = true;
+
+		if (currentOpts && false === currentOpts.onCleanup(currentArray, currentIndex, currentOpts)) {
+			busy = false;
+			return;
+		}
+
+		_abort();
+
+		$(close.add( nav_left ).add( nav_right )).hide();
+
+		$(content.add( overlay )).unbind();
+
+		$(window).unbind("resize.fb scroll.fb");
+		$(document).unbind('keydown.fb');
+
+		content.find('iframe').attr('src', isIE6 && /^https/i.test(window.location.href || '') ? 'javascript:void(false)' : 'about:blank');
+
+		if (currentOpts.titlePosition !== 'inside') {
+			title.empty();
+		}
+
+		wrap.stop();
+
+		function _cleanup() {
+			overlay.fadeOut('fast');
+
+			title.empty().hide();
+			wrap.hide();
+
+			$.event.trigger('fancybox-cleanup');
+
+			content.empty();
+
+			currentOpts.onClosed(currentArray, currentIndex, currentOpts);
+
+			currentArray = selectedOpts	= [];
+			currentIndex = selectedIndex = 0;
+			currentOpts = selectedOpts	= {};
+
+			busy = false;
+		}
+
+		if (currentOpts.transitionOut == 'elastic') {
+			start_pos = _get_zoom_from();
+
+			var pos = wrap.position();
+
+			final_pos = {
+				top	 : pos.top ,
+				left : pos.left,
+				width :	wrap.width(),
+				height : wrap.height()
+			};
+
+			if (currentOpts.opacity) {
+				final_pos.opacity = 1;
+			}
+
+			title.empty().hide();
+
+			fx.prop = 1;
+
+			$(fx).animate({ prop: 0 }, {
+				 duration : currentOpts.speedOut,
+				 easing : currentOpts.easingOut,
+				 step : _draw,
+				 complete : _cleanup
+			});
+
+		} else {
+			wrap.fadeOut( currentOpts.transitionOut == 'none' ? 0 : currentOpts.speedOut, _cleanup);
+		}
+	};
+
+	$.fancybox.resize = function() {
+		if (overlay.is(':visible')) {
+			overlay.css('height', $(document).height());
+		}
+
+		$.fancybox.center(true);
+	};
+
+	$.fancybox.center = function() {
+		var view, align;
+
+		if (busy) {
+			return;	
+		}
+
+		align = arguments[0] === true ? 1 : 0;
+		view = _get_viewport();
+
+		if (!align && (wrap.width() > view[0] || wrap.height() > view[1])) {
+			return;	
+		}
+
+		wrap
+			.stop()
+			.animate({
+				'top' : parseInt(Math.max(view[3] - 20, view[3] + ((view[1] - content.height() - 40) * 0.5) - currentOpts.padding)),
+				'left' : parseInt(Math.max(view[2] - 20, view[2] + ((view[0] - content.width() - 40) * 0.5) - currentOpts.padding))
+			}, typeof arguments[0] == 'number' ? arguments[0] : 200);
+	};
+
+	$.fancybox.init = function() {
+		if ($("#fancybox-wrap").length) {
+			return;
+		}
+
+		$('body').append(
+			tmp	= $('<div id="fancybox-tmp"></div>'),
+			loading	= $('<div id="fancybox-loading"><div></div></div>'),
+			overlay	= $('<div id="fancybox-overlay"></div>'),
+			wrap = $('<div id="fancybox-wrap"></div>')
+		);
+
+		outer = $('<div id="fancybox-outer"></div>')
+			.append('<div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div>')
+			.appendTo( wrap );
+
+		outer.append(
+			content = $('<div id="fancybox-content"></div>'),
+			close = $('<a id="fancybox-close"></a>'),
+			title = $('<div id="fancybox-title"></div>'),
+
+			nav_left = $('<a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a>'),
+			nav_right = $('<a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a>')
+		);
+
+		close.click($.fancybox.close);
+		loading.click($.fancybox.cancel);
+
+		nav_left.click(function(e) {
+			e.preventDefault();
+			$.fancybox.prev();
+		});
+
+		nav_right.click(function(e) {
+			e.preventDefault();
+			$.fancybox.next();
+		});
+
+		if ($.fn.mousewheel) {
+			wrap.bind('mousewheel.fb', function(e, delta) {
+				if (busy) {
+					e.preventDefault();
+
+				} else if ($(e.target).get(0).clientHeight == 0 || $(e.target).get(0).scrollHeight === $(e.target).get(0).clientHeight) {
+					e.preventDefault();
+					$.fancybox[ delta > 0 ? 'prev' : 'next']();
+				}
+			});
+		}
+
+		if (!$.support.opacity) {
+			wrap.addClass('fancybox-ie');
+		}
+
+		if (isIE6) {
+			loading.addClass('fancybox-ie6');
+			wrap.addClass('fancybox-ie6');
+
+			$('<iframe id="fancybox-hide-sel-frame" src="' + (/^https/i.test(window.location.href || '') ? 'javascript:void(false)' : 'about:blank' ) + '" scrolling="no" border="0" frameborder="0" tabindex="-1"></iframe>').prependTo(outer);
+		}
+	};
+
+	$.fn.fancybox.defaults = {
+		padding : 10,
+		margin : 40,
+		opacity : false,
+		modal : false,
+		cyclic : false,
+		scrolling : 'auto',	// 'auto', 'yes' or 'no'
+
+		width : 560,
+		height : 340,
+
+		autoScale : true,
+		autoDimensions : true,
+		centerOnScroll : false,
+
+		ajax : {},
+		swf : { wmode: 'transparent' },
+
+		hideOnOverlayClick : true,
+		hideOnContentClick : false,
+
+		overlayShow : true,
+		overlayOpacity : 0.7,
+		overlayColor : '#777',
+
+		titleShow : true,
+		titlePosition : 'float', // 'float', 'outside', 'inside' or 'over'
+		titleFormat : null,
+		titleFromAlt : false,
+
+		transitionIn : 'fade', // 'elastic', 'fade' or 'none'
+		transitionOut : 'fade', // 'elastic', 'fade' or 'none'
+
+		speedIn : 300,
+		speedOut : 300,
+
+		changeSpeed : 300,
+		changeFade : 'fast',
+
+		easingIn : 'swing',
+		easingOut : 'swing',
+
+		showCloseButton	 : true,
+		showNavArrows : true,
+		enableEscapeButton : true,
+		enableKeyboardNav : true,
+
+		onStart : function(){},
+		onCancel : function(){},
+		onComplete : function(){},
+		onCleanup : function(){},
+		onClosed : function(){},
+		onError : function(){}
+	};
+
+	$(document).ready(function() {
+		$.fancybox.init();
+	});
+
+})(jQuery);;
+
+(function($) {
+
+/**
+ * Initiate Fancybox using selector and options from the module's settings.
+ */
+Drupal.behaviors.initFancybox = {
+  attach : function() {
+    var settings = Drupal.settings.fancybox;
+
+    if (settings && settings.selector.length) {
+      $(settings.selector).fancybox(settings.options);
+    }
+
+    $('.imagefield-fancybox').fancybox(settings.options);
+  }
+}
+
+})(jQuery);;
+(function ($) {
+  Drupal = Drupal || {};
+  Drupal.adaptiveImages = Drupal.adaptiveImages || {};
+  /*
+   * Behaviour for images to replace they to adaptive images if set variable ardas_core_adaptive_suffixes.
+   */
+  Drupal.behaviors.adaptiveImages = {
+    attach: function (context, settings) {
+      var adaptiveImagesSettings = settings.adaptiveImages || [];
+      if(!$.isEmptyObject(adaptiveImagesSettings)) {
+        var suffix = Drupal.adaptiveImages.detectImageSuffix(adaptiveImagesSettings);
+        $('img').once('adaptive-image', function() {
+          if($(this).attr('data-original')){
+            Drupal.adaptiveImages.processingImage($(this), 'data-original', adaptiveImagesSettings, suffix);
+          }else{
+            Drupal.adaptiveImages.processingImage($(this), 'src', adaptiveImagesSettings, suffix);
+          }
+        });
+      }
+    }
+  }
+  
+  /*
+   * Replace path for images to path with adaptive image preset.
+   */
+  Drupal.adaptiveImages.processingImage = function(image, imageSourceAttribute, adaptiveImagesSettings, suffix){
+    var data = image.attr(imageSourceAttribute);
+    var imageSource = Drupal.adaptiveImages.changeImageSource(data, adaptiveImagesSettings, suffix);
+    if(imageSource != '') {
+      image.attr(imageSourceAttribute, imageSource);  
+    }
+  }
+  
+  /*
+   * Detect suffix for image style by browser window width.
+   */
+  Drupal.adaptiveImages.detectImageSuffix = function(adaptiveSettings){
+	  var result = '';
+    var width = $(window).width();
+    if(!$.isEmptyObject(adaptiveSettings)) {
+	  $.each(adaptiveSettings, function(suffix, value){
+	    if(width <= value){
+	      result = suffix;
+	      return false;
+	    }
+	  });
+    }
+    return result;
+  }
+  
+  /*
+   * Return path for images which use adaptive image preset without width and height parametres.
+   * For original images we return path with default preset without width and height parametres.
+   */
+  Drupal.adaptiveImages.changeImageSource = function(data, adaptiveSettings, suffix){ 
+    var result = '';
+    
+    var patternImageStyle = /(styles\/[^\/]*)/i;
+    var imageStyle = /styles\/([^\/]*)/i;
+    var patternOriginalImage = /(files)/i;
+
+    var imageStyles = Drupal.settings.imageStyles || [];
+    if(suffix != '' && !$.isEmptyObject(imageStyles)){
+      $('img').once('remove-image-size', function() {
+        $(this).removeAttr('width');
+        $(this).removeAttr('height');
+        if ($(this).attr('style') != undefined) {
+          var patternRemoveWidthHeight = /(width|height)\:\s*[0-9]*px;/i;
+          $(this).attr('style', $(this).attr('style').replace(patternRemoveWidthHeight, ''));
+          $(this).attr('style', $(this).attr('style').replace(patternRemoveWidthHeight, ''));
+        }
+      }); 
+      if(data.search('styles') != -1){
+        var matches = data.match(imageStyle);
+        var imageStyleWithSuffix = matches[1]+suffix;
+        if(imageStyles[imageStyleWithSuffix] !== undefined && imageStyles[imageStyleWithSuffix] == imageStyleWithSuffix) {
+          result = data.replace(imageStyle, "styles/" + imageStyleWithSuffix);  
+        }
+      }else if(imageStyles[suffix] !== 'undefined' && data.search('styles') == -1 && imageStyles[suffix] == suffix){
+        result = data.replace(patternOriginalImage, "$1" + "/styles/" + suffix + "/public");
+      } 
+    }
+    return result;
+  }
+} (jQuery));;
+(function ($) {
+
+    Drupal.behaviors.email_rates_cont_slider = function(ratesPrices,sliderSelector, tariff, sliderCostSelector, sliderNumberSelector, country_code) {
+
+        var
+            pricesData  = ratesPrices[country_code][tariff],
+             sliderIndex = 1,
+             prefix = pricesData[sliderIndex]["name"],
+             price_val = pricesData[sliderIndex]['amount'],
+             cur    = pricesData[sliderIndex]['currency'],
+             pricesLength = pricesData ? pricesData.length - 1 : 0;
+
+       $(sliderSelector).slider({
+         value: sliderIndex,
+         min: 0,
+         max: pricesLength,
+         step: 1,
+         range: "min",
+         slide: function( event, ui ) {
+
+           var sliderIndex = ui.value;
+           prefix = pricesData[sliderIndex]["name"],
+           price_val = pricesData[sliderIndex]['amount'],
+           cur    = pricesData[sliderIndex]['currency'],
+
+           $(sliderCostSelector).text( price_val );
+           $(sliderCostSelector).parent().find(".currency-value").text( cur );
+
+           changeStartEndClassToPrice(price_val, sliderCostSelector, ui.value, pricesLength);
+
+           $(sliderNumberSelector).text( prefix || "" );
+
+         },
+         create: function( event, ui ) {
+
+             $(sliderCostSelector)
+                 .text(price_val)
+                 .parent()
+                 .find(".currency-value")
+                 .text( cur );
+             $(sliderNumberSelector).text(prefix);
+
+             changeStartEndClassToPrice(price_val, sliderCostSelector, ui.value, pricesLength);
+
+         },
+       });
+
+       function changeStartEndClassToPrice(amount, sliderCostSelector, uiValue, pricesLength) {
+           if(uiValue == 0) {
+               if(isNaN(amount)) {
+                   $(sliderCostSelector).parent().addClass("start");
+               }
+           } else {
+               $(sliderCostSelector).parent().removeClass("start");
+           }
+
+           if(uiValue == pricesLength) {
+               if(isNaN(amount)) {
+                   $(sliderCostSelector).parent().addClass("end");
+               }
+           }
+           else {
+               $(sliderCostSelector).parent().removeClass("end");
+           }
+       }
+
+    };
+
+    ////set for germany and france europe prices
+    ////cause in this doc https://docs.google.com/spreadsheets/d/1BCXFOWgLfPJQ1VUD9sjUBjZgoBKT1v1gEE_1cE1FDDU/edit#gid=0
+    ////now we use prices just europe
+    //function getIndexForPrices(country_code){
+    //    var indexPrices = country_code;
+    //    if(indexPrices == 'fr' || indexPrices == 'de') {
+    //        indexPrices = 'eu';
+    //    }
+    //    if(indexPrices == 'other') {
+    //        indexPrices = 'us';
+    //    }
+    //    return indexPrices;
+    //}
+
+    Drupal.behaviors.rates_simple_price = function(ratesPrices, tariff, sliderCostSelector, country_code) {
+
+        if($(sliderCostSelector).length) {
+            $(sliderCostSelector)
+                .text(ratesPrices[country_code][tariff][0]['amount'])
+                .parent()
+                .find('.currency-value')
+                .text(ratesPrices[country_code][tariff][0]['currency']);
+        } else {
+            console.log(sliderCostSelector, 'not found');
+        }
+    };
+
+    Drupal.behaviors.loadAllPrices = function(country_code) {
+
+        var ratesPrices = Drupal.settings.rates;
+
+        if (ratesPrices) {
+
+            Drupal.behaviors.email_rates_cont_slider(ratesPrices, "#rates-mail-slider", "OPT1", "#cost", "#contacts-number",  country_code);
+            Drupal.behaviors.email_rates_cont_slider(ratesPrices, "#rates-cont-slider", "OPT2", "#mail-cost", "#mails-number", country_code);
+            Drupal.behaviors.email_rates_cont_slider(ratesPrices, "#rates-sms-slider", "SMS1", "#sms-cost", "#sms-number", country_code);
+            Drupal.behaviors.email_rates_cont_slider(ratesPrices, "#rates-sms-campaign-slider", "SMS2", "#sms-cost-campaign", "#sms-number-campaign", country_code);
+            Drupal.behaviors.email_rates_cont_slider(ratesPrices, "#rates-viber-slider", "VIBER1", "#viber-cost", "#viber-number", country_code);
+            Drupal.behaviors.email_rates_cont_slider(ratesPrices, "#rates-viber-campaign-slider", "VIBER2", "#viber-cost-campaign", "#viber-number-campaign", country_code);
+            //
+            //view email prices
+            Drupal.behaviors.rates_simple_price(ratesPrices, 'SIM', '#simple-rate-price', country_code);
+            Drupal.behaviors.rates_simple_price(ratesPrices, 'COM', '#complete-rate-price', country_code);
+            //
+            ////view esp-serv-prices
+            Drupal.behaviors.rates_simple_price(ratesPrices, 'LNCH', '#lounchpad-rate-price', country_code);
+            Drupal.behaviors.rates_simple_price(ratesPrices, 'FLI', '#flight-rate-price', country_code);
+            Drupal.behaviors.rates_simple_price(ratesPrices, 'SPC', '#space-rate-price', country_code);
+        }
+
+    };
+
+    Drupal.behaviors.resetAllSliders = function() {
+        $('#rates-mail-slider, #rates-cont-slider, #rates-sms-slider, #rates-sms-campaign-slider, #rates-viber-slider, #rates-viber-campaign-slider')
+            .slider( "destroy" );
+    };
+
+    Drupal.behaviors.getCountryCode = function() {
+
+        var country_code = $.cookie("country_code") || Drupal.settings.country_code || 'ru';
+
+        return country_code;
+    };
+
+
+    $(document).ready(function () {
+
+        if ($('#rates').length) {
+
+            var country_code = Drupal.behaviors.getCountryCode();
+
+            Drupal.behaviors.loadAllPrices(country_code);
+
+            var optimalPriceSwitch = $(".optimal-price-switch");
+            if (optimalPriceSwitch.length > 0) {
+                optimalPriceSwitch.on("click", function () {
+                    $(this).toggleClass("active");
+                    $("#rates").toggleClass("email-range contact-range");
+
+                    //if ($("#rates").hasClass('mail-range')) {
+                    //    console.log('mail-range ++++');
+                    //    $("#rates").removeClass('mail-range');
+                    //    $("#rates").addClass('cont-range');
+                    //} else {
+                    //    console.log('mail-range ----');
+                    //    $("#rates").removeClass('cont-range');
+                    //    $("#rates").addClass('mail-range');
+                    //}
+                });
+            }
+
+            var smsSwitcher = $("#sms .switcher");
+            if (smsSwitcher.length > 0) {
+                smsSwitcher.on("click", function () {
+                    $("#sms").toggleClass("table-view");
+                    event.preventDefault();
+                });
+            }
+        }
+
+    });
+
+})(jQuery);
+;
+(function ($) {
+
+    var countrySwitcherArea = $(".country-switcher-area .countries-wrapper .countries-list-wrapper");
+    var slideSpeed = 280;
+
+    /* check country by ip and set cookie */
+    Drupal.behaviors.currencySwitcher = {
+        attach: function (context) {
+
+            addClassToBody();
+
+            //only for page /stoimost-email-i-sms-rassylok
+            if (countrySwitcherArea.length) {
+
+                onLoadAddDropdown();
+                //eventCountrySwitch();
+                addClickEventShowCountrySwitcher();
+                addClickEventChangeCountry();
+
+            }
+        }
+    };
+
+    /* Add language class to body */
+    function addClassToBody() {
+        $("body").addClass(formBodyClass(Drupal.behaviors.getCountryCode()));
+    }
+
+    /* Change language class to body */
+    function changeBodyClass(countryCode) {
+        var currentBodyClass = formBodyClass(Drupal.behaviors.getCountryCode());
+        var newBodyClass = formBodyClass(countryCode);
+        $("body").removeClass(currentBodyClass).addClass(newBodyClass );
+    }
+
+    /* Get language class to body */
+    function formBodyClass(countryCode) {
+        return countryCode + "-show";
+    }
+
+    //function getCountryCookie() {
+    //    return $.cookie('country_code');
+    //}
+
+    function addClickEventShowCountrySwitcher() {
+        $(".country-switcher-area .current-country-name").unbind('click').bind("click", function () {
+            var langListUl = $(this).parent().find('ul');
+            if (langListUl.length) {
+                if (langListUl.css('display') == 'none') {
+                    langListUl.slideDown(slideSpeed);
+                } else {
+                    langListUl.slideUp(slideSpeed);
+                }
+            }
+        });
+    }
+
+    function addClickEventChangeCountry() {
+        $(".countries-wrapper .select-country li").bind("click", function () {
+
+            var langListUl = $(this).parents('.countries-wrapper').find('ul');
+            var countryName = $(this).find('.country-name').text();
+
+            $(this).parents(".country-switcher-area").find(".current-country-name").text(countryName);
+            langListUl.slideUp(slideSpeed);
+
+            changeBodyClass($(this).attr('data-value'));
+
+            setCountryCode($(this).attr('data-value'));
+
+            Drupal.behaviors.resetAllSliders();
+            Drupal.behaviors.loadAllPrices($(this).attr('data-value'));
+
+        });
+    }
+
+    function onLoadAddDropdown() {
+
+        var countries = getCountries();
+        var countrySelect = getSelect(countries);
+
+        //add to
+        if ( countrySwitcherArea.length ) {
+            countrySwitcherArea.append(countrySelect);
+            setDefaultCountry(countries);
+        } else {
+            console.log('Country switcher area not found');
+        }
+    }
+
+    function setDefaultCountry(countries) {
+
+        var country_code = Drupal.behaviors.getCountryCode();
+        var countryName = countries[country_code];
+
+        if (countryName) {
+            $(".country-switcher-area .current-country-name").text(countryName);
+        }
+    }
+
+    //function eventCountrySwitch() {
+    //
+    //    $(".select-country").change(function () {
+    //
+    //        //var countries = getData();
+    //        //$(this).css('width', (countries[this.value].length) *26);
+    //
+    //        setCountryCodeCookie(this.value);
+    //
+    //        Drupal.behaviors.resetAllSliders();
+    //        Drupal.behaviors.loadAllPrices(this.value);
+    //    });
+    //
+    //}
+
+    function getSelect(countries) {
+
+        //var s = $('<select />').addClass('select-country');
+        var s = $('<ul/>', {class: 'select-country'});
+        var country_code = Drupal.behaviors.getCountryCode();
+
+
+        //fill select
+        for(var cur in countries) {
+            var flagElement = $('<span />', {class: "country-flag"});
+            var countryNameElement = $('<span />', {class: "country-name", text: countries[cur]});
+            var optionElement = $('<li />', {'data-value': cur, class: cur});
+
+            flagElement.appendTo(optionElement);
+            countryNameElement.appendTo(optionElement);
+            //var optionElement = flagElement.appendTo($('<option />', {value: cur}));
+
+            optionElement.appendTo(s);
+            //$('<option />', {value: cur, text: countries[cur]}).appendTo(s);
+
+
+        }
+
+        if(countries[country_code] !== undefined) {
+            //s.val(country_code).change().css('width', (countries[country_code].length) *26);
+            //s.val(country_code).find('option:selected').addClass('default');
+        }else {
+            console.log('country code in countries not found', countries, country_code);
+        }
+
+        return s;
+    }
+
+    function getCountries() {
+
+        var countries = [];
+        $.each(Drupal.settings.countries, function(country_code, country){
+            countries[country_code] = country;
+        });
+
+        return countries;
+    }
+
+    function setCountryCode(country_code) {
+
+        var countries = getCountries();
+
+        if (country_code in countries) {
+
+            var cookieExpires = new Date();
+
+            cookieExpires.setTime(cookieExpires.getTime() + (1000 * 3600 * 24 * 31 * 12));
+
+            $.cookie('country_code', country_code, { expires: cookieExpires, path: '/'});
+            Drupal.settings.country_code = country_code;
+
+        } else {
+
+            alert('Country code is wrong!');
+
+        }
+    }
+
+})(jQuery);
+;
+/**
+ * Created by edubovoy on 11.07.18.
+ */
+(function($) {
+
+    var scrollSpeed = 800;
+    var offset = 90;
+
+    disableAnchorTransition();
+
+    function disableAnchorTransition() {
+        var currentUrlAnchor = window.location.hash.substr(1);
+        if (currentUrlAnchor) {
+            var $target = $('[name="' + currentUrlAnchor + '"], #'+currentUrlAnchor);
+
+            if ($target.length) {
+                $target.addClass('esputnik-target-achor-link');
+                //$target.css('display', 'none');
+                //console.log('****');
+                //var name = $target.attr('name');
+                //var id = $target.attr('id');
+                //$target.attr('name', name + '-001');
+                //$target.attr('id', id + '-001');
+            }
+        }
+
+
+        //if (location.hash) {
+        //    setTimeout(function() {
+        //
+        //        window.scrollTo(0, 0);
+        //    }, 1);
+        //}
+
+
+        //window.location.hash = "";
+    }
+
+    Drupal.behaviors.processingAnchorLinks = {
+        attach: function () {
+
+          if (!$('body').hasClass('page-features')) {
+            $('a[href^="#"]').click(function () {
+
+              var targetHref = $(this).attr('href');
+              var linkAnchor = targetHref.substring(1);
+              //var $target = $('[name="' + linkAnchor + '"]');
+              var $target = $('[name="' + linkAnchor + '"], #' + linkAnchor);
+
+
+              if ($target.length) {
+                $('html, body').animate({scrollTop: $target.offset().top - offset}, scrollSpeed);
+                location.hash = linkAnchor;
+              }
+
+              return false;
+            });
+          }
+
+        }
+    };
+
+    //$( window ).load(function() {
+    //
+    //    var currentUrlAnchor = window.location.hash.substr(1);
+    //    var $target = $('[name="' + currentUrlAnchor + '"]');
+    //
+    //    if ($target.length) {
+    //        $('html, body').animate({scrollTop: $target.offset().top - 200}, scrollSpeed);
+    //    }
+    //
+    //});
+
+    $(document).ready(function () {
+
+        setTimeout(function() {
+            $('.esputnik-target-achor-link').removeClass('esputnik-target-achor-link');
+        }, 7000);
+
+    });
+
+
+})(jQuery);
+;
+// (function ($) {
+//   Drupal.behaviors.rate_fivestar = {
+//     attach: function(context) {
+//       $('.rate-widget-fivestar ul:not(.rate-fivestar-processed)', context).addClass('rate-fivestar-processed').each(function () {
+//         var $this = $(this);
+//         // Save the current vote status
+//
+//         var status = $('li a.rate-fivestar-btn-filled', $this).length;
+//
+//         $this.children().hover(
+//             function()
+//             {
+//                 // Append rate-fivestar-btn-filled class to all the a-elements except the a-elements after the hovered element
+//                 var $this = $(this);
+//                 $this.siblings().children('span').addClass('rate-fivestar-btn-filled').removeClass('rate-fivestar-btn-empty');
+//                 $this.children('span').addClass('rate-fivestar-btn-filled').removeClass('rate-fivestar-btn-empty');
+//                 $this.nextAll().children('span').removeClass('rate-fivestar-btn-filled').addClass('rate-fivestar-btn-empty');
+//             },
+//             function()
+//             {
+//                 // Restore the current vote status
+//                 $(this).parent().children().children('span').removeClass('rate-fivestar-btn-filled').addClass('rate-fivestar-btn-empty');
+//                 $(this).parent().children().slice(0,status).children('span').removeClass('rate-fivestar-btn-empty').addClass('rate-fivestar-btn-filled');
+//             }
+//         );
+//       });
+//     }
+//   };
+// })(jQuery);
+;
+(function ($) {
+    Drupal.behaviors.rate = {
+        attach: function (context) {
+            $('.rate-widget:not(.rate-processed)', context).addClass('rate-processed').each(function () {
+                var widget = $(this);
+                // as we use drupal_html_id() to generate unique ids
+                // we have to truncate the '--<id>'
+                var ids = widget.attr('id').split('--');
+                ids = ids[0].match(/^rate\-([a-z]+)\-([0-9]+)\-([0-9]+)\-([0-9])$/);
+                var data = {
+                    content_type: ids[1],
+                    content_id: ids[2],
+                    widget_id: ids[3],
+                    widget_mode: ids[4]
+                };
+
+                $('span.rate-button', widget).click(function () {
+                    var token = this.getAttribute('data-rate').match(/rate\=([a-zA-Z0-9\-_]{32,64})/)[1];
+                    return Drupal.rateVote(widget, data, token);
+                });
+            });
+        }
+    };
+    function eventBeforeRate(data) {
+        console.log(9, data);
+    }
+    function eventAfterRate(data) {
+        console.log(10, data);
+    }
+    Drupal.rateVote = function(widget, data, token) {
+        // Invoke JavaScript hook.
+        widget.trigger('eventBeforeRate', [data]);
+
+        $(".rate-info", widget).text(Drupal.t('Saving vote...'));
+
+        // Random number to prevent caching, see http://drupal.org/node/1042216#comment-4046618
+        var random = Math.floor(Math.random() * 99999);
+
+        var q = (Drupal.settings.rate.basePath.match(/\?/) ? '&' : '?') + 'widget_id=' + data.widget_id + '&content_type=' + data.content_type + '&content_id=' + data.content_id + '&widget_mode=' + data.widget_mode + '&token=' + token + '&destination=' + encodeURIComponent(Drupal.settings.rate.destination) + '&r=' + random;
+        if (data.value) {
+            q = q + '&value=' + data.value;
+        }
+
+        $.get(Drupal.settings.rate.basePath + q, function(response) {
+
+                widget.parent().html(response);
+
+        });
+
+        return false;
+    }
+})(jQuery);;
+/*(function ($) {
+  Drupal.behaviors.rate = {
+    attach: function(context) {
+      $('.rate-widget:not(.rate-processed)', context).addClass('rate-processed').each(function () {
+        var widget = $(this);
+        // as we use drupal_html_id() to generate unique ids
+        // we have to truncate the '--<id>'
+        var ids = widget.attr('id').split('--');
+        ids = ids[0].match(/^rate\-([a-z]+)\-([0-9]+)\-([0-9]+)\-([0-9])$/);
+        var data = {
+          content_type: ids[1],
+          content_id: ids[2],
+          widget_id: ids[3],
+          widget_mode: ids[4]
+        };
+
+        $('a.rate-button', widget).click(function() {
+          var token = this.getAttribute('href').match(/rate\=([a-zA-Z0-9\-_]{32,64})/)[1];
+          return Drupal.rateVote(widget, data, token);
+        });
+      });
+    }
+  };
+
+  Drupal.rateVote = function(widget, data, token) {
+    // Invoke JavaScript hook.
+    widget.trigger('eventBeforeRate', [data]);
+
+    $(".rate-info", widget).text(Drupal.t('Saving vote...'));
+
+    // Random number to prevent caching, see http://drupal.org/node/1042216#comment-4046618
+    var random = Math.floor(Math.random() * 99999);
+
+    var q = (Drupal.settings.rate.basePath.match(/\?/) ? '&' : '?') + 'widget_id=' + data.widget_id + '&content_type=' + data.content_type + '&content_id=' + data.content_id + '&widget_mode=' + data.widget_mode + '&token=' + token + '&destination=' + encodeURIComponent(Drupal.settings.rate.destination) + '&r=' + random;
+    if (data.value) {
+      q = q + '&value=' + data.value;
+    }
+
+    // fetch all widgets with this id as class
+    widget = $('.' + widget.attr('id'));
+
+    $.get(Drupal.settings.rate.basePath + q, function(response) {
+      if (response.match(/^https?\:\/\/[^\/]+\/(.*)$/)) {
+        // We got a redirect.
+        document.location = response;
+      }
+      else {
+        // get parent object
+        var p = widget.parent();
+
+        // Invoke JavaScript hook.
+        widget.trigger('eventAfterRate', [data]);
+
+        widget.before(response);
+
+        // remove widget
+        widget.remove();
+        widget = undefined;
+
+        Drupal.attachBehaviors(p);
+      }
+    });
+
+    return false;
+  }
+})(jQuery);*/
+;
+(function ($) {
+
+    var slideSpeed = 250;
+
+    /* check country by ip and set cookie */
+    Drupal.behaviors.sputnikCountryCookie = {
+        attach: function (context) {
+
+            addClickEventShowLanguageSwitcher();
+            addClickEventChangeLanguageAndRedirect();
+        }
+    }
+
+    function addClickEventShowLanguageSwitcher() {
+        $(".lang-switcher-wrapper .country-logo-wrapper").unbind('click').bind("click", function () {
+            var langListUl = $(this).parent().find('ul');
+            if (langListUl.length) {
+                if (langListUl.css('display') == 'none') {
+                    langListUl.slideDown(slideSpeed);
+                } else {
+                    langListUl.slideUp(slideSpeed);
+                }
+            }
+        });
+    }
+
+    function addClickEventChangeLanguageAndRedirect() {
+        $(".lang-switcher-wrapper .lang-switch-link").bind("click", function () {
+
+            var link = $(this).data('translate-link');
+            var lang = $(this).data('lang');
+
+            setLocaleCookie(lang);
+
+           /* if (link.length === 0) {
+                redirectToRussianCurrentPage(lang);
+            } else if (link.length === 2) {
+                redirectToCurrentPage(lang);
+            } else {*/
+                var absolute_link = Drupal.absoluteUrl(link);
+                window.location.href = absolute_link;
+           /* }*/
+        });
+    }
+
+    //with selected language
+   /* function redirectToRussianCurrentPage(lang) {
+
+        var link = window.location.href.replace('/' + lang + '/', '/');
+
+        if (window.location.href != link) {
+            window.location.href = link;
+        }
+    }*/
+
+    //with selected language
+   /* function redirectToCurrentPage(lang) {
+
+        var fullLink = window.location.href.replace(Drupal.absoluteUrl('/'), ''),
+            lang_from_url = fullLink.split('/')[0];
+
+        //remove current language
+        if (lang_from_url.length === 2) {
+            fullLink = fullLink.replace(lang_from_url, '');
+        }
+
+        //remove first slash
+        if (fullLink.indexOf('/', 0) !== 0) {
+            fullLink = '/' + fullLink;
+        }
+
+        if (fullLink.indexOf('/' + lang + '/') === -1) {
+            //add new language
+            fullLink = '/' + lang + fullLink;
+            window.location.href = Drupal.absoluteUrl(fullLink);
+        }
+    }*/
+
+    function setLocaleCookie(locale) {
+        $.cookie("locale", locale, {expires: 3600 * 24 * 31 * 12, path: '/'});
+    }
+
+
+})(jQuery);
+;
+(function ($) {
+  Drupal.behaviors.sputnik_resend_submission = {
+    attach: function (context) {
+      $('a#sputnik_resend_submission', context).once('sputnik_resend_submission', function () {
+          $(this).click(function () {
+            $.ajax({
+              url: $('a#sputnik_resend_submission').attr('href'),
+              dataType: "json",
+              success: function (result) {
+                $(result.target).replaceWith(result.data);
+              }
+            });
+            return false;
+          });
+        }
+      )
+    }
+  }
+
+  /* add link to disable sticky blog */
+  Drupal.behaviors.sputnikUnstickBlock = {
+    attach: function (context) {
+      $('section.block-multiblock .block-marker-content', context).once('sputnik_unstick_me', function () {
+          section = $(this).parents('section.block');
+          $cookie_name = 'sputnik_unstick_' + section.attr('id');
+          if (!sputnik_get_cookie($cookie_name) || (sputnik_get_cookie($cookie_name) == 0)) {
+            $(this).prepend('<div class="unstick-me unstick-me-top">'+Drupal.t("Hey, stop chasing me!")+'</div>');
+            $(this).append('<div class="unstick-me unstick-me-bottom">'+Drupal.t("Hey, stop chasing me!")+'</div>');
+            $('.unstick-me-bottom', this).click(function(){
+              sputnik_handle_adding_unstick_links('bottom', section);
+            });
+            $('.unstick-me-top', this).click(function(){
+              sputnik_handle_adding_unstick_links('top', section);
+            });
+          } else {
+            $(this).prepend('<div class="unstick-me unstick-me-top">'+Drupal.t("Hey, stop chasing me!")+'</div>');
+          }
+        }
+      );
+    }
+  }
+
+  function sputnik_handle_adding_unstick_links(area, section) {
+    if (typeof _gaq == 'object') {
+      _gaq.push(['_trackEvent', 'Unstick', 'Unstick Block', area, , false]);
+    } else {
+      console.log('trying to unstick: '+ area + '. Failed to track event.');
+    }
+    sputnik_set_cookie($cookie_name, '1');
+    section.animate({marginTop: "0px"}, 1000).addClass('stopped');
+    $('.unstick-me-bottom', section).fadeOut();
+  }
+
+  // Set a browser cookie
+  function sputnik_set_cookie(name, value) {
+    document.cookie = name + "=" + escape(value) + "; path=/;";
+  }
+
+// Get the value for a specific browser cookie
+  function sputnik_get_cookie(c_name) {
+    var cookies = document.cookie.split(";");
+    // Iterate through all the cookies
+    for (var i = 0; i < cookies.length; i++) {
+      var c = cookies[i];
+      // Split the cookie up into a name value pair
+      var cookie = c.split('=');
+      if (cookie.length == 2) {
+        var name = cookie[0];
+        while (name.indexOf(' ') != -1) {
+          name = name.replace(' ', '');
+        }
+        if (name == c_name) {
+          var value = cookie[1];
+          return unescape(value);
+        }
+      }
+    }
+  }
+
+})(jQuery);;
+(function ($) {
+
+  Drupal.behaviors.captcha = {
+    attach: function (context) {
+
+      // Turn off autocompletion for the CAPTCHA response field.
+      // We do it here with JavaScript (instead of directly in the markup)
+      // because this autocomplete attribute is not standard and
+      // it would break (X)HTML compliance.
+      $("#edit-captcha-response").attr("autocomplete", "off");
+
+    }
+  };
+
+  Drupal.behaviors.captchaAdmin = {
+    attach: function (context) {
+      // Add onclick handler to checkbox for adding a CAPTCHA description
+      // so that the textfields for the CAPTCHA description are hidden
+      // when no description should be added.
+      // @todo: div.form-item-captcha-description depends on theming, maybe
+      // it's better to add our own wrapper with id (instead of a class).
+      $("#edit-captcha-add-captcha-description").click(function() {
+        if ($("#edit-captcha-add-captcha-description").is(":checked")) {
+          // Show the CAPTCHA description textfield(s).
+          $("div.form-item-captcha-description").show('slow');
+        }
+        else {
+          // Hide the CAPTCHA description textfield(s).
+          $("div.form-item-captcha-description").hide('slow');
+        }
+      });
+      // Hide the CAPTCHA description textfields if option is disabled on page load.
+      if (!$("#edit-captcha-add-captcha-description").is(":checked")) {
+        $("div.form-item-captcha-description").hide();
+      }
+    }
+
+  };
+
+})(jQuery);
+;
+(function ($) {
+
+/**
+ * A progressbar object. Initialized with the given id. Must be inserted into
+ * the DOM afterwards through progressBar.element.
+ *
+ * method is the function which will perform the HTTP request to get the
+ * progress bar state. Either "GET" or "POST".
+ *
+ * e.g. pb = new progressBar('myProgressBar');
+ *      some_element.appendChild(pb.element);
+ */
+Drupal.progressBar = function (id, updateCallback, method, errorCallback) {
+  var pb = this;
+  this.id = id;
+  this.method = method || 'GET';
+  this.updateCallback = updateCallback;
+  this.errorCallback = errorCallback;
+
+  // The WAI-ARIA setting aria-live="polite" will announce changes after users
+  // have completed their current activity and not interrupt the screen reader.
+  this.element = $('<div class="progress" aria-live="polite"></div>').attr('id', id);
+  this.element.html('<div class="bar"><div class="filled"></div></div>' +
+                    '<div class="percentage"></div>' +
+                    '<div class="message">&nbsp;</div>');
+};
+
+/**
+ * Set the percentage and status message for the progressbar.
+ */
+Drupal.progressBar.prototype.setProgress = function (percentage, message) {
+  if (percentage >= 0 && percentage <= 100) {
+    $('div.filled', this.element).css('width', percentage + '%');
+    $('div.percentage', this.element).html(percentage + '%');
+  }
+  $('div.message', this.element).html(message);
+  if (this.updateCallback) {
+    this.updateCallback(percentage, message, this);
+  }
+};
+
+/**
+ * Start monitoring progress via Ajax.
+ */
+Drupal.progressBar.prototype.startMonitoring = function (uri, delay) {
+  this.delay = delay;
+  this.uri = uri;
+  this.sendPing();
+};
+
+/**
+ * Stop monitoring progress via Ajax.
+ */
+Drupal.progressBar.prototype.stopMonitoring = function () {
+  clearTimeout(this.timer);
+  // This allows monitoring to be stopped from within the callback.
+  this.uri = null;
+};
+
+/**
+ * Request progress data from server.
+ */
+Drupal.progressBar.prototype.sendPing = function () {
+  if (this.timer) {
+    clearTimeout(this.timer);
+  }
+  if (this.uri) {
+    var pb = this;
+    // When doing a post request, you need non-null data. Otherwise a
+    // HTTP 411 or HTTP 406 (with Apache mod_security) error may result.
+    $.ajax({
+      type: this.method,
+      url: this.uri,
+      data: '',
+      dataType: 'json',
+      success: function (progress) {
+        // Display errors.
+        if (progress.status == 0) {
+          pb.displayError(progress.data);
+          return;
+        }
+        // Update display.
+        pb.setProgress(progress.percentage, progress.message);
+        // Schedule next timer.
+        pb.timer = setTimeout(function () { pb.sendPing(); }, pb.delay);
+      },
+      error: function (xmlhttp) {
+        pb.displayError(Drupal.ajaxError(xmlhttp, pb.uri));
+      }
+    });
+  }
+};
+
+/**
+ * Display errors on the page.
+ */
+Drupal.progressBar.prototype.displayError = function (string) {
+  var error = $('<div class="messages error"></div>').html(string);
+  $(this.element).before(error).hide();
+
+  if (this.errorCallback) {
+    this.errorCallback(this);
+  }
+};
+
+})(jQuery);
+;
+(function($) {
+
+  Drupal.behaviors.asafFormWrappers = {
+    attach: function(context, options) {
+      // If context is form we have to take a parent to find form in context
+      context = context.jquery ? context.parent() : context;
+
+      $('form[data-asaf-area-wrapper-id]', context).once('area-wrapper', function() {
+        var area = $(this);
+        var areaName = area.data('asaf-area-name');
+        var wrapperId = area.data('asaf-area-wrapper-id');
+
+        if (!area.parent().is('#'+wrapperId)) {
+          area.wrap('<div id="' + wrapperId + '" class="asaf-area-wrapper asaf-' + areaName + '-area-wrapper" />')
+        }
+      });
+    }
+  };
+
+  Drupal.behaviors.asafSubmitByEnter = {
+    attach: function(context, options) {
+      if (options.asaf.submitByEnter) {
+        $('input.ajax-processed').each(
+          function () {
+            var $form = $(this).parents('form');
+
+            $form.once('submit-by-enter', function () {
+              $form.bind('keydown', function (event) {
+                if (event.keyCode == 13 && event.target.tagName.toLocaleLowerCase() == 'input' && event.target.type !== 'submit' && event.target.type !== 'button') {
+                  var $firstButton = $('input.ajax-processed:eq(0)');
+                  var event = options.ajax[$firstButton.attr('id')]['event'];
+                  if (event) {
+                    $firstButton.trigger(event);
+                  }
+                }
+              })
+
+            });
+          }
+        );
+      }
+    }
+  };
+
+  Drupal.ajax = Drupal.ajax || {};
+  Drupal.ajax.prototype.commands = Drupal.ajax.prototype.commands || {};
+
+  Drupal.ajax.prototype.commands.asafReload = function (ajax, response, status) {
+    var loc = response.window == 'parent' ? parent.location : location;
+    loc.reload();
+  }
+
+  Drupal.ajax.prototype.commands.asafRedirect = function (ajax, response, status) {
+
+    var loc = response.window == 'parent' ? parent.location : location;
+    loc.href = response.href;
+  }
+
+})(jQuery);
+;
+/**
+ * @file
+ * JavaScript behaviors for the front-end display of webforms.
+ */
+
+(function ($) {
+
+  "use strict";
+
+  Drupal.behaviors.webform = Drupal.behaviors.webform || {};
+
+  Drupal.behaviors.webform.attach = function (context) {
+    // Calendar datepicker behavior.
+    Drupal.webform.datepicker(context);
+
+    // Conditional logic.
+    if (Drupal.settings.webform && Drupal.settings.webform.conditionals) {
+      Drupal.webform.conditional(context);
+    }
+  };
+
+  Drupal.webform = Drupal.webform || {};
+
+  Drupal.webform.datepicker = function (context) {
+    $('div.webform-datepicker').each(function () {
+      var $webformDatepicker = $(this);
+      var $calendar = $webformDatepicker.find('input.webform-calendar');
+
+      // Ensure the page we're on actually contains a datepicker.
+      if ($calendar.length == 0) {
+        return;
+      }
+
+      var startDate = $calendar[0].className.replace(/.*webform-calendar-start-(\d{4}-\d{2}-\d{2}).*/, '$1').split('-');
+      var endDate = $calendar[0].className.replace(/.*webform-calendar-end-(\d{4}-\d{2}-\d{2}).*/, '$1').split('-');
+      var firstDay = $calendar[0].className.replace(/.*webform-calendar-day-(\d).*/, '$1');
+      // Convert date strings into actual Date objects.
+      startDate = new Date(startDate[0], startDate[1] - 1, startDate[2]);
+      endDate = new Date(endDate[0], endDate[1] - 1, endDate[2]);
+
+      // Ensure that start comes before end for datepicker.
+      if (startDate > endDate) {
+        var laterDate = startDate;
+        startDate = endDate;
+        endDate = laterDate;
+      }
+
+      var startYear = startDate.getFullYear();
+      var endYear = endDate.getFullYear();
+
+      // Set up the jQuery datepicker element.
+      $calendar.datepicker({
+        dateFormat: 'yy-mm-dd',
+        yearRange: startYear + ':' + endYear,
+        firstDay: parseInt(firstDay),
+        minDate: startDate,
+        maxDate: endDate,
+        onSelect: function (dateText, inst) {
+          var date = dateText.split('-');
+          $webformDatepicker.find('select.year, input.year').val(+date[0]).trigger('change');
+          $webformDatepicker.find('select.month').val(+date[1]).trigger('change');
+          $webformDatepicker.find('select.day').val(+date[2]).trigger('change');
+        },
+        beforeShow: function (input, inst) {
+          // Get the select list values.
+          var year = $webformDatepicker.find('select.year, input.year').val();
+          var month = $webformDatepicker.find('select.month').val();
+          var day = $webformDatepicker.find('select.day').val();
+
+          // If empty, default to the current year/month/day in the popup.
+          var today = new Date();
+          year = year ? year : today.getFullYear();
+          month = month ? month : today.getMonth() + 1;
+          day = day ? day : today.getDate();
+
+          // Make sure that the default year fits in the available options.
+          year = (year < startYear || year > endYear) ? startYear : year;
+
+          // jQuery UI Datepicker will read the input field and base its date off
+          // of that, even though in our case the input field is a button.
+          $(input).val(year + '-' + month + '-' + day);
+        }
+      });
+
+      // Prevent the calendar button from submitting the form.
+      $calendar.click(function (event) {
+        $(this).focus();
+        event.preventDefault();
+      });
+    });
+  };
+
+  Drupal.webform.conditional = function (context) {
+    // Add the bindings to each webform on the page.
+    $.each(Drupal.settings.webform.conditionals, function (formKey, settings) {
+      var $form = $('.' + formKey + ':not(.webform-conditional-processed)');
+      $form.each(function (index, currentForm) {
+        var $currentForm = $(currentForm);
+        $currentForm.addClass('webform-conditional-processed');
+        $currentForm.bind('change', {'settings': settings}, Drupal.webform.conditionalCheck);
+
+        // Trigger all the elements that cause conditionals on this form.
+        Drupal.webform.doConditions($currentForm, settings);
+      });
+    });
+  };
+
+  /**
+   * Event handler to respond to field changes in a form.
+   *
+   * This event is bound to the entire form, not individual fields.
+   */
+  Drupal.webform.conditionalCheck = function (e) {
+    var $triggerElement = $(e.target).closest('.webform-component');
+    var $form = $triggerElement.closest('form');
+    var triggerElementKey = $triggerElement.attr('class').match(/webform-component--[^ ]+/)[0];
+    var settings = e.data.settings;
+    if (settings.sourceMap[triggerElementKey]) {
+      Drupal.webform.doConditions($form, settings);
+    }
+  };
+
+  /**
+   * Processes all conditional.
+   */
+  Drupal.webform.doConditions = function ($form, settings) {
+
+    var stackPointer;
+    var resultStack;
+
+    /**
+     * Initializes an execution stack for a conditional group's rules and
+     * sub-conditional rules.
+     */
+    function executionStackInitialize(andor) {
+      stackPointer = -1;
+      resultStack = [];
+      executionStackPush(andor);
+    }
+
+    /**
+     * Starts a new subconditional for the given and/or operator.
+     */
+    function executionStackPush(andor) {
+      resultStack[++stackPointer] = {
+        results: [],
+        andor: andor,
+      };
+    }
+
+    /**
+     * Adds a rule's result to the current sub-condtional.
+     */
+    function executionStackAccumulate(result) {
+      resultStack[stackPointer]['results'].push(result);
+    }
+
+    /**
+     * Finishes a sub-conditional and adds the result to the parent stack frame.
+     */
+    function executionStackPop() {
+      // Calculate the and/or result.
+      var stackFrame = resultStack[stackPointer];
+      // Pop stack and protect against stack underflow.
+      stackPointer = Math.max(0, stackPointer - 1);
+      var $conditionalResults = stackFrame['results'];
+      var filteredResults = $.map($conditionalResults, function(val) {
+        return val ? val : null;
+      });
+      return stackFrame['andor'] === 'or'
+                ? filteredResults.length > 0
+                : filteredResults.length === $conditionalResults.length;
+    }
+
+    // Track what has be set/shown for each target component.
+    var targetLocked = [];
+
+    $.each(settings.ruleGroups, function (rgid_key, rule_group) {
+      var ruleGroup = settings.ruleGroups[rgid_key];
+
+      // Perform the comparison callback and build the results for this group.
+      executionStackInitialize(ruleGroup['andor']);
+      $.each(ruleGroup['rules'], function (m, rule) {
+        switch (rule['source_type']) {
+          case 'component':
+            var elementKey = rule['source'];
+            var element = $form.find('.' + elementKey)[0];
+            var existingValue = settings.values[elementKey] ? settings.values[elementKey] : null;
+            executionStackAccumulate(window['Drupal']['webform'][rule.callback](element, existingValue, rule['value']));
+            break;
+          case 'conditional_start':
+            executionStackPush(rule['andor']);
+            break;
+          case 'conditional_end':
+            executionStackAccumulate(executionStackPop());
+            break;
+        }
+      });
+      var conditionalResult = executionStackPop();
+
+      $.each(ruleGroup['actions'], function (aid, action) {
+        var $target = $form.find('.' + action['target']);
+        var actionResult = action['invert'] ? !conditionalResult : conditionalResult;
+        switch (action['action']) {
+          case 'show':
+            if (actionResult != Drupal.webform.isVisible($target)) {
+              var $targetElements = actionResult
+                                      ? $target.find('.webform-conditional-disabled').removeClass('webform-conditional-disabled')
+                                      : $target.find(':input').addClass('webform-conditional-disabled');
+              $targetElements.webformProp('disabled', !actionResult);
+              $target.toggleClass('webform-conditional-hidden', !actionResult);
+              if (actionResult) {
+                $target.show();
+              }
+              else {
+                $target.hide();
+                // Record that the target was hidden.
+                targetLocked[action['target']] = 'hide';
+              }
+              if ($target.is('tr')) {
+                Drupal.webform.restripeTable($target.closest('table').first());
+              }
+            }
+            break;
+          case 'require':
+            var $requiredSpan = $target.find('.form-required, .form-optional').first();
+            if (actionResult != $requiredSpan.hasClass('form-required')) {
+              var $targetInputElements = $target.find("input:text,textarea,input[type='email'],select,input:radio,input:file");
+              // Rather than hide the required tag, remove it so that other jQuery can respond via Drupal behaviors.
+              Drupal.detachBehaviors($requiredSpan);
+              $targetInputElements
+                .webformProp('required', actionResult)
+                .toggleClass('required', actionResult);
+              if (actionResult) {
+                $requiredSpan.replaceWith('<span class="form-required" title="' + Drupal.t('This field is required.') + '">*</span>');
+              }
+              else {
+                $requiredSpan.replaceWith('<span class="form-optional"></span>');
+              }
+              Drupal.attachBehaviors($requiredSpan);
+            }
+            break;
+          case 'set':
+            var isLocked = targetLocked[action['target']];
+            var $texts = $target.find("input:text,textarea,input[type='email']");
+            var $selects = $target.find('select,select option,input:radio,input:checkbox');
+            var $markups = $target.filter('.webform-component-markup');
+            if (actionResult) {
+              var multiple = $.map(action['argument'].split(','), $.trim);
+              $selects.webformVal(multiple);
+              $texts.val([action['argument']]);
+              // A special case is made for markup. It is sanitized with filter_xss_admin on the server.
+              // otherwise text() should be used to avoid an XSS vulnerability. text() however would
+              // preclude the use of tags like <strong> or <a>
+              $markups.html(action['argument']);
+            }
+            else {
+              // Markup not set? Then restore original markup as provided in
+              // the attribute data-webform-markup.
+              $markups.each(function() {
+                var $this = $(this);
+                var original = $this.data('webform-markup');
+                if (original !== undefined) {
+                  $this.html(original);
+                }
+              });
+            }
+            if (!isLocked) {
+              // If not previously hidden or set, disable the element readonly or readonly-like behavior.
+              $selects.webformProp('disabled', actionResult);
+              $texts.webformProp('readonly', actionResult);
+              targetLocked[action['target']] = actionResult ? 'set' : false;
+            }
+            break;
+        }
+      }); // End look on each action for one conditional
+    }); // End loop on each conditional
+  };
+
+  /**
+   * Event handler to prevent propogation of events, typically click for disabling
+   * radio and checkboxes.
+   */
+  Drupal.webform.stopEvent = function () {
+    return false;
+  };
+
+  Drupal.webform.conditionalOperatorStringEqual = function (element, existingValue, ruleValue) {
+    var returnValue = false;
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    $.each(currentValue, function (n, value) {
+      if (value.toLowerCase() === ruleValue.toLowerCase()) {
+        returnValue = true;
+        return false; // break.
+      }
+    });
+    return returnValue;
+  };
+
+  Drupal.webform.conditionalOperatorStringNotEqual = function (element, existingValue, ruleValue) {
+    var found = false;
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    $.each(currentValue, function (n, value) {
+      if (value.toLowerCase() === ruleValue.toLowerCase()) {
+        found = true;
+      }
+    });
+    return !found;
+  };
+
+  Drupal.webform.conditionalOperatorStringContains = function (element, existingValue, ruleValue) {
+    var returnValue = false;
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    $.each(currentValue, function (n, value) {
+      if (value.toLowerCase().indexOf(ruleValue.toLowerCase()) > -1) {
+        returnValue = true;
+        return false; // break.
+      }
+    });
+    return returnValue;
+  };
+
+  Drupal.webform.conditionalOperatorStringDoesNotContain = function (element, existingValue, ruleValue) {
+    var found = false;
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    $.each(currentValue, function (n, value) {
+      if (value.toLowerCase().indexOf(ruleValue.toLowerCase()) > -1) {
+        found = true;
+      }
+    });
+    return !found;
+  };
+
+  Drupal.webform.conditionalOperatorStringBeginsWith = function (element, existingValue, ruleValue) {
+    var returnValue = false;
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    $.each(currentValue, function (n, value) {
+      if (value.toLowerCase().indexOf(ruleValue.toLowerCase()) === 0) {
+        returnValue = true;
+        return false; // break.
+      }
+    });
+    return returnValue;
+  };
+
+  Drupal.webform.conditionalOperatorStringEndsWith = function (element, existingValue, ruleValue) {
+    var returnValue = false;
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    $.each(currentValue, function (n, value) {
+      if (value.toLowerCase().lastIndexOf(ruleValue.toLowerCase()) === value.length - ruleValue.length) {
+        returnValue = true;
+        return false; // break.
+      }
+    });
+    return returnValue;
+  };
+
+  Drupal.webform.conditionalOperatorStringEmpty = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    var returnValue = true;
+    $.each(currentValue, function (n, value) {
+      if (value !== '') {
+        returnValue = false;
+        return false; // break.
+      }
+    });
+    return returnValue;
+  };
+
+  Drupal.webform.conditionalOperatorStringNotEmpty = function (element, existingValue, ruleValue) {
+    return !Drupal.webform.conditionalOperatorStringEmpty(element, existingValue, ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorSelectGreaterThan = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    return Drupal.webform.compare_select(currentValue[0], ruleValue, element) > 0;
+  };
+
+  Drupal.webform.conditionalOperatorSelectGreaterThanEqual = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    var comparison = Drupal.webform.compare_select(currentValue[0], ruleValue, element);
+    return comparison > 0 || comparison === 0;
+  };
+
+  Drupal.webform.conditionalOperatorSelectLessThan = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    return Drupal.webform.compare_select(currentValue[0], ruleValue, element) < 0;
+  };
+
+  Drupal.webform.conditionalOperatorSelectLessThanEqual = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    var comparison = Drupal.webform.compare_select(currentValue[0], ruleValue, element);
+    return comparison < 0 || comparison === 0;
+  };
+
+  Drupal.webform.conditionalOperatorNumericEqual = function (element, existingValue, ruleValue) {
+    // See float comparison: http://php.net/manual/en/language.types.float.php
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    var epsilon = 0.000001;
+    // An empty string does not match any number.
+    return currentValue[0] === '' ? false : (Math.abs(parseFloat(currentValue[0]) - parseFloat(ruleValue)) < epsilon);
+  };
+
+  Drupal.webform.conditionalOperatorNumericNotEqual = function (element, existingValue, ruleValue) {
+    // See float comparison: http://php.net/manual/en/language.types.float.php
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    var epsilon = 0.000001;
+    // An empty string does not match any number.
+    return currentValue[0] === '' ? true : (Math.abs(parseFloat(currentValue[0]) - parseFloat(ruleValue)) >= epsilon);
+  };
+
+  Drupal.webform.conditionalOperatorNumericGreaterThan = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    return parseFloat(currentValue[0]) > parseFloat(ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorNumericGreaterThanEqual = function (element, existingValue, ruleValue) {
+    return Drupal.webform.conditionalOperatorNumericGreaterThan(element, existingValue, ruleValue) ||
+           Drupal.webform.conditionalOperatorNumericEqual(element, existingValue, ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorNumericLessThan = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.stringValue(element, existingValue);
+    return parseFloat(currentValue[0]) < parseFloat(ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorNumericLessThanEqual = function (element, existingValue, ruleValue) {
+    return Drupal.webform.conditionalOperatorNumericLessThan(element, existingValue, ruleValue) ||
+           Drupal.webform.conditionalOperatorNumericEqual(element, existingValue, ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorDateEqual = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.dateValue(element, existingValue);
+    return currentValue === ruleValue;
+  };
+
+  Drupal.webform.conditionalOperatorDateNotEqual = function (element, existingValue, ruleValue) {
+    return !Drupal.webform.conditionalOperatorDateEqual(element, existingValue, ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorDateBefore = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.dateValue(element, existingValue);
+    return (currentValue !== false) && currentValue < ruleValue;
+  };
+
+  Drupal.webform.conditionalOperatorDateBeforeEqual = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.dateValue(element, existingValue);
+    return (currentValue !== false) && (currentValue < ruleValue || currentValue === ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorDateAfter = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.dateValue(element, existingValue);
+    return (currentValue !== false) && currentValue > ruleValue;
+  };
+
+  Drupal.webform.conditionalOperatorDateAfterEqual = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.dateValue(element, existingValue);
+    return (currentValue !== false) && (currentValue > ruleValue || currentValue === ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorTimeEqual = function (element, existingValue, ruleValue) {
+    var currentValue = Drupal.webform.timeValue(element, existingValue);
+    return currentValue === ruleValue;
+  };
+
+  Drupal.webform.conditionalOperatorTimeNotEqual = function (element, existingValue, ruleValue) {
+    return !Drupal.webform.conditionalOperatorTimeEqual(element, existingValue, ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorTimeBefore = function (element, existingValue, ruleValue) {
+    // Date and time operators intentionally exclusive for "before".
+    var currentValue = Drupal.webform.timeValue(element, existingValue);
+    return (currentValue !== false) && (currentValue < ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorTimeBeforeEqual = function (element, existingValue, ruleValue) {
+    // Date and time operators intentionally exclusive for "before".
+    var currentValue = Drupal.webform.timeValue(element, existingValue);
+    return (currentValue !== false) && (currentValue < ruleValue || currentValue === ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorTimeAfter = function (element, existingValue, ruleValue) {
+    // Date and time operators intentionally inclusive for "after".
+    var currentValue = Drupal.webform.timeValue(element, existingValue);
+    return (currentValue !== false) && (currentValue > ruleValue);
+  };
+
+  Drupal.webform.conditionalOperatorTimeAfterEqual = function (element, existingValue, ruleValue) {
+    // Date and time operators intentionally inclusive for "after".
+    var currentValue = Drupal.webform.timeValue(element, existingValue);
+    return (currentValue !== false) && (currentValue > ruleValue || currentValue === ruleValue);
+  };
+
+  /**
+   * Utility function to compare values of a select component.
+   * @param string a
+   *   First select option key to compare
+   * @param string b
+   *   Second select option key to compare
+   * @param array options
+   *   Associative array where the a and b are within the keys
+   * @return integer based upon position of $a and $b in $options
+   *   -N if $a above (<) $b
+   *   0 if $a = $b
+   *   +N if $a is below (>) $b
+   */
+  Drupal.webform.compare_select = function (a, b, element) {
+    var optionList = [];
+    $('option,input:radio,input:checkbox', element).each(function () {
+      optionList.push($(this).val());
+    });
+    var a_position = optionList.indexOf(a);
+    var b_position = optionList.indexOf(b);
+    return (a_position < 0 || b_position < 0) ? null : a_position - b_position;
+  };
+
+  /**
+   * Utility to return current visibility. Uses actual visibility, except for
+   * hidden components which use the applied disabled class.
+   */
+  Drupal.webform.isVisible = function ($element) {
+    return $element.hasClass('webform-component-hidden')
+              ? !$element.find('input').first().hasClass('webform-conditional-disabled')
+              : $element.closest('.webform-conditional-hidden').length == 0;
+  };
+
+  /**
+   * Utility function to get a string value from a select/radios/text/etc. field.
+   */
+  Drupal.webform.stringValue = function (element, existingValue) {
+    var value = [];
+    if (element) {
+      var $element = $(element);
+      if (Drupal.webform.isVisible($element)) {
+        // Checkboxes and radios.
+        $element.find('input[type=checkbox]:checked,input[type=radio]:checked').each(function () {
+          value.push(this.value);
+        });
+        // Select lists.
+        if (!value.length) {
+          var selectValue = $element.find('select').val();
+          if (selectValue) {
+            if ($.isArray(selectValue)) {
+              value = selectValue;
+            }
+            else {
+              value.push(selectValue);
+            }
+          }
+        }
+        // Simple text fields. This check is done last so that the select list in
+        // select-or-other fields comes before the "other" text field.
+        if (!value.length) {
+          $element.find('input:not([type=checkbox],[type=radio]),textarea').each(function () {
+            value.push(this.value);
+          });
+        }
+      }
+    }
+    else {
+      switch ($.type(existingValue)) {
+        case 'array':
+          value = existingValue;
+          break;
+        case 'string':
+          value.push(existingValue);
+          break;
+      }
+    }
+    return value;
+  };
+
+  /**
+   * Utility function to calculate a second-based timestamp from a time field.
+   */
+  Drupal.webform.dateValue = function (element, existingValue) {
+    var value = false;
+    if (element) {
+      var $element = $(element);
+      if (Drupal.webform.isVisible($element)) {
+        var day = $element.find('[name*=day]').val();
+        var month = $element.find('[name*=month]').val();
+        var year = $element.find('[name*=year]').val();
+        // Months are 0 indexed in JavaScript.
+        if (month) {
+          month--;
+        }
+        if (year !== '' && month !== '' && day !== '') {
+          value = Date.UTC(year, month, day) / 1000;
+        }
+      }
+    }
+    else {
+      if ($.type(existingValue) === 'array' && existingValue.length) {
+        existingValue = existingValue[0];
+      }
+      if ($.type(existingValue) === 'string') {
+        existingValue = existingValue.split('-');
+      }
+      if (existingValue.length === 3) {
+        value = Date.UTC(existingValue[0], existingValue[1], existingValue[2]) / 1000;
+      }
+    }
+    return value;
+  };
+
+  /**
+   * Utility function to calculate a millisecond timestamp from a time field.
+   */
+  Drupal.webform.timeValue = function (element, existingValue) {
+    var value = false;
+    if (element) {
+      var $element = $(element);
+      if (Drupal.webform.isVisible($element)) {
+        var hour = $element.find('[name*=hour]').val();
+        var minute = $element.find('[name*=minute]').val();
+        var ampm = $element.find('[name*=ampm]:checked').val();
+
+        // Convert to integers if set.
+        hour = (hour === '') ? hour : parseInt(hour);
+        minute = (minute === '') ? minute : parseInt(minute);
+
+        if (hour !== '') {
+          hour = (hour < 12 && ampm == 'pm') ? hour + 12 : hour;
+          hour = (hour === 12 && ampm == 'am') ? 0 : hour;
+        }
+        if (hour !== '' && minute !== '') {
+          value = Date.UTC(1970, 0, 1, hour, minute) / 1000;
+        }
+      }
+    }
+    else {
+      if ($.type(existingValue) === 'array' && existingValue.length) {
+        existingValue = existingValue[0];
+      }
+      if ($.type(existingValue) === 'string') {
+        existingValue = existingValue.split(':');
+      }
+      if (existingValue.length >= 2) {
+        value = Date.UTC(1970, 0, 1, existingValue[0], existingValue[1]) / 1000;
+      }
+    }
+    return value;
+  };
+
+  /**
+   * Make a prop shim for jQuery < 1.9.
+   */
+  $.fn.webformProp = $.fn.webformProp || function (name, value) {
+    if (value) {
+      return $.fn.prop ? this.prop(name, true) : this.attr(name, true);
+    }
+    else {
+      return $.fn.prop ? this.prop(name, false) : this.removeAttr(name);
+    }
+  };
+
+  /**
+   * Make a multi-valued val() function for setting checkboxes, radios, and select
+   * elements.
+   */
+  $.fn.webformVal = function (values) {
+    this.each(function () {
+      var $this = $(this);
+      var value = $this.val();
+      var on = $.inArray($this.val(), values) != -1;
+      if (this.nodeName == 'OPTION') {
+        $this.webformProp('selected', on ? value : false);
+      }
+      else {
+        $this.val(on ? [value] : false);
+      }
+    });
+    return this;
+  };
+
+  /**
+   * Given a table's DOM element, restripe the odd/even classes.
+   */
+  Drupal.webform.restripeTable = function (table) {
+    // :even and :odd are reversed because jQuery counts from 0 and
+    // we count from 1, so we're out of sync.
+    // Match immediate children of the parent element to allow nesting.
+    $('> tbody > tr, > tr', table)
+      .filter(':visible:odd').filter('.odd')
+        .removeClass('odd').addClass('even')
+      .end().end()
+      .filter(':visible:even').filter('.even')
+        .removeClass('even').addClass('odd');
+  };
+
+})(jQuery);
+;
+(function($, Drupal) {
+    Drupal.ajax.prototype.commands.analytics_track = function (ajax, response, status) {
+        dataLayer.push({'event': 'formsend'});
+    }
+})(jQuery, Drupal);
+;
+/**
+ * @file
+ * Some basic behaviors and utility functions for Views.
+ */
+(function ($) {
+
+Drupal.Views = {};
+
+/**
+ * jQuery UI tabs, Views integration component
+ */
+Drupal.behaviors.viewsTabs = {
+  attach: function (context) {
+    if ($.viewsUi && $.viewsUi.tabs) {
+      $('#views-tabset').once('views-processed').viewsTabs({
+        selectedClass: 'active'
+      });
+    }
+
+    $('a.views-remove-link').once('views-processed').click(function(event) {
+      var id = $(this).attr('id').replace('views-remove-link-', '');
+      $('#views-row-' + id).hide();
+      $('#views-removed-' + id).attr('checked', true);
+      event.preventDefault();
+   });
+  /**
+    * Here is to handle display deletion
+    * (checking in the hidden checkbox and hiding out the row)
+    */
+  $('a.display-remove-link')
+    .addClass('display-processed')
+    .click(function() {
+      var id = $(this).attr('id').replace('display-remove-link-', '');
+      $('#display-row-' + id).hide();
+      $('#display-removed-' + id).attr('checked', true);
+      return false;
+  });
+  }
+};
+
+/**
+ * Helper function to parse a querystring.
+ */
+Drupal.Views.parseQueryString = function (query) {
+  var args = {};
+  var pos = query.indexOf('?');
+  if (pos != -1) {
+    query = query.substring(pos + 1);
+  }
+  var pairs = query.split('&');
+  for(var i in pairs) {
+    if (typeof(pairs[i]) == 'string') {
+      var pair = pairs[i].split('=');
+      // Ignore the 'q' path argument, if present.
+      if (pair[0] != 'q' && pair[1]) {
+        args[decodeURIComponent(pair[0].replace(/\+/g, ' '))] = decodeURIComponent(pair[1].replace(/\+/g, ' '));
+      }
+    }
+  }
+  return args;
+};
+
+/**
+ * Helper function to return a view's arguments based on a path.
+ */
+Drupal.Views.parseViewArgs = function (href, viewPath) {
+
+  // Provide language prefix.
+  if (Drupal.settings.pathPrefix) {
+    var viewPath = Drupal.settings.pathPrefix + viewPath;
+  }
+  var returnObj = {};
+  var path = Drupal.Views.getPath(href);
+  // Ensure we have a correct path.
+  if (viewPath && path.substring(0, viewPath.length + 1) == viewPath + '/') {
+    var args = decodeURIComponent(path.substring(viewPath.length + 1, path.length));
+    returnObj.view_args = args;
+    returnObj.view_path = path;
+  }
+  return returnObj;
+};
+
+/**
+ * Strip off the protocol plus domain from an href.
+ */
+Drupal.Views.pathPortion = function (href) {
+  // Remove e.g. http://example.com if present.
+  var protocol = window.location.protocol;
+  if (href.substring(0, protocol.length) == protocol) {
+    // 2 is the length of the '//' that normally follows the protocol
+    href = href.substring(href.indexOf('/', protocol.length + 2));
+  }
+  return href;
+};
+
+/**
+ * Return the Drupal path portion of an href.
+ */
+Drupal.Views.getPath = function (href) {
+  href = Drupal.Views.pathPortion(href);
+  href = href.substring(Drupal.settings.basePath.length, href.length);
+  // 3 is the length of the '?q=' added to the url without clean urls.
+  if (href.substring(0, 3) == '?q=') {
+    href = href.substring(3, href.length);
+  }
+  var chars = ['#', '?', '&'];
+  for (var i in chars) {
+    if (href.indexOf(chars[i]) > -1) {
+      href = href.substr(0, href.indexOf(chars[i]));
+    }
+  }
+  return href;
+};
+
+})(jQuery);
+;
+(function ($) {
+
+/**
+ * Automatically display the guidelines of the selected text format.
+ */
+Drupal.behaviors.filterGuidelines = {
+  attach: function (context) {
+    $('.filter-guidelines', context).once('filter-guidelines')
+      .find(':header').hide()
+      .closest('.filter-wrapper').find('select.filter-list')
+      .bind('change', function () {
+        $(this).closest('.filter-wrapper')
+          .find('.filter-guidelines-item').hide()
+          .siblings('.filter-guidelines-' + this.value).show();
+      })
+      .change();
+  }
+};
+
+})(jQuery);
+;
+/**
+ * @file
+ * Handles AJAX fetching of views, including filter submission and response.
+ */
+(function ($) {
+
+/**
+ * Attaches the AJAX behavior to Views exposed filter forms and key View links.
+ */
+Drupal.behaviors.ViewsAjaxView = {};
+Drupal.behaviors.ViewsAjaxView.attach = function() {
+  if (Drupal.settings && Drupal.settings.views && Drupal.settings.views.ajaxViews) {
+    $.each(Drupal.settings.views.ajaxViews, function(i, settings) {
+      Drupal.views.instances[i] = new Drupal.views.ajaxView(settings);
+    });
+  }
+};
+
+Drupal.views = {};
+Drupal.views.instances = {};
+
+/**
+ * Javascript object for a certain view.
+ */
+Drupal.views.ajaxView = function(settings) {
+  var selector = '.view-dom-id-' + settings.view_dom_id;
+  this.$view = $(selector);
+
+  // Retrieve the path to use for views' ajax.
+  var ajax_path = Drupal.settings.views.ajax_path;
+
+  // If there are multiple views this might've ended up showing up multiple times.
+  if (ajax_path.constructor.toString().indexOf("Array") != -1) {
+    ajax_path = ajax_path[0];
+  }
+
+  // Check if there are any GET parameters to send to views.
+  var queryString = window.location.search || '';
+  if (queryString !== '') {
+    // Remove the question mark and Drupal path component if any.
+    var queryString = queryString.slice(1).replace(/q=[^&]+&?|&?render=[^&]+/, '');
+    if (queryString !== '') {
+      // If there is a '?' in ajax_path, clean url are on and & should be used to add parameters.
+      queryString = ((/\?/.test(ajax_path)) ? '&' : '?') + queryString;
+    }
+  }
+
+  this.element_settings = {
+    url: ajax_path + queryString,
+    submit: settings,
+    setClick: true,
+    event: 'click',
+    selector: selector,
+    progress: { type: 'throbber' }
+  };
+
+  this.settings = settings;
+
+  // Add the ajax to exposed forms.
+  this.$exposed_form = $('#views-exposed-form-'+ settings.view_name.replace(/_/g, '-') + '-' + settings.view_display_id.replace(/_/g, '-'));
+  this.$exposed_form.once(jQuery.proxy(this.attachExposedFormAjax, this));
+
+  // Store Drupal.ajax objects here for all pager links.
+  this.links = [];
+
+  // Add the ajax to pagers.
+  this.$view
+    // Don't attach to nested views. Doing so would attach multiple behaviors
+    // to a given element.
+    .filter(jQuery.proxy(this.filterNestedViews, this))
+    .once(jQuery.proxy(this.attachPagerAjax, this));
+
+  // Add a trigger to update this view specifically. In order to trigger a
+  // refresh use the following code.
+  //
+  // @code
+  // jQuery('.view-name').trigger('RefreshView');
+  // @endcode
+  // Add a trigger to update this view specifically.
+  var self_settings = this.element_settings;
+  self_settings.event = 'RefreshView';
+  this.refreshViewAjax = new Drupal.ajax(this.selector, this.$view, self_settings);
+};
+
+Drupal.views.ajaxView.prototype.attachExposedFormAjax = function() {
+  var button = $('input[type=submit], button[type=submit], input[type=image]', this.$exposed_form);
+  button = button[0];
+
+  this.exposedFormAjax = new Drupal.ajax($(button).attr('id'), button, this.element_settings);
+};
+
+Drupal.views.ajaxView.prototype.filterNestedViews= function() {
+  // If there is at least one parent with a view class, this view
+  // is nested (e.g., an attachment). Bail.
+  return !this.$view.parents('.view').size();
+};
+
+/**
+ * Attach the ajax behavior to each link.
+ */
+Drupal.views.ajaxView.prototype.attachPagerAjax = function() {
+  this.$view.find('ul.pager > li > a, th.views-field a, .attachment .views-summary a')
+  .each(jQuery.proxy(this.attachPagerLinkAjax, this));
+};
+
+/**
+ * Attach the ajax behavior to a singe link.
+ */
+Drupal.views.ajaxView.prototype.attachPagerLinkAjax = function(id, link) {
+  var $link = $(link);
+  var viewData = {};
+  var href = $link.attr('href');
+  // Construct an object using the settings defaults and then overriding
+  // with data specific to the link.
+  $.extend(
+    viewData,
+    this.settings,
+    Drupal.Views.parseQueryString(href),
+    // Extract argument data from the URL.
+    Drupal.Views.parseViewArgs(href, this.settings.view_base_path)
+  );
+
+  // For anchor tags, these will go to the target of the anchor rather
+  // than the usual location.
+  $.extend(viewData, Drupal.Views.parseViewArgs(href, this.settings.view_base_path));
+
+  this.element_settings.submit = viewData;
+  this.pagerAjax = new Drupal.ajax(false, $link, this.element_settings);
+  this.links.push(this.pagerAjax);
+};
+
+Drupal.ajax.prototype.commands.viewsScrollTop = function (ajax, response, status) {
+  // Scroll to the top of the view. This will allow users
+  // to browse newly loaded content after e.g. clicking a pager
+  // link.
+  var offset = $(response.selector).offset();
+  // We can't guarantee that the scrollable object should be
+  // the body, as the view could be embedded in something
+  // more complex such as a modal popup. Recurse up the DOM
+  // and scroll the first element that has a non-zero top.
+  var scrollTarget = response.selector;
+  while ($(scrollTarget).scrollTop() == 0 && $(scrollTarget).parent()) {
+    scrollTarget = $(scrollTarget).parent();
+  }
+  // Only scroll upward
+  if (offset.top - 10 < $(scrollTarget).scrollTop()) {
+    $(scrollTarget).animate({scrollTop: (offset.top - 10)}, 500);
+  }
+};
+
+})(jQuery);
+;
+(function ($) {
+  Drupal.behaviors.blockSlideshow = {
+    attach: function(context) {
+        $('.jcarousel-wrapper .jcarousel', context).once('blockSlideshow', function() {
+          $(this).jcarousel({
+              wrap: 'circular',
+              scroll: 1
+//              vertical: true
+          });
+        });
+    }
+  }
+})(jQuery);;
+/**
+ * @file views_load_more.js
+ *
+ * Handles the AJAX pager for the view_load_more plugin.
+ */
+(function ($) {
+
+  /**
+   * Provide a series of commands that the server can request the client perform.
+   */
+  Drupal.ajax.prototype.commands.viewsLoadMoreAppend = function (ajax, response, status) {
+    // Get information from the response. If it is not there, default to
+    // our presets.
+    var wrapper = response.selector ? $(response.selector) : $(ajax.wrapper);
+    var method = response.method || ajax.method;
+    var targetList = response.targetList || '';
+    var effect = ajax.getEffect(response);
+    var pager_selector = response.options.pager_selector ? response.options.pager_selector : '.pager-load-more';
+
+    // We don't know what response.data contains: it might be a string of text
+    // without HTML, so don't rely on jQuery correctly iterpreting
+    // $(response.data) as new HTML rather than a CSS selector. Also, if
+    // response.data contains top-level text nodes, they get lost with either
+    // $(response.data) or $('<div></div>').replaceWith(response.data).
+    var new_content_wrapped = $('<div></div>').html(response.data);
+    var new_content = new_content_wrapped.contents();
+
+    // For legacy reasons, the effects processing code assumes that new_content
+    // consists of a single top-level element. Also, it has not been
+    // sufficiently tested whether attachBehaviors() can be successfully called
+    // with a context object that includes top-level text nodes. However, to
+    // give developers full control of the HTML appearing in the page, and to
+    // enable Ajax content to be inserted in places where DIV elements are not
+    // allowed (e.g., within TABLE, TR, and SPAN parents), we check if the new
+    // content satisfies the requirement of a single top-level element, and
+    // only use the container DIV created above when it doesn't. For more
+    // information, please see http://drupal.org/node/736066.
+    if (new_content.length != 1 || new_content.get(0).nodeType != 1) {
+      new_content = new_content_wrapped;
+    }
+    // If removing content from the wrapper, detach behaviors first.
+    var settings = response.settings || ajax.settings || Drupal.settings;
+    Drupal.detachBehaviors(wrapper, settings);
+    if ($.waypoints != undefined) {
+      $.waypoints('refresh');
+    }
+
+    // Set up our default query options. This is for advance users that might
+    // change there views layout classes. This allows them to write there own
+    // jquery selector to replace the content with.
+    // Provide sensible defaults for unordered list, ordered list and table
+    // view styles.
+    var content_query = targetList && !response.options.content ? '> .view-content ' + targetList : response.options.content || '> .view-content';
+
+    // If we're using any effects. Hide the new content before adding it to the DOM.
+    if (effect.showEffect != 'show') {
+      new_content.find(content_query).children().hide();
+    }
+
+    // Update the pager
+    // Find both for the wrapper as the newly loaded content the direct child
+    // .item-list in case of nested pagers
+    wrapper.find(pager_selector).replaceWith(new_content.find(pager_selector));
+
+    // Add the new content to the page.
+    wrapper.find(content_query)[method](new_content.find(content_query).children());
+
+    // Re-class the loaded content.
+    // @todo this is faulty in many ways.  first of which is that user may have configured view to not have these classes at all.
+    wrapper.find(content_query).children()
+      .removeClass('views-row-first views-row-last views-row-odd views-row-even')
+      .filter(':first')
+        .addClass('views-row-first')
+        .end()
+      .filter(':last')
+        .addClass('views-row-last')
+        .end()
+      .filter(':even')
+        .addClass('views-row-odd')
+        .end()
+      .filter(':odd')
+        .addClass('views-row-even')
+        .end();
+
+    if (effect.showEffect != 'show') {
+      wrapper.find(content_query).children(':not(:visible)')[effect.showEffect](effect.showSpeed);
+    }
+
+    // Additional processing over new content
+    wrapper.trigger('views_load_more.new_content', new_content.clone());
+
+    // Attach all JavaScript behaviors to the new content
+    // Remove the Jquery once Class, TODO: There needs to be a better
+    // way of doing this, look at .removeOnce() :-/
+    var classes = wrapper.attr('class');
+    var onceClass = classes.match(/jquery-once-[0-9]*-[a-z]*/);
+    wrapper.removeClass(onceClass[0]);
+    settings = response.settings || ajax.settings || Drupal.settings;
+    Drupal.attachBehaviors(wrapper, settings);
+  };
+
+  /**
+   * Attaches the AJAX behavior to Views Load More waypoint support.
+   */
+  Drupal.behaviors.ViewsLoadMore = {
+    attach: function (context, settings) {
+      var default_opts = {
+          offset: '100%'
+        };
+
+      if (settings && settings.viewsLoadMore && settings.views && settings.views.ajaxViews) {
+        $.each(settings.viewsLoadMore, function(i, setting) {
+          var view = '.view-id-' + setting.view_name + '.view-display-id-' + setting.view_display_id + ' .pager-next a',
+            opts = {};
+
+          $.extend(opts, default_opts, settings.viewsLoadMore[i].opts);
+
+          $(view).waypoint('destroy');
+          $(view).waypoint(function(event, direction) {
+            $(view).click();
+          }, opts);
+        });
+      }
+    },
+    detach: function (context, settings, trigger) {
+      if (settings && settings.viewsLoadMore && settings.views && settings.views.ajaxViews) {
+        $.each(settings.viewsLoadMore, function(i, setting) {
+          var view = '.view-id-' + setting.view_name + '.view-display-id-' + setting.view_display_id;
+          if ($(context).is(view)) {
+            $('.pager-next a', view).waypoint('destroy');
+          }
+          else {
+            $(view, context).waypoint('destroy');
+          }
+        });
+      }
+    }
+  };
+})(jQuery);
+;
+/*!
+ * jCarousel - Riding carousels with jQuery
+ *   http://sorgalla.com/jcarousel/
+ *
+ * Copyright (c) 2006 Jan Sorgalla (http://sorgalla.com)
+ * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
+ * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+ *
+ * Built on top of the jQuery library
+ *   http://jquery.com
+ *
+ * Inspired by the "Carousel Component" by Bill Scott
+ *   http://billwscott.com/carousel/
+ */
+
+(function(g){var q={vertical:!1,rtl:!1,start:1,offset:1,size:null,scroll:3,visible:null,animation:"normal",easing:"swing",auto:0,wrap:null,initCallback:null,setupCallback:null,reloadCallback:null,itemLoadCallback:null,itemFirstInCallback:null,itemFirstOutCallback:null,itemLastInCallback:null,itemLastOutCallback:null,itemVisibleInCallback:null,itemVisibleOutCallback:null,animationStepCallback:null,buttonNextHTML:"<div></div>",buttonPrevHTML:"<div></div>",buttonNextEvent:"click",buttonPrevEvent:"click", buttonNextCallback:null,buttonPrevCallback:null,itemFallbackDimension:null},m=!1;g(window).bind("load.jcarousel",function(){m=!0});g.jcarousel=function(a,c){this.options=g.extend({},q,c||{});this.autoStopped=this.locked=!1;this.buttonPrevState=this.buttonNextState=this.buttonPrev=this.buttonNext=this.list=this.clip=this.container=null;if(!c||c.rtl===void 0)this.options.rtl=(g(a).attr("dir")||g("html").attr("dir")||"").toLowerCase()=="rtl";this.wh=!this.options.vertical?"width":"height";this.lt=!this.options.vertical? this.options.rtl?"right":"left":"top";for(var b="",d=a.className.split(" "),f=0;f<d.length;f++)if(d[f].indexOf("jcarousel-skin")!=-1){g(a).removeClass(d[f]);b=d[f];break}a.nodeName.toUpperCase()=="UL"||a.nodeName.toUpperCase()=="OL"?(this.list=g(a),this.clip=this.list.parents(".jcarousel-clip"),this.container=this.list.parents(".jcarousel-container")):(this.container=g(a),this.list=this.container.find("ul,ol").eq(0),this.clip=this.container.find(".jcarousel-clip"));if(this.clip.size()===0)this.clip= this.list.wrap("<div></div>").parent();if(this.container.size()===0)this.container=this.clip.wrap("<div></div>").parent();b!==""&&this.container.parent()[0].className.indexOf("jcarousel-skin")==-1&&this.container.wrap('<div class=" '+b+'"></div>');this.buttonPrev=g(".jcarousel-prev",this.container);if(this.buttonPrev.size()===0&&this.options.buttonPrevHTML!==null)this.buttonPrev=g(this.options.buttonPrevHTML).appendTo(this.container);this.buttonPrev.addClass(this.className("jcarousel-prev"));this.buttonNext= g(".jcarousel-next",this.container);if(this.buttonNext.size()===0&&this.options.buttonNextHTML!==null)this.buttonNext=g(this.options.buttonNextHTML).appendTo(this.container);this.buttonNext.addClass(this.className("jcarousel-next"));this.clip.addClass(this.className("jcarousel-clip")).css({position:"relative"});this.list.addClass(this.className("jcarousel-list")).css({overflow:"hidden",position:"relative",top:0,margin:0,padding:0}).css(this.options.rtl?"right":"left",0);this.container.addClass(this.className("jcarousel-container")).css({position:"relative"}); !this.options.vertical&&this.options.rtl&&this.container.addClass("jcarousel-direction-rtl").attr("dir","rtl");var j=this.options.visible!==null?Math.ceil(this.clipping()/this.options.visible):null,b=this.list.children("li"),e=this;if(b.size()>0){var h=0,i=this.options.offset;b.each(function(){e.format(this,i++);h+=e.dimension(this,j)});this.list.css(this.wh,h+100+"px");if(!c||c.size===void 0)this.options.size=b.size()}this.container.css("display","block");this.buttonNext.css("display","block");this.buttonPrev.css("display", "block");this.funcNext=function(){e.next()};this.funcPrev=function(){e.prev()};this.funcResize=function(){e.resizeTimer&&clearTimeout(e.resizeTimer);e.resizeTimer=setTimeout(function(){e.reload()},100)};this.options.initCallback!==null&&this.options.initCallback(this,"init");!m&&g.browser.safari?(this.buttons(!1,!1),g(window).bind("load.jcarousel",function(){e.setup()})):this.setup()};var f=g.jcarousel;f.fn=f.prototype={jcarousel:"0.2.8"};f.fn.extend=f.extend=g.extend;f.fn.extend({setup:function(){this.prevLast= this.prevFirst=this.last=this.first=null;this.animating=!1;this.tail=this.resizeTimer=this.timer=null;this.inTail=!1;if(!this.locked){this.list.css(this.lt,this.pos(this.options.offset)+"px");var a=this.pos(this.options.start,!0);this.prevFirst=this.prevLast=null;this.animate(a,!1);g(window).unbind("resize.jcarousel",this.funcResize).bind("resize.jcarousel",this.funcResize);this.options.setupCallback!==null&&this.options.setupCallback(this)}},reset:function(){this.list.empty();this.list.css(this.lt, "0px");this.list.css(this.wh,"10px");this.options.initCallback!==null&&this.options.initCallback(this,"reset");this.setup()},reload:function(){this.tail!==null&&this.inTail&&this.list.css(this.lt,f.intval(this.list.css(this.lt))+this.tail);this.tail=null;this.inTail=!1;this.options.reloadCallback!==null&&this.options.reloadCallback(this);if(this.options.visible!==null){var a=this,c=Math.ceil(this.clipping()/this.options.visible),b=0,d=0;this.list.children("li").each(function(f){b+=a.dimension(this, c);f+1<a.first&&(d=b)});this.list.css(this.wh,b+"px");this.list.css(this.lt,-d+"px")}this.scroll(this.first,!1)},lock:function(){this.locked=!0;this.buttons()},unlock:function(){this.locked=!1;this.buttons()},size:function(a){if(a!==void 0)this.options.size=a,this.locked||this.buttons();return this.options.size},has:function(a,c){if(c===void 0||!c)c=a;if(this.options.size!==null&&c>this.options.size)c=this.options.size;for(var b=a;b<=c;b++){var d=this.get(b);if(!d.length||d.hasClass("jcarousel-item-placeholder"))return!1}return!0}, get:function(a){return g(">.jcarousel-item-"+a,this.list)},add:function(a,c){var b=this.get(a),d=0,p=g(c);if(b.length===0)for(var j,e=f.intval(a),b=this.create(a);;){if(j=this.get(--e),e<=0||j.length){e<=0?this.list.prepend(b):j.after(b);break}}else d=this.dimension(b);p.get(0).nodeName.toUpperCase()=="LI"?(b.replaceWith(p),b=p):b.empty().append(c);this.format(b.removeClass(this.className("jcarousel-item-placeholder")),a);p=this.options.visible!==null?Math.ceil(this.clipping()/this.options.visible): null;d=this.dimension(b,p)-d;a>0&&a<this.first&&this.list.css(this.lt,f.intval(this.list.css(this.lt))-d+"px");this.list.css(this.wh,f.intval(this.list.css(this.wh))+d+"px");return b},remove:function(a){var c=this.get(a);if(c.length&&!(a>=this.first&&a<=this.last)){var b=this.dimension(c);a<this.first&&this.list.css(this.lt,f.intval(this.list.css(this.lt))+b+"px");c.remove();this.list.css(this.wh,f.intval(this.list.css(this.wh))-b+"px")}},next:function(){this.tail!==null&&!this.inTail?this.scrollTail(!1): this.scroll((this.options.wrap=="both"||this.options.wrap=="last")&&this.options.size!==null&&this.last==this.options.size?1:this.first+this.options.scroll)},prev:function(){this.tail!==null&&this.inTail?this.scrollTail(!0):this.scroll((this.options.wrap=="both"||this.options.wrap=="first")&&this.options.size!==null&&this.first==1?this.options.size:this.first-this.options.scroll)},scrollTail:function(a){if(!this.locked&&!this.animating&&this.tail){this.pauseAuto();var c=f.intval(this.list.css(this.lt)), c=!a?c-this.tail:c+this.tail;this.inTail=!a;this.prevFirst=this.first;this.prevLast=this.last;this.animate(c)}},scroll:function(a,c){!this.locked&&!this.animating&&(this.pauseAuto(),this.animate(this.pos(a),c))},pos:function(a,c){var b=f.intval(this.list.css(this.lt));if(this.locked||this.animating)return b;this.options.wrap!="circular"&&(a=a<1?1:this.options.size&&a>this.options.size?this.options.size:a);for(var d=this.first>a,g=this.options.wrap!="circular"&&this.first<=1?1:this.first,j=d?this.get(g): this.get(this.last),e=d?g:g-1,h=null,i=0,k=!1,l=0;d?--e>=a:++e<a;){h=this.get(e);k=!h.length;if(h.length===0&&(h=this.create(e).addClass(this.className("jcarousel-item-placeholder")),j[d?"before":"after"](h),this.first!==null&&this.options.wrap=="circular"&&this.options.size!==null&&(e<=0||e>this.options.size)))j=this.get(this.index(e)),j.length&&(h=this.add(e,j.clone(!0)));j=h;l=this.dimension(h);k&&(i+=l);if(this.first!==null&&(this.options.wrap=="circular"||e>=1&&(this.options.size===null||e<= this.options.size)))b=d?b+l:b-l}for(var g=this.clipping(),m=[],o=0,n=0,j=this.get(a-1),e=a;++o;){h=this.get(e);k=!h.length;if(h.length===0){h=this.create(e).addClass(this.className("jcarousel-item-placeholder"));if(j.length===0)this.list.prepend(h);else j[d?"before":"after"](h);if(this.first!==null&&this.options.wrap=="circular"&&this.options.size!==null&&(e<=0||e>this.options.size))j=this.get(this.index(e)),j.length&&(h=this.add(e,j.clone(!0)))}j=h;l=this.dimension(h);if(l===0)throw Error("jCarousel: No width/height set for items. This will cause an infinite loop. Aborting..."); this.options.wrap!="circular"&&this.options.size!==null&&e>this.options.size?m.push(h):k&&(i+=l);n+=l;if(n>=g)break;e++}for(h=0;h<m.length;h++)m[h].remove();i>0&&(this.list.css(this.wh,this.dimension(this.list)+i+"px"),d&&(b-=i,this.list.css(this.lt,f.intval(this.list.css(this.lt))-i+"px")));i=a+o-1;if(this.options.wrap!="circular"&&this.options.size&&i>this.options.size)i=this.options.size;if(e>i){o=0;e=i;for(n=0;++o;){h=this.get(e--);if(!h.length)break;n+=this.dimension(h);if(n>=g)break}}e=i-o+ 1;this.options.wrap!="circular"&&e<1&&(e=1);if(this.inTail&&d)b+=this.tail,this.inTail=!1;this.tail=null;if(this.options.wrap!="circular"&&i==this.options.size&&i-o+1>=1&&(d=f.intval(this.get(i).css(!this.options.vertical?"marginRight":"marginBottom")),n-d>g))this.tail=n-g-d;if(c&&a===this.options.size&&this.tail)b-=this.tail,this.inTail=!0;for(;a-- >e;)b+=this.dimension(this.get(a));this.prevFirst=this.first;this.prevLast=this.last;this.first=e;this.last=i;return b},animate:function(a,c){if(!this.locked&& !this.animating){this.animating=!0;var b=this,d=function(){b.animating=!1;a===0&&b.list.css(b.lt,0);!b.autoStopped&&(b.options.wrap=="circular"||b.options.wrap=="both"||b.options.wrap=="last"||b.options.size===null||b.last<b.options.size||b.last==b.options.size&&b.tail!==null&&!b.inTail)&&b.startAuto();b.buttons();b.notify("onAfterAnimation");if(b.options.wrap=="circular"&&b.options.size!==null)for(var c=b.prevFirst;c<=b.prevLast;c++)c!==null&&!(c>=b.first&&c<=b.last)&&(c<1||c>b.options.size)&&b.remove(c)}; this.notify("onBeforeAnimation");if(!this.options.animation||c===!1)this.list.css(this.lt,a+"px"),d();else{var f=!this.options.vertical?this.options.rtl?{right:a}:{left:a}:{top:a},d={duration:this.options.animation,easing:this.options.easing,complete:d};if(g.isFunction(this.options.animationStepCallback))d.step=this.options.animationStepCallback;this.list.animate(f,d)}}},startAuto:function(a){if(a!==void 0)this.options.auto=a;if(this.options.auto===0)return this.stopAuto();if(this.timer===null){this.autoStopped= !1;var c=this;this.timer=window.setTimeout(function(){c.next()},this.options.auto*1E3)}},stopAuto:function(){this.pauseAuto();this.autoStopped=!0},pauseAuto:function(){if(this.timer!==null)window.clearTimeout(this.timer),this.timer=null},buttons:function(a,c){if(a==null&&(a=!this.locked&&this.options.size!==0&&(this.options.wrap&&this.options.wrap!="first"||this.options.size===null||this.last<this.options.size),!this.locked&&(!this.options.wrap||this.options.wrap=="first")&&this.options.size!==null&& this.last>=this.options.size))a=this.tail!==null&&!this.inTail;if(c==null&&(c=!this.locked&&this.options.size!==0&&(this.options.wrap&&this.options.wrap!="last"||this.first>1),!this.locked&&(!this.options.wrap||this.options.wrap=="last")&&this.options.size!==null&&this.first==1))c=this.tail!==null&&this.inTail;var b=this;this.buttonNext.size()>0?(this.buttonNext.unbind(this.options.buttonNextEvent+".jcarousel",this.funcNext),a&&this.buttonNext.bind(this.options.buttonNextEvent+".jcarousel",this.funcNext), this.buttonNext[a?"removeClass":"addClass"](this.className("jcarousel-next-disabled")).attr("disabled",a?!1:!0),this.options.buttonNextCallback!==null&&this.buttonNext.data("jcarouselstate")!=a&&this.buttonNext.each(function(){b.options.buttonNextCallback(b,this,a)}).data("jcarouselstate",a)):this.options.buttonNextCallback!==null&&this.buttonNextState!=a&&this.options.buttonNextCallback(b,null,a);this.buttonPrev.size()>0?(this.buttonPrev.unbind(this.options.buttonPrevEvent+".jcarousel",this.funcPrev), c&&this.buttonPrev.bind(this.options.buttonPrevEvent+".jcarousel",this.funcPrev),this.buttonPrev[c?"removeClass":"addClass"](this.className("jcarousel-prev-disabled")).attr("disabled",c?!1:!0),this.options.buttonPrevCallback!==null&&this.buttonPrev.data("jcarouselstate")!=c&&this.buttonPrev.each(function(){b.options.buttonPrevCallback(b,this,c)}).data("jcarouselstate",c)):this.options.buttonPrevCallback!==null&&this.buttonPrevState!=c&&this.options.buttonPrevCallback(b,null,c);this.buttonNextState= a;this.buttonPrevState=c},notify:function(a){var c=this.prevFirst===null?"init":this.prevFirst<this.first?"next":"prev";this.callback("itemLoadCallback",a,c);this.prevFirst!==this.first&&(this.callback("itemFirstInCallback",a,c,this.first),this.callback("itemFirstOutCallback",a,c,this.prevFirst));this.prevLast!==this.last&&(this.callback("itemLastInCallback",a,c,this.last),this.callback("itemLastOutCallback",a,c,this.prevLast));this.callback("itemVisibleInCallback",a,c,this.first,this.last,this.prevFirst, this.prevLast);this.callback("itemVisibleOutCallback",a,c,this.prevFirst,this.prevLast,this.first,this.last)},callback:function(a,c,b,d,f,j,e){if(!(this.options[a]==null||typeof this.options[a]!="object"&&c!="onAfterAnimation")){var h=typeof this.options[a]=="object"?this.options[a][c]:this.options[a];if(g.isFunction(h)){var i=this;if(d===void 0)h(i,b,c);else if(f===void 0)this.get(d).each(function(){h(i,this,d,b,c)});else for(var a=function(a){i.get(a).each(function(){h(i,this,a,b,c)})},k=d;k<=f;k++)k!== null&&!(k>=j&&k<=e)&&a(k)}}},create:function(a){return this.format("<li></li>",a)},format:function(a,c){for(var a=g(a),b=a.get(0).className.split(" "),d=0;d<b.length;d++)b[d].indexOf("jcarousel-")!=-1&&a.removeClass(b[d]);a.addClass(this.className("jcarousel-item")).addClass(this.className("jcarousel-item-"+c)).css({"float":this.options.rtl?"right":"left","list-style":"none"}).attr("jcarouselindex",c);return a},className:function(a){return a+" "+a+(!this.options.vertical?"-horizontal":"-vertical")}, dimension:function(a,c){var b=g(a);if(c==null)return!this.options.vertical?b.outerWidth(!0)||f.intval(this.options.itemFallbackDimension):b.outerHeight(!0)||f.intval(this.options.itemFallbackDimension);else{var d=!this.options.vertical?c-f.intval(b.css("marginLeft"))-f.intval(b.css("marginRight")):c-f.intval(b.css("marginTop"))-f.intval(b.css("marginBottom"));g(b).css(this.wh,d+"px");return this.dimension(b)}},clipping:function(){return!this.options.vertical?this.clip[0].offsetWidth-f.intval(this.clip.css("borderLeftWidth"))- f.intval(this.clip.css("borderRightWidth")):this.clip[0].offsetHeight-f.intval(this.clip.css("borderTopWidth"))-f.intval(this.clip.css("borderBottomWidth"))},index:function(a,c){if(c==null)c=this.options.size;return Math.round(((a-1)/c-Math.floor((a-1)/c))*c)+1}});f.extend({defaults:function(a){return g.extend(q,a||{})},intval:function(a){a=parseInt(a,10);return isNaN(a)?0:a},windowLoaded:function(){m=!0}});g.fn.jcarousel=function(a){if(typeof a=="string"){var c=g(this).data("jcarousel"),b=Array.prototype.slice.call(arguments, 1);return c[a].apply(c,b)}else return this.each(function(){var b=g(this).data("jcarousel");b?(a&&g.extend(b.options,a),b.reload()):g(this).data("jcarousel",new f(this,a))})}})(jQuery);
+;
+(function ($, window, Drupal) {
+
+  Drupal.behaviors.recaptcha = {
+    attach: function (context) {
+      $('.g-recaptcha', context).each(function() {
+        if (typeof grecaptcha === 'undefined') {
+          return;
+        }
+        if ($(this).hasClass('recaptcha-processed')) {
+          grecaptcha.reset();
+        }
+        else {
+          if(typeof grecaptcha.render === 'function') {
+              grecaptcha.render(this, $(this).data());
+              $(this).addClass('recaptcha-processed');
+          } else {
+            return;
+          }
+        }
+
+      });
+    }
+  };
+
+  window.drupalRecaptchaOnload = function() {
+    $('.g-recaptcha').each(function() {
+      grecaptcha.render(this, $(this).data());
+      $(this).addClass('recaptcha-processed');
+    });
+  }
+})(jQuery, window, Drupal);
+
+;

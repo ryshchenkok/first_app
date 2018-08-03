@@ -1,0 +1,257 @@
+.chosen{display:inline-block;position:relative}
+.chosen .select-box{cursor:default;width:100%}
+.chosen span.drop-down{display:inline-block;height:1em;position:absolute;right:.35em;top:.35em;vertical-align:top;width:1em}
+.chosen input.expanded:not(.empty)~.scrollbox{visibility:visible}
+.chosen .scrollbox{max-height:20em;position:absolute;width:100%;z-index:1;visibility:hidden;border-width:.077em;border-style:solid}
+.chosen li{cursor:pointer;font-size:.8125em;float:none;padding:.25em .5em;white-space:normal;word-wrap:break-word;width:100%}
+.chosen ul>li>span.marked{height:1em;min-width:1.5em;padding-left:.6em}
+.chosen li.current{padding-right:.7em;display:flex;justify-content:space-between}
+.chosen ul.non-searchable>li>div{float:left;width:86%;margin-bottom:.4em}
+.chosen ul.searchable>li>div{width:92%;float:left;margin-bottom:.4em}
+.chosen li:first-child{margin-top:.25em}
+.chosen li:last-child{margin-bottom:.25em}
+.chosen .selectonly li{padding-top:.4231em;padding-bottom:.4231em;min-height:1.8em}
+.chosen li.spinner{height:3em;vertical-align:middle}
+.chosen li.spinner span{padding:.8em 0 0 4em;position:absolute}
+.chosen span.acc-type-desc{color:#999;position:absolute;left:11.5em}
+.chosen div.multiselect span.acc-type-desc{left:13.5em}
+form#view div.group-box{display:none}
+.doc-wrapper input.long-value-chosen{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+div#edit input.long-value-chosen{padding-right:1.6em}
+.reference form#edit h1{padding-left:0}
+article#content.main:not(.registry) .doc-wrapper{width:auto}
+.doc-wrapper{margin:0 1.5em;max-width:27.5em;padding-top:2em}
+.doc-wrapper label+input{display:block}
+.doc-wrapper label+input#otp-pswd{display:inline}
+.group-result>.confirm{max-width:27.5em;margin-left:1.6em}
+.doc-wrapper>.confirm,.group-result>.confirm{border-width:.125em;border-style:solid;border-radius:.25em;position:relative;margin-bottom:1.75em}
+.doc-wrapper>.confirm>div:first-child,.group-result>.confirm>div:first-child{margin:1.25em;max-width:26em}
+.confirm #sms-pswd,.confirm div.errors,.confirm-title,.confirm>.step #otp-pswd,.doc-wrapper>.confirm h2,.group-result>.confirm h2{margin-bottom:1.25em}
+.confirm-title,.doc-wrapper>.confirm a.way,.doc-wrapper>.confirm h2,.group-result>.confirm a.way,.group-result>.confirm h2{text-transform:uppercase;font-weight:600}
+.doc-wrapper>.confirm a.way,.group-result>.confirm a.way{font-size:.8125em;margin-left:17.5em;margin-top:.375em;position:absolute}
+.confirm>.step #otp-pswd,.confirm>.step #sms-pswd{margin-top:16px}
+.doc-wrapper>.confirm button+button,.group-result>.confirm button+button{margin-left:.1em}
+.doc-wrapper>.confirm button,.group-result>.confirm button{padding:.375em 1.25em;font-weight:700}
+.group-result>.confirm label{clear:inherit;display:inline-block}
+.doc-wrapper>.confirm ul li,.group-result>.confirm ul li{float:none;padding-top:.5em}
+.doc-wrapper span#status_desc{display:block;margin-top:.3em;font-size:.8125em}
+.doc-wrapper span#status_desc:before{content:' \25CF\00a0 ';font-size:1.4em}
+.doc-wrapper span#status_desc:not([class]){display:none}
+.doc-wrapper div.link span.status-code-1003:before,.doc-wrapper div.link span.status-code-2001:before,.doc-wrapper div.link span.status-code-2002:before,.doc-wrapper div.link span.status-code-2:before,.doc-wrapper div.link span.status-code-3:before,.doc-wrapper div.link span.status-code-4:before,.doc-wrapper span#status_desc.status-code-1003:before,.doc-wrapper span#status_desc.status-code-2001:before,.doc-wrapper span#status_desc.status-code-2002:before,.doc-wrapper span#status_desc.status-code-28:before,.doc-wrapper span#status_desc.status-code-2:before,.doc-wrapper span#status_desc.status-code-3:before,.doc-wrapper span#status_desc.status-code-4:before{color:#FFCD18}
+.doc-wrapper div.link span.status-code-1004:before,.doc-wrapper div.link span.status-code-2005:before,.doc-wrapper div.link span.status-code-5:before,.doc-wrapper span#status_desc.status-code-1004:before,.doc-wrapper span#status_desc.status-code-2005:before,.doc-wrapper span#status_desc.status-code-5:before{color:#32B65E}
+.doc-wrapper div.link span.status-code-1005:before,.doc-wrapper div.link span.status-code-6:before,.doc-wrapper span#status_desc.status-code-1005:before,.doc-wrapper span#status_desc.status-code-6:before{color:#FF5152}
+.confirm #otp-pswd+div.chosen{margin-left:0}
+button.ico.prev{right:45px}
+button.ico.next{right:5px}
+div.comments-bar a{font-size:.8125em;font-weight:600;padding-right:1.25em;text-transform:uppercase;text-decoration:none}
+div#edit div.comments-bar .edit-hidden,div.only-bank div.client_comment{display:none}
+div.comments-bar div textarea{margin-top:.25em}
+div.comments-bar div{padding-bottom:.5em}
+.doc-wrapper textarea{width:33.5em}
+.doc-wrapper div.additional{overflow:hidden}
+.doc-wrapper div.additional div.date-doc span.error-tooltip,.doc-wrapper div.additional div.value-date span.error-tooltip{padding:.5em;width:8.6em}
+.doc-wrapper div.additional div.date-doc span.error-tooltip p,.doc-wrapper div.additional div.value-date span.error-tooltip p{font-size:11px}
+.doc-wrapper div.num-doc input#NUM_DOC,div.operation-detail input#ND{width:7.5em}
+.doc-wrapper div.num-doc>span.error-tooltip{width:9.5em}
+.doc-wrapper div.date-doc{clear:both;float:left;position:relative}
+.doc-wrapper div.additional div.num-doc{float:left}
+.doc-wrapper>form>div{clear:both;padding:2px}
+.doc-wrapper div.errors+div>div.amount,.doc-wrapper h1+div>div.amount{display:inline-block;clear:both}
+.ua_payment div.amount{float:left}
+.doc-wrapper div.amount+div.acc{display:inline-block;vertical-align:top}
+.doc-wrapper div.opcode,.doc-wrapper div.value-date{float:right}
+.doc-wrapper div.value-date{position:relative}
+.doc-wrapper span.datepicker{left:5.1em;top:1.4em}
+.doc-wrapper span.country-name{display:block;text-transform:uppercase}
+.doc-wrapper div.amount .amount,.doc-wrapper div.amount .amount+.currency{float:left}
+.doc-wrapper div.amount .amount+.currency{margin-left:8px;width:60px}
+.doc-wrapper label{clear:both;display:block;margin-bottom:.25em}
+.doc-wrapper div.empl-info{overflow:hidden}
+.doc-wrapper div.bank>.mfo,.operation-detail div.bank>.mfo{display:inline}
+div.bank>.chosen+input.name,div.bank>input.mfo+input.name{margin-left:.75em}
+.doc-wrapper .bank-name input,.doc-wrapper .city input,.doc-wrapper div.bank .mfo input.mfo,.doc-wrapper div.empl-info .fio input.fio,.doc-wrapper div.empl-info .phone input.phone{width:100%}
+.doc-wrapper div.bank>.name{display:inline;width:24em}
+.doc-wrapper div.empl-info>.fio{float:left;width:65%}
+.doc-wrapper div.empl-info>.phone{float:right;width:32%}
+.doc-wrapper div.container{margin:1.75em 0}
+.doc-wrapper h2+div.container{margin-top:.5em}
+.doc-wrapper div.container:last-child{margin-bottom:1em}
+.doc-wrapper div.container>div{margin-bottom:.75em}
+.doc-wrapper div.container>div:last-child{margin-bottom:0}
+.reference p.message{margin-top:2em}
+.doc-wrapper div.radio-container>label:not(:first-child){line-height:1.75em}
+.doc-wrapper .container .name{position:relative}
+.doc-wrapper .container .name>label.add{position:absolute;right:0;top:1.65em}
+.doc-wrapper .left,.filter .left{float:left}
+.confirm-title,.doc-wrapper h2{font-size:1.05em;font-weight:600;clear:both}
+.doc-wrapper h3{font-size:1em;font-weight:500;clear:both}
+.doc-wrapper .sub-client-info label{display:inline-block;margin-top:.5em}
+.doc-wrapper .sub-client-info{margin:.5em 0 0 .5em}
+.doc-wrapper .sub-client-info div.bold{font-weight:700}
+article.main p.message{font-size:.875em;line-height:1.715;margin:8em 4em 4em;text-align:center;display:block;min-width:40em}
+article.main p.message h2{font-size:1.715em;font-weight:300}
+article.main .doc-wrapper h1,article.main .operation-detail h1{font-size:1.65em}
+.doc-wrapper input+input,div.chosen+input[type=text],input[type=text]+div.chosen{margin-left:.5em}
+h1.doc-type{margin-right:1em;white-space:nowrap;font-size:1.875em}
+.intermediary div.bank-country div.chosen{width:100%!important}
+.scrollbox{overflow:hidden;position:relative}
+.scrollbar{border-radius:.15em;position:absolute;right:.01em;width:.35em;opacity:0;transition:.5s opacity}
+.scrollbox:hover .scrollbar{opacity:1}
+a.scrolltop{background-repeat:no-repeat;background-position:center .5em}
+table.list span.att-cnt,table.list span.disk,table.list span.phone,table.list span.token{background-repeat:no-repeat;background-position:center}
+div.datepicker button.exit,div.modal div.exit,div.welcome div.exit{background-repeat:no-repeat;background-position:center center}
+.chosen input.expanded+span.drop-down,.chosen span.drop-down,.doc-wrapper.pay_sheet div.th span.sortable.asc,.doc-wrapper.registry_docs div.th span.sortable.asc,.doc-wrapper.salary-styles div.th span.sortable.asc,.ua_currency_payment div.code-words a.open,div.comments-bar a.comment,div.doc-wrapper.pay_sheet div.th span.sortable.desc,div.doc-wrapper.registry_docs div.th span.sortable.desc,div.doc-wrapper.salary-styles div.th span.sortable.desc,div.document-status-bar a.status.open,div.group-checkbox,header.main a.exit,table.list th span.sortable.asc,table.list th span.sortable.desc{background-repeat:no-repeat;background-position:right center}
+.chosen ul>li>span.marked{background-repeat:no-repeat;background-position:center center}
+div.document-status-bar a.status{background-repeat:no-repeat;background-position:right center}
+a.show-list,div.welcome a.show-list.expanded{background-repeat:no-repeat;background-position:right center}
+body section.main aside#left .menu-icon{background-repeat:no-repeat;background-position:0 0}
+button.add,button.remove,div.datepicker button.exit:hover,div.modal div.exit:hover{background-repeat:no-repeat;background-position:center center}
+.ext-auth{max-width:none;margin-top:20px}
+.ext-auth>.confirm{font-size:16px;border-width:2px;border-style:solid;border-radius:.25em;text-align:left;width:480px}
+.ext-auth>.confirm>div:first-child{padding:1.25em}
+.ext-auth>.confirm>.step{position:relative}
+.ext-auth>.confirm h2{font-size:18px;padding:0;margin-bottom:1.25em;text-transform:uppercase}
+.ext-auth>.confirm a.way{font-size:12px;font-weight:600;text-transform:uppercase;margin-top:.375em;position:absolute;right:26px}
+.ext-auth>.confirm button+button{margin-left:.5em}
+.ext-auth>.confirm button{font-size:12px;font-weight:700;padding:6px 10px}
+.ext-auth>.confirm label{font-size:13px;clear:inherit;display:block;text-align:left}
+.ext-auth>.confirm ul:not(.drop-down){margin-top:10px}
+.ext-auth>.confirm ul li{font-size:13px;float:none;padding-top:.5em;text-align:left}
+.ext-auth .left{float:left}
+.ext-auth h2{font-size:1.125em;font-weight:600;clear:both}
+.ext-auth div#select-lang{margin-top:.5em}
+.ext-auth div#select-lang .chosen{width:16em!important}
+.ext-auth input{font-size:13px}
+.ext-auth li span{padding:0}
+#auth-panel .ext-auth>.confirm{margin:0 auto}
+body.unauth{justify-content:center}
+body.unauth:not(.full) header.main{display:none}
+body.unauth.full{align-items:flex-start;justify-content:flex-start}
+ul{width:65em;margin:0 auto}
+ul:not(.drop-down) li{width:18.3em;text-align:center;font-size:1.125em;position:relative}
+ul:not(.drop-down) li span{line-height:1.389em;height:8em;padding-right:1em;padding-left:1em}
+ul li img{margin:1em auto}
+ul li a,ul li img{display:block}
+ul li a{margin:auto;width:10em;text-transform:uppercase;font-size:.778em;font-weight:600;left:0;right:0;bottom:0;padding-bottom:1em;position:absolute}
+.registry .doc-wrapper h1{text-align:left;font-size:2.769em}
+body:not(.full) aside{display:none}
+body.unauth>section.main{display:none;flex-grow:0}
+body.unauth.full section.main{min-height:100%;margin-bottom:-6em;padding-bottom:8em}
+body.unauth article.main>div.wrap{top:40%;left:50%;width:100%;margin:0}
+body.unauth article.main div#install-plugin-container{max-width:40em;margin:0 auto}
+div#install-plugin-container p{margin:.5em 0 .3em;line-height:1.445em;font-size:14pt;text-align:center;width:100%}
+div#install-plugin-container button{padding:1em 1.75em;min-width:10.7em;margin:1em .5em;font-weight:600;font-size:.8em}
+div#install-plugin-container div{text-align:center}
+body.no-scroll{overflow:hidden}
+aside#left{float:left;padding-top:.7em;position:relative;z-index:1}
+aside#left a.tolist{background:url(data:image/png;base64,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) no-repeat left center;padding-left:1.3em;margin-left:3em;font-size:.8125em;cursor:pointer}
+h1{font-size:2.25em;text-align:center;font-weight:300;width:100%}
+.doc-print h1.cert{top:.5em;position:fixed;display:block;width:259.5mm;z-index:-1}
+.doc-wrapper h2{padding:1.5em 0 .5em;font-size:1.385em;font-weight:600}
+article.registry .doc-wrapper{background-image:none;background-repeat:repeat;background-attachment:scroll;background-position:0 0;font-size:.8125em;margin-left:21em;max-width:81em}
+article.registry .doc-wrapper label{font-size:1em}
+article.registry .doc-wrapper div.container>div:not(.chosen){margin-bottom:1.5em}
+article.registry .doc-wrapper div.container{margin:1.25em 0}
+article.registry .doc-wrapper div.container:after{content:'';display:table;clear:both}
+article.registry div#form-edit{width:34.6em}
+article.registry input,article.registry textarea{font-size:1em}
+article.registry div.doc-wrapper textarea{width:100%}
+div.admin-key .left,div.new-client .left{float:left}
+div.new-client div.left+div.left{padding-left:2em}
+div.new-client .right{float:right}
+div.new-client input.name{width:100%}
+.okpo__container{width:7em}
+input.okpo{width:100%}
+div.new-client input#phone_cln{width:12em}
+div.new-client input#email_cln,div.new-client input#lock_word{width:16em}
+div.new-client input#name_cln{width:26.5em}
+div.new-client input.bank_name{width:28em}
+div.new-client input.mfo{width:5.5em}
+div.new-client input.account{width:9.5em}
+div.new-client input.currency{width:5.4em}
+div.new-client input.sign_count{width:3em}
+div.new-client div.sign_count_wrap{display:inline-block;padding-left:1em}
+div#static_accounts_block img,div.container button{float:right}
+div#static_accounts_block div:not(:last-child) img#add_account{display:none}
+div#static_accounts_block div.container:last-child{float:left;position:relative;width:100%}
+div#static_accounts_block div.container:last-child div:not(.chosen),div#static_accounts_block div.container:last-child:not(.chosen){margin:0}
+div#static_accounts_block div.container:last-child div.right{position:absolute;right:0;top:1.1em}
+img#add_account{float:right}
+div.new-client input#key_password,div.new-client input#key_password_repeat,input#key_owner_name,input#position,input#system_id{width:100%}
+article.registry input.fake-password,div.modal-dialog input.fake-password{position:absolute;z-index:-100;min-height:1px;height:1px;width:1px}
+div#new_key input#bank-name{width:27em}
+div.warning-message{color:#666;text-align:justify}
+div.new-client input#key_name,div.new-client input#storage_type{width:34.3em}
+div.admin-key input#key_storage,div.new-client input#key_storage{width:365px;float:left}
+input#key_name{text-overflow:ellipsis;padding-right:5.6em}
+div.admin-key button.small-registry-button,div.new-client button.small-registry-button{background-color:#F5F5F5;height:26px;text-transform:none;font-weight:500;font-size:12px;float:left;width:72px;margin-left:6px}
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.div.new-client button.small-registry-button{margin-left:8px}
+div.admin-key button.small-registry-button{margin-left:6px}}
+div.admin-key button#select_key{width:75px}
+div.container#actions{float:left;width:100%;margin-top:0}
+.admin-key #actions .flex-container{display:flex;justify-content:space-between}
+div.admin-key div.container#actions button{font-weight:500;float:none;height:3.5em;font-size:1em}
+div.admin-key div.container#actions button#unlock_device{padding:7px 9px}
+div.admin-key div.container#password-change{display:none}
+div.admin-key div.chosen li,div.new-client div.chosen li{font-size:.89em}
+div.registry-modal label{display:block}
+div.modal-body div#remove-key{font-size:13px;line-height:1.3;margin:0 0 10px}
+div#admin-key-wrapper{margin-top:30px;margin-bottom:10px}
+#admin-key-wrapper .sortable{display:inline-block;display:-ms-inline-grid;position:relative;padding-left:1em;padding-right:1.5em}
+#admin-key-wrapper .sortable:hover{cursor:pointer}
+#admin-key-wrapper .sortable:after{content:'';width:100%;height:100%;background-repeat:no-repeat;background-position:right center;position:absolute;top:0;left:0}
+div.doc-wrapper.admin-key{padding-top:0}
+.registry .device-storage-element .chosen{float:left}
+button#create_key,button#initialize_device,button#unlock_device{height:3.2em;font-size:1em;margin-bottom:.077em;margin-right:.5em;float:left;padding:.231em 1em}
+button#initialize_device,button#unlock_device{width:13em}
+button#create_key.ladda-button[data-loading]{padding-right:2.8em}
+button.ladda-button span.ladda-spinner{right:.8em}
+button#next{width:10em;height:3.2em;font-size:1em;margin-bottom:.077em;margin-right:10px;float:left;padding:.231em 2.5em}
+div.new-client h2#step2{margin:0 0 30px;padding:0;float:left}
+div.admin-key table{display:table;width:100%;border-collapse:collapse}
+div.admin-key table th{height:25px;vertical-align:middle;font-weight:600}
+div.admin-key table th.id{width:250px}
+div.admin-key table td{height:25px;padding:5px 10px}
+div.admin-key div#device-key-list-container div.key-list{margin-bottom:10px}
+#device-key-list-container th{text-align:left}
+div.admin-key .device-storage-element .input-language-container,div.admin-key .file-storage-element .input-language-container,div.new-client .device-storage-element .input-language-container{width:28.1em;float:left}
+div.admin-key .device-storage-element .input-language-container input#device_storage_password,div.admin-key .file-storage-element .input-language-container input#key_password,div.new-client .device-storage-element .input-language-container input#device_storage_password{width:100%}
+div.admin-key div#net-error,div.new-client div#net-error{margin-top:0;width:100%;max-width:100%;float:left}
+label.top_label{margin-top:3em;margin-bottom:3em}
+input[type=checkbox],input[type=checkbox]+span.checkbox,input[type=checkbox]+span.checkbox:after{margin-top:0}
+article.registry .doc-wrapper span.checkbox{margin-right:.4em}
+div#accounts>div{height:9em}
+span.error-tooltip{width:100%}
+div.container span:not(.error-tooltip){display:inline-block}
+article.registry div.wrap>ul{border:1px solid transparent;clear:both;height:17em}
+@media (max-width:1024px){ul li img{margin-bottom:0}
+ul{margin:0 auto;width:20em}
+body.unauth{justify-content:flex-start;padding-top:2em}
+body.unauth section.main{overflow:visible}
+article.main a{padding-bottom:3em;padding-top:1em}
+@page{margin-left:.5cm!important}}
+#reg-print-wrapper{background-color:#c1c1c1;overflow-y:scroll}
+#reg-print-form{margin:0 auto;width:260mm}
+body.unauth #reg-print-form header.main{display:block}
+#reg-print-form a.logo,#reg-print-form aside#left,#reg-print-form h1.empty{display:none}
+#reg-print-form section.doc-print div#doc-div{text-align:center}
+#reg-print-wrapper>h1{display:block;left:50%;margin-left:-5em;position:fixed;text-align:center;text-transform:uppercase;top:.45em;width:10em;z-index:1000}
+body.unauth #reg-print-form header.main,body.unauth #reg-print-form section.main{margin:0;padding:0}
+body.unauth #reg-print-form header.main{position:fixed;width:259.7mm;top:0;min-width:50em;height:95px}
+body.unauth #reg-print-form article.main{margin:95px auto 0;padding-top:20px}
+body.unauth #reg-print-form header.main div#actions-wrapper{margin-left:.85em}
+body.unauth #reg-print-form header.main div#actions-wrapper ul{width:100%}
+body.unauth #reg-print-form header.main div#actions-wrapper ul li:not(.popup-li){width:auto}
+body.unauth #reg-print-form header.main div#actions-wrapper ul li:not(.popup-li):first-child{padding-left:2em}
+.help-info{width:39.5em;margin:-4.5em 0 0 22em;font-size:10.5pt;text-align:center;line-height:1.2;float:left}
+.help-info div#help-info-header{padding-bottom:.5em;font-size:12pt;font-weight:700;text-align:center}
+@media print{body{overflow-x:visible!important;overflow-y:visible!important}
+#reg-print-form #doc-div{margin-top:0!important}
+#reg-print-wrapper>h1,body.unauth #reg-print-form header.main,div.modal.show{display:none}
+body.unauth>section.main{display:none!important}
+body.unauth #reg-print-form article.main{margin:0;padding:0;border:0;box-shadow:none}
+body.unauth #reg-print-form{width:auto}
+body.unauth #reg-print-form section.doc-print div#doc-div{border:0;box-shadow:none;position:absolute;left:0;top:0;margin:0;padding:0 0 0 5mm}
+body.unauth #reg-print-wrapper{width:793px!important;margin:0;padding:0;overflow-y:visible;position:static!important}
+div#reg-print-wrapper.modal.show{display:block!important}}
+body.ext-auth aside#left a,body.ext-auth div.new-client div#form-edit{display:none}

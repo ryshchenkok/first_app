@@ -1,0 +1,144 @@
+5198      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp138773iof;
+        Fri, 3 Aug 2018 00:45:57 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpfhdYfJ0gQjcZRtr1A/FTu3F0lk79kj6IUAeD0Ul3NKqsekYKdEhdoXOmmMTek674hFV+HR
+X-Received: by 2002:a50:86a1:: with SMTP id r30-v6mr6494581eda.138.1533282357573;
+        Fri, 03 Aug 2018 00:45:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533282357; cv=none;
+        d=google.com; s=arc-20160816;
+        b=JhXzX021oF5mYWY5fUpI+kwh42JmwFoEjQtwG1m59HUAX87nBWrN8HF+vmRSIZ7Z7w
+         lvn47YnHRv2dniZo8p2p/xA6ZNyzTUI30R5Av7WNoFiB70UcMTXgsiavKwfCQJFLfySS
+         aMhj1SzGdhFEgqYuk8IHfKna5LWfVVJixZs521tLPPT/ck+xWBvmpQvZXug3TyHQqAU7
+         uhCoT1pCMa2rgS5qAagQTmAOvTY6mUSQ+vobxGdzSeW1EKEWu7T+oq+MWFBn7mI3KR8q
+         6DSN+zmPNr+0gj2QYdAvZKO9gh6so7ya0xRF2bA3H0KwqARzFesOTmUbC/L8oe5gnV+/
+         MoDQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=T3INOf8v1TTtnnU0NCtX/eBvfiz2Mgw59D6V1gsq4kA=;
+        b=aA4LoneJ+M6l/nKY5GamTPjEV8OPB161evyoOXUKNyaEM2R1eMPuATclWc3LGEWD7G
+         U9svCDdFgzmrjizD55LZk1384PCtZ4MXhCae6l5oDXaUWvtPyQzFd5M4i9Zg92wsOYsQ
+         preobEG4ZBwh4dnopH6TKEGmzzlpMzB5ST8SVFXf4QmV5hpiD/ZlpA+pTX4mY0Tw84fA
+         YVNRgqzt4z1kIJadE4Fukjv+1x4z/LksZ7FE65NE1fW5Ad/dHk0zRFafwvnVv8saR6tV
+         P8K8lOaAvgoHzegV6IWX+DFWAnc/oi8CAJ0etsTZpChGvMimiGJE96a6NxWGJMXoABt1
+         yU7w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@track.mailarbor.com header.s=mail header.b=wbkojEjd;
+       spf=pass (google.com: domain of srs0+95781a4a2c76debbc9144593b58fd9dfa2b234bc@track.mailarbor.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+95781a4a2c76debbc9144593b58fd9dfa2b234bc@track.mailarbor.com
+Return-Path: <srs0+95781a4a2c76debbc9144593b58fd9dfa2b234bc@track.mailarbor.com>
+Received: from smtp0.mailarbor.com (smtp0.mailarbor.com. [5.104.224.181])
+        by mx.google.com with ESMTPS id g5-v6si3415068edh.109.2018.08.03.00.45.57
+        for <kr@anadeainc.com>
+        (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Fri, 03 Aug 2018 00:45:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0+95781a4a2c76debbc9144593b58fd9dfa2b234bc@track.mailarbor.com designates 5.104.224.181 as permitted sender) client-ip=5.104.224.181;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@track.mailarbor.com header.s=mail header.b=wbkojEjd;
+       spf=pass (google.com: domain of srs0+95781a4a2c76debbc9144593b58fd9dfa2b234bc@track.mailarbor.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+95781a4a2c76debbc9144593b58fd9dfa2b234bc@track.mailarbor.com
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 2C8D9200499
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 07:45:57 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 15A611600B6
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 07:45:57 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=track.mailarbor.com; q=dns/txt; s=mail; t=1533282357; bh=T3INOf8v1TTtnnU0NCtX/eBvfiz2Mgw59D6V1gsq4kA=; h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding; b=wbkojEjdzUkpe78F7FBGpX5bvBhjS1SDBvB0ZKitra8PUMLdGHb6q0o0T5vSTIgzCLC4IY5MPdbH/T+nTI+fUrDM7gv0EfDDSMiUwrWLZRzXPZ0+udd5fMWM3PQDciTXdbj+du4vYQBT8Q5/OxQF8jI6+jyKaRDCH+kvivL7N/0=
+Date: Fri, 03 Aug 2018 07:45:57 +0000
+From: noreply@stracker.anahoret.com
+To: Konstantin Ryshchenko <kr@anadeainc.com>
+Message-ID: <95781a4a2c76debbc9144593b58fd9dfa2b234bc@track.mailarbor.com>
+Subject: Invite mail
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<style type="text/css">
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  table th, table td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  table.daily-statistics {
+    width: 50%;
+  }
+  table.daily-statistics td.working_time {
+    text-align: right;
+  }
+  table.daily-statistics th {
+    background: #DDD;
+  }
+  table.digest {
+    width: 680px;
+  }
+  table.digest.planned_stories th {
+    background: #ddd;
+  }
+  table.digest.description th {
+    background: #ddd;
+  }
+  table.digest.rejected th {
+    background: red;
+  }
+  table.digest.completed th {
+    background: #d8e795;
+  }
+  table.digest.estimate th {
+    background: #dcf8ff;
+  }
+  table.digest.new_stories th {
+    background: #ddd;
+  }
+  table.digest td.time {
+    text-align: center;
+  }
+  table.digest td.story {
+    width: 400px;
+  }
+  table.digest td.name {
+    width: 130px;
+  }
+</style>
+
+
+
+<h1>Hello, Konstantin Ryshchenko</h1>
+
+We are added you to tracker service.<br><br>
+
+All do you need is follow link to set up your login and password.<br>
+<a href="https://stracker.anahoret.com/invite/edit?invite_token=0b7387fd8001d1f0918896c5c0dab510">Invite</a><br><br>
+
+Then you will be able to sign in with new login and new password.<br><br>
+
+
+Best, regards.<br>
+Tracker team.
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>44</integer>
+	<key>date-last-viewed</key>
+	<integer>1533282394</integer>
+	<key>date-received</key>
+	<integer>1533282357</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>remote-id</key>
+	<string>56</string>
+</dict>
+</plist>

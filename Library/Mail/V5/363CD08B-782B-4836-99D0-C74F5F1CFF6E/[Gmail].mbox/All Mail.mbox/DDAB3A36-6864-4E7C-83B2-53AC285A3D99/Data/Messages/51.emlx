@@ -1,0 +1,153 @@
+7920      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp119588iof; Fri, 3
+ Aug 2018 00:20:48 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpeaR9xSjZjN7lKMC44M6kIMcWGfyNECDNEl69AWLcbpQ8m9FQ0QsNzp2JCkLKZSnm5fSmTI
+X-Received: by 2002:a50:b3c8:: with SMTP id
+ t8-v6mr6258124edd.95.1533280848742; Fri, 03 Aug 2018 00:20:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533280848; cv=none; d=google.com;
+ s=arc-20160816;
+ b=j8NO26cO6uXTA2Leac7Fe1jEcyiqgcx8G3oPq3wi+CNqThEt4HP6GXNloJSORmgqBg
+ +ibwBGaoFgMT/A4yM0At6DSg9NuCGxZbrr6xdbe9A7HSROibB1j+ULHtT/304dPfMhKc
+ kERmddiTHCzjFN1EFvL9l1LOmY+rta1MNMIniFNOLPmm3VF1udJ2GoDxidve5Pxfq7sw
+ Oa7lAHvek1FGBweYS0hjjeiycnFW62yNljfvQUNG5pjmYz799vvClY/y4bOzCIQS62Uz
+ Za8dRWrWVHkmoQ/l2vOiVXlzuyFWfqG+5subsdHxjHVlxO+XvCWMB17WaUGumcp/vhcf nMgg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20160816;
+ h=content-transfer-encoding:mime-version:subject:message-id:to:from
+ :date:dkim-signature:arc-authentication-results;
+ bh=JOjbJ+i9itpdc6rga9aQ6g7SWLNPUxWZNd6rg2sLR+I=;
+ b=IZkDN1v5pE2SFHhRBsjTVfx7Z8j1D/Z+7yorJXcLe2u59JmW4p5yRCEvIQOaiQP/iE
+ c0ujVDR9Y02zsw1L+aInt52L5C4GAJJ+qQSkbKH0lD03UTUqQGNfQBfd5inp1+ztXPvr
+ tgEjMaMSk3RZFDjWYEIX+0L0qvEGStHnhOvP5i4eXuUXtA+oT3uLYD7YHGWfPKrVpY1l
+ v4L1GHhntyWk8SHXMnY/bxNKLjOba57afFtxtaZSpk+f27SpESDV1K+OHOzpNiLBF8to
+ 4wgiHriV9CvUzVECL7qF/euennDMyCNx29Fudb9sQ1+l5zljswKshPca/TL06Vj9fEr/ Yl5w==
+ARC-Authentication-Results: i=1; mx.google.com; dkim=pass
+ header.i=@info.anahoret.com header.s=mail header.b=c8RnlN+m; spf=pass
+ (google.com: domain of
+ srs0+1df1a2649bda904539dab8a6cf3da7be09644de8@info.anahoret.com designates
+ 5.104.224.181 as permitted sender)
+ smtp.mailfrom=srs0+1df1a2649bda904539dab8a6cf3da7be09644de8@info.anahoret.com
+Return-Path: <srs0+1df1a2649bda904539dab8a6cf3da7be09644de8@info.anahoret.com>
+Received: from smtp0.mailarbor.com (smtp0.mailarbor.com. [5.104.224.181]) by
+ mx.google.com with ESMTPS id b24-v6si144165edj.131.2018.08.03.00.20.48 for
+ <kr@anadeainc.com> (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+ Fri, 03 Aug 2018 00:20:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of
+ srs0+1df1a2649bda904539dab8a6cf3da7be09644de8@info.anahoret.com designates
+ 5.104.224.181 as permitted sender) client-ip=5.104.224.181;
+Authentication-Results: mx.google.com; dkim=pass header.i=@info.anahoret.com
+ header.s=mail header.b=c8RnlN+m; spf=pass (google.com: domain of
+ srs0+1df1a2649bda904539dab8a6cf3da7be09644de8@info.anahoret.com designates
+ 5.104.224.181 as permitted sender)
+ smtp.mailfrom=srs0+1df1a2649bda904539dab8a6cf3da7be09644de8@info.anahoret.com
+Received: from localhost.localdomain (localhost [127.0.0.1]) by
+ localhost.localdomain (Postfix) with ESMTP id 61047200463 for
+ <kr@anadeainc.com>; Fri,  3 Aug 2018 07:20:48 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1]) by
+ localhost.localdomain (Postfix) with ESMTP id 4F7061600B6 for
+ <kr@anadeainc.com>; Fri,  3 Aug 2018 07:20:48 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.anahoret.com;
+ q=dns/txt; s=mail; t=1533280848;
+ bh=JOjbJ+i9itpdc6rga9aQ6g7SWLNPUxWZNd6rg2sLR+I=;
+ h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding;
+ b=c8RnlN+mt/YeZ8d7zPdKI0bHAfMmRS3MKBKwkl4YC4SzjBoS0Amlyfb7zNDZZlnPOcRn/XTNcFhtk5oLzemhIy6cDqhN/eZhswQZI1IOoj3D2KBCWbFe1DWMOXNjAOIAnUhl7VRn0lyBJpCzoTZrPz6UQ+PrQmM689QO76vhPCE=
+Date: Fri, 03 Aug 2018 07:20:48 +0000
+From: noreply@tracker.anahoret.com
+To: Konstantin Ryshchenko <kr@anadeainc.com>
+Message-ID: <1df1a2649bda904539dab8a6cf3da7be09644de8@info.anahoret.com>
+Subject: =?UTF-8?Q?You_have_made_responsible_for?=
+ =?UTF-8?Q?_'=D0=A1=D0=BE=D1=85=D1=80=D0=B0=D0=BD=D0=B5=D0=BD=D0=B8=D0=B5?=
+ =?UTF-8?Q?_=D0=BD=D0=B0=D1=81=D1=82=D1=80=D0=BE=D0=B9=D0=BA=D0=B8?=
+ =?UTF-8?Q?_=D0=BE=D1=82=D0=BF=D1=80=D0=B0=D0=B2=D0=BA=D0=B8?=
+ =?UTF-8?Q?_=D0=B5=D0=BC=D0=B5=D0=B9=D0=BB=D0=B0_=D0=BF=D1=80=D0=B8?=
+ =?UTF-8?Q?_=D0=B2=D1=8B=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=D0=B8?=
+ =?UTF-8?Q?_=D0=B8=D0=BD=D0=B2=D0=BE=D0=B9=D1=81=D0=B0'_story_in_[A]_Tracker?=
+Mime-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KICB0YWJsZSB7CiAgICBib3JkZXIt
+Y29sbGFwc2U6IGNvbGxhcHNlOwogICAgbWFyZ2luLWJvdHRvbTogMTBweDsK
+ICB9CiAgdGFibGUgdGgsIHRhYmxlIHRkIHsKICAgIHBhZGRpbmc6IDVweDsK
+ICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrOwogIH0KICB0YWJsZS5kYWls
+eS1zdGF0aXN0aWNzIHsKICAgIHdpZHRoOiA1MCU7CiAgfQogIHRhYmxlLmRh
+aWx5LXN0YXRpc3RpY3MgdGQud29ya2luZ190aW1lIHsKICAgIHRleHQtYWxp
+Z246IHJpZ2h0OwogIH0KICB0YWJsZS5kYWlseS1zdGF0aXN0aWNzIHRoIHsK
+ICAgIGJhY2tncm91bmQ6ICNEREQ7CiAgfQogIHRhYmxlLmRpZ2VzdCB7CiAg
+ICB3aWR0aDogNjgwcHg7CiAgfQogIHRhYmxlLmRpZ2VzdC5wbGFubmVkX3N0
+b3JpZXMgdGggewogICAgYmFja2dyb3VuZDogI2RkZDsKICB9CiAgdGFibGUu
+ZGlnZXN0LmRlc2NyaXB0aW9uIHRoIHsKICAgIGJhY2tncm91bmQ6ICNkZGQ7
+CiAgfQogIHRhYmxlLmRpZ2VzdC5yZWplY3RlZCB0aCB7CiAgICBiYWNrZ3Jv
+dW5kOiByZWQ7CiAgfQogIHRhYmxlLmRpZ2VzdC5jb21wbGV0ZWQgdGggewog
+ICAgYmFja2dyb3VuZDogI2Q4ZTc5NTsKICB9CiAgdGFibGUuZGlnZXN0LmVz
+dGltYXRlIHRoIHsKICAgIGJhY2tncm91bmQ6ICNkY2Y4ZmY7CiAgfQogIHRh
+YmxlLmRpZ2VzdC5uZXdfc3RvcmllcyB0aCB7CiAgICBiYWNrZ3JvdW5kOiAj
+ZGRkOwogIH0KICB0YWJsZS5kaWdlc3QgdGQudGltZSB7CiAgICB0ZXh0LWFs
+aWduOiBjZW50ZXI7CiAgfQogIHRhYmxlLmRpZ2VzdCB0ZC5zdG9yeSB7CiAg
+ICB3aWR0aDogNDAwcHg7CiAgfQogIHRhYmxlLmRpZ2VzdCB0ZC5uYW1lIHsK
+ICAgIHdpZHRoOiAxMzBweDsKICB9Cjwvc3R5bGU+CgogIDxwPkhpLCB5b3Ug
+aGF2ZSBhIG5ldyBzdG9yeSwgY3JlYXRlZCBieSBQYXZlbCBLb25vbm92aWNo
+IGZvciB0aGUgW0FdIFRyYWNrZXIgcHJvamVjdCE8L3A+CgoKPHA+0J3QsCDR
+gdGC0YDQsNC90LjRhtGDIEludm9pY2Ugc2V0dGluZ3Mg0LTQvtCx0LDQstC7
+0LXQvdC+INC/0L7Qu9C1INGD0YHRgtCw0L3QsNCy0LvQuNCy0LDRjtGJ0LXQ
+tSDRgdGC0LDQvdC00LDRgNGC0L3QvtC1INC30L3QsNGH0LXQvdC40LUg0LTQ
+u9GPINC+0YLQv9GA0LDQstC60Lgg0LXQvNC10LnQu9CwINC/0YDQuCDQstGL
+0YHRgtCw0LLQu9C10L3QuNC4INC40L3QstC+0LnRgdCwPC9wPgo8aHI+Cjxo
+MyBzdHlsZT0idmVydGljYWwtYWxpZ246bWlkZGxlOyI+0J/RgNC40LXQvNC+
+0YfQvdGL0Lkg0YLQtdGB0YI6PC9oMz4KPHA+MS4g0J/QtdGA0LXQudGC0Lgg
+0L3QsCDRgdGC0YDQsNC90LjRhtGDIEludm9pY2VzINCyIGFkbWluIG1lbnU8
+YnI+CjIuINCj0LLQuNC00LXRgtGMINGH0YLQviDQstC+INCy0YHQtdGFINC4
+0L3QstC+0LnRgdCw0YUsINC/0L4g0YHRgtCw0L3QtNCw0YDRgtGDINCy0YvQ
+sdGA0LDQvdC+IDxiPlNlbmQgZW1haWw8L2I+PGJyPgo8YSBocmVmPSJodHRw
+czovL3RyYWNrZXIuYW5haG9yZXQuY29tL3N5c3RlbS9maWxlcy81MjY1MS9v
+cmlnaW5hbC9TY3JlZW5fU2hvdF8yMDE4LTA3LTI0X2F0XzE0LjA5LjIxLnBu
+Zz8xNTMyNDMwNTc1Ij48aW1nIHNyYz0iaHR0cHM6Ly90cmFja2VyLmFuYWhv
+cmV0LmNvbS9zeXN0ZW0vZmlsZXMvNTI2NTEvb3JpZ2luYWwvU2NyZWVuX1No
+b3RfMjAxOC0wNy0yNF9hdF8xNC4wOS4yMS5wbmc/MTUzMjQzMDU3NSIgY2xh
+c3M9InBvcHVwIiBhbHQ9IiI+PC9hPjxicj4KMy4g0J/QtdGA0LXQudGC0Lgg
+0LTQu9GPINC40L3QstC+0LnRgdCwINC90LAg0YHRgtGA0LDQvdC40YbRgyA8
+Yj5JbnZvaWNlIHNldHRpbmdzPC9iPjxicj4KNC4g0JjQt9C80LXQvdC40YLR
+jCDQt9C90LDRh9C10L3QuNC1INCyINC/0L7Qu9C1IDxiPkRlZmF1bHQgc2Vu
+ZCBpbnZvaWNlIG9wdGlvbjwvYj4g0L3QsCDQvtC00LjQvSDQuNC3INC/0YPQ
+vdC60YLQvtCyPGJyPgo1LiDQktC10YDQvdGD0YLRjNGB0Y8g0L3QsCDRgdGC
+0YDQsNC90LjRhtGDIDxiPkludm9pY2VzPC9iPjxicj4KNi4g0KPQsdC10LTQ
+uNGC0YzRgdGPINGH0YLQviDQtNC70Y8g0LTQsNC90L3QvtCz0L4g0L/RgNC+
+0LXQutGC0LAg0LLRi9GB0YLQsNCy0LvQtdC90LAg0LLRi9Cx0YDQsNC90LDR
+jyDQvtC/0YbQuNGPPC9wPgo8aHI+CjxwPjEuINCf0LXRgNC10LnRgtC4INC9
+0LAg0YHRgtGA0LDQvdC40YbRgyDQuNC90LLQvtC50YHQsCDQsiDQutC+0L3R
+gtGA0LDQutGC0LUuPGJyPgoyLiDQo9Cx0LXQtNC40YLRjNGB0Y8g0YfRgtC+
+INCy0YvRgdGC0LDQstC70LXQvdC90LDRjyDQvtC/0YbQuNGPINC/0YDQuNC8
+0LXQvdGP0LXRgtGB0Y8g0Lgg0YLQsNC8PC9wPgo8cD4tLTwvcD4KPHA+QXNz
+aWdubWVudCBtYWRlIGJ5OiBKdWxpYSBLb3phazwvcD4KPHA+UmVzcG9uc2li
+bGU6IEtvbnN0YW50aW4gUnlzaGNoZW5rbywgUGF2ZWwgS29ub25vdmljaDwv
+cD4KPHA+VGFnczogdG8gdGVzdDwvcD4KCgoKPHA+PGEgaHJlZj0iaHR0cHM6
+Ly90cmFja2VyLmFuYWhvcmV0LmNvbS9wcm9qZWN0cy8yL3N0b3JpZXMvNjQ0
+NDkiPmh0dHBzOi8vdHJhY2tlci5hbmFob3JldC5jb20vcHJvamVjdHMvMi9z
+dG9yaWVzLzY0NDQ5PC9hPi48L3A+Cgo8cD4KICA8YSBocmVmPSJodHRwczov
+L3RyYWNrZXIuYW5haG9yZXQuY29tL3Byb2ZpbGUvZGVmYXVsdF9ub3RpZmlj
+YXRpb25fc2V0dGluZ3MiPkNoYW5nZSBub3RpZmljYXRpb24gc2V0dGluZzwv
+YT4KPC9wPgoKCgogIDxwPlRoYW5rIHlvdSw8L3A+CiAgW0FdIFRyYWNrZXIg
+VGVhbQoK
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>42</integer>
+	<key>date-last-viewed</key>
+	<integer>1533282002</integer>
+	<key>date-received</key>
+	<integer>1533280848</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>remote-id</key>
+	<string>54</string>
+</dict>
+</plist>

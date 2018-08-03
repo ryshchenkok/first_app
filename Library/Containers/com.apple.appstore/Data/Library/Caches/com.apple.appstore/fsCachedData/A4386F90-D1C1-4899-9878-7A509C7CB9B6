@@ -1,0 +1,721 @@
+(function setUIVersion() {
+  String.prototype.getStrBetween = function(searchAfter, searchBefore) {
+    return this.substring(this.lastIndexOf(searchAfter)+searchAfter.length,
+                          this.lastIndexOf(searchBefore));
+  };
+
+  var clientInfo = mmesetupconstants.clientInfo;
+
+  // Only add UI version number if we are on a Mac
+  if (clientInfo.indexOf('Mac OS X') > -1) {
+    // parse out UI version as string
+    var OSXver = clientInfo.getStrBetween("OS X;", ";");
+    // strip any 2nd or 3rd decimals
+    OSXver = OSXver.split('.').slice(0, 2).join('.');
+    // periods aren’t well suited for CSS classnames
+    OSXver = OSXver.replace('.', '_');
+
+    $(function() {
+      $('body').addClass('mac').addClass("_"+OSXver); // CSS classnames cannot begin with a number
+    });
+    
+    // Example classname: “_10_9”
+  }
+}());
+
+(function setFocusState() {
+  $(function() {
+    $(window).focus(function() {
+      $('body').addClass('focused');
+    });
+    $(window).blur(function() {
+      $('body').removeClass('focused');
+    });
+  });
+}());
+
+
+$(function() {
+  /** In order to prevent flashing or failure to load (<rdar://problem/15002789>)
+      we need to preload the error icon, and then inject it into the css. */
+  var img = new Image();
+
+  $(img).one('load',function() {
+    //we will use a canvas element to generate a data:url
+    var cnvs = document.createElement('canvas'),
+        ctx = cnvs.getContext('2d'),
+        styleElm = document.createElement('style'),
+        dataURL;
+
+    //draw the image into the canvas
+    cnvs.width = img.width;
+    cnvs.height = img.height;
+    ctx.drawImage(img,0,0);
+
+    //convert to base64 data:url image
+    dataURL = cnvs.toDataURL();
+
+    //inject the appropriate CSS
+    styleElm.innerHTML = ".confirm-sheet .icon { background-image:url("+dataURL+"); }";
+    document.body.appendChild(styleElm);
+  });
+  
+  if($('body').hasClass('_10_6')
+  || $('body').hasClass('_10_7')
+  || $('body').hasClass('_10_8')) {
+    if(window.devicePixelRatio===2) img.src = "prefpane/imgs/hd/alert-lion@2x.png";
+    else img.src = "prefpane/imgs/reg/alert-lion.png";
+  }
+  else if($('body').hasClass('_10_9')) {
+    if(window.devicePixelRatio===2) img.src = "prefpane/imgs/hd/alert-mavericks@2x.png";
+    else img.src = "prefpane/imgs/reg/alert-mavericks.png";
+  }
+  else {
+    if(window.devicePixelRatio===2) img.src = "prefpane/imgs/hd/alert-yosemite@2x.png";
+    else img.src = "prefpane/imgs/reg/alert-yosemite.png";
+  }
+
+  //if the image has already loaded, manually trigger the load event (because the browser doesn't fire load event):
+  if(img.complete) $(img).load();
+});
+
+
+/*global Setup mmejsloc mmesetupui mmesetupconstants AppleAccountSetup   */
+
+/*
+  @class
+  prefpane specific event handling.. 
+*/
+Setup.PrefPaneEventHandler = Setup.EventHandler.extend({
+  init: function() {
+    this.__proto__.__proto__.init();
+
+    $('#agreeToTerms').click(function(e){
+      $('#nextButton').attr({'disabled':!e.target.checked});
+    });
+    
+    $('#newTermCheck').click(function(e){
+      $('#nextButton').attr({'disabled':!e.target.checked});
+    });
+    // Dynamically wrap Terms URL in a span to prevent bug in RTL
+    var legalElem = $('.tos-legal');
+    var string = legalElem.html();
+    string = string.replace('@@url@@', '<span dir="ltr">' + mmejsloc.LegalURL + '</span>');
+    legalElem.html(string);
+
+    $(document).keyup(function(event){  
+      if(Setup.isConfirmDialogVisible) {
+        
+        if(event.keyCode === 13){ //enter
+          $.log('triggered modal dialog right button click');
+          $('.confirm-sheet .right-button').click();
+        } else if(event.keyCode === 27){  //escape
+          $.log('triggered modal dialog left button click');
+          $('.confirm-sheet .left-button').click();
+        }
+      } else {
+        var nodeName = event.target.nodeName.toLowerCase();
+        if (nodeName !== 'select' || !!event.target.value) {
+          if(event.keyCode === 13) { //enter 
+            $.log('triggered next button click') ;
+            $('#nextButton').click();
+          }
+          else if (event.keyCode === 27){ //escape
+            $.log('triggered prev button click') ;
+            $('#prevButton').click();
+          } 
+        }
+      }
+    }) ;
+
+    /* Security question selector */
+    $('#questionSelector').change(
+      function(e) {
+        var sel = $(this.options[this.selectedIndex]);
+        var customQuestion = $('#customQuestion');
+        var customQuestionInput = $('#customQuestionInput');
+
+        if(sel.attr('id') === 'customQuestionOption') {
+          customQuestion.show();
+          customQuestionInput.focus();
+          // Set the height of the window to be taller.
+        } else {
+          customQuestion.hide();
+          // The reason this isn't done on page load is due to localization
+          if(sel.index() !== 0){
+            sel.val(sel.text());
+          }
+        }
+
+        // Update the validator to validate the correct input field that is displayed (either select box, or input field for custom question).
+        mmesetupui.modifyValidatedFields();
+
+        // Resize window
+        Setup.windowResize();
+      }
+    );
+    
+    // Auto-focus answer field after selecting a question
+    $('.secret select').bind('change', function(){
+      $(this).parents('.row').next('.row').find('input').focus();
+    });
+    
+    
+    // Localize selector option text from a loc string that contains @@Number@@
+    function localizeSelector(selectorId, locString) {
+      $('#'+selectorId).children('option:not(:first-child)').each(function(){
+        var text = $(this).html(),
+            newText = locString.replace('@@Number@@', text); // swap in existing option text for @@Number@@
+        $(this).html(newText);
+      });
+    };
+    
+
+    /**
+      Function to parse the security questions and populate them into the three
+      dropdowns in pref-pane.
+
+      securityQuestionsHash contains all the security questions. A set of six
+      questions is formed at a time and placed under a selector.
+
+      TODO: Should be moved to *SelectSecurityQuestionsSubPage.met*
+    */
+    $(document).ready(function() {
+      if (typeof securityQuestionsHash != 'undefined') {
+        var locKeys               = Object.keys(securityQuestionsHash),
+            defaultOption         = mmejsloc.SecurityQuestionsDefaultOption,
+            defaultOptionHtml     = '<option dir="$rightToLeftKeyword" class="questionOption" value="">'+defaultOption+'</option>',
+            questionset           = defaultOptionHtml,
+            questionsPerSelector  = 6,
+            selectorPosition      = 1;
+
+        locKeys.forEach(function(key, idx) {
+          questionset += '<option dir="$rightToLeftKeyword" class="questionOption" value="'+key+'">'+securityQuestionsHash[key]+'</option>';
+          if ((idx % questionsPerSelector) === questionsPerSelector-1) {
+            questionSelector = $("#securityQuestionSelector"+selectorPosition);
+            // sneak up the options on the select element
+            questionSelector.html(questionset);
+            // start afresh for the next selector
+            questionset = defaultOptionHtml;
+            selectorPosition++;
+          }
+        });
+      }
+      
+      // Localize Birthday Selectors
+      localizeSelector('daySelector', mmejsloc.DayNumbers);
+      localizeSelector('yearSelector', mmejsloc.YearNumbers);
+    });
+
+     /*
+    $('#questionSelector').click(
+      //Ensure change event fires, even if previous option is chosen, since change only fires if previous option is different.
+      function(e) {
+        if(mmesetupui.getPreviousQuestion() && this.selectedIndex === mmesetupui.getPreviousQuestion().index()){
+          $(this).change();
+        } 
+      
+        mmesetupui.setPreviousQuestion($(this.options[this.selectedIndex]));
+      }
+    );
+
+    $('#questionSelector').focus(
+      function(e) {
+        mmesetupui.setPreviousQuestion($(this.options[this.selectedIndex]));
+        if($(this).siblings('.hint')){
+          $(this).siblings('.hint').css({ opacity: 0 });
+        }
+        $('#customQuestionOption').text(mmejsloc.SecurityQuestionWrite);
+      
+      }
+    );
+
+    $('#questionSelector').change(
+      function(e) {
+        var sel = $(this.options[this.selectedIndex]);
+        var customQuestionInput = $('#customQuestionInput');
+        var customQuestion = $('#customQuestion');
+        var question = $('#question');
+        var questionField = $('#questionField');
+
+        if(sel.index() === 0){
+          $(this).addClass('defaulted');
+
+          questionField.val("").addClass('defaulted');
+          customQuestion.hide();
+
+        } else {
+          $(this).removeClass('defaulted');
+          questionField.removeClass('defaulted');
+
+          if(sel.attr('id') === 'customQuestionOption'){
+            if(sel.val() !== ""){
+              customQuestionInput.val(sel.val());
+              questionField.val(sel.val());
+            }
+            customQuestion.show();
+            customQuestionInput.focus();
+            question.hide(); 
+            
+          } else {
+            customQuestion.hide();
+            sel.val(sel.text());
+            questionField.val(sel.text());
+
+          } 
+        }
+      }
+    );
+
+    $('#customQuestionInput').blur(
+      function(e) {   
+        var q = $(this).val();
+        var questionSelector = $('#questionSelector');
+        var customOption = $('#customQuestionOption');
+        var customQuestion = $('#customQuestion');
+        var questionField = $('#question');
+        //if(q.trim() !== "" && !$(this).hasClass('defaulted')){
+        if(q.trim() !== "" ){
+          customOption.val(q).text(q);
+          questionSelector.removeClass('defaulted');
+          if($(this).siblings('.hint')){
+
+          $(this).siblings('.hint').css({ opacity: 0 });
+          }
+
+        } else {
+          //restore default options
+          customOption.val("");
+          questionSelector[0].selectedIndex = 0;
+          questionSelector.addClass('defaulted');
+          //restore ghost text
+          if($(this).siblings('.hint')){
+          $(this).siblings('.hint').css({ opacity: 1 });
+          }
+
+        }
+        
+        customQuestion.hide();
+        questionField.show();
+      }
+    );
+
+    $('#customQuestionInput').keydown(
+      function(e) {
+        var q = $(this).val();
+        var customOption = $('#customQuestionOption');
+        customOption.val(q);
+      }
+    );
+     */
+    /* end event handlers */
+    $('#currentEmailRadio').change(function(){
+      $.log("#currentEmailRadio change called");
+      mmesetupui.validator.isAppleIdRequired = true;
+      $('#createEmailFields').hide();
+      $('#currentEmailFields').show();
+      $('#emailField').focus();
+      mmesetupui.configurePageValidation();
+      mmesetupui.modifyValidatedFields();
+      setTimeout(Setup.windowResize, 0);
+    });
+
+    $('#createFreeEmailRadio').change(function(){
+      $.log("#createFreeEmailRadio change called");
+      mmesetupui.validator.isAppleIdRequired = false;
+      $('#currentEmailFields').hide();
+      $('#createEmailFields').show();
+      $("#createEmailField").focus();
+      mmesetupui.configurePageValidation();
+      mmesetupui.modifyValidatedFields();
+      setTimeout(Setup.windowResize, 0);
+    });
+    
+    // block the spacebar on email inputs
+    $('#emailField, #createEmailField').bind('keydown', function(e){
+      var code = (e.keyCode || e.which);
+      if(code === 32) {
+        return false; 
+      }
+    });
+
+
+/*
+    $('#currentEmailRadio').change(function(){
+      $.log("#currentEmailRadio change called");
+      mmesetupui.validator.isAppleIdRequired = true;
+      $('#createEmailFields').hide();
+      $('#email').show();
+      $('#emailField').focus();
+      mmesetupui.configurePageValidation();
+      mmesetupui.modifyValidatedFields();
+    });
+
+    $('#createFreeEmailRadio').change(function(){
+      $.log("#createFreeEmailRadio change called");
+      mmesetupui.validator.isAppleIdRequired = false;
+      $('#email').hide();
+      $('#createEmailFields').show();
+      $("#createEmailField").focus();
+      mmesetupui.configurePageValidation();
+      mmesetupui.modifyValidatedFields();
+    });
+    */
+    
+
+  }
+}) ;
+
+
+/*
+  Setup up javascript confirm dialog for prefpane
+*/
+Setup.showExtraConfirmationSheet = function() {
+    return false;
+};
+
+Setup.showErrorPage = function(title, message, evalMethod, callback) {
+    Setup.confirmWithCallback(message, title, null, mmejsloc.OK, function(index) {callback();});
+}; 
+
+Setup.showEmailDomainInInputField = function() {
+    return false;
+};
+
+Setup.setupConfirmWithCallback = function(){
+  window.AppleAccountSetup.confirmWithCallback = function(message, title, okTitle, cancelTitle, callback) {
+    $.log("confirm with call back\n\tmessage:"+message+"\n\ttitle:"+
+          title+"\n\tokTitle:"+okTitle+"\n\tcancelTitle:"+cancelTitle
+            +"\n\tcallback:"+(callback?"function": null)) ;
+    
+    //unbind previously bound events        
+    $('.confirm-sheet .right-button, .confirm-sheet .left-button').unbind() ;
+    
+    title = title? title :"" ;
+    message = message? message :"" ;
+    
+    $('.confirm-sheet .title').html(title);
+    $('.confirm-sheet .message').html(message);
+    
+    var rightButton = $('.confirm-sheet .right-button') ;
+    var leftButton = $('.confirm-sheet .left-button') ;
+    
+    
+    // if oktitle is not present, use canceltitle for the ok button. 
+    // canceltitle will never be blank. 
+    // this is a workaround, because when there is only one button, the cancelTitle
+    // sent as non null  [ :-( ]  and not the okTitle
+      
+      
+      
+    // hookup the right button. use okTitle if available, use cancelTitle if not
+    
+    var rightButtonTitle;
+    if (okTitle){
+      $.log('\tHooking up right/ok/0 button callback with oktitle') ;
+      rightButtonTitle = okTitle;
+    } else if (cancelTitle) {
+      $.log('\tHooking up right/ok/0 button callback with cancelTitle, because okTitle was blank') ;
+      rightButtonTitle = cancelTitle;
+    } else {
+      $.log('BAD API CALL TO CONFIRMWITHCALLBACK, neither okTitle nor cancelTitle were specified.') ;
+    }
+    
+    rightButton.val(rightButtonTitle).click(function(){
+      if (callback) {
+        callback(0) ;
+      }
+      $.log('reached right/ok/0 button call back') ;
+      var complete = function (){
+        $('#main').attr('aria-hidden', 'false'); // unhide the main body contents from screen readers
+        $('#main button, #main input, #main select, #main textarea').removeAttr('tabindex'); // make the other form elements focusable again
+        if ($('#nextButton')) $('#nextButton').focus(); // return focus
+        $('.confirm-sheet').hide(); // hide the sheet from screen readers
+      };
+      $('.confirm-sheet').animate({top:'-150px'}, 200, 'swing', complete) ;
+      $('.confirm-modal').css('display','none');
+      Setup.isConfirmDialogVisible = false ;
+    }) ;
+    rightButton.show(); //right button will always be shown. 
+    Setup.setButtonMinWidth(rightButton) ;
+    
+    
+    //we need two buttons if both oktitle and canceltitle were specified. let's do it
+    if (okTitle && cancelTitle) {
+      $.log('\tHooking up left/cancel/1 button callback with canceltitle') ;
+      leftButton.val(cancelTitle).click(function(){
+        if(callback) {
+          callback(1) ;
+        }
+        $.log('reached left/cancel/1 button call back') ;
+        var complete = function (){
+          $('#main').attr('aria-hidden', 'false'); // unhide the main body contents from screen readers
+          $('#main button, #main input, #main select, #main textarea').removeAttr('tabindex'); // make the other form elements focusable again
+          if ($('#nextButton')) $('#nextButton').focus(); // return focus
+          $('.confirm-sheet').hide(); // hide the sheet from screen readers
+        };
+        $('.confirm-sheet').animate({top:'-150px'}, 200, 'swing', complete) ;
+        $('.confirm-modal').css('display','none');
+        Setup.isConfirmDialogVisible = false ;
+      }) ;
+      leftButton.show();
+      Setup.setButtonMinWidth(leftButton) ;
+      
+    } else if(okTitle && !cancelTitle) {
+       $.log("BAD API CALL TO CONFIRMWITHCALLBACK, oktitle was specified, but cancelTitle wasn't.") ;
+    } else {
+      leftButton.hide();
+    }
+    
+    var complete = function (){
+      if ($('#confirmHeading')) $('#confirmHeading').focus(); // force focus to the new sheet for screen readers
+      $('#main button, #main input, #main select, #main textarea').attr('tabindex', '-1');  // keep the other form elements from being focusable while the sheet is showing
+      // uncomment this next line once WebKit fix <rdar://problem/9973225> makes it into a build
+      //$('#main').attr('aria-hidden', 'true'); // and hide the main body contents temporarily
+    };
+    $('.confirm-modal').css('display', 'block');
+    $('.confirm-sheet').show();
+    $('.confirm-sheet').animate({top:'-10px'}, 200, 'swing', complete) ;
+    Setup.isConfirmDialogVisible = true ;
+  };
+} ;
+
+mmesetupui.deviceInit = function()  {
+  
+  Setup.setupConfirmWithCallback();
+  $.log('mmesetupui.deviceinit begin') ;
+  mmesetupui.validator = new Setup.Validator();
+  mmesetupui.eventHandler = new Setup.PrefPaneEventHandler();
+  // if there is account data
+  // render the values in the various fields
+  // disable buttons appropriately
+  mmesetupui.renderValidNavigationBar(false);
+
+  // point currentPage as the start page
+  mmesetupui.setCurrentPage(mmesetupconstants.startPage);
+
+  $.log("current page : " + mmesetupui.getCurrentPage());
+
+
+  // hide last page instructions appropriately
+  // for update and create case
+  if (mmesetupconstants.updateMode) {
+    $("#createPageInstructions").hide();
+    $("#updatePageInstructions").show();
+    $("#emailField").val(mmesetupconstants.appleId);
+
+  }
+  else {
+    $("#updatePageInstructions").hide();
+    $("#createPageInstructions").show();
+  }
+  mmesetupui.configurePageValidation();
+  setInterval(mmesetupui.checkFilledOut, 100);
+  
+  if(mmesetupui.getCurrentPage() == 7) {
+    mmesetupui.request.getICloudEmailSuggestions();
+    setTimeout(function(){
+      $('#createEmailField').focus();
+    }, 1000);
+  }
+  
+  $('input,select').keydown(function(event) {
+    var $this = $(this);
+
+    if ($this.is('input') && 13 !== event.keyCode/*13 is a non printable character*/) {
+      if($(this, '.hint').css('opacity') === "1"){
+
+        if($this.siblings('.hint')){
+          $this.siblings('.hint').css({ opacity: 0 });
+        }
+      }
+    }
+  });
+
+  
+  // always copy over the value into the createemail field 
+  // helper function below updates ui when a suggested email is chosen
+  function updateUI(thisElem) {
+    var email = thisElem.val();
+    var field; 
+
+    field = $("#createEmailField");
+    if (!field.length) field = $("#attachMeEmailField");
+    if (!field.length) field = null;
+
+    if (field) field.val(email);
+    
+    mmesetupui.hideFieldError(field);
+    
+    Setup.windowResize();
+  }
+  // event listeners for suggestion field activity
+  $('#suggestions-select').change(
+    function() { updateUI($(this)) }
+  );
+  $('#suggestions-select').click(
+    function() { updateUI($(this)) }
+  );
+  $('#suggestions-select').keyup(
+    function(event) {
+      if(event.keyCode==13) {
+        updateUI($(this));        
+      }
+    }
+  );
+
+  if(mmesetupconstants.activateMeEmail) {
+      $('#createEmailFields').show();
+  }
+  
+  $.log('mmesetupui.deviceinit end') ;
+} ;
+
+mmesetupui.showSuggestions = function() {
+    $('#createEmailField').addClass('has-suggestions');
+    setTimeout(Setup.windowResize, 0);
+};
+
+mmesetupui.hideSuggestions = function() {
+    $('#createEmailField').removeClass('has-suggestions');
+    setTimeout(Setup.windowResize, 0);
+};
+
+
+mmesetupui.handleSuggestions = function(suggestions, meEmail) {
+                    // show the suggestions foo
+                        mmesetupconstants.useSuggestions = true;
+                        mmesetupui.showSuggestions();
+                        $("#suggestions-select").empty();
+                        for(var i=0; i<suggestions.length; i++) {
+                            var sug = suggestions[i].replace(mmesetupconstants.emailDomain, "");
+                            var option = "<option value='" + sug + "'>" + sug + "</option>";
+                            $("#suggestions-select").append(option);
+                        }
+                        
+                        var emailField = $("#createEmailField");
+                        if(emailField.val() == '') {
+                          mmesetupui.renderValidNavigationBar(true);
+                        }
+} ;
+
+mmesetupui.isCreateMeEmailMode = function() {
+    return mmesetupconstants.activateMeEmail || $('#createFreeEmailRadio').attr("checked"); 
+};
+
+/* Start  >>> Functions for HSA login - PrefPane */
+function sendCodeToSelectedDevice() {
+  sendCode(hsa_deviceString, mmesetupconstants.authHeader);
+}
+
+function setUpPageForContent(headerStr, cancelBtnHash, nextBtnHash) {
+  $('#pageHeader').html(headerStr);
+  // set cancel button
+  $('#cancelActionButton').val(cancelBtnHash.name).unbind('click').bind('click', cancelBtnHash.clickFn);
+  // set next button
+  $('#nextActionButton').val(nextBtnHash.name).unbind('click').bind('click', nextBtnHash.clickFn);
+}
+
+function showWellViewContent(contentType) {
+  var pageTitle = '', cancelBtnHash = {}, nextBtnHash = {};
+
+  switch (contentType) {
+    case "deviceListSubPage": 
+      pageTitle = "This Apple ID is protected with two-step verification. Please verify your identity to continue.";
+
+      cancelBtnHash['name'] = 'Cancel';
+      cancelBtnHash['clickFn'] = function() {
+        AppleAccountSetup.cancel();
+      };
+
+      nextBtnHash['name'] = 'Next';
+      nextBtnHash['clickFn'] = function() {
+        hsa_deviceString = $('input:radio[name=deviceName]:checked').val();
+        sendCodeToSelectedDevice();
+        showWellViewContent('verificationCodeSubPage');
+      };
+
+      setUpPageForContent(pageTitle, cancelBtnHash, nextBtnHash);
+      $('#deviceListSubPage').show();
+      $('#recoveryBtnView').show();
+      $('#verificationCodeSubPage').hide();
+      $('#recoveryKeySubPage').hide();
+
+    break;
+
+    case "verificationCodeSubPage":
+      pageTitle = "Enter the verification code sent to “@@device@@”";
+
+      cancelBtnHash['name'] = 'Back';
+      cancelBtnHash['clickFn'] = function() {
+        showWellViewContent('deviceListSubPage');
+      };
+
+      nextBtnHash['name'] = 'Next';
+      nextBtnHash['clickFn'] = function() {
+        var enteredCode = $('#verificationCodeText').val();
+        validateCode(hsa_deviceString, enteredCode, mmesetupconstants.authHeader);
+      };
+
+      setUpPageForContent(pageTitle, cancelBtnHash, nextBtnHash);
+      $('#deviceListSubPage').hide();
+      $('#recoveryKeySubPage').hide();
+      $('#recoveryBtnView').hide();
+      $('#verificationCodeSubPage').show();
+
+    break;
+
+    case "recoveryKeySubPage": 
+      pageTitle = "Enter the Recovery Key provided when you enabled two-step verification:";
+
+      cancelBtnHash['name'] = 'Cancel';
+      cancelBtnHash['clickFn'] = function() {
+        AppleAccountSetup.cancel();
+      };
+
+      nextBtnHash['name'] = 'Next';
+      nextBtnHash['clickFn'] = function() {
+        var enteredKey = $('#recoveryKeyText').val();
+        validateKey(enteredKey, mmesetupconstants.authHeader);
+      };
+
+      setUpPageForContent(pageTitle, cancelBtnHash, nextBtnHash);
+      $('#deviceListSubPage').hide();
+      $('#verificationCodeSubPage').hide();
+      $('#recoveryBtnView').hide();
+      $('#recoveryKeySubPage').show();
+
+  } // End of Switch
+}
+
+function createRadio(jsonStr) {
+  var str = '',
+      idx = 1;
+
+  for (key in jsonStr) {
+    str = str + '<input type="radio" name="deviceName" value="'+ jsonStr[key] +'" id="device'+idx+'"/>';
+    str = str + ' <label for="device'+idx+'">'+ key +'</label>';
+    str = str + '<br/>';
+    idx++;
+  }
+  $('#deviceListSubPage').append(str);
+}
+
+$(document).ready(function() {
+  var ua = navigator.userAgent.toLowerCase();
+  if (ua.indexOf('windows') > 0) {
+    $('body').addClass('windows');
+  }
+  
+  showWellViewContent('deviceListSubPage');
+
+  if (typeof trustedDeviceList != 'undefined') {
+    createRadio(trustedDeviceList);
+    $('input:radio[name=deviceName]:first').attr('checked', 'checked');
+  }
+
+});
+
+/* End <<< Functions for HSA login - PrefPane */
+
+Setup.main();

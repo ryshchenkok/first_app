@@ -1,0 +1,183 @@
+[08/02/18, 15:07:59:136] info: ╔═══════════════════════════════════════════════════════════════════════╗
+[08/02/18, 15:07:59:137] info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 08/02/18, 15:07:59:133      ║
+[08/02/18, 15:07:59:137] info: ╚═══════════════════════════════════════════════════════════════════════╝
+[08/02/18, 15:07:59:230] info: Initializing local storage instance at path: /Users/kr/Library/Application Support/Slack/local-settings.json
+[08/02/18, 15:07:59:542] info: Main window preload script finished
+{
+  "readyTime": 734.179511
+}
+[08/02/18, 15:08:02:981] info: Store: ADD_WINDOW
+{
+  "id": 6,
+  "subType": "calls_mini_panel",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/02/18, 15:08:03:024] info: Store: ADD_WINDOW
+{
+  "id": 7,
+  "subType": "calls_cursors",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/02/18, 15:08:03:029] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[08/02/18, 15:08:03:068] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V1"
+}
+[08/02/18, 15:08:03:153] info: Starting new Calls
+[08/02/18, 15:08:15:117] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 15:08:21:728] info: Store: FOREGROUND_APP
+[08/02/18, 15:08:51:314] info: Store: FOREGROUND_APP
+[08/02/18, 15:09:33:181] info: Store: FOREGROUND_APP
+[08/02/18, 15:10:02:662] info: Store: FOREGROUND_APP
+[08/02/18, 15:10:41:902] info: Store: FOREGROUND_APP
+[08/02/18, 15:11:18:469] info: Store: FOREGROUND_APP
+[08/02/18, 15:12:15:572] info: Store: FOREGROUND_APP
+[08/02/18, 15:14:52:780] info: Store: FOREGROUND_APP
+[08/02/18, 15:15:18:330] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U69MKMHQX-ge0b0d5dce35-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "97o2h6uOyBMqJQk",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533212118.000045&team=T4ALJRY56",
+  "msg": "1533212118.000045",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:15:20:988] info: Store: FOREGROUND_APP
+[08/02/18, 15:15:48:801] info: Store: FOREGROUND_APP
+[08/02/18, 15:16:16:272] info: Store: FOREGROUND_APP
+[08/02/18, 15:16:23:287] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "LlOPhrCmQYOY187",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:16:33:454] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:13:434] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:30:834] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:52:824] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:06:506] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:21:802] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:30:153] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:37:690] info: Store: FOREGROUND_APP
+[08/02/18, 15:19:40:796] info: Store: FOREGROUND_APP
+[08/02/18, 15:23:37:811] info: Store: FOREGROUND_APP
+[08/02/18, 15:24:26:672] info: Store: FOREGROUND_APP
+[08/02/18, 15:24:49:915] info: Store: FOREGROUND_APP
+[08/02/18, 15:25:19:349] info: Store: FOREGROUND_APP
+[08/02/18, 15:28:29:247] info: Store: FOREGROUND_APP
+[08/02/18, 15:34:51:218] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:11:938] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:20:869] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    561,
+    238
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:24:540] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    94,
+    195
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:27:796] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    80,
+    239
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:43:693] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:52:277] info: Store: FOREGROUND_APP
+[08/02/18, 15:36:13:772] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    77,
+    241
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:36:33:132] info: Store: FOREGROUND_APP
+[08/02/18, 15:36:56:834] info: Store: FOREGROUND_APP
+[08/02/18, 15:37:14:010] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "Wzr8IEFn4z9Wq4W",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:14:365] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "B7AnhqHjwpmVJDA",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:14:381] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "mVmETrI9jVnmn5L",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:16:644] error: Call from NATIVE to invalid JS method: onShutdownComplete - [object Object]
+[08/02/18, 15:37:16:646] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "p6pzs8SGn3gwz23",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:16:934] info: Store: REMOVE_WINDOW 5
+[08/02/18, 15:37:16:935] info: Window is unloading, window.desktop is no longer accessible
+[08/02/18, 15:37:16:940] info: Store: REMOVE_WINDOW 6

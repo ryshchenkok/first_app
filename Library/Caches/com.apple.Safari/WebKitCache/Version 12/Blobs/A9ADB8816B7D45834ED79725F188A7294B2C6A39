@@ -1,0 +1,823 @@
+
+
+		
+		
+							
+					
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+		<head>
+
+				
+
+
+<link rel="alternate" hreflang="en" href="https://slack.com/downloads/osx" />
+<link rel="alternate" hreflang="en-us" href="https://slack.com/downloads/osx" />
+
+<link rel="alternate" hreflang="fr" href="https://slack.com/intl/fr/downloads/osx" />
+<link rel="alternate" hreflang="fr-fr" href="https://slack.com/intl/fr-fr/downloads/osx" />
+
+<link rel="alternate" hreflang="de" href="https://slack.com/intl/de/downloads/osx" />
+<link rel="alternate" hreflang="de-de" href="https://slack.com/intl/de-de/downloads/osx" />
+
+<link rel="alternate" hreflang="ja" href="https://slack.com/intl/ja/downloads/osx" />
+<link rel="alternate" hreflang="ja-jp" href="https://slack.com/intl/ja-jp/downloads/osx" />
+
+<link rel="alternate" hreflang="es" href="https://slack.com/intl/es/downloads/osx" />
+<link rel="alternate" hreflang="es-es" href="https://slack.com/intl/es-es/downloads/osx" />
+
+<link rel="alternate" hreflang="x-default" href="https://slack.com/downloads/osx" />
+				<!--
+                                                           LLLL                                   KKKK
+                   ~:~~~                                   LLLL                                   KKKK
+        ~:::       ~~~~~:  ::::                            LLLL                                   KKKK
+       ::::::       ~~++++::::::                           LLLL                                   KKKK
+       ::::::     ::++++++::::::              SSSSSSSS     LLLL     aaaaaaaa           cccccccc   KKKK       KKKk
+        :::::+::::::~++++++:::              SSSSSSSSSSSS   LLLL   AAAAAAAAAAAA      CCCCCCCCCCCCc KKKK     KKKKK
+        ~+++++:::::::++++:~                SSSSS    SSS    LLLL   AAAAaaaaAAAAA    CCCCCCCCCCCCC  KKKK    KKKKK
+    :::::++++++:::::: ~~~~~~               SSSS            LLLL            AAAAA  CCCCCc          KKKK  KKKKK
+   ,::::::+++++:      ~~~~~~               SSSSSSSS        LLLL            AAAAA  CCCCC           KKKKkKKKKK
+    ::::::++::::       :~~~~~   +::         SSSSSSSSSSS    LLLL    AAAAAAAAAAAAA  CCCCC           KKKKkKKKKK
+           ::::::     ~:++++++::::::                SSSSS  LLLL  AAAAA     AAAAA  CCCCC           KKKK  KKKKK
+            ::::::::::::+++++++:::+        SSS      SSSSS  LLLL  AAAA      AAAAA  CCCCCC      ccc KKKK   KKKKK
+            ~+++++:::::::+++++:            SSSSSSSSSSSSS   LLLL  AAAAAAAAAAAAAAA   CCCCCCCCCCCCCC KKKK    KKKKK
+         +:::++++++::::::+~~~~~~            SSSSSSSSSSS    LLLL   AAAAAAAa  aAAA     cCCCCCCCCCc  KKKK     KKKKK
+       ::::::++++:::       ~~~~~
+        :::+  ::::::        ~~~
+               ::::
+
+Thanks for taking a peek! Maybe a job is what you seek?
+https://slack.com/careers
+
+-->
+
+				<script type="text/javascript" src="https://a.slack-edge.com/bv1-4/webpack.manifest.5261daf002127d13b7cf.min.js" crossorigin="anonymous" onload="window._cdn && _cdn.ok(this, arguments)" onerror="window._cdn && _cdn.failed(this, arguments)"></script>
+
+				
+
+		<noscript><meta http-equiv="refresh" content="0; URL=/downloads/osx?nojsmode=1" /></noscript>
+
+				
+
+
+<!-- output_js "head" -->
+<script type="text/javascript" src="https://a.slack-edge.com/bv1-4/security.clickjacking.859674bb9652ec8c0d1f.min.js" crossorigin="anonymous" onload="window._cdn && _cdn.ok(this, arguments)" onerror="window._cdn && _cdn.failed(this, arguments)"></script>
+<script type="text/javascript" src="https://a.slack-edge.com/bv1-4/security.hashcheck.b386aa9487b0ad725cb3.min.js" crossorigin="anonymous" onload="window._cdn && _cdn.ok(this, arguments)" onerror="window._cdn && _cdn.failed(this, arguments)"></script>
+
+				
+
+
+
+	
+				<script type="text/javascript">
+			window.optimizely = [];
+			window.dataLayer = [];
+			window.ga = false;
+		</script>
+
+	
+
+
+				
+
+
+
+
+		
+
+
+		
+
+
+<title>Mac | Downloads | Slack</title>
+
+
+	<meta name="description" content="Download Slack for free for mobile devices or desktop. Keep up with the conversation with our apps for iPhone, Android, Windows Phone and more." />
+
+
+
+        <link rel="canonical" href="https://slack.com/downloads/osx" />
+
+
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Slack" />
+<meta property="og:title" content="Mac | Downloads" />
+<meta property="og:description" content="Download Slack for free for mobile devices or desktop. Keep up with the conversation with our apps for iPhone, Android, Windows Phone and more." />
+<meta property="og:image" content="https://a.slack-edge.com/436da/marketing/img/meta/slack_hash_128.png" />
+<meta property="og:url" content="https://slack.com/downloads/osx" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@slackhq" />
+<meta name="twitter:title" content="Mac | Downloads" />
+<meta name="twitter:description" content="Download Slack for free for mobile devices or desktop. Keep up with the conversation with our apps for iPhone, Android, Windows Phone and more." />
+<meta name="twitter:image" content="https://a.slack-edge.com/436da/marketing/img/meta/slack_hash_128.png" />
+<meta charset="utf-8">
+<meta name="superfish" content="nofish" />
+<meta name="author" content="Slack" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+				
+<link id="favicon" rel="shortcut icon" href="https://a.slack-edge.com/436da/marketing/img/meta/favicon-32.png" sizes="16x16 32x32 48x48" type="image/png" />
+
+<link rel="icon" href="https://a.slack-edge.com/436da/marketing/img/meta/app-256.png" sizes="256x256" type="image/png" />
+
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://a.slack-edge.com/436da/marketing/img/meta/ios-152.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://a.slack-edge.com/436da/marketing/img/meta/ios-144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://a.slack-edge.com/436da/marketing/img/meta/ios-120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://a.slack-edge.com/436da/marketing/img/meta/ios-114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72"   href="https://a.slack-edge.com/436da/marketing/img/meta/ios-72.png" />
+<link rel="apple-touch-icon-precomposed" href="https://a.slack-edge.com/436da/marketing/img/meta/ios-57.png" />
+
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="https://a.slack-edge.com/436da/marketing/img/meta/app-144.png" />
+				
+				
+		
+				
+		
+		
+		<!-- output_css "marketing_css_core" -->
+		<link href="https://a.slack-edge.com/acdbf/style/rollup-marketing.css" rel="stylesheet" type="text/css" crossorigin="anonymous" onload="window._cdn && _cdn.ok(this, arguments)" onerror="window._cdn && _cdn.failed(this, arguments)">
+
+
+				<!-- output_css "regular" -->
+		<link href="https://a.slack-edge.com/86225/marketing/style/page_downloads.css" rel="stylesheet" type="text/css" crossorigin="anonymous" onload="window._cdn && _cdn.ok(this, arguments)" onerror="window._cdn && _cdn.failed(this, arguments)">
+
+
+	</head>
+
+		<body class="">
+
+				
+
+<a class="c-button v--primary c-skip-link is-focusable" href="#main" data-clog-click data-clog-ui-element="link_skip" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_skip_link">Skip to main content</a>
+				<div id="announce" aria-live="polite" class="u-visually-hidden"></div>
+											
+
+
+
+	
+<header role="banner">
+	<nav class="c-nav c-nav--primary" role="navigation" aria-label="Primary Navigation">
+		<div class="c-nav__row o-content-container">
+
+						<div class="c-slacklogo">
+				<a data-clog-click data-clog-ui-element="link_home" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_header_nav" class="c-slacklogo--white" href="https://slack.com/" aria-label="Slack" data-qa="logo">
+					<img src="https://a.slack-edge.com/e539/marketing/img/icons/icon_slack_w.svg" width="125" class="c-slacklogo--white" alt="Slack"/>
+					<img src="https://a.slack-edge.com/bd852f/img/icons/icon_slack.svg" width="125" class="c-slacklogo--color" alt="Slack"/>
+				</a>
+			</div>
+
+						<ul class="c-nav__list">
+
+								<li class="c-nav--primary__listitem v--desktop"><a data-clog-click data-clog-ui-element="link_features" data-clog-ui-component="inc_header_nav" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_header_nav" href="https://slack.com/features" data-qa="why_slack">Why Slack?</a></li>
+
+								<li class="c-nav--primary__listitem v--desktop"><a data-clog-click data-clog-ui-element="link_pricing" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_header_nav" href="https://slack.com/pricing" data-qa="pricing">Pricing</a></li>
+
+								<li class="c-nav--primary__listitem v--desktop"><a data-clog-click data-clog-ui-element="link_about_us" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_header_nav" href="https://slack.com/about" data-qa="about_us">About Us</a></li>
+
+											
+								<li class="c-nav--primary__listitem"><a data-gtm-click="optout_find_team" data-clog-click data-clog-ui-element="link_sign_up_nav" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_header_nav" href="https://slack.com/get-started" data-qa="find_ws">Find Your Workspace</a></li>
+
+								<li class="c-nav--primary__listitem"><a data-gtm-click="SignUp" data-clog-click data-clog-ui-element="link_create" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_header_nav" href="https://slack.com/create" class="c-button--nav" data-qa="create_ws">Create Workspace</a></li>
+
+			
+			</ul>
+
+						<button id="nav_menu_btn" aria-label="Menu" class="c-nav__icon v--menu u-border-radius--none" data-clog-click data-clog-ui-element="btn_menu" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_header_nav">
+				<img alt="" src="https://a.slack-edge.com/a425/marketing/img/icons/icon_menu.svg"/>
+			</button>
+
+		</div>
+	</nav>
+
+		
+
+<nav id="main_nav" class="c-nav__mobile v--primary is-hidden" role="navigation" aria-label="Primary Navigation">
+
+		<div class="c-nav__toolbar v--top">
+		<a href="https://slack.com/" data-clog-click data-clog-ui-element="link_home" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_mobile_nav"><img class="c-slacklogo t-white" src="https://a.slack-edge.com/5ced7/marketing/img/icons/icon_slack_pillow.svg" width="31" alt="Slack" /></a>
+		<button id="nav_close_btn" class="c-nav__icon v--close" data-clog-click data-clog-ui-element="btn_close" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_mobile_nav">
+			<img src="https://a.slack-edge.com/5ced7/marketing/img/icons/icon_close.svg"  width="24" alt="Close Navigation"/>
+		</button>
+	</div>
+
+		<ul class="c-nav__list v--left v--main">
+		<li class="c-nav--primary__listitem"><a href="https://slack.com/features" data-clog-click data-clog-ui-element="link_features" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_mobile_nav">Why Slack?</a></li>
+		<li class="c-nav--primary__listitem"><a href="https://slack.com/pricing" data-clog-click data-clog-ui-element="link_pricing" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_mobile_nav">Pricing</a></li>
+		<li class="c-nav--primary__listitem"><a href="https://slack.com/about" data-clog-click data-clog-ui-element="link_about" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_mobile_nav">About Us</a></li>
+	</ul>
+
+	
+				
+						<ul class="c-nav__list v--left v--auth">
+
+								<li class="c-nav--primary__listitem"><a data-gtm-click="optout_find_team" href="https://slack.com/get-started" data-clog-click data-clog-ui-element="link_sign_up_nav" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_mobile_nav">Find Your Workspace</a></li>
+				<span>|</span>
+				<li class="c-nav--primary__listitem"><a data-gtm-click="SignUp" href="https://slack.com/create" data-clog-click data-clog-ui-element="link_create" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_mobile_nav">Create Workspace</a></li>
+			</ul>
+
+			
+		<a href="https://slack.com/get" class="c-nav__cta c-nav__cta--download" data-clog-click data-clog-ui-element="link_get_app" data-clog-ui-step="page_downloads" data-clog-ui-component="inc_mobile_nav">Download Slack</a>
+
+</nav>
+
+</header>
+							<main id="main" role="main">
+<section class="download-header o-hero v--full-bleed v--light-text  t-contains-reverse-links">
+	<div class="o-hero__content ">
+		<header class="o-hero__header">
+			<h1 class="o-hero__header__headline">
+									Slack for Mac							</h1>
+			<div class="o-hero__header__copy">
+			
+													<p>Sign in to multiple workspaces, get desktop notifications, and launch right from your dock.</p>
+				
+				<form class="o-hero__header__cta download-header__download-desktop-links" name="build_select" action="https://slack.com/downloads/instructions/osx" method="post" accept-encoding="UTF-8" data-js-hook="build_form">
+										<input type="hidden" name="os" value="osx">
+
+																	<button id="download_page_mac_ddl" data-gtm-click="download-page-mac" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="btn_downloads_osx_ddl" type="submit"  class="c-button v--secondary v--no-border">
+							Download						</button>
+													<a id="download_page_mac" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="btn_downloads_osx_store" class="c-button v--black-fill" href="https://itunes.apple.com/app/slack/id803453959?ls=1&amp;mt=12" data-gtm-click="download-page-mac"><img alt="Download Slack on the Mac App Store" src='https://a.slack-edge.com/9c5b8/marketing/img/downloads/app_stores/ios_mac_app_store_badge.png' srcset='https://a.slack-edge.com/9c5b8/marketing/img/downloads/app_stores/ios_mac_app_store_badge.png 1x, https://a.slack-edge.com/9c5b8/marketing/img/downloads/app_stores/ios_mac_app_store_badge@2x.png 2x' /></a>
+											
+					<div class="download-meta">
+						<strong>Version 3.2.0</strong>
+													<strong> - </strong>
+							<a href="		https://slack.com/release-notes/osx	" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="link_downloads_whatsnew">What’s new</a>
+																			 / 							<a href="		https://slack.com/beta/osx		" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="link_downloads_beta">Get the beta</a>
+											</div>
+				</form>
+
+						</div>
+		</header>
+					<div class="o-hero__illustration o-content-container ">
+				<img src='https://a.slack-edge.com/73267c/marketing/img/downloads/screenshots/mac_screenshot.png' srcset='https://a.slack-edge.com/73267c/marketing/img/downloads/screenshots/mac_screenshot.png 1x, https://a.slack-edge.com/73267c/marketing/img/downloads/screenshots/mac_screenshot@2x.png 2x' alt="Screenshot of the Slack app" class="download_screenshot__osx c-shadowbox">
+			</div>
+			</div>
+	<div class="o-hero__background v--photo download-background"></div>
+</section>
+
+
+<section class="o-content-container stay-in-sync">
+	<div class="o-two-columns v--inverse">
+		<div class="stay-in-sync__form">
+			
+			<h2>Stay in sync, no matter where you go</h2>
+			<p class="u-margin-bottom--large">
+				Keep up with the conversation with our apps for <a href="https://slack.com/downloads/ios" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="link_downloads_ios">iPhone</a>, <a href="https://slack.com/downloads/android" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="link_downloads_android">Android</a> and
+				<a href="https://slack.com/downloads/winphone" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="link_downloads_winphone">Windows Phone.</a> We can text you a quick download link to get you started!
+			</p>
+			
+			<form class="c-form v--horizontal" name="send_sms" method="post" accept-encoding="UTF-8" data-js-hook="sms_form" novalidate>
+				<div class="c-form_notifications" data-js-hook="notifications">
+					<p class="c-form__notice is-success is-hidden" tabindex="-1">Thanks! Please check your phone!</p>
+					<p class="c-form__notice is-error is-hidden" tabindex="-1">Eeep! That didn’t work. Please try again.</p>
+				</div>
+				<div class="c-form__container">
+					<input type="hidden" name="crumb" value="s-1532327351-5c6bf314b7ef4662e1813d7a1b22180801b453fea2763d2e001e96a42147403d-☃" />
+					<div class="c-select">
+					
+
+
+<div class="sms_select_container align_top" data-wait-text="Please wait">
+	<select name="intl_select" class="sms_select" data-lazy-filter-select="true" aria-label="Select an International Country Code">
+
+		<option value="93" data-alpha="AF"  data-sample="701234567">Afghanistan +93</option>
+		<option value="355" data-alpha="AL"  data-sample="661234567">Albania +355</option>
+		<option value="213" data-alpha="DZ"  data-sample="561234567">Algeria +213</option>
+		<option value="1684" data-alpha="AS"  data-sample="(201) 555-5555">American Samoa +1684</option>
+		<option value="376" data-alpha="AD"  data-sample="312 345">Andorra +376</option>
+		<option value="244" data-alpha="AO"  data-sample="923 123 456">Angola +244</option>
+		<option value="1264" data-alpha="AI"  data-sample="(201) 555-5555">Anguilla +1264</option>
+		<option value="672" data-alpha="AQ"  data-sample="(201) 555-5555">Antarctica +672</option>
+		<option value="1268" data-alpha="AG"  data-sample="(201) 555-5555">Antigua and Barbuda +1268</option>
+		<option value="54" data-alpha="AR"  data-sample="91123456789">Argentina +54</option>
+		<option value="374" data-alpha="AM"  data-sample="77123456">Armenia +374</option>
+		<option value="297" data-alpha="AW"  data-sample="560 1234">Aruba +297</option>
+		<option value="61" data-alpha="AU"  data-sample="412345678">Australia +61</option>
+		<option value="43" data-alpha="AT"  data-sample="664123456">Austria +43</option>
+		<option value="994" data-alpha="AZ"  data-sample="401234567">Azerbaijan +994</option>
+		<option value="1242" data-alpha="BS"  data-sample="(201) 555-5555">Bahamas +1242</option>
+		<option value="973" data-alpha="BH"  data-sample="3600 1234">Bahrain +973</option>
+		<option value="880" data-alpha="BD"  data-sample="1812345678">Bangladesh +880</option>
+		<option value="1246" data-alpha="BB"  data-sample="(201) 555-5555">Barbados +1246</option>
+		<option value="375" data-alpha="BY"  data-sample="294911911">Belarus +375</option>
+		<option value="32" data-alpha="BE"  data-sample="470123456">Belgium +32</option>
+		<option value="501" data-alpha="BZ"  data-sample="622-1234">Belize +501</option>
+		<option value="229" data-alpha="BJ"  data-sample="90 01 12 34">Benin +229</option>
+		<option value="1441" data-alpha="BM"  data-sample="(201) 555-5555">Bermuda +1441</option>
+		<option value="975" data-alpha="BT"  data-sample="17 12 23 56">Bhutan +975</option>
+		<option value="591" data-alpha="BO"  data-sample="71234567">Bolivia +591</option>
+		<option value="387" data-alpha="BA"  data-sample="61123456">Bosnia and Herzegovina +387</option>
+		<option value="267" data-alpha="BW"  data-sample="71123456">Botswana +267</option>
+		<option value="55" data-alpha="BV"  data-sample="71123456">Bouvet Island +55</option>
+		<option value="55" data-alpha="BR"  data-sample="1196123-4567">Brazil +55</option>
+		<option value="1284" data-alpha="VG"  data-sample="(201) 555-5555">British Virgin Islands +1284</option>
+		<option value="673" data-alpha="BN"  data-sample="7123456">Brunei +673</option>
+		<option value="359" data-alpha="BG"  data-sample="48123456">Bulgaria +359</option>
+		<option value="226" data-alpha="BF"  data-sample="70123456">Burkina Faso +226</option>
+		<option value="257" data-alpha="BI"  data-sample="79 56 12 34">Burundi +257</option>
+		<option value="855" data-alpha="KH"  data-sample="91234567">Cambodia +855</option>
+		<option value="237" data-alpha="CM"  data-sample="6 71 23 45 67">Cameroon +237</option>
+		<option value="1" data-alpha="CA"  data-sample="(201) 555-5555">Canada +1</option>
+		<option value="238" data-alpha="CV"  data-sample="991 12 34">Cape Verde +238</option>
+		<option value="599" data-alpha="BQ"  data-sample="9 518 1234">Caribbean Netherlands +599</option>
+		<option value="1345" data-alpha="KY"  data-sample="(201) 555-5555">Cayman Islands +1345</option>
+		<option value="236" data-alpha="CF"  data-sample="70 01 23 45">Central African Republic +236</option>
+		<option value="235" data-alpha="TD"  data-sample="63 01 23 45">Chad +235</option>
+		<option value="56" data-alpha="CL"  data-sample="961234567">Chile +56</option>
+		<option value="86" data-alpha="CN"  data-sample="131 2345 6789">China +86</option>
+		<option value="61" data-alpha="CX"  data-sample="412345678">Christmas Island +61</option>
+		<option value="61" data-alpha="CC"  data-sample="412345678">Cocos [Keeling] Islands +61</option>
+		<option value="57" data-alpha="CO"  data-sample="321 1234567">Colombia +57</option>
+		<option value="269" data-alpha="KM"  data-sample="321 23 45">Comoros +269</option>
+		<option value="242" data-alpha="CG"  data-sample="61234567">Congo - Brazzaville +242</option>
+		<option value="243" data-alpha="CD"  data-sample="991234567">Congo - Kinshasa +243</option>
+		<option value="682" data-alpha="CK"  data-sample="71 234">Cook Islands +682</option>
+		<option value="506" data-alpha="CR"  data-sample="8312 3456">Costa Rica +506</option>
+		<option value="225" data-alpha="CI"  data-sample="12 34 56 7">Côte d’Ivoire +225</option>
+		<option value="385" data-alpha="HR"  data-sample="912345678">Croatia +385</option>
+		<option value="5999" data-alpha="CW"  data-sample="9 518 1234">Curaçao +5999</option>
+		<option value="357" data-alpha="CY"  data-sample="96 123456">Cyprus +357</option>
+		<option value="420" data-alpha="CZ"  data-sample="601 123 456">Czech Republic +420</option>
+		<option value="45" data-alpha="DK"  data-sample="20 12 34 56">Denmark +45</option>
+		<option value="253" data-alpha="DJ"  data-sample="77 83 10 01">Djibouti +253</option>
+		<option value="1767" data-alpha="DM"  data-sample="(201) 555-5555">Dominica +1767</option>
+		<option value="1" data-alpha="DO"  data-sample="(201) 555-5555">Dominican Republic +1</option>
+		<option value="593" data-alpha="EC"  data-sample="991234567">Ecuador +593</option>
+		<option value="20" data-alpha="EG"  data-sample="1001234567">Egypt +20</option>
+		<option value="503" data-alpha="SV"  data-sample="7012 3456">El Salvador +503</option>
+		<option value="240" data-alpha="GQ"  data-sample="222 123 456">Equatorial Guinea +240</option>
+		<option value="291" data-alpha="ER"  data-sample="7123456">Eritrea +291</option>
+		<option value="372" data-alpha="EE"  data-sample="5123 4567">Estonia +372</option>
+		<option value="251" data-alpha="ET"  data-sample="911234567">Ethiopia +251</option>
+		<option value="500" data-alpha="FK"  data-sample="51234">Falkland Islands +500</option>
+		<option value="298" data-alpha="FO"  data-sample="211234">Faroe Islands +298</option>
+		<option value="679" data-alpha="FJ"  data-sample="701 2345">Fiji +679</option>
+		<option value="358" data-alpha="FI"  data-sample="412345678">Finland +358</option>
+		<option value="33" data-alpha="FR"  data-sample="612345678">France +33</option>
+		<option value="594" data-alpha="GF"  data-sample="694201234">French Guiana +594</option>
+		<option value="689" data-alpha="PF"  data-sample="87 12 34 56">French Polynesia +689</option>
+		<option value="241" data-alpha="GA"  data-sample="6 03 12 34">Gabon +241</option>
+		<option value="220" data-alpha="GM"  data-sample="301 2345">Gambia +220</option>
+		<option value="995" data-alpha="GE"  data-sample="550 12 34 56">Georgia +995</option>
+		<option value="49" data-alpha="DE"  data-sample="15123456789">Germany +49</option>
+		<option value="233" data-alpha="GH"  data-sample="231234567">Ghana +233</option>
+		<option value="350" data-alpha="GI"  data-sample="57123456">Gibraltar +350</option>
+		<option value="30" data-alpha="GR"  data-sample="691 234 5678">Greece +30</option>
+		<option value="299" data-alpha="GL"  data-sample="22 12 34">Greenland +299</option>
+		<option value="1473" data-alpha="GD"  data-sample="(201) 555-5555">Grenada +1473</option>
+		<option value="590" data-alpha="GP"  data-sample="690301234">Guadeloupe +590</option>
+		<option value="1671" data-alpha="GU"  data-sample="(201) 555-5555">Guam +1671</option>
+		<option value="502" data-alpha="GT"  data-sample="5123 4567">Guatemala +502</option>
+		<option value="224" data-alpha="GN"  data-sample="601 12 34 56">Guinea +224</option>
+		<option value="245" data-alpha="GW"  data-sample="955 012 345">Guinea-Bissau +245</option>
+		<option value="592" data-alpha="GY"  data-sample="609 1234">Guyana +592</option>
+		<option value="509" data-alpha="HT"  data-sample="34 10 1234">Haiti +509</option>
+		<option value="504" data-alpha="HN"  data-sample="9123-4567">Honduras +504</option>
+		<option value="852" data-alpha="HK"  data-sample="5123 4567">Hong Kong +852</option>
+		<option value="36" data-alpha="HU"  data-sample="20 123 4567">Hungary +36</option>
+		<option value="354" data-alpha="IS"  data-sample="611 1234">Iceland +354</option>
+		<option value="91" data-alpha="IN"  data-sample="91234 56789">India +91</option>
+		<option value="62" data-alpha="ID"  data-sample="812345678">Indonesia +62</option>
+		<option value="98" data-alpha="IR"  data-sample="9123456789">Iran +98</option>
+		<option value="964" data-alpha="IQ"  data-sample="7912345678">Iraq +964</option>
+		<option value="353" data-alpha="IE"  data-sample="850123456">Ireland +353</option>
+		<option value="44" data-alpha="IM"  data-sample="7400123456">Isle of Man +44</option>
+		<option value="972" data-alpha="IL"  data-sample="501234567">Israel +972</option>
+		<option value="39" data-alpha="IT"  data-sample="312 345 6789">Italy +39</option>
+		<option value="1876" data-alpha="JM"  data-sample="(201) 555-5555">Jamaica +1876</option>
+		<option value="81" data-alpha="JP"  data-sample="9012345678">Japan +81</option>
+		<option value="44" data-alpha="JE"  data-sample="7400123456">Jersey +44</option>
+		<option value="962" data-alpha="JO"  data-sample="790123456">Jordan +962</option>
+		<option value="7" data-alpha="KZ"  data-sample="912 345-67-89">Kazakhstan +7</option>
+		<option value="254" data-alpha="KE"  data-sample="712123456">Kenya +254</option>
+		<option value="686" data-alpha="KI"  data-sample="72012345">Kiribati +686</option>
+		<option value="383" data-alpha="XK"  data-sample="500 12345">Kosovo +383</option>
+		<option value="965" data-alpha="KW"  data-sample="500 12345">Kuwait +965</option>
+		<option value="996" data-alpha="KG"  data-sample="700123456">Kyrgyzstan +996</option>
+		<option value="856" data-alpha="LA"  data-sample="2023123456">Laos +856</option>
+		<option value="371" data-alpha="LV"  data-sample="21 234 567">Latvia +371</option>
+		<option value="961" data-alpha="LB"  data-sample="71 123 456">Lebanon +961</option>
+		<option value="266" data-alpha="LS"  data-sample="5012 3456">Lesotho +266</option>
+		<option value="231" data-alpha="LR"  data-sample="770123456">Liberia +231</option>
+		<option value="218" data-alpha="LY"  data-sample="912345678">Libya +218</option>
+		<option value="423" data-alpha="LI"  data-sample="660 234 567">Liechtenstein +423</option>
+		<option value="370" data-alpha="LT"  data-sample="612 34567">Lithuania +370</option>
+		<option value="352" data-alpha="LU"  data-sample="628 123 456">Luxembourg +352</option>
+		<option value="853" data-alpha="MO"  data-sample="66123456">Macau +853</option>
+		<option value="389" data-alpha="MK"  data-sample="72345678">Macedonia +389</option>
+		<option value="261" data-alpha="MG"  data-sample="321234567">Madagascar +261</option>
+		<option value="265" data-alpha="MW"  data-sample="991234567">Malawi +265</option>
+		<option value="60" data-alpha="MY"  data-sample="123456789">Malaysia +60</option>
+		<option value="960" data-alpha="MV"  data-sample="771-2345">Maldives +960</option>
+		<option value="223" data-alpha="ML"  data-sample="65 01 23 45">Mali +223</option>
+		<option value="356" data-alpha="MT"  data-sample="9696 1234">Malta +356</option>
+		<option value="692" data-alpha="MH"  data-sample="235-1234">Marshall Islands +692</option>
+		<option value="596" data-alpha="MQ"  data-sample="696201234">Martinique +596</option>
+		<option value="222" data-alpha="MR"  data-sample="22 12 34 56">Mauritania +222</option>
+		<option value="230" data-alpha="MU"  data-sample="5251 2345">Mauritius +230</option>
+		<option value="262" data-alpha="YT"  data-sample="692123456">Mayotte +262</option>
+		<option value="52" data-alpha="MX"  data-sample="12221234567">Mexico +52</option>
+		<option value="691" data-alpha="FM"  data-sample="350 1234">Micronesia +691</option>
+		<option value="373" data-alpha="MD"  data-sample="62112345">Moldova +373</option>
+		<option value="377" data-alpha="MC"  data-sample="612345678">Monaco +377</option>
+		<option value="976" data-alpha="MN"  data-sample="8812 3456">Mongolia +976</option>
+		<option value="382" data-alpha="ME"  data-sample="67622901">Montenegro +382</option>
+		<option value="1664" data-alpha="MS"  data-sample="(201) 555-5555">Montserrat +1664</option>
+		<option value="212" data-alpha="MA"  data-sample="650123456">Morocco +212</option>
+		<option value="258" data-alpha="MZ"  data-sample="82 123 4567">Mozambique +258</option>
+		<option value="95" data-alpha="MM"  data-sample="92123456">Myanmar [Burma] +95</option>
+		<option value="264" data-alpha="NA"  data-sample="811234567">Namibia +264</option>
+		<option value="674" data-alpha="NR"  data-sample="555 1234">Nauru +674</option>
+		<option value="977" data-alpha="NP"  data-sample="984-1234567">Nepal +977</option>
+		<option value="31" data-alpha="NL"  data-sample="612345678">Netherlands +31</option>
+		<option value="687" data-alpha="NC"  data-sample="75.12.34">New Caledonia +687</option>
+		<option value="64" data-alpha="NZ"  data-sample="211234567">New Zealand +64</option>
+		<option value="505" data-alpha="NI"  data-sample="8123 4567">Nicaragua +505</option>
+		<option value="227" data-alpha="NE"  data-sample="93 12 34 45">Niger +227</option>
+		<option value="234" data-alpha="NG"  data-sample="8021234567">Nigeria +234</option>
+		<option value="683" data-alpha="NU"  data-sample="1234">Niue +683</option>
+		<option value="672" data-alpha="NF"  data-sample="3 81234">Norfolk Island +672</option>
+		<option value="1670" data-alpha="MP"  data-sample="(201) 555-5555">Northern Mariana Islands +1670</option>
+		<option value="47" data-alpha="NO"  data-sample="406 12 345">Norway +47</option>
+		<option value="968" data-alpha="OM"  data-sample="9212 3456">Oman +968</option>
+		<option value="92" data-alpha="PK"  data-sample="3012345678">Pakistan +92</option>
+		<option value="680" data-alpha="PW"  data-sample="620 1234">Palau +680</option>
+		<option value="970" data-alpha="PS"  data-sample="599123456">Palestinian Territories +970</option>
+		<option value="507" data-alpha="PA"  data-sample="6001-2345">Panama +507</option>
+		<option value="675" data-alpha="PG"  data-sample="681 2345">Papua New Guinea +675</option>
+		<option value="595" data-alpha="PY"  data-sample="961345678">Paraguay +595</option>
+		<option value="51" data-alpha="PE"  data-sample="912 345 678">Peru +51</option>
+		<option value="63" data-alpha="PH"  data-sample="9051234567">Philippines +63</option>
+		<option value="64" data-alpha="PN"  data-sample="712345678">Pitcairn Islands +64</option>
+		<option value="48" data-alpha="PL"  data-sample="512 345 678">Poland +48</option>
+		<option value="351" data-alpha="PT"  data-sample="912 345 678">Portugal +351</option>
+		<option value="1" data-alpha="PR"  data-sample="(201) 555-5555">Puerto Rico +1</option>
+		<option value="974" data-alpha="QA"  data-sample="3312 3456">Qatar +974</option>
+		<option value="974" data-alpha="RE"  data-sample="692123456">Réunion +974</option>
+		<option value="40" data-alpha="RO"  data-sample="712345678">Romania +40</option>
+		<option value="7" data-alpha="RU"  data-sample="912 345-67-89">Russia +7</option>
+		<option value="250" data-alpha="RW"  data-sample="720123456">Rwanda +250</option>
+		<option value="590" data-alpha="BL"  data-sample="690301234">Saint Barthélemy +590</option>
+		<option value="290" data-alpha="SH"  data-sample="21234">Saint Helena +290</option>
+		<option value="1869" data-alpha="KN"  data-sample="(201) 555-5555">Saint Kitts and Nevis +1869</option>
+		<option value="1758" data-alpha="LC"  data-sample="(201) 555-5555">Saint Lucia +1758</option>
+		<option value="599" data-alpha="MF"  data-sample="690301234">Saint Martin +599</option>
+		<option value="508" data-alpha="PM"  data-sample="551234">Saint Pierre and Miquelon +508</option>
+		<option value="1784" data-alpha="VC"  data-sample="(201) 555-5555">Saint Vincent and the Grenadines +1784</option>
+		<option value="685" data-alpha="WS"  data-sample="601234">Samoa +685</option>
+		<option value="378" data-alpha="SM"  data-sample="66 66 12 12">San Marino +378</option>
+		<option value="239" data-alpha="ST"  data-sample="981 2345">São Tomé and Príncipe +239</option>
+		<option value="966" data-alpha="SA"  data-sample="512345678">Saudi Arabia +966</option>
+		<option value="221" data-alpha="SN"  data-sample="70 123 45 67">Senegal +221</option>
+		<option value="381" data-alpha="RS"  data-sample="601234567">Serbia +381</option>
+		<option value="248" data-alpha="SC"  data-sample="2 510 123">Seychelles +248</option>
+		<option value="232" data-alpha="SL"  data-sample="25123456">Sierra Leone +232</option>
+		<option value="65" data-alpha="SG"  data-sample="8123 4567">Singapore +65</option>
+		<option value="1721" data-alpha="SX"  data-sample="(201) 555-5555">Sint Maarten +1721</option>
+		<option value="421" data-alpha="SK"  data-sample="912123456">Slovakia +421</option>
+		<option value="386" data-alpha="SI"  data-sample="31234567">Slovenia +386</option>
+		<option value="386" data-alpha="SB"  data-sample="74 21234">Solomon Islands +386</option>
+		<option value="252" data-alpha="SO"  data-sample="7 1123456">Somalia +252</option>
+		<option value="27" data-alpha="ZA"  data-sample="711234567">South Africa +27</option>
+		<option value="82" data-alpha="KR"  data-sample="1000000000">South Korea +82</option>
+		<option value="211" data-alpha="SS"  data-sample="977123456">South Sudan +211</option>
+		<option value="34" data-alpha="ES"  data-sample="612 34 56 78">Spain +34</option>
+		<option value="94" data-alpha="LK"  data-sample="712345678">Sri Lanka +94</option>
+		<option value="597" data-alpha="SR"  data-sample="741-2345">Suriname +597</option>
+		<option value="47" data-alpha="SJ"  data-sample="406 12 345">Svalbard and Jan Mayen +47</option>
+		<option value="268" data-alpha="SZ"  data-sample="7612 3456">Swaziland +268</option>
+		<option value="46" data-alpha="SE"  data-sample="701234567">Sweden +46</option>
+		<option value="41" data-alpha="CH"  data-sample="781234567">Switzerland +41</option>
+		<option value="886" data-alpha="TW"  data-sample="912345678">Taiwan +886</option>
+		<option value="992" data-alpha="TJ"  data-sample="917 12 3456">Tajikistan +992</option>
+		<option value="255" data-alpha="TZ"  data-sample="621234567">Tanzania +255</option>
+		<option value="66" data-alpha="TH"  data-sample="812345678">Thailand +66</option>
+		<option value="670" data-alpha="TL"  data-sample="7721 2345">Timor-Leste +670</option>
+		<option value="228" data-alpha="TG"  data-sample="90 11 23 45">Togo +228</option>
+		<option value="690" data-alpha="TK"  data-sample="7290">Tokelau +690</option>
+		<option value="676" data-alpha="TO"  data-sample="771 5123">Tonga +676</option>
+		<option value="1868" data-alpha="TT"  data-sample="(201) 555-5555">Trinidad and Tobago +1868</option>
+		<option value="216" data-alpha="TN"  data-sample="20 123 456">Tunisia +216</option>
+		<option value="90" data-alpha="TR"  data-sample="501 234 5678">Turkey +90</option>
+		<option value="993" data-alpha="TM"  data-sample="66123456">Turkmenistan +993</option>
+		<option value="1649" data-alpha="TC"  data-sample="(201) 555-5555">Turks and Caicos Islands +1649</option>
+		<option value="688" data-alpha="TV"  data-sample="901234">Tuvalu +688</option>
+		<option value="1340" data-alpha="VI"  data-sample="(201) 555-5555">U.S. Virgin Islands +1340</option>
+		<option value="256" data-alpha="UG"  data-sample="712345678">Uganda +256</option>
+		<option value="380" data-alpha="UA"  data-sample="391234567">Ukraine +380</option>
+		<option value="971" data-alpha="AE"  data-sample="501234567">United Arab Emirates +971</option>
+		<option value="44" data-alpha="GB"  data-sample="7400123456">United Kingdom +44</option>
+		<option value="1" data-alpha="US" selected="selected" data-sample="(201) 555-5555">United States +1</option>
+		<option value="598" data-alpha="UY"  data-sample="94231234">Uruguay +598</option>
+		<option value="998" data-alpha="UZ"  data-sample="912345678">Uzbekistan +998</option>
+		<option value="678" data-alpha="VU"  data-sample="591 2345">Vanuatu +678</option>
+		<option value="39" data-alpha="VA"  data-sample="312 345 6789">Vatican City +39</option>
+		<option value="58" data-alpha="VE"  data-sample="4121234567">Venezuela +58</option>
+		<option value="84" data-alpha="VN"  data-sample="91 234 56 78">Vietnam +84</option>
+		<option value="681" data-alpha="WF"  data-sample="50 12 34">Wallis and Futuna +681</option>
+		<option value="212" data-alpha="EH"  data-sample="650123456">Western Sahara +212</option>
+		<option value="967" data-alpha="YE"  data-sample="712345678">Yemen +967</option>
+		<option value="260" data-alpha="ZM"  data-sample="955123456">Zambia +260</option>
+		<option value="263" data-alpha="ZW"  data-sample="711234567">Zimbabwe +263</option>
+
+	</select>
+</div>					</div>
+					<label class="u-visually-hidden" for="send_sms_input">Enter your phone number</label>
+					<input type="tel" placeholder="(201) 555-5555" class="c-form__input v--phone" id="send_sms_input" name="sms_number" data-js-hook="sms_number" required>
+					<input type="submit" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="btn_downloads_send_sms" class="c-button v--primary v--flexible" value="Send Link">
+				</div>
+
+			</form>
+
+			<p>		Looking for the <a href="https://slack.com/downloads/windows" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="link_downloads_windows">Windows</a> or <a href="https://slack.com/downloads/linux" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-element="link_downloads_linux">Linux</a> desktop apps?	</p>
+		</div>
+		<div class="stay-in-sync__image u-text--center">
+			<img src='https://a.slack-edge.com/73267c/marketing/img/downloads/stay_in_sync.png' srcset='https://a.slack-edge.com/73267c/marketing/img/downloads/stay_in_sync.png 1x, https://a.slack-edge.com/73267c/marketing/img/downloads/stay_in_sync@2x.png 2x' alt="Slack helps people stay in sync with a range of desktop and mobile apps, no matter where you go.">
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+</main>
+
+<footer class="c-nav c-nav--footer ">
+			<div class="c-nav--footer__menu">
+
+		<div class="o-content-container c-nav--footer__row">
+
+			<a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_home" href="https://slack.com/"><img class="c-nav--footer__svgicon c-slackhash" src="https://a.slack-edge.com/bd852f/img/icons/icon_slack_hash_colored.svg" width="54" height="54" aria-label="Slack" /></a>
+
+			<nav class="c-footer--wrap t-contains-subtle-links" role="navigation" aria-label="Footer Navigation">
+
+				
+					<div class="c-nav--footer__block">
+						<p class="c-nav--footer__listheader">Company</p>
+						<ul class="c-nav--footer__list">
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_about_us" href="https://slack.com/about" data-qa="about_us_footer">About Us</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_careers" href="https://slack.com/careers" data-qa="careers">Careers</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_blog" href="https://slackhq.com/" data-qa="blog">Blog</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_press" href="https://slack.com/press" data-qa="press">Press</a></li>							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_brand" href="https://slack.com/brand-guidelines" data-qa="brand_guidelines">Brand Guidelines</a></li>
+						</ul>
+					</div>
+					<div class="c-nav--footer__block">
+						<p class="c-nav--footer__listheader">Product</p>
+						<ul class="c-nav--footer__list">
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_features" href="https://slack.com/features" data-qa="why_slack_footer">Why Slack?</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_enterprise" href="https://slack.com/enterprise" data-qa="enterprise">Enterprise</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_customers" href="https://slack.com/customer-stories" data-qa="customer_stories">Customer Stories</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_pricing" href="https://slack.com/pricing" data-qa="pricing_footer">Pricing</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_security" href="https://slack.com/security" data-qa="security">Security</a></li>
+						</ul>
+					</div>
+					<div class="c-nav--footer__block">
+						<p class="c-nav--footer__listheader">Resources</p>
+						<ul class="c-nav--footer__list">
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_downloads" href="https://slack.com/download" data-qa="download">Download</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_help_center" href="https://get.slack.help/hc/en-us" data-qa="help_center">Help Center</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_guides" href="https://slack.com/guides" data-qa="guides">Guides</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_partners" href="https://slack.com/partners" data-qa="partners">Partners</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_events" href="https://slack.com/events" data-qa="events">Events</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_app_directory" href="https://slack.com/apps" data-qa="app_directory">App Directory</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_api" href="https://api.slack.com/" data-qa="api">API</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_gartner_swot" href="https://slack.com/gartner-swot" data-qa="gartner-swot">Gartner Report</a></li>							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_resources_ebook" href="/resources" data-qa="resources">eBooks</a></li>
+						</ul>
+					</div>
+					<div class="c-nav--footer__block">
+						<p class="c-nav--footer__listheader">Extras</p>
+						<ul class="c-nav--footer__list">
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_podcast" href="https://slack.com/podcast" data-qa="podcast">Podcast</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_shop" href="https://slack.shop" target="_blank" data-qa="slack_shop">Slack Shop</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_slack_at_work" href="https://slackatwork.com" target="_blank" data-qa="slack_at_work">Slack at Work</a></li>
+							<li class="c-nav--footer__listitem"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_slack_fund" href="https://slack.com/fund" data-qa="slack_fund">Slack Fund</a></li>
+						</ul>
+					</div>
+
+				 
+			</nav>
+		</div>
+	</div>
+
+		<div class="c-nav--footer__metasocial" role="contentinfo">
+		<div class="o-content-container">
+			<ul class="c-nav__list">
+				<li class="c-nav--footer__listitem--meta v--center"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_status" href="https://status.slack.com" target="_blank" data-qa="status">Status</a></li>
+				<li class="c-nav--footer__listitem--meta v--center"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_legal" href="https://slack.com/legal" data-qa="privacy_terms">Privacy &amp; Terms</a></li>
+				<li class="c-nav--footer__listitem--meta v--center"><a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_help_contact" href="https://slack.com/help/contact" data-qa="contact">Contact Us</a></li>
+			</ul>
+
+			<ul class="c-nav__list">
+				<li class="c-nav--footer__listitem--meta c-locale-ctn">
+										<select id="locale_switcher" class="is-hidden">
+        <option value="de-DE" data-url="/intl/de-de">Deutsch</option>
+        <option value="en-US" data-url="/intl/en-us" selected>English (US)</option>
+        <option value="es-ES" data-url="/intl/es-es">Español</option>
+        <option value="fr-FR" data-url="/intl/fr-fr">Français</option>
+        <option value="ja-JP" data-url="/intl/ja-jp">日本語</option>
+</select>
+
+<a class="c-locale-switcher js-locale-switcher" href="#" data-locale="en-US" data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_locale_switcher">English (US)</a><ul class="c-locale-menu js-locale-menu">
+                    <li>
+            <a href="#" class="c-locale-menu__item"
+                data-locale="de-DE"
+                data-clog-click
+                data-clog-ui-step="page_downloads"
+                data-clog-ui-component="inc_footer_nav"
+                data-clog-ui-element="link_locale_trigger"
+                data-clog-params="trigger=de-DE">Deutsch
+            </a>
+        </li>
+                    <li>
+            <a href="#" class="c-locale-menu__item is-selected"
+                data-locale="en-US"
+                data-clog-click
+                data-clog-ui-step="page_downloads"
+                data-clog-ui-component="inc_footer_nav"
+                data-clog-ui-element="link_locale_trigger"
+                data-clog-params="trigger=en-US">English (US)
+            </a>
+        </li>
+                    <li>
+            <a href="#" class="c-locale-menu__item"
+                data-locale="es-ES"
+                data-clog-click
+                data-clog-ui-step="page_downloads"
+                data-clog-ui-component="inc_footer_nav"
+                data-clog-ui-element="link_locale_trigger"
+                data-clog-params="trigger=es-ES">Español
+            </a>
+        </li>
+                    <li>
+            <a href="#" class="c-locale-menu__item"
+                data-locale="fr-FR"
+                data-clog-click
+                data-clog-ui-step="page_downloads"
+                data-clog-ui-component="inc_footer_nav"
+                data-clog-ui-element="link_locale_trigger"
+                data-clog-params="trigger=fr-FR">Français
+            </a>
+        </li>
+                    <li>
+            <a href="#" class="c-locale-menu__item"
+                data-locale="ja-JP"
+                data-clog-click
+                data-clog-ui-step="page_downloads"
+                data-clog-ui-component="inc_footer_nav"
+                data-clog-ui-element="link_locale_trigger"
+                data-clog-params="trigger=ja-JP">日本語
+            </a>
+        </li>
+    </ul>				</li>
+				<li class="c-nav--footer__listitem--social">
+					<a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_social_twitter" target="_blank" href="https://twitter.com/slackhq" data-qa="twitter">
+						<img class="c-nav--footer__svgicon" src="https://a.slack-edge.com/a425/marketing/img/icons/icon_social_twitter.svg" width="20" height="20" aria-label="Twitter" />
+					</a>
+				</li>
+				<li class="c-nav--footer__listitem--social">
+					<a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_social_facebook" target="_blank" href="https://facebook.com/slackhq" data-qa="facebook">
+						<img class="c-nav--footer__svgicon" src="https://a.slack-edge.com/666d0/marketing/img/icons/icon_social_facebook_square.svg" width="20" height="20" aria-label="Facebook" />
+					</a>
+				</li>
+				<li class="c-nav--footer__listitem--social">
+					<a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav"  data-clog-ui-element="link_social_youtube" target="_blank" href="https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw" data-qa="youtube">
+						<img class="c-nav--footer__svgicon" src="https://a.slack-edge.com/a425/marketing/img/icons/icon_social_youtube.svg" width="20" height="20" aria-label="YouTube" />
+					</a>
+				</li>
+				<li class="c-nav--footer__listitem--social">
+					<a data-clog-click data-clog-ui-step="page_downloads" data-clog-ui-component="inc_footer_nav"  data-clog-ui-element="link_social_linkedin" target="_blank" href="https://www.linkedin.com/company/tiny-speck-inc/" data-qa="linkedin">
+						<img class="c-nav--footer__svgicon" src="https://a.slack-edge.com/666d0/marketing/img/icons/icon_social_linkedin.svg" width="20" height="20" aria-label="LinkedIn" />
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	</footer>
+
+			
+			
+	
+		<!-- output_js "marketing_js_core" -->
+		<script type="text/javascript" src="https://a.slack-edge.com/bv1-4/rollup-marketing.d6bdba63f9c788c214b9.min.js" crossorigin="anonymous" onload="window._cdn && _cdn.ok(this, arguments)" onerror="window._cdn && _cdn.failed(this, arguments)"></script>
+		<script type="text/javascript" src="https://a.slack-edge.com/bv1-4/marketing-core.4477101bfaeecc3dc0e4.min.js" crossorigin="anonymous" onload="window._cdn && _cdn.ok(this, arguments)" onerror="window._cdn && _cdn.failed(this, arguments)"></script>
+
+	<!-- output_js "marketing_js_page" -->
+
+	<!-- output_js "marketing_js_dev" -->
+
+	<!-- output_js "regular" -->
+
+
+		
+
+<script type="text/javascript">
+	
+	/* site fundamentals */
+	TD.boot_data.version_uid = "41cc6ac24b6c9c652ac01e5495aa2529b172a830",
+	TD.boot_data.environment = "prod";
+	TD.boot_data.abs_root_url = "https:\/\/slack.com\/"
+
+	TD.boot_data.anonymous_visitor = true;
+	TD.boot_data.beacon_timing_url = "https:\/\/slack.com\/beacon\/timing";
+	TD.boot_data.referral_code = "";
+	TD.boot_data.hc_tracking_qs = "";
+
+	/* Geo things */
+	TD.boot_data.geo = {"country":"UA","region":"04","city":"Dnepropetrovsk","zip":"49000","lat":48.4593,"lon":35.0386,"metro":null,"area":null,"isp":"LLC wnet Ukraine","org":null,"country_label":"Ukraine","region_label":"Dnipropetrovs'ka Oblast'","country3":"UKR","continent":"EU","ok":true};
+	TD.boot_data.geocode = "en-us";
+	TD.boot_data.intl_prefix = "";
+	TD.boot_data.request_uri = "\/downloads\/osx";
+	TD.boot_data.canonical_web_url = "https:\/\/slack.com\/downloads\/osx";
+	TD.boot_data.i18n_locale = "en-US";
+	TD.boot_data.geo_root_url = "https:\/\/slack.com\/"
+
+	TD.boot_data.is_usa = true;
+	TD.boot_data.is_spain = false;
+	TD.boot_data.is_germany = false;
+	TD.boot_data.is_france = false;
+	TD.boot_data.is_japan = false;
+
+	TD.boot_data.is_english = true;
+	TD.boot_data.is_spanish = false;
+	TD.boot_data.is_german = false;
+	TD.boot_data.is_french = false;
+	TD.boot_data.is_japanese = false;
+
+	/* get values  */
+	/* */
+
+	/* subdomain in URL - could be diff than cfg.user.team */
+	
+	/* TS bridge & flags */
+	TS.boot_data = {};
+	TS.boot_data.slack_to_zd_locale = {"en-us":"en-us","fr-fr":"fr-fr","de-de":"de","es-es":"es","ja-jp":"ja"};
+
+	/* migrate these TS props into TD */
+	_.extend(TD.boot_data, TS.boot_data);
+
+	/* fill the model */
+	TD.model.user_id = TD.boot_data.user_id;
+
+	TD.model.user_realname  = TD.boot_data.user_realname;
+	TD.model.user_email = TD.boot_data.user_email;
+
+	TD.model.team_id = TD.boot_data.team_id;
+	TD.model.team_url = TD.boot_data.team_url;
+	TD.model.team_domain = TD.boot_data.team_domain;
+	TD.model.visitor_uid = "tx4yyzoyw9w4ko8kcg00ocww";
+	TD.model.enterprise_id = TD.boot_data.enterprise_id;
+
+	TD.model.is_first_visit = true;
+	TD.model.is_customer =  (TD.model.visitor_uid.indexOf('.') == 0);
+	TD.model.is_prospect = !TD.model.is_customer;
+	TD.model.is_signed_in = !!(TD.model.user_id);
+
+	TD.model.num_signed_in_users = 0
+	TD.model.is_enterprise = !!(TD.boot_data.enterprise_id);
+
+	/* billing$ */
+		TD.model.is_free_plan = true;
+	TD.model.curr_plan = 'free';
+	
+	/* setup clog defaults */
+	TD.boot_data.clog_ui_step = "page_downloads";
+	if(TD.boot_data.team_id) TD.clog.setTeam(TD.boot_data.team_id);
+	if(TD.boot_data.user_id) TD.clog.setUser(TD.boot_data.user_id);
+
+	/* Greenhouse careers detail page */
+	TD.boot_data.job_board_token = 'slack';
+
+	
+	</script>
+		
+		<script type="text/javascript">
+	window.download_page = 'osx';
+	
+	TD.clog.track('WEBSITE_IMPRESSION', {
+		trigger: window.download_page,
+		contexts: { ui_context: { step: 'page_downloads', action: 'impression' } }
+	});
+	
+</script>
+
+
+		
+	</body>
+</html>

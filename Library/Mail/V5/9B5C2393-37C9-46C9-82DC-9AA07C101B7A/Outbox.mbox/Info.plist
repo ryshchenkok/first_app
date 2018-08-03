@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MailboxHasBeenImported</key>
+	<string>Yes</string>
+	<key>MailboxID</key>
+	<string>F305CC2B-B106-4C7D-8018-9CA3598C8824</string>
+	<key>MailboxName</key>
+	<string>Outbox</string>
+</dict>
+</plist>

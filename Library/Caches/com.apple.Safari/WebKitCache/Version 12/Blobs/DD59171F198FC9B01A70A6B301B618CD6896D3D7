@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru_RU" lang="ru_RU">
+<head>
+<title> GitResources &lt; Anahoret &lt; Anadea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="http://anahoret.com/wiki/bin/edit/Anahoret/GitResources?t=1532332444" type="application/x-wiki" title="edit GitResources" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/wiki/bin/view/Anahoret/WebRss" />
+
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/SkinTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/layout.css');
+@import url('/wiki/pub/System/PatternSkinTheme/style.css');
+@import url('/wiki/pub/System/PatternSkinTheme/colors.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/column_left.css');
+@import url('/wiki/pub/System/PatternSkinTheme/variant_foswiki_print.css');
+</style><style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#99CC99;
+	}
+	#patternTopBarContents { background-image:url(/wiki/pub/System/PatternSkin/header5.gif); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#ffffff;}
+.patternBookView {
+	border-color:#99CC99;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<style type="text/css" media="print">
+	@import url("/wiki/pub/System/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	height:1%;
+	overflow-x:auto;
+}
+.foswikiAttachments,
+.foswikiForm,
+.foswikiHelp,
+.foswikiPreviewArea,
+.patternPreviewPage .foswikiForm,
+.patternSigLine,
+.patternToolBar,
+.patternTop,
+.patternTopicAction,
+#patternSideBarContents .patternLeftBarPersonal,
+#patternSideBarContents h2,
+#patternSideBarContents li,
+#patternTopBarButtons ul {
+	height:1%;
+}
+#patternSideBarContents .patternLeftBarPersonal {
+	width:100%;
+}
+.foswikiFormStep {
+	height:100%;
+}
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:2px solid #ccc;
+}
+</style><![endif]-->
+<!--[if gt IE 8 ]><style type="text/css" media="screen">
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow: 0 0 10px #ccc;
+}
+</style><![endif]-->
+<meta name="foswiki.TWISTYANIMATIONSPEED" content="fast" /><!--TWISTYPLUGIN::META-->
+<!--[if lte IE 9]>
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.11.2.uncompressed.js'></script>
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.8.0.uncompressed.js'></script>
+<!--<![endif]-->
+<!--JQUERYPLUGIN-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/livequery/jquery.livequery.uncompressed.js?version=1.3.1'></script><!--JQUERYPLUGIN::LIVEQUERY-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/foswiki/jquery.foswiki.uncompressed.js?version=2.01'></script><!--JQUERYPLUGIN::FOSWIKI: requires= missing ids: JQUERYPLUGIN::MIGRATE-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiPref.js"></script><!--JavascriptFiles/foswikiPref-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiString.js"></script><!--JavascriptFiles/foswikiString-->
+<script type='text/javascript'>
+jQuery.extend(foswiki, {
+ "preferences": {
+    "PUBURL": "http://anahoret.com/wiki/pub",
+    "PUBURLPATH": "/wiki/pub",
+    "SCRIPTSUFFIX": "",
+    "SCRIPTURL": "http://anahoret.com/wiki/bin",
+    "SCRIPTURLPATH": "/wiki/bin",
+    "SERVERTIME": "23 Jul 2018 - 10:54",
+    "SKIN": "pdf,pattern",
+    "SYSTEMWEB": "System",
+    "TOPIC": "GitResources",
+    "USERNAME": "kr",
+    "USERSWEB": "Main",
+    "WEB": "Anahoret",
+    "WIKINAME": "KonstantinRyshchenko",
+    "WIKIUSERNAME": "Main.KonstantinRyshchenko",
+    "NAMEFILTER": "[\s\*?~^\$@%`\"'&;|<>\[\]#\x00-\x1f]"
+}});
+</script><!--JQUERYPLUGIN::FOSWIKI::PREFERENCES-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiForm.js"></script><!--JavascriptFiles/foswikiForm-->
+<script type="text/javascript" src="/wiki/pub/System/PatternSkin/pattern.js"></script><!--PatternSkin/pattern-->
+</head>
+<body class="foswikiNoJs patternViewPage">
+<a name="PageTop"></a><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="/wiki/bin/view/Main/WebHome">Anadea</a><span class='foswikiSeparator'>&gt;</span><a href="/wiki/bin/view/Anahoret/WebHome">Anahoret Web</a><span class='foswikiSeparator'>&gt;</span><a href="/wiki/bin/view/Anahoret/DeveloperDocumentation">DeveloperDocumentation</a><span class='foswikiSeparator'>&gt;</span><a href="http://anahoret.com/wiki/bin/view/Anahoret/GitResources" title='Topic revision: 1 (29 Oct 2008 - 13:39:23)'>GitResources</a> <span class='patternRevInfo'>(29 Oct 2008, <a href="/wiki/bin/view/Main/VyacheslavDodatko">VyacheslavDodatko</a>)</span></span><span class="patternToolBar foswikiRight"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/GitResources?t=1532332444;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/GitResources' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span><a href='/wiki/bin/view/Anahoret/GitResources?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span></span><div class="foswikiClear"></div></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"> <ol>
+<li> <a href="http://git.or.cz/course/svn.html" target="_top">http://git.or.cz/course/svn.html</a>
+</li> <li> Следует посмотреть <a href="http://peepcode.com/products/git" target="_top">http://peepcode.com/products/git</a>
+</li> <li> <a href="http://s3.amazonaws.com/chacon/git-talk.pdf" target="_top">http://s3.amazonaws.com/chacon/git-talk.pdf</a> просто отличная презентация, очень длинная, но очень интересная и понятная. Все расставляет по полочкам. <a href="http://www.vimeo.com/1099027?pg=embed&amp;sec=1099027" target="_top">http://www.vimeo.com/1099027?pg=embed&amp;sec=1099027</a> (это видео к этой презентации) 
+</li> <li> Это на закуску <a href="http://peepcode.com/products/git-internals-pdf" target="_top">http://peepcode.com/products/git-internals-pdf</a>
+</li> <li> <a href="http://book.git-scm.com/" target="_top">http://book.git-scm.com/</a>
+</li> <li> <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" target="_top">http://www-cs-students.stanford.edu/~blynn/gitmagic/</a>
+</li></ol> 
+<p></p>
+<p></p>
+<a href="http://www.youtube.com/watch?v=4XpnKHJAok8" target="_top">http://www.youtube.com/watch?v=4XpnKHJAok8</a>
+<p></p>
+-- <a href="/wiki/bin/view/Main/VyacheslavDodatko">VyacheslavDodatko</a> - 29 Oct 2008 </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><a name="topic-actions"></a><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/GitResources?t=1532332444;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/GitResources' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/GitResources?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/GitResources?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/oops/Anahoret/GitResources?template=oopshistory' rel='nofollow' title='View total topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a></span>: r1</span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/GitResources?template=backlinksweb' rel='nofollow' title='Search the Anahoret Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/GitResources?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/GitResources?template=more&amp;maxrev=1&amp;currrev=1' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: 29 Oct 2008, <a href="/wiki/bin/view/Main/VyacheslavDodatko">VyacheslavDodatko</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator" style="border-color:#99CC99">
+<a href='http://anahoret.com/wiki/bin/view/Anahoret/WebHome'>Anahoret</a>
+</div> <ul>
+<li> <strong><a href="/wiki/bin/view/Anahoret/DeveloperDocumentation">Документация</a></strong> <hr />
+</li> <li> <strong><a href="/wiki/bin/view/Anahoret/WebHome" class="foswikiCurrentWebHomeLink"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/home.png" width="16" height="16" alt="home" /></span> Anahoret Web</a></strong>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicCreator?parent=GitResources" target="_top"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/newtopic.png" width="16" height="16" alt="newtopic" /></span> Create New Topic</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicList"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/index.png" width="16" height="16" alt="index" /></span> Index</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebSearch"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/searchtopic.png" width="16" height="16" alt="searchtopic" /></span> Search</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebChanges"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/changes.png" width="16" height="16" alt="changes" /></span> Changes</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebNotify"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/notify.png" width="16" height="16" alt="notify" /></span> Notifications</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebStatistics"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/statistics.png" width="16" height="16" alt="statistics" /></span> Statistics</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebPreferences"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/wrench.png" width="16" height="16" alt="wrench" /></span> Preferences</a> <hr />
+</li> <li> <strong>Webs</strong>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#99CC99" />&nbsp;Anahoret</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Getsocio/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Getsocio</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Mailinator/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Mailinator</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Main/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFEFA6" />&nbsp;Main</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Projects/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFCC00" />&nbsp;Projects</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Sandbox/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#B9DAFF" />&nbsp;Sandbox</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Skills/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#ffa199" />&nbsp;Skills</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/System/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFD8AA" />&nbsp;System</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Tracker/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#33CC99" />&nbsp;Tracker</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Trash/InVision/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;<span class='foswikiWebIndent'></span>InVision</a></span>
+</li></ul> 
+<p></p>
+</div></div>
+</div>
+<div class="clear">&nbsp;</div>
+</div></div><div id="patternTopBar"><div id="patternTopBarContentsWrapper"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="http://anahoret.com/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/Main/WebHome/anadea-logo.png" border="0" alt="Anahoret wiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+ <ul>
+<li> <form name="jumpForm" action="/wiki/bin/view/Anahoret/GitResources"><input id="jumpFormField" title="Jump" type="text" class="foswikiInputField foswikiDefaultText" name="topic" value="" size="18" /><noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript>   </form>
+</li> <li> <form name="quickSearchForm" action="/wiki/bin/view/Anahoret/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Anahoret" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript>   </form>
+</li></ul> 
+<p></p>
+</td></tr></table></div></div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"></div></div></div>
+</div>
+</div>
+</div>
+</div></body></html>

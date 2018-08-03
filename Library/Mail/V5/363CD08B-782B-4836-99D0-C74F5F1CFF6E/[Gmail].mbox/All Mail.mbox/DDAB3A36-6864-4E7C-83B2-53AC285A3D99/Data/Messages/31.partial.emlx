@@ -1,0 +1,53 @@
+983       
+From: =?utf-8?B?0JrQvtC90YHRgtCw0L3RgtC40L0g0KDRi9GJ0LXQvdC60L4=?= <kr@anadeainc.com>
+Content-Type: multipart/mixed;
+	boundary="Apple-Mail=_5AE461D7-3E3F-4B79-B8BA-D722981EF2BF"
+Mime-Version: 1.0 (Mac OS X Mail 11.5 \(3445.9.1\))
+Subject: 1
+X-Universally-Unique-Identifier: E841F7D7-78D6-4121-8B0A-A83DF349D0BD
+Message-Id: <ABC970F3-78B8-47D2-87E3-FA4ACF012986@anadeainc.com>
+Date: Tue, 31 Jul 2018 13:04:44 +0300
+To: ryshchenko.k@gmail.com
+
+
+--Apple-Mail=_5AE461D7-3E3F-4B79-B8BA-D722981EF2BF
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+	filename=certificate.pdf
+Content-Type: application/pdf;
+	name=certificate.pdf;
+	x-unix-mode=0666
+X-Apple-Content-Length: 659885
+
+
+--Apple-Mail=_5AE461D7-3E3F-4B79-B8BA-D722981EF2BF
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename=keys.dat
+Content-Type: application/octet-stream;
+	name=keys.dat;
+	x-unix-mode=0644
+X-Apple-Content-Length: 1608
+
+
+--Apple-Mail=_5AE461D7-3E3F-4B79-B8BA-D722981EF2BF--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>25</integer>
+	<key>date-last-viewed</key>
+	<real>0.0</real>
+	<key>date-received</key>
+	<real>1533031484</real>
+	<key>flags</key>
+	<integer>8623685633</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>4</integer>
+	</array>
+	<key>remote-id</key>
+	<string>35</string>
+</dict>
+</plist>

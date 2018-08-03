@@ -1,0 +1,171 @@
+8995      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp3573619iof;
+        Sun, 29 Jul 2018 22:45:05 -0700 (PDT)
+X-Received: by 2002:adf:d842:: with SMTP id k2-v6mr16170373wrl.26.1532929505141;
+        Sun, 29 Jul 2018 22:45:05 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1532929505; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=wuGVyxmCmEUq2DTnYPeDg2ddzKIz6/CUEGv1s0l31OZV4x2YNwbYnIOcYp97zja1uH
+         45AnSYOIUYDeWpEWOP64xqgEWOGDh+XphSPUjLUYWpzOUz/57em23mEy45O/ZeLesFl7
+         2oEIQ2UIiFR66KbMk2LmTUmfj63PCBnRgNros3TAWvFegXspbRR3R+vqKv+abGVD+Bw9
+         gGarkfu1JovV70nOyAjSzxNsJ0flm8qa+c2fub/YV8Iek0Pd6alQ5E9qbdfR0zJFJQwd
+         p257YaqbJpKcheX4sDJ7gxNPwUCUIGDEGRmH2ae+QxDVT959wfklnGkMXU2ujW1Fc7QS
+         NcrQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:user-agent:content-transfer-encoding
+         :content-disposition:mime-version:message-id:subject:to:from:date
+         :delivered-to:arc-authentication-results:arc-message-signature
+         :sender:dkim-signature:arc-authentication-results;
+        bh=1zYRg7MXRNinj5ERI46mulZi4ZZfchB12v9mIS7Xn+M=;
+        b=alN3c9hU0QNf2j7Lz4ufG92kEO1kmq2F7usXTlzH6KtqKGRPanahp9Qp77YLPV2w0J
+         IZ1hfOvytacorp/qDdhet+5311tCiy9m3TR9gDYzeVNoqQOtAYO+6AKqxgMI/4cOFDqU
+         6djXjdfuddPI1tIA5D6HNXpMsOFw9ewelYfmSyd4/s4y9oeRjZ1Mm6YBPEwQRFz8mDoV
+         bWpVRBfdUdFVJa/0Fc8o5ZewgQEIyWFbQdoX7YQAJguGlGFSuMnb/PYufPNiNahJRbBh
+         Dz8NqFv6MzrewuTxhYu5FNfWSt0+BTEgDPLcNVUAnmJJhhmIClfKd1pefI3vO8UTewC1
+         Qeig==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@anadeainc.com header.s=google header.b=C+5PxcnN;
+       arc=pass (i=1 spf=pass spfdomain=anahoret.com);
+       spf=pass (google.com: domain of devel+bncbdwm7zpxwulrbxwl7lnakgqefvcocdq@anadeainc.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=devel+bncBDWM7ZPXWULRBXWL7LNAKGQEFVCOCDQ@anadeainc.com
+Return-Path: <devel+bncBDWM7ZPXWULRBXWL7LNAKGQEFVCOCDQ@anadeainc.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id u12-v6sor4151591wrr.88.2018.07.29.22.45.04
+        for <kr@anadeainc.com>
+        (Google Transport Security);
+        Sun, 29 Jul 2018 22:45:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of devel+bncbdwm7zpxwulrbxwl7lnakgqefvcocdq@anadeainc.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@anadeainc.com header.s=google header.b=C+5PxcnN;
+       arc=pass (i=1 spf=pass spfdomain=anahoret.com);
+       spf=pass (google.com: domain of devel+bncbdwm7zpxwulrbxwl7lnakgqefvcocdq@anadeainc.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=devel+bncBDWM7ZPXWULRBXWL7LNAKGQEFVCOCDQ@anadeainc.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=anadeainc.com; s=google;
+        h=sender:delivered-to:date:from:to:subject:message-id:mime-version
+         :content-disposition:content-transfer-encoding:user-agent
+         :x-original-sender:x-original-authentication-results:precedence
+         :mailing-list:list-id:list-post:list-help:list-archive
+         :list-unsubscribe;
+        bh=1zYRg7MXRNinj5ERI46mulZi4ZZfchB12v9mIS7Xn+M=;
+        b=C+5PxcnNwz6dP8aclnaal8Xcw6e3xTbrPY3FJafR+AQOdYC3YLYbQ4lgf6UFE51lMK
+         WhUcaF/D7zaFRhZlGYbW3TIpmrAxmF4qCkhLhgyqTZELw5JHEhcqiY7s3NZ1uH+UBKkl
+         N4GEZQihS9NLeVs+InASrdJULKBovb2hxVlLs=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=sender:x-gm-message-state:delivered-to:date:from:to:subject
+         :message-id:mime-version:content-disposition
+         :content-transfer-encoding:user-agent:x-original-sender
+         :x-original-authentication-results:precedence:mailing-list:list-id
+         :x-spam-checked-in-group:list-post:list-help:list-archive
+         :list-unsubscribe;
+        bh=1zYRg7MXRNinj5ERI46mulZi4ZZfchB12v9mIS7Xn+M=;
+        b=GAWV9rcEL6OVuTkG0JxJ4GKSTdvV2XVZMJUc7TWAux5KilbtmWjsGMwVkXmKvB+iyo
+         CO3rxmQevsaC5UTXBEfnktZ2VrgVwLKmPXD1+S2eTrNdzw7IP3uZ8cQ6dbuGxl51Bp78
+         1fHQx1aFF+A9aztZQdh3fIh5h38+10K3EoWY08pc28auOkXhVCTErePaSmmv6+cFR5oW
+         vw5NhxaYT5DAkmKqvuaPmwWTKBPgxB9bpmiiVDWmeMxxsAWthNI7pxbD4ZYa3wowK6tY
+         OSfPdwemooApRBht7u9KqiaJKITpnj9gO1Qsl1OkH2Y4JsC4QI/SEw1Zc137sg0Z22lp
+         o1fw==
+Sender: devel@anadeainc.com
+X-Gm-Message-State: AOUpUlGKkh/pvexhfEdiuZRNm2I7htudIaZylShWerL5ghp6WdRfp5NO
+	nzJQ0d1KwJJblRMxdH5bwuOiPace
+X-Google-Smtp-Source: AAOMgpfTM4FsIXxMlu0I6YqtTgcFw7Q+icY1Oppm0lHb/Zkc0wl+JlDUAZEK0RpccqdqoQJ5rt+Clg==
+X-Received: by 2002:adf:db4f:: with SMTP id f15-v6mr1758483wrj.30.1532929503016;
+        Sun, 29 Jul 2018 22:45:03 -0700 (PDT)
+X-BeenThere: anadeainc.com
+Received: by 2002:a7b:c011:: with SMTP id c17-v6ls2431570wmb.9.gmail; Sun, 29
+ Jul 2018 22:45:02 -0700 (PDT)
+X-Received: by 2002:a1c:b8d7:: with SMTP id i206-v6mr1281929wmf.11.1532929502699;
+        Sun, 29 Jul 2018 22:45:02 -0700 (PDT)
+X-BeenThere: devel@anadeainc.com
+Received: by 2002:adf:f28e:: with SMTP id k14-v6ls3210774wro.6.gmail; Sun, 29
+ Jul 2018 22:45:02 -0700 (PDT)
+X-Received: by 2002:adf:a907:: with SMTP id u7-v6mr15964096wrc.175.1532929502167;
+        Sun, 29 Jul 2018 22:45:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532929502; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LVh2T9aUT9Eg79NhAcy4otARm2vfzi27u8ueat57PPdfBae0QdpoTgsYv+xOV0HMwE
+         HMakfYK7FXbY5oZxE/X0P1NB3C9ZORXEc24j+ByclnRWmq91AMFB/vJ8v3QmCeq9ockX
+         D4P4RgXUDmKYBRkpKmmaColpyumEVqbu6xjOTDWpCojTvvOBKg7kpxbKAWuWfI1H7MLg
+         /8eFk7cYIsHW5VRdYbRbBT6FZ4KodIqebZ23yS1rNR950IXLFTbZC8qYo8cLMOfVLIjz
+         1FVMQbxJVVlb0fLSeza0a9xljvcNBv9MmPczva7hl0+AfvId2pW0Rq6yed90vq8SNlXm
+         leZw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=user-agent:content-transfer-encoding:content-disposition
+         :mime-version:message-id:subject:to:from:date:delivered-to
+         :arc-authentication-results;
+        bh=1zYRg7MXRNinj5ERI46mulZi4ZZfchB12v9mIS7Xn+M=;
+        b=VQfbqHLlNjSn84ESaSHHhCqw3R06n9WO1qnsVGa8BlisyrLhIac8kx8aPHKFvcl0dW
+         Zeujd8YNkRLkeJwEHgs++Tg2tAj4VgYRvUGjqlnz7KiLopIXsmonCuVYIozufkZKeL3B
+         NSgrfoZUfWjBkD2wDgYV8LNGrlQiUAAMnkNNBrgy+KOUhjx+c7m52i9eqedmZA/pHYpY
+         7tnEGz/wxV9qgy7T1bAsrSv3LUSfRkJ1JpQ9itW2SvgZYAYSFHfrH0NOfBVeN3VV3lwZ
+         I+FDibuA99yaHdqhqZHah71duCxTdXyOA4wlRuyIYjBDw0snBVfTi5byajj+afwVAMM0
+         Se7g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of root@anahoret.com designates 213.239.201.91 as permitted sender) smtp.mailfrom=root@anahoret.com
+Received: from mail.anahoret.com (mail.anahoret.com. [213.239.201.91])
+        by mx.google.com with ESMTP id m67-v6si4653409wme.42.2018.07.29.22.45.02
+        for <devel@anadeainc.com>;
+        Sun, 29 Jul 2018 22:45:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of root@anahoret.com designates 213.239.201.91 as permitted sender) client-ip=213.239.201.91;
+Received: by mail.anahoret.com (Postfix)
+	id DB801160061; Mon, 30 Jul 2018 08:45:01 +0300 (EEST)
+Delivered-To: devel@anahoret.com
+Received: by mail.anahoret.com (Postfix, from userid 0)
+	id C916D16009C; Mon, 30 Jul 2018 08:45:01 +0300 (EEST)
+Date: Mon, 30 Jul 2018 08:45:01 +0300
+From: Notification bot <itsupport@anahoret.com>
+To: devel@anahoret.com
+Subject: [Notification] =?utf-8?B?0J3QtSDQt9Cw0LE=?=
+ =?utf-8?B?0YPQtNGM0YLQtSDQt9Cw0LrRgNGL0YLRjCDQvdC10LTQtdC70Y4u?=
+Message-ID: <20180730054501.GA23437@mail.anahoret.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+User-Agent: Mutt/1.5.21 (2010-09-15)
+X-Original-Sender: itsupport@anahoret.com
+X-Original-Authentication-Results: mx.google.com;       spf=pass (google.com:
+ domain of root@anahoret.com designates 213.239.201.91 as permitted sender) smtp.mailfrom=root@anahoret.com
+Precedence: list
+Mailing-list: list devel@anadeainc.com; contact devel+owners@anadeainc.com
+List-ID: <devel.anadeainc.com>
+X-Spam-Checked-In-Group: devel@anadeainc.com
+X-Google-Group-Id: 84058596805
+List-Post: <https://groups.google.com/a/anadeainc.com/group/devel/post>, <mailto:devel@anadeainc.com>
+List-Help: <https://support.google.com/a/anadeainc.com/bin/topic.py?topic=25838>,
+ <mailto:devel+help@anadeainc.com>
+List-Archive: <https://groups.google.com/a/anadeainc.com/group/devel/>
+List-Unsubscribe: <mailto:googlegroups-manage+84058596805+unsubscribe@googlegroups.com>,
+ <https://groups.google.com/a/anadeainc.com/group/devel/subscribe>
+
+Доброго времени суток, коллеги!
+
+Напоминаем вам о необходимости закрыть отработанную неделю.
+Верим в вашу ответственность.
+
+Спасибо.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>21</integer>
+	<key>date-last-viewed</key>
+	<integer>1532930000</integer>
+	<key>date-received</key>
+	<integer>1532929505</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+	</array>
+	<key>remote-id</key>
+	<string>29</string>
+</dict>
+</plist>

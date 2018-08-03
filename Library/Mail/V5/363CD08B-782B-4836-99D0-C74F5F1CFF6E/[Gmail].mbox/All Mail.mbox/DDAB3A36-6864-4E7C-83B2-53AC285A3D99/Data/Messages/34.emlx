@@ -1,0 +1,203 @@
+8538      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp1814788iof;
+        Thu, 2 Aug 2018 00:56:55 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpeY1XLgkJrKjFclBbq6Gb1/5csnIKVfsayKW9aeTQhXJFHXpIKgzubYrt5ZTM4V/h0lwnHQ
+X-Received: by 2002:a50:b306:: with SMTP id q6-v6mr2121901edd.264.1533196615725;
+        Thu, 02 Aug 2018 00:56:55 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533196615; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FSTRk4gkbnjEslTk6rnGaDQzP0pnZexgKqV/qzZmEBuOmIZu/POSFEG6evXb8zqhNA
+         XmbKBolgL65ab0TOo0z/ttckL4tjhoAui3sgxBo/GdGFD94Fv2ei8Qx2UsE9cO8jTAMn
+         Glby8cQvan5uzF2g2/7RZVATHIBinevAh0cv7ez/ZCtR3/cM3890eh6WxTnXaRPqcshr
+         NWzSecWNkLUakqvNj9FZ6vzhiRPWW1Y4MHApzrotDa6G3P22QVpVPzwu3qEuHAUPlh5V
+         G34ZzTa2DJaqvd9rNEc44x3/3b053bkuE+AY3MybyzAYPETomnA/b5ZvRBq3IGJDSH7U
+         3Q+g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=CyVqzQYbGA4LiNNmK54bhB9rQN9FI2scCY2apWa/3II=;
+        b=ZjnKXZ93s+NJcs09ZwhXFFVIDrg0dIl9vjXMCKB9KMIThcv533BrovuKtYdCKS1/eJ
+         Ck/vBqZfAwSdjSkutd9djq8y5juB6QOf/CnMyg7M4KBFSWKF+tfPunpJesQMoA4I7hgB
+         40epGxP9BzGncM9cVZaRzcbGhh//RvWbrynH3BV67ocCTz8mrRz6/lW8/ZTMdH6bIqeu
+         McOP2HSX3Mr4pJAXWLjwNptimNOAgo4k1elPUNSbqn1h+oUACpxIHxZMzDkm/ns67po7
+         GiEzAXpi09zAsuag66KXkDDbWbOuTeGtzoYUH3ZsRCAUQaWbqn4SP4lMI61ccctyQVck
+         iJJg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b="vHIR2/Jg";
+       spf=pass (google.com: domain of srs0+233e555b39cb515534203cf22e3f980309b9e109@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+233e555b39cb515534203cf22e3f980309b9e109@info.anahoret.com
+Return-Path: <srs0+233e555b39cb515534203cf22e3f980309b9e109@info.anahoret.com>
+Received: from smtp0.mailarbor.com (smtp0.mailarbor.com. [5.104.224.181])
+        by mx.google.com with ESMTPS id b9-v6si1095561edc.77.2018.08.02.00.56.55
+        for <kr@anadeainc.com>
+        (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 02 Aug 2018 00:56:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0+233e555b39cb515534203cf22e3f980309b9e109@info.anahoret.com designates 5.104.224.181 as permitted sender) client-ip=5.104.224.181;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b="vHIR2/Jg";
+       spf=pass (google.com: domain of srs0+233e555b39cb515534203cf22e3f980309b9e109@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+233e555b39cb515534203cf22e3f980309b9e109@info.anahoret.com
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 31F99200499
+	for <kr@anadeainc.com>; Thu,  2 Aug 2018 07:56:55 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 247261600B6
+	for <kr@anadeainc.com>; Thu,  2 Aug 2018 07:56:55 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.anahoret.com; q=dns/txt; s=mail; t=1533196615; bh=CyVqzQYbGA4LiNNmK54bhB9rQN9FI2scCY2apWa/3II=; h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding; b=vHIR2/JgJLn29CjFMusD/Kcj6WY6ub/EhhSp5/VU6tUI+Ftt/Gp1hmMG0WdmjHIiB+7+oNUiEKiweZFwILKTPtGw+3Y8lE+8kpVFwLaetyOGZnz5TEE5i3JqDre73l5DY2VE20xPzauuou3tgDlhu44OsHdTfHh55oF39Yf0adA=
+Date: Thu, 02 Aug 2018 07:56:55 +0000
+From: noreply@tracker.anahoret.com
+To: Konstantin Ryshchenko <kr@anadeainc.com>
+Message-ID: <233e555b39cb515534203cf22e3f980309b9e109@info.anahoret.com>
+Subject: You have made responsible for 'Add tabs for the 'Renewal reminder'
+ section' story in Just Play
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<style type=3D"text/css">
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  table th, table td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  table.daily-statistics {
+    width: 50%;
+  }
+  table.daily-statistics td.working_time {
+    text-align: right;
+  }
+  table.daily-statistics th {
+    background: #DDD;
+  }
+  table.digest {
+    width: 680px;
+  }
+  table.digest.planned_stories th {
+    background: #ddd;
+  }
+  table.digest.description th {
+    background: #ddd;
+  }
+  table.digest.rejected th {
+    background: red;
+  }
+  table.digest.completed th {
+    background: #d8e795;
+  }
+  table.digest.estimate th {
+    background: #dcf8ff;
+  }
+  table.digest.new_stories th {
+    background: #ddd;
+  }
+  table.digest td.time {
+    text-align: center;
+  }
+  table.digest td.story {
+    width: 400px;
+  }
+  table.digest td.name {
+    width: 130px;
+  }
+</style>
+
+  <p>Hi, you have a new story, created by Jonathan Fagg for the Just Play=
+ project!</p>
+
+
+<p>Tabs should be: =E2=80=98Reminder=E2=80=99 and =E2=80=98Pending charge=
+=E2=80=99</p>
+<p><strong>Reminder:</strong> Display all teams that have =E2=80=98send_d=
+ate=E2=80=99 in the future (+14 days).</p>
+<p><strong>Pending charge:</strong> All teams that have a =E2=80=98send_d=
+ate=E2=80=99 in the past and before =E2=80=98CL_renewal_date=E2=80=99</p>=
+
+<p>The =E2=80=98send_date=E2=80=99 and =E2=80=98renewal_date=E2=80=99 sho=
+uld be based on the specific =E2=80=98time=E2=80=99</p>
+<p><strong>Example:</strong></p>
+<p>A team has a =E2=80=98send_date=E2=80=99 of 2nd August and =E2=80=98CL=
+_renewal_date=E2=80=99 of 8th Aug =E2=80=A6this means the reminder email =
+is sent at 11am Melbourne time. So at 11:01am, the =E2=80=98send_date=E2=80=
+=99 will no longer be in the future so the team should not appear in the =
+=E2=80=98Reminder=E2=80=99 tab</p>
+<p>At Aug 2nd 11:01am, the =E2=80=98send_date=E2=80=99 is in the past and=
+ it is before the =E2=80=98CL_renewal_date=E2=80=99=E2=80=A6this means th=
+e team should appear in =E2=80=98Pending_charge=E2=80=99 tab</p>
+<p>At Aug 8th 11:01am, the =E2=80=98CL_renewal_date=E2=80=99 is in the pa=
+st so teams will no longer display in the =E2=80=98Pending_charge=E2=80=99=
+ tab. Any players =E2=80=98unsubscribed=E2=80=99 at this point will start=
+ appearing in the =E2=80=98Past renewal=E2=80=99 section.</p>
+<p><strong>JF 1/8</strong></p>
+<p>- Sent tab has been removed on =E2=80=98Renewal info=E2=80=99 section.=
+ This should be returned</p>
+<p>- As per above =E2=80=98timing=E2=80=99 description=E2=80=A6the 1st Au=
+gust should only display until 11am Melbourne time=E2=80=A6it is currentl=
+y 1st August 11pm Melbourne time.</p>
+<p><strong>JF 1/8</strong></p>
+<p>- In all cases related to the =E2=80=98renewal_send_date=E2=80=99 the =
+specific =E2=80=98local=E2=80=99 time should be added to the scope.</p>
+<p>They should change state after the =E2=80=98renewal_send_*time*=E2=80=99=
+ which is based on 11am in local timezone.</p>
+<p>See example below:</p>
+<p>It is currently 5:15am on August 2nd in Melbourne timezone.</p>
+<p>All the teams are currently displaying on both the =E2=80=98Reminder=E2=
+=80=99 and =E2=80=98Pending charge=E2=80=99 tab</p>
+<p>In this case all the teams should be in the =E2=80=98Reminder=E2=80=99=
+ tab as the reminder is not sent yet. They should move from this tab to t=
+he =E2=80=98Pending charge=E2=80=99 tab after they have been =E2=80=98sen=
+t=E2=80=99=E2=80=A6which will be 11:01am local time.</p>
+<p>A team should only ever display in one of =E2=80=98Reminder=E2=80=99 o=
+r =E2=80=98Pending charge=E2=80=99, they should never display in both.</p=
+>
+<p><a href=3D"https://tracker.anahoret.com/system/files/52805/original/20=
+18-08-01_2114.png?1533150951"><img src=3D"https://tracker.anahoret.com/sy=
+stem/files/52805/original/2018-08-01_2114.png?1533150951" class=3D"popup"=
+ alt=3D""></a></p>
+<p><a href=3D"https://tracker.anahoret.com/system/files/52804/original/11=
+.png?1533150950"><img src=3D"https://tracker.anahoret.com/system/files/52=
+804/original/11.png?1533150950" class=3D"popup" alt=3D""></a></p>
+<p>--</p>
+<p>Assignment made by: Alexander Koroid</p>
+<p>Responsible: Konstantin Ryshchenko, Alexander Dmitrenko</p>
+
+<p>Story estimate: 4:00h </p>
+
+
+<p><a href=3D"https://tracker.anahoret.com/projects/247/stories/64840">ht=
+tps://tracker.anahoret.com/projects/247/stories/64840</a>.</p>
+
+<p>
+  <a href=3D"https://tracker.anahoret.com/profile/default_notification_se=
+ttings">Change notification setting</a>
+</p>
+
+
+
+  <p>Thank you,</p>
+  Just Play Team
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>27</integer>
+	<key>date-last-viewed</key>
+	<integer>1533196648</integer>
+	<key>date-received</key>
+	<integer>1533196615</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>remote-id</key>
+	<string>38</string>
+</dict>
+</plist>

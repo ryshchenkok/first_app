@@ -1,0 +1,1111 @@
+var validationMethods = {
+    emailDoesNotMatchAppleID: emailDoesNotMatchAppleID,
+    minLen: validateMinLength,
+    maxLen:validateMaxLength,
+    integer: validateInteger,
+    leapYear: leapYear,
+    notSame: validateNotSame,
+    validateNameCharacters: validateNameCharacters,
+    validateStandardAscii:validateStandardAscii,
+    validateAppleIdMinLength:validateAppleIdMinLength,
+    validateAppleIdMaxLength:validateAppleIdMaxLength,
+    validateEmail: validateEmail,
+    validateOptionalEmail: validateOptionalEmail,
+    validateEmailServer: validateEmailServer,
+    validateEmailMeDotComServer: validateEmailMeDotComServer,
+    validateDomain: validateDomain,
+    validateNewUserEnteredEmail: validateNewUserEnteredEmail,
+    validateNewUserEnteredEmailWeak: validateNewUserEnteredEmailWeak,
+    validateFirstCharacter: validateFirstCharacter,
+    validateLastCharacter: validateLastCharacter,
+    validateMinMailIdLength: validateMinMailIdLength,
+    validateMaxMailIdLength: validateMaxMailIdLength,
+    validateConsecutivePeriods: validateConsecutivePeriods,
+    validateConsecutiveUnderscores: validateConsecutiveUnderscores,
+    validatePasswordIsStandardASCII:validatePasswordIsStandardASCII,
+    validatePasswordNotTooShort: validatePasswordNotTooShort,
+    validatePasswordNotEmpty: validatePasswordNotEmpty,
+    validatePasswordHasCapitalLetter: validatePasswordHasCapitalLetter,
+    validatePasswordHasLowerCaseLetter: validatePasswordHasLowerCaseLetter,
+    validatePasswordHasDigit: validatePasswordHasDigit,
+    validatePasswordDoesntContainThreeConsecutiveChars: validatePasswordDoesntContainThreeConsecutiveChars,
+    validatePasswordMatch: validatePasswordMatch,
+    validateNotSame: validateNotSame,
+    validateDoesNotContain: validateDoesNotContain,
+    validateAppleIdDoesNotMatchPassword: validateAppleIdDoesNotMatchPassword,
+    validateNoPlus: validateNoPlus,
+    validateNoDash: validateNoDash,
+    validateQuestionDoesNotMatchAnswer: validateQuestionDoesNotMatchAnswer,
+    validateQuestionDoesNotMatchAnswerBuddy: validateQuestionDoesNotMatchAnswerBuddy,
+    validateQuestionIsChosen: validateQuestionIsChosen,
+    validateAnswerMinLength: validateAnswerMinLength,
+    validateAnswerMaxLength: validateAnswerMaxLength,
+    validateAnswerNotAllowedCharacters: validateAnswerNotAllowedCharacters,
+    validateTwoAnswersNotSame: validateTwoAnswersNotSame,
+    validateEmailNotAppleIdAliases: validateEmailNotAppleIdAliases,
+    validateEmailNotOfficialEmail: validateEmailNotOfficialEmail,
+    validateSecurityQuestionDoesNotMatchAnswer: validateSecurityQuestionDoesNotMatchAnswer,
+    validateTwoSecurityAnswersNotSame: validateTwoSecurityAnswersNotSame,
+    validateSecurityQuestionIsChosen: validateSecurityQuestionIsChosen,
+    rescueEmailDoesNotMatchAppleID: rescueEmailDoesNotMatchAppleID,
+    validateRecoveryEmailMaxLength: validateRecoveryEmailMaxLength
+};
+
+var mmesetupui;
+function isAppleIDRequired() {
+    if (mmesetupui) {
+        return mmesetupui.validator.isAppleIdRequired;
+    } else {
+        return true;
+    }
+}
+
+var Setup;
+function isEmailDomainAppended() {
+    if (Setup && Setup.showEmailDomainInInputField) {
+        return Setup.showEmailDomainInInputField();
+    } else {
+        return false;
+    }
+}
+
+function emailDoesNotMatchAppleID(validation, currentValue){
+  var account = ICloudSetup.getAccount(),
+      appleID = account.getAppleId();
+
+  if(!appleID && ICloudSetup.isExistingAppleId) {
+    appleID = ICloudSetup.AppleID;
+  }
+
+  //no apple id? then we can't possibly be matching it
+  //(although we probably have other issues)
+  if(!appleID) return true;
+  
+  return appleID.toLowerCase() !== currentValue.toLowerCase();
+}
+
+function validateEmailNotAppleIdAliases(validation, currentValue){
+  if(ICloudSetup.SameAppleIDs.length > 0) {
+    for(var ind in ICloudSetup.SameAppleIDs) {
+      if(ICloudSetup.SameAppleIDs[ind].toLowerCase() === currentValue.toLowerCase() ) {
+        return false;
+      }
+      else {
+        break;
+      }
+    } 
+  }
+  return true;
+}
+
+function validateEmailNotOfficialEmail(validation, currentValue){
+  if(!ICloudSetup.OfficialEmail) return true;
+
+  return ICloudSetup.OfficialEmail.toLowerCase() !== currentValue.toLowerCase();
+}
+
+function validateFirstCharacter(validation, currentValue) {
+    var valid = /^[A-Za-z].*/.test(currentValue);
+    return valid;
+}
+
+var emailDomain = mmesetupconstants.emailDomain;
+
+var emailDomainLength = emailDomain.length;
+
+function validateLastCharacter(validation, currentValue) {
+    if (isEmailDomainAppended()) {
+        currentValue = currentValue.substr(0, currentValue.indexOf(emailDomain));
+    }
+
+    var valid = /^.*.[A-Za-z0-9]$/.test(currentValue);
+    return valid;
+}
+
+function validateMinMailIdLength(validation, currentValue) {
+    return currentValue.length - (isEmailDomainAppended() ? emailDomainLength : 0) >= 3;
+}
+
+function validateMaxMailIdLength(validation, currentValue) {
+    return currentValue.length - (isEmailDomainAppended() ? emailDomainLength : 0) < 21;
+}
+
+function validateConsecutivePeriods(validation, currentValue) {
+    return (currentValue.indexOf('..') == -1);
+}
+
+function validateConsecutiveUnderscores(validation, currentValue) {
+    return (currentValue.indexOf('__') == -1);
+}
+
+function validateAppleIdMinLength(validation, currentValue) {
+    var valid = true;
+    if (isAppleIDRequired()) {
+        valid = currentValue.length >= validation.minLen;
+    }
+    return valid;
+}
+
+function validateEmail(validation, currentValue) {
+    var valid = true;
+    if (isAppleIDRequired()) {
+        valid = matchValidEmailRegex(currentValue);
+    }
+    return valid;
+}
+
+function validateOptionalEmail(validation, currentValue) {
+    // Since this is an optional field, do not validate if there is no value
+    if (currentValue.length <1) return true;
+    return  matchValidEmailRegex(currentValue);
+}
+
+function validateEmailServer(validation, currentValue, elem, additionalCallback) {
+  var account = ICloudSetup.getAccount(),
+      setupClient    = ICloudSetup.getSetupClient(),
+      pageController = ICloudSetup.getPageController();
+
+ return $.ajax({
+    type: "POST",
+    timeout: mmesetupconstants.ajaxTimeout,
+    processData: false,
+    url: encodeURI("/setup/web/check_availability/XXXXFF"),
+    data: "appleId="+encodeURIComponent(currentValue),
+    beforeSend: function(xhr) {
+      console.debug("  -  about to call 'check_availability' on server…");
+      setupClient.setRequestInFlight(true);
+      ICloudSetup.getPageController().validationSpinnerVisibility(elem, true);
+    },
+    success: function(data, textStatus, xhr) {
+      console.debug("  -  success calling 'check_availability'");
+      ICloudSetup.getPageController().validationSpinnerVisibility(elem, false);
+      setupClient.setRequestInFlight(false);
+
+      if(typeof data !== 'object'){ data = JSON.parse(data); }
+      if (!data.success) {
+        if (data.message) console.error("Error validating non-@me.com Apple ID:  " + data.message);
+
+        // Translate the errors returned from the server into validation
+        // data structures that we can then use to display to the user.
+        var usernameErrorCode = data.usernameErrorCode;
+        if (usernameErrorCode === -20201 || usernameErrorCode === -1) {
+          var errorMsg = "Validation.EmailAddressAlreadyInUse".loc();
+
+          $(elem).data("_validationFailures", [{
+            source:      "server",
+            errorMsg:    errorMsg,
+            suggestions: data.suggestions
+          }]);
+          account.suggestions = data.suggestions;
+
+        } else if (usernameErrorCode !== 0) {
+          $(elem).data("_validationFailures", [{
+            source:   "server",
+            errorMsg: data.message
+          }]);
+        }
+      } else {
+        $(elem).data("_validationFailures", []);
+      }
+      ICloudSetup.getPageController().updateErrorDisplayForField(elem, data.success, true);
+      if(additionalCallback){ additionalCallback(data.success); }
+    },
+    error: function(xhr, textStatus, errorThrown) {
+      console.debug("  -  error calling 'check_availability'");
+      ICloudSetup.getPageController().validationSpinnerVisibility(elem, false);
+      setupClient.setRequestInFlight(false);
+
+      if(additionalCallback){ additionalCallback(false); }
+    },
+    complete: function() {
+      console.debug("  -  completed calling 'check_availability'");
+    }
+  });
+}
+
+function validateEmailMeDotComServer(validations, currentValue, elem, additionalCallback) {
+  var account = ICloudSetup.getAccount(),
+      setupClient    = ICloudSetup.getSetupClient(),
+      pageController = ICloudSetup.getPageController();
+
+  account.setFirstName($('#firstNameField').val());
+  account.setLastName($('#lastNameField').val());
+
+  console.log("firstName="+account.getFirstName()+"&lastName="+account.getLastName()+"&appleId="+account.getAppleId());
+  return $.ajax({
+    type: "POST",
+    timeout: mmesetupconstants.ajaxTimeout,
+    processData: false,
+    url: encodeURI("/setup/web/check_availability/XXXXFF"),
+    data: "firstName="+account.getFirstName()+"&lastName="+account.getLastName()+"&appleId="+account.getAppleId(),
+    beforeSend: function(xhr) {
+      console.debug("  -  about to call 'check_availability_me' on server…");
+      setupClient.setRequestInFlight(true);
+      ICloudSetup.getPageController().validationSpinnerVisibility(elem, true);
+    },
+    success: function(data, textStatus, xhr) {
+      console.debug("  -  success calling 'check_availability_me'");
+      setupClient.setRequestInFlight(false);
+      ICloudSetup.getPageController().validationSpinnerVisibility(elem, false);
+      if(typeof data !== 'object'){ data = JSON.parse(data); }
+      if (!data.success) {
+        if (data.message) console.error("Error validating @me.com Apple ID:  " + data.message);
+
+        // Translate the errors returned from the server into validation
+        // data structures that we can then use to display to the user.
+        var usernameErrorCode = data.usernameErrorCode;
+
+        if (usernameErrorCode === -20201 || usernameErrorCode === -1) {
+          var errorMsg = ["Validation.EmailAddressAlreadyInUse".loc()];
+
+          var suggestions = $(data.suggestions).filter(function(idx, suggestion){
+                    valueToTest = suggestion.replace(new RegExp(emailDomain + '$'), '');
+
+            return (validateConsecutivePeriods(null, suggestion) &&
+                   validateConsecutiveUnderscores(null, suggestion) &&
+                   /^[A-Za-z]([A-Za-z0-9_\.])*[A-Za-z0-9]$/.test(valueToTest));
+          });
+
+          if(suggestions && suggestions.length > 0){
+            errorMsg = errorMsg.concat(["<br><a href='#suggestions' class='validation-link'>",
+                          "Validation.EmailAddressSuggestion1".loc(),  //TODO: localize
+                          "</a>"]);
+          }
+
+          $('#meDotComEmailField').data("_validationFailures", [{
+            source:      "server",
+            errorMsg:    errorMsg.join(''),
+            suggestions: suggestions
+          }]);
+          account.suggestions = suggestions;
+        }
+        else if (usernameErrorCode !== 0) {
+          $('#meDotComEmailField').data("_validationFailures", [{
+            source:   "server",
+            errorMsg: data.message
+          }]);
+        }
+      }
+      ICloudSetup.getPageController().updateErrorDisplayForField(elem, data.success, true);
+      if(additionalCallback){ additionalCallback(data.success); }
+    },
+    error: function(xhr, textStatus, errorThrown) {
+      console.error("  -  error calling 'check_availability_me'");
+      setupClient.setRequestInFlight(false);
+      ICloudSetup.getPageController().validationSpinnerVisibility(elem, false);
+      if(additionalCallback){ additionalCallback(false); }
+    }
+  });
+}
+
+function matchValidEmailRegex(currentValue) {
+    return /^([A-Za-z0-9_\-\.\+])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]*)$/.test(currentValue);
+}
+
+function validateNoDash(validation, currentValue) {
+    var containsDash = /.*-.*/.test(currentValue);
+    return !containsDash;
+}
+
+function validateNoPlus(validation, currentValue) {
+    var containsPlus = /.*\+.*/.test(currentValue);
+    return !containsPlus;
+}
+
+function validateNewUserEnteredEmail(validation, currentValue) {
+    // <rdar://problem/9040846> me.com username validations in classic Account/Signup
+    // *   indicates the rule is covered by the regex, other rules handled in if/else logic that follows
+    // *1. Should have only ASCII characters (only upper/lower case letters, numbers, period and underscore may be used).
+    //     It doesn't allow username+1 or similar user names.
+    // *2. First character must be a letter
+    //  3. Consecutive underscores or periods are not allowed.
+    //  4. Name Length Should be between 3-20 characters
+    // *5. Should not contain empty string " "
+    // *6. Last char cannot be '.'.or "_" or "'"(rdar://problem/23220520) 
+
+    // todo according to Chris Vervais, we can simply lower-case this string and eliminate the uppercase patterns
+    // todo here as well as eliminate a large portion of the test cases.
+    var valid;
+    if (isEmailDomainAppended()) {
+        // strip the email domain off the end
+        valueToTest = currentValue.replace(new RegExp(emailDomain + '$'), '');
+
+        valid = /^[A-Za-z]([A-Za-z0-9_'\.])*[A-Za-z0-9]$/.test(valueToTest);
+    } else {
+        valid = /^[A-Za-z]([A-Za-z0-9_'\.])*[A-Za-z0-9]$/.test(currentValue);
+    }
+    return valid;
+}
+
+function validateNewUserEnteredEmailWeak(validation, currentValue) {
+    var valid;
+    if (isEmailDomainAppended()) {
+        valueToTest = currentValue.replace(new RegExp(emailDomain + '$'), '');
+
+        valid = /^([A-Za-z0-9_'\.])+$/.test(valueToTest);
+    } else {
+        valid = /^([A-Za-z0-9_'\.])+$/.test(currentValue);
+    }
+    return valid;
+}
+
+function validateDomain(validation, currentValue) {
+    var invalid = false;
+    if (isAppleIDRequired()) {
+        invalid = /.*@(me|mac|icloud)\.com$/i.test(currentValue);
+    }
+    return !invalid;
+}
+
+function validateAppleIdMaxLength(validation, currentValue) {
+    var valid = true;
+    if (isAppleIDRequired()) {
+        valid = currentValue.length <= validation.maxLen;
+    }
+    return valid;
+}
+
+function validateRecoveryEmailMaxLength(validation, currentValue) {
+    return currentValue.length <= validation.maxLen;
+}
+
+function rescueEmailDoesNotMatchAppleID(validation, currentValue) {
+    var createEmailField, newAppleID;
+
+    if (mmesetupui.isCreateMeEmailMode()) {
+      createEmailField  = $(validation.createEmailField).val();
+      newAppleID        = Setup.device === Setup.OTHER ? createEmailField + "@icloud.com" : createEmailField; // Append @icloud.com for mac
+    } else {
+      newAppleID        = $(validation.emailField).val();
+    }
+
+    return (currentValue.toLowerCase() === newAppleID.toLowerCase()) ? false : true;
+}
+
+function validateInteger(validation, currentValue) {
+    if (!(/^\d+$/).test(currentValue)) return false;
+    currentValue = parseInt(currentValue, 10);
+    if (isNaN(currentValue)) return false;
+    if (validation.min && currentValue < validation.min) return false;
+    if (validation.max && currentValue > validation.max) return false;
+    return true;
+}
+
+function validateMinLength(validation, currentValue) {
+    return currentValue.length >= validation.minLen;
+}
+
+function validateMaxLength(validation, currentValue) {
+    return currentValue.length <= validation.maxLen;
+}
+
+function validateNotSame(validation, currentValue, otherValue) {
+    return currentValue != otherValue;
+}
+
+function validateDoesNotContain(validation, currentValue, otherValue) {
+    return currentValue.indexOf(otherValue) === -1;
+}
+
+function validatePasswordNotTooShort(validation, currentValue) {
+    var pw = (currentValue instanceof Object) ? currentValue.pw1 : currentValue;
+    return pw.length >= 8;
+}
+
+function validatePasswordNotEmpty(validation, currentValue) {
+    var pw = (currentValue instanceof Object) ? currentValue.pw1 : currentValue;
+    return pw.length >= 1;
+}
+
+function validateNameCharacters(validation, currentValue) {
+    var restrictionType = /[!@#$%^&*(){}\[\];:<>/?\\|`~\"0-9_\+=]/g; //"
+    if(currentValue.match(restrictionType)) {
+      return false;
+    }
+    return true;
+}
+
+function validateStandardAscii(validation, currentValue) {
+    var i, len, c;
+    for (i = 0, len = currentValue.length;  i < len;  ++i) {
+        c = currentValue.charCodeAt(i);
+        if (c >= 128)
+            return false;
+    }
+    return true;
+}
+
+function validatePasswordIsStandardASCII(validation, currentValue) {
+    return validateStandardAscii(validation, (currentValue instanceof Object) ? currentValue.pw1 : currentValue);
+}
+
+function validateMatch(validation, currentValue, currentValue2) {
+    var match = currentValue == currentValue2;
+    if (!match) { validation.mismatch = true; }
+    return match;
+}
+
+function validateAnswerMinLength(validation, currentValue) {
+    if (currentValue instanceof Object) {
+        return validateMinLength(validation, currentValue.answer);
+    } else {
+        return validateMinLength(validation, currentValue);
+    }
+}
+
+function validateAnswerNotAllowedCharacters(validation, currentValue) {
+    if (currentValue instanceof Object) {
+        return /\S/.test(currentValue.answer);
+    } else {
+        return /\S/.test(currentValue);
+    }
+}
+
+function validateAnswerMaxLength(validation, currentValue) {
+    if (currentValue instanceof Object) {
+        return validateMaxLength(validation, currentValue.answer);
+    } else {
+        return validateMaxLength(validation, currentValue);
+    }
+}
+
+function validateTwoAnswersNotSame(validation, currentValue, currentElem) {
+    var compareToString = deref(validation.against),
+        ret;
+
+    if (currentValue == undefined || compareToString == undefined ||
+          currentValue.length == 0 || compareToString.length == 0) {
+      // we should not consider two answers with empty strings as Same
+      ret = true;
+    } else {
+      ret = validateNotSame(validation, currentValue, compareToString);
+    }
+
+    return ret;
+}
+
+function validatePasswordHasCapitalLetter(validation, currentValue) {
+    var pw = (currentValue instanceof Object) ? currentValue.pw1 : currentValue,
+        i, len, c;
+
+    for (i = 0, len = pw.length;  i < len;  ++i) {
+        c = pw.charAt(i);
+        
+        // Not a Number AND uppercasing does not change it
+        if (isNaN(parseInt(c)) && (c.toUpperCase() === c)) {
+          return true;
+        }
+    }
+    return false;
+}
+
+function validatePasswordHasLowerCaseLetter(validation, currentValue) {
+    var pw = (currentValue instanceof Object) ? currentValue.pw1 : currentValue,
+        i, len, c;
+
+    for (i = 0, len = pw.length;  i < len;  ++i) {
+        c = pw.charAt(i);
+        // Not a Number AND lowercasing does not change it
+        if (isNaN(parseInt(c)) && (c.toLowerCase() === c)) {
+          return true;
+        }
+    }
+    return false;
+}
+
+function validatePasswordHasDigit(validation, currentValue) {
+    var pw = (currentValue instanceof Object) ? currentValue.pw1 : currentValue,
+        i, len, c;
+
+    for (i = 0, len = pw.length;  i < len;  ++i) {
+        c = pw.charCodeAt(i);
+        if (c >= 48 && c <= 57)
+            return true;
+    }
+    return false;
+}
+
+function validatePasswordDoesntContainThreeConsecutiveChars(validation, currentValue) {
+    var pw = (currentValue instanceof Object) ? currentValue.pw1 : currentValue,
+        i, len, c, cMinus1, cMinus2;
+
+    for (i = 2, len = pw.length;  i < len;  ++i) {
+        c       = pw.charCodeAt(i);
+        cMinus1 = pw.charCodeAt(i - 1);
+        cMinus2 = pw.charCodeAt(i - 2);
+
+        if (c == cMinus1 && c == cMinus2) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function deref(id) {
+    var a = $(id).val();
+    return a;
+}
+
+function validatePasswordMatch(validation, currentValue) {
+    if (currentValue instanceof Object) {
+        return validateMatch(validation, currentValue.pw1, currentValue.pw2);
+    } else {
+        return validateMatch(validation, currentValue, deref(validation.against));
+    }
+}
+
+function validateAppleIdDoesNotMatchPassword(validation, currentValue) {
+    if (currentValue instanceof Object) {
+        return validateNotSame(validation, currentValue.appleid, currentValue.pw1);
+    }
+    else if (validation.againstEval) {
+        return validateNotSame(validation, currentValue, eval(validation.againstEval));
+    }
+    else {
+        return validateNotSame(validation, currentValue, deref(validation.against));
+    }
+}
+
+function validateQuestionDoesNotMatchAnswer(validation, currentValue) {
+    if (currentValue instanceof Object) {
+        if (!validateNotSame(validation, currentValue.question, currentValue.answer)) { return false; }
+
+        if ((currentValue.customQuestion !== undefined || currentValue.customQuestion !== null)
+            && !validateNotSame(validation, currentValue.customQuestion, currentValue.answer)) { return false; }
+        return true;
+    } else if (validation.againstEval && validation.questions) {
+        return validateNotSame(validation, validation.questions[deref(validation.againstEval)], currentValue);
+    } else {
+        return validateNotSame(validation, deref(validation.against), currentValue);
+    }
+}
+
+function validateQuestionDoesNotMatchAnswerBuddy(validation, currentValue, securityQuestionIndex){
+  var questionSelector = $(validation.question),
+      answerField = $(validation.answer),
+
+      questionValue = questionSelector.val(),
+      questionText = questionSelector.find('[value='+questionValue+']').html().trim().toLowerCase().replace(/\?$/,''),
+      answerText = answerField.val().trim().toLowerCase(),
+      isValid = true;
+
+  if(!answerText || !questionValue){ return true; }
+
+  var questionWords = questionText.split(' ');
+  var answerWords = answerText.split(' ');
+
+  // evaluate true if there is no match, and false if there is.
+  isValid = !_doesArrayMatchArray(questionWords, answerWords, 2);
+  return isValid;
+}
+
+function validateQuestionIsChosen(validation, currentValue){
+    return deref(validation.against) !== '';
+}
+
+/* Method definition for three security questions of Pref pane >>> begin*/
+function validateSecurityQuestionDoesNotMatchAnswer(validation, currentValue, securityQuestionIndex) {
+  var questionValue, questionText,
+      selectorElem  = $(validation.questionToken+securityQuestionIndex),
+      answerText = $(validation.answerToken+securityQuestionIndex).val().trim().toLowerCase(),
+      isValid = true;
+      
+  if (Setup.device === Setup.OTHER) {
+    questionValue = selectorElem.val();
+    questionText  = selectorElem.find('[value='+questionValue+']').html().trim().toLowerCase().replace(/\?$/,'');
+  } else {
+    questionText  = selectorElem.html();
+  }
+  
+  if(!answerText || !questionValue){ return true; }
+
+  var questionWords = questionText.split(' ');
+  var answerWords = answerText.split(' ');
+  
+  // evaluate true if there is no match, and false if there is.
+  isValid = !_doesArrayMatchArray(questionWords, answerWords, 2);
+  return isValid;
+}
+
+function _doesArrayMatchArray(array, otherArray, lengthStringToFilterFromArrays) {
+  var match = false;
+  
+  // prevent insignificant matches. for exmaple, when comparing Q’s and A’s: words like ‘a’, ‘of’, ‘in’, etc.
+  if(lengthStringToFilterFromArrays) {        
+    array = $.grep(array, function(row, i){
+      return row.length > lengthStringToFilterFromArrays;
+    });
+    otherArray = $.grep(otherArray, function(row, i){
+      return row.length > lengthStringToFilterFromArrays;
+    });
+  };
+  
+  array.forEach(function(row, aIdx){
+    // the first row of our array is in the other array
+    if(row === otherArray[0]){
+      // so we are immediately matching
+      match = true;
+
+      // but if there are other rows in the other array, and none of the other rows match, then the arrays do not match
+      for(var idx=1, len = otherArray.length; idx < len; idx++){
+        match = array[aIdx+idx] == otherArray[idx];
+        if(match) break;
+      }
+    }
+  });
+  
+  return match;
+}
+
+function validateTwoSecurityAnswersNotSame(validation, currentValue, securityQuestionIndex) {
+  var answerElem, answerText, idx, ret;
+
+  for (idx=1; idx<=3; idx++) {
+    if (idx == securityQuestionIndex) continue;
+
+    answerElem = $(validation.answerToken + idx);
+    answerText = answerElem.val();
+    ret = validateNotSame(validation, answerText.toLowerCase(), currentValue.toLowerCase());
+    if (!ret) return false;
+  }
+  return true;
+}
+
+function validateSecurityQuestionIsChosen(validation, currentValue, securityQuestionIndex) {
+  var elem = validation.questionToken + securityQuestionIndex;
+  return deref(elem) !== '';
+}
+
+/* <<< end */
+
+
+function leapYear(validation, currentValue) {
+    var day = parseInt(currentValue, 10);
+    //  day below 28, we are safe
+    if (day <= 28) return true;
+    //  Month not Feb, we are safe
+    if ($("#monthSelector").val() != "02") return true;
+    //  Is this a leap year?
+    var year = parseInt($("#yearSelector").val(), 10);
+    if (year === undefined) return true;
+    var maxDays = 28;
+    if (yearIsLeapYear(year)) {
+        maxDays += 1;
+    }
+    return (day <= maxDays);
+}
+
+
+/**
+  Returns whether the specified year is a leap year.
+*/
+function yearIsLeapYear(year) {
+  // Leap year rules, as taken from http://www.timeanddate.com/date/leapyear.html
+  // as well as Wikipedia:
+  //
+  //   1.  It is evenly divisible by 4;
+  //   2.  If it can be evenly divided by 100, it is NOT a leap year, unless;
+  //   3.  The year is evenly divisible by 400. Then it is a leap year.
+
+  var ret = false;
+
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      ret = (year % 400 === 0);
+    }
+    else {
+      ret = true;
+    }
+  }
+
+  return ret;
+}
+
+
+var answerValidators = [
+    {
+        method:"validateAnswerMinLength",
+        minLen: 3,
+        errorTitle: mmejsloc.AnswerTitle,
+        errorMsg: mmejsloc.AnswerTooShort
+    },
+    {
+        method: "validateQuestionDoesNotMatchAnswer",
+        against: "#questionSelector",
+        errorTitle: mmejsloc.StrongerAnswerTitle,
+        errorMsg: mmejsloc.QuestionAnswerCannotBeSame
+    },
+    {
+        method: "validateQuestionDoesNotMatchAnswer",
+        against: "#customQuestionInput",
+        errorTitle: mmejsloc.StrongerAnswerTitle,
+        errorMsg: mmejsloc.QuestionAnswerCannotBeSame,
+        skipForBuddy: true
+    },
+    {
+        method:"validateAnswerMaxLength",
+        maxLen: 32,
+        errorMsg: mmejsloc.AnswerTooLong,
+        errorTitle: mmejsloc.AnswerErrorTitle
+    },
+    {
+        method:"validateAnswerNotAllowedCharacters",
+        errorTitle: mmejsloc.AnswerTitle,
+        errorMsg: mmejsloc.EnterAnswerToSecurityQ
+    }
+];
+
+var securityAnswerValidators = [
+    {
+        method:"validateAnswerMinLength",
+        minLen: 3,
+        errorTitle: mmejsloc.AnswerTitle,
+        errorMsg: mmejsloc.AnswerTooShort
+    },
+    {
+        method:"validateAnswerNotAllowedCharacters",
+        errorTitle: mmejsloc.AnswerTitle,
+        errorMsg: mmejsloc.EnterAnswerToSecurityQ
+    },
+    {
+        method:"validateAnswerMaxLength",
+        maxLen: 32,
+        errorMsg: mmejsloc.AnswerTooLong,
+        errorTitle: mmejsloc.AnswerErrorTitle
+    },
+    {
+        method: "validateSecurityQuestionIsChosen",
+        questionToken: "#securityQuestionSelector",
+        answerToken: "#securityAnswerField",
+        errorTitle: mmejsloc.SecurityQuestionTitle,
+        errorMsg: mmejsloc.ChooseSecurityQuestion
+    },
+    {
+        method: "validateSecurityQuestionDoesNotMatchAnswer",
+        questionToken: "#securityQuestionSelector",
+        answerToken: "#securityAnswerField",
+        errorTitle: mmejsloc.AnswerTitle,
+        errorMsg: mmejsloc.QuestionAnswerCannotBeSame
+    },
+    {
+        method: "validateTwoSecurityAnswersNotSame",
+        questionToken: "#securityQuestionSelector",
+        answerToken: "#securityAnswerField",
+        errorTitle: mmejsloc.AnswerTitle,
+        errorMsg: mmejsloc.SameSecurityAnswerError
+    }
+];
+
+var securityQuestionValidators = [
+    {
+        method: "validateSecurityQuestionIsChosen",
+        questionToken: "#securityQuestionSelector",
+        answerToken: "#securityAnswerField",
+        errorTitle: mmejsloc.SecurityQuestionTitle,
+        errorMsg: mmejsloc.ChooseSecurityQuestion
+    },
+    {
+        method: "validateSecurityQuestionDoesNotMatchAnswer",
+        questionToken: "#securityQuestionSelector",
+        answerToken: "#securityAnswerField",
+        errorTitle: mmejsloc.SecurityQuestionEnter,
+        errorMsg: mmejsloc.QuestionAnswerCannotBeSame
+    }
+];
+
+var rescueEmailValidators = [
+  {
+      method: "validateOptionalEmail",
+      errorMsg: mmejsloc.EmailInvalid,
+      errorTitle: mmejsloc.EmailFieldErrorTitle
+  },
+  {
+      method: "rescueEmailDoesNotMatchAppleID",
+      emailField: "#emailField",
+      createEmailField: "#createEmailField",
+      errorMsg: mmejsloc.EmailCannotBeTheSameAsAppleID,
+      errorTitle: mmejsloc.EmailFieldErrorTitle
+  },
+  {
+      method:"validateRecoveryEmailMaxLength",
+      maxLen: 256,
+      errorMsg: mmejsloc.RecoveryEmailTooLong,
+      errorTitle: mmejsloc.EmailFieldErrorTitle
+  }
+];
+
+var lastNameValidators = [
+    {
+        method:"minLen",
+        minLen: 1,
+        errorTitle: mmejsloc.LastNameTitle,
+        errorMsg: mmejsloc.EnterLastName
+    },
+    {
+        method:"maxLen",
+        maxLen: 33,
+        errorMsg: mmejsloc.NameTooLong,
+        errorTitle: mmejsloc.LastNameTitle
+    },
+    {
+        method:"validateNameCharacters",
+        errorMsg: mmejsloc.NameContainsIllegalCharacter,
+        errorTitle: mmejsloc.LastNameTitle
+    }
+];
+var firstNameValidators = [
+    {
+        method:"minLen",
+        minLen: 1,
+        errorTitle: mmejsloc.FirstNameTitle,
+        errorMsg: mmejsloc.EnterFirstName
+    },
+    {
+        method:"maxLen",
+        maxLen: 33,
+        errorMsg: mmejsloc.NameTooLong,
+        errorTitle: mmejsloc.FirstNameTitle
+    },
+    {
+        method:"validateNameCharacters",
+        errorMsg: mmejsloc.NameContainsIllegalCharacter,
+        errorTitle: mmejsloc.LastNameTitle
+    }
+];
+var emailThirdPartyValidators = [
+    {
+        method: "validateAppleIdMinLength",
+        minLen: 1,
+        errorMsg: mmejsloc.EnterEmailAddress,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateEmail",
+        errorMsg: mmejsloc.EmailInvalid,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateDomain",
+        errorMsg: mmejsloc.EmailDotMac,
+        errorTitle: mmejsloc.EmailDotMacTitle
+    },
+    {
+        method:"validateAppleIdMaxLength",
+        maxLen: 320,
+        errorMsg: mmejsloc.EmailTooLong,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    }
+];
+
+// used to validate emails for emailing Ts and Cs
+var emailFormatValidators = [
+    {
+        method: "validateAppleIdMinLength",
+        minLen: 1,
+        errorMsg: mmejsloc.EnterEmailAddress,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateEmail",
+        errorMsg: mmejsloc.EmailInvalid,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    }
+];
+
+var emailMeDotComValidators = [
+    {
+        method: "validateMinMailIdLength",
+        errorMsg: mmejsloc.EmailMeDotComTooShortMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle,
+        stopValidatingOnFailure: true
+    },
+    {
+        method: "validateMaxMailIdLength",
+        errorMsg: mmejsloc.EmailMeDotComTooLongMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateStandardAscii",
+        errorMsg: mmejsloc.IllegalEmailCharacter,
+        errorTitle: mmejsloc.EmailFieldErrorTitle,
+        stopValidatingOnFailure: true
+    },
+    {
+        method: "validateNewUserEnteredEmailWeak",
+        errorMsg: mmejsloc.MeDotComEmailInvalidMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateFirstCharacter",
+        errorMsg: mmejsloc.EmailFirstNotLetterMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateLastCharacter",
+        errorMsg: mmejsloc.EmailLastNotLetterOrNumberMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateConsecutivePeriods",
+        errorMsg: mmejsloc.EmailTwoPeriodsMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateConsecutiveUnderscores",
+        errorMsg: mmejsloc.EmailTwoUnderscoresMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateNoDash",
+        errorMsg: mmejsloc.EmailNoDashMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateNoPlus",
+        errorMsg: mmejsloc.EmailNoPlusMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle
+    },
+    {
+        method: "validateNewUserEnteredEmail",
+        errorMsg: mmejsloc.MeDotComEmailInvalidMsg,
+        errorTitle: mmejsloc.EmailFieldErrorTitle,
+        countForMultiple: false
+    }
+];
+var passwordValidatorsBase = [
+    {
+        method: "validateAppleIdDoesNotMatchPassword",
+        errorMsg: mmejsloc.PasswordCannotBeAppleID,
+        errorTitle: mmejsloc.WeakPasswordTitle
+    },
+    {
+        method: "validatePasswordNotEmpty",
+        errorMsg: mmejsloc.EnterPassword,
+        errorTitle: mmejsloc.PasswordTitle
+
+    },
+    {
+        method: "validatePasswordNotTooShort",
+        errorMsg: mmejsloc.PasswordTooShort,
+        errorTitle: mmejsloc.WeakPasswordTitle
+    },
+    {
+        method: "validatePasswordHasCapitalLetter",
+        errorMsg: mmejsloc.PasswordMustContainUppercase,
+        errorTitle: mmejsloc.WeakPasswordTitle
+    },
+    {
+        method: "validatePasswordHasLowerCaseLetter",
+        errorMsg: mmejsloc.PasswordMustContainLowercase,
+        errorTitle: mmejsloc.WeakPasswordTitle
+    },
+    {
+        method: "validatePasswordHasDigit",
+        errorMsg: mmejsloc.PasswordMustContainNumber,
+        errorTitle: mmejsloc.WeakPasswordTitle
+    },
+    {
+          method: "validatePasswordIsStandardASCII",
+          errorMsg: mmejsloc.IllegalPasswordCharacter,
+          errorTitle: mmejsloc.InvalidPasswordTitle
+    },
+    {
+        method: "validatePasswordDoesntContainThreeConsecutiveChars",
+        errorMsg: mmejsloc.PasswordHasIdenticalConsecutiveChars,
+        errorTitle: mmejsloc.WeakPasswordTitle
+    }
+];
+var passwordValidators = getAppendedArray(passwordValidatorsBase, [
+    {
+        method: "validatePasswordMatch",
+        errorMsg: mmejsloc.EnterPasswordAgain,
+        errorTitle: mmejsloc.PasswordsDoNotMatchTitle,
+        against: "#verifyPasswordField",
+        countForMultiple: false
+    }
+]);
+var passwordValidatorsWithoutMatch = passwordValidatorsBase;
+
+function getAppendedArray(arr, otherArr) {
+    //var newarr = arr.slice(0, arr.length);
+
+    var newarr = new Array(),
+        ii;
+    for (ii = 0; ii < arr.length; ii++) {
+        newarr.push(arr[ii]);
+    }
+    for (ii = 0; ii < otherArr.length; ii++) {
+        newarr.push(otherArr[ii]);
+    }
+    return newarr;
+}
+
+function validateAnswer(callback, answer, question, customQuestion) {
+    return buddyValidate(answerValidators, callback, { answer: answer, question: question, customQuestion: customQuestion });
+}
+
+function validateNewUserEnteredEmailAddress(callback, emailAddress, validationsError) {
+    return buddyValidate(emailMeDotComValidators, callback, emailAddress, validationsError);
+}
+
+function validateThirdPartyEmailAddress(callback, emailAddress) {
+    return buddyValidate(emailThirdPartyValidators, callback, emailAddress);
+}
+
+function validateEmailFormat(callback, emailAddress) {
+    return buddyValidate(emailFormatValidators, callback, emailAddress);
+}
+
+function validatePassword(callback, password1, password2, appleid, validationsError ) {
+    return buddyValidate(passwordValidators, callback, {pw1: password1, pw2: password2, appleid: appleid }, validationsError);
+}
+
+function validateFirstName(callback, firstName) {
+    return buddyValidate(firstNameValidators, callback, firstName);
+}
+
+function validateLastName(callback, lastName) {
+    return buddyValidate(lastNameValidators, callback, lastName);
+}
+function cloneObj(src) {
+    for (k in src) {
+        this[k] = src[k];
+    }
+}
+var xmlui;
+function buddyValidate(validations, callback, currentValue, validationsError) {
+    // validations: { method: "confirmation", errorMsg: "Passwords do not match" }
+    var numFailures = 0;
+    var invalidValidator = null;
+    for (var i = 0; i < validations.length; ++i) {
+        var validation = validations[i];
+        if (validation.skipForBuddy !== null && validation.skipForBuddy) {
+            continue;
+        }
+        valid = validationMethods[validation.method](validation, currentValue);
+        if (!valid) {
+
+            if (numFailures === 0 || validation.countForMultiple === undefined || validation.countForMultiple) {
+                numFailures++;
+            }
+            if (invalidValidator == undefined) {
+                invalidValidator = validation;
+            }
+            if (validation.stopValidatingOnFailure !== undefined && validation.stopValidatingOnFailure) {
+                break;
+            }
+        }
+    }
+    if (numFailures >= 1) {
+
+        invalidValidator = new cloneObj(invalidValidator);
+        if (validationsError && numFailures > 1) {
+            invalidValidator.errorMsg = validationsError.errorMsg;
+            invalidValidator.errorTitle = validationsError.errorTitle;
+        }
+        if (callback) {
+            callback(invalidValidator);
+        }
+    }
+    return (numFailures === 0);
+}

@@ -1,0 +1,246 @@
+12124     
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp507623iof;
+        Thu, 26 Jul 2018 07:15:19 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpd3mdV7citD8dh5luu/LYRfGEjCRD094u3F/uuNBiCnjmHSefXnfGphXOoZfns5EkpmZbfa
+X-Received: by 2002:a37:9b03:: with SMTP id d3-v6mr1840199qke.122.1532614519569;
+        Thu, 26 Jul 2018 07:15:19 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532614519; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wFLPt2ThbdQJ1BDSA3/UBQNIOyb5Nvy/iLmOZAUhzVr6I4x+rvgbB3C3Wh/4nQSSLv
+         33XUsJ2rcJdntTzv57g7OLlu2UbGMYl0J9liStzlTZ+MCFHbnXab9KWhMZtOpo1H/Skr
+         8fdaOcInFCoPA6hZQsfw6cO7NNa410BD7b228bMN3+3Z5GIXWiWIVuuSs+SGNyOCW6XV
+         cnyYRuDbbgfFD4rtlzvNVttXzFC5AcuEXmVvhqycoi4PPeqt4ZFAF8JFaNelGK+1WPKx
+         bh6AI5ce0Hi7gB4HXuxZGHt2oxe7UDre1051ncSmHEEH88aZ1mCUmzFJLkIN0r8PvWhi
+         KeCA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=4VHhP6yHijtnO4jrZCi1SL2iGGX67k7Vky39NNwHVGk=;
+        b=SsnEGjTuflleI8hT/P87aNIrvfaNUjYFidmJZVH2iPnUiabCF8kX5fs8HYRCDQ/Dr/
+         2obigXMveZloswUo0ByWr9znYmkT/MQOaueABZBsSZxNAaX8nyGQrPHV5mlx/A/d1YT9
+         ChCNY268CWaKq8FG1Lbih1TDlXeWuwPpx0tG7RTYFAPjvEun98eXUbbo098wXxzdBTBs
+         C/KSWeeK3qVX1OqfeaSzW3hxh5WowZ/GrYbWNA/B0thh2Bi5TVTDN06E7SNOM255X0gM
+         dcZHBzfM2zcbKBoPU9cLb9TOnpalX9DcGwoMA1k+yvl2jOUddpE5yCo3xoKVrppR+nV7
+         7u3Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@turbinehq.com header.s=s1 header.b=ijR0NPO8;
+       spf=pass (google.com: domain of bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com designates 167.89.89.152 as permitted sender) smtp.mailfrom="bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com"
+Return-Path: <bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com>
+Received: from o1.email.turbinehq.com ([167.89.89.152])
+        by mx.google.com with ESMTPS id q29-v6si540504qta.379.2018.07.26.07.15.18
+        for <kr@anadeainc.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);
+        Thu, 26 Jul 2018 07:15:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com designates 167.89.89.152 as permitted sender) client-ip=167.89.89.152;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@turbinehq.com header.s=s1 header.b=ijR0NPO8;
+       spf=pass (google.com: domain of bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com designates 167.89.89.152 as permitted sender) smtp.mailfrom="bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com"
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=turbinehq.com; 
+	h=from:to:subject:mime-version:content-type:content-transfer-encoding; 
+	s=s1; bh=0T1kTnyayqCiupF/rjf+vPuJXik=; b=ijR0NPO8wWFBcOPEMsbHfGp
+	/aQeoY5hs0kLz78qcvoiA1fsqV85GIYzKXoeu1S3El8m+LBil638HP3ai0NgZ5Oo
+	2jIu75+wogl7joNq5DeD7l9Och9NO+YlpKVXSvgDdENDaolzlTIVr2Xu6nz9i6Ym
+	Zr1uouZkk4bXoRYbMBwc=
+Received: by filter0085p3las1.sendgrid.net with SMTP id filter0085p3las1-14790-5B59D774-27
+        2018-07-26 14:15:16.278222444 +0000 UTC m=+57643.684685144
+Received: from turbinehq.com (cdn.turbinehq.com [188.166.30.195])
+	by ismtpd0006p1lon1.sendgrid.net (SG) with ESMTP id HFQfF_BqRwSSod_MpuLjlQ
+	for <kr@anadeainc.com>; Thu, 26 Jul 2018 14:15:15.844 +0000 (UTC)
+Date: Thu, 26 Jul 2018 14:15:16 +0000 (UTC)
+From: anahoret <noreply@anahoret.turbinehq.com>
+To: kr@anadeainc.com
+Message-ID: <5b59d773a9f0e_66d3fc7617145681785aa@cdn.turbinehq.com.mail>
+Subject: =?UTF-8?Q?[Turbine]_New_time_off_request:_=D0=94=D0=B5=D0=BB=D0=B0?=
+ =?UTF-8?Q?_=D0=A1=D0=9F=D0=94_TO-03926?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b59d773a9a6e_66d3fc7617145681784ec";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SG-EID: ye4MbRmuRQV19pTOoxljgV3ahpeU1DpSfcOUXIBm+bEJN02cAnXe8AoHd6cCp31rYU12fi9O8G/DzN
+ 2L3ua4/hXk3YAblzlTOd/iUiZYoye78bjEfSf7Iz8B4dzfd25IwsMPC5W3B3qgEwPXuWX1QPrPTBPr
+ EBWSV93fJdYMWftjzmiDL9J0RNZmzG55UoNR7NTvBVed4Lp1EM6/uc7ie+kHtrgvodPgLX+BtVmlzP
+ 8=
+
+----==_mimepart_5b59d773a9a6e_66d3fc7617145681784ec
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Logo ( https://u2663986.ct.sendgrid.net/wf/click?upn=3DVDtJYJchT4xDpExYhzr5=
+rvoesk-2BsfUWoTU0gVA6KsFwXWJK60lPV4n2yzLmyWAge_FO1fx6FNV7xPXU-2F7y2X05O9XZh=
+Ji12H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZDcyhFo-2B-2BaoiCQe4MCgDOecSdSLUgVN3hw7=
+kWmO3eIPM75G9FDPW7YTDvVsHAuEMxVmQQmcHjP-2BBBeYkHfFTDGr0qwBr9vjEN8bsv-2B0veT=
+vQor7MXMbTtEv41VqcAvmq1nDq4n29K2epq5Gx5giNmxJM7A-3D-3D )
+
+Hello Konstantin Ryshchenko.
+
+=D0=94=D0=B5=D0=BB=D0=B0 =D0=A1=D0=9F=D0=94 TO-03926 has been created by Ko=
+nstantin Ryshchenko=20
+( https://u2663986.ct.sendgrid.net/wf/click?upn=3D22UTdCp8tqNbkKKwgK-2BdKUV=
+jvMifV62EQrW5vIQtIGChsEZnUZ1hclNY1PvT7UUt-2FK-2FOdyo4vYHOq1jLjC4F3Q-3D-3D_F=
+O1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZDcyOh96Kh-2=
+BYcuNbqQKSmAEDb6smLuiZZGEW3J0mj-2BudvWNJJWPFz2VGDu5-2Fy4PBYQ7eOFab2d1ZbudPH=
+krqU3J-2B7YmZlHBKsVH1nvxi7x2huAXQMznNvqtj2M7X-2BOVI20ELEV4SITUaz70rWbMhRIjF=
+-2Fw-3D-3D ) for July 27
+(0.5 days)
+
+Review the request in Turbine=20
+( https://u2663986.ct.sendgrid.net/wf/click?upn=3D22UTdCp8tqNbkKKwgK-2BdKUV=
+jvMifV62EQrW5vIQtIGBg9b2xSmd4aAf-2FT3nt0mkoheXS5UXnF8xVQM9bJdKafg-3D-3D_FO1=
+fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZDcynHvboK4xeV=
+TGSMg1aCR4Ziu6ss5ynI3ejAc7V6lTvIB60oSNKRiJvNh2bKa7mecvoDyYeiiMoXQmRnWh1-2F5=
+DblmB6aPiicUVdwsA5ckYy5ESYHtfDgyTxU7ozzzXs9NWzVfoutlpqNjyLxUiBtZeDg-3D-3D )=
+ or download it as
+PDF=20
+( https://u2663986.ct.sendgrid.net/wf/click?upn=3D22UTdCp8tqNbkKKwgK-2BdKUV=
+jvMifV62EQrW5vIQtIGBXGhuAkEuDeQdUl9Qi-2BSAtjhYwK-2BBpy5KdWaJ-2BZrHpqNO6KtF9=
+VmB-2BRmxrSPz5srvfZ3f-2FdiUx11tRlFDLw-2FwMElfKQN9wJFmN4lGdxW-2F-2BL8exwRmEP=
+M5H55ep1lb1FdU-3D_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfkd=
+8mOqq3GZDcyQQpKXmXxnNUYKBgb6IDCA2Kxts5-2BdujYbtvrm-2Bc-2BVhX4neSTGYQSwVQzZR=
+FQztFZGyF5QaH1zq-2BfTb0-2FpyyAzvGwrvxhV8Q0oyIp48qiMnC6nZsi6S-2Btu1zmGZkF-2B=
+W7RRL-2BRLtb995GpVRHbA-2FTxYg-3D-3D )
+.
+
+Go to your Turbine dashboard=20
+( https://u2663986.ct.sendgrid.net/wf/click?upn=3D22UTdCp8tqNbkKKwgK-2BdKUV=
+jvMifV62EQrW5vIQtIGDkRMhQpwW33iFkGhCLlH-2B7_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi1=
+2H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZDcyqcw59wMt12dXTeFLO4lXhp750xBfhcBnR9YYWZ=
+bEUKfR04gaAkmbizJDnro-2Bly7HyR6VC8CZgS2lghtXOqOhgRbvFoheI95oqm03xux9-2FOynT=
+kNtRKDU9geNmErUl9O0-2BgNBFA5fxnC2jOArtvj8VA-3D-3D ) to review all your
+requests.
+
+Getting too many emails? Change your email settings.=20
+( https://u2663986.ct.sendgrid.net/wf/click?upn=3D22UTdCp8tqNbkKKwgK-2BdKUV=
+jvMifV62EQrW5vIQtIGChsEZnUZ1hclNY1PvT7UUtnyZcw-2F0hZDb1FzfYScc5SmUZzkkIrFFV=
+Iv-2FVQ-2FYxO3A-3D_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfk=
+d8mOqq3GZDcyv3233NTqlcptbxzBWHgqpsNuzLK9pPxThwGN-2FqSLsT-2BW6LClub01kWtlR1C=
+3HsG-2BpnA0vBlhXlWHs81a8UHEBxyUg1oWxAXrQkAHJ1bI0-2BrPC-2FxzlSjCgwygW8r7VrLZ=
+9wIvdmBztMvi2NEYUKw6Vw-3D-3D )=
+
+----==_mimepart_5b59d773a9a6e_66d3fc7617145681784ec
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w=
+3.org/TR/REC-html40/loose.dtd">
+<html>
+  <head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+=20=20=20=20
+  </head>
+  <body style=3D";" bgcolor=3D"#6B7E8D">
+<style type=3D"text/css">
+body {
+background: #6B7E8D;
+}
+</style>
+    <div class=3D"all" style=3D"background: #6B7E8D;">
+      <div class=3D"header" style=3D"background: #4A5761; font-family: Aria=
+l, Tahoma, Verdana, sans-serif; margin: .5em; overflow: hidden; padding: .5=
+em;">
+        <a class=3D"logo" href=3D"https://u2663986.ct.sendgrid.net/wf/click=
+?upn=3DVDtJYJchT4xDpExYhzr5rvoesk-2BsfUWoTU0gVA6KsFwXWJK60lPV4n2yzLmyWAge_F=
+O1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZDcyA43ihOB7=
+bCr2VfGom4YtIpOLRlV-2FxQxkE71lcGJb3zYvsgppHoBvwWYiNGvevxlVQM-2F-2BuNLLcrtyt=
+TMGJW8WjE91eSAtY-2Fuei6XIMACke76zH4db-2FB6dVBXNNMauMg0qYgGQnK0i8qK-2F1dmJUF=
+MRwA-3D-3D">
+  <img src=3D"https://cdn.turbinehq.com/assets/mailers/logo-241fdfcf3d7361a=
+d8077c8c5d6fa69cf150b1da6600df9b5963e9c384296af4c.png" alt=3D"Logo">
+</a>
+      </div>
+
+      <div class=3D"content" style=3D"background: #F3F3F3; margin: .5em; pa=
+dding: .5em 1em 1em;">
+        <p>Hello <strong>Konstantin Ryshchenko</strong>.</p>
+<p>
+  =D0=94=D0=B5=D0=BB=D0=B0 =D0=A1=D0=9F=D0=94 TO-03926 has been created by =
+<a href=3D"https://u2663986.ct.sendgrid.net/wf/click?upn=3D22UTdCp8tqNbkKKw=
+gK-2BdKUVjvMifV62EQrW5vIQtIGChsEZnUZ1hclNY1PvT7UUt-2FK-2FOdyo4vYHOq1jLjC4F3=
+Q-3D-3D_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZDc=
+ybwU5ze98rXgFW5POB4-2FqFVrHAc-2FQGWVNq1x0qAL8piyXOGQJ-2BUHMmyqMZ87hc1q1eAlC=
+JAVYyvFX69BBCNKHR11RT4mIHuYRIj-2B8OxWh43EgOJmSkV9scWS7w4j4PlXTdbSYzZWlUPrXw=
+2R0zVqCaQ-3D-3D" style=3D"color: #6689A6;">Konstantin Ryshchenko</a> for <s=
+pan class=3D"days_notice">July 27</span> (<span class=3D"days_count">0.5=C2=
+=A0days</span>)
+</p>
+<br>
+<p><strong></strong></p>
+<br>
+<p><a href=3D"https://u2663986.ct.sendgrid.net/wf/click?upn=3D22UTdCp8tqNbk=
+KKwgK-2BdKUVjvMifV62EQrW5vIQtIGBg9b2xSmd4aAf-2FT3nt0mkoheXS5UXnF8xVQM9bJdKa=
+fg-3D-3D_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZD=
+cy4PQx8wZRodU0HMUPp7pxbI-2BoSURmFRBd-2FbYNsAY1eKN8uNZcaOLjorCEE9ekyMorqS6lI=
+hLzC5m544iNULG8GTizDV9X1bnh8bAted2KueYODHIBxs06SnSak4ReSZAofytXWOK6nb9Q7mIf=
+VTpgrw-3D-3D" style=3D"color: #6689A6;">Review the request in Turbine</a> o=
+r <a href=3D"https://u2663986.ct.sendgrid.net/wf/click?upn=3D22UTdCp8tqNbkK=
+KwgK-2BdKUVjvMifV62EQrW5vIQtIGBXGhuAkEuDeQdUl9Qi-2BSAtjhYwK-2BBpy5KdWaJ-2BZ=
+rHpqNO6KtF9VmB-2BRmxrSPz5srvfZ3f-2FdiUx11tRlFDLw-2FwMElfKQN9wJFmN4lGdxW-2F-=
+2BL8exwRmEPM5H55ep1lb1FdU-3D_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTv=
+AJhry8isfkd8mOqq3GZDcyU5S9MPxIdzmKJCE179cFUiP4xEArclOZV2B4J7z68oL6jYQ6qu1cg=
+NAwCewFLuZQGH4MApaln-2FoBSIgUXgJ56zSXlkqi-2FYUjQ3WY4LHv9dflTJ6XwhF1i-2BwhjS=
+NOi0d6nORui25oBD1Fr8LhuerBYQ-3D-3D" style=3D"color: #6689A6;">download it a=
+s PDF</a>.</p>
+<p>
+  <small>Go to your Turbine <a href=3D"https://u2663986.ct.sendgrid.net/wf/=
+click?upn=3D22UTdCp8tqNbkKKwgK-2BdKUVjvMifV62EQrW5vIQtIGDkRMhQpwW33iFkGhCLl=
+H-2B7_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZDcy2=
+fHqyEwgHVBi2bBEbuJZjHeMg17U5sR0NHlhYhcZD2dumMw-2F8vOESYj5rIQCfi1CULIdVOJlZL=
+MBMXobKtwf5OuzRJ6uJIDZWu8KhszM-2FBImmOkYaQrGs6YClE1RibYCNEBlSwPb0BLVy1c4CwD=
+Itw-3D-3D" style=3D"color: #6689A6;">dashboard</a> to review all your reque=
+sts.</small>
+</p>
+
+<p><small>Getting too many emails? <a href=3D"https://u2663986.ct.sendgrid.=
+net/wf/click?upn=3D22UTdCp8tqNbkKKwgK-2BdKUVjvMifV62EQrW5vIQtIGChsEZnUZ1hcl=
+NY1PvT7UUtnyZcw-2F0hZDb1FzfYScc5SmUZzkkIrFFVIv-2FVQ-2FYxO3A-3D_FO1fx6FNV7xP=
+XU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZDcypG98-2Fm4qsCa6SAxyk=
+u88kVFEXA8QlJ9KQJQTub5jkQzhLvZm4TdHT6UrY8J-2BEDRIwQOrwB0jP7gdKChtrk-2BAllfp=
+UC8VRh1wSGFDTyD83mcVuRseZsEvyQwidQvGhux58CClG6T7WFdE3wxw2nBLUg-3D-3D" style=
+=3D"color: #6689A6;">Change your email settings.</a></small></p>
+      </div>
+
+      <div class=3D"footer" style=3D"color: #ffffff; font-size: .8em; margi=
+n: .5em; padding: .5em;">
+=20=20=20=20=20=20=20=20
+      </div>
+    </div>
+=20=20
+<img src=3D"https://u2663986.ct.sendgrid.net/wf/open?upn=3DFO1fx6FNV7xPXU-2=
+F7y2X05O9XZhJi12H-2FH1xhLh1VTvAJhry8isfkd8mOqq3GZDcyGLmycFMsSphflVrTQXd2Z0U=
+2VKD29ziVcR0ihEkHqNw90KFDVZnPd0AhVsWmXEe-2FG6I3ObWbrmkDXo4R5Y-2BvUzTluv0Szy=
+betfO4Pk9t02fCcG6nL7P3KHloD2jSOh-2BJZsntHhaeKcKSRotSKNdySBtGMePNobbrlwfIYtR=
+V710-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px=
+ !important;width:1px !important;border-width:0 !important;margin-top:0 !im=
+portant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 =
+!important;padding-top:0 !important;padding-bottom:0 !important;padding-rig=
+ht:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+----==_mimepart_5b59d773a9a6e_66d3fc7617145681784ec--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>14</integer>
+	<key>date-last-viewed</key>
+	<integer>1532698752</integer>
+	<key>date-received</key>
+	<integer>1532614519</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>remote-id</key>
+	<string>20</string>
+</dict>
+</plist>

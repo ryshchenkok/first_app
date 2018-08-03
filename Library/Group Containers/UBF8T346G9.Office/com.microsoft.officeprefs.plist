@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ErrorReportingUUID</key>
+	<string>2CAD6461-AF39-4C5F-9DA8-109346A73E58</string>
+	<key>QuitAfterGeneratingReport</key>
+	<false/>
+	<key>SendReportAutomatically</key>
+	<false/>
+	<key>TotalErrors</key>
+	<integer>5</integer>
+	<key>launchWhenDone:Microsoft Excel</key>
+	<false/>
+</dict>
+</plist>

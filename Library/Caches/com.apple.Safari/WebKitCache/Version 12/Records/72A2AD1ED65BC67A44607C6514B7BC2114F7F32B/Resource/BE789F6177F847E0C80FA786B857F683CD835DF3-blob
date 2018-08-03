@@ -1,0 +1,1253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru_RU" lang="ru_RU">
+<head>
+<title> AnahoretEbooks &lt; Anahoret &lt; Anadea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="http://anahoret.com/wiki/bin/edit/Anahoret/AnahoretEbooks?t=1532336124" type="application/x-wiki" title="edit AnahoretEbooks" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/wiki/bin/view/Anahoret/WebRss" />
+
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/SkinTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/layout.css');
+@import url('/wiki/pub/System/PatternSkinTheme/style.css');
+@import url('/wiki/pub/System/PatternSkinTheme/colors.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/column_left.css');
+@import url('/wiki/pub/System/PatternSkinTheme/variant_foswiki_print.css');
+</style><style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#99CC99;
+	}
+	#patternTopBarContents { background-image:url(/wiki/pub/System/PatternSkin/header5.gif); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#ffffff;}
+.patternBookView {
+	border-color:#99CC99;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<style type="text/css" media="print">
+	@import url("/wiki/pub/System/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	height:1%;
+	overflow-x:auto;
+}
+.foswikiAttachments,
+.foswikiForm,
+.foswikiHelp,
+.foswikiPreviewArea,
+.patternPreviewPage .foswikiForm,
+.patternSigLine,
+.patternToolBar,
+.patternTop,
+.patternTopicAction,
+#patternSideBarContents .patternLeftBarPersonal,
+#patternSideBarContents h2,
+#patternSideBarContents li,
+#patternTopBarButtons ul {
+	height:1%;
+}
+#patternSideBarContents .patternLeftBarPersonal {
+	width:100%;
+}
+.foswikiFormStep {
+	height:100%;
+}
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:2px solid #ccc;
+}
+</style><![endif]-->
+<!--[if gt IE 8 ]><style type="text/css" media="screen">
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow: 0 0 10px #ccc;
+}
+</style><![endif]-->
+<meta name="foswiki.TWISTYANIMATIONSPEED" content="fast" /><!--TWISTYPLUGIN::META-->
+<style type="text/css" media="all">
+.foswikiTable {border-width:1px}
+.foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+.foswikiTable td {border-style:solid none; vertical-align:top}
+.foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+.foswikiTable th a:link {color:#000000}
+.foswikiTable th a:visited {color:#000000}
+.foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+.foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+.foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style><!--TABLEPLUGIN_default-->
+<style type="text/css" media="all">
+.foswikiTable#tableAnahoretEbooks1 td {vertical-align:middle; vertical-align:top}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol0 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol1 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol2 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol3 {text-align:right}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol4 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol5 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol6 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol7 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 th {vertical-align:middle; background-color:#ffffff; color:#0066cc; text-align:left}
+.foswikiTable#tableAnahoretEbooks1 th a:link {color:#0066cc}
+.foswikiTable#tableAnahoretEbooks1 th a:visited {color:#0066cc}
+.foswikiTable#tableAnahoretEbooks1 th a:hover {color:#0066cc; background-color:#ffffff}
+.foswikiTable#tableAnahoretEbooks1 th.foswikiSortedCol {background-color:#eeeeee}
+.foswikiTable#tableAnahoretEbooks1 tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable#tableAnahoretEbooks1 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f5f5f5}
+</style><!--TABLEPLUGIN_specific-->
+<link rel='stylesheet' href='/wiki/pub/System/TwistyPlugin/twisty.uncompressed.css?version=1.6.0' type='text/css' media='all' /><!--JQUERYPLUGIN::TWISTY: requires= missing ids: JavascriptFiles/foswikiPref-->
+<!--[if lte IE 9]>
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.11.2.uncompressed.js'></script>
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.8.0.uncompressed.js'></script>
+<!--<![endif]-->
+<!--JQUERYPLUGIN-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/livequery/jquery.livequery.uncompressed.js?version=1.3.1'></script><!--JQUERYPLUGIN::LIVEQUERY-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/foswiki/jquery.foswiki.uncompressed.js?version=2.01'></script><!--JQUERYPLUGIN::FOSWIKI: requires= missing ids: JQUERYPLUGIN::MIGRATE-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiPref.js"></script><!--JavascriptFiles/foswikiPref-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiString.js"></script><!--JavascriptFiles/foswikiString-->
+<script type='text/javascript'>
+jQuery.extend(foswiki, {
+ "preferences": {
+    "PUBURL": "http://anahoret.com/wiki/pub",
+    "PUBURLPATH": "/wiki/pub",
+    "SCRIPTSUFFIX": "",
+    "SCRIPTURL": "http://anahoret.com/wiki/bin",
+    "SCRIPTURLPATH": "/wiki/bin",
+    "SERVERTIME": "23 Jul 2018 - 11:55",
+    "SKIN": "pdf,pattern",
+    "SYSTEMWEB": "System",
+    "TOPIC": "AnahoretEbooks",
+    "USERNAME": "kr",
+    "USERSWEB": "Main",
+    "WEB": "Anahoret",
+    "WIKINAME": "KonstantinRyshchenko",
+    "WIKIUSERNAME": "Main.KonstantinRyshchenko",
+    "NAMEFILTER": "[\s\*?~^\$@%`\"'&;|<>\[\]#\x00-\x1f]"
+}});
+</script><!--JQUERYPLUGIN::FOSWIKI::PREFERENCES-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiForm.js"></script><!--JavascriptFiles/foswikiForm-->
+<script type="text/javascript" src="/wiki/pub/System/PatternSkin/pattern.js"></script><!--PatternSkin/pattern-->
+<script type='text/javascript' src='/wiki/pub/System/TwistyPlugin/jquery.twisty.uncompressed.js?version=1.6.0'></script><!--JQUERYPLUGIN::TWISTY-->
+</head>
+<body class="foswikiNoJs patternViewPage">
+<a name="PageTop"></a><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="/wiki/bin/view/Main/WebHome">Anadea</a><span class='foswikiSeparator'>&gt;</span><a href="/wiki/bin/view/Anahoret/WebHome">Anahoret Web</a><span class='foswikiSeparator'>&gt;</span><a href="http://anahoret.com/wiki/bin/view/Anahoret/AnahoretEbooks" title='Topic revision: 44 (27 Jul 2016 - 17:09:53)'>AnahoretEbooks</a> <span class='patternRevInfo'>(27 Jul 2016, dak)</span></span><span class="patternToolBar foswikiRight"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/AnahoretEbooks?t=1532336124;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/AnahoretEbooks' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span><a href='/wiki/bin/view/Anahoret/AnahoretEbooks?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span></span><div class="foswikiClear"></div></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><h1><a name="Anahoret_e_45books"></a>  Anahoret e-books </h1>
+<p></p>
+Здесь собраны заслуживающие внимания книги в электронном варианте.
+Пожалуйста, делитесь вашими книгами здесь.
+<p></p>
+<img src="/wiki/pub/System/DocumentGraphics/warning.png" alt="ALERT!" title="ALERT!" width="16" height="16" border="0" /> <strong>Внимание: не выкладывайте книги с этой странички в интернет.</strong> 
+Многие из них честно куплены и содержат имя купившего в тексте сгенерированной книги.
+<p></p>
+<a name="foswikiTOC"></a><div class="foswikiToc"> <ul>
+<li> <a href="#A_208_154_208_189_208_184_208_179_208_184_208_191_208_190_Node.js"> Книги по Node.js </a>
+</li> <li> <a href="#A_208_148_209_141_208_178_208_184_208_180_208_165_209_141_209_128_209_128_208_190_208_189._Node.js._208_160_208_176_208_183_209_128_208_176_208_177_208_190_209_130_208_186_208_176_209_129_208_181_209_128_208_178_208_181_209_128_208_189_209_139_209_133_208_178_208_181_208_177_45_208_191_209_128_208_184_208_187_208_190_208_182_208_181_208_189_208_184_208_184_204_134_208_189_208_176_JavaScript._2012"> Дэвид Хэррон. Node.js. Разработка серверных веб-приложений на JavaScript. 2012 </a>
+</li> <li> <a href="#A_208_156_208_176_208_185_208_186_208_154_208_176_208_189_209_130_208_181_208_187_208_190_208_189_44_208_156_208_176_209_128_208_186_208_165_208_176_209_128_209_130_208_181_209_128_44_TJ_208_147_208_190_208_187_208_190_208_178_208_176_208_185_209_135_209_131_208_186_44_208_157_208_176_209_130_208_176_208_189_208_160_208_176_208_185_208_187_208_184_209_133._Node.js_208_178_208_180_208_181_208_185_209_129_209_130_208_178_208_184_208_184._2014"> Майк Кантелон, Марк Хартер, TJ Головайчук, Натан Райлих. Node.js в действии. 2014 </a>
+</li> <li> <a href="#A_208_154_208_184_209_128_208_184_208_187_208_187_208_161_209_131_209_133_208_190_208_178._Node.js._208_159_209_131_209_130_208_181_208_178_208_190_208_180_208_184_209_130_208_181_208_187_209_140_208_191_208_190_209_130_208_181_209_133_208_189_208_190_208_187_208_190_208_179_208_184_208_184._2015"> Кирилл Сухов. Node.js. Путеводитель по технологии. 2015 </a>
+</li> <li> <a href="#A_208_168_208_181_208_187_208_187_208_184_208_159_208_176_209_131_209_141_209_128_209_129._208_152_208_183_209_131_209_135_208_176_208_181_208_188_Node.js._O_39Reilly_44_2014"> Шелли Пауэрс. Изучаем Node.js. O'Reilly, 2014 </a> <ul>
+<li> <a href="#Nick_Sutterer_39s_Trailblazer:_A_new_Rails_architecture"> Nick Sutterer's Trailblazer: A new Rails architecture </a>
+</li> <li> <a href="#Growing_Rails_Applications_in_Practice"> Growing Rails Applications in Practice </a>
+</li> <li> <a href="#Ari_Lerner._Riding_Rails_with_AngularJS._2013"> Ari Lerner. Riding Rails with AngularJS. 2013 </a>
+</li> <li> <a href="#Modular_Rails._The_Complete_Guide_to_Modular_Rails_Applications._By_Thibault_Denizet"> Modular Rails. The Complete Guide to Modular Rails Applications. By Thibault Denizet </a>
+</li> <li> <a href="#Crafting_Rails_4_Applications:_Expert_Practices_for_Everyday_Rails_Development"> Crafting Rails 4 Applications: Expert Practices for Everyday Rails Development </a>
+</li> <li> <a href="#Crafting_Rails_Applications:_Expert_Practices_for_Everyday_Rails_Development"> Crafting Rails Applications: Expert Practices for Everyday Rails Development </a>
+</li> <li> <a href="#Everyday_Rails_Testing_with_RSpec"> Everyday Rails Testing with RSpec </a>
+</li> <li> <a href="#The_RSpec_Book:_Behaviour_45Driven_Development_with_RSpec_44_Cucumber_44_and_Friends"> The RSpec Book: Behaviour-Driven Development with RSpec, Cucumber, and Friends </a>
+</li> <li> <a href="#Rails_Anti_45Patterns:_Best_Practice_Ruby_on_Rails_Refactoring"> Rails Anti-Patterns: Best Practice Ruby on Rails Refactoring </a>
+</li> <li> <a href="#The_Cucumber_Book"> The Cucumber Book </a>
+</li> <li> <a href="#CoffeeScript:_Accelerated_JavaScript_Development"> CoffeeScript: Accelerated JavaScript Development </a>
+</li> <li> <a href="#Responsive_web_design"> Responsive web design </a>
+</li> <li> <a href="#Mobile_first"> Mobile first </a>
+</li> <li> <a href="#Getting_real"> Getting real </a>
+</li> <li> <a href="#Agile_Web_Development_with_Rails_44_4th_Edition_44_Rails_3.2"> Agile Web Development with Rails, 4th Edition, Rails 3.2 </a>
+</li> <li> <a href="#Ruby_Under_a_Microscope"> Ruby Under a Microscope </a>
+</li> <li> <a href="#MacRuby_in_Action"> MacRuby in Action </a>
+</li> <li> <a href="#RubyMotion"> RubyMotion </a>
+</li> <li> <a href="#Mac_OS_X_Programming"> Mac OS X Programming </a>
+</li> <li> <a href="#Functional_Programming_in_Scala"> Functional Programming in Scala </a>
+</li> <li> <a href="#Java_8_in_Action"> Java 8 in Action </a>
+</li> <li> <a href="#A_208_173_208_186_209_129_209_130_209_128_208_181_208_188_208_176_208_187_209_140_208_189_208_190_208_181_208_191_209_128_208_190_208_179_209_128_208_176_208_188_208_188_208_184_209_128_208_190_208_178_208_176_208_189_208_184_208_181._208_154_208_181_208_189_209_130_208_145_208_181_208_186"> Экстремальное программирование. Кент Бек </a>
+</li> <li> <a href="#Extreme_Programming_by_Kent_Beck"> Extreme Programming by Kent Beck </a>
+</li> <li> <a href="#ReactiveCocoa"> ReactiveCocoa </a>
+</li> <li> <a href="#The_Art_of_Thinking_Clearly_by_Ralph_Dobelli"> The Art of Thinking Clearly by Ralph Dobelli </a>
+</li> <li> <a href="#A_208_160._208_165_208_176_208_179_208_179_208_176_209_128_209_130_208_184._208_148_208_184_209_129_208_186_209_128_208_181_209_130_208_189_208_176_209_143_208_188_208_176_209_130_208_181_208_188_208_176_209_130_208_184_208_186_208_176_208_180_208_187_209_143_208_191_209_128_208_190_208_179_209_128_208_176_208_188_208_188_208_184_209_129_209_130_208_190_208_178_208_152_208_183_208_180._2_226_136_146_208_181_44_208_184_209_129_208_191_209_128._2012"> Р. Хаггарти. Дискретная математика для программистов Изд. 2−е, испр. 2012 </a>
+</li> <li> <a href="#A_208_162_208_190_208_188_208_161_209_130_209_142_208_176_209_128_209_130._208_162_208_181_208_190_209_128_208_184_209_143_208_178_209_139_209_135_208_184_209_129_208_187_208_181_208_189_208_184_208_184_204_134_208_180_208_187_209_143_208_191_209_128_208_190_208_179_209_128_208_176_208_188_208_188_208_184_209_129_209_130_208_190_208_178._O_39Reilly._2014"> Том Стюарт. Теория вычислений для программистов. O'Reilly. 2014 </a>
+</li> <li> <a href="#Computer_Science_Programming_Basics_in_Ruby"> Computer Science Programming Basics in Ruby </a>
+</li> <li> <a href="#Data_Science_from_Scratch"> Data Science from Scratch </a>
+</li> <li> <a href="#A_208_151_208_184_208_179_208_151_208_184_208_179_208_187_208_176_209_128._208_161_208_181_208_186_209_128_208_181_209_130_209_139_208_183_208_176_208_186_208_187_209_142_209_135_208_181_208_189_208_184_209_143_209_129_208_180_208_181_208_187_208_190_208_186"> Зиг Зиглар. Секреты заключения сделок </a>
+</li> <li> <a href="#Jonas_Bon_195_169r._Reactive_Microservices_Architecture._O_39Reilly._2016"> Jonas Bonér. Reactive Microservices Architecture. O'Reilly. 2016 </a>
+</li></ul> 
+</li></ul> 
+</div>
+<p></p>
+<h1><a name="A_208_154_208_189_208_184_208_179_208_184_208_191_208_190_Node.js"></a>  Книги по Node.js  </h1>
+<p></p>
+Поделился Станислав Литвинов 29 марта 2016 г.
+<p></p>
+<h1><a name="A_208_148_209_141_208_178_208_184_208_180_208_165_209_141_209_128_209_128_208_190_208_189._Node.js._208_160_208_176_208_183_209_128_208_176_208_177_208_190_209_130_208_186_208_176_209_129_208_181_209_128_208_178_208_181_209_128_208_189_209_139_209_133_208_178_208_181_208_177_45_208_191_209_128_208_184_208_187_208_190_208_182_208_181_208_189_208_184_208_184_204_134_208_189_208_176_JavaScript._2012"></a>  Дэвид Хэррон. Node.js. Разработка серверных веб-приложений на <a href="/wiki/bin/view/Anahoret/JavaScript">JavaScript</a>. 2012 </h1>
+<p></p>
+Ссылка для закачки:
+<p></p>
+    * <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Herron_D._Nodejs_Razrabotka_servernyh_web_prilozheniy.pdf" target="_top">Herron_D._Nodejs_Razrabotka_servernyh_web_prilozheniy.pdf</a>: pdf
+<p></p>
+Книгами поделился Станислав Литвинов 18 февраля 2016 г.
+<p></p>
+<h1><a name="A_208_156_208_176_208_185_208_186_208_154_208_176_208_189_209_130_208_181_208_187_208_190_208_189_44_208_156_208_176_209_128_208_186_208_165_208_176_209_128_209_130_208_181_209_128_44_TJ_208_147_208_190_208_187_208_190_208_178_208_176_208_185_209_135_209_131_208_186_44_208_157_208_176_209_130_208_176_208_189_208_160_208_176_208_185_208_187_208_184_209_133._Node.js_208_178_208_180_208_181_208_185_209_129_209_130_208_178_208_184_208_184._2014"></a>  Майк Кантелон, Марк Хартер, TJ Головайчук, Натан Райлих. Node.js в действии. 2014 </h1>
+<p></p>
+Ссылка для закачки:
+<p></p>
+    * <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Mayk_Kantelon_i_dr_-_Node_js_v_deystvii.pdf" target="_top">Mayk_Kantelon_i_dr_-_Node_js_v_deystvii.pdf</a>: pdf
+<p></p>
+<h1><a name="A_208_154_208_184_209_128_208_184_208_187_208_187_208_161_209_131_209_133_208_190_208_178._Node.js._208_159_209_131_209_130_208_181_208_178_208_190_208_180_208_184_209_130_208_181_208_187_209_140_208_191_208_190_209_130_208_181_209_133_208_189_208_190_208_187_208_190_208_179_208_184_208_184._2015"></a>  Кирилл Сухов. Node.js. Путеводитель по технологии. 2015 </h1>
+<p></p>
+Ссылка для закачки:
+<p></p>
+    * <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/sukhov_k_node_js_putevoditel_po_tekhnologii.pdf" target="_top">sukhov_k_node_js_putevoditel_po_tekhnologii.pdf</a>: pdf
+<p></p>
+<h1><a name="A_208_168_208_181_208_187_208_187_208_184_208_159_208_176_209_131_209_141_209_128_209_129._208_152_208_183_209_131_209_135_208_176_208_181_208_188_Node.js._O_39Reilly_44_2014"></a>  Шелли Пауэрс. Изучаем Node.js. O'Reilly, 2014 </h1>
+<p></p>
+Ссылка для закачки:
+<p></p>
+    * <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Izuchaem_Node_js-Shelli_Pauers.pdf" target="_top">Izuchaem_Node_js-Shelli_Pauers.pdf</a>: pdf
+<p></p>
+<p></p>
+<h2><a name="Nick_Sutterer_39s_Trailblazer:_A_new_Rails_architecture"></a>  Nick Sutterer's Trailblazer: A new Rails architecture </h2>
+<p></p>
+Вот эта книга: <a href="https://leanpub.com/trailblazer" target="_top">https://leanpub.com/trailblazer</a>
+<p></p>
+Ссылки для закачки:
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/trailblazer.pdf" target="_top">trailblazer.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/trailblazer.epub" target="_top">trailblazer.epub</a>: EPUB
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/trailblazer.mobi" target="_top">trailblazer.mobi</a>: MOBI
+</li></ul> 
+<p></p>
+<h2><a name="Growing_Rails_Applications_in_Practice"></a>  Growing Rails Applications in Practice </h2>
+<p></p>
+Вот эта книга: <a href="https://leanpub.com/growing-rails" target="_top">https://leanpub.com/growing-rails</a>
+<p></p>
+Наткнулся на эту книгу случайно. Есть описание того к чему я пришёл сам и активно использую. -- <a href="/wiki/bin/view/Main/AlexanderRyazantsev">AlexanderRyazantsev</a> - 22 Jun 2015
+Замечательная во всех отношениях книга. Практики незамысловатые, но зато применимые в любой команде и в любом проекте. Огромным плюсом книги является её размер. -- <a href="/wiki/bin/view/Main/DmitriyKiriyenko">DmitriyKiriyenko</a> - 30 Oct 2015
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Growing.pdf" target="_top">Growing.pdf</a>: PDF
+</li></ul> 
+<p></p>
+<h2><a name="Ari_Lerner._Riding_Rails_with_AngularJS._2013"></a>  Ari Lerner. Riding Rails with <a href="/wiki/bin/view/Anahoret/AngularJS">AngularJS</a>. 2013 </h2>
+Книгу приобрёл Дмитрий Васин 31 марта 2015 г.
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/angularjs-rails.epub" target="_top">angularjs-rails.epub</a>: epub
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/angularjs-rails.mobi" target="_top">angularjs-rails.mobi</a>: mobi
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/angularjs-rails.pdf" target="_top">angularjs-rails.pdf</a>: pdf
+</li></ul> 
+<p></p>
+<p></p>
+<p></p>
+<h2><a name="Modular_Rails._The_Complete_Guide_to_Modular_Rails_Applications._By_Thibault_Denizet"></a>  Modular Rails. The Complete Guide to Modular Rails Applications. By Thibault Denizet </h2>
+Книгой поделился Дмитрий Васин 27 апреля 2015 г.
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.epub" target="_top">Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.epub</a>: epub
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.mobi" target="_top">Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.mobi</a>: mobi
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.pdf" target="_top">Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.pdf</a>: pdf
+</li></ul> 
+<p></p>
+<p></p>
+<h2><a name="Crafting_Rails_4_Applications:_Expert_Practices_for_Everyday_Rails_Development"></a>  Crafting Rails 4 Applications: Expert Practices for Everyday Rails Development </h2>
+<p></p>
+Вот эта книга: <a href="http://pragprog.com/book/jvrails2/crafting-rails-4-applications" target="_top">http://pragprog.com/book/jvrails2/crafting-rails-4-applications</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Прочитал главы, которые были добавлены по сравнению с предыдущим изданием. По прежнему прекрасная книга. Это римейк прекрасной книги Crafting Rails Applications, которую я всячески рекомендовал в своё время."
+-- <a href="/wiki/bin/view/Main/DmitriyKiriyenko">DmitriyKiriyenko</a> - 29 Nov 2013
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-4-applications_b6_0.pdf" target="_top">crafting-rails-4-applications_b6_0.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-4-applications_b6_0.epub" target="_top">crafting-rails-4-applications_b6_0.epub</a>: Для разнообразных ридеров
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-4-applications_b6_0.mobi" target="_top">crafting-rails-4-applications_b6_0.mobi</a>: Для счастливых владельцев Kindle
+</li></ul> 
+<p></p>
+<h2><a name="Crafting_Rails_Applications:_Expert_Practices_for_Everyday_Rails_Development"></a>  Crafting Rails Applications: Expert Practices for Everyday Rails Development </h2>
+<p></p>
+Вот эта книга: <a href="http://pragprog.com/book/jvrails/crafting-rails-applications" target="_top">http://pragprog.com/book/jvrails/crafting-rails-applications</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Обалденная книга. Must read от 10 уровня и выше."
+-- <a href="/wiki/bin/view/Main/DmitriyKiriyenko">DmitriyKiriyenko</a> - 12 Jul 2011
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-applications_p1_0.pdf" target="_top">crafting-rails-applications_p1_0.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-applications_p1_0.epub" target="_top">crafting-rails-applications_p1_0.epub</a>: Для разнообразных ридеров
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-applications_p1_0.mobi" target="_top">crafting-rails-applications_p1_0.mobi</a>: Для счастливых владельцев Kindle
+</li></ul> 
+<p></p>
+<h2><a name="Everyday_Rails_Testing_with_RSpec"></a>  Everyday Rails Testing with RSpec </h2>
+<p></p>
+Вот эта книга: <a href="https://leanpub.com/everydayrailsrspec" target="_top">https://leanpub.com/everydayrailsrspec</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Хорошая, правильная книга про наше повседневное ремесло. Много хороших, практичных рецептов. Уровень читателя – начальный и средний. Матёрый разработчик мало найдёт для себя нового, но новичкам и середнячкам книга будет очень полезна. Книга заточена на распоследние рельсы и распоследний rspec. Прилагаются версии книги для более винтажных рельсов и rspec'а. Рекомендую." -- <a href="/wiki/bin/view/Main/DmitriyKiriyenko">DmitriyKiriyenko</a> - 06 Nov 2014
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/everydayrailsrspec.pdf" target="_top">everydayrailsrspec.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/everydayrailsrspec.epub" target="_top">everydayrailsrspec.epub</a>: Для разнообразных ридеров – сам читал в FB Reader на Андроиде, конвертировано хорошо.
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/everydayrailsrspec.mobi" target="_top">everydayrailsrspec.mobi</a>: Вдруг у кого Kindle
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/everydayrailsrspec-thebookrails4andrspec214edition-extras.zip" target="_top">everydayrailsrspec-thebookrails4andrspec214edition-extras.zip</a>: Версии книги для более старых версий рельсов и rspec'а.
+</li></ul> 
+<p></p>
+<h2><a name="The_RSpec_Book:_Behaviour_45Driven_Development_with_RSpec_44_Cucumber_44_and_Friends"></a>  The RSpec Book: Behaviour-Driven Development with RSpec, Cucumber, and Friends </h2>
+<p></p>
+Вот эта книга: <a href="http://pragprog.com/book/achbd/the-rspec-book" target="_top">http://pragprog.com/book/achbd/the-rspec-book</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Очень стоящая книга. В процессе и после прочтения с новой силой хочется писать в tdd/bdd"
+-- <a href="/wiki/bin/view/Main/DmitriyKiriyenko">DmitriyKiriyenko</a> - 12 Jul 2011
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Pragmatic.The.RSpec.Book.Dec.2010.pdf" target="_top">Pragmatic.The.RSpec.Book.Dec.2010.pdf</a>: PDF
+</li></ul> 
+<p></p>
+<h2><a name="Rails_Anti_45Patterns:_Best_Practice_Ruby_on_Rails_Refactoring"></a>  Rails Anti-Patterns: Best Practice Ruby on Rails Refactoring </h2>
+<p></p>
+Вот эта книга: <a href="http://www.pearsonhighered.com/educator/product/Rails-AntiPatterns-Best-Practice-Ruby-on-Rails-Refactoring/9780321604811.page" target="_top">http://www.pearsonhighered.com/educator/product/Rails-AntiPatterns-Best-Practice-Ruby-on-Rails-Refactoring/9780321604811.page</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Довольно полезная книга. Честно соответствует своему названию. Рекомендую." -- <a href="/wiki/bin/view/Main/DmitriyKiriyenko">DmitriyKiriyenko</a> - 12 Jul 2011
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/RailsAntiPatternsBestPracticeRubyonRailsRefactorin.pdf" target="_top">RailsAntiPatternsBestPracticeRubyonRailsRefactorin.pdf</a>: PDF
+</li></ul> 
+<p></p>
+<h2><a name="The_Cucumber_Book"></a>  The Cucumber Book </h2>
+<p></p>
+Ссылка; <a href="http://pragprog.com/book/hwcuc/the-cucumber-book" target="_top">http://pragprog.com/book/hwcuc/the-cucumber-book</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Сюжет растянут, мало экшна" Игорь
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/the-cucumber-book_b1_0.pdf" target="_top">the-cucumber-book_b1_0.pdf</a>: PDF
+</li></ul> 
+<p></p>
+<p></p>
+<h2><a name="CoffeeScript:_Accelerated_JavaScript_Development"></a> CoffeeScript: Accelerated JavaScript Development </h2>
+<p></p>
+Ссылка; <a href="http://pragprog.com/book/tbcoffee/coffeescript" target="_top">http://pragprog.com/book/tbcoffee/coffeescript</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"На данный момент -- лучшая книга по кофискрипту. Только начал читать. " Алексей Осипенко
+<p></p>
+Ссылки для закачки:
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/091411.BO.CoffeeScript.0dayarchive.pdf" target="_top">091411.BO.CoffeeScript.0dayarchive.pdf</a>: 091411.BO.CoffeeScript.0dayarchive.pdf
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/091411.BO.CoffeeScript.0dayarchive.epub" target="_top">091411.BO.CoffeeScript.0dayarchive.epub</a>: 091411.BO.CoffeeScript.0dayarchive.epub
+</li></ul> 
+<p></p>
+<h2><a name="Responsive_web_design"></a>  Responsive web design </h2>
+<p></p>
+Ссылка; <a href="http://designmodo.com/responsive-design-examples/" target="_top">http://designmodo.com/responsive-design-examples/</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Всем, кто верстает -- обязательна к прочтению. Вне зависимости от уровня профессионализма.  " Алексей Осипенко
+<p></p>
+Ссылки для закачки:
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/responsive-web-design.pdf" target="_top">responsive-web-design.pdf</a>: responsive web design pdf
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/responsive-web-design.epub" target="_top">responsive-web-design.epub</a>: responsive web design epub
+</li></ul> 
+<p></p>
+<h2><a name="Mobile_first"></a>  Mobile first </h2>
+<p></p>
+Ссылка; <a href="http://www.abookapart.com/products/mobile-first" target="_top">http://www.abookapart.com/products/mobile-first</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Книга-брат Responsive web design. Хорошее чтиво для понимания процесса верстки. " Алексей Осипенко
+<p></p>
+Ссылки для закачки:
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Wroblewski_L._-_Mobile_First(A_Book_Apart_Brief_books_for_people_who_make_websites)_-_2011.pdf" target="_top">Wroblewski_L._-_Mobile_First(A_Book_Apart_Brief_books_for_people_who_make_websites)_-_2011.pdf</a>: Mobile first
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Vroblevski_Snachala_mobilnyie.290167.fb2.epub" target="_top">Vroblevski_Snachala_mobilnyie.290167.fb2.epub</a>: Сначала мобильные
+</li></ul> 
+<p></p>
+<h2><a name="Getting_real"></a>  Getting real </h2>
+<p></p>
+Ссылка; <a href="http://gettingreal.37signals.com/" target="_top">http://gettingreal.37signals.com/</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Я просто оставлю это здесь. С некоторых пор книга была изъята из публичного доступа. " Алексей Осипенко
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/GettingReal.pdf" target="_top">GettingReal.pdf</a>: GettingReal.pdf
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Getting_Real.fb2" target="_top">Getting_Real.fb2</a>: Getting_Real.fb2
+</li></ul> 
+<p></p>
+<p></p>
+<h2><a name="Agile_Web_Development_with_Rails_44_4th_Edition_44_Rails_3.2"></a>  Agile Web Development with Rails, 4th Edition, Rails 3.2 </h2>
+<p></p>
+Вот эта книга: <a href="http://pragprog.com/book/rails4/agile-web-development-with-rails" target="_top">http://pragprog.com/book/rails4/agile-web-development-with-rails</a>
+<p></p>
+Отзывы и рецезнии:
+<p></p>
+"Эта книга в рекомендациях особо не нуждается. С неё мы все начинали и она всё ещё великолепна для начала."
+-- <a href="/wiki/bin/view/Main/DmitriyKiriyenko">DmitriyKiriyenko</a> - 06 Jun 2012
+<p></p>
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Ruby_S.,_Thomas_D.,_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails,_4th_Edition,_Rails_3.2_(The_Pragmatic_Programmers)_-_2011.pdf" target="_top">AWDR.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Ruby_S.,_Thomas_D.,_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails,_4th_Edition,_Rails_3.2_(The_Pragmatic_Programmers)_-_2011.epub" target="_top">AWDR.epub</a>: Для счастливых владельцев iPad
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Ruby_S.,_Thomas_D.,_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails,_4th_Edition,_Rails_3.2_(The_Pragmatic_Programmers)_-_2011.mobi" target="_top">AWDR.mobi</a>: Для счастливых владельцев Kindle
+</li></ul> 
+<p></p>
+<h2><a name="Ruby_Under_a_Microscope"></a>  Ruby Under a Microscope </h2>
+<p></p>
+Вот эта книга: <a href="http://patshaughnessy.net/ruby-under-a-microscope" target="_top">http://patshaughnessy.net/ruby-under-a-microscope</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Не то, чтобы эта книга была очень уж практически полезна, но она очень интересна. Всегда интересно узнать, как что-то устроено внутри."
+-- <a href="/wiki/bin/view/Main/DmitriyKiriyenko">DmitriyKiriyenko</a> - 17 May 2013
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/ruby-under-a-microscope.pdf" target="_top">ruby-under-a-microscope.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/ruby-under-a-microscope.epub" target="_top">ruby-under-a-microscope.epub</a>: Для счастливых владельцев iPad
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/ruby-under-a-microscope.mobi" target="_top">ruby-under-a-microscope.mobi</a>: Для счастливых владельцев Kindle
+</li></ul> 
+<p></p>
+<p></p>
+<h2><a name="MacRuby_in_Action"></a> MacRuby in Action </h2>
+<p></p>
+Вот эта книга: <a href="http://www.manning.com/lim/" target="_top">http://www.manning.com/lim/</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Программирование на Macruby."
+<p></p>
+-- <a href="/wiki/bin/view/Main/VyacheslavDodatko">VyacheslavDodatko</a> - 06 Jun 2013
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Manning.MacRuby.in.Action.Apr.2012.RETAIL.eBook-ELOHiM.pdf" target="_top">MacRuby in Action</a>: <span class="foswikiNewLink">MacRuby<a href="/wiki/bin/edit/Anahoret/MacRuby?topicparent=Anahoret.AnahoretEbooks" rel="nofollow" title="Create this topic">?</a></span> от Manning
+</li></ul> 
+<p></p>
+<p></p>
+<h2><a name="RubyMotion"></a> RubyMotion </h2>
+<p></p>
+Книги рекомендуемые здесь: <a href="http://www.rubymotion.com/developer-center/" target="_top">http://www.rubymotion.com/developer-center/</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"Прочитав эти книги, можно создать простое RubyMotion [iOS] приложение."
+-- <a href="/wiki/bin/view/Main/AndrewBabichev">AndrewBabichev</a> - 02 Sep 2013
+<p></p>
+Ссылки для закачки: <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/RubyMotion_iOS_Development_Essentials.pdf" target="_top">RubyMotion_iOS_Development_Essentials.pdf</a>: RubyMotion iOS Development Essentials
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/rubymotion_p1_0.pdf" target="_top">rubymotion_p1_0.pdf</a>: <span class="foswikiNewLink">RubyMotion<a href="/wiki/bin/edit/Anahoret/RubyMotion?topicparent=Anahoret.AnahoretEbooks" rel="nofollow" title="Create this topic">?</a></span>
+</li></ul> 
+<p></p>
+<h2><a name="Mac_OS_X_Programming"></a>  Mac OS X Programming </h2>
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Advanced_Mac_OS_X_Programming.pdf" target="_top">Advanced_Mac_OS_X_Programming.pdf</a>: Advanced Mac OS X Programming
+</li></ul> 
+<p></p>
+<h2><a name="Functional_Programming_in_Scala"></a>  Functional Programming in Scala </h2>
+<p></p>
+Вот эта книга: <a href="http://www.manning.com/bjarnason/" target="_top">http://www.manning.com/bjarnason/</a>
+<p></p>
+Отзывы и рецензии:
+<p></p>
+"На сегодняшний день самая лучшая книга по функциональному программированию."
+-- <a href="/wiki/bin/view/Main/DmitriyKiriyenko">DmitriyKiriyenko</a> - 13 Aug 2015
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Functional_Programmi_v13_MEAP.pdf" target="_top">Functional_Programmi_v13_MEAP.pdf</a>
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Functional_Programmi_v13_MEAP.epub" target="_top">Functional_Programmi_v13_MEAP.epub</a>
+</li></ul> 
+<p></p>
+<h2><a name="Java_8_in_Action"></a>  Java 8 in Action </h2>
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Java_8_in_Action.pdf" target="_top">Java_8_in_Action_v8_MEAP.pdf</a>
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Java_8_in_Action.epub" target="_top">Java_8_in_Action_v8_MEAP.epub</a>
+</li></ul> 
+<p></p>
+<h2><a name="A_208_173_208_186_209_129_209_130_209_128_208_181_208_188_208_176_208_187_209_140_208_189_208_190_208_181_208_191_209_128_208_190_208_179_209_128_208_176_208_188_208_188_208_184_209_128_208_190_208_178_208_176_208_189_208_184_208_181._208_154_208_181_208_189_209_130_208_145_208_181_208_186"></a>  Экстремальное программирование. Кент Бек </h2>
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Bek_K._Ekstremalnoe_Programmirovanie.pdf" target="_top">Кент Бек. Экстремальное программирование</a>
+</li></ul> 
+<p></p>
+<h2><a name="Extreme_Programming_by_Kent_Beck"></a>  Extreme Programming by Kent Beck </h2>
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Kent_Beck._Extreme_Programming_Explained._Embrace_Change_1st-edition.pdf" target="_top">Kent Beck. Extreme Programming Explained. Embrace Change 1st edition</a>
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Kent_Beck._Extreme_Programming_Explained._Embrace_Change_2nd-edition.pdf" target="_top">Kent Beck. Extreme Programming Explained. Embrace Change 2nd edition.pdf</a>
+</li></ul> 
+<p></p>
+<h2><a name="ReactiveCocoa"></a> ReactiveCocoa </h2>
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/iosfrp.pdf" target="_top">Functional Reactive Programming on iOS</a>
+</li></ul> 
+<p></p>
+<h2><a name="The_Art_of_Thinking_Clearly_by_Ralph_Dobelli"></a>  The Art of Thinking Clearly by Ralph Dobelli </h2>
+<p></p>
+Вот эта книга: <a href="https://en.wikipedia.org/wiki/The_Art_of_Thinking_Clearly" target="_top">https://en.wikipedia.org/wiki/The_Art_of_Thinking_Clearly</a>. Этакий справочник когнитивных искажений (cognitive bias) в изложении какого-то эссеиста.
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.pdf" target="_top">The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.epub" target="_top">The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.epub</a>: Для читалок
+</li></ul> 
+<p></p>
+<h2><a name="A_208_160._208_165_208_176_208_179_208_179_208_176_209_128_209_130_208_184._208_148_208_184_209_129_208_186_209_128_208_181_209_130_208_189_208_176_209_143_208_188_208_176_209_130_208_181_208_188_208_176_209_130_208_184_208_186_208_176_208_180_208_187_209_143_208_191_209_128_208_190_208_179_209_128_208_176_208_188_208_188_208_184_209_129_209_130_208_190_208_178_208_152_208_183_208_180._2_226_136_146_208_181_44_208_184_209_129_208_191_209_128._2012"></a> Р. Хаггарти. Дискретная математика для программистов Изд. 2−е, испр. 2012 </h2>
+<p></p>
+Поделился Станислав Литвинов 29 марта 2016 г.
+<p></p>
+ * <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Haggarti_R._Diskretnaya_matematika_dlya_programmistov.pdf" target="_top">Haggarti_R._Diskretnaya_matematika_dlya_programmistov.pdf</a>: pdf
+<p></p>
+<h2><a name="A_208_162_208_190_208_188_208_161_209_130_209_142_208_176_209_128_209_130._208_162_208_181_208_190_209_128_208_184_209_143_208_178_209_139_209_135_208_184_209_129_208_187_208_181_208_189_208_184_208_184_204_134_208_180_208_187_209_143_208_191_209_128_208_190_208_179_209_128_208_176_208_188_208_188_208_184_209_129_209_130_208_190_208_178._O_39Reilly._2014"></a>  Том Стюарт. Теория вычислений для программистов. O'Reilly. 2014 </h2>
+<p></p>
+Поделился Станислав Литвинов 29 марта 2016 г.
+<p></p>
+ * <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Stuart_T._Teoria_vychislenii_dla_programmistov.pdf" target="_top">Stuart_T._Teoria_vychislenii_dla_programmistov.pdf</a>: pdf
+<p></p>
+<p></p>
+<h2><a name="Computer_Science_Programming_Basics_in_Ruby"></a>  Computer Science Programming Basics in Ruby </h2>
+<p></p>
+Вот эта книга: <a href="http://shop.oreilly.com/product/0636920028192.do" target="_top">http://shop.oreilly.com/product/0636920028192.do</a>.
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Computer_Science_Programming_Basics_in_Ruby.pdf" target="_top">Computer_Science_Programming_Basics_in_Ruby.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Computer_Science_Programming_Basics_in_Ruby.epub" target="_top">Computer_Science_Programming_Basics_in_Ruby.epub</a>: EPUB
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Computer_Science_Programming_Basics_in_Ruby.mobi" target="_top">Computer_Science_Programming_Basics_in_Ruby.mobi</a>: MOBI
+</li></ul> 
+<p></p>
+<h2><a name="Data_Science_from_Scratch"></a>  Data Science from Scratch </h2>
+<p></p>
+Вот эта книга: <a href="http://shop.oreilly.com/product/0636920033400.do" target="_top">http://shop.oreilly.com/product/0636920033400.do</a>.
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Data_Science_from_Scratch.pdf" target="_top">Data_Science_from_Scratch.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Data_Science_from_Scratch.epub" target="_top">Data_Science_from_Scratch.epub</a>: EPUB
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Data_Science_from_Scratch.mobi" target="_top">Data_Science_from_Scratch.mobi</a>: MOBI
+</li></ul> 
+<p></p>
+<h2><a name="A_208_151_208_184_208_179_208_151_208_184_208_179_208_187_208_176_209_128._208_161_208_181_208_186_209_128_208_181_209_130_209_139_208_183_208_176_208_186_208_187_209_142_209_135_208_181_208_189_208_184_209_143_209_129_208_180_208_181_208_187_208_190_208_186"></a>  Зиг Зиглар. Секреты заключения сделок </h2>
+<p></p> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Ziglar_Sekrety-zaklyucheniya-sdelok.427828.fb2.epub" target="_top">EPUB</a>,     <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Ziglar_Sekrety-zaklyucheniya-sdelok.427828.fb2.zip" target="_top">FB2</a>
+</li></ul> 
+<p></p>
+<h2><a name="Jonas_Bon_195_169r._Reactive_Microservices_Architecture._O_39Reilly._2016"></a>  Jonas Bonér. Reactive Microservices Architecture. O'Reilly. 2016 </h2> <ul>
+<li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Reactive_Microservices_Architecture.pdf" target="_top">Reactive_Microservices_Architecture.pdf</a>: PDF
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Reactive_Microservices_Architecture.epub" target="_top">Reactive_Microservices_Architecture.epub</a>: EPUB
+</li> <li> <a href="http://anahoret.com/wiki/pub/Anahoret/AnahoretEbooks/Reactive_Microservices_Architecture.mobi" target="_top">Reactive_Microservices_Architecture.mobi</a>: MOBI
+</li></ul>  </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><div class="foswikiAttachments foswikiFormStep">
+<div class="twistyPlugin foswikiMakeVisible"><span id="topicattachmentslist1show" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a href="#" class="patternTwistyButton"><img src="/wiki/pub/System/DocumentGraphics/toggleopen.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>69</span></span></a></span><span id="topicattachmentslist1hide" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a href="#" class="patternTwistyButton"><img src="/wiki/pub/System/DocumentGraphics/toggleclose.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>69</span></span></a></span></div><div class="twistyPlugin"><div id="topicattachmentslist1toggle" style="" class="twistyRememberSetting twistyContent twistyInited">
+<table summary="Topic attachments" id="tableAnahoretEbooks1" class="foswikiTable" rules="none" border="1"><caption>Topic attachments</caption>
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?sortcol=0;table=1;up=0#sorted_table" title="Sort by this column">I</a> </th>
+			<th class="foswikiTableCol1"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?sortcol=1;table=1;up=0#sorted_table" title="Sort by this column">Attachment</a> </th>
+			<th class="foswikiTableCol2"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?sortcol=2;table=1;up=0#sorted_table" title="Sort by this column">Action</a> </th>
+			<th class="foswikiTableCol3"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?sortcol=3;table=1;up=0#sorted_table" title="Sort by this column">Size</a> </th>
+			<th class="foswikiTableCol4"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?sortcol=4;table=1;up=0#sorted_table" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol5"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?sortcol=5;table=1;up=0#sorted_table" title="Sort by this column">Who</a> </th>
+			<th class="foswikiTableCol6 foswikiLastCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?sortcol=6;table=1;up=0#sorted_table" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="091411.BO.CoffeeScript.0dayarchive.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/091411.BO.CoffeeScript.0dayarchive.epub">091411.BO.CoffeeScript.0dayarchive.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=091411.BO.CoffeeScript.0dayarchive.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 1570.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Sep 2011 - 15:07</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="091411.BO.CoffeeScript.0dayarchive.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/091411.BO.CoffeeScript.0dayarchive.pdf">091411.BO.CoffeeScript.0dayarchive.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=091411.BO.CoffeeScript.0dayarchive.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 2604.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Sep 2011 - 15:04</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Advanced_Mac_OS_X_Programming.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Advanced_Mac_OS_X_Programming.pdf">Advanced_Mac_OS_X_Programming.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Advanced_Mac_OS_X_Programming.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 15637.2&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">05 Feb 2014 - 10:24</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Advanced Mac OS X Programming </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Bek_K._Ekstremalnoe_Programmirovanie.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Bek_K._Ekstremalnoe_Programmirovanie.pdf">Bek_K._Ekstremalnoe_Programmirovanie.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Bek_K._Ekstremalnoe_Programmirovanie.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 3769.1&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">02 Feb 2016 - 10:02</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/AlexanderMikhalchuk">AlexanderMikhalchuk</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Computer_Science_Programming_Basics_in_Ruby.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Computer_Science_Programming_Basics_in_Ruby.epub">Computer_Science_Programming_Basics_in_Ruby.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Computer_Science_Programming_Basics_in_Ruby.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 2597.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">13 Jan 2016 - 12:15</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> EPUB </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Computer_Science_Programming_Basics_in_Ruby.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Computer_Science_Programming_Basics_in_Ruby.mobi">Computer_Science_Programming_Basics_in_Ruby.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Computer_Science_Programming_Basics_in_Ruby.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 6549.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">13 Jan 2016 - 12:15</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> MOBI </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Computer_Science_Programming_Basics_in_Ruby.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Computer_Science_Programming_Basics_in_Ruby.pdf">Computer_Science_Programming_Basics_in_Ruby.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Computer_Science_Programming_Basics_in_Ruby.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 7825.2&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">13 Jan 2016 - 12:15</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> PDF </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Data_Science_from_Scratch.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Data_Science_from_Scratch.epub">Data_Science_from_Scratch.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Data_Science_from_Scratch.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 6094.1&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">13 Jan 2016 - 12:18</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> EPUB </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Data_Science_from_Scratch.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Data_Science_from_Scratch.mobi">Data_Science_from_Scratch.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Data_Science_from_Scratch.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 15084.3&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">13 Jan 2016 - 12:18</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> MOBI </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Data_Science_from_Scratch.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Data_Science_from_Scratch.pdf">Data_Science_from_Scratch.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Data_Science_from_Scratch.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 5213.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">13 Jan 2016 - 12:17</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> PDF </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Functional_Programmi_v11_MEAP.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Functional_Programmi_v11_MEAP.epub">Functional_Programmi_v11_MEAP.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Functional_Programmi_v11_MEAP.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 372.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">04 Sep 2013 - 10:24</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/MaximRomashchenko">MaximRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Functional_Programmi_v11_MEAP.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Functional_Programmi_v11_MEAP.pdf">Functional_Programmi_v11_MEAP.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Functional_Programmi_v11_MEAP.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 4995.9&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">04 Sep 2013 - 10:24</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/MaximRomashchenko">MaximRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Functional_Programmi_v13_MEAP.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Functional_Programmi_v13_MEAP.epub">Functional_Programmi_v13_MEAP.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Functional_Programmi_v13_MEAP.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 409.6&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">17 Feb 2014 - 15:24</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/MaximRomashchenko">MaximRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Functional_Programmi_v13_MEAP.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Functional_Programmi_v13_MEAP.pdf">Functional_Programmi_v13_MEAP.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Functional_Programmi_v13_MEAP.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 5648.2&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">17 Feb 2014 - 15:23</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/MaximRomashchenko">MaximRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="GettingReal.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/GettingReal.pdf">GettingReal.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=GettingReal.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 466.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">04 Oct 2012 - 11:19</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Getting_Real.fb2" /></span><span class="foswikiHidden">fb2</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Getting_Real.fb2">Getting_Real.fb2</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Getting_Real.fb2;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 330.9&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">20 Nov 2012 - 10:28</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Growing.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Growing.pdf">Growing.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Growing.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 7072.7&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">22 Jun 2015 - 13:39</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/AlexanderRyazantsev">AlexanderRyazantsev</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Growing Rails Applications in Practice </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Haggarti_R._Diskretnaya_matematika_dlya_programmistov.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Haggarti_R._Diskretnaya_matematika_dlya_programmistov.pdf">Haggarti_R._Diskretnaya_matematika_dlya_programmistov.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Haggarti_R._Diskretnaya_matematika_dlya_programmistov.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 4309.3&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">29 Mar 2016 - 15:31</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Herron_D._Nodejs_Razrabotka_servernyh_web_prilozheniy.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Herron_D._Nodejs_Razrabotka_servernyh_web_prilozheniy.pdf">Herron_D._Nodejs_Razrabotka_servernyh_web_prilozheniy.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Herron_D._Nodejs_Razrabotka_servernyh_web_prilozheniy.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 2200.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">29 Mar 2016 - 15:25</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Izuchaem_Node_js-Shelli_Pauers.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Izuchaem_Node_js-Shelli_Pauers.pdf">Izuchaem_Node_js-Shelli_Pauers.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Izuchaem_Node_js-Shelli_Pauers.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 24767.3&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Feb 2016 - 15:05</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Java_8_in_Action.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Java_8_in_Action.epub">Java_8_in_Action.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Java_8_in_Action.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 6558.5&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">01 Sep 2014 - 14:01</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/SergeyLagutin">SergeyLagutin</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Java_8_in_Action.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Java_8_in_Action.pdf">Java_8_in_Action.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Java_8_in_Action.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 5772.1&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">01 Sep 2014 - 14:00</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/SergeyLagutin">SergeyLagutin</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Java_8_in_Action_v8_MEAP.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Java_8_in_Action_v8_MEAP.epub">Java_8_in_Action_v8_MEAP.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Java_8_in_Action_v8_MEAP.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 2861.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">14 May 2014 - 13:08</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/SergeyLagutin">SergeyLagutin</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Java_8_in_Action_v8_MEAP.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Java_8_in_Action_v8_MEAP.pdf">Java_8_in_Action_v8_MEAP.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Java_8_in_Action_v8_MEAP.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 6560.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">14 May 2014 - 13:10</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/SergeyLagutin">SergeyLagutin</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Manning.MacRuby.in.Action.Apr.2012.RETAIL.eBook-ELOHiM.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Manning.MacRuby.in.Action.Apr.2012.RETAIL.eBook-ELOHiM.pdf">Manning.MacRuby.in.Action.Apr.2012.RETAIL.eBook-ELOHiM.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Manning.MacRuby.in.Action.Apr.2012.RETAIL.eBook-ELOHiM.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 16374.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">06 Jun 2013 - 13:37</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/VyacheslavDodatko">VyacheslavDodatko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Mayk_Kantelon_i_dr_-_Node_js_v_deystvii.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Mayk_Kantelon_i_dr_-_Node_js_v_deystvii.pdf">Mayk_Kantelon_i_dr_-_Node_js_v_deystvii.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Mayk_Kantelon_i_dr_-_Node_js_v_deystvii.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 8105.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Feb 2016 - 14:33</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.epub">Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 801.5&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">28 Apr 2015 - 17:19</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.mobi">Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 1488.7&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">28 Apr 2015 - 17:19</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.pdf">Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Modular_Rails_The_Complete_Guide_to_Modular_Rails_Applications_-_Thibault_Denizet.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 3596.9&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">28 Apr 2015 - 17:20</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Pragmatic.The.RSpec.Book.Dec.2010.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Pragmatic.The.RSpec.Book.Dec.2010.pdf">Pragmatic.The.RSpec.Book.Dec.2010.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Pragmatic.The.RSpec.Book.Dec.2010.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 6814.2&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">12 Jul 2011 - 11:01</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> The RSpec Book PDF </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="RailsAntiPatternsBestPracticeRubyonRailsRefactorin.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/RailsAntiPatternsBestPracticeRubyonRailsRefactorin.pdf">RailsAntiPatternsBestPracticeRubyonRailsRefactorin.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=RailsAntiPatternsBestPracticeRubyonRailsRefactorin.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 2390.3&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">12 Jul 2011 - 11:08</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Rails <span class="foswikiNewLink">AntiPatterns<a href="/wiki/bin/edit/Anahoret/AntiPatterns?topicparent=Anahoret.AnahoretEbooks" rel="nofollow" title="Create this topic">?</a></span> PDF </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Reactive_Microservices_Architecture.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Reactive_Microservices_Architecture.epub">Reactive_Microservices_Architecture.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Reactive_Microservices_Architecture.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 8312.1&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Apr 2016 - 10:42</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/AndreyBulava">AndreyBulava</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Reactive_Microservices_Architecture.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Reactive_Microservices_Architecture.mobi">Reactive_Microservices_Architecture.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Reactive_Microservices_Architecture.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 18899.2&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Apr 2016 - 10:42</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/AndreyBulava">AndreyBulava</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Reactive_Microservices_Architecture.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Reactive_Microservices_Architecture.pdf">Reactive_Microservices_Architecture.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Reactive_Microservices_Architecture.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 15748.6&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Apr 2016 - 10:41</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/AndreyBulava">AndreyBulava</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="RubyMotion_iOS_Development_Essentials.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/RubyMotion_iOS_Development_Essentials.pdf">RubyMotion_iOS_Development_Essentials.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=RubyMotion_iOS_Development_Essentials.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 5435.1&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">02 Sep 2013 - 15:03</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> <span class="foswikiNewLink">RubyMotion<a href="/wiki/bin/edit/Anahoret/RubyMotion?topicparent=Anahoret.AnahoretEbooks" rel="nofollow" title="Create this topic">?</a></span> iOS Development Essentials </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Ruby_S.,_Thomas_D.,_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails,_4th_Edition,_Rails_3.2_(The_Pragmatic_Programmers)_-_2011.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Ruby_S.%2c_Thomas_D.%2c_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails%2c_4th_Edition%2c_Rails_3.2_%28The_Pragmatic_Programmers%29_-_2011.epub">Ruby_S.,_Thomas_D.,_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails,_4th_Edition,_Rails_3.2_(The_Pragmatic_Programmers)_-_2011.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Ruby_S.%2c_Thomas_D.%2c_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails%2c_4th_Edition%2c_Rails_3.2_%28The_Pragmatic_Programmers%29_-_2011.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 4790.3&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">06 Jun 2012 - 09:49</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> AWDR-epub </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Ruby_S.,_Thomas_D.,_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails,_4th_Edition,_Rails_3.2_(The_Pragmatic_Programmers)_-_2011.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Ruby_S.%2c_Thomas_D.%2c_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails%2c_4th_Edition%2c_Rails_3.2_%28The_Pragmatic_Programmers%29_-_2011.mobi">Ruby_S.,_Thomas_D.,_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails,_4th_Edition,_Rails_3.2_(The_Pragmatic_Programmers)_-_2011.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Ruby_S.%2c_Thomas_D.%2c_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails%2c_4th_Edition%2c_Rails_3.2_%28The_Pragmatic_Programmers%29_-_2011.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 5825.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">06 Jun 2012 - 09:50</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> AWDR-mobi </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Ruby_S.,_Thomas_D.,_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails,_4th_Edition,_Rails_3.2_(The_Pragmatic_Programmers)_-_2011.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Ruby_S.%2c_Thomas_D.%2c_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails%2c_4th_Edition%2c_Rails_3.2_%28The_Pragmatic_Programmers%29_-_2011.pdf">Ruby_S.,_Thomas_D.,_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails,_4th_Edition,_Rails_3.2_(The_Pragmatic_Programmers)_-_2011.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Ruby_S.%2c_Thomas_D.%2c_Heinemeier_Hansson_D._-_Agile_Web_Development_with_Rails%2c_4th_Edition%2c_Rails_3.2_%28The_Pragmatic_Programmers%29_-_2011.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 9301.6&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">06 Jun 2012 - 09:48</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> AWDR-pdf </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Stuart_T._Teoria_vychislenii_dla_programmistov.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Stuart_T._Teoria_vychislenii_dla_programmistov.pdf">Stuart_T._Teoria_vychislenii_dla_programmistov.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Stuart_T._Teoria_vychislenii_dla_programmistov.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 2855.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">29 Mar 2016 - 15:31</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.epub">The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 375.3&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">09 Dec 2015 - 09:09</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Для читалок </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.pdf">The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=The_Art_of_Thinking_Clearly_-_Rolf_Dobelli.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 4150.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">09 Dec 2015 - 09:10</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> PDF </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Vroblevski_Snachala_mobilnyie.290167.fb2.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Vroblevski_Snachala_mobilnyie.290167.fb2.epub">Vroblevski_Snachala_mobilnyie.290167.fb2.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Vroblevski_Snachala_mobilnyie.290167.fb2.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 3398.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">09 Sep 2012 - 16:27</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Сначала мобильные </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="Wroblewski_L._-_Mobile_First(A_Book_Apart_Brief_books_for_people_who_make_websites)_-_2011.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Wroblewski_L._-_Mobile_First%28A_Book_Apart_Brief_books_for_people_who_make_websites%29_-_2011.pdf">Wroblewski_L._-_Mobile_First(A_Book_Apart_Brief_books_for_people_who_make_websites)_-_2011.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Wroblewski_L._-_Mobile_First%28A_Book_Apart_Brief_books_for_people_who_make_websites%29_-_2011.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 19142.3&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">09 Sep 2012 - 16:20</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> MOBILE FIRST </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/zip.png" width="16" height="16" alt="Ziglar_Sekrety-zaklyucheniya-sdelok.427828.fb2.zip" /></span><span class="foswikiHidden">zip</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/Ziglar_Sekrety-zaklyucheniya-sdelok.427828.fb2.zip">Ziglar_Sekrety-zaklyucheniya-sdelok.427828.fb2.zip</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=Ziglar_Sekrety-zaklyucheniya-sdelok.427828.fb2.zip;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 505.7&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">15 Feb 2016 - 11:36</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/MaximRomashchenko">MaximRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="angularjs-rails.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/angularjs-rails.epub">angularjs-rails.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=angularjs-rails.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 2471.5&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">31 Mar 2015 - 15:56</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/DmitriyVasin">DmitriyVasin</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> rails with angular js ( epub ) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="angularjs-rails.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/angularjs-rails.mobi">angularjs-rails.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=angularjs-rails.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 9968.6&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">31 Mar 2015 - 15:56</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/DmitriyVasin">DmitriyVasin</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> rails with angular js ( mobi ) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="angularjs-rails.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/angularjs-rails.pdf">angularjs-rails.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=angularjs-rails.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 6341.7&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">31 Mar 2015 - 15:55</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/DmitriyVasin">DmitriyVasin</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> rails with angular js </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="crafting-rails-4-applications_b6_0.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-4-applications_b6_0.epub">crafting-rails-4-applications_b6_0.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=crafting-rails-4-applications_b6_0.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 3100.9&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">29 Nov 2013 - 13:49</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="crafting-rails-4-applications_b6_0.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-4-applications_b6_0.mobi">crafting-rails-4-applications_b6_0.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=crafting-rails-4-applications_b6_0.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 3609.6&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">29 Nov 2013 - 13:50</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="crafting-rails-4-applications_b6_0.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-4-applications_b6_0.pdf">crafting-rails-4-applications_b6_0.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=crafting-rails-4-applications_b6_0.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 3887.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">29 Nov 2013 - 13:47</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="crafting-rails-applications_p1_0.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-applications_p1_0.epub">crafting-rails-applications_p1_0.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=crafting-rails-applications_p1_0.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 703.9&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">12 Jul 2011 - 10:50</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Crafting Rails applications for happy iPad owners </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="crafting-rails-applications_p1_0.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-applications_p1_0.mobi">crafting-rails-applications_p1_0.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=crafting-rails-applications_p1_0.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 784.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">12 Jul 2011 - 10:50</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Crafting Rails applications for happy Kindle owners </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="crafting-rails-applications_p1_0.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/crafting-rails-applications_p1_0.pdf">crafting-rails-applications_p1_0.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=crafting-rails-applications_p1_0.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 1648.6&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">12 Jul 2011 - 10:28</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Crafting Rails applications by Jose Valim </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/zip.png" width="16" height="16" alt="everydayrailsrspec-thebookrails4andrspec214edition-extras.zip" /></span><span class="foswikiHidden">zip</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/everydayrailsrspec-thebookrails4andrspec214edition-extras.zip">everydayrailsrspec-thebookrails4andrspec214edition-extras.zip</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=everydayrailsrspec-thebookrails4andrspec214edition-extras.zip;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 22939.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">06 Nov 2014 - 10:10</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Everyday Rails Testing with Rspec – old versions </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="everydayrailsrspec.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/everydayrailsrspec.epub">everydayrailsrspec.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=everydayrailsrspec.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 338.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">06 Nov 2014 - 10:09</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Everyday Rails Testing with Rspec – epub </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="everydayrailsrspec.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/everydayrailsrspec.mobi">everydayrailsrspec.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=everydayrailsrspec.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 1107.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">06 Nov 2014 - 10:09</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Everyday Rails Testing with Rspec – mobi </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="everydayrailsrspec.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/everydayrailsrspec.pdf">everydayrailsrspec.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=everydayrailsrspec.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 1075.1&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">06 Nov 2014 - 10:09</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Everyday Rails Testing with Rspec – pdf </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="iosfrp.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/iosfrp.pdf">iosfrp.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=iosfrp.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 5085.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">30 Oct 2015 - 11:07</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/VyacheslavDodatko">VyacheslavDodatko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Functional Reactive Programming on iOS (<span class="foswikiNewLink">ReactiveCocoa<a href="/wiki/bin/edit/Anahoret/ReactiveCocoa?topicparent=Anahoret.AnahoretEbooks" rel="nofollow" title="Create this topic">?</a></span>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="responsive-web-design.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/responsive-web-design.epub">responsive-web-design.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=responsive-web-design.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 4502.8&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">26 Dec 2011 - 14:37</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> responsive web design epub </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="responsive-web-design.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/responsive-web-design.pdf">responsive-web-design.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=responsive-web-design.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 9083.7&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">26 Dec 2011 - 14:37</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> responsive web design pdf </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="ruby-under-a-microscope.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/ruby-under-a-microscope.epub">ruby-under-a-microscope.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=ruby-under-a-microscope.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 3999.3&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">17 May 2013 - 09:49</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> epub </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="ruby-under-a-microscope.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/ruby-under-a-microscope.mobi">ruby-under-a-microscope.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=ruby-under-a-microscope.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 7547.7&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">17 May 2013 - 09:49</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> mobi </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="ruby-under-a-microscope.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/ruby-under-a-microscope.pdf">ruby-under-a-microscope.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=ruby-under-a-microscope.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 1561.6&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">17 May 2013 - 09:49</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> PDF </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="rubymotion_p1_0.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/rubymotion_p1_0.pdf">rubymotion_p1_0.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=rubymotion_p1_0.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 4298.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">02 Sep 2013 - 15:04</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> <span class="foswikiNewLink">RubyMotion<a href="/wiki/bin/edit/Anahoret/RubyMotion?topicparent=Anahoret.AnahoretEbooks" rel="nofollow" title="Create this topic">?</a></span> </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="sukhov_k_node_js_putevoditel_po_tekhnologii.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/sukhov_k_node_js_putevoditel_po_tekhnologii.pdf">sukhov_k_node_js_putevoditel_po_tekhnologii.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=sukhov_k_node_js_putevoditel_po_tekhnologii.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 48306.4&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Feb 2016 - 15:05</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="the-cucumber-book_b1_0.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/the-cucumber-book_b1_0.pdf">the-cucumber-book_b1_0.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=the-cucumber-book_b1_0.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 1404.2&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">21 Jul 2011 - 09:57</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="trailblazer.epub" /></span><span class="foswikiHidden">epub</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/trailblazer.epub">trailblazer.epub</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=trailblazer.epub;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 4233.5&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">27 Jul 2016 - 17:09</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="trailblazer.mobi" /></span><span class="foswikiHidden">mobi</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/trailblazer.mobi">trailblazer.mobi</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=trailblazer.mobi;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 10222.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">27 Jul 2016 - 17:09</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="trailblazer.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1 foswikiLast"> <a href="/wiki/pub/Anahoret/AnahoretEbooks/trailblazer.pdf">trailblazer.pdf</a> </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="/wiki/bin/attach/Anahoret/AnahoretEbooks?filename=trailblazer.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3 foswikiLast"> 5239.6&nbsp;K </td>
+			<td class="foswikiTableCol4 foswikiLast"> <span class="foswikiNoBreak">27 Jul 2016 - 17:09</span> </td>
+			<td class="foswikiTableCol5 foswikiLast"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> &nbsp; </td>
+		</tr>
+	</tbody></table>
+</div></div></div><a name="topic-actions"></a><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/AnahoretEbooks?t=1532336125;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/AnahoretEbooks' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretEbooks?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretEbooks?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/oops/Anahoret/AnahoretEbooks?template=oopshistory' rel='nofollow' title='View total topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a></span>: r44&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/AnahoretEbooks?rev1=43;rev2=44">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?rev=43">r43</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/AnahoretEbooks?rev1=42;rev2=43">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?rev=42">r42</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/AnahoretEbooks?rev1=41;rev2=42">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretEbooks?rev=41">r41</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretEbooks?template=backlinksweb' rel='nofollow' title='Search the Anahoret Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretEbooks?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretEbooks?template=more&amp;maxrev=44&amp;currrev=44' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: 27 Jul 2016, dak</span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator" style="border-color:#99CC99">
+<a href='http://anahoret.com/wiki/bin/view/Anahoret/WebHome'>Anahoret</a>
+</div> <ul>
+<li> <strong><a href="/wiki/bin/view/Anahoret/DeveloperDocumentation">Документация</a></strong> <hr />
+</li> <li> <strong><a href="/wiki/bin/view/Anahoret/WebHome" class="foswikiCurrentWebHomeLink"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/home.png" width="16" height="16" alt="home" /></span> Anahoret Web</a></strong>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicCreator?parent=AnahoretEbooks" target="_top"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/newtopic.png" width="16" height="16" alt="newtopic" /></span> Create New Topic</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicList"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/index.png" width="16" height="16" alt="index" /></span> Index</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebSearch"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/searchtopic.png" width="16" height="16" alt="searchtopic" /></span> Search</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebChanges"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/changes.png" width="16" height="16" alt="changes" /></span> Changes</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebNotify"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/notify.png" width="16" height="16" alt="notify" /></span> Notifications</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebStatistics"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/statistics.png" width="16" height="16" alt="statistics" /></span> Statistics</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebPreferences"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/wrench.png" width="16" height="16" alt="wrench" /></span> Preferences</a> <hr />
+</li> <li> <strong>Webs</strong>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#99CC99" />&nbsp;Anahoret</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Getsocio/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Getsocio</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Mailinator/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Mailinator</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Main/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFEFA6" />&nbsp;Main</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Projects/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFCC00" />&nbsp;Projects</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Sandbox/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#B9DAFF" />&nbsp;Sandbox</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Skills/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#ffa199" />&nbsp;Skills</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/System/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFD8AA" />&nbsp;System</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Tracker/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#33CC99" />&nbsp;Tracker</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Trash/InVision/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;<span class='foswikiWebIndent'></span>InVision</a></span>
+</li></ul> 
+<p></p>
+</div></div>
+</div>
+<div class="clear">&nbsp;</div>
+</div></div><div id="patternTopBar"><div id="patternTopBarContentsWrapper"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="http://anahoret.com/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/Main/WebHome/anadea-logo.png" border="0" alt="Anahoret wiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+ <ul>
+<li> <form name="jumpForm" action="/wiki/bin/view/Anahoret/AnahoretEbooks"><input id="jumpFormField" title="Jump" type="text" class="foswikiInputField foswikiDefaultText" name="topic" value="" size="18" /><noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript>   </form>
+</li> <li> <form name="quickSearchForm" action="/wiki/bin/view/Anahoret/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Anahoret" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript>   </form>
+</li></ul> 
+<p></p>
+</td></tr></table></div></div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"></div></div></div>
+</div>
+</div>
+</div>
+</div></body></html>

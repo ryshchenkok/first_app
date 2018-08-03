@@ -1,0 +1,1350 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>      
+    <title>Сотрудники - Journal</title>
+    <meta charset=utf-8>
+    <meta name="pageName" content="generalEmployees.index">
+    
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"> 
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/css/ie6.css?t=1532333245617" media="all">
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/css/datepicker.css" media="all">
+
+  <script type="text/javascript" src="/webjars/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/webjars/underscorejs/1.5.1/underscore.min.js"></script>
+  <script type="text/javascript" src="/js/utils/pubsub.js"></script>
+  <script type="text/javascript" src="/js/utils/dateUtils.js"></script>
+
+  <script type="text/javascript" src="/js/main.js"></script>
+  <script type="text/javascript" src="/js/dataBinder.js"></script>
+  <script type="text/javascript" src="/js/transactionEdit.js"></script>
+  <script type="text/javascript" src="/js/transactionExchange.js"></script>
+  <script type="text/javascript" src="/js/ruleEdit.js"></script>
+  <script type="text/javascript" src="/js/timezone.js"></script>
+  <script type="text/javascript" src="/webjars/jstimezonedetect/1.0.6/jstz.min.js"></script>
+
+  </head>
+  <body data-controller="generalEmployees"	data-action="index"
+    
+  >    
+    <div class="logo">
+      <a href="/">
+        <img src="/images/anahoret-logo_40x50.gif" alt="[Home]">
+      </a>
+    </div>
+
+      <div class="user-status">
+        Пользователь:
+          <strong class="username">kr</strong>
+          
+          
+      </div>
+  
+      <div class="menu">
+        <a href="/week">Отработанное время</a>
+        | <a href="/report">Зарплата</a>
+        | <a href="/employees">Сотрудники</a>
+        | <a href="/employeesWithdrawalOrder">Очередь выплат</a>
+      </div>
+
+
+
+    <div class="main">
+        <h1>Сотрудники</h1>
+<table class="data" id="employees">
+  <thead>
+  <tr>
+    <th><a href="?orderBy=name">Имя</a></th>
+    <th><a href="?orderBy=birthday">День рождения</a></th>
+    <th><a href="?orderBy=level">Должность</a></th>
+    <th><a href="?orderBy=salary">Зарплата</a></th>
+  </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+            Александр Дмитренко
+        </td>
+        <td>1989-02-24</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Александр Катасонов
+        </td>
+        <td>1981-02-28</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Александр Короид
+        </td>
+        <td>1990-05-27</td>
+        <td>PM Александр Короид + руководитель отдела</td>
+        <td class="numeric">
+          1859.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Александр Михальченко
+        </td>
+        <td>1989-04-09</td>
+        <td>Программист, 15 уровень</td>
+        <td class="numeric">
+          3300.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Александр Михальчук
+        </td>
+        <td>1974-05-06</td>
+        <td>Директор филиала (Днепропетровск)</td>
+        <td class="numeric">
+          3500.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Александр Рязанцев
+        </td>
+        <td>1979-09-09</td>
+        <td>Программист, 16 уровень + сеньор+</td>
+        <td class="numeric">
+          3700.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Александра Личко
+        </td>
+        <td>1988-05-14</td>
+        <td>Sales, 12 уровень</td>
+        <td class="numeric">
+          1100.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Алексей Волченко
+        </td>
+        <td>1995-12-18</td>
+        <td>Системный администратор</td>
+        <td class="numeric">
+          500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Алексей Гуменный
+        </td>
+        <td>1991-05-14</td>
+        <td>Sales Алексей Гуменный</td>
+        <td class="numeric">
+          1350.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Алексей Кудряшов
+        </td>
+        <td>1986-03-14</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Алексей Лаврухин
+        </td>
+        <td>1989-07-28</td>
+        <td>Тестировщик, 14 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Алексей Олефиренко
+        </td>
+        <td>1992-04-28</td>
+        <td>Программист, 15 уровень + сеньор+</td>
+        <td class="numeric">
+          3500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Алексей Потапов
+        </td>
+        <td>1977-12-14</td>
+        <td>Программист, 16 уровень + сеньор+</td>
+        <td class="numeric">
+          3700.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Алиса Кондратьева
+        </td>
+        <td>1985-07-26</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Алла Павловна
+        </td>
+        <td>1951-05-16</td>
+        <td>Уборщица (Гродно)</td>
+        <td class="numeric">
+          304.50 BYN
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Анастасия Бакута
+        </td>
+        <td>1984-08-04</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Анастасия Сахно
+        </td>
+        <td>1990-01-06</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Андрей Бакута
+        </td>
+        <td>1986-02-21</td>
+        <td>Программист, 16 уровень + сеньор++</td>
+        <td class="numeric">
+          4000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Андрей Булава
+        </td>
+        <td>1976-04-05</td>
+        <td>Программист, 16 уровень + сеньор+</td>
+        <td class="numeric">
+          3700.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Андрей Довбыш
+        </td>
+        <td>1990-08-11</td>
+        <td>PM Андрей Довбыш</td>
+        <td class="numeric">
+          1000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Андрей Кравецкий
+        </td>
+        <td>1990-11-18</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Андрей Мархалюк
+        </td>
+        <td>1995-04-05</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Андрей Пасвистелик
+        </td>
+        <td>1997-03-05</td>
+        <td>Программист, 8 уровень</td>
+        <td class="numeric">
+          300.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Андрей Романов
+        </td>
+        <td>1984-04-11</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Андрей Чехомский
+        </td>
+        <td>1988-06-29</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Андрей Шрамко
+        </td>
+        <td>1989-04-13</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Анна Троян
+        </td>
+        <td>1998-11-10</td>
+        <td>HR</td>
+        <td class="numeric">
+          500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Антон Поломкин
+        </td>
+        <td>1989-11-09</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Артем  Дубровник
+        </td>
+        <td>1994-08-09</td>
+        <td>Программист, 8 уровень</td>
+        <td class="numeric">
+          300.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Артём Дубров
+        </td>
+        <td>1972-01-02</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Артём Стржигоцкий
+        </td>
+        <td>1985-04-25</td>
+        <td>Программист, 15 уровень + сеньор+</td>
+        <td class="numeric">
+          3500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Артём Тестелеев
+        </td>
+        <td>1994-09-14</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Борис Белецкий
+        </td>
+        <td>1990-07-21</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Вадим Кондратьев
+        </td>
+        <td>1979-08-03</td>
+        <td>Программист, 16 уровень + сеньор+</td>
+        <td class="numeric">
+          3700.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Валерий Коренков
+        </td>
+        <td>1978-09-11</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Василий Толкачёв
+        </td>
+        <td>1977-03-02</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Вера Глушкова
+        </td>
+        <td>1971-12-06</td>
+        <td>Менеджер по персоналу + директор филиала</td>
+        <td class="numeric">
+          2550.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Вероника Прусенок
+        </td>
+        <td>1996-04-27</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Виталий Воропаев
+        </td>
+        <td>1970-12-07</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Владимир Ворона
+        </td>
+        <td>1981-01-22</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Владимир Галайко
+        </td>
+        <td>1988-08-27</td>
+        <td>PM Владимир Галайко</td>
+        <td class="numeric">
+          1628.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Владимир Клоков
+        </td>
+        <td>1986-01-27</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Владимир Сапонько
+        </td>
+        <td>1980-06-01</td>
+        <td>Программист, 8 уровень</td>
+        <td class="numeric">
+          300.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Владимир Шумик
+        </td>
+        <td>1986-12-21</td>
+        <td>PM Владимир Шумик</td>
+        <td class="numeric">
+          800.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Вячеслав Додатко
+        </td>
+        <td>1976-07-12</td>
+        <td>Директор</td>
+        <td class="numeric">
+          4400.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Галина Кустова
+        </td>
+        <td>1990-09-23</td>
+        <td>Sales Галина Кустова</td>
+        <td class="numeric">
+          1100.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Григорий Кравченко
+        </td>
+        <td>1983-02-04</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Даниил Шихов
+        </td>
+        <td>1993-03-11</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Данил Садовский
+        </td>
+        <td>1997-07-15</td>
+        <td>Pre-Sales Manager</td>
+        <td class="numeric">
+          350.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дарина Чужова
+        </td>
+        <td>1984-04-14</td>
+        <td>Тестировщик, 14 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дариуш Марцулевич
+        </td>
+        <td>1995-10-26</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дария Лопухина
+        </td>
+        <td>1979-09-19</td>
+        <td>Маркетолог</td>
+        <td class="numeric">
+          1500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дарья Коваленко
+        </td>
+        <td>1984-03-01</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Денис Алтухов
+        </td>
+        <td>1991-04-08</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Денис Алёхин
+        </td>
+        <td>1987-02-10</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Денис Лозовой
+        </td>
+        <td>1988-07-21</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Диана Кохна
+        </td>
+        <td>1994-09-10</td>
+        <td>Сеньор рекрутер</td>
+        <td class="numeric">
+          1800.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Диана Кочева
+        </td>
+        <td>1992-08-30</td>
+        <td>Sales Диана Кочева</td>
+        <td class="numeric">
+          1300.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дмитрий Васин
+        </td>
+        <td>1990-12-21</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дмитрий Дордовский
+        </td>
+        <td>1986-07-13</td>
+        <td>Программист, 17 уровень + сеньор++ + сеньор+</td>
+        <td class="numeric">
+          4500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дмитрий Ковалев
+        </td>
+        <td>1995-01-06</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дмитрий Ломаник
+        </td>
+        <td>1982-10-28</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дмитрий Малык
+        </td>
+        <td>1990-05-16</td>
+        <td>Тестировщик, 14 уровень + руководитель отдела</td>
+        <td class="numeric">
+          2300.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дмитрий Решетов
+        </td>
+        <td>1982-12-08</td>
+        <td>Специалист SEO</td>
+        <td class="numeric">
+          700.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дмитрий Селин
+        </td>
+        <td>1983-03-09</td>
+        <td>Программист, 16 уровень</td>
+        <td class="numeric">
+          3500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дмитрий Степаненко
+        </td>
+        <td>1988-06-30</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Дмитрий Шаров
+        </td>
+        <td>1991-06-25</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Евгений Гречук
+        </td>
+        <td>1986-07-28</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Евгений Маслов
+        </td>
+        <td>1986-10-08</td>
+        <td>Программист, 16 уровень + сеньор++</td>
+        <td class="numeric">
+          4000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Евгений Шелест
+        </td>
+        <td>1981-12-22</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Евдокимова Валентина Николаевна
+        </td>
+        <td>1963-07-26</td>
+        <td>Уборщица (Днепр)</td>
+        <td class="numeric">
+          5000.00 UAH
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Екатерина Глущик
+        </td>
+        <td>1953-11-26</td>
+        <td>Уборщица (Днепр)</td>
+        <td class="numeric">
+          5000.00 UAH
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Екатерина Демьяненко
+        </td>
+        <td>1991-02-28</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Екатерина Мигдеева
+        </td>
+        <td>1983-09-27</td>
+        <td>PM Екатерина Мигдеева</td>
+        <td class="numeric">
+          1447.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Екатерина Старостина
+        </td>
+        <td>1991-07-28</td>
+        <td>HR, Минск</td>
+        <td class="numeric">
+          700.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Елена Сывокобыльская
+        </td>
+        <td>1988-10-19</td>
+        <td>Дизайнер, 15 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Илья Бибиков
+        </td>
+        <td>1992-02-22</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Илья Крупеников
+        </td>
+        <td>1989-01-20</td>
+        <td>Sales Илья Крупеников</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Константин Демишев
+        </td>
+        <td>1983-11-29</td>
+        <td>PM Константин Демишев</td>
+        <td class="numeric">
+          4000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Константин Лесик
+        </td>
+        <td>1991-10-30</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Константин Рыщенко
+        </td>
+        <td>1990-11-13</td>
+        <td>Тестировщик, 9 уровень</td>
+        <td class="numeric">
+          700.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Ксения Костенко
+        </td>
+        <td>1991-11-05</td>
+        <td>Pre-Sales Manager</td>
+        <td class="numeric">
+          350.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Лилия Хасанова
+        </td>
+        <td>1975-11-16</td>
+        <td>Офис-менеджер, переводчик, Испания</td>
+        <td class="numeric">
+          1200.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Людмила Катасонова
+        </td>
+        <td>1981-03-17</td>
+        <td>Офис-менеджер</td>
+        <td class="numeric">
+          250.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Макс Холланд
+        </td>
+        <td>1990-01-18</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Максим Кустов
+        </td>
+        <td>1990-03-28</td>
+        <td>Программист, 14 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Максим Ромащенко
+        </td>
+        <td>1976-11-13</td>
+        <td>Директор</td>
+        <td class="numeric">
+          4400.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Мария Дяченко
+        </td>
+        <td>1991-07-01</td>
+        <td>Тестировщик, 12 уровень</td>
+        <td class="numeric">
+          1300.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Михаил Биленко
+        </td>
+        <td>1985-11-27</td>
+        <td>Руководитель отдела дизайнеров</td>
+        <td class="numeric">
+          3500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Михаил Наумов
+        </td>
+        <td>1995-03-18</td>
+        <td>Программист, 10 уровень</td>
+        <td class="numeric">
+          1000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Михаил Ниценко
+        </td>
+        <td>1997-03-11</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Надежда Скуба
+        </td>
+        <td>1988-07-24</td>
+        <td>Бухгалтер</td>
+        <td class="numeric">
+          900.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Наталья Войтова
+        </td>
+        <td>1977-09-10</td>
+        <td>Главный бухгалтер</td>
+        <td class="numeric">
+          1200.00 EUR
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Наталья Кучеренко
+        </td>
+        <td>1987-05-23</td>
+        <td>Дизайнер, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Николай Степанец
+        </td>
+        <td>1990-05-04</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Оксана Конопатова
+        </td>
+        <td>1969-06-04</td>
+        <td>Уборщица (Минск)</td>
+        <td class="numeric">
+          304.50 BYN
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Ольга Василец
+        </td>
+        <td>1984-01-07</td>
+        <td>Тестировщик, 11 уровень</td>
+        <td class="numeric">
+          1100.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Ольга Верецкая
+        </td>
+        <td>1986-05-11</td>
+        <td>Копирайтер и SMM</td>
+        <td class="numeric">
+          500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Ольга Сухинина
+        </td>
+        <td>1987-11-25</td>
+        <td>Дизайнер, 15 уровень</td>
+        <td class="numeric">
+          2500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Ольга Филиппова
+        </td>
+        <td>1990-04-11</td>
+        <td>PM Ольга Филиппова</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Павел Кононович
+        </td>
+        <td>1993-06-25</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Павел Эльяшевич
+        </td>
+        <td>1997-02-02</td>
+        <td>Программист, 8 уровень</td>
+        <td class="numeric">
+          300.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Роман Бельский
+        </td>
+        <td>1992-10-08</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Роман Лисовский
+        </td>
+        <td>1989-01-18</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Роман Фирсов
+        </td>
+        <td>1993-01-31</td>
+        <td>Программист, 10 уровень</td>
+        <td class="numeric">
+          1000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Качан
+        </td>
+        <td>1976-07-15</td>
+        <td>Программист, 17 уровень + сеньор+</td>
+        <td class="numeric">
+          4000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Лагутин
+        </td>
+        <td>1985-12-06</td>
+        <td>Программист, 16 уровень + сеньор+</td>
+        <td class="numeric">
+          3700.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Покровский
+        </td>
+        <td>1974-08-08</td>
+        <td>Охранник</td>
+        <td class="numeric">
+          500.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Полищук
+        </td>
+        <td>1989-08-17</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Прокопчук
+        </td>
+        <td>1989-09-21</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Прохоренко
+        </td>
+        <td>1979-08-04</td>
+        <td>Сисадмин - OSX эксперт</td>
+        <td class="numeric">
+          1000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Северин
+        </td>
+        <td>1988-03-05</td>
+        <td>Тестировщик, 10 уровень</td>
+        <td class="numeric">
+          900.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Токаренко
+        </td>
+        <td>1983-03-29</td>
+        <td>Программист, 16 уровень + сеньор++</td>
+        <td class="numeric">
+          4000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Чайка
+        </td>
+        <td>1988-08-23</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Сергей Ямнич
+        </td>
+        <td>1982-06-13</td>
+        <td>Программист, 11 уровень</td>
+        <td class="numeric">
+          1200.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Станислав Душкин
+        </td>
+        <td>1987-09-12</td>
+        <td>Программист, 13 уровень</td>
+        <td class="numeric">
+          2000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Станислав Литвинов
+        </td>
+        <td>1991-07-13</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Станислав Шандыга
+        </td>
+        <td>1989-09-17</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Татьяна Алехина
+        </td>
+        <td>1991-05-29</td>
+        <td>Тестировщик, 11 уровень</td>
+        <td class="numeric">
+          1100.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Татьяна Владимировна Тишина
+        </td>
+        <td>1966-01-25</td>
+        <td>Уборщица (Днепр)</td>
+        <td class="numeric">
+          5000.00 UAH
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Татьяна Касперович
+        </td>
+        <td>1976-11-14</td>
+        <td>Бухгалтер Татьяна Касперович</td>
+        <td class="numeric">
+          800.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Уборщица замена Днепр
+        </td>
+        <td></td>
+        <td>Уборщица (Днепр)</td>
+        <td class="numeric">
+          5000.00 UAH
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Эдуард Коленов
+        </td>
+        <td>1972-06-10</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Юлия Дикуха
+        </td>
+        <td>1981-07-10</td>
+        <td>Аккаунт менеджер</td>
+        <td class="numeric">
+          800.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Юлия Калиниченко
+        </td>
+        <td>1993-03-31</td>
+        <td>Дизайнер, 10 уровень</td>
+        <td class="numeric">
+          1000.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Юлия Козак
+        </td>
+        <td>1989-07-11</td>
+        <td>PM Юлия Козак</td>
+        <td class="numeric">
+          1146.00 USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Юрий Мочалов
+        </td>
+        <td>1989-10-05</td>
+        <td>Программист, 12 уровень</td>
+        <td class="numeric">
+          1600.00 USD
+        </td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+   
+    <div class="footer">
+      <p>Journal v.3.24.1-Scala</p>
+      <p>Time: 603 ms; query count: <a id="queryCount">47</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head prefix='og: http://ogp.me/ns#'>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='object' property='og:type'>
+<meta content='GitLab' property='og:site_name'>
+<meta content='Anadea / tracker' property='og:title'>
+<meta content='Tracker is an easy to use, agile project management tool that brings focused collaboration to software development teams.' property='og:description'>
+<meta content='https://gitlab.anahoret.com/assets/gitlab_logo-f94735ed1486ec1e35ce78e4c1747b4d.png' property='og:image'>
+<meta content='https://gitlab.anahoret.com/anadea/tracker' property='og:url'>
+<meta content='summary' property='twitter:card'>
+<meta content='Anadea / tracker' property='twitter:title'>
+<meta content='Tracker is an easy to use, agile project management tool that brings focused collaboration to software development teams.' property='twitter:description'>
+<meta content='https://gitlab.anahoret.com/assets/gitlab_logo-f94735ed1486ec1e35ce78e4c1747b4d.png' property='twitter:image'>
+
+<title>Anadea / tracker · GitLab</title>
+<meta content='Tracker is an easy to use, agile project management tool that brings focused collaboration to software development teams.' name='description'>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-0037f4682f7f2d45973338aad43f3d54.ico" />
+<link rel="stylesheet" media="all" href="/assets/application-9b36a04f9f4e169587d71114d5cea44e.css" />
+<link rel="stylesheet" media="print" href="/assets/print-2cb1262fb60ceb73f2fe76fd1a61dccf.css" />
+<script src="/assets/application-da325dfd87be97395662ee59f5f4b1b1.js"></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="OUI228Ts3HaaJZhgYGHU2Fi+PfEtss74C771vxHgavAAQK8mLyVsOXgFnTXbkiAIrYfnIAOhFl5qQQ6mvfLHIQ==" />
+<script>
+//<![CDATA[
+window.gon={};gon.api_version="v3";gon.default_avatar_url="https://gitlab.anahoret.com/assets/no_avatar-0801eb7ed213327da2a534095a75b248.png";gon.default_issues_tracker="gitlab";gon.max_file_size=10;gon.relative_url_root="";gon.user_color_scheme="white";gon.current_user_id=180;gon.api_token="_QURq4QxZy5zK4B_cQfx";
+//]]>
+</script>
+<meta content='origin-when-cross-origin' name='referrer'>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+<meta content='#474D57' name='theme-color'>
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-iphone-c2b181d197c3b7be4f8ac381458895bb.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-ipad-fede15aef7610235936a27957400503a.png" sizes="76x76" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-iphone-retina-88529dea2f9320df1a3cc45d92e86147.png" sizes="120x120" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-ipad-retina-c0dbda7e71802ee480f6d666da4b834a.png" sizes="152x152" />
+<meta content='/assets/msapplication-tile-2efcb14bec26fd879dd1914db581f8f9.png' name='msapplication-TileImage'>
+<meta content='#30353E' name='msapplication-TileColor'>
+<link rel="alternate" type="application/atom+xml" title="tracker activity" href="/anadea/tracker.atom?private_token=_QURq4QxZy5zK4B_cQfx" />
+
+
+
+
+<style>
+  [data-user-is] {
+    display: none !important;
+  }
+  
+  [data-user-is="180"] {
+    display: block !important;
+  }
+  
+  [data-user-is="180"][data-display="inline"] {
+    display: inline !important;
+  }
+  
+  [data-user-is-not] {
+    display: block !important;
+  }
+  
+  [data-user-is-not][data-display="inline"] {
+    display: inline !important;
+  }
+  
+  [data-user-is-not="180"] {
+    display: none !important;
+  }
+</style>
+
+</head>
+
+<body class='ui_charcoal' data-page='projects:show'>
+<script>
+  window.project_uploads_path = "/anadea/tracker/uploads";
+  window.markdown_preview_path = "/anadea/tracker/markdown_preview";
+</script>
+
+<header class='header-expanded navbar navbar-fixed-top navbar-gitlab'>
+<div class='container-fluid'>
+<div class='header-content'>
+<button class='navbar-toggle' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<i class="fa fa-bars"></i>
+</button>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav pull-right'>
+<li class='hidden-sm hidden-xs'>
+<div class='search'>
+<form class="navbar-form pull-left" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="search" name="search" id="search" placeholder="Search" class="search-input form-control" spellcheck="false" />
+<input type="hidden" name="group_id" id="group_id" />
+<input type="hidden" name="project_id" id="project_id" value="5" />
+<input type="hidden" name="search_code" id="search_code" value="true" />
+<input type="hidden" name="repository_ref" id="repository_ref" value="master" />
+
+<div class='search-autocomplete-opts hide' data-autocomplete-path='/search/autocomplete' data-autocomplete-project-id='5' data-autocomplete-project-ref='master'></div>
+</form>
+
+</div>
+<script>
+  $('.search-input').on('keyup', function(e) {
+    if (e.keyCode == 27) {
+      $('.search-input').blur();
+    }
+  });
+</script>
+
+</li>
+<li class='visible-sm visible-xs'>
+<a title="Search" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/search"><i class="fa fa-search"></i>
+</a></li>
+<li>
+<a title="Todos" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/dashboard/todos"><span class='badge todos-pending-count'>
+0
+</span>
+</a></li>
+<li>
+<a title="New project" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/projects/new"><i class="fa fa-plus fa-fw"></i>
+</a></li>
+<li>
+<a class="logout" title="Sign out" data-toggle="tooltip" data-placement="bottom" data-container="body" rel="nofollow" data-method="delete" href="/users/sign_out"><i class="fa fa-sign-out"></i>
+</a></li>
+</ul>
+</div>
+<h1 class='title'><a href="/groups/anadea">Anadea</a> / <a class="project-item-select-holder" href="/anadea/tracker">tracker<input type="hidden" name="project_path" id="project_path" class="project-item-select js-projects-dropdown ajax-project-select" data-include-groups="false" data-order-by="last_activity_at" /></a><i class="fa fa-chevron-down dropdown-toggle-caret js-projects-dropdown-toggle"></i></h1>
+</div>
+</div>
+</header>
+
+<script>
+  var findFileURL = "/anadea/tracker/find_file/master";
+</script>
+
+<div class='page-sidebar-expanded page-with-sidebar'>
+
+
+<div class='nicescroll sidebar-expanded sidebar-wrapper'>
+<div class='header-logo'>
+<a id='logo'>
+<svg width="36" height="36" id="tanuki-logo">
+  <path id="tanuki-right-ear" class="tanuki-shape" fill="#e24329" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"/>
+  <path id="tanuki-left-ear" class="tanuki-shape" fill="#e24329" d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"/>
+  <path id="tanuki-nose" class="tanuki-shape" fill="#e24329" d="M18,34.38 3,14 33,14 Z"/>
+  <path id="tanuki-right-eye" class="tanuki-shape" fill="#fc6d26" d="M18,34.38 11.38,14 2,14 6,25Z"/>
+  <path id="tanuki-left-eye" class="tanuki-shape" fill="#fc6d26" d="M18,34.38 24.62,14 34,14 30,25Z"/>
+  <path id="tanuki-right-cheek" class="tanuki-shape" fill="#fca326" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"/>
+  <path id="tanuki-left-cheek" class="tanuki-shape" fill="#fca326" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"/>
+</svg>
+
+</a>
+<a class="gitlab-text-container-link" title="Dashboard" id="js-shortcuts-home" href="/"><div class='gitlab-text-container'>
+<h3>GitLab</h3>
+</div>
+</a></div>
+<ul class='nav nav-sidebar'>
+<li class=""><a title="Go to group" class="back-link" href="/groups/anadea"><i class="fa fa-caret-square-o-left fa-fw"></i>
+<span>
+Go to group
+</span>
+</a></li><li class='separate-item'></li>
+<li class="home active"><a title="Project" class="shortcuts-project" href="/anadea/tracker"><i class="fa fa-home fa-fw"></i>
+<span>
+Project
+</span>
+</a></li><li class=""><a title="Activity" class="shortcuts-project-activity" href="/anadea/tracker/activity"><i class="fa fa-dashboard fa-fw"></i>
+<span>
+Activity
+</span>
+</a></li><li class=""><a title="Files" class="shortcuts-tree" href="/anadea/tracker/tree/master"><i class="fa fa-files-o fa-fw"></i>
+<span>
+Files
+</span>
+</a></li><li class=""><a title="Commits" class="shortcuts-commits" href="/anadea/tracker/commits/master"><i class="fa fa-history fa-fw"></i>
+<span>
+Commits
+</span>
+</a></li><li class=""><a title="Graphs" class="shortcuts-graphs" href="/anadea/tracker/graphs/master"><i class="fa fa-area-chart fa-fw"></i>
+<span>
+Graphs
+</span>
+</a></li><li class=""><a title="Milestones" href="/anadea/tracker/milestones"><i class="fa fa-clock-o fa-fw"></i>
+<span>
+Milestones
+</span>
+</a></li><li class=""><a title="Issues" class="shortcuts-issues" href="/anadea/tracker/issues"><i class="fa fa-exclamation-circle fa-fw"></i>
+<span>
+Issues
+<span class='count issue_counter'>0</span>
+</span>
+</a></li><li class=""><a title="Merge Requests" class="shortcuts-merge_requests" href="/anadea/tracker/merge_requests"><i class="fa fa-tasks fa-fw"></i>
+<span>
+Merge Requests
+<span class='count merge_counter'>3</span>
+</span>
+</a></li><li class=""><a title="Labels" href="/anadea/tracker/labels"><i class="fa fa-tags fa-fw"></i>
+<span>
+Labels
+</span>
+</a></li><li class=""><a title="Wiki" class="shortcuts-wiki" href="/anadea/tracker/wikis/home"><i class="fa fa-book fa-fw"></i>
+<span>
+Wiki
+</span>
+</a></li><li class=""><a title="Forks" href="/anadea/tracker/forks"><i class="fa fa-code-fork fa-fw"></i>
+<span>
+Forks
+</span>
+</a></li><li class='hidden'>
+<a title="Network" class="shortcuts-network" href="/anadea/tracker/network/master">Network
+</a></li>
+</ul>
+
+<div class='collapse-nav'>
+<a class="toggle-nav-collapse" title="Open/Close" href="#"><i class="fa fa-angle-left"></i></a>
+
+</div>
+<a class="sidebar-user" title="Profile" href="/u/kr"><img alt="Profile" class="avatar avatar s36" src="https://secure.gravatar.com/avatar/482c8c3f09f2b11c66b8196bdad7d1e8?s=120&amp;d=identicon" />
+<div class='username'>
+kr
+</div>
+</a></div>
+<div class='content-wrapper'>
+<div class='flash-container'>
+</div>
+
+
+
+
+<div>
+<div class='content'>
+<div class='clearfix'>
+
+<div class='project-home-panel cover-block clearfix'>
+<div class='project-identicon-holder'>
+<div class="project-avatar avatar s90 identicon" style="background-color: #FBE9E7; color: #555">T</div>
+</div>
+<div class='project-home-desc'>
+<h1>
+tracker
+<span class='visibility-icon has_tooltip' data-container='body' title='Internal - The project can be cloned by any logged in user.'>
+<i class="fa fa-shield"></i>
+</span>
+</h1>
+<p>Tracker is an easy to use, agile project management tool that brings focused collaboration to software development teams.</p>
+</div>
+<div class='cover-controls'>
+<a class="btn btn-gray" href="/anadea/tracker.atom?private_token=_QURq4QxZy5zK4B_cQfx"><i class="fa fa-rss"></i>
+</a></div>
+<div class='project-repo-buttons'>
+<div class='split-one count-buttons'>
+<a class="btn star-btn toggle-star has_tooltip" title="Star project" data-remote="true" rel="nofollow" data-method="post" href="/anadea/tracker/toggle_star"><i class="fa fa-star-o fa-fw"></i>
+<span>Star</span>
+</a><div class='count-with-arrow'>
+<span class='arrow'></span>
+<span class='count star-count'>
+3
+</span>
+</div>
+
+<a title="Fork project" class="btn has_tooltip" href="/anadea/tracker/forks/new"><i class="fa fa-code-fork fa-fw"></i>
+Fork
+</a><div class='count-with-arrow'>
+<span class='arrow'></span>
+<span class='count'>
+1
+</span>
+</div>
+
+</div>
+<div class='clone-row'>
+<div class='project-clone-holder'>
+<div class='git-clone-holder input-group'>
+<div class='input-group-btn'>
+<a class='clone-dropdown-btn btn' data-toggle='dropdown' href='#' id='clone-dropdown'>
+<span>
+SSH
+</span>
+<i class="fa fa-angle-down"></i>
+</a>
+<ul class='dropdown-menu dropdown-menu-right clone-options-dropdown'>
+<li>
+<a href='git@gitlab.anahoret.com:anadea/tracker.git' id='ssh-selector'>
+SSH
+</a>
+</li>
+<li>
+<a href='https://gitlab.anahoret.com/anadea/tracker.git' id='http-selector'>
+HTTPS
+</a>
+</li>
+</ul>
+</div>
+<input type="text" name="project_clone" id="project_clone" value="git@gitlab.anahoret.com:anadea/tracker.git" class="js-select-on-focus form-control" readonly="readonly" />
+<div class='input-group-btn'>
+<button class="btn btn-clipboard" data-clipboard-target="#project_clone" type="button"><i class="fa fa-clipboard"></i></button>
+</div>
+</div>
+<script>
+  $('ul.clone-options-dropdown a').on('click',function(e){
+    e.preventDefault();
+    var $this = $(this);
+    $('a.clone-dropdown-btn span').text($this.text());
+    $('#project_clone').val($this.attr('href'));
+  });
+</script>
+
+</div>
+<div class='split-repo-buttons'>
+<div class='btn-group pull-left'>
+<a class="btn has_tooltip" rel="nofollow" title="Download ZIP" href="/anadea/tracker/repository/archive.zip?ref=master"><i class="fa fa-download"></i>
+</a>
+<div class='btn-group'>
+<a class='btn dropdown-toggle' data-toggle='dropdown' href='#'>
+<i class="fa fa-plus"></i>
+</a>
+<ul class='dropdown-menu dropdown-menu-right project-home-dropdown'>
+<li>
+<a href="/anadea/tracker/issues/new"><i class="fa fa-exclamation-circle fa-fw"></i>
+New issue
+</a></li>
+<li class='divider'></li>
+<li>
+<a rel="nofollow" data-method="post" href="/anadea/tracker/forks?continue%5Bnotice%5D=You%27re+not+allowed+to+make+changes+to+this+project+directly.+A+fork+of+this+project+has+been+created+that+you+can+make+changes+in%2C+so+you+can+submit+a+merge+request.&amp;continue%5Bnotice_now%5D=You%27re+not+allowed+to+make+changes+to+this+project+directly.+A+fork+of+this+project+is+being+created+that+you+can+make+changes+in%2C+so+you+can+submit+a+merge+request.&amp;continue%5Bto%5D=%2Fanadea%2Ftracker%2Fnew%2Fmaster&amp;namespace_key=233"><i class="fa fa-file fa-fw"></i>
+New file
+</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<script>
+  new Star();
+</script>
+
+<div class='project-stats gray-content-block second-block'>
+<ul class='nav'>
+<li>
+<a href="/anadea/tracker/commits/master">10,907 commits
+</a></li>
+<li>
+<a href="/anadea/tracker/branches">232 branches
+</a></li>
+<li>
+<a href="/anadea/tracker/tags">130 tags
+</a></li>
+<li>
+<a href="/anadea/tracker/tree/master">29.84 MB
+</a></li>
+</ul>
+</div>
+<div class='content-block second-block white'>
+<div class='container-fluid container-limited'>
+<div class='project-last-commit'>
+<a class="commit_short_id" href="/anadea/tracker/commit/54be8fbab4ed399d5027959f1677e91640f277e7">54be8fba</a>
+<a class="commit-row-message" href="/anadea/tracker/commit/54be8fbab4ed399d5027959f1677e91640f277e7">Merge branch 'r97.1' into 'master'</a>
+&middot;
+<time class="time_ago js-timeago js-timeago-pending" datetime="2018-06-07T10:39:04Z" title="Jun 7, 2018 10:39am" data-toggle="tooltip" data-placement="top" data-container="body">2018-06-07 13:39:04 +0300</time> by
+<a class="commit-author-link has_tooltip" data-original-title="alexander.rjazantsev@anahoret.com" href="/u/ar"><img class="avatar s24" width="24" alt="" src="https://secure.gravatar.com/avatar/f81ce16d221bf90d94346c6b918a1994?s=48&amp;d=identicon" /> <span class="commit-author-name">Alexander Rjazantsev</span></a>
+</div>
+
+</div>
+</div>
+<div class='container-fluid container-limited'>
+<div class='project-show-readme'>
+<article class='readme-holder'>
+<div class='pull-right'>
+</div>
+<div class='file-content wiki'>
+<h1>&#x000A;<a id="start-development" class="anchor" href="#start-development" aria-hidden="true"></a>Start development</h1>&#x000A;&#x000A;<ul>&#x000A;<li>Use your favorite ruby version manager which respects a .ruby-version file (rvm, rbenv, chruby...)</li>&#x000A;<li>Install system dependencies postgres, libxml</li>&#x000A;<li><code>git clone git@gitlab.anahoret.com:anadea/tracker.git</code></li>&#x000A;<li><code>cd tracker</code></li>&#x000A;<li><code>gem install bundler</code></li>&#x000A;<li><code>bundle install</code></li>&#x000A;<li>&#x000A;<code>createuser -d -s -W -P tracker</code> (use password from database.yml)</li>&#x000A;<li><code>bundle exec rake db:create</code></li>&#x000A;<li><code>bundle exec rake db:migrate</code></li>&#x000A;</ul>&#x000A;&#x000A;<h1>&#x000A;<a id="database" class="anchor" href="#database" aria-hidden="true"></a>Database</h1>&#x000A;&#x000A;<p>Scenario: User has a dump file and prepares db</p>&#x000A;&#x000A;<ul>&#x000A;<li><code>rake db:drop db:create db:migrate</code></li>&#x000A;<li><code>pg_restore -U tracker -d tracker_development path/to/db/dump</code></li>&#x000A;<li><code>rake db:migrate</code></li>&#x000A;</ul>&#x000A;&#x000A;<p>Create dumps using test dumps</p>&#x000A;&#x000A;<ul>&#x000A;<li>Overall: <code>bundle exec cucumber features/scenarios/generated_data.feature:6</code>&#x000A;</li>&#x000A;<li>Project: <code>bundle exec cucumber features/scenarios/generated_data.feature:12</code>&#x000A;</li>&#x000A;<li>Timesheet: <code>bundle exec cucumber features/scenarios/generated_data.feature:18</code>&#x000A;</li>&#x000A;<li>Project on 2016-01-01 10:00: <code>bundle exec cucumber features/scenarios/generated_data.feature:24</code>&#x000A;</li>&#x000A;</ul>&#x000A;&#x000A;<p>Restore dumps from ./tmp/dump_hook/&lt;version&gt;/&lt;filename&gt;.dump</p>&#x000A;&#x000A;<ul>&#x000A;<li><code>pg_restore -U tracker -d tracker_development tmp/dump_hook/&lt;version&gt;/&lt;filename&gt;.dump</code></li>&#x000A;</ul>&#x000A;&#x000A;<p>Create billing app db before restoring billing dumps. Check Billing app docs about Billing db creation.</p>&#x000A;&#x000A;<p>Restore billing dumps from ./tmp/dump_hook/&lt;version&gt;/&lt;filename&gt;.billing</p>&#x000A;&#x000A;<ul>&#x000A;<li><code>psql -U tracker -d billing_development -c "ALTER ROLE tracker SET search_path TO 'tracker_development'"</code></li>&#x000A;<li><code>psql -U tracker -d billing_development &lt; tmp/dump_hook/&lt;version&gt;/&lt;filename&gt;.billing</code></li>&#x000A;<li><code>psql -U tracker -d billing_development -c "ALTER ROLE tracker SET search_path TO 'public'"</code></li>&#x000A;</ul>&#x000A;&#x000A;<h1>&#x000A;<a id="billing-application" class="anchor" href="#billing-application" aria-hidden="true"></a>Billing Application</h1>&#x000A;&#x000A;<ul>&#x000A;<li>Clone <a href="https://gitlab.anahoret.com/anadea/billing-app">https://gitlab.anahoret.com/anadea/billing-app</a>&#x000A;</li>&#x000A;<li>Follow Getting started from README to run it</li>&#x000A;<li>In development tracker waits for billing on <a href="http://localhost:3030" rel="nofollow">http://localhost:3030</a>&#x000A;</li>&#x000A;</ul>&#x000A;&#x000A;<h1>&#x000A;<a id="tests" class="anchor" href="#tests" aria-hidden="true"></a>Tests</h1>&#x000A;&#x000A;<p>Create databases and load schemas</p>&#x000A;&#x000A;<ul>&#x000A;<li><code>rake parallel:create parallel:load_structure</code></li>&#x000A;</ul>&#x000A;&#x000A;<h3>&#x000A;<a id="rspec" class="anchor" href="#rspec" aria-hidden="true"></a>RSpec</h3>&#x000A;&#x000A;<ul>&#x000A;<li><code>bundle exec rake parallel:spec</code></li>&#x000A;</ul>&#x000A;&#x000A;<h3>&#x000A;<a id="cucumber" class="anchor" href="#cucumber" aria-hidden="true"></a>Cucumber</h3>&#x000A;&#x000A;<p>Perhaps it's not needed but can be useful.&#x000A;Install phantomjs 1.9.8 (not 2.0.0 <a href="https://github.com/teampoltergeist/poltergeist/issues/574" rel="nofollow">https://github.com/teampoltergeist/poltergeist/issues/574</a>)</p>&#x000A;&#x000A;<ul>&#x000A;<li><code>brew update</code></li>&#x000A;<li><code>brew tap homebrew/versions</code></li>&#x000A;<li><code>brew install phantomjs198</code></li>&#x000A;</ul>&#x000A;&#x000A;<p>Create dumps and achieve success passing of them before running features.</p>&#x000A;&#x000A;<ul>&#x000A;<li><code>bundle exec cucumber features/scenarios/generated_data.feature</code></li>&#x000A;</ul>&#x000A;&#x000A;<p>Run features. Some scenarios are failed and needed to fix. Check it in ./cucumber_fails.</p>&#x000A;&#x000A;<ul>&#x000A;<li>&#x000A;<code>bundle exec cucumber features</code> or <code>bundle exec rake parallel:features</code> in parallel</li>&#x000A;</ul>&#x000A;&#x000A;<h3>&#x000A;<a id="jasmine" class="anchor" href="#jasmine" aria-hidden="true"></a>Jasmine</h3>&#x000A;&#x000A;<ul>&#x000A;<li><code>bundle exec rake spec:javascripts</code></li>&#x000A;<li><code>bundle exec rake spec:javascripts SPEC=DayModel</code></li>&#x000A;</ul>&#x000A;&#x000A;<h3>&#x000A;<a id="all-tests" class="anchor" href="#all-tests" aria-hidden="true"></a>All tests</h3>&#x000A;&#x000A;<ul>&#x000A;<li>&#x000A;<code>bundle exec rake</code> or <code>bundle exec rake parallel:spec</code> in parallel</li>&#x000A;</ul>&#x000A;&#x000A;<h2>&#x000A;<a id="ci" class="anchor" href="#ci" aria-hidden="true"></a>CI</h2>&#x000A;&#x000A;<p><a href="http://ci.anahoret.com/" rel="nofollow">http://ci.anahoret.com/</a></p>&#x000A;&#x000A;<h1>&#x000A;<a id="deploy" class="anchor" href="#deploy" aria-hidden="true"></a>Deploy</h1>&#x000A;&#x000A;<p>Done with dokku.</p>&#x000A;&#x000A;<ul>&#x000A;<li>bin/deploy-production and bin/deploy-staging to deploy</li>&#x000A;<li>bin/dokku-production and bin/dokku-staging to dokku</li>&#x000A;</ul>&#x000A;&#x000A;<h1>&#x000A;<a id="faye" class="anchor" href="#faye" aria-hidden="true"></a>Faye</h1>&#x000A;&#x000A;<p><code>rackup faye.ru -E production</code></p>&#x000A;&#x000A;<h1>&#x000A;<a id="api" class="anchor" href="#api" aria-hidden="true"></a>Api</h1>&#x000A;&#x000A;<h2>&#x000A;<a id="mobile-api" class="anchor" href="#mobile-api" aria-hidden="true"></a>Mobile API</h2>&#x000A;&#x000A;<p>User story: <a href="https://tracker.anahoret.com/projects/70/stories/12900" rel="nofollow">https://tracker.anahoret.com/projects/70/stories/12900</a></p>&#x000A;&#x000A;<ul>&#x000A;<li>Get all project for admin or current project&#x000A;GET /projects.json - for</li>&#x000A;<li>Get all stories for project&#x000A;GET /projects/:project_id/stories.json</li>&#x000A;<li>Get story&#x000A;GET /projects/:project_id/stories/:story_id.json</li>&#x000A;<li>Get task&#x000A;/projects/:project_id/stories/:story_id/tasks/:task_id.json</li>&#x000A;</ul>&#x000A;&#x000A;<h1>&#x000A;<a id="development" class="anchor" href="#development" aria-hidden="true"></a>Development</h1>&#x000A;&#x000A;<h2>&#x000A;<a id="emails" class="anchor" href="#emails" aria-hidden="true"></a>Emails</h2>&#x000A;&#x000A;<p>In development we use mailcatcher (see <a href="http://mailcatcher.me/" rel="nofollow">http://mailcatcher.me/</a>).</p>&#x000A;&#x000A;<ul>&#x000A;<li>Daemon - <code>mailcatcher</code>&#x000A;</li>&#x000A;<li>Web interface - <a href="http://127.0.0.1:1080/" rel="nofollow">http://127.0.0.1:1080/</a>&#x000A;</li>&#x000A;</ul>&#x000A;&#x000A;<h1>&#x000A;<a id="error-handling" class="anchor" href="#error-handling" aria-hidden="true"></a>Error handling</h1>&#x000A;&#x000A;<p>Slack channels with errors</p>&#x000A;&#x000A;<ul>&#x000A;<li>Production: <a href="https://anadea.slack.com/messages/C6K0GMW9E" rel="nofollow">https://anadea.slack.com/messages/C6K0GMW9E</a>&#x000A;</li>&#x000A;<li>Staging: <a href="https://anadea.slack.com/messages/C5JJK6B3P" rel="nofollow">https://anadea.slack.com/messages/C5JJK6B3P</a>&#x000A;</li>&#x000A;</ul>&#x000A;&#x000A;<h1>&#x000A;<a id="user-authorization" class="anchor" href="#user-authorization" aria-hidden="true"></a>User authorization</h1>&#x000A;&#x000A;<p><a href="https://tracker.anahoret.com/projects/2/stories/18082" rel="nofollow">https://tracker.anahoret.com/projects/2/stories/18082</a></p>&#x000A;&#x000A;<h1>&#x000A;<a id="users-in-dumps" class="anchor" href="#users-in-dumps" aria-hidden="true"></a>Users in dumps</h1>&#x000A;&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>Name</th>&#x000A;<th>login</th>&#x000A;<th>superadmin</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>Admin SuperDuper</td>&#x000A;<td>admin</td>&#x000A;<td>Yes</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Tony King</td>&#x000A;<td>tk</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Jeff Fischer</td>&#x000A;<td>jf</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Scribe Writer</td>&#x000A;<td>sw</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>John Way</td>&#x000A;<td>jw</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Bill Wallet</td>&#x000A;<td>bw</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Jimm Progress</td>&#x000A;<td>jp</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Tom Cox</td>&#x000A;<td>tc</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Jack Black</td>&#x000A;<td>jb</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>John Doe</td>&#x000A;<td>jd</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Adam Gill</td>&#x000A;<td>ag</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Tyler Durden</td>&#x000A;<td>td</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Serf Ants</td>&#x000A;<td>sa</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Mark Down</td>&#x000A;<td>md</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>Ducat Coins</td>&#x000A;<td>dc</td>&#x000A;<td></td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table>&#x000A;&#x000A;<p>Пароль стандартный - epyfnm</p>&#x000A;&#x000A;<h1>&#x000A;<a id="superadmin-interface" class="anchor" href="#superadmin-interface" aria-hidden="true"></a>Superadmin interface</h1>&#x000A;&#x000A;<p><a href="https://stracker.anahoret.com/users/" rel="nofollow">https://stracker.anahoret.com/users/</a></p>
+</div>
+</article>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
+

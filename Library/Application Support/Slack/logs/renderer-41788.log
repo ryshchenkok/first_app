@@ -1,0 +1,22 @@
+[08/03/18, 11:12:23:597] info: ╔═══════════════════════════════════════════════════════════════════════╗
+[08/03/18, 11:12:23:598] info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 08/03/18, 11:12:23:595      ║
+[08/03/18, 11:12:23:598] info: ╚═══════════════════════════════════════════════════════════════════════╝
+[08/03/18, 11:12:23:781] info: Initializing local storage instance at path: /Users/kr/Library/Application Support/Slack/local-settings.json
+[08/03/18, 11:12:24:349] info: Main window preload script finished
+{
+  "readyTime": 1125.483242
+}
+[08/03/18, 11:14:45:619] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "vkLwIKiAGYrvY05",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 11:14:45:848] info: Store: REMOVE_WINDOW 9
+[08/03/18, 11:14:45:852] info: Store: REMOVE_WINDOW 10
+[08/03/18, 11:14:45:853] info: Window is unloading, window.desktop is no longer accessible

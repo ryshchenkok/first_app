@@ -1,0 +1,471 @@
+12438     
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp205916iof;
+        Fri, 3 Aug 2018 02:05:47 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpdm5/STlEibWzRZrNyvQ4OJPdSD+yAVoJX+vKXTBAts6vhxjSSTxgLucxv9pN0rPmtS9xeQ
+X-Received: by 2002:aa7:d588:: with SMTP id r8-v6mr6825756edq.130.1533287147043;
+        Fri, 03 Aug 2018 02:05:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533287147; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YxjGRG14rROvWnKThdL7YSogROCK/XWr3F8BYgAx9qm2dYtjRouUeConXy4kzI5GEj
+         G8vR05v/lXGsRws8qsFOrHiyAjjyCGLzxYXMp3yg1Tn0xF5GQQdWGB1+nsP+WYr1U2nu
+         BinRFidNzIOdfdw9mLGodj+xubNeiCxeKGTju9A+drxi8LqRVmuEVIMfK5NlevwShQky
+         cbcDcoanX08yo9UNT177X5l69PHrLo0PdqfLxrKK9FpTvp0gGUrri25CXr/sI506wtxq
+         nySo55Z7j3pxD/GXqg2ps/U5fEPHxDMR0UHTdCr1e7FDO+f2d41jLre3NThejqfRo676
+         WboQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=f1Rt5crdQRaQGJoMtxg18MlkALlZyPBlkPGHxaT+GDg=;
+        b=WSiHoX7/7zPGVqfHUVMJ4j6zVsJRN+pvjQD3Z6FpkNLxckBAsijWwrXeVDTpZUHWyr
+         8B9puPV8UOl1lHrmfWig3vVKGjmanmtJKNYaA+WSQ9nkOw4yk8Kz5OtiPyYjPjkKatgK
+         d32chk3eEW6iHuEERDsrSe9oPc7xJzhPvaDyn0ASJdXZXX9yO3s3UOIjHdWKsXHpIp6e
+         8NnX2m2aFNZELVgDoNldBfgN/U2nCXEv+sTMGqvQik0DyRiNoksALL9c0Z5kWc5qVe/H
+         ZJr3y/sUAG1tRNCmiYqVEDFUut+y6zOregDp8GFTGUzMndQfAGBVftxLxiUDY+Cy1Qm7
+         DCxw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=J5VCX1r7;
+       spf=pass (google.com: domain of srs0+4b5cac5248fdf7579ba184ca49e865b66acf31c5@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+4b5cac5248fdf7579ba184ca49e865b66acf31c5@info.anahoret.com
+Return-Path: <srs0+4b5cac5248fdf7579ba184ca49e865b66acf31c5@info.anahoret.com>
+Received: from smtp0.mailarbor.com (smtp0.mailarbor.com. [5.104.224.181])
+        by mx.google.com with ESMTPS id l15-v6si2222065edk.25.2018.08.03.02.05.46
+        for <kr@anadeainc.com>
+        (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Fri, 03 Aug 2018 02:05:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0+4b5cac5248fdf7579ba184ca49e865b66acf31c5@info.anahoret.com designates 5.104.224.181 as permitted sender) client-ip=5.104.224.181;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=J5VCX1r7;
+       spf=pass (google.com: domain of srs0+4b5cac5248fdf7579ba184ca49e865b66acf31c5@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+4b5cac5248fdf7579ba184ca49e865b66acf31c5@info.anahoret.com
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id ABD58200463
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 09:05:46 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 99EAC1600B6
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 09:05:46 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.anahoret.com; q=dns/txt; s=mail; t=1533287146; bh=f1Rt5crdQRaQGJoMtxg18MlkALlZyPBlkPGHxaT+GDg=; h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding; b=J5VCX1r7RgK0HRABw9fHb4favLizjC6vE40L6JUvUHJfZhFFCzUCiOVybSBVVIMtrJbcS4eTgGIHj6AV5HHDJk1b4pDIljR/uCgP7J9ekurCNsaA9Fvfa0HkM+EtkWIMZfErvL9hXLpxo1UDwcrxAJFDbMMWs8Lh0wNJzu43RNk=
+Date: Fri, 03 Aug 2018 09:05:46 +0000
+From: noreply@tracker.anahoret.com
+To: Konstantin Ryshchenko <kr@anadeainc.com>
+Message-ID: <4b5cac5248fdf7579ba184ca49e865b66acf31c5@info.anahoret.com>
+Subject: Just Play digest
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<style type="text/css">
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  table th, table td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  table.daily-statistics {
+    width: 50%;
+  }
+  table.daily-statistics td.working_time {
+    text-align: right;
+  }
+  table.daily-statistics th {
+    background: #DDD;
+  }
+  table.digest {
+    width: 680px;
+  }
+  table.digest.planned_stories th {
+    background: #ddd;
+  }
+  table.digest.description th {
+    background: #ddd;
+  }
+  table.digest.rejected th {
+    background: red;
+  }
+  table.digest.completed th {
+    background: #d8e795;
+  }
+  table.digest.estimate th {
+    background: #dcf8ff;
+  }
+  table.digest.new_stories th {
+    background: #ddd;
+  }
+  table.digest td.time {
+    text-align: center;
+  }
+  table.digest td.story {
+    width: 400px;
+  }
+  table.digest td.name {
+    width: 130px;
+  }
+</style>
+
+
+
+  <p>
+    Hello, Konstantin Ryshchenko. Your have some activities in Just Play
+  </p>
+      <b>5 stories were created</b>
+      <table class='digest new_stories'>
+        <th>Story</th>
+        <th>Changed by</th>
+        <th>Changed at (GMT+2)</th>
+        <tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64880">Update &#39;Info&#39; count on Dashboard</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    04:13
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64886">Duplicate &#39;Subscription payment failed&#39; emails</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    08:52
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64878">Incorrect email sent to NEW users</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    21:34
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64879">Duplicates on &#39;Past Renewals&#39; tab</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    03:53
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64881">Test renewals Aug 3rd not processed</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    05:11
+  </td>
+</tr>
+
+      </table>
+      <b>8 stories were changed</b>
+      <table class='digest description'>
+        <th>Story</th>
+        <th>Changed by</th>
+        <th>Changed at (GMT+2)</th>
+        <tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64057">Update &#39;Admin Player Profile&#39;</a>
+  </td>
+  <td class='name'>
+    Eduard Kolenov
+  </td>
+  <td class='time'>
+    20:28
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64878">Incorrect email sent to NEW users</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    21:39
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64879">Duplicates on &#39;Past Renewals&#39; tab</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    03:54
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64880">Update &#39;Info&#39; count on Dashboard</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    04:14
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64868">Remove &#39;informed_start_date&#39; concept</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    04:39
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64064">Move league start date function</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    04:44
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64881">Test renewals Aug 3rd not processed</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    05:17
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64886">Duplicate &#39;Subscription payment failed&#39; emails</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    09:00
+  </td>
+</tr>
+
+      </table>
+      <b>4 stories were estimated/re-estimated</b>
+      <table class='digest estimate'>
+        <th>Story</th>
+        <th>Changed by</th>
+        <th>Changed at (GMT+2)</th>
+        <tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64881">Test renewals Aug 3rd not processed</a>
+  </td>
+  <td class='name'>
+    Alexander Dmitrenko
+  </td>
+  <td class='time'>
+    07:07
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64878">Incorrect email sent to NEW users</a>
+  </td>
+  <td class='name'>
+    Alexander Dmitrenko
+  </td>
+  <td class='time'>
+    07:09
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64879">Duplicates on &#39;Past Renewals&#39; tab</a>
+  </td>
+  <td class='name'>
+    Alexander Dmitrenko
+  </td>
+  <td class='time'>
+    07:09
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64880">Update &#39;Info&#39; count on Dashboard</a>
+  </td>
+  <td class='name'>
+    Evgeniy Maslov
+  </td>
+  <td class='time'>
+    07:34
+  </td>
+</tr>
+
+      </table>
+      <b>2 stories were completed</b>
+      <table class='digest completed'>
+        <th>Story</th>
+        <th>Changed by</th>
+        <th>Changed at (GMT+2)</th>
+        <tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64878">Incorrect email sent to NEW users</a>
+  </td>
+  <td class='name'>
+    Alexander Dmitrenko
+  </td>
+  <td class='time'>
+    08:19
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64880">Update &#39;Info&#39; count on Dashboard</a>
+  </td>
+  <td class='name'>
+    Alexander Dmitrenko
+  </td>
+  <td class='time'>
+    08:28
+  </td>
+</tr>
+
+      </table>
+      <b>1 story was rejected by customer(s)</b>
+      <table class='digest rejected'>
+        <th>Story</th>
+        <th>Changed by</th>
+        <th>Changed at (GMT+2)</th>
+        <tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/63948">Update &#39;Allocations&#39; page</a>
+  </td>
+  <td class='name'>
+    Evgeniy Maslov
+  </td>
+  <td class='time'>
+    07:31
+  </td>
+</tr>
+
+      </table>
+      <b>6 stories were planned at current period</b>
+      <table class='digest planned_stories'>
+        <th>Story</th>
+        <th>Changed by</th>
+        <th>Changed at (GMT+2)</th>
+        <tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64878">Incorrect email sent to NEW users</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    21:34
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64879">Duplicates on &#39;Past Renewals&#39; tab</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    03:53
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64880">Update &#39;Info&#39; count on Dashboard</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    04:13
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64868">Remove &#39;informed_start_date&#39; concept</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    04:40
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64881">Test renewals Aug 3rd not processed</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    05:11
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64886">Duplicate &#39;Subscription payment failed&#39; emails</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    08:52
+  </td>
+</tr>
+
+      </table>
+
+<p>
+  <a href="https://tracker.anahoret.com/profile/default_notification_settings">Change digest settings</a>
+</p>
+
+
+
+  <p>Thank you,</p>
+  Just Play Team
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>46</integer>
+	<key>date-last-viewed</key>
+	<integer>1533303430</integer>
+	<key>date-received</key>
+	<integer>1533287147</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+	</array>
+	<key>remote-id</key>
+	<string>58</string>
+</dict>
+</plist>

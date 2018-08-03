@@ -1,0 +1,1075 @@
+info: ╔═══════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 08/02/18, 15:07:58:372      ║
+info: ╚═══════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: This appears to be Chrome
+info: Aug-2 15:08:02.043 [BOOT] booted! pri:0 version:1533191652 start_ms:1533211680055 (1988ms ago)
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Aug-2 15:08:02.197 [INFO] no TS.client on page:https://anadea.slack.com/call/RC0QTJPK2?_fast_members=1&_end_call_sound=1&pri=0
+info: Aug-2 15:08:02.201 [INFO] Starting non-incremental boot
+info: Aug-2 15:08:02.282 [INFO] Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) AtomShell/3.2.0 Chrome/61.0.3163.100 Electron/2.0.2 Safari/537.36 Slack_SSB/3.2.0
+info: Aug-2 15:08:02.519 [API-Q] (T4ALJRY56) cdbc7423-1533211682.517 apps.list called with reason: NO REASON PROVIDED
+info: Aug-2 15:08:02.519 [API-Q] (T4ALJRY56) cdbc7423-1533211682.517 apps.list is ENQUEUED
+info: Aug-2 15:08:02.520 [API-Q] (T4ALJRY56) cdbc7423-1533211682.517 apps.list is ACTIVE
+info: Aug-2 15:08:02.523 [API-Q] (T4ALJRY56) cdbc7423-1533211682.522 i18n.translations.get called with reason: NO REASON PROVIDED
+info: Aug-2 15:08:02.523 [API-Q] (T4ALJRY56) cdbc7423-1533211682.522 i18n.translations.get is ENQUEUED
+info: Aug-2 15:08:02.523 [API-Q] (T4ALJRY56) cdbc7423-1533211682.522 i18n.translations.get is ACTIVE
+info: Aug-2 15:08:02.621 [INFO] Screen list: [{"id":"724050572","bounds":{"x":0,"y":0,"width":1920,"height":1080},"workArea":{"x":0,"y":22,"width":1920,"height":1005},"size":{"width":1920,"height":1080},"workAreaSize":{"width":1920,"height":1005},"scaleFactor":1,"rotation":0,"touchSupport":"unknown","index":0,"chrome_id":"screen:724050572","is_main":true,"name":"Screen 1 (1920x1080)"}]
+info: Aug-2 15:08:02.623 [METRICS] Starting timers for metrics collection
+info: Aug-2 15:08:02.646 [INFO] LoggedIn: {"stored_data":{}}
+info: Aug-2 15:08:02.647 [INFO] StateTransition: {"state":"CALLS_START_CALL","reconnect_attempt":0,"prev_state":"","reachability":true}
+info: Aug-2 15:08:02.728 [INFO] StartCall: {"online":true}
+info: Aug-2 15:08:02.728 [BOOT] _maybeFinalizeOrOpenConnectionToMS wanted to finalize SocketManager but it had no provisional connection
+info: Aug-2 15:08:02.728 [BOOT] _maybeFinalizeOrOpenConnectionToMS: opening our SocketManager connection now
+info: Aug-2 15:08:02.730 [SOCKET-MANAGER] (T4ALJRY56) Changing from never_connected to prov_connect
+info: Aug-2 15:08:02.730 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_connect state for up to 10000 ms
+info: Aug-2 15:08:02.731 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_connect to prov_connecting
+info: Aug-2 15:08:02.731 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_connecting state for up to 35000 ms
+info: Aug-2 15:08:02.737 [BOOT] Finished first boot 541 ms after DOM ready
+info: Aug-2 15:08:02.784 [INFO] Unprompted device enumeration took 500 ms
+info: Aug-2 15:08:02.789 [INFO] MsgFromParentWin: {"message_type":"reachability","online":true}
+info: Aug-2 15:08:02.973 [INFO] MsgFromParentWin: {"message_type":"reachability","online":true}
+info: Aug-2 15:08:03.041 [API-Q] (T4ALJRY56) cdbc7423-1533211682.517 apps.list is RESOLVED
+info: Aug-2 15:08:03.045 [INFO] MsgFromParentWin: {"message_type":"calls_status","is_busy":false,"team_name":null}
+info: Aug-2 15:08:03.046 [INFO] StateTransition: {"state":"CALLS_GET_REGIONS","reconnect_attempt":0,"prev_state":"CALLS_START_CALL","reachability":true}
+info: Aug-2 15:08:03.061 [API-Q] (T4ALJRY56) cdbc7423-1533211682.522 i18n.translations.get is RESOLVED
+info: Aug-2 15:08:03.062 [INFO] Output device authorization took 347 ms
+info: Aug-2 15:08:03.114 [INFO] MsgFromParentWin: {"message_type":"regions","regions":""}
+info: Aug-2 15:08:03.114 [INFO] StateTransition: {"state":"CALLS_GET_SERVER","reconnect_attempt":0,"prev_state":"CALLS_GET_REGIONS","reachability":true}
+info: Aug-2 15:08:03.151 [INFO] MsgFromParentWin: {"message_type":"got_server","data":{"request_id":"e20c9653-9698-4e32-867c-2936464d1645","client_request_id":"f8bfbf31-1533211678.382","method":"screenhero.rooms.join","room_id":"RC0QTJPK2","hostname":"slack-calls-orca-fra-kij1.slack-core.com","port":443,"turn_ports":[22466],"turn_auth":{"username":"1533298078:UBV12AYCA","password":"mbmgRiOi4JNaQLcC7P00PgyIUo8="},"survey_percent":0.05,"ok":true,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzbGFjay5jb20iLCJleHAiOjE1MzMyMTE5NzgsIm5iZiI6MTUzMzIxMTYxOCwiaWF0IjoxNTMzMjExNjc4LCJ1aWQiOiJVQlYxMkFZQ0EiLCJ0aWQiOiJUNEFMSlJZNTYiLCJyaWQiOiJSMDAifQ.SkVde_t1QLvGTDMspCR1iNfPT8OWJD4ltQkbiOoFAPI"}}
+info: Aug-2 15:08:03.151 [INFO] MediaServer: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzbGFjay5jb20iLCJleHAiOjE1MzMyMTE5NzgsIm5iZiI6MTUzMzIxMTYxOCwiaWF0IjoxNTMzMjExNjc4LCJ1aWQiOiJVQlYxMkFZQ0EiLCJ0aWQiOiJUNEFMSlJZNTYiLCJyaWQiOiJSMDAifQ.SkVde_t1QLvGTDMspCR1iNfPT8OWJD4ltQkbiOoFAPI","hostname":"slack-calls-orca-fra-kij1.slack-core.com","port":443,"turn_username":"1533298078:UBV12AYCA","turn_password":"mbmgRiOi4JNaQLcC7P00PgyIUo8=","turn_ports":[22466]}
+info: Aug-2 15:08:03.152 [INFO] StateTransition: {"state":"CALLS_INITIALIZE_JANUS","reconnect_attempt":0,"prev_state":"CALLS_GET_SERVER","reachability":true}
+info: Aug-2 15:08:03.164 [INFO] InitializedJanus: 
+info: Aug-2 15:08:03.165 [INFO] StateTransition: {"state":"CALLS_JOIN_ROOM","reconnect_attempt":0,"prev_state":"CALLS_INITIALIZE_JANUS","reachability":true}
+info: Aug-2 15:08:03.249 [INFO] MediaStreamReceived: {"is_local":true}
+warn: Aug-2 15:08:03.250 got an unallowed async event:  media_stream_received , allowed events:  ["reachability_changed","refreshed_token","local_errored","joined_room"] , current state:  join_room
+info: Aug-2 15:08:03.393 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_connecting to prov_connected
+info: Aug-2 15:08:03.393 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_connected state for up to 60000 ms
+info: Aug-2 15:08:03.394 [INFO] Got start data from Socket Manager; hydrating it
+warn: Aug-2 15:08:03.400 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Aug-2 15:08:03.401 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Aug-2 15:08:03.402 [API-Q] (T4ALJRY56) cdbc7423-1533211683.402 auth.currentSessions called with reason: NO REASON PROVIDED
+info: Aug-2 15:08:03.402 [API-Q] (T4ALJRY56) cdbc7423-1533211683.402 auth.currentSessions is ENQUEUED
+info: Aug-2 15:08:03.403 [API-Q] (T4ALJRY56) cdbc7423-1533211683.402 auth.currentSessions is ACTIVE
+info: Aug-2 15:08:03.428 [API-Q] (T4ALJRY56) cdbc7423-1533211683.427 i18n.translations.get called with reason: NO REASON PROVIDED
+info: Aug-2 15:08:03.428 [API-Q] (T4ALJRY56) cdbc7423-1533211683.427 i18n.translations.get is ENQUEUED
+info: Aug-2 15:08:03.428 [API-Q] (T4ALJRY56) cdbc7423-1533211683.427 i18n.translations.get is ACTIVE
+info: Aug-2 15:08:03.517 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Aug-2 15:08:03.517 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_connected to prov_finalize
+info: Aug-2 15:08:03.517 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_finalize state for up to 10000 ms
+info: Aug-2 15:08:03.518 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_finalize to prov_finalizing
+info: Aug-2 15:08:03.518 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_finalizing state for up to 10000 ms
+info: Aug-2 15:08:03.518 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_finalizing to connected
+info: Aug-2 15:08:03.518 [SOCKET-MANAGER] (T4ALJRY56) will stay in connected state for up to Infinity ms
+info: Aug-2 15:08:03.518 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+warn: Aug-2 15:08:03.520 error getActiveModelOb found no ob
+warn: Aug-2 15:08:03.520 TS.boot_data.channel_id: undefined
+warn: Aug-2 15:08:03.520 TS.boot_data.im_id: undefined
+warn: Aug-2 15:08:03.520 TS.boot_data.group_id: undefined
+info: Aug-2 15:08:03.525 [INFO] Uplink, created handle: 256943037071337
+info: Aug-2 15:08:03.527 [INFO] JoinedRoom: {"room_id":"RC0QTJPK2","participant_id":201174571931265}
+info: Aug-2 15:08:03.527 [INFO] StateTransition: {"state":"CALLS_IN_ROOM","reconnect_attempt":0,"prev_state":"CALLS_JOIN_ROOM","reachability":true}
+info: Aug-2 15:08:03.528 [INFO] Resetting peer connection.
+info: Aug-2 15:08:03.529 [INFO] PublisherJoined: {"participant_id":201174571931265}
+warn: Aug-2 15:08:03.531 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:08:03.531 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:08:03.669 [API-Q] (T4ALJRY56) cdbc7423-1533211683.669 users.prefs.set called with reason: NO REASON PROVIDED
+info: Aug-2 15:08:03.669 [API-Q] (T4ALJRY56) cdbc7423-1533211683.669 users.prefs.set is ENQUEUED
+info: Aug-2 15:08:03.669 [API-Q] (T4ALJRY56) cdbc7423-1533211683.669 users.prefs.set is ACTIVE
+info: Aug-2 15:08:03.672 [INFO] SelectedBandwidthChanged: min_bandwidth_group: 1250
+info: Aug-2 15:08:03.685 [INFO] Uplink: participant_id: 201174571931265 candidate: {"candidate":"candidate:67185311 1 udp 41885951 10.51.24.182 64364 typ relay raddr 0.0.0.0 rport 0 generation 0 ufrag VAZq network-id 1","sdpMid":"audio","sdpMLineIndex":0}
+info: Aug-2 15:08:03.685 [INFO] Uplink: participant_id: 201174571931265 candidate: {"candidate":"candidate:1250088559 1 udp 25108479 10.51.24.182 63846 typ relay raddr 0.0.0.0 rport 0 generation 0 ufrag VAZq network-id 1","sdpMid":"audio","sdpMLineIndex":0}
+info: Aug-2 15:08:03.717 [API-Q] (T4ALJRY56) cdbc7423-1533211683.427 i18n.translations.get is RESOLVED
+warn: Aug-2 15:08:03.742 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:03.742 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:03.742 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:03.742 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:03.742 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:03.743 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:03.743 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Aug-2 15:08:03.776 [INFO] Uplink: participant_id: 201174571931265 candidate: {"candidate":"candidate:1410571034 1 udp 8331007 10.51.24.182 52198 typ relay raddr 0.0.0.0 rport 0 generation 0 ufrag VAZq network-id 1","sdpMid":"audio","sdpMLineIndex":0}
+info: Aug-2 15:08:03.777 [INFO] Uplink: participant_id: 201174571931265 candidate:
+info: Aug-2 15:08:03.778 [INFO] ParticipantConnectionStateChanged: {"participant_id":201174571931265,"state_str":"checking","state":1}
+info: Aug-2 15:08:03.804 [INFO] StateTransition: {"state":"CALLS_PUBLISHER_CONNECTED","reconnect_attempt":0,"prev_state":"CALLS_IN_ROOM","reachability":true}
+info: Aug-2 15:08:03.807 [INFO] ParticipantConnectionStateChanged: {"participant_id":201174571931265,"state_str":"connected","state":2}
+info: Aug-2 15:08:03.818 [INFO] ParticipantConnectionStateChanged: {"participant_id":201174571931265,"state_str":"completed","state":3}
+info: Aug-2 15:08:03.830 [INFO] AudioDevicesChanged: {"audio_input_devices":[{"id":"default","name":"Default"},{"id":"3705fa3b06470123af4dba484eae38a7fadd909f67729e68916a11b5b5244e40","name":"Built-in Input"},{"id":"5241f5c6a96d053ea53e0dc1af8d7752096c3fe37914eb0f1d517e56c56c94a8","name":"Built-in Line Input"},{"id":"29e03df7b14edfa3ce26c09ee607d78a1be608bba09f3a723bda98b6b3d2cb7b","name":"Unknown USB Audio Device"}],"audio_output_devices":[{"id":"default","name":"Default"},{"id":"4b6161a76c644ef7a340e48be1dbf603b700fa08a5714c866e4deab1d5235f8c","name":"Built-in Output"},{"id":"659a25c88abd87e9aeab152a5bf88b3d4391990d2d8e2e9de8d00d3183d12c0d","name":"Built-in Digital Output"}]}
+info: Aug-2 15:08:03.830 [INFO] StoredAudioDevicesPrefs: {}
+info: Aug-2 15:08:03.830 [INFO] Setting audio output device for all participants to: {"id":"default","name":"Default"}
+info: Aug-2 15:08:03.834 [INFO] VideoDevicesChanged: {"video_input_devices":[{"id":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e","name":"USB Camera (046d:0825)"}]}
+info: Aug-2 15:08:03.835 [INFO] StoredVideoDevicesPrefs: {}
+info: Aug-2 15:08:03.835 [INFO] SavedInputVideoDeviceAvailable: {"name":"USB Camera (046d:0825)"}
+info: Aug-2 15:08:03.836 [INFO] Prompted device enumeration took 162 ms
+info: Aug-2 15:08:03.853 [INFO] Got audio track: (0f832f0b-a4ae-4aba-9bab-9eac02ece925, Default) with settings {"deviceId":"default","echoCancellation":true}
+info: Aug-2 15:08:03.854 [INFO] Changing audio tracks from (337d3de6-9d92-4f11-a630-d06c7773d720, MediaStreamAudioDestinationNode) to (0f832f0b-a4ae-4aba-9bab-9eac02ece925, Default)
+info: Aug-2 15:08:03.872 [API-Q] (T4ALJRY56) cdbc7423-1533211683.402 auth.currentSessions is RESOLVED
+info: Aug-2 15:08:03.979 [INFO] ParticipantJoined: {"participant_id":53516341760494,"slack_id":"U6R98FXK5","is_newly_joined_participant":false}
+warn: Aug-2 15:08:03.979 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:08:03.979 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:08:03.991 [INFO] Setting audio output device for participant 53516341760494 to: {"id":"default","name":"Default"}
+warn: Aug-2 15:08:03.993 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:08:03.994 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:08:04.030 [INFO] ParticipantJoined: {"participant_id":125445024308034,"slack_id":"U4JLR0VFW","is_newly_joined_participant":false}
+warn: Aug-2 15:08:04.031 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:08:04.031 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:08:04.040 [INFO] Setting audio output device for participant 125445024308034 to: {"id":"default","name":"Default"}
+warn: Aug-2 15:08:04.043 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:08:04.043 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:08:04.073 [INFO] ParticipantJoined: {"participant_id":273569417537996,"slack_id":"U4S90BGCS","is_newly_joined_participant":false}
+warn: Aug-2 15:08:04.074 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:08:04.076 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:08:04.091 [INFO] Setting audio output device for participant 273569417537996 to: {"id":"default","name":"Default"}
+warn: Aug-2 15:08:04.094 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:08:04.094 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:08:04.120 [INFO] ParticipantStateServer: {"participant_id":53516341760494,"is_connected":true}
+info: Aug-2 15:08:04.139 [INFO] ParticipantStateServer: {"participant_id":125445024308034,"is_connected":true}
+info: Aug-2 15:08:04.142 [INFO] ParticipantStateServer: {"participant_id":201174571931265,"is_connected":true}
+info: Aug-2 15:08:04.144 [INFO] ParticipantStateServer: {"participant_id":273569417537996,"is_connected":true}
+warn: Aug-2 15:08:04.208 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.209 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.209 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.209 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.209 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.209 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.230 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.230 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.230 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.230 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.230 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.230 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.248 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.248 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.248 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.249 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.249 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.249 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Aug-2 15:08:04.286 [API-Q] (T4ALJRY56) cdbc7423-1533211683.669 users.prefs.set is RESOLVED
+warn: Aug-2 15:08:04.303 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.303 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.303 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.303 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.303 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.303 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.346 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.346 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.346 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.346 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.346 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.346 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.441 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.441 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.441 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.441 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.441 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.441 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.468 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.468 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.468 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.468 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.468 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.468 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.485 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.485 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.485 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.485 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.485 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:08:04.485 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Aug-2 15:08:04.496 [INFO] Downlink Plan B, created handle: 269360436394027
+info: Aug-2 15:08:04.498 [INFO] ParticipantConnectionStateChanged: {"participant_id":273569417537996,"state_str":"new","state":0}
+info: Aug-2 15:08:04.499 [INFO] ParticipantConnectionStateChanged: {"participant_id":125445024308034,"state_str":"new","state":0}
+info: Aug-2 15:08:04.500 [INFO] ParticipantConnectionStateChanged: {"participant_id":53516341760494,"state_str":"new","state":0}
+info: Aug-2 15:08:04.501 [INFO] Downlink: Plan B: SDP:  v=0
+o=- 226483 226483 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video data
+a=msid-semantic: WMS mcu53516341760494 mcu125445024308034 mcu273569417537996
+m=audio 12645 RTP/SAVPF 111
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendonly
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1;usedtx=1
+a=rtcp-mux
+a=connection:new
+a=ssrc:3894303986 cname:mcu53516341760494
+a=ssrc:3894303986 msid:mcu53516341760494 mcu53516341760494a0
+a=ssrc:3894303986 mslabel:mcu53516341760494
+a=ssrc:3894303986 label:mcu53516341760494a0
+a=ssrc:3018676226 cname:mcu273569417537996
+a=ssrc:3018676226 msid:mcu273569417537996 mcu273569417537996a0
+a=ssrc:3018676226 mslabel:mcu273569417537996
+a=ssrc:3018676226 label:mcu273569417537996a0
+a=ssrc:1298202574 cname:mcu125445024308034
+a=ssrc:1298202574 msid:mcu125445024308034 mcu125445024308034a0
+a=ssrc:1298202574 mslabel:mcu125445024308034
+a=ssrc:1298202574 label:mcu125445024308034a0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=video 12645 RTP/SAVPF 100 116 117 96 98
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:video
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=sendonly
+a=rtpmap:100 VP8/90000
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtpmap:116 red/90000
+a=rtpmap:117 ulpfec/90000
+a=rtpmap:96 rtx/90000
+a=fmtp:96 apt=100
+a=rtpmap:98 rtx/90000
+a=fmtp:98 apt=116
+a=rtcp-mux
+a=connection:new
+a=x-google-flag:conference
+a=ssrc-group:FID 2470378717 1762961392
+a=ssrc:2470378717 cname:mcu53516341760494
+a=ssrc:2470378717 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:2470378717 mslabel:mcu53516341760494
+a=ssrc:2470378717 label:mcu53516341760494v0
+a=ssrc:1762961392 cname:mcu53516341760494
+a=ssrc:1762961392 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:1762961392 mslabel:mcu53516341760494
+a=ssrc:1762961392 label:mcu53516341760494v0
+a=ssrc-group:FID 1208243143 749644675
+a=ssrc:1208243143 cname:mcu273569417537996
+a=ssrc:1208243143 msid:mcu273569417537996 mcu273569417537996v0
+a=ssrc:1208243143 mslabel:mcu273569417537996
+a=ssrc:1208243143 label:mcu273569417537996v0
+a=ssrc:749644675 cname:mcu273569417537996
+a=ssrc:749644675 msid:mcu273569417537996 mcu273569417537996v0
+a=ssrc:749644675 mslabel:mcu273569417537996
+a=ssrc:749644675 label:mcu273569417537996v0
+a=ssrc-group:FID 2315348394 2981800690
+a=ssrc:2315348394 cname:mcu125445024308034
+a=ssrc:2315348394 msid:mcu125445024308034 mcu125445024308034v0
+a=ssrc:2315348394 mslabel:mcu125445024308034
+a=ssrc:2315348394 label:mcu125445024308034v0
+a=ssrc:2981800690 cname:mcu125445024308034
+a=ssrc:2981800690 msid:mcu125445024308034 mcu125445024308034v0
+a=ssrc:2981800690 mslabel:mcu125445024308034
+a=ssrc:2981800690 label:mcu125445024308034v0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=application 12645 DTLS/SCTP 5000
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:data
+a=sendonly
+a=sctpmap:5000 webrtc-datachannel 1024
+a=connection:new
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+
+info: Aug-2 15:08:04.736 [INFO] MediaStreamReceived: {"is_local":false,"participant_id":"53516341760494"}
+info: Aug-2 15:08:04.741 [INFO] MediaStreamReceived: {"is_local":false,"participant_id":"273569417537996"}
+info: Aug-2 15:08:04.741 [INFO] MediaStreamReceived: {"is_local":false,"participant_id":"125445024308034"}
+info: Aug-2 15:08:04.760 [INFO] ParticipantConnectionStateChanged: {"participant_id":273569417537996,"state_str":"checking","state":1}
+info: Aug-2 15:08:04.761 [INFO] ParticipantConnectionStateChanged: {"participant_id":125445024308034,"state_str":"checking","state":1}
+info: Aug-2 15:08:04.762 [INFO] ParticipantConnectionStateChanged: {"participant_id":53516341760494,"state_str":"checking","state":1}
+info: Aug-2 15:08:04.897 [INFO] Downlink: Plan B, candidate: {"candidate":"candidate:67185311 1 udp 41885951 10.51.24.182 49747 typ relay raddr 0.0.0.0 rport 0 generation 0 ufrag FWEP network-id 1","sdpMid":"audio","sdpMLineIndex":0}
+info: Aug-2 15:08:04.941 [INFO] Downlink: Plan B, candidate: {"candidate":"candidate:1250088559 1 udp 25108479 10.51.24.182 61472 typ relay raddr 0.0.0.0 rport 0 generation 0 ufrag FWEP network-id 1","sdpMid":"audio","sdpMLineIndex":0}
+info: Aug-2 15:08:04.947 [INFO] Downlink: Plan B, candidate:
+info: Aug-2 15:08:04.999 [INFO] ParticipantConnectionStateChanged: {"participant_id":273569417537996,"state_str":"connected","state":2}
+info: Aug-2 15:08:05.007 [INFO] ParticipantConnectionStateChanged: {"participant_id":125445024308034,"state_str":"connected","state":2}
+info: Aug-2 15:08:05.013 [INFO] ParticipantConnectionStateChanged: {"participant_id":53516341760494,"state_str":"connected","state":2}
+info: Aug-2 15:08:05.256 [INFO] Candidate: {"portNumber":64364,"networkType":"lan","ipAddress":"10.51.24.182","transport":"udp","candidateType":"relayed","priority":41885951,"id":"Cand-19VXSLUD","type":"localcandidate","timestamp":"2018-08-02T12:08:03.785Z","slack_stat_type":false,"direction":"Uplink","participant_id":201174571931265,"actual_transport":"udp"}
+info: Aug-2 15:08:05.256 [INFO] Candidate: {"portNumber":12641,"ipAddress":"10.51.24.182","transport":"udp","candidateType":"host","priority":1000,"id":"Cand-5YQuX+uA","type":"remotecandidate","timestamp":"2018-08-02T12:08:03.785Z","slack_stat_type":false,"direction":"Uplink","participant_id":201174571931265,"actual_transport":"udp"}
+info: Aug-2 15:08:05.256 [INFO] Candidate: {"portNumber":63846,"networkType":"lan","ipAddress":"10.51.24.182","transport":"udp","candidateType":"relayed","priority":25108479,"id":"Cand-Jm4RAPsy","type":"localcandidate","timestamp":"2018-08-02T12:08:03.785Z","slack_stat_type":false,"direction":"Uplink","participant_id":201174571931265,"actual_transport":"tcp"}
+info: Aug-2 15:08:05.256 [INFO] Candidate: {"portNumber":52198,"networkType":"lan","ipAddress":"10.51.24.182","transport":"udp","candidateType":"relayed","priority":8331007,"id":"Cand-Vt2drYUO","type":"localcandidate","timestamp":"2018-08-02T12:08:03.785Z","slack_stat_type":false,"direction":"Uplink","participant_id":201174571931265,"actual_transport":"tls"}
+info: Aug-2 15:08:05.257 [INFO] ActiveCandidatePair: {"responsesSent":0,"requestsReceived":0,"googRemoteCandidateType":"local","googReadable":true,"googLocalAddress":"10.51.24.182:64364","consentRequestsSent":1,"googTransportType":"udp","googChannelId":"Channel-audio-1","googLocalCandidateType":"relay","googWritable":true,"requestsSent":4,"googRemoteAddress":"10.51.24.182:12641","googRtt":44,"googActiveConnection":true,"packetsDiscardedOnSend":0,"bytesReceived":2565,"responsesReceived":4,"remoteCandidateId":"Cand-5YQuX+uA","localCandidateId":"Cand-19VXSLUD","bytesSent":10725,"packetsSent":80,"id":"Conn-audio-1-0","type":"googCandidatePair","timestamp":"2018-08-02T12:08:05.249Z","slack_stat_type":"network_stats","direction":"Uplink","participant_id":201174571931265,"actual_transport":"udp"}
+info: Aug-2 15:08:05.257 [INFO] CandidatePair: {"responsesSent":0,"requestsReceived":0,"googRemoteCandidateType":"local","googReadable":false,"googLocalAddress":"10.51.24.182:63846","consentRequestsSent":0,"googTransportType":"udp","googChannelId":"Channel-audio-1","googLocalCandidateType":"relay","googWritable":false,"requestsSent":0,"googRemoteAddress":"10.51.24.182:12641","googRtt":3000,"googActiveConnection":false,"packetsDiscardedOnSend":0,"bytesReceived":0,"responsesReceived":0,"remoteCandidateId":"Cand-5YQuX+uA","localCandidateId":"Cand-Jm4RAPsy","bytesSent":0,"packetsSent":0,"id":"Conn-audio-1-1","type":"googCandidatePair","timestamp":"2018-08-02T12:08:05.249Z","slack_stat_type":false,"direction":"Uplink","participant_id":201174571931265,"actual_transport":"tcp"}
+info: Aug-2 15:08:05.257 [INFO] CandidatePair: {"responsesSent":0,"requestsReceived":0,"googRemoteCandidateType":"local","googReadable":false,"googLocalAddress":"10.51.24.182:52198","consentRequestsSent":0,"googTransportType":"udp","googChannelId":"Channel-audio-1","googLocalCandidateType":"relay","googWritable":false,"requestsSent":0,"googRemoteAddress":"10.51.24.182:12641","googRtt":3000,"googActiveConnection":false,"packetsDiscardedOnSend":0,"bytesReceived":0,"responsesReceived":0,"remoteCandidateId":"Cand-5YQuX+uA","localCandidateId":"Cand-Vt2drYUO","bytesSent":0,"packetsSent":0,"id":"Conn-audio-1-2","type":"googCandidatePair","timestamp":"2018-08-02T12:08:05.249Z","slack_stat_type":false,"direction":"Uplink","participant_id":201174571931265,"actual_transport":"tls"}
+info: Aug-2 15:08:06.742 [INFO] Candidate: {"portNumber":49747,"networkType":"lan","ipAddress":"10.51.24.182","transport":"udp","candidateType":"relayed","priority":41885951,"id":"Cand-gjQ1DF05","type":"localcandidate","timestamp":"2018-08-02T12:08:04.986Z","slack_stat_type":false,"direction":"Downlink","participant_id":"PlanB","actual_transport":"udp"}
+info: Aug-2 15:08:06.742 [INFO] Candidate: {"portNumber":12645,"ipAddress":"10.51.24.182","transport":"udp","candidateType":"host","priority":1000,"id":"Cand-c7Ti7nKm","type":"remotecandidate","timestamp":"2018-08-02T12:08:04.986Z","slack_stat_type":false,"direction":"Downlink","participant_id":"PlanB","actual_transport":"udp"}
+info: Aug-2 15:08:06.742 [INFO] Candidate: {"portNumber":61472,"networkType":"lan","ipAddress":"10.51.24.182","transport":"udp","candidateType":"relayed","priority":25108479,"id":"Cand-IQbB+f/3","type":"localcandidate","timestamp":"2018-08-02T12:08:04.986Z","slack_stat_type":false,"direction":"Downlink","participant_id":"PlanB","actual_transport":"tcp"}
+info: Aug-2 15:08:06.744 [INFO] ActiveCandidatePair: {"responsesSent":0,"requestsReceived":0,"googRemoteCandidateType":"local","googReadable":true,"googLocalAddress":"10.51.24.182:49747","consentRequestsSent":1,"googTransportType":"udp","googChannelId":"Channel-audio-1","googLocalCandidateType":"relay","googWritable":true,"requestsSent":4,"googRemoteAddress":"10.51.24.182:12645","googRtt":49,"googActiveConnection":true,"packetsDiscardedOnSend":0,"bytesReceived":241209,"responsesReceived":4,"remoteCandidateId":"Cand-c7Ti7nKm","localCandidateId":"Cand-gjQ1DF05","bytesSent":4689,"packetsSent":45,"id":"Conn-audio-1-0","type":"googCandidatePair","timestamp":"2018-08-02T12:08:06.736Z","slack_stat_type":"network_stats","direction":"Downlink","participant_id":"PlanB","actual_transport":"udp"}
+info: Aug-2 15:08:06.744 [INFO] CandidatePair: {"responsesSent":0,"requestsReceived":0,"googRemoteCandidateType":"local","googReadable":false,"googLocalAddress":"10.51.24.182:61472","consentRequestsSent":5,"googTransportType":"udp","googChannelId":"Channel-audio-1","googLocalCandidateType":"relay","googWritable":false,"requestsSent":5,"googRemoteAddress":"10.51.24.182:12645","googRtt":3000,"googActiveConnection":false,"packetsDiscardedOnSend":0,"bytesReceived":0,"responsesReceived":0,"remoteCandidateId":"Cand-c7Ti7nKm","localCandidateId":"Cand-IQbB+f/3","bytesSent":0,"packetsSent":0,"id":"Conn-audio-1-1","type":"googCandidatePair","timestamp":"2018-08-02T12:08:06.736Z","slack_stat_type":false,"direction":"Downlink","participant_id":"PlanB","actual_transport":"tcp"}
+info: Aug-2 15:08:07.232 [FOCUS-EVENT] Mousedown while !is_window_focused
+info: Aug-2 15:08:07.232 [FOCUS-EVENT] Window focused
+info: Aug-2 15:08:16.558 [FOCUS-EVENT] Window blurred
+info: Aug-2 15:08:21.727 [FOCUS-EVENT] Window focused
+info: Aug-2 15:08:21.729 [FOCUS-EVENT] Window blurred
+info: Aug-2 15:08:55.473 [FOCUS-EVENT] Window focused
+info: Aug-2 15:08:59.414 [INFO] AudioDevicesChanged: {"audio_input_devices":[{"id":"default","name":"Default"},{"id":"3705fa3b06470123af4dba484eae38a7fadd909f67729e68916a11b5b5244e40","name":"Built-in Input"},{"id":"5241f5c6a96d053ea53e0dc1af8d7752096c3fe37914eb0f1d517e56c56c94a8","name":"Built-in Line Input"},{"id":"29e03df7b14edfa3ce26c09ee607d78a1be608bba09f3a723bda98b6b3d2cb7b","name":"Unknown USB Audio Device"}],"audio_output_devices":[{"id":"default","name":"Default"},{"id":"4b6161a76c644ef7a340e48be1dbf603b700fa08a5714c866e4deab1d5235f8c","name":"Built-in Output"},{"id":"659a25c88abd87e9aeab152a5bf88b3d4391990d2d8e2e9de8d00d3183d12c0d","name":"Built-in Digital Output"}]}
+info: Aug-2 15:08:59.414 [INFO] StoredAudioDevicesPrefs: {}
+info: Aug-2 15:08:59.414 [INFO] Setting audio output device for all participants to: {"id":"default","name":"Default"}
+info: Aug-2 15:08:59.424 [INFO] VideoDevicesChanged: {"video_input_devices":[{"id":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e","name":"USB Camera (046d:0825)"}]}
+info: Aug-2 15:08:59.424 [INFO] StoredVideoDevicesPrefs: {"input":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e"}
+info: Aug-2 15:08:59.424 [INFO] SavedInputVideoDeviceAvailable: {"name":"USB Camera (046d:0825)"}
+info: Aug-2 15:08:59.496 [INFO] Got audio track: (9534d6b9-e08b-428b-8a7f-769e2b2de884, Default) with settings {"deviceId":"default","echoCancellation":true}
+info: Aug-2 15:08:59.498 [INFO] Changing audio tracks from (0f832f0b-a4ae-4aba-9bab-9eac02ece925, Default) to (9534d6b9-e08b-428b-8a7f-769e2b2de884, Default)
+info: Aug-2 15:09:05.745 [INFO] SelectedAudioInputDeviceChanged: {"device":"Unknown USB Audio Device"}
+info: Aug-2 15:09:05.769 [INFO] Got audio track: (19ae10a4-a27c-4516-8d62-b8fddff079a1, Unknown USB Audio Device) with settings {"deviceId":"29e03df7b14edfa3ce26c09ee607d78a1be608bba09f3a723bda98b6b3d2cb7b","echoCancellation":true}
+info: Aug-2 15:09:05.770 [INFO] Changing audio tracks from (9534d6b9-e08b-428b-8a7f-769e2b2de884, Default) to (19ae10a4-a27c-4516-8d62-b8fddff079a1, Unknown USB Audio Device)
+info: Aug-2 15:09:08.603 [API-Q] (T4ALJRY56) cdbc7423-1533211748.603 screenhero.rooms.rename called with reason: NO REASON PROVIDED
+info: Aug-2 15:09:08.603 [API-Q] (T4ALJRY56) cdbc7423-1533211748.603 screenhero.rooms.rename is ENQUEUED
+info: Aug-2 15:09:08.603 [API-Q] (T4ALJRY56) cdbc7423-1533211748.603 screenhero.rooms.rename is ACTIVE
+info: Aug-2 15:09:08.783 [API-Q] (T4ALJRY56) cdbc7423-1533211748.603 screenhero.rooms.rename is RESOLVED
+info: Aug-2 15:09:09.644 [API-Q] (T4ALJRY56) cdbc7423-1533211749.643 screenhero.rooms.rename called with reason: NO REASON PROVIDED
+info: Aug-2 15:09:09.644 [API-Q] (T4ALJRY56) cdbc7423-1533211749.643 screenhero.rooms.rename is ENQUEUED
+info: Aug-2 15:09:09.644 [API-Q] (T4ALJRY56) cdbc7423-1533211749.643 screenhero.rooms.rename is ACTIVE
+info: Aug-2 15:09:09.810 [API-Q] (T4ALJRY56) cdbc7423-1533211749.643 screenhero.rooms.rename is RESOLVED
+info: Aug-2 15:09:12.187 [INFO] SettingsCameraActive: {"is_active":false}
+info: Aug-2 15:09:12.934 [FOCUS-EVENT] Window blurred
+info: Aug-2 15:09:33.178 [FOCUS-EVENT] Window focused
+info: Aug-2 15:09:33.181 [FOCUS-EVENT] Window blurred
+info: Aug-2 15:11:06.295 [INFO] MsgFromParentWin: {"message_type":"mini_panel_action","action":"mute"}
+info: Aug-2 15:11:07.104 [INFO] MsgFromParentWin: {"message_type":"mini_panel_action","action":"mute"}
+info: Aug-2 15:12:19.634 [FOCUS-EVENT] Window focused
+info: Aug-2 15:12:20.438 [INFO] AudioDevicesChanged: {"audio_input_devices":[{"id":"default","name":"Default"},{"id":"3705fa3b06470123af4dba484eae38a7fadd909f67729e68916a11b5b5244e40","name":"Built-in Input"},{"id":"5241f5c6a96d053ea53e0dc1af8d7752096c3fe37914eb0f1d517e56c56c94a8","name":"Built-in Line Input"},{"id":"29e03df7b14edfa3ce26c09ee607d78a1be608bba09f3a723bda98b6b3d2cb7b","name":"Unknown USB Audio Device"}],"audio_output_devices":[{"id":"default","name":"Default"},{"id":"4b6161a76c644ef7a340e48be1dbf603b700fa08a5714c866e4deab1d5235f8c","name":"Built-in Output"},{"id":"659a25c88abd87e9aeab152a5bf88b3d4391990d2d8e2e9de8d00d3183d12c0d","name":"Built-in Digital Output"}]}
+info: Aug-2 15:12:20.438 [INFO] StoredAudioDevicesPrefs: {"input":"Unknown USB Audio Device"}
+info: Aug-2 15:12:20.438 [INFO] SavedInputAudioDeviceAvailable: {"name":"Unknown USB Audio Device"}
+info: Aug-2 15:12:20.438 [INFO] Setting audio output device for all participants to: {"id":"default","name":"Default"}
+info: Aug-2 15:12:20.440 [INFO] VideoDevicesChanged: {"video_input_devices":[{"id":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e","name":"USB Camera (046d:0825)"}]}
+info: Aug-2 15:12:20.440 [INFO] StoredVideoDevicesPrefs: {"input":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e"}
+info: Aug-2 15:12:20.440 [INFO] SavedInputVideoDeviceAvailable: {"name":"USB Camera (046d:0825)"}
+info: Aug-2 15:12:20.462 [INFO] Got audio track: (128c11b8-92d2-4a43-8758-9258ba82ed51, Unknown USB Audio Device) with settings {"deviceId":"29e03df7b14edfa3ce26c09ee607d78a1be608bba09f3a723bda98b6b3d2cb7b","echoCancellation":true}
+info: Aug-2 15:12:20.463 [INFO] Changing audio tracks from (19ae10a4-a27c-4516-8d62-b8fddff079a1, Unknown USB Audio Device) to (128c11b8-92d2-4a43-8758-9258ba82ed51, Unknown USB Audio Device)
+info: Aug-2 15:12:26.256 [FOCUS-EVENT] Window blurred
+info: Aug-2 15:12:37.185 [FOCUS-EVENT] Window focused
+info: Aug-2 15:12:39.753 [INFO] SelectedAudioInputDeviceChanged: {"device":"Built-in Input"}
+info: Aug-2 15:12:39.780 [INFO] Got audio track: (e764da8e-da04-4ec5-a27e-69d65f66ab57, Built-in Input) with settings {"deviceId":"3705fa3b06470123af4dba484eae38a7fadd909f67729e68916a11b5b5244e40","echoCancellation":true}
+info: Aug-2 15:12:39.781 [INFO] Changing audio tracks from (128c11b8-92d2-4a43-8758-9258ba82ed51, Unknown USB Audio Device) to (e764da8e-da04-4ec5-a27e-69d65f66ab57, Built-in Input)
+info: Aug-2 15:12:41.812 [INFO] SettingsCameraActive: {"is_active":false}
+info: Aug-2 15:12:43.006 [FOCUS-EVENT] Window blurred
+warn: Aug-2 15:15:16.892 error getActiveModelOb found no ob
+warn: Aug-2 15:15:16.892 TS.boot_data.channel_id: undefined
+warn: Aug-2 15:15:16.892 TS.boot_data.im_id: undefined
+warn: Aug-2 15:15:16.892 TS.boot_data.group_id: undefined
+info: Aug-2 15:15:21.570 [UNREAD-COUNTS] (T4ALJRY56) Counting unreads in CC2DW6X0X because last_read changed to 1533212118.000045
+info: Aug-2 15:15:21.571 [UNREAD-COUNTS] (T4ALJRY56) Fetching history for unread counting: CC2DW6X0X, waiting 0 ms
+info: Aug-2 15:15:21.573 [HISTORY-FETCH] (T4ALJRY56) Fetching history for unread counting: CC2DW6X0X
+info: Aug-2 15:15:21.574 [API-Q] (T4ALJRY56) cdbc7423-1533212121.574 conversations.history called with reason: unread-counts/onLastReadUpdated
+info: Aug-2 15:15:21.574 [API-Q] (T4ALJRY56) cdbc7423-1533212121.574 conversations.history is ENQUEUED
+info: Aug-2 15:15:21.574 [API-Q] (T4ALJRY56) cdbc7423-1533212121.574 conversations.history is ACTIVE
+info: Aug-2 15:15:21.747 [API-Q] (T4ALJRY56) cdbc7423-1533212121.574 conversations.history is RESOLVED
+info: Aug-2 15:16:02.452 [UNREAD-COUNTS] (T4ALJRY56) Updated unread_cnt for CC2DW6X0X: 1
+info: Aug-2 15:16:02.455 [CHECK-UNREADS] (T4ALJRY56) Not marking CC2DW6X0X because not fully booted
+info: Aug-2 15:16:03.850 [UNREAD-COUNTS] (T4ALJRY56) Counting unreads in CC2DW6X0X because last_read changed to 1533212160.000188
+info: Aug-2 15:16:03.850 [UNREAD-COUNTS] (T4ALJRY56) Updated unread_cnt for CC2DW6X0X: 0
+info: Aug-2 15:16:23.181 [INFO] ParticipantJoined: {"participant_id":132757529885628,"slack_id":"U69MKMHQX","is_newly_joined_participant":true}
+warn: Aug-2 15:16:23.181 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:16:23.181 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:16:23.191 [INFO] Setting audio output device for participant 132757529885628 to: {"id":"default","name":"Default"}
+warn: Aug-2 15:16:23.195 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:16:23.195 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:16:23.195 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:16:23.195 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:16:23.217 [INFO] ParticipantStateServer: {"participant_id":132757529885628,"is_connected":true}
+warn: Aug-2 15:16:23.251 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.251 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.251 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.252 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.252 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.252 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.273 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.273 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.273 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.273 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.273 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.273 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.283 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.283 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.283 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.283 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.283 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-2 15:16:23.283 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Aug-2 15:16:23.592 [INFO] ParticipantConnectionStateChanged: {"participant_id":273569417537996,"state_str":"connected","state":2}
+info: Aug-2 15:16:23.594 [INFO] ParticipantConnectionStateChanged: {"participant_id":125445024308034,"state_str":"connected","state":2}
+info: Aug-2 15:16:23.595 [INFO] ParticipantConnectionStateChanged: {"participant_id":53516341760494,"state_str":"connected","state":2}
+info: Aug-2 15:16:23.595 [INFO] ParticipantConnectionStateChanged: {"participant_id":132757529885628,"state_str":"connected","state":2}
+info: Aug-2 15:16:23.596 [INFO] Downlink: Plan B: SDP:  v=0
+o=- 226547 226547 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video data
+a=msid-semantic: WMS mcu53516341760494 mcu125445024308034 mcu132757529885628 mcu273569417537996
+m=audio 12645 RTP/SAVPF 111
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendonly
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1;usedtx=1
+a=rtcp-mux
+a=connection:new
+a=ssrc:3894303986 cname:mcu53516341760494
+a=ssrc:3894303986 msid:mcu53516341760494 mcu53516341760494a0
+a=ssrc:3894303986 mslabel:mcu53516341760494
+a=ssrc:3894303986 label:mcu53516341760494a0
+a=ssrc:3018676226 cname:mcu273569417537996
+a=ssrc:3018676226 msid:mcu273569417537996 mcu273569417537996a0
+a=ssrc:3018676226 mslabel:mcu273569417537996
+a=ssrc:3018676226 label:mcu273569417537996a0
+a=ssrc:1013404822 cname:mcu132757529885628
+a=ssrc:1013404822 msid:mcu132757529885628 mcu132757529885628a0
+a=ssrc:1013404822 mslabel:mcu132757529885628
+a=ssrc:1013404822 label:mcu132757529885628a0
+a=ssrc:1298202574 cname:mcu125445024308034
+a=ssrc:1298202574 msid:mcu125445024308034 mcu125445024308034a0
+a=ssrc:1298202574 mslabel:mcu125445024308034
+a=ssrc:1298202574 label:mcu125445024308034a0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=video 12645 RTP/SAVPF 100 116 117 96 98
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:video
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=sendonly
+a=rtpmap:100 VP8/90000
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtpmap:116 red/90000
+a=rtpmap:117 ulpfec/90000
+a=rtpmap:96 rtx/90000
+a=fmtp:96 apt=100
+a=rtpmap:98 rtx/90000
+a=fmtp:98 apt=116
+a=rtcp-mux
+a=connection:new
+a=x-google-flag:conference
+a=ssrc-group:FID 2470378717 1762961392
+a=ssrc:2470378717 cname:mcu53516341760494
+a=ssrc:2470378717 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:2470378717 mslabel:mcu53516341760494
+a=ssrc:2470378717 label:mcu53516341760494v0
+a=ssrc:1762961392 cname:mcu53516341760494
+a=ssrc:1762961392 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:1762961392 mslabel:mcu53516341760494
+a=ssrc:1762961392 label:mcu53516341760494v0
+a=ssrc-group:FID 1208243143 749644675
+a=ssrc:1208243143 cname:mcu273569417537996
+a=ssrc:1208243143 msid:mcu273569417537996 mcu273569417537996v0
+a=ssrc:1208243143 mslabel:mcu273569417537996
+a=ssrc:1208243143 label:mcu273569417537996v0
+a=ssrc:749644675 cname:mcu273569417537996
+a=ssrc:749644675 msid:mcu273569417537996 mcu273569417537996v0
+a=ssrc:749644675 mslabel:mcu273569417537996
+a=ssrc:749644675 label:mcu273569417537996v0
+a=ssrc-group:FID 3395882214 3865814573
+a=ssrc:3395882214 cname:mcu132757529885628
+a=ssrc:3395882214 msid:mcu132757529885628 mcu132757529885628v0
+a=ssrc:3395882214 mslabel:mcu132757529885628
+a=ssrc:3395882214 label:mcu132757529885628v0
+a=ssrc:3865814573 cname:mcu132757529885628
+a=ssrc:3865814573 msid:mcu132757529885628 mcu132757529885628v0
+a=ssrc:3865814573 mslabel:mcu132757529885628
+a=ssrc:3865814573 label:mcu132757529885628v0
+a=ssrc-group:FID 2315348394 2981800690
+a=ssrc:2315348394 cname:mcu125445024308034
+a=ssrc:2315348394 msid:mcu125445024308034 mcu125445024308034v0
+a=ssrc:2315348394 mslabel:mcu125445024308034
+a=ssrc:2315348394 label:mcu125445024308034v0
+a=ssrc:2981800690 cname:mcu125445024308034
+a=ssrc:2981800690 msid:mcu125445024308034 mcu125445024308034v0
+a=ssrc:2981800690 mslabel:mcu125445024308034
+a=ssrc:2981800690 label:mcu125445024308034v0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=application 12645 DTLS/SCTP 5000
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:data
+a=sendonly
+a=sctpmap:5000 webrtc-datachannel 1024
+a=connection:new
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+
+info: Aug-2 15:16:23.603 [INFO] MediaStreamReceived: {"is_local":false,"participant_id":"132757529885628"}
+info: Aug-2 15:37:13.120 [FOCUS-EVENT] Window focused
+info: Aug-2 15:37:13.985 [INFO] ParticipantLeft: {"participant_id":273569417537996}
+warn: Aug-2 15:37:13.986 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:13.986 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:14.000 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:14.000 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:37:14.339 [INFO] ParticipantLeft: {"participant_id":132757529885628}
+warn: Aug-2 15:37:14.340 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:14.340 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:14.346 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:14.346 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:37:14.351 [INFO] Downlink: Plan B: SDP:  v=0
+o=- 226701 226701 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video data
+a=msid-semantic: WMS mcu53516341760494 mcu125445024308034 mcu132757529885628
+m=audio 12645 RTP/SAVPF 111
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendonly
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1;usedtx=1
+a=rtcp-mux
+a=connection:new
+a=ssrc:3894303986 cname:mcu53516341760494
+a=ssrc:3894303986 msid:mcu53516341760494 mcu53516341760494a0
+a=ssrc:3894303986 mslabel:mcu53516341760494
+a=ssrc:3894303986 label:mcu53516341760494a0
+a=ssrc:1013404822 cname:mcu132757529885628
+a=ssrc:1013404822 msid:mcu132757529885628 mcu132757529885628a0
+a=ssrc:1013404822 mslabel:mcu132757529885628
+a=ssrc:1013404822 label:mcu132757529885628a0
+a=ssrc:1298202574 cname:mcu125445024308034
+a=ssrc:1298202574 msid:mcu125445024308034 mcu125445024308034a0
+a=ssrc:1298202574 mslabel:mcu125445024308034
+a=ssrc:1298202574 label:mcu125445024308034a0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=video 12645 RTP/SAVPF 100 116 117 96 98
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:video
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=sendonly
+a=rtpmap:100 VP8/90000
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtpmap:116 red/90000
+a=rtpmap:117 ulpfec/90000
+a=rtpmap:96 rtx/90000
+a=fmtp:96 apt=100
+a=rtpmap:98 rtx/90000
+a=fmtp:98 apt=116
+a=rtcp-mux
+a=connection:new
+a=x-google-flag:conference
+a=ssrc-group:FID 2470378717 1762961392
+a=ssrc:2470378717 cname:mcu53516341760494
+a=ssrc:2470378717 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:2470378717 mslabel:mcu53516341760494
+a=ssrc:2470378717 label:mcu53516341760494v0
+a=ssrc:1762961392 cname:mcu53516341760494
+a=ssrc:1762961392 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:1762961392 mslabel:mcu53516341760494
+a=ssrc:1762961392 label:mcu53516341760494v0
+a=ssrc-group:FID 3395882214 3865814573
+a=ssrc:3395882214 cname:mcu132757529885628
+a=ssrc:3395882214 msid:mcu132757529885628 mcu132757529885628v0
+a=ssrc:3395882214 mslabel:mcu132757529885628
+a=ssrc:3395882214 label:mcu132757529885628v0
+a=ssrc:3865814573 cname:mcu132757529885628
+a=ssrc:3865814573 msid:mcu132757529885628 mcu132757529885628v0
+a=ssrc:3865814573 mslabel:mcu132757529885628
+a=ssrc:3865814573 label:mcu132757529885628v0
+a=ssrc-group:FID 2315348394 2981800690
+a=ssrc:2315348394 cname:mcu125445024308034
+a=ssrc:2315348394 msid:mcu125445024308034 mcu125445024308034v0
+a=ssrc:2315348394 mslabel:mcu125445024308034
+a=ssrc:2315348394 label:mcu125445024308034v0
+a=ssrc:2981800690 cname:mcu125445024308034
+a=ssrc:2981800690 msid:mcu125445024308034 mcu125445024308034v0
+a=ssrc:2981800690 mslabel:mcu125445024308034
+a=ssrc:2981800690 label:mcu125445024308034v0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=application 12645 DTLS/SCTP 5000
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:data
+a=sendonly
+a=sctpmap:5000 webrtc-datachannel 1024
+a=connection:new
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+
+info: Aug-2 15:37:14.352 [INFO] ParticipantLeft: {"participant_id":125445024308034}
+warn: Aug-2 15:37:14.352 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:14.352 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:14.360 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:14.361 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:37:14.373 [INFO] MediaStreamRemoved: {"is_local":false,"participant_id":"273569417537996"}
+info: Aug-2 15:37:14.461 [INFO] Downlink: Plan B: SDP:  v=0
+o=- 226704 226704 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video data
+a=msid-semantic: WMS mcu53516341760494 mcu125445024308034
+m=audio 12645 RTP/SAVPF 111
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendonly
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1;usedtx=1
+a=rtcp-mux
+a=connection:new
+a=ssrc:3894303986 cname:mcu53516341760494
+a=ssrc:3894303986 msid:mcu53516341760494 mcu53516341760494a0
+a=ssrc:3894303986 mslabel:mcu53516341760494
+a=ssrc:3894303986 label:mcu53516341760494a0
+a=ssrc:1298202574 cname:mcu125445024308034
+a=ssrc:1298202574 msid:mcu125445024308034 mcu125445024308034a0
+a=ssrc:1298202574 mslabel:mcu125445024308034
+a=ssrc:1298202574 label:mcu125445024308034a0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=video 12645 RTP/SAVPF 100 116 117 96 98
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:video
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=sendonly
+a=rtpmap:100 VP8/90000
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtpmap:116 red/90000
+a=rtpmap:117 ulpfec/90000
+a=rtpmap:96 rtx/90000
+a=fmtp:96 apt=100
+a=rtpmap:98 rtx/90000
+a=fmtp:98 apt=116
+a=rtcp-mux
+a=connection:new
+a=x-google-flag:conference
+a=ssrc-group:FID 2470378717 1762961392
+a=ssrc:2470378717 cname:mcu53516341760494
+a=ssrc:2470378717 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:2470378717 mslabel:mcu53516341760494
+a=ssrc:2470378717 label:mcu53516341760494v0
+a=ssrc:1762961392 cname:mcu53516341760494
+a=ssrc:1762961392 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:1762961392 mslabel:mcu53516341760494
+a=ssrc:1762961392 label:mcu53516341760494v0
+a=ssrc-group:FID 2315348394 2981800690
+a=ssrc:2315348394 cname:mcu125445024308034
+a=ssrc:2315348394 msid:mcu125445024308034 mcu125445024308034v0
+a=ssrc:2315348394 mslabel:mcu125445024308034
+a=ssrc:2315348394 label:mcu125445024308034v0
+a=ssrc:2981800690 cname:mcu125445024308034
+a=ssrc:2981800690 msid:mcu125445024308034 mcu125445024308034v0
+a=ssrc:2981800690 mslabel:mcu125445024308034
+a=ssrc:2981800690 label:mcu125445024308034v0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=application 12645 DTLS/SCTP 5000
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:data
+a=sendonly
+a=sctpmap:5000 webrtc-datachannel 1024
+a=connection:new
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+
+info: Aug-2 15:37:14.461 [INFO] Downlink: Plan B: SDP:  v=0
+o=- 226705 226705 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video data
+a=msid-semantic: WMS mcu53516341760494
+m=audio 12645 RTP/SAVPF 111
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendonly
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1;usedtx=1
+a=rtcp-mux
+a=connection:new
+a=ssrc:3894303986 cname:mcu53516341760494
+a=ssrc:3894303986 msid:mcu53516341760494 mcu53516341760494a0
+a=ssrc:3894303986 mslabel:mcu53516341760494
+a=ssrc:3894303986 label:mcu53516341760494a0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=video 12645 RTP/SAVPF 100 116 117 96 98
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:video
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=sendonly
+a=rtpmap:100 VP8/90000
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtpmap:116 red/90000
+a=rtpmap:117 ulpfec/90000
+a=rtpmap:96 rtx/90000
+a=fmtp:96 apt=100
+a=rtpmap:98 rtx/90000
+a=fmtp:98 apt=116
+a=rtcp-mux
+a=connection:new
+a=x-google-flag:conference
+a=ssrc-group:FID 2470378717 1762961392
+a=ssrc:2470378717 cname:mcu53516341760494
+a=ssrc:2470378717 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:2470378717 mslabel:mcu53516341760494
+a=ssrc:2470378717 label:mcu53516341760494v0
+a=ssrc:1762961392 cname:mcu53516341760494
+a=ssrc:1762961392 msid:mcu53516341760494 mcu53516341760494v0
+a=ssrc:1762961392 mslabel:mcu53516341760494
+a=ssrc:1762961392 label:mcu53516341760494v0
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+m=application 12645 DTLS/SCTP 5000
+c=IN IP4 10.51.24.182
+a=ice-ufrag:Nitg
+a=ice-pwd:u2fiM3KNfLYyUi_IPLwTBu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:data
+a=sendonly
+a=sctpmap:5000 webrtc-datachannel 1024
+a=connection:new
+a=candidate:1 1 udp 1000 10.51.24.182 12645 typ host generation 0
+
+info: Aug-2 15:37:14.468 [INFO] MediaStreamRemoved: {"is_local":false,"participant_id":"132757529885628"}
+info: Aug-2 15:37:14.468 [INFO] MediaStreamRemoved: {"is_local":false,"participant_id":"125445024308034"}
+error: Uncaught (in promise) OperationError: Failed to set local answer sdp: Called in wrong state: STATE_INPROGRESS
+info: Aug-2 15:37:16.560 [INFO] EndCall: 
+info: Aug-2 15:37:16.572 [INFO] Resetting peer connection.
+warn: Aug-2 15:37:16.576 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:16.576 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:37:16.581 [INFO] StateTransition: {"state":"CALLS_DISCONNECT_JANUS","reconnect_attempt":0,"prev_state":"CALLS_PUBLISHER_CONNECTED","reachability":true}
+info: Aug-2 15:37:16.612 [INFO] StateTransition: {"state":"CALLS_TERMINAL","reconnect_attempt":0,"prev_state":"CALLS_DISCONNECT_JANUS","reachability":true,"terminal_type":"user_leave"}
+info: Aug-2 15:37:16.624 [API-Q] (T4ALJRY56) cdbc7423-1533213436.623 screenhero.rooms.userEvent called with reason: NO REASON PROVIDED
+info: Aug-2 15:37:16.624 [API-Q] (T4ALJRY56) cdbc7423-1533213436.623 screenhero.rooms.userEvent is ENQUEUED
+info: Aug-2 15:37:16.624 [API-Q] (T4ALJRY56) cdbc7423-1533213436.623 screenhero.rooms.userEvent is ACTIVE
+info: Aug-2 15:37:16.625 [API-Q] (T4ALJRY56) cdbc7423-1533213436.625 screenhero.rooms.proxyLogs called with reason: NO REASON PROVIDED
+info: Aug-2 15:37:16.626 [API-Q] (T4ALJRY56) cdbc7423-1533213436.625 screenhero.rooms.proxyLogs is ENQUEUED
+info: Aug-2 15:37:16.626 [API-Q] (T4ALJRY56) cdbc7423-1533213436.625 screenhero.rooms.proxyLogs is ACTIVE
+info: Aug-2 15:37:16.629 [INFO] CloseCall: 
+warn: Aug-2 15:37:16.629 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-2 15:37:16.630 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-2 15:37:16.630 [INFO] StateTransition: {"state":"CALLS_IDLE","reconnect_attempt":0,"prev_state":"CALLS_TERMINAL","reachability":true}
+info: Aug-2 15:37:16.645 [INFO] ICE connection state change: new
+info: Aug-2 15:37:16.646 [INFO] ParticipantConnectionStateChanged: {"participant_id":null,"state_str":"closed","state":6}
+warn: Aug-2 15:37:16.647 got an unallowed async event:  participant_state_changed , allowed events:  [] , current state:  idle
+info: Aug-2 15:37:16.648 [FOCUS-EVENT] Window blurred
+info: Aug-2 15:37:16.717 [INFO] session destroy successful
+info: Aug-2 15:37:16.922 [API-Q] (T4ALJRY56) cdbc7423-1533213436.623 screenhero.rooms.userEvent is RESOLVED
+info: Aug-2 15:37:16.937 [WINDOW-UNLOADING] (T4ALJRY56) workspace handling window unloading event
+info: ╔═══════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 08/03/18, 11:12:18:987      ║
+info: ╚═══════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: This appears to be Chrome
+info: Aug-3 11:12:22.391 [BOOT] booted! pri:0 version:1533283103 start_ms:1533283940500 (1891ms ago)
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Aug-3 11:12:22.544 [INFO] no TS.client on page:https://anadea.slack.com/call/RC3FCLJR4?_fast_members=1&_end_call_sound=1&pri=0
+info: Aug-3 11:12:22.548 [INFO] Starting non-incremental boot
+info: Aug-3 11:12:22.629 [INFO] Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) AtomShell/3.2.0 Chrome/61.0.3163.100 Electron/2.0.2 Safari/537.36 Slack_SSB/3.2.0
+info: Aug-3 11:12:22.761 [API-Q] (T4ALJRY56) f1b18881-1533283942.759 apps.list called with reason: NO REASON PROVIDED
+info: Aug-3 11:12:22.761 [API-Q] (T4ALJRY56) f1b18881-1533283942.759 apps.list is ENQUEUED
+info: Aug-3 11:12:22.762 [API-Q] (T4ALJRY56) f1b18881-1533283942.759 apps.list is ACTIVE
+info: Aug-3 11:12:22.764 [API-Q] (T4ALJRY56) f1b18881-1533283942.764 i18n.translations.get called with reason: NO REASON PROVIDED
+info: Aug-3 11:12:22.764 [API-Q] (T4ALJRY56) f1b18881-1533283942.764 i18n.translations.get is ENQUEUED
+info: Aug-3 11:12:22.765 [API-Q] (T4ALJRY56) f1b18881-1533283942.764 i18n.translations.get is ACTIVE
+info: Aug-3 11:12:22.871 [INFO] Screen list: [{"id":"724050572","bounds":{"x":0,"y":0,"width":1920,"height":1080},"workArea":{"x":0,"y":22,"width":1920,"height":1005},"size":{"width":1920,"height":1080},"workAreaSize":{"width":1920,"height":1005},"scaleFactor":1,"rotation":0,"touchSupport":"unknown","index":0,"chrome_id":"screen:724050572","is_main":true,"name":"Screen 1 (1920x1080)"}]
+info: Aug-3 11:12:22.872 [METRICS] Starting timers for metrics collection
+info: Aug-3 11:12:22.888 [INFO] LoggedIn: {"stored_data":{"selected_video_input_device":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e","selected_audio_input_device":"Built-in Input"}}
+info: Aug-3 11:12:22.888 [INFO] StateTransition: {"state":"CALLS_START_CALL","reconnect_attempt":0,"prev_state":"","reachability":true}
+info: Aug-3 11:12:22.970 [INFO] StartCall: {"online":true}
+info: Aug-3 11:12:22.971 [BOOT] _maybeFinalizeOrOpenConnectionToMS wanted to finalize SocketManager but it had no provisional connection
+info: Aug-3 11:12:22.971 [BOOT] _maybeFinalizeOrOpenConnectionToMS: opening our SocketManager connection now
+info: Aug-3 11:12:22.973 [SOCKET-MANAGER] (T4ALJRY56) Changing from never_connected to prov_connect
+info: Aug-3 11:12:22.973 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_connect state for up to 10000 ms
+info: Aug-3 11:12:22.974 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_connect to prov_connecting
+info: Aug-3 11:12:22.974 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_connecting state for up to 35000 ms
+info: Aug-3 11:12:22.979 [BOOT] Finished first boot 437 ms after DOM ready
+info: Aug-3 11:12:22.994 [INFO] Unprompted device enumeration took 362 ms
+info: Aug-3 11:12:22.998 [INFO] MsgFromParentWin: {"message_type":"reachability","online":true}
+info: Aug-3 11:12:23.000 [INFO] MsgFromParentWin: {"message_type":"reachability","online":true}
+info: Aug-3 11:12:23.013 [API-Q] (T4ALJRY56) f1b18881-1533283942.759 apps.list is RESOLVED
+info: Aug-3 11:12:23.044 [INFO] MsgFromParentWin: {"message_type":"calls_status","is_busy":false,"team_name":null}
+info: Aug-3 11:12:23.047 [INFO] StateTransition: {"state":"CALLS_GET_REGIONS","reconnect_attempt":0,"prev_state":"CALLS_START_CALL","reachability":true}
+info: Aug-3 11:12:23.075 [INFO] Output device authorization took 126 ms
+info: Aug-3 11:12:23.078 [INFO] MsgFromParentWin: {"message_type":"caller_id","args":{"caller_id":"U4RB20V54"}}
+info: Aug-3 11:12:23.082 [INFO] MsgFromParentWin: {"message_type":"invite_cancel","cancel_type":"cleanup","room_id":"RC3FCLJR4"}
+info: Aug-3 11:12:23.091 [INFO] MsgFromParentWin: {"message_type":"regions","regions":""}
+info: Aug-3 11:12:23.092 [INFO] StateTransition: {"state":"CALLS_GET_SERVER","reconnect_attempt":0,"prev_state":"CALLS_GET_REGIONS","reachability":true}
+info: Aug-3 11:12:23.268 [API-Q] (T4ALJRY56) f1b18881-1533283942.764 i18n.translations.get is RESOLVED
+info: Aug-3 11:12:23.330 [INFO] MsgFromParentWin: {"message_type":"got_server","data":{"request_id":"a26fbf6f-0d73-4eb2-ba10-1b33b847b906","client_request_id":"fcf718f8-1533283938.992","method":"screenhero.rooms.join","room_id":"RC3FCLJR4","hostname":"slack-calls-orca-fra-ih3u.slack-core.com","port":443,"turn_ports":[22466],"turn_auth":{"username":"1533370339:UBV12AYCA","password":"KR6jmpQY31n2s7ZY/xlNnndnCa0="},"survey_percent":0.05,"ok":true,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzbGFjay5jb20iLCJleHAiOjE1MzMyODQyMzksIm5iZiI6MTUzMzI4Mzg3OSwiaWF0IjoxNTMzMjgzOTM5LCJ1aWQiOiJVQlYxMkFZQ0EiLCJ0aWQiOiJUNEFMSlJZNTYiLCJyaWQiOiJSMDAifQ.DmqXN6i8EfLH2lsFDpxmAbUCGYdrvf5g0xIGWjpBaX0"}}
+info: Aug-3 11:12:23.330 [INFO] MediaServer: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzbGFjay5jb20iLCJleHAiOjE1MzMyODQyMzksIm5iZiI6MTUzMzI4Mzg3OSwiaWF0IjoxNTMzMjgzOTM5LCJ1aWQiOiJVQlYxMkFZQ0EiLCJ0aWQiOiJUNEFMSlJZNTYiLCJyaWQiOiJSMDAifQ.DmqXN6i8EfLH2lsFDpxmAbUCGYdrvf5g0xIGWjpBaX0","hostname":"slack-calls-orca-fra-ih3u.slack-core.com","port":443,"turn_username":"1533370339:UBV12AYCA","turn_password":"KR6jmpQY31n2s7ZY/xlNnndnCa0=","turn_ports":[22466]}
+info: Aug-3 11:12:23.330 [INFO] StateTransition: {"state":"CALLS_INITIALIZE_JANUS","reconnect_attempt":0,"prev_state":"CALLS_GET_SERVER","reachability":true}
+info: Aug-3 11:12:23.337 [INFO] InitializedJanus: 
+info: Aug-3 11:12:23.337 [INFO] StateTransition: {"state":"CALLS_JOIN_ROOM","reconnect_attempt":0,"prev_state":"CALLS_INITIALIZE_JANUS","reachability":true}
+info: Aug-3 11:12:23.359 [INFO] MediaStreamReceived: {"is_local":true}
+warn: Aug-3 11:12:23.359 got an unallowed async event:  media_stream_received , allowed events:  ["reachability_changed","refreshed_token","local_errored","joined_room"] , current state:  join_room
+info: Aug-3 11:12:23.511 [INFO] Uplink: participant_id: candidate: {"candidate":"candidate:1563305778 1 udp 41885951 10.51.25.9 57850 typ relay raddr 0.0.0.0 rport 0 generation 0 ufrag 2c43 network-id 1","sdpMid":"audio","sdpMLineIndex":0}
+info: Aug-3 11:12:23.534 [INFO] Uplink, created handle: 129077271652265
+info: Aug-3 11:12:23.535 [INFO] JoinedRoom: {"room_id":"RC3FCLJR4","participant_id":107799214537256}
+info: Aug-3 11:12:23.535 [INFO] StateTransition: {"state":"CALLS_IN_ROOM","reconnect_attempt":0,"prev_state":"CALLS_JOIN_ROOM","reachability":true}
+info: Aug-3 11:12:23.536 [INFO] Resetting peer connection.
+info: Aug-3 11:12:23.538 [INFO] PublisherJoined: {"participant_id":107799214537256}
+warn: Aug-3 11:12:23.539 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-3 11:12:23.540 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-3 11:12:23.666 [INFO] SelectedBandwidthChanged: min_bandwidth_group: 1250
+warn: Aug-3 11:12:23.700 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:23.700 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:23.700 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:23.701 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:23.701 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:23.701 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:23.701 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Aug-3 11:12:23.718 [INFO] ParticipantConnectionStateChanged: {"participant_id":107799214537256,"state_str":"checking","state":1}
+info: Aug-3 11:12:23.720 [INFO] Uplink: participant_id: 107799214537256 candidate: {"candidate":"candidate:222074551 1 udp 8331007 10.51.25.9 61148 typ relay raddr 0.0.0.0 rport 0 generation 0 ufrag 2c43 network-id 1","sdpMid":"audio","sdpMLineIndex":0}
+info: Aug-3 11:12:23.729 [INFO] Uplink: participant_id: 107799214537256 candidate:
+info: Aug-3 11:12:23.747 [INFO] AudioDevicesChanged: {"audio_input_devices":[{"id":"default","name":"Default"},{"id":"3705fa3b06470123af4dba484eae38a7fadd909f67729e68916a11b5b5244e40","name":"Built-in Input"},{"id":"5241f5c6a96d053ea53e0dc1af8d7752096c3fe37914eb0f1d517e56c56c94a8","name":"Built-in Line Input"},{"id":"29e03df7b14edfa3ce26c09ee607d78a1be608bba09f3a723bda98b6b3d2cb7b","name":"Unknown USB Audio Device"}],"audio_output_devices":[{"id":"default","name":"Default"},{"id":"4b6161a76c644ef7a340e48be1dbf603b700fa08a5714c866e4deab1d5235f8c","name":"Built-in Output"},{"id":"659a25c88abd87e9aeab152a5bf88b3d4391990d2d8e2e9de8d00d3183d12c0d","name":"Built-in Digital Output"}]}
+info: Aug-3 11:12:23.747 [INFO] StoredAudioDevicesPrefs: {"input":"Built-in Input"}
+info: Aug-3 11:12:23.747 [INFO] SavedInputAudioDeviceAvailable: {"name":"Built-in Input"}
+info: Aug-3 11:12:23.747 [INFO] Setting audio output device for all participants to: {"id":"default","name":"Default"}
+info: Aug-3 11:12:23.750 [INFO] VideoDevicesChanged: {"video_input_devices":[{"id":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e","name":"USB Camera (046d:0825)"}]}
+info: Aug-3 11:12:23.750 [INFO] StoredVideoDevicesPrefs: {"input":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e"}
+info: Aug-3 11:12:23.750 [INFO] SavedInputVideoDeviceAvailable: {"name":"USB Camera (046d:0825)"}
+info: Aug-3 11:12:23.751 [INFO] Prompted device enumeration took 83 ms
+info: Aug-3 11:12:23.773 [INFO] StateTransition: {"state":"CALLS_PUBLISHER_CONNECTED","reconnect_attempt":0,"prev_state":"CALLS_IN_ROOM","reachability":true}
+info: Aug-3 11:12:23.776 [INFO] ParticipantConnectionStateChanged: {"participant_id":107799214537256,"state_str":"connected","state":2}
+info: Aug-3 11:12:23.785 [INFO] ParticipantConnectionStateChanged: {"participant_id":107799214537256,"state_str":"completed","state":3}
+info: Aug-3 11:12:23.809 [INFO] Got audio track: (1c05bc5d-b7bf-4fb9-8772-b110634f9234, Built-in Input) with settings {"deviceId":"3705fa3b06470123af4dba484eae38a7fadd909f67729e68916a11b5b5244e40","echoCancellation":true}
+info: Aug-3 11:12:23.813 [INFO] Changing audio tracks from (9d6d9360-fbd7-499e-a0e1-8a5bd387cac5, MediaStreamAudioDestinationNode) to (1c05bc5d-b7bf-4fb9-8772-b110634f9234, Built-in Input)
+info: Aug-3 11:12:23.883 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_connecting to prov_connected
+info: Aug-3 11:12:23.883 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_connected state for up to 60000 ms
+info: Aug-3 11:12:23.884 [INFO] Got start data from Socket Manager; hydrating it
+warn: Aug-3 11:12:23.891 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Aug-3 11:12:23.893 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Aug-3 11:12:23.895 [API-Q] (T4ALJRY56) f1b18881-1533283943.894 auth.currentSessions called with reason: NO REASON PROVIDED
+info: Aug-3 11:12:23.895 [API-Q] (T4ALJRY56) f1b18881-1533283943.894 auth.currentSessions is ENQUEUED
+info: Aug-3 11:12:23.895 [API-Q] (T4ALJRY56) f1b18881-1533283943.894 auth.currentSessions is ACTIVE
+info: Aug-3 11:12:24.046 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Aug-3 11:12:24.048 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_connected to prov_finalize
+info: Aug-3 11:12:24.051 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_finalize state for up to 10000 ms
+info: Aug-3 11:12:24.052 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_finalize to prov_finalizing
+info: Aug-3 11:12:24.052 [SOCKET-MANAGER] (T4ALJRY56) will stay in prov_finalizing state for up to 10000 ms
+info: Aug-3 11:12:24.053 [SOCKET-MANAGER] (T4ALJRY56) Changing from prov_finalizing to connected
+info: Aug-3 11:12:24.053 [SOCKET-MANAGER] (T4ALJRY56) will stay in connected state for up to Infinity ms
+info: Aug-3 11:12:24.054 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+warn: Aug-3 11:12:24.055 error getActiveModelOb found no ob
+warn: Aug-3 11:12:24.055 TS.boot_data.channel_id: undefined
+warn: Aug-3 11:12:24.055 TS.boot_data.im_id: undefined
+warn: Aug-3 11:12:24.055 TS.boot_data.group_id: undefined
+info: Aug-3 11:12:24.073 [INFO] ParticipantJoined: {"participant_id":279092960714750,"slack_id":"U4RB20V54","is_newly_joined_participant":false}
+warn: Aug-3 11:12:24.074 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-3 11:12:24.074 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-3 11:12:24.090 [INFO] Setting audio output device for participant 279092960714750 to: {"id":"default","name":"Default"}
+warn: Aug-3 11:12:24.094 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-3 11:12:24.095 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-3 11:12:24.125 [INFO] ParticipantStateServer: {"participant_id":107799214537256,"is_connected":true}
+info: Aug-3 11:12:24.127 [INFO] ParticipantStateServer: {"participant_id":279092960714750,"is_connected":true}
+info: Aug-3 11:12:24.146 [API-Q] (T4ALJRY56) f1b18881-1533283943.894 auth.currentSessions is RESOLVED
+warn: Aug-3 11:12:24.180 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.180 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.180 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.180 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.180 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.181 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.195 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.195 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.195 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.195 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.195 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.195 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.205 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.205 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.205 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.205 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.205 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.206 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.213 files is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.213 activity is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.213 stars is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.213 mentions is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.213 model is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+warn: Aug-3 11:12:24.213 featureFlags is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Aug-3 11:12:24.280 [INFO] Downlink Plan B, created handle: 79718272291907
+info: Aug-3 11:12:24.280 [INFO] ParticipantConnectionStateChanged: {"participant_id":279092960714750,"state_str":"new","state":0}
+info: Aug-3 11:12:24.283 [INFO] Downlink: Plan B: SDP:  v=0
+o=- 228934 228934 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video data
+a=msid-semantic: WMS mcu279092960714750
+m=audio 15127 RTP/SAVPF 111
+c=IN IP4 10.51.25.9
+a=ice-ufrag:EJjl
+a=ice-pwd:sapKX-qdhzfS-IDCXxTDgu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendonly
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1;usedtx=1
+a=rtcp-mux
+a=connection:new
+a=ssrc:1433838106 cname:mcu279092960714750
+a=ssrc:1433838106 msid:mcu279092960714750 mcu279092960714750a0
+a=ssrc:1433838106 mslabel:mcu279092960714750
+a=ssrc:1433838106 label:mcu279092960714750a0
+a=candidate:1 1 udp 1000 10.51.25.9 15127 typ host generation 0
+m=video 15127 RTP/SAVPF 100 116 117 96 98
+c=IN IP4 10.51.25.9
+a=ice-ufrag:EJjl
+a=ice-pwd:sapKX-qdhzfS-IDCXxTDgu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:video
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=sendonly
+a=rtpmap:100 VP8/90000
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtpmap:116 red/90000
+a=rtpmap:117 ulpfec/90000
+a=rtpmap:96 rtx/90000
+a=fmtp:96 apt=100
+a=rtpmap:98 rtx/90000
+a=fmtp:98 apt=116
+a=rtcp-mux
+a=connection:new
+a=x-google-flag:conference
+a=ssrc-group:FID 3690554819 2143361451
+a=ssrc:3690554819 cname:mcu279092960714750
+a=ssrc:3690554819 msid:mcu279092960714750 mcu279092960714750v0
+a=ssrc:3690554819 mslabel:mcu279092960714750
+a=ssrc:3690554819 label:mcu279092960714750v0
+a=ssrc:2143361451 cname:mcu279092960714750
+a=ssrc:2143361451 msid:mcu279092960714750 mcu279092960714750v0
+a=ssrc:2143361451 mslabel:mcu279092960714750
+a=ssrc:2143361451 label:mcu279092960714750v0
+a=candidate:1 1 udp 1000 10.51.25.9 15127 typ host generation 0
+m=application 15127 DTLS/SCTP 5000
+c=IN IP4 10.51.25.9
+a=ice-ufrag:EJjl
+a=ice-pwd:sapKX-qdhzfS-IDCXxTDgu
+a=fingerprint:sha-256 C5:5F:DA:7D:84:47:B1:BF:6B:55:16:62:48:31:3E:D3:F1:7B:25:89:92:4A:4B:4D:4D:D9:D5:AF:EA:D8:15:44
+a=setup:actpass
+a=mid:data
+a=sendonly
+a=sctpmap:5000 webrtc-datachannel 1024
+a=connection:new
+a=candidate:1 1 udp 1000 10.51.25.9 15127 typ host generation 0
+
+info: Aug-3 11:12:24.300 [INFO] MediaStreamReceived: {"is_local":false,"participant_id":"279092960714750"}
+info: Aug-3 11:12:24.319 [INFO] ParticipantConnectionStateChanged: {"participant_id":279092960714750,"state_str":"checking","state":1}
+info: Aug-3 11:12:24.468 [INFO] Downlink: Plan B, candidate: {"candidate":"candidate:1563305778 1 udp 41885951 10.51.25.9 49782 typ relay raddr 0.0.0.0 rport 0 generation 0 ufrag hvMb network-id 1","sdpMid":"audio","sdpMLineIndex":0}
+info: Aug-3 11:12:24.511 [INFO] Downlink: Plan B, candidate: {"candidate":"candidate:330161090 1 udp 25108479 10.51.25.9 64670 typ relay raddr 0.0.0.0 rport 0 generation 0 ufrag hvMb network-id 1","sdpMid":"audio","sdpMLineIndex":0}
+info: Aug-3 11:12:24.520 [INFO] Downlink: Plan B, candidate:
+info: Aug-3 11:12:24.572 [INFO] ParticipantConnectionStateChanged: {"participant_id":279092960714750,"state_str":"connected","state":2}
+info: Aug-3 11:12:25.364 [INFO] Candidate: {"portNumber":57850,"networkType":"lan","ipAddress":"10.51.25.9","transport":"udp","candidateType":"relayed","priority":41885951,"id":"Cand-gUV59gAG","type":"localcandidate","timestamp":"2018-08-03T08:12:23.815Z","slack_stat_type":false,"direction":"Uplink","participant_id":107799214537256,"actual_transport":"udp"}
+info: Aug-3 11:12:25.365 [INFO] Candidate: {"portNumber":15125,"ipAddress":"10.51.25.9","transport":"udp","candidateType":"host","priority":1000,"id":"Cand-GENT6Il8","type":"remotecandidate","timestamp":"2018-08-03T08:12:23.815Z","slack_stat_type":false,"direction":"Uplink","participant_id":107799214537256,"actual_transport":"udp"}
+info: Aug-3 11:12:25.365 [INFO] Candidate: {"portNumber":61148,"networkType":"lan","ipAddress":"10.51.25.9","transport":"udp","candidateType":"relayed","priority":8331007,"id":"Cand-+lZLDVdd","type":"localcandidate","timestamp":"2018-08-03T08:12:23.815Z","slack_stat_type":false,"direction":"Uplink","participant_id":107799214537256,"actual_transport":"tls"}
+info: Aug-3 11:12:25.366 [INFO] ActiveCandidatePair: {"responsesSent":0,"requestsReceived":0,"googRemoteCandidateType":"local","googReadable":true,"googLocalAddress":"10.51.25.9:57850","consentRequestsSent":1,"googTransportType":"udp","googChannelId":"Channel-audio-1","googLocalCandidateType":"relay","googWritable":true,"requestsSent":4,"googRemoteAddress":"10.51.25.9:15125","googRtt":44,"googActiveConnection":true,"packetsDiscardedOnSend":0,"bytesReceived":2565,"responsesReceived":4,"remoteCandidateId":"Cand-GENT6Il8","localCandidateId":"Cand-gUV59gAG","bytesSent":10930,"packetsSent":82,"id":"Conn-audio-1-0","type":"googCandidatePair","timestamp":"2018-08-03T08:12:25.359Z","slack_stat_type":"network_stats","direction":"Uplink","participant_id":107799214537256,"actual_transport":"udp"}
+info: Aug-3 11:12:25.366 [INFO] CandidatePair: {"responsesSent":0,"requestsReceived":0,"googRemoteCandidateType":"local","googReadable":false,"googLocalAddress":"10.51.25.9:61148","consentRequestsSent":0,"googTransportType":"udp","googChannelId":"Channel-audio-1","googLocalCandidateType":"relay","googWritable":false,"requestsSent":0,"googRemoteAddress":"10.51.25.9:15125","googRtt":3000,"googActiveConnection":false,"packetsDiscardedOnSend":0,"bytesReceived":0,"responsesReceived":0,"remoteCandidateId":"Cand-GENT6Il8","localCandidateId":"Cand-+lZLDVdd","bytesSent":0,"packetsSent":0,"id":"Conn-audio-1-1","type":"googCandidatePair","timestamp":"2018-08-03T08:12:25.359Z","slack_stat_type":false,"direction":"Uplink","participant_id":107799214537256,"actual_transport":"tls"}
+info: Aug-3 11:12:26.305 [INFO] Candidate: {"portNumber":49782,"networkType":"lan","ipAddress":"10.51.25.9","transport":"udp","candidateType":"relayed","priority":41885951,"id":"Cand-pKPzuNs/","type":"localcandidate","timestamp":"2018-08-03T08:12:24.550Z","slack_stat_type":false,"direction":"Downlink","participant_id":"PlanB","actual_transport":"udp"}
+info: Aug-3 11:12:26.305 [INFO] Candidate: {"portNumber":15127,"ipAddress":"10.51.25.9","transport":"udp","candidateType":"host","priority":1000,"id":"Cand-0TFdib1Y","type":"remotecandidate","timestamp":"2018-08-03T08:12:24.550Z","slack_stat_type":false,"direction":"Downlink","participant_id":"PlanB","actual_transport":"udp"}
+info: Aug-3 11:12:26.305 [INFO] Candidate: {"portNumber":64670,"networkType":"lan","ipAddress":"10.51.25.9","transport":"udp","candidateType":"relayed","priority":25108479,"id":"Cand-vvXKpQqL","type":"localcandidate","timestamp":"2018-08-03T08:12:24.550Z","slack_stat_type":false,"direction":"Downlink","participant_id":"PlanB","actual_transport":"tcp"}
+info: Aug-3 11:12:26.306 [INFO] ActiveCandidatePair: {"responsesSent":0,"requestsReceived":0,"googRemoteCandidateType":"local","googReadable":true,"googLocalAddress":"10.51.25.9:49782","consentRequestsSent":1,"googTransportType":"udp","googChannelId":"Channel-audio-1","googLocalCandidateType":"relay","googWritable":true,"requestsSent":4,"googRemoteAddress":"10.51.25.9:15127","googRtt":50,"googActiveConnection":true,"packetsDiscardedOnSend":0,"bytesReceived":8765,"responsesReceived":4,"remoteCandidateId":"Cand-0TFdib1Y","localCandidateId":"Cand-pKPzuNs/","bytesSent":3004,"packetsSent":9,"id":"Conn-audio-1-0","type":"googCandidatePair","timestamp":"2018-08-03T08:12:26.300Z","slack_stat_type":"network_stats","direction":"Downlink","participant_id":"PlanB","actual_transport":"udp"}
+info: Aug-3 11:12:26.306 [INFO] CandidatePair: {"responsesSent":0,"requestsReceived":0,"googRemoteCandidateType":"local","googReadable":false,"googLocalAddress":"10.51.25.9:64670","consentRequestsSent":5,"googTransportType":"udp","googChannelId":"Channel-audio-1","googLocalCandidateType":"relay","googWritable":false,"requestsSent":5,"googRemoteAddress":"10.51.25.9:15127","googRtt":3000,"googActiveConnection":false,"packetsDiscardedOnSend":0,"bytesReceived":0,"responsesReceived":0,"remoteCandidateId":"Cand-0TFdib1Y","localCandidateId":"Cand-vvXKpQqL","bytesSent":0,"packetsSent":0,"id":"Conn-audio-1-1","type":"googCandidatePair","timestamp":"2018-08-03T08:12:26.300Z","slack_stat_type":false,"direction":"Downlink","participant_id":"PlanB","actual_transport":"tcp"}
+info: Aug-3 11:12:27.365 [FOCUS-EVENT] Mousedown while !is_window_focused
+info: Aug-3 11:12:27.365 [FOCUS-EVENT] Window focused
+info: Aug-3 11:12:27.453 [INFO] AudioDevicesChanged: {"audio_input_devices":[{"id":"default","name":"Default"},{"id":"3705fa3b06470123af4dba484eae38a7fadd909f67729e68916a11b5b5244e40","name":"Built-in Input"},{"id":"5241f5c6a96d053ea53e0dc1af8d7752096c3fe37914eb0f1d517e56c56c94a8","name":"Built-in Line Input"},{"id":"29e03df7b14edfa3ce26c09ee607d78a1be608bba09f3a723bda98b6b3d2cb7b","name":"Unknown USB Audio Device"}],"audio_output_devices":[{"id":"default","name":"Default"},{"id":"4b6161a76c644ef7a340e48be1dbf603b700fa08a5714c866e4deab1d5235f8c","name":"Built-in Output"},{"id":"659a25c88abd87e9aeab152a5bf88b3d4391990d2d8e2e9de8d00d3183d12c0d","name":"Built-in Digital Output"}]}
+info: Aug-3 11:12:27.453 [INFO] StoredAudioDevicesPrefs: {"input":"Built-in Input"}
+info: Aug-3 11:12:27.453 [INFO] SavedInputAudioDeviceAvailable: {"name":"Built-in Input"}
+info: Aug-3 11:12:27.453 [INFO] Setting audio output device for all participants to: {"id":"default","name":"Default"}
+info: Aug-3 11:12:27.459 [INFO] VideoDevicesChanged: {"video_input_devices":[{"id":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e","name":"USB Camera (046d:0825)"}]}
+info: Aug-3 11:12:27.459 [INFO] StoredVideoDevicesPrefs: {"input":"86559872fb0de72c9d3eb5c7670a42962eac090963aa9ecb94c0e6c61fdee63e"}
+info: Aug-3 11:12:27.459 [INFO] SavedInputVideoDeviceAvailable: {"name":"USB Camera (046d:0825)"}
+info: Aug-3 11:12:27.538 [INFO] Got audio track: (82c1eb42-5cdb-4675-87c0-0930c91e52cf, Built-in Input) with settings {"deviceId":"3705fa3b06470123af4dba484eae38a7fadd909f67729e68916a11b5b5244e40","echoCancellation":true}
+info: Aug-3 11:12:27.539 [INFO] Changing audio tracks from (1c05bc5d-b7bf-4fb9-8772-b110634f9234, Built-in Input) to (82c1eb42-5cdb-4675-87c0-0930c91e52cf, Built-in Input)
+info: Aug-3 11:12:31.706 [INFO] SettingsCameraActive: {"is_active":false}
+info: Aug-3 11:14:45.595 [INFO] ParticipantLeft: {"participant_id":279092960714750}
+warn: Aug-3 11:14:45.612 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-3 11:14:45.612 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-3 11:14:45.620 [INFO] Resetting peer connection.
+info: Aug-3 11:14:45.624 [INFO] StateTransition: {"state":"CALLS_DISCONNECT_JANUS","reconnect_attempt":0,"prev_state":"CALLS_PUBLISHER_CONNECTED","reachability":true}
+info: Aug-3 11:14:45.657 [INFO] StateTransition: {"state":"CALLS_TERMINAL","reconnect_attempt":0,"prev_state":"CALLS_DISCONNECT_JANUS","reachability":true,"terminal_type":"empty_room"}
+info: Aug-3 11:14:45.670 [API-Q] (T4ALJRY56) f1b18881-1533284085.669 screenhero.rooms.userEvent called with reason: NO REASON PROVIDED
+info: Aug-3 11:14:45.670 [API-Q] (T4ALJRY56) f1b18881-1533284085.669 screenhero.rooms.userEvent is ENQUEUED
+info: Aug-3 11:14:45.670 [API-Q] (T4ALJRY56) f1b18881-1533284085.669 screenhero.rooms.userEvent is ACTIVE
+info: Aug-3 11:14:45.671 [API-Q] (T4ALJRY56) f1b18881-1533284085.671 screenhero.rooms.proxyLogs called with reason: NO REASON PROVIDED
+info: Aug-3 11:14:45.671 [API-Q] (T4ALJRY56) f1b18881-1533284085.671 screenhero.rooms.proxyLogs is ENQUEUED
+info: Aug-3 11:14:45.672 [API-Q] (T4ALJRY56) f1b18881-1533284085.671 screenhero.rooms.proxyLogs is ACTIVE
+info: Aug-3 11:14:45.675 [INFO] CloseCall: 
+warn: Aug-3 11:14:45.676 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+warn: Aug-3 11:14:45.676 Desktop: 'desktop.notice.shouldMuteAudio' is missing or not a function
+info: Aug-3 11:14:45.676 [INFO] StateTransition: {"state":"CALLS_IDLE","reconnect_attempt":0,"prev_state":"CALLS_TERMINAL","reachability":true}
+info: Aug-3 11:14:45.693 [INFO] ICE connection state change: new
+info: Aug-3 11:14:45.693 [INFO] ParticipantConnectionStateChanged: {"participant_id":null,"state_str":"closed","state":6}
+warn: Aug-3 11:14:45.693 got an unallowed async event:  participant_state_changed , allowed events:  [] , current state:  idle
+info: Aug-3 11:14:45.696 [FOCUS-EVENT] Window blurred
+info: Aug-3 11:14:45.836 [INFO] session destroy successful
+error: Failed to load https://slack-calls-orca-fra-ih3u.slack-core.com/janus/278662558292479?rid=1533284085682&maxev=15&_=1533283940638: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'https://anadea.slack.com' is therefore not allowed access. The response had HTTP status code 404.
+info: Aug-3 11:14:45.850 [WINDOW-UNLOADING] (T4ALJRY56) workspace handling window unloading event

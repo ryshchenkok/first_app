@@ -1,0 +1,5 @@
+		g3log created log at: Thu Aug 02 15:08:03 2018
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] message		(uuu*: microseconds fractions of the seconds value)
+
+
+2018/08/02 15:37:16.583	INFO [SHSession.cpp->DoDestroy:246]	"SHSession DoDestroy"

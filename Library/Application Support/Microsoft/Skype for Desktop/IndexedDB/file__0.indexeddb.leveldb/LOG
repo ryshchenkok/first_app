@@ -1,0 +1,23 @@
+2018/07/30-09:05:09.973 108311 Reusing MANIFEST /Users/kr/Library/Application Support/Microsoft/Skype for Desktop/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2018/07/30-09:05:09.973 108311 Recovering log #9
+2018/07/30-09:05:09.983 108311 Reusing old log /Users/kr/Library/Application Support/Microsoft/Skype for Desktop/IndexedDB/file__0.indexeddb.leveldb/000009.log 
+2018/07/30-09:05:09.984 108311 Delete type=2 #8
+2018/07/30-09:05:09.984 108311 Delete type=2 #10
+2018/07/31-09:05:30.023 128051 Level-0 table #14: started
+2018/07/31-09:05:30.069 128051 Level-0 table #14: 1306082 bytes OK
+2018/07/31-09:05:30.074 128051 Delete type=0 #9
+2018/07/31-09:05:35.445 128051 Compacting 1@1 + 1@2 files
+2018/07/31-09:05:35.471 128051 Generated table #15@1: 2628 keys, 563316 bytes
+2018/07/31-09:05:35.471 128051 Compacted 1@1 + 1@2 files => 563316 bytes
+2018/07/31-09:05:35.471 128051 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/07/31-09:05:35.471 128051 Delete type=2 #11
+2018/07/31-09:05:35.471 128051 Delete type=2 #14
+2018/08/02-03:05:47.786 128051 Level-0 table #17: started
+2018/08/02-03:05:47.821 128051 Level-0 table #17: 1260184 bytes OK
+2018/08/02-03:05:47.825 128051 Delete type=0 #13
+2018/08/02-05:37:58.169 128051 Compacting 1@1 + 1@2 files
+2018/08/02-05:37:58.206 128051 Generated table #18@1: 2842 keys, 573562 bytes
+2018/08/02-05:37:58.207 128051 Compacted 1@1 + 1@2 files => 573562 bytes
+2018/08/02-05:37:58.208 128051 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/08/02-05:37:58.208 128051 Delete type=2 #15
+2018/08/02-05:37:58.209 128051 Delete type=2 #17

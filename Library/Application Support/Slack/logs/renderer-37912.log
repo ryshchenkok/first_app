@@ -1,0 +1,92 @@
+[07/31/18, 23:56:46:393] info: ╔═══════════════════════════════════════════════════════════════════════╗
+[07/31/18, 23:56:46:394] info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 07/31/18, 23:56:46:391      ║
+[07/31/18, 23:56:46:394] info: ╚═══════════════════════════════════════════════════════════════════════╝
+[07/31/18, 23:56:46:643] info: Initializing local storage instance at path: /Users/kr/Library/Application Support/Slack/local-settings.json
+[07/31/18, 23:56:47:083] info: cld3::loadModule: loading cld3 module
+[07/31/18, 23:56:47:103] info: cld3Loader::loadModule: running environment is NODE
+[07/31/18, 23:56:47:103] info: cld3Loader::loadModule: constructed module object for runtime
+[07/31/18, 23:56:47:410] info: cld3Loader::initializeRuntime: successfully initialized module
+[07/31/18, 23:56:47:411] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[07/31/18, 23:56:47:423] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, spellchecker is not available
+[07/31/18, 23:56:47:435] info: TouchBarIntegration: Initializing TouchBar classes
+[07/31/18, 23:56:47:438] info: Main window preload script finished
+{
+  "readyTime": 11015.050696
+}
+[07/31/18, 23:56:50:612] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:578] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/31/18, 23:56:51:579] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US"
+}
+[07/31/18, 23:56:51:689] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:690] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:692] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "webapp-loaded",
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:693] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:694] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[07/31/18, 23:56:51:822] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:879] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T4ALJRY56",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[07/31/18, 23:56:56:459] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[07/31/18, 23:56:59:465] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V1"
+}
+[07/31/18, 23:57:11:548] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 01:33:12:885] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "page-will-navigate",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:12:891] info: Window is unloading, window.desktop is no longer accessible

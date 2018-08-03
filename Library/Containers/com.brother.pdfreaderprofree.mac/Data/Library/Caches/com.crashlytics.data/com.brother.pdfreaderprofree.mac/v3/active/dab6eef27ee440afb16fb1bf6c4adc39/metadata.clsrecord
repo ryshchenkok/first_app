@@ -1,0 +1,4 @@
+{"identity":{"generator":"Crashlytics Mac SDK/3.10.1","build_version":"129","display_version":"3.10.1","api_key":"859b3207ee732e0c2b7f251aff23ec781da96190","started_at":1533113225,"session_id":"dab6eef27ee440afb16fb1bf6c4adc39","install_id":"543F2CB8-1915-4F32-BF3A-2EBBD4098865","beta_token":null,"absolute_log_timestamps":true}}
+{"host":{"model":"Macmini6,2","machine":"x86_64","cpu":"Intel(R) Core(TM) i5-3570K CPU @ 3.40GHz","os_build_version":"17G65","os_display_version":"10.13.6","platform":"mac","locale":"en_UA"}}
+{"application":{"bundle_id":"com.brother.pdfreaderprofree.mac","custom_bundle_id":null,"build_version":"2.2.1","display_version":"2.2.1","extension_id":null}}
+{"executable":{"architecture":"x86_64","uuid":"4fbc52ea494a33f79ab11e0e26a0d55f","base":4370714624,"size":5681152,"encrypted":false,"minimum_sdk_version":"10.9.0","built_sdk_version":"10.13.0"}}

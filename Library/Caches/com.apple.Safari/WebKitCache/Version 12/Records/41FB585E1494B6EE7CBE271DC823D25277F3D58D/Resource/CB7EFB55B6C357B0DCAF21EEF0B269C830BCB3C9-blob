@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+    <title>Про Тестинг - Тестирование - Виды Тестирования ПО - Регрессионное тестирование</title>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta content='регрессионное тестирование тесты типы regression  testing автоматизированное' name='Keywords'/>
+    <meta content='Виды тестирования. Регрессионное тестирование - опредление, описание процедуры проведения, типы регрессионных тестов' name='Description'/>
+    <META content='all' name='robots'/>
+    <META content='General' name='rating'/>
+    <META content='GLOBAL' name='distribution'/>
+    <META content='Testing' name='Classification'/>
+    <META content='no-cache' http-equiv='Pragma'/>
+    <META content='1' http-equiv='Expires'/>
+    <META content='Alexey Bulat' name='author'/>
+    <meta name="verify-v1" content="nwLyVjttOGfRojFpAPHmfd1PBGuIk53xCahRkVSccxY=" />
+    <link rel="stylesheet" href="../../protesting.css" type="text/css" media="screen" />
+    <script language="JavaScript" src="../../js/bookmark.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.___gcfg = {
+        lang: 'ru-RU',
+        parsetags: 'onload'
+        };
+        (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+</head>
+<body>
+<div id="fb-root"></div>
+<div id="container">
+    <div id="sitename">
+        <a name="top"></a>
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" align="left">
+            <tr>
+                <td align="left" valign="top">
+                    <a href="http://www.protesting.ru/" title="Про Тестинг"><img src="http://www.protesting.ru/img/protesting_logo.png" alt="Про Тестинг: обеспечение качества, тестирование, автоматизация" border="0" /></a>
+                </td>
+                <td align="right" valign="middle">
+                    <noindex>
+                        <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:728px;height:90px"
+                             data-ad-client="pub-6596919741211198"
+                             data-ad-slot="6694292302"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </noindex>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="mainmenu">
+        <ul>
+            <li><a href="../../">Главная</a></li>
+            <li><a href="../../qa/">Обеспечение&nbsp;Качества</a></li>
+            <li><a class="current" href="../">Тестирование</a></li>
+            <li><a href="../../automation/">Автоматизация</a></li>
+            <li><a href="../../service/">Сервис&nbsp;и&nbsp;Услуги</a></li>
+            <li><a href="../../contact/">Контакт</a></li>
+            <li><a href="../../news/">Новости</a></li>
+        </ul>
+    </div>
+    <div id="followme">
+        <ul>
+            <li><a rel="external nofollow" target="_blank" href="http://twitter.com/ProTesting_RU"><img src="http://www.protesting.ru/img/icons/twitter_1.png" width="36" height="36" title="Следовать за нами в twitter"alt="Twitter" border="0"/></a></li>
+            <li><a rel="external nofollow" target="_blank" href="http://pro-testing.blogspot.com/feeds/posts/default"><img src="http://www.protesting.ru/img/icons/rss_1.png" width="36" height="36" title="RSS Atom feed" alt="Atom" border="0"/></a></li>
+            <li><a rel="external nofollow" target="_blank" href="http://pro-testing.blogspot.com/"><img src="http://www.protesting.ru/img/icons/blogger_1.png" width="36" height="36" title="Наш блог" alt="Blog" border="0"/></a></li>
+        </ul>
+        <g:plusone align="right"></g:plusone>
+        <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+    </div>
+    <div id="wrap">
+        <div id="leftside">
+            <h1>Тестирование</h1>
+            <p>
+                <a class="nav" href="../">Основные понятия</a>
+                <a class="nav" href="../testtypes.html">Виды Тестирования</a>
+                <a class="nav sub" href="./functional.html" title="Функциональное тестирование">Функциональное тестирование</a>
+                <a class="nav sub" href="./security.html" title="Тестирование безопасности">Тестирование безопасности</a>
+                <a class="nav sub" href="./interoperability.html" title="Тестирование взаимодействия">Тестирование взаимодействия</a>
+                <a class="nav sub" href="./loadtesttypes.html" title="Нагрузочное тестирование">Нагрузочное тестирование</a>
+                <a class="nav sub" href="./smoke.html" title="Дымовое тестирование">Дымовое тестирование</a>
+                <a class="nav sub" href="./bvt.html" title="Тестирование сборки">Тестирование сборки</a>
+                <a class="nav sub" href="./sanity.html" title="Санитарное тестирование или проверка согласованности/исправности">Санитарное тестирование</a>
+                <a class="nav sub active" href="./regression.html" title="Регрессионное тестирование">Регрессионное тестирование</a>
+                <a class="nav sub" href="./installation.html" title="Тестирование Инсталляций">Тестирование установки</a>
+                <a class="nav sub" href="./usability.html" title="Тестирование удобства пользования">Тестирование удобства использования</a>
+                <a class="nav sub" href="./failover.html" title="Failover and Recovery Testing">Тестирование на отказ и восстановление</a>
+                <a class="nav sub" href="./configuration.html" title="Configuration Testing">Конфигурационное тестирование</a>
+                <a class="nav" href="../testlevels.html">Уровни Тестирования</a>
+                <a class="nav" href="../testdeliverables.html">Тестовые Артефакты</a>
+                <a class="nav" href="../testdesign.html">Тест Дизайн</a>
+                <a class="nav" href="../testprocess.html">Процесс тестирования</a>
+                <a class="nav" href="../conditions.html">Условия проведения</a>
+            </p>
+        </div>
+        <div id="rightside">
+            <noindex>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Большой вертикаль - 160x600 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:160px;height:600px"
+                     data-ad-client="ca-pub-6596919741211198"
+                     data-ad-slot="9317658806"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </noindex>
+        </div>
+        <div id="searchpanel">
+            <form action="http://www.protesting.ru/searchresult.html" id="cse-search-box">
+                <input type="hidden" name="cx" value="partner-pub-6596919741211198:2p1g8mczggq" />
+                <input type="hidden" name="cof" value="FORID:10" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input class="searchbox" type="text" name="q" size="50" onblur="if (q.value == '') {q.style.background = '#FFFFFF url(http://www.protesting.ru/img/search-logo.PNG) left no-repeat';}" onfocus="q.style.background = '#ffffff'; "/>
+                <input class="searchbutton" type="submit" name="sa" value="&#x041f;&#x043e;&#x0438;&#x0441;&#x043a;" />
+            </form>
+        </div>
+        <div id="content">
+            <div id="bookmark">
+                <div id="addBookmarkContainer"><a id="bookmarkLink">&nbsp;►&nbsp;в&nbsp;закладки&nbsp;&nbsp;</a></div>
+            </div>
+            <p class="broadcast">Раздел: <a href="../">Тестирование</a>&nbsp;&gt; <a href="../testtypes.html">Виды Тестирования</a>&nbsp;&gt; Регрессионное тестирование</p>
+            <h1>Регрессионное тестирование или Regression Testing</h1>
+            <p><strong>Регрессионное тестирование</strong> - это вид тестирования направленный на проверку изменений, сделанных в приложении или окружающей среде (починка дефекта, слияние кода, миграция на другую операционную систему, базу данных, веб сервер или сервер приложения), для подтверждения того факта, что существующая ранее функциональность работает как и прежде (см. также <a href="sanity.html">Санитарное тестирование или проверка согласованности/исправности</a>). Регрессионными могут быть как <b>функциональные</b>, так и <b>нефункциональные тесты</b>. </p>
+            <p>Как правило, <b>для регрессионного тестирования используются тест кейсы, написанные на ранних стадиях разработки и тестирования</b>. Это дает гарантию того, что изменения в новой версии приложения не повредили уже существующую функциональность. Рекомендуется делать <a href="../../automation/">автоматизацию регрессионных тестов</a>, для ускорения последующего процесса тестирования и обнаружения дефектов на ранних стадиях разработки программного обеспечения.</p>
+            <p>Сам по себе термин "Регрессионное тестирование", в зависимости от контекста использования может иметь разный смысл. Сэм Канер, к примеру, описал 3 основных типа регрессионного тестирования: </p>
+            <ul>
+                <li><b>Регрессия багов</b> (<b>Bug regression</b>) - попытка доказать, что исправленная ошибка на самом деле не исправлена</li>
+                <li><b>Регрессия старых багов</b> (<b>Old bugs regression</b>) - попытка доказать, что недавнее изменение кода или данных сломало исправление старых ошибок, т.е. старые баги стали снова воспроизводиться.</li>
+                <li><b>Регрессия побочного эффекта</b> (<b>Side effect regression</b>) - попытка доказать, что недавнее изменение кода или данных сломало другие части разрабатываемого приложения</li>
+            </ul>
+            <br/>
+            <p class="linktop"><a href="#top" rel="external nofollow">Наверх</a></p>
+        </div>
+        <div class="enddiv">&nbsp;
+            <noindex>
+                <script>
+                    function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                    pageLanguage: 'ru',
+                    includedLanguages: 'be,en,fr,de,pl,ru,es,uk',
+                    multilanguagePage: true,
+                    gaTrack: true,
+                    gaId: 'UA-4297293-3'
+                    });
+                    }
+                </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-4297293-3']);
+                    _gaq.push(['_trackPageview']);
+                    (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                    })();
+                </script>
+            </noindex>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <table border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+            <td align="left">
+                <table class="inner" border="0" cellpadding="0" cellspacing="0" align="left">
+                    <tr><td align="left"><b>ОБРАТНАЯ СВЯЗЬ:</b></td></tr>
+                    <tr><td align="left">&nbsp;</td></tr>
+                    <tr><td align="left"><a href="../../contact/contact.html">Задать вопрос</a></td></tr>
+                    <tr><td align="left"><a href="../../contact/contact.html">Сообщить об ошибке</a></td></tr>
+                    <tr><td align="left"><a href="../../contact/contact.html">Публикация материалов</a></td></tr>
+                    <tr><td align="left"><a href="../../contact/link.html">Обмен ссылками</a></td></tr>
+                </table>
+            </td>
+            <td align="center"><img src="../../img/protesting125x125_3.gif" alt="Про Тестинг: тесты, тестирование и тестировщики программного обеспечения" width="100" height="100"/>
+                <br/>
+                <noindex>
+                    <script type="text/javascript">
+                        var d = new Date();
+                        document.write("&copy; 2008-" + d.getFullYear());
+                    </script>
+                </noindex>
+                <a href="http://www.protesting.ru">ProTesting.ru</a></td>
+            <td align="right">
+                <table class="inner" border="0" cellpadding="0" cellspacing="0" align="right">
+                    <tr><td align="right"><b>УСЛУГИ:</b></td></tr>
+                    <tr><td align="right">&nbsp;</td></tr>
+                    <tr><td align="right"><a href="../../service/documentation.html">Подготовка&nbsp;документации</a></td></tr>
+                    <tr><td align="right"><a href="../../service/testing.html">Тестирование&nbsp;ПО</a></td></tr>
+                    <tr><td align="right"><a href="../../service/consulting.html">Консалтинг</a></td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <p align="left">
+        <!--LiveInternet counter--><script type="text/javascript"><!--
+    document.write("<a href='http://www.liveinternet.ru/click' "+
+                   "target=_blank><img src='http://counter.yadro.ru/hit?t17.5;r"+
+                   escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                                              ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                                                                                       screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                   ";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+                   "' alt='' title='LiveInternet: показано число просмотров за 24"+
+                   " часа, посетителей за 24 часа и за сегодня' "+
+                   "border=0 width=88 height=31 align=middle/><\/a>")//--></script><!--/LiveInternet-->
+    </p>
+    <!-- begin of Top100 logo -->
+    <a href="http://top100.rambler.ru/home?id=1902383" target="_blank"><img src="http://top100-images.rambler.ru/top100/banner-88x31-rambler-black2.gif" alt="Rambler's Top100" width="88" height="31" border="0" /></a>
+    <!-- end of Top100 logo -->
+</div>
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?1902383"></script><noscript><img src="http://counter.rambler.ru/top100.cnt?1902383" alt="" width="1" height="1" border="0"/></noscript>
+<!-- end of Top100 code -->
+</body>
+</html>

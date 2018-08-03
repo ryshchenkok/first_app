@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MailboxID</key>
+	<string>02512D19-EDA7-42B9-BE08-A267E871EEE6</string>
+	<key>MailboxIsFirstTimeSync</key>
+	<string>YES</string>
+	<key>MailboxLastSyncDate</key>
+	<date>2018-08-03T14:50:31Z</date>
+	<key>MailboxName</key>
+	<string>Trash</string>
+	<key>SupportsCustomFlags</key>
+	<string>YES</string>
+	<key>UIDNEXT</key>
+	<string>1</string>
+	<key>UIDVALIDITY</key>
+	<string>2</string>
+</dict>
+</plist>

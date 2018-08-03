@@ -1,0 +1,761 @@
+jQuery(document).ready(function($) {
+	
+	//////////////////////////////////////////////////////////////////////
+	// Галерея
+	//////////////////////////////////////////////////////////////////////
+
+	$('.putevoditel__images__thumbnails_thumbnail').click(function() {
+		var classes = $(this).attr('class'),
+			classesArr = classes.split(' '),
+			num = classesArr[1].split('-')[1],
+			frameClass = '.putevoditel__images__main__frame-' + num;
+
+		$('.putevoditel__images__main__frame').hide();
+		$(frameClass).show();
+	});
+
+
+	//////////////////////////////////////////////////////////////////////
+	// Вкладки "достопримечательности"
+	//////////////////////////////////////////////////////////////////////
+
+	$('.city-page__showplace__tabs-content').hide();
+	$('[id^=tabContent]:first').show();
+
+	$(document).on('click', '[id^=tabBut]', function(event) {
+
+		$('.city-page__showplace__tabs-panel_tab--active').removeClass('city-page__showplace__tabs-panel_tab--active')
+		$(this).addClass('city-page__showplace__tabs-panel_tab--active')
+
+		var butId = $(this).attr('id');
+		var contentId = '#tabContent' + butId.substring(6);
+
+		$('.city-page__showplace__tabs-content').hide();
+		$(contentId).show();
+	});
+
+
+	////////////////////////////////////////////////////////////
+	// Слайдер фотографий в достопримечательностях
+	////////////////////////////////////////////////////////////
+
+	$(document).on('click', '.city-page__tab__item__image__next', function(event) {
+		var wrapper = $(this).parent().find('.city-page__tab__item__image__wrapper');
+		var images = wrapper.children();
+		var imagesAmount = $(images).length - 1;
+		var imageActive = parseInt($(wrapper).attr('data-active'))
+		
+		if (imageActive < imagesAmount) {
+			imageActive += 1;
+			$(wrapper).attr('data-active', imageActive)
+			$(images).hide();
+			$($(images)[imageActive]).show()
+		} else{
+			imageActive = 0;
+			$(wrapper).attr('data-active', imageActive)
+			$(images).hide();
+			$($(images)[imageActive]).show()
+		}
+	});
+
+	$(document).on('click', '.city-page__tab__item__image__prev', function(event) {
+		var wrapper = $(this).parent().find('.city-page__tab__item__image__wrapper');
+		var images = wrapper.children();
+		var imagesAmount = $(images).length - 1;
+		var imageActive = parseInt($(wrapper).attr('data-active'))
+
+		if (imageActive > 0) {
+			imageActive -= 1;
+			$(wrapper).attr('data-active', imageActive)
+			$(images).hide();
+			$($(images)[imageActive]).show()
+		} else{
+			imageActive = imagesAmount;
+			$(wrapper).attr('data-active', imageActive)
+			$(images).hide();
+			$($(images)[imageActive]).show()
+			// console.log($($(images)[imageActive]));
+		}
+	});
+
+	////////////////////////////////////////////////////////////
+	
+	// $('.city-page__tab__item__image__prev, .city-page__tab__item__image__next').hide();
+	// $('.city-page__tab__item__image').mouseover(function(){
+	// 	$(this).parent().find('.city-page__tab__item__image__prev, .city-page__tab__item__image__next').show();
+	// });
+	// $('.city-page__tab__item__image').mouseout(function(){
+	// 	$(this).parent().find('.city-page__tab__item__image__prev, .city-page__tab__item__image__next').hide();
+	// });
+	
+	/////////////////////////////////////////////////////////////
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// МОДАЛЬНОЕ ОКНО КАРТА ДОСТОПРИМЕЧАТЕЛЬНОСТЕЙ
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Открытие
+	$(document).on('click', '#showplaceMap', function(event) {
+		event.preventDefault();
+		$('#overlay').fadeIn(10, function(){
+			$('#modal_form_showplace-map').css('display', 'block').animate({opacity: 1}, 10);
+		});
+	});
+
+	// Зaкрытие
+	$(document).on('click', '#modal_form_showplace-map-close, #overlay', function() {
+		$('#modal_form_showplace-map').animate({opacity: 0}, 10, function(){
+			$(this).css('display', 'none');
+			$('#overlay').fadeOut(10);
+		});
+	});
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ПЛЕЕР В САЙДБАРЕ
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	$(document).ready(function(){
+
+		var cssSelector = {
+		    jPlayer: "#jquery_jplayer_1", 
+		    cssSelectorAncestor: "#jp_container_1"
+		};
+
+		var options = {
+		    swfPath: "js",
+		    supplied: "mp3",
+		    wmode: "window",
+		    smoothPlayBar: false,
+		    keyEnabled: false,
+		    autoplay: true,
+		    loop: true,
+		    description: false,
+		    
+		    ready: function(){
+		    	$('.jp-playlist ul li a').addClass('mdl-button mdl-js-button mdl-js-ripple-effect');
+		    	componentHandler.upgradeDom();
+		    }
+		};
+
+		var myPlaylist = new jPlayerPlaylist(cssSelector, playlist, options);
+
+		var myPlayer = $("#jquery_jplayer_1"),
+			myPlayerData,
+			fixFlash_mp4, // Flag: The m4a and m4v Flash player gives some old currentTime values when changed.
+			fixFlash_mp4_id, // Timeout ID used with fixFlash_mp4
+			ignore_timeupdate, // Flag used with fixFlash_mp4
+			options = {
+				ready: function (event) {
+					// Hide the volume slider on mobile browsers. ie., They have no effect.
+					if(event.jPlayer.status.noVolume) {
+						// Add a class and then CSS rules deal with it.
+						$(".jp-gui").addClass("jp-no-volume");
+					}
+					// Determine if Flash is being used and the mp4 media type is supplied. BTW, Supplying both mp3 and mp4 is pointless.
+					fixFlash_mp4 = event.jPlayer.flash.used && /m4a|m4v/.test(event.jPlayer.options.supplied);
+					// Setup the player with media.
+					// $(this).jPlayer("setMedia", {
+					// 	// mp3: "http://www.szymonklima.com/images/prasa/recenzje/plyty_Jowity.mp3",
+					//         // oga: "http://www.szymonklima.com/images/prasa/recenzje/plyty_Jowity.ogg"
+					//  mp3: "WD.mp3",
+					//  oga: "http://www.szymonklima.com/images/prasa/recenzje/plyty_Jowity.ogg"
+					// });
+
+					// $(this).jPlayer("setMedia", PL);
+				},
+				timeupdate: function(event) {
+					if(!ignore_timeupdate) {
+						myControl.progress.slider("value", event.jPlayer.status.currentPercentAbsolute);
+					}
+				},
+				volumechange: function(event) {
+					if(event.jPlayer.options.muted) {
+						myControl.volume.slider("value", 0);
+					} else {
+						myControl.volume.slider("value", event.jPlayer.options.volume);
+					}
+				},
+				swfPath: "js",
+				supplied: "m4a, oga",
+				cssSelectorAncestor: "#jp_container_1",
+				wmode: "window"
+			},
+			myControl = {
+				progress: $(options.cssSelectorAncestor + " .jp-progress-slider"),
+				volume: $(options.cssSelectorAncestor + " .jp-volume-slider")
+			};
+
+		// Instance jPlayer
+		myPlayer.jPlayer(options);
+
+		// A pointer to the jPlayer data object
+		myPlayerData = myPlayer.data("jPlayer");
+
+		// Define hover states of the buttons
+		$('.jp-gui ul li').hover(
+			function() { $(this).addClass('ui-state-hover'); },
+			function() { $(this).removeClass('ui-state-hover'); }
+		);
+
+		// Create the progress slider control
+		myControl.progress.slider({
+			animate: "fast",
+			max: 100,
+			range: "min",
+			step: 0.1,
+			value : 0,
+			slide: function(event, ui) {
+				var sp = myPlayerData.status.seekPercent;
+				if(sp > 0) {
+					// Apply a fix to mp4 formats when the Flash is used.
+					if(fixFlash_mp4) {
+						ignore_timeupdate = true;
+						clearTimeout(fixFlash_mp4_id);
+						fixFlash_mp4_id = setTimeout(function() {
+							ignore_timeupdate = false;
+						},1000);
+					}
+					// Move the play-head to the value and factor in the seek percent.
+					myPlayer.jPlayer("playHead", ui.value * (100 / sp));
+				} else {
+					// Create a timeout to reset this slider to zero.
+					setTimeout(function() {
+						myControl.progress.slider("value", 0);
+					}, 0);
+				}
+			}
+		});
+
+		// Create the volume slider control
+		myControl.volume.slider({
+			animate: "fast",
+			max: 1,
+			range: "min",
+			step: 0.01,
+			value : $.jPlayer.prototype.options.volume,
+			slide: function(event, ui) {
+				myPlayer.jPlayer("option", "muted", false);
+				myPlayer.jPlayer("option", "volume", ui.value);
+			}
+		});
+
+
+		$("#jquery_jplayer_1").bind($.jPlayer.event.play, function (event) {
+		    var current = myPlaylist.current,
+		        playlist = myPlaylist.playlist;
+		 
+		    $.each(playlist, function (index, obj) {
+		        if (index === current) {
+		            $('.arrivo-player__song-name').text(obj.title);
+		        }
+		    });
+		});
+
+
+	    $("#jquery_jplayer_1").bind($.jPlayer.event.ready, function(event) { 
+	       $('.jp-next').click();
+	       $('.jp-previous').click();
+	       $('.jp-pause').click();
+	    });
+
+
+	});
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ПОГОДА
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// // Показать еще 7 дней
+	// $('.city-page__weather__more').hide();
+	// $('.city-page__weather__show-more-but').click(function(event) {
+	// 	event.preventDefault();
+	// 	$(this).hide();
+	// 	$('.city-page__weather__more').show();
+	// });	
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// АККОРДEОН
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	$('.zippy-arrow-top').css('display', 'none');
+
+	var zippy = function(id){
+		$('#'+ id).find('.zippy-header').each(function(index, el) {
+			var className = id + '-header-' + index;
+			$(el).addClass(className);
+			
+			$(el).click(function(event) {
+				$(this).find('.zippy-arrow-top').toggle();
+				$(this).find('.zippy-arrow-bottom').toggle();
+				$('.' +id + '-content-' + index).toggle()
+			});
+		});
+
+		$('#'+ id).find('.zippy-content').each(function(index, el) {
+			var className = id + '-content-' + index;
+			$(el).addClass(className);
+
+		});
+
+	};
+
+	zippy('vizaCenters');
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ОБМЕН ВАЛЮТЫ
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	var currenciesCalc = function(amount, curr1, curr2){
+		if (amount === '' || amount === '0') {
+			amount = '1';
+		}
+		amount = parseFloat(amount);
+		return amount / currencies[curr1] * currencies[curr2];
+	}
+
+	var currenciesChange = function(el1, el2, c1, c2){
+		setTimeout(function(){
+			var amount = $(el1).val();
+			var curr2 = currenciesCalc(amount, c1, c2);
+
+			curr2 = Math.floor(curr2 * 100) / 100;
+			$(el2).val(curr2);
+		}, 1)
+	}
+
+	// выпадающие списки с выбором валюты в конвертере валют
+	if (typeof currencies === 'undefined') {
+		return
+	} else{
+		$('#moneyDropList').arrDropList({
+		  defaultSelect: '<span>' + currencies.curr1 + '</span>',
+		  arrow: $('<i class="material-icons">&#xE5C5;</i>'),
+		  autocomplete: false,
+		  data: currencies.currs,
+		  
+		  callbackFunc: function(element, option){
+		  	currencies.curr1 = $(option).text();
+		  	currenciesChange('#currAmount1', '#currAmount2', currencies.curr1, currencies.curr2)
+		  }
+		});
+
+		$('#moneyDropList2').arrDropList({
+		  defaultSelect: '<span> ' + currencies.curr2 + ' </span>',
+		  arrow: $('<i class="material-icons">&#xE5C5;</i>'),
+		  autocomplete: false,
+		  data: currencies.currs,
+		  
+		  callbackFunc: function(element, option){
+		  	currencies.curr2 = $(option).text();
+		    currenciesChange('#currAmount1', '#currAmount2', currencies.curr1, currencies.curr2);
+		  }
+		});
+
+		// Значения при загрузки страницы
+		$('#currAmount1').val(1);
+		setTimeout(function(){
+			currenciesChange('#currAmount1', '#currAmount2', currencies.curr1, currencies.curr2);
+		}, 100)
+
+		$('#currAmount1').keyup(function(event) {
+			setTimeout(function(){
+				currenciesChange('#currAmount1', '#currAmount2', currencies.curr1, currencies.curr2);
+			}, 100)
+		});
+
+		$('#currAmount2').keyup(function(event) {
+			setTimeout(function(){
+				currenciesChange('#currAmount2', '#currAmount1', currencies.curr2, currencies.curr1)
+				// console.log(parseInt($('#currAmount2').val()));
+			}, 100)
+		});
+
+		$('#currAmount1, #currAmount2').floatsOnly();
+	};
+});
+
+
+$.fn.extend({
+	floatsOnly: function(){
+		this.on('keydown keypress keyup paste input', function(e){
+
+			var caretStart = this.selectionStart;
+			var caretEnd = this.selectionEnd;
+
+			$(this).val($(this).val().replace(',', '.'));
+			
+			while (($(this).val().split(".").length - 1) > 1) {
+				$(this).val($(this).val().slice(0, -1));
+				if (($(this).val().split(".").length - 1) > 1) {
+					continue;
+				} else {
+					this.setSelectionRange(caretStart, caretEnd);
+					return false;
+				}
+			}
+
+			$(this).val($(this).val().replace(/[^0-9.]/g, ''));
+			var int_num_allow = 19;
+			var float_num_allow = 2;
+
+			var iof = $(this).val().indexOf(".");
+
+			if (iof != -1) {
+				if ($(this).val().substring(0, iof).length > int_num_allow) {
+					$(this).val('');
+				}
+				$(this).val($(this).val().substring(0, iof + float_num_allow + 1));
+			} else {
+				$(this).val($(this).val().substring(0, int_num_allow));
+			}
+
+			this.setSelectionRange(caretStart, caretEnd);
+			return true;
+		});
+
+		this.on('change', function() {
+			if ($(this).val() === '' || $(this).val() === '0') {
+				$(this).val('1');
+			}
+		});
+		
+		return this;
+	}
+});
+
+
+//////////////////////////////////////////////////////////////////////
+// ОНЛАЙН ПЕРЕВОДЧИК
+//////////////////////////////////////////////////////////////////////
+
+var translater = (function(){
+	var lang, text, langs,
+		getLangsUrl = 'https://translate.yandex.net/api/v1.5/tr.json/getLangs?key=trnsl.1.1.20140916T085109Z.a698cf73cb76d4fa.d0c03cb7c3dc7b95f7c02844e38858ed460d30c8&ui=ru',
+		langsSort = [];
+
+	return {
+		getLangs: function () {
+			this.langFrom = translateOptions.langFrom;
+			this.langTo = translateOptions.langTo;
+			var that = this;
+
+			$.ajax({
+				url: getLangsUrl,
+			})
+			.done(function(data) {
+				langs = data.langs;
+				for ( lang in langs ){
+					langsSort.push({ link: lang, text: langs[lang] })
+				}
+				that.initDroplists(langsSort)
+			})
+		},
+
+		initDroplists: function (langs) {
+
+			var that = this;
+
+			// Выпадающие списки переводчика
+			$('#translateLangFrom').arrDropList({
+			  defaultSelect: translateOptions.defaultSelectFrom,
+			  maxHeightList: 400,
+			  arrow: $('<i class="material-icons">&#xE5C5;</i>'),
+			  autocomplete: false,
+			  link: '/site/locationautocomplete.html?countryId=',
+			  countryId: 46,
+			  data: langs,
+			  
+			  callbackFunc: function(element, option){
+			   that.langFrom = $(option).attr('data-link');
+			   that.translate();
+			  }
+			});
+
+			$('#translateLangTo').arrDropList({
+			  defaultSelect: translateOptions.defaultSelectTo,
+			  maxHeightList: 400,
+			  arrow: $('<i class="material-icons">&#xE5C5;</i>'),
+			  autocomplete: false,
+			  link: '/site/locationautocomplete.html?countryId=',
+			  countryId: 46,
+			  data: langs,
+			  
+			  callbackFunc: function(element, option) {
+			  	that.langTo = $(option).attr('data-link');
+			  	that.translate();
+			  }
+			});
+		},
+
+		translate: function () {
+			text = $('#translateTextAreaFrom').val();
+			langFrom = this.langFrom;
+			langTo = this.langTo;
+
+			$.ajax({
+				url: 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20140916T085109Z.a698cf73cb76d4fa.d0c03cb7c3dc7b95f7c02844e38858ed460d30c8&text=' + text + '&lang=' + langFrom + '-' + langTo + '',
+			})
+			.done(function(data) {
+				$('#translateTextAreaTo').val(data.text)
+			})
+		},
+
+		clear: function () {
+			$('#translateTextAreaFrom').val('');
+			$('#translateTextAreaTo').val('');
+			$('#translateTextAreaFrom').parent().removeClass('is-dirty');
+		},
+
+		invert: function (){
+			var c = this.langFrom,
+				c2 = $('#translateLangFrom').find('span').text()
+
+			this.langFrom = this.langTo;
+			this.langTo = c;
+
+			$('#translateLangFrom').find('span').text($('#translateLangTo').find('span').text());
+			$('#translateLangTo').find('span').text(c2)
+			
+			this.translate();
+		}
+	}
+}())
+
+if (typeof translateOptions !== 'undefined') {
+	translater.getLangs();
+	translater.langFrom = translateOptions.langFrom;
+	translater.langTo = translateOptions.langTo;
+
+	$('#translaterClear').hide();
+
+	$('#translateTextAreaFrom').on('keyup', function(event) {
+		translater.translate();
+
+		if ($('#translateTextAreaFrom').val() === '') {
+			$('#translaterClear').hide();
+		} else {
+			$('#translaterClear').show();
+		}
+	});
+
+	$('#translaterClear').click(function(event) {
+		event.preventDefault();
+		$(this).hide();
+
+		setTimeout(function(){
+			translater.clear();
+		}, 100)
+	});
+
+	$('#translaterInvert').click(function(event) {
+		event.preventDefault();
+		translater.invert();
+	});
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// МЕСТО
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////
+// Слайдер фотографий
+////////////////////////////////////////////////////////////
+
+var placesSlider = (function () {
+
+	var wrapper = $('#city-page__place__slider__images-wrapper');
+		images = wrapper.children(),
+		imagesAmount = $(images).length - 1,
+		imageActive = parseInt($(wrapper).attr('data-active')),
+		slidesSources = [];
+		
+		$(wrapper).find('[data-source]').each(function(index, el) {
+			slidesSources.push($(el).attr('data-source'))
+		});
+
+	return {
+
+		prev: function () {
+			if (imageActive < imagesAmount) {
+				imageActive += 1;
+				this.update();
+			} else{
+				imageActive = 0;
+				this.update();
+			}
+		},
+
+		next: function () {
+			if (imageActive > 0) {
+				imageActive -= 1;
+				this.update();
+			} else{
+				imageActive = imagesAmount;
+				this.update();
+			}
+
+		},
+
+		update: function () {
+			$(images).hide();
+			$(wrapper).attr('data-active', imageActive);
+			$($(images)[imageActive]).show();
+			this.writeInfo();
+		},
+
+		writeInfo: function () {
+			$('#placeSliderCounterFotoCurrent').text(imageActive + 1);
+			$('#placeSliderCounterFotoAmount').text(imagesAmount + 1);
+			$('#placeSliderCounterFotoSource').text(slidesSources[imageActive]);
+		},
+
+		get slidesAmount() {
+			return slidesSources.length;
+		}
+	}
+
+}())
+
+
+placesSlider.update();
+
+if (placesSlider.slidesAmount === 1) {
+	$('.city-page__place__slider__next, .city-page__place__slider__prev').hide();
+};
+
+$('.city-page__place__slider__next').on('click', function () {
+	placesSlider.prev();
+});
+
+$('.city-page__place__slider__prev').on('click', function () {
+	placesSlider.next();
+});
+
+
+////////////////////////////////////////////////////////////
+// Скролинг до отзывов
+////////////////////////////////////////////////////////////
+
+
+// $("#placeReviews").click(function(){
+//     var selected = $('.reviews-h2');
+//     $.scrollTo(selected, 800);        
+//     return false;
+// }); 
+
+
+	
+$("#placeReviews").click(function() {
+
+	var elTop = $('#add-comment-block').offset().top,
+		elheight = parseInt($('#add-comment-block').css('height')),
+		winHeight = $(window).height(),
+		scrollTarget;
+
+	scrollTarget = elTop - winHeight/2 + elheight/2;
+
+	$('html, body').animate({
+		// scrollTop: $(".reviews-h2").offset().top
+		scrollTop: scrollTarget
+	}, 250);
+	return false;
+});
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+// Показывать/скрывать конвертер
+////////////////////////////////////////////////////////////
+
+
+$('#converterToggle').click(function(event) {
+	$('#ratePlacesPage').toggle();
+	// console.log(event.target);
+});
+
+$('#placesPageClose').click(function(event) {
+	$('#ratePlacesPage').hide();
+});
+
+$(document).click(function(event) {
+	if ($(event.target).closest("#ratePlacesPage").length === 0
+		&& $(event.target).closest("#converterToggle").length === 0){
+		// && $(event.target)[0].id !== 'converterToggle') {
+		$("#ratePlacesPage").hide();
+	}
+});
+
+
+
+////////////////////////////////////////////////////////////
+// Показывать/скрывать форму отправки сообщения об ошибке
+////////////////////////////////////////////////////////////
+
+
+$('#placesPageErrorBut').click(function(event) {
+	$('.places-page__error').toggle();
+});
+
+$('#placesPageErrorClose').click(function(event) {
+	$('.places-page__error').hide();
+});
+
+$(document).click(function(event) {
+	if ($(event.target).closest(".places-page__error").length === 0
+		// && $(event.target)[0].id !== 'placesPageErrorBut') {
+		&& $(event.target).closest("#placesPageErrorBut").length === 0) {
+		$(".places-page__error").hide();
+		// console.log(event.target);
+	}
+});
+
+$('#placesPageErrorText').click(function(event) {
+	if ($(this).val() === 'Где ошибка?') {
+		$(this).val('');
+		$(this).css('color', '#212121');
+	};
+});
+
+$('#placesPageErrorText').focusout(function(event) {
+	if ($(this).val() === '') {
+		$(this).val('Где ошибка?');
+		$(this).css('color', '#9d9d9d');
+	};
+});
+
+
+////////////////////////////////////////////////////////////
+// Галерея места
+////////////////////////////////////////////////////////////
+
+// $('.city-page__place__gallery .comments_comment_img').show();
+$('.city-page__tab__item').each(function(){
+	// console.log($(this).find('a'));
+	// console.log($(this).find('a'));
+})
+
+// console.log($('.city-page__tab__item').find('a'));
+
+
+////////////////
+
+$('.mdl-tabs__tab-bar a').click(function(event) {
+	setTimeout(function(){
+		autoSidebar.update();
+		$('.sidebar_floating-block').floatingBlock('update')
+		$('.city__sidebar__menu').show();
+		$('.city__sidebar__menu__DropList-wrapper').show();
+	}, 200)
+});

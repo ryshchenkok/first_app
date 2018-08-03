@@ -1,0 +1,497 @@
+28021     
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp1965265iof;
+        Thu, 2 Aug 2018 03:57:01 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpe6ago+KrkVHCCVCJT1ghliN9ciIebXEIx/vo5dumhkO4MhxuUqrAKKlQJHD5sPHcMd4qmq
+X-Received: by 2002:a65:6104:: with SMTP id z4-v6mr2223649pgu.361.1533207421207;
+        Thu, 02 Aug 2018 03:57:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533207421; cv=none;
+        d=google.com; s=arc-20160816;
+        b=E1Apv7aPskyNYTOF9zz7Tw89hKahriWKotn3tLNdhJ4qkqsq7mVtPPuDBEfNJJO6mD
+         p8fhCb6Zquz6lub5+UNLG7vVO7O3SQ+HAKPHzR290e4O27yupHrmOjTJxPMG4goqteti
+         I4N0Eumys6yYNob5KBr+5ZLahX9Lare054gYdmexAIaOK+bqogt4ZIfzHEN6iHKuy6bd
+         ZAsmLcvkyRI/AbUzQ/RscUEGsNjFS8U8IMqLtCUuDiuDPL+ZK8i88qnQfI5zB2ZTRehW
+         dERdtjavbF1UUjUUSDc2lkrnAWVx9SlEzffy/TmzJlG5TFmjt1AIydT2TIbx1aZxRgXl
+         ontw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=css:content-transfer-encoding:mime-version:subject:message-id:to
+         :from:date:arc-authentication-results;
+        bh=G0g8MgbUYNiTXVGH3E4ndwZ7voQ8ieXM9DxBlItcK/4=;
+        b=SCpprZOh3FmO0GGO18strR/EWYEV+/FRcAiO4pMm6SKXD5UWhoMzNKdyq/cXVieC7Y
+         jdn7vo23XjLQ+ptujFnvsq4qxlCFcc9eQ5Rmjx1JznMvoBy834crDLDDBTG8wmrJnkUF
+         K+cF0kiqCT3D2KT7ZqupgsBHWuyi/0Qhb1rmVogeHk4BEO/M4LAfQ1MMY1Vq3neMn2+g
+         GGUXg9pgDozkhgHr774i6byh652Qs30hK9d9WuoFjH9rixuFCHe9zoAq0AaDh2bfJJgm
+         MWHf23GzytnWtVvlihiv63lmC1uSwpjmTQh24bvNk/b0KRANK/mucxoPg2EyDhYlHISQ
+         AGXw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: best guess record for domain of info@ala.anahoret.com designates 139.59.240.123 as permitted sender) smtp.mailfrom=info@ala.anahoret.com
+Return-Path: <info@ala.anahoret.com>
+Received: from justplay.anahoret.com (justplay.anahoret.com. [139.59.240.123])
+        by mx.google.com with ESMTP id g4-v6si1330385pgl.139.2018.08.02.03.57.00
+        for <kr@anadeainc.com>;
+        Thu, 02 Aug 2018 03:57:01 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of info@ala.anahoret.com designates 139.59.240.123 as permitted sender) client-ip=139.59.240.123;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: best guess record for domain of info@ala.anahoret.com designates 139.59.240.123 as permitted sender) smtp.mailfrom=info@ala.anahoret.com
+Received: by justplay.anahoret.com (Postfix, from userid 1005)
+	id 380D512472B; Thu,  2 Aug 2018 10:54:38 +0000 (UTC)
+Date: Thu, 02 Aug 2018 10:54:38 +0000
+From: Just Play <info@ala.anahoret.com>
+To: kr@anadeainc.com
+Message-ID: <5b62e2ee34578_61c43fc2abf4312c71051@justplay.anahoret.com.mail>
+Subject: Your Basketball game at Oakleigh is now booked in
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+css: email
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.o=
+rg/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"min-height:100%;bac=
+kground:#f3f3f3">
+<head>
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUS-AS=
+CII">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+  =
+
+
+
+
+<style>a:hover{color:#147dc2}
+a:active{color:#147dc2}
+a:visited{color:#2199e8}
+h1 a:visited{color:#2199e8}
+h2 a:visited{color:#2199e8}
+h3 a:visited{color:#2199e8}
+h4 a:visited{color:#2199e8}
+h5 a:visited{color:#2199e8}
+h6 a:visited{color:#2199e8}
+table.button:hover table tr td a{color:#fefefe}
+table.button:active table tr td a{color:#fefefe}
+table.button table tr td a:visited{color:#fefefe}
+table.button.tiny:hover table tr td a{color:#fefefe}
+table.button.tiny:active table tr td a{color:#fefefe}
+table.button.tiny table tr td a:visited{color:#fefefe}
+table.button.small:hover table tr td a{color:#fefefe}
+table.button.small:active table tr td a{color:#fefefe}
+table.button.small table tr td a:visited{color:#fefefe}
+table.button.large:hover table tr td a{color:#fefefe}
+table.button.large:active table tr td a{color:#fefefe}
+table.button.large table tr td a:visited{color:#fefefe}
+table.button:hover table td{background:#147dc2;color:#fefefe}
+table.button:visited table td{background:#147dc2;color:#fefefe}
+table.button:active table td{background:#147dc2;color:#fefefe}
+table.button:hover table a{border:0 solid #147dc2}
+table.button:visited table a{border:0 solid #147dc2}
+table.button:active table a{border:0 solid #147dc2}
+table.button.secondary:hover table td{background:#919191;color:#fefefe}
+table.button.secondary:hover table a{border:0 solid #919191}
+table.button.secondary:hover table td a{color:#fefefe}
+table.button.secondary:active table td a{color:#fefefe}
+table.button.secondary table td a:visited{color:#fefefe}
+table.button.success:hover table td{background:#23bf5d}
+table.button.success:hover table a{border:0 solid #23bf5d}
+table.button.alert:hover table td{background:#e23317}
+table.button.alert:hover table a{border:0 solid #e23317}
+table.button.warning:hover table td{background:#cc8b00}
+table.button.warning:hover table a{border:0px solid #cc8b00}
+.thumbnail:hover{box-shadow:0 0 6px 1px rgba(33, 153, 232, 0.5)}
+.thumbnail:focus{box-shadow:0 0 6px 1px rgba(33, 153, 232, 0.5)}</style>
+</head>
+<body style=3D"min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size=
+-adjust:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box=
+-sizing:border-box;color:#0a0a0a;font-family:Helvetica, Arial, sans-serif=
+;font-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;lin=
+e-height:1.3;width:100% !important;background:#DBE5EB !important">
+<table class=3D"body" data-made-with-foundation style=3D"border-spacing:0=
+;border-collapse:collapse;vertical-align:top;background:#f3f3f3;height:10=
+0%;width:100%;color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font=
+-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-hei=
+ght:1.3">
+  <tr style=3D"padding:0;vertical-align:top;text-align:left">
+    <td class=3D"center" align=3D"center" valign=3D"top" style=3D"word-wr=
+ap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertica=
+l-align:top;color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-w=
+eight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-heigh=
+t:1.3;border-collapse:collapse !important">
+      <center style=3D"width:100%;min-width:580px;min-width:0 !important"=
+>
+        <table class=3D"wrapper wrapper float-center" align=3D"center" st=
+yle=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align=
+:top;text-align:left;width:100%;background-color:#dbe5eb;margin:0 auto;fl=
+oat:none;text-align:center"><tr style=3D"padding:0;vertical-align:top;tex=
+t-align:left"><td class=3D"wrapper-inner" style=3D"word-wrap:break-word;-=
+webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;col=
+or:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-weight:normal;pa=
+dding:0;margin:0;text-align:left;font-size:16px;line-height:1.3;padding:3=
+2px 0;border-collapse:collapse !important">
+          <table class=3D"content-body container" align=3D"center" style=3D=
+"border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;t=
+ext-align:left;max-width:640px;min-width:300px;border-radius:4px;backgrou=
+nd:#fefefe;width:580px;margin:0 auto;text-align:inherit;width:95% !import=
+ant"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left"><t=
+d style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hy=
+phens:auto;vertical-align:top;color:#0a0a0a;font-family:Helvetica, Arial,=
+ sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;font-si=
+ze:16px;line-height:1.3;border-collapse:collapse !important">
+            <table class=3D" row" style=3D"border-spacing:0;border-collap=
+se:collapse;vertical-align:top;text-align:left;padding:0;width:100%;posit=
+ion:relative;display:table"><tbody><tr style=3D"padding:0;vertical-align:=
+top;text-align:left">
+  <th class=3D"header small-12 large-12 columns first last" style=3D"colo=
+r:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-weight:normal;pad=
+ding:0;margin:0;text-align:left;font-size:16px;line-height:1.3;padding-to=
+p:18px;padding-bottom:18px;background-color:#0aa5f2;border-top-left-radiu=
+s:4px;border-top-right-radius:4px;margin:0 auto;padding-bottom:16px;width=
+:564px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right=
+:16px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing=
+:border-box;display:inline-block !important;width:100% !important;height:=
+auto !important;padding-left:16px !important;padding-right:16px !importan=
+t"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;verti=
+cal-align:top;text-align:left">
+<th style=3D"color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-=
+weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-heig=
+ht:1.3">
+    <center style=3D"width:100%;min-width:580px;min-width:532px;min-width=
+:0 !important">
+      <img alt=3D"Just Play - Find Your Team" class=3D"justplay-logo-head=
+er float-center float-center" src=3D"http://staging.justplay.com.au/asset=
+s/logo-justplay-white-045d3b6118431e24b6cb6ad0559902e574ba34ad2edf773d4c2=
+3263d613556a0.png" align=3D"center" style=3D"outline:none;text-decoration=
+:none;-ms-interpolation-mode:bicubic;max-width:100%;clear:both;display:bl=
+ock;margin:0 auto;float:none;text-align:center;width:auto;height:auto;wid=
+th:143px !important">
+    </center>
+  </th>
+<th class=3D"expander" style=3D"color:#0a0a0a;font-family:Helvetica, Aria=
+l, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;font-=
+size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important"=
+></th>
+</tr></table></th>
+</tr></tbody></table>
+
+            <table class=3D"lead-container row" style=3D"border-spacing:0=
+;border-collapse:collapse;vertical-align:top;text-align:left;background-c=
+olor:#f1f6f9;padding:0;width:100%;position:relative;display:table"><tbody=
+><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D"lead-content small-12 large-12 columns first last" style=3D=
+"color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-weight:norma=
+l;padding:0;margin:0;text-align:left;font-size:16px;line-height:1.3;margi=
+n:0 auto;padding-bottom:16px;width:564px;padding-left:8px;padding-right:8=
+px;padding-left:16px;padding-right:16px;-moz-box-sizing:border-box;-webki=
+t-box-sizing:border-box;box-sizing:border-box;padding:32px 0 !important;d=
+isplay:inline-block !important;width:100% !important;height:auto !importa=
+nt;padding-left:16px !important;padding-right:16px !important"><table sty=
+le=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align:=
+top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top=
+;text-align:left">
+<th style=3D"color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-=
+weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-heig=
+ht:1.3">
+      =
+
+  <center class=3D"lead-icon" style=3D"width:100%;min-width:580px;margin-=
+bottom:20px;min-width:532px;min-width:0 !important">
+    <img alt=3D"Game booked" class=3D"icon float-center float-center" src=
+=3D"http://staging.justplay.com.au/assets/icons/icon1-773584c2e2d2e959d9b=
+ed903ce39a35073318bd188f47dfb115400c5e80764a3.png" align=3D"center" style=
+=3D"outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;max-=
+width:100%;clear:both;display:block;margin:0 auto;float:none;text-align:c=
+enter;width:auto;height:auto;width:64px;height:64px">
+  </center>
+  <h1 class=3D"text-center lead-title" style=3D"color:#0a0a0a;padding:0;m=
+argin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;fo=
+nt-family:Helvetica, Arial, sans-serif;font-weight:normal;margin-bottom:1=
+0px;font-size:34px;font-weight:700;font-size:32px;line-height:42px;color:=
+#3e484d;margin-bottom:0;text-align:center">Game Booked</h1>
+  <h4 class=3D"text-center lead-description" style=3D"color:#0a0a0a;paddi=
+ng:0;margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:nor=
+mal;font-family:Helvetica, Arial, sans-serif;font-weight:normal;margin-bo=
+ttom:10px;font-size:24px;font-size:18px;line-height:26px;color:#a7b1b6;te=
+xt-align:center">Your Mens Basketball game
+    at Oakleigh is now booked in</h4>
+
+  </th>
+<th class=3D"expander" style=3D"color:#0a0a0a;font-family:Helvetica, Aria=
+l, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;font-=
+size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important"=
+></th>
+</tr></table></th>
+</tr></tbody></table>
+
+            <table class=3D"main-content container" align=3D"center" styl=
+e=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align:t=
+op;text-align:left;background:#fefefe;width:580px;margin:0 auto;text-alig=
+n:inherit;margin-top:32px !important;width:95% !important"><tbody><tr sty=
+le=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"word-wra=
+p:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical=
+-align:top;color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-we=
+ight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-height=
+:1.3;border-collapse:collapse !important">
+              =
+
+
+
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;=
+vertical-align:top;text-align:left;padding:0;width:100%;position:relative=
+;display:table"><tbody><tr style=3D"padding:0;vertical-align:top;text-ali=
+gn:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"color:#0a0=
+a0a;font-family:Helvetica, Arial, sans-serif;font-weight:normal;padding:0=
+;margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;pa=
+dding-bottom:16px;width:564px;padding-left:8px;padding-right:8px;padding-=
+left:16px;padding-right:16px;-moz-box-sizing:border-box;-webkit-box-sizin=
+g:border-box;box-sizing:border-box;display:inline-block !important;width:=
+100% !important;height:auto !important;padding-left:16px !important;paddi=
+ng-right:16px !important"><table style=3D"border-spacing:0;border-collaps=
+e:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-=
+weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-heig=
+ht:1.3">
+    <p style=3D"margin:0 0 0 10px;color:#0a0a0a;font-family:Helvetica, Ar=
+ial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;lin=
+e-height:1.3;margin-bottom:10px;font-size:16px;line-height:22px;color:#61=
+6161">Hi K, </p>
+    <p style=3D"margin:0 0 0 10px;color:#0a0a0a;font-family:Helvetica, Ar=
+ial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;lin=
+e-height:1.3;margin-bottom:10px;font-size:16px;line-height:22px;color:#61=
+6161">Here are all the details of your game with the Just Play Voltage.</=
+p>
+  </th>
+<th class=3D"expander" style=3D"color:#0a0a0a;font-family:Helvetica, Aria=
+l, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;font-=
+size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important"=
+></th>
+</tr></table></th>
+</tr></tbody></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;=
+vertical-align:top;text-align:left;padding:0;width:100%;position:relative=
+;display:table"><tbody><tr style=3D"padding:0;vertical-align:top;text-ali=
+gn:left">
+  <th class=3D" small-12 large-4 columns first" style=3D"color:#0a0a0a;fo=
+nt-family:Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margi=
+n:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;padding-=
+bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-=
+left:16px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-si=
+zing:border-box;display:inline-block !important;width:100% !important;hei=
+ght:auto !important;padding-left:16px !important;padding-right:16px !impo=
+rtant"><table style=3D"border-spacing:0;border-collapse:collapse;padding:=
+0;vertical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;v=
+ertical-align:top;text-align:left"><th style=3D"color:#0a0a0a;font-family=
+:Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-=
+align:left;font-size:16px;line-height:1.3">
+    <p style=3D"margin:0 0 0 10px;color:#0a0a0a;font-family:Helvetica, Ar=
+ial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;lin=
+e-height:1.3;margin-bottom:10px;font-size:16px;line-height:22px;color:#61=
+6161">
+      <strong>Game details:</strong> <br>
+      Monday 6th August <br>
+      10:15PM <br>
+      Court 1 <br>
+    </p>
+  </th></tr></table></th>
+  <th class=3D" small-12 large-4 columns" style=3D"color:#0a0a0a;font-fam=
+ily:Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;te=
+xt-align:left;font-size:16px;line-height:1.3;margin:0 auto;padding-left:1=
+6px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:=
+8px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:b=
+order-box;display:inline-block !important;width:100% !important;height:au=
+to !important;padding-left:16px !important;padding-right:16px !important"=
+><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;vert=
+ical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left"><th style=3D"color:#0a0a0a;font-family:Helve=
+tica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:=
+left;font-size:16px;line-height:1.3">
+    <p style=3D"margin:0 0 0 10px;color:#0a0a0a;font-family:Helvetica, Ar=
+ial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;lin=
+e-height:1.3;margin-bottom:10px;font-size:16px;line-height:22px;color:#61=
+6161"><strong>Venue: </strong> <br>
+        <a target=3D"_blank" class=3D"text--regular" href=3D"http://maps.=
+google.com/?q=3DOakleigh%20Recreation%20Centre,%20Park%20Road,%20Oakleigh=
+,%20Victoria" style=3D"color:#0a0a0a;font-family:Helvetica, Arial, sans-s=
+erif;font-weight:normal;padding:0;margin:0;text-align:left;line-height:1.=
+3;color:#2199e8;text-decoration:none">
+          Oakleigh Recreation Centre <br>
+          2a Park Rd, Oakleigh, VIC 3166
+</a>    </p>
+  </th></tr></table></th>
+  <th class=3D" small-12 large-4 columns last" style=3D"color:#0a0a0a;fon=
+t-family:Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin=
+:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;padding-l=
+eft:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-r=
+ight:8px;padding-right:16px;-moz-box-sizing:border-box;-webkit-box-sizing=
+:border-box;box-sizing:border-box;display:inline-block !important;width:1=
+00% !important;height:auto !important;padding-left:16px !important;paddin=
+g-right:16px !important"><table style=3D"border-spacing:0;border-collapse=
+:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"color:#=
+0a0a0a;font-family:Helvetica, Arial, sans-serif;font-weight:normal;paddin=
+g:0;margin:0;text-align:left;font-size:16px;line-height:1.3">
+    <p style=3D"margin:0 0 0 10px;color:#0a0a0a;font-family:Helvetica, Ar=
+ial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;lin=
+e-height:1.3;margin-bottom:10px;font-size:16px;line-height:22px;color:#61=
+6161">Can&#8217;t make
+      it? <a href=3D"http://staging.justplay.com.au/game_rejects/41783bcd=
+3be10dd205c9c97409b19722eb94c3ee/edit" style=3D"color:#0a0a0a;font-family=
+:Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#2199e8;text-decoration:none">Click here=
+ to make yourself unavailable for the game</a></p>
+  </th></tr></table></th>
+</tr></tbody></table>
+
+
+                <table class=3D" container" align=3D"center" style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-=
+align:left;background:#fefefe;width:580px;margin:0 auto;text-align:inheri=
+t;width:95% !important"><tbody><tr style=3D"padding:0;vertical-align:top;=
+text-align:left"><td style=3D"word-wrap:break-word;-webkit-hyphens:auto;-=
+moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#0a0a0a;font-famil=
+y:Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text=
+-align:left;font-size:16px;line-height:1.3;border-collapse:collapse !impo=
+rtant">
+  <table class=3D"question-panel collapse radius row" style=3D"border-spa=
+cing:0;border-collapse:collapse;vertical-align:top;text-align:left;backgr=
+ound-color:#576871;border-radius:4px;margin-bottom:32px;padding:0;width:1=
+00%;position:relative;display:table"><tbody><tr style=3D"padding:0;vertic=
+al-align:top;text-align:left">
+    <th class=3D"question-panel__icon radius small-2 large-1 columns firs=
+t" style=3D"color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-w=
+eight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-heigh=
+t:1.3;min-width:32px;padding-top:16px;text-align:center;max-width:54px;ma=
+rgin:0 auto;padding-bottom:16px;width:32.33333px;padding-left:8px;padding=
+-right:8px;padding-left:16px;-moz-box-sizing:border-box;-webkit-box-sizin=
+g:border-box;box-sizing:border-box;padding-right:0;padding-left:0;width:4=
+8.33333px;width:56.33333px;width:10% !important;display:inline-block !imp=
+ortant;width:16.66667% !important;height:auto !important;padding-left:16p=
+x !important;padding-right:16px !important;padding-left:0 !important;padd=
+ing-right:0 !important"><table style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr sty=
+le=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"color:#0=
+a0a0a;font-family:Helvetica, Arial, sans-serif;font-weight:normal;padding=
+:0;margin:0;text-align:left;font-size:16px;line-height:1.3">
+      <center style=3D"width:100%;min-width:580px;min-width:0.33333px;min=
+-width:0 !important"><img alt=3D"Question" class=3D"question-icon float-c=
+enter float-center" src=3D"http://staging.justplay.com.au/assets/question=
+-circle-white-9b209f276031d7191a8c8c7419a0bd71390ba6a783258f34dcf7cdfb319=
+7ad51.png" align=3D"center" style=3D"outline:none;text-decoration:none;-m=
+s-interpolation-mode:bicubic;max-width:100%;clear:both;display:block;marg=
+in:0 auto;float:none;text-align:center;width:auto;height:auto;width:32px =
+!important;height:32px !important;padding-left:16px !important"></center>=
+
+    </th></tr></table></th>
+    <th class=3D"question-panel__description radius small-10 large-11 col=
+umns last" style=3D"color:#0a0a0a;font-family:Helvetica, Arial, sans-seri=
+f;font-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;li=
+ne-height:1.3;padding-top:18px;padding-bottom:18px;color:#fff;margin:0 au=
+to;padding-left:16px;padding-bottom:16px;width:515.66667px;padding-left:8=
+px;padding-right:8px;padding-right:16px;-moz-box-sizing:border-box;-webki=
+t-box-sizing:border-box;box-sizing:border-box;padding-right:0;padding-lef=
+t:0;width:531.66667px;width:539.66667px;display:inline-block !important;w=
+idth:83.33333% !important;height:auto !important;padding-left:16px !impor=
+tant;padding-right:16px !important;padding-left:0 !important;padding-righ=
+t:0 !important"><table style=3D"border-spacing:0;border-collapse:collapse=
+;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pa=
+dding:0;vertical-align:top;text-align:left"><th style=3D"color:#0a0a0a;fo=
+nt-family:Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margi=
+n:0;text-align:left;font-size:16px;line-height:1.3">
+      <p style=3D"margin:0 0 0 10px;color:#0a0a0a;font-family:Helvetica, =
+Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;l=
+ine-height:1.3;margin-bottom:10px;font-size:16px;line-height:22px;color:#=
+616161;margin-bottom:0;color:#fff;font-size:12px;line-height:14px;vertica=
+l-align:middle;padding-left:12px">QUESTIONS?</p>
+        =
+
+  <p style=3D"margin:0 0 0 10px;color:#0a0a0a;font-family:Helvetica, Aria=
+l, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;line-=
+height:1.3;margin-bottom:10px;font-size:16px;line-height:22px;color:#6161=
+61;margin-bottom:0;color:#fff;font-size:12px;line-height:14px;vertical-al=
+ign:middle;padding-left:12px">Get all the details on everything 'Games'..=
+.booking, uniforms, where to meet
+    <a class=3D"question-panel__link" href=3D"http://help.justplay.com.au=
+/getting-started/how-do-games-work" style=3D"color:#0a0a0a;font-family:He=
+lvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-ali=
+gn:left;line-height:1.3;color:#2199e8;text-decoration:none;color:#ffffff;=
+font-weight:bold;text-decoration:underline">More&#160;info</a></p>
+
+    </th></tr></table></th>
+  </tr></tbody></table>
+</td></tr></tbody></table>
+
+            </td></tr></tbody></table>
+          </td></tr></tbody></table>
+          <table class=3D"content-footer container" align=3D"center" styl=
+e=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align:t=
+op;text-align:left;max-width:640px;min-width:300px;background:#fefefe;wid=
+th:580px;margin:0 auto;text-align:inherit;width:95% !important"><tbody><t=
+r style=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"wor=
+d-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;ver=
+tical-align:top;color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;fo=
+nt-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-h=
+eight:1.3;border-collapse:collapse !important">
+  <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;width:100%;position:relati=
+ve;display:table"><tbody><tr style=3D"padding:0;vertical-align:top;text-a=
+lign:left">
+    <th class=3D"footer small-12 large-12 columns first last" style=3D"co=
+lor:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-weight:normal;p=
+adding:0;margin:0;text-align:left;font-size:16px;line-height:1.3;backgrou=
+nd-color:#dbe5eb;padding-top:32px;padding-bottom:326px;margin:0 auto;padd=
+ing-bottom:16px;width:564px;padding-left:8px;padding-right:8px;padding-le=
+ft:16px;padding-right:16px;-moz-box-sizing:border-box;-webkit-box-sizing:=
+border-box;box-sizing:border-box;display:inline-block !important;width:10=
+0% !important;height:auto !important;padding-left:16px !important;padding=
+-right:16px !important"><table style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr sty=
+le=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-=
+weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-heig=
+ht:1.3">
+        <a href=3D"https://justplay.com.au" style=3D"color:#0a0a0a;font-f=
+amily:Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;=
+text-align:left;line-height:1.3;color:#2199e8;text-decoration:none">
+          <center style=3D"width:100%;min-width:580px;min-width:532px;min=
+-width:0 !important">
+            <img alt=3D"Just Play - Find Your Team" class=3D"justplay-log=
+o-footer float-center float-center" src=3D"http://staging.justplay.com.au=
+/assets/logo-justplay-gray-204-7c4b549307e95e5036749bc538337b6b3e8005bf2c=
+7cf06a54f809ec7a7ccd5b.png" align=3D"center" style=3D"outline:none;text-d=
+ecoration:none;-ms-interpolation-mode:bicubic;max-width:100%;clear:both;d=
+isplay:block;border:none;margin:0 auto;float:none;text-align:center;width=
+:auto;height:auto;width:102px !important">
+          </center>
+</a>    </th>
+<th class=3D"expander" style=3D"color:#0a0a0a;font-family:Helvetica, Aria=
+l, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;font-=
+size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important"=
+></th>
+</tr></table></th>
+  </tr></tbody></table>
+</td></tr></tbody></table>
+
+        </td></tr></table>
+      </center>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>31</integer>
+	<key>date-last-viewed</key>
+	<integer>0</integer>
+	<key>date-received</key>
+	<integer>1533207421</integer>
+	<key>flags</key>
+	<integer>8606972928</integer>
+	<key>remote-id</key>
+	<string>1</string>
+</dict>
+</plist>

@@ -1,0 +1,123 @@
+4920      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a0c:81f4:0:0:0:0:0 with SMTP id 49-v6csp1287865qve; Mon, 23
+ Jul 2018 00:36:41 -0700 (PDT)
+X-Received: by 2002:a37:1456:: with SMTP id
+ e83-v6mr10791470qkh.69.1532331400180; Mon, 23 Jul 2018 00:36:40 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532331400; cv=none; d=google.com;
+ s=arc-20160816;
+ b=H1aESbR3sTGbLF/Nnbz0MRPpiW7aKMbV+C5vy1uoX2rTtbxkAyzSA3AeD2rCPbnkxK
+ MoVrk0UfqsCc+ccfb8oAfsj2oVWxqs+KLwXdgoqrHC8OIiuxryMZJv8nfuQ/NFYQ3juw
+ v+BGQG3h/ZTqIwNLa1Ah6vae94L0KJaj5sfR/2fsW/mTU+7LX4io8YtaIrrtXSDFD6TG
+ q8iMvpbe6NEWrklY+X1R60X2JQ8OWftYoigWNYRquH4N48RsDsVaHZkSV+TbTwrJ7Xjh
+ FEYopgzmpDTML7egodAqayfCZJZfRDgsxVmuN8pHU1/UR0ZfB0NQYK1miBJ7/7dMkMqN q4AA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20160816; h=to:subject:message-id:date:from:mime-version:dkim-signature
+ :arc-authentication-results; bh=Ykt1agppcAaX4mrtCazxisBN0L69UJgK3yZ/9EJy9C4=;
+ b=tA+PHZ7SElMDrq+FvU32H93ggOAZ7i0N5lUSOQDjMc1FI7cszbkU6bY6LVisJTknyJ
+ sQQg2x4bHA8hObYypF+xK+GdKlw/WTl2LGdJQpskSVcfS/nO51XKD8Ixj4Bt+84nxCX+
+ WjwI2JMpK9WJ8JcW1proWsKpFWtv4s5MWAvHbZqhs2vXPjxzqeTEFDkNXQA4UgRa5nsl
+ 8H/++oAjADowmcoVZgTjqWxz3fhY8lFFTcR6VBbmi9kyTtxoqDRsymAqVfll6/h2Pgbk
+ 9uG92DLXDRKJ5UD4glWb57e4PyG831vmCEFkILwGZKHBRZbR6bKooAGohJ4ZfjigAST6 lDBg==
+ARC-Authentication-Results: i=1; mx.google.com; dkim=pass header.i=@gmail.com
+ header.s=20161025 header.b="udrcJeQ/"; spf=pass (google.com: domain of
+ ryshchenko.k@gmail.com designates 209.85.220.41 as permitted sender)
+ smtp.mailfrom=ryshchenko.k@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE
+ dis=NONE) header.from=gmail.com
+Return-Path: <ryshchenko.k@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com.
+ [209.85.220.41]) by mx.google.com with SMTPS id
+ t81-v6sor3843926qkt.154.2018.07.23.00.36.40 for <kr@anadeainc.com> (Google
+ Transport Security); Mon, 23 Jul 2018 00:36:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ryshchenko.k@gmail.com designates
+ 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com; dkim=pass header.i=@gmail.com
+ header.s=20161025 header.b="udrcJeQ/"; spf=pass (google.com: domain of
+ ryshchenko.k@gmail.com designates 209.85.220.41 as permitted sender)
+ smtp.mailfrom=ryshchenko.k@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE
+ dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
+ h=mime-version:from:date:message-id:subject:to;
+ bh=Ykt1agppcAaX4mrtCazxisBN0L69UJgK3yZ/9EJy9C4=;
+ b=udrcJeQ/bETQb7n9yWSCht7jtWAN/7STwvqqFIwSh1ZGcj7FQSTTjemYrZH1fkouTq
+ MLDwq3cwCpJmHNmV9pOu/jJmcmwkmD4N2cg2JSRitnZzvGUIseLfCapnVOqbI8FUJKLU
+ SfBonf3xTQM57Lw9E+UGX7ukdcXY1xBVh393ysGvAvcz4cuwCmWfjDMUmrjZVxfwDCj/
+ ENQbp39oqhAM2yAwo2LFEjJkEQ+hP8k7rkWonx18HRgdBxeXPjGJoARMpUFHwguTdkzD
+ syvvhB+fmtyi/1qAf2U1HBj9kXWpR5Esq7Togw/dcstsEW3i1gA/cmKuuUMqeLeCZGbV ojuQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net;
+ s=20161025;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=Ykt1agppcAaX4mrtCazxisBN0L69UJgK3yZ/9EJy9C4=;
+ b=nDHMVxpeMVqhMctNIV7r9VRt88i4cODojNvCwS1e9LOWM9+2tKkGTvQeq0YoH9X1ry
+ Vtlf+Ek6XJ3LK43Qu4t6OkYP1TfJNwHnCCuGyi0HaWnPjPaoCvvSQW10WZb1+jy+uJCv
+ LxHVthZqgW0C4oHErJmP6bejvpa9meLdKe90gURJQIqW9IyDTGje0ZacAvf/d/2qTV92
+ VBlWe3mfWHFOVmME+ytmXiriNuPUs/IQTZ/UNBQim4a6pnSJcKpGgylKE3uA5yzkT4kh
+ aCZOrI1jKygOy0CR2zlKw+6YI/JqbIFZTS/I1TxL0s8Be1HZrZMzt4zvL2cxvE1TiaYu OJ5Q==
+X-Gm-Message-State: AOUpUlF5hY4AjPJ/RdOBcfBvL4RrBIw8H1J/LiPcD3i8FDZvKk2JoMi4
+ lNWxQQB4eVRuufj51FPM9IGrqJGpvh8julVMbtNO9g==
+X-Google-Smtp-Source: AAOMgpclfIZVWlILTChqIJzsY6ePNf0pdsEtS46i1P5F7BPE7vSnMNV/2ZqbJOHwR1qG8UeKQFIyUjYM6kXj4hzn/+Y=
+X-Received: by 2002:a37:2990:: with SMTP id
+ p16-v6mr10428738qkp.386.1532331398897; Mon, 23 Jul 2018 00:36:38 -0700 (PDT)
+MIME-Version: 1.0
+From: =?UTF-8?B?0JrQvtGB0YLRjyDQoNGL0YnQtdC90LrQvg==?=
+ <ryshchenko.k@gmail.com>
+Date: Mon, 23 Jul 2018 10:36:24 +0300
+Message-ID: <CAMpsOnH_mvqh-8UEaRJ5+YHqC9oiAZZbS2h1wxCCkxtG1+ptNQ@mail.gmail.com>
+Subject: =?UTF-8?B?0JLQu9C+0LbQtdC90L3Ri9C1INC00L7QutGD0LzQtdC90YLRiw==?=
+To: kr@anadeainc.com
+Content-Type: multipart/mixed; boundary="000000000000b5dbda0571a5b462"
+
+
+--000000000000b5dbda0571a5b462
+Content-Type: multipart/ALTERNATIVE;
+	boundary=000000000000b5dbd70571a5b460
+
+
+--000000000000b5dbd70571a5b460
+Content-Transfer-Encoding: 7BIT
+Content-Type: TEXT/PLAIN;
+	charset=UTF-8
+
+
+
+--000000000000b5dbd70571a5b460
+Content-Transfer-Encoding: 7BIT
+Content-Type: TEXT/HTML;
+	charset=UTF-8
+
+<div dir="auto"></div>
+
+--000000000000b5dbd70571a5b460--
+
+--000000000000b5dbda0571a5b462
+Content-Transfer-Encoding: BASE64
+Content-Disposition: ATTACHMENT;
+	filename=ConsultingAgreementSpdKonstantinRyshchenko.pdf
+Content-Type: APPLICATION/PDF;
+	name=ConsultingAgreementSpdKonstantinRyshchenko.pdf
+X-Apple-Content-Length: 524770
+Content-Id: <164c610fd1fea139fc61>
+
+
+--000000000000b5dbda0571a5b462--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>6</integer>
+	<key>date-last-viewed</key>
+	<integer>1532530349</integer>
+	<key>date-received</key>
+	<integer>1532331400</integer>
+	<key>flags</key>
+	<integer>25770001409</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+	</array>
+	<key>remote-id</key>
+	<string>10</string>
+</dict>
+</plist>

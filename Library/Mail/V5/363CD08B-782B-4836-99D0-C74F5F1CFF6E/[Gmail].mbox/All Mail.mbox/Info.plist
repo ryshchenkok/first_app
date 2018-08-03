@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IMAPMailboxUnseenCount</key>
+	<integer>0</integer>
+	<key>MailboxID</key>
+	<string>21E52592-C049-4995-865D-A6552457974D</string>
+	<key>MailboxIsFirstTimeSync</key>
+	<string>NO</string>
+	<key>MailboxLastSyncDate</key>
+	<date>2018-08-03T14:50:29Z</date>
+	<key>MailboxName</key>
+	<string>All Mail</string>
+	<key>SupportsCustomFlags</key>
+	<string>YES</string>
+	<key>UIDNEXT</key>
+	<string>61</string>
+	<key>UIDVALIDITY</key>
+	<string>12</string>
+</dict>
+</plist>

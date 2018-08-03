@@ -1,0 +1,1682 @@
+/*
+  prefpane account.css
+*/
+/* PrefPane Heading */
+* {
+    -webkit-user-select: none;
+}
+
+html { overflow-x: hidden }
+
+input, select {
+    -webkit-user-select: text;
+    z-index: 100;
+    line-height: 16px; /* Keeps button styles from changing for some languages <rdar://problem/13153032> */
+    font-size: 13px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  font-size: 20px; /* use larger size to match OSX */
+}
+
+.page-heading {
+  padding-bottom: 7px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.page-heading:after {
+  content: " ";
+  float: none;
+  display: block;
+  clear: both;
+}
+
+#page-title {
+  font-weight: bold;
+  display: inline-block;
+}
+
+#page-desc {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: normal;
+  padding-top: 4px;
+  /*float: right;*/
+  display: inline-block;
+}
+[dir=rtl] #page-desc {
+  float: left;
+}
+
+/*@group Prefpane Footer */
+footer {
+  height: 24px;
+  text-align: end;
+}
+
+div.page-spacer {
+  display:inline-block;
+}
+
+footer #prevButton,
+footer #nextButton,
+footer #save,
+footer #print {
+  -webkit-appearance: button;
+  font-size: 13px;
+  -webkit-margin-start: 7px;
+}
+
+footer #nextButton {
+  -webkit-appearance:default-button;
+}
+
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(360deg); }
+}
+.loading-spinner {
+  background-image: url(../imgs/reg/loading_spinner.png);
+  -webkit-animation: spin 800ms linear infinite;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-size: 14px;
+  vertical-align: middle;
+  opacity: 0;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.01),
+only screen and (min-device-pixel-ratio: 1.01) {
+  .loading-spinner {
+    background-image: url(../imgs/hd/loading_spinner@2x.png);
+  }
+}
+
+/*@end */
+
+/* @group Global */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(239, 239, 239);
+  overflow: hidden;
+  font-family: -webkit-system-font, 'Lucida Grande', sans-serif;
+}
+
+span.hint {
+  color:#999;
+  font-weight: normal;
+  position: absolute;
+  padding-left: 4px;
+  padding-top: 2px;
+  margin: 0px;
+  border: none;
+}
+
+#pages {
+  display: inline-block;
+  padding:19px 18px 18px 18px;
+}
+
+/* Pages 1-5 */
+#page_0, #page_1, #page_2, #page_3, #page_4, #page_5, #page_6, #page_7, #page_8, #page_9 {
+  display:none;
+}
+
+.page {
+  min-width: 454px;
+}
+
+form {
+  margin:0px;
+  display:inline-block;
+}
+
+div.row {
+  min-height: 22px;
+  padding-bottom: 5px;
+  text-align: end;
+  position: relative;
+}
+
+#content_3 div.row {
+  padding-bottom: 2px;
+  margin-top: 0;
+}
+
+div#content_2.box-well > div.row:last-child {
+  padding-bottom: 3px;
+}
+
+div.row.text {
+  min-height:18px;
+}
+
+div.row.spacer {
+  height: 14px;
+  min-height:14px;
+  margin: 0;
+  padding: 0;
+}
+
+div.row.mini-spacer {
+  height: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.row.instruction.text + .row.mini-spacer {
+  height: 11px;
+}
+
+#content_2 div.row.password {
+  margin-top: 6px;
+  padding: 0;
+}
+
+div.row.no-label {
+  margin-top: 0;
+}
+
+label {
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+.field {
+  vertical-align: middle;
+  position: relative;
+  text-align: start;
+}
+
+div.field input, div.field select {
+  color:black;
+}
+
+.field input:not([type=radio]).has-suggestions {
+  -webkit-padding-end: 19px;
+  border-radius: 0 3px 3px 0;
+}
+[dir=rtl] .field input:not([type=radio]).has-suggestions {
+  border-radius: 3px 0 0 3px;
+}
+
+.field input:not([type=radio]),
+.field input + menu {
+    padding: 2px 4px 3px;
+    border: 1px solid #ccc;
+}
+body.mac._10_9 .field input:not([type=radio]),
+body.mac._10_9 .field input + menu,
+body.mac._10_8 .field input:not([type=radio]),
+body.mac._10_8 .field input + menu,
+body.mac._10_7 .field input:not([type=radio]),
+body.mac._10_7 .field input + menu,
+body.mac._10_6 .field input:not([type=radio]),
+body.mac._10_6 .field input + menu {
+  border: 1px solid rgba(0,0,0,0.41);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.field input + menu {
+  display: none; /* hide menu by default */
+  -webkit-box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#f5f5f5));
+  background: linear-gradient(to bottom, #fff, #f5f5f5);
+  width: 19px;
+  height: 100%;
+  margin: 0;
+  margin-left: -19px;
+  position: absolute;
+  border-radius: 0 3px 3px 0;
+  box-sizing: border-box;
+}
+.field input.has-suggestions + menu {
+  display: inline-block; /* show menu with has-suggestions class */
+}
+
+/* menu arrow */
+.field input + menu:after {
+  content: '';
+  width: 7px;
+  height: 5px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFCAYAAACJmvbYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NzIzNjk4MzFENzUxMUUzOEEyQkQ3MUVGM0ZBNUVDRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NzIzNjk4NDFENzUxMUUzOEEyQkQ3MUVGM0ZBNUVDRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY3MjM2OTgxMUQ3NTExRTM4QTJCRDcxRUYzRkE1RUNGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY3MjM2OTgyMUQ3NTExRTM4QTJCRDcxRUYzRkE1RUNGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+tvM3DgAAAH1JREFUeNpinDBhwrIjR45EMjIy/meAAMb///8z2NjYzGKJj49/+eLFizcfPnwQgUoyCAgIMADFfzGxsbEVxcXFneLg4GDg4uJiANFA/n6QONPv37//S0tLh9ra2l789+8fA5C+D+SHA8V/MwCNg2H5uXPnPgDSujAxgAADAO5pPWDTqPluAAAAAElFTkSuQmCC);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  margin-left: 1px;
+}
+
+.field input + menu:active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(100%,#d5d5d5));
+  background: linear-gradient(to bottom, #e0e0e0, #d5d5d5);
+}
+
+.field input + menu select {
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  text-indent: -9999px;
+  outline-offset: -1px;
+}
+
+/* for windows */
+.field input + menu select option {
+  text-indent: initial;
+}
+
+div.field input:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+div.field select {
+  font-size:16px;
+  margin-top: 1px;
+}
+
+div.field input[type=radio]{
+  vertical-align: -2px;
+  margin: 0 1px;
+}
+
+div.field.hint {
+  height:19px;
+  background-color: #FFFFFF;
+}
+div.field.text {
+  position: relative;
+  text-align: start;
+}
+
+div.row + div.instruction {
+  margin-top: -2px;
+  padding-bottom: 3px;
+}
+
+div.instruction {
+  margin: 0;
+}
+
+div.instruction > div.text {
+    font-size: 11px;
+    color: black;
+    margin-top: 1px;
+}
+/* overrides for elder platforms */
+body.mac._10_9 div.instruction > div.text,
+body.mac._10_8 div.instruction > div.text,
+body.mac._10_7 div.instruction > div.text {
+  color: rgba(50, 50, 50, 0.50);
+}
+
+div.instruction > div#createEmailInstr {
+  color: black;
+}
+
+/* input field errors */
+div.field.text.error  {
+  font-size: 11px;
+  font-weight: bold;
+  color: #B20000;
+  display: block;
+  margin-top: 2px;
+}
+
+div.field.text.error.center {
+    left:100px;
+}
+
+div.field.text.error + div.field.text.error {
+  top: 0px;
+  padding-bottom:0px;
+
+}
+div.field.text.error + div.field.text.error {
+  top:2px;
+  padding-bottom:0px;
+
+}
+
+/*
+.row.LV_INVALID .field input {
+*/
+  /*
+  background-color: #FFFFFF;
+  */
+.row .field input.LV_INVALID + span.error,
+.row.LV_INVALID span.error {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: -19px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../imgs/reg/error-icon.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}
+[dir=rtl] .row .field input.LV_INVALID + span.error,
+[dir=rtl] .row.LV_INVALID span.error {
+  right: auto;
+  left: -19px;
+  -webkit-transform: rotate(180deg);
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.01),
+only screen and (min-device-pixel-ratio: 1.01) {
+  .row .field input.LV_INVALID + span.error,
+  .row.LV_INVALID span.error {
+    background-image: url(../imgs/hd/error-icon@2x.png);
+  }
+}
+
+/* overrides for elder platforms */
+body.mac._10_9 .row .field input.LV_INVALID + span.error,
+body.mac._10_9 .row.LV_INVALID span.error,
+body.mac._10_8 .row .field input.LV_INVALID + span.error,
+body.mac._10_8 .row.LV_INVALID span.error,
+body.mac._10_7 .row .field input.LV_INVALID + span.error,
+body.mac._10_7 .row.LV_INVALID span.error {
+  top: 3px;
+  right: -21px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../imgs/reg/old-error-icon.png);
+  background-size: 18px 18px;
+}
+body.mac._10_9 [dir=rtl] .row .field input.LV_INVALID + span.error,
+body.mac._10_9 [dir=rtl] .row.LV_INVALID span.error,
+body.mac._10_8 [dir=rtl] .row .field input.LV_INVALID + span.error,
+body.mac._10_8 [dir=rtl] .row.LV_INVALID span.error,
+body.mac._10_7 [dir=rtl] .row .field input.LV_INVALID + span.error,
+body.mac._10_7 [dir=rtl] .row.LV_INVALID span.error {
+  left: -21px;
+  right: auto;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.01),
+only screen and (min-device-pixel-ratio: 1.01) {
+  body.mac._10_9 .row .field input.LV_INVALID + span.error,
+  body.mac._10_9 .row.LV_INVALID span.error,
+  body.mac._10_8 .row .field input.LV_INVALID + span.error,
+  body.mac._10_8 .row.LV_INVALID span.error,
+  body.mac._10_7 .row .field input.LV_INVALID + span.error,
+  body.mac._10_7 .row.LV_INVALID span.error {
+    background-image: url(../imgs/hd/old-error-icon@2x.png);
+  }
+}
+
+.row.password.LV_INVALID,
+.row.secret.LV_INVALID,
+.row#customQuestion.LV_INVALID {
+  margin-bottom: 7px;
+}
+
+div.box-well {
+  position: relative;
+  border: 1px solid hsl(0, 0%, 88%);
+  border-top-color: hsl(0, 0%, 84%);
+  border-radius: 4px;
+  background-color: hsl(0, 0%, 89%);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  height: auto;
+  margin-bottom: 16px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+}
+body.mac._10_9 div.box-well,
+body.mac._10_8 div.box-well,
+body.mac._10_7 div.box-well {
+  border: none;
+  border-top-color: initial;
+  background-color: rgba(0, 0, 0, .03);
+  border-radius: 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .39);
+}
+
+/* @end */
+
+/*@group Country Birthday subpage */
+
+#content_1, #content_2, #content_3 {
+  min-height: 322px;
+  box-sizing: border-box;
+}
+
+#content_1 {
+  -webkit-padding-end: 0;
+}
+
+#content_3 {
+  padding-top: 21px;
+}
+
+h2.create-apple-id {
+  margin: 18px auto 0 auto;
+  width: 340px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: normal;
+}
+body.mac._10_9 h2.create-apple-id,
+body.mac._10_8 h2.create-apple-id,
+body.mac._10_7 h2.create-apple-id {
+  text-shadow: 0 1px 1px white;
+}
+
+div.divider {
+  margin: 34px 30px 30px;
+  height: 2px;
+}
+body.mac._10_9 div.divider,
+body.mac._10_8 div.divider,
+body.mac._10_7 div.divider {
+  background: -webkit-gradient(linear, 0 100%, 100% 100%, from(#e7e7e7), color-stop(0.2, #ffffff), color-stop(0.8, #ffffff), to(#e7e7e7));
+}
+
+div.divider span {
+  display: block;
+  height: 1px;
+  background: #ccc;
+}
+body.mac._10_9 div.divider span,
+body.mac._10_8 div.divider span,
+body.mac._10_7 div.divider span {
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#e7e7e7), color-stop(0.2, #b2b2b2), color-stop(0.8, #b2b2b2), to(#e7e7e7));
+}
+
+
+
+/* ---------------------------------
+    Table Layout
+--------------------------------- */
+.row-container {
+  display: table;
+  border-spacing: 0 5px; /* this governs the space between table cells */
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.row-container .row {
+  display: table-row;
+}
+
+.row-container .row > label,
+.row-container .row > label + * {
+  display: table-cell;
+  vertical-align: top;
+  text-align: start;
+}
+
+.row-container .row > label + * {
+  position: relative;
+  top: -3px;
+}
+
+.row-container .row > label + *,
+div .field, #name-fields {
+  width: 260px; /* fix width of right column */
+}
+
+.row-container .row > label {
+  -webkit-padding-end: 6px;
+  text-align: end;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-container .row input {
+  margin: 0;
+}
+
+.row-container .row [role=radiogroup],
+#optInToEmails.row .field {
+  top: 0;
+}
+
+div .field,
+.row.secret .field select,
+.field input:not([type=radio]) {
+  width: 100%;
+}
+
+
+/*  Birthdate Fields
+--------------------------------- */
+.row.country label,
+.row.date label {
+  padding-bottom: 5px;
+}
+
+
+#dateInput .date-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+}
+
+#dateInput .subfield {
+  -webkit-flex: 1 auto;
+}
+
+#dateInput .subfield + .subfield {
+  -webkit-margin-start: 6px;
+}
+
+
+
+.selected #locationLabel {
+  color: white;
+}
+
+
+/* #content_1 */
+#content_1 div label {
+  max-width: 187px;
+}
+
+#content_1 div.field {
+  width: initial;
+}
+
+#content_1 div.field select {
+  width: 100%;
+}
+
+div.row .box {
+  top:1px;
+  height:19px;
+  background-color: #FFFFFF;
+}
+
+
+#content_1 .row.text {
+  font-size: 11px;
+  bottom: 0;
+  min-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+#content_1 .row.date + .row.text {
+  padding-top: 6px;
+}
+
+.selected #yearLabel {
+  color: white;
+}
+
+.selected #monthLabel {
+    color: white;
+}
+
+.selected #dayLabel {
+    color: white;
+}
+
+#birthdayDesc {
+  width: 328px;
+  text-align: center;
+  margin: 0 auto;
+}
+#birthdayDesc > div.text {
+  width: auto;
+}
+
+/*@end*/
+
+/* @group account form subpage */
+
+#appleId {
+  height:72px;
+}
+
+div.field .radiobox {
+  display:inline-block;
+  top:0px;
+  height:20px;
+  width:20px;
+  position:absolute;
+}
+
+div.field .radiotext {
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    left: 22px;
+    width: 232px;
+}
+
+#emailField:disabled {
+  color: #D3D3D3;
+}
+
+div[role=radiogroup] {
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 8px;
+}
+
+div[role=radiogroup] > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+}
+
+div[role=radiogroup] > .field + .field {
+  margin-top: 10px;
+}
+
+.row.radio input[type=radio] {
+  margin-top: 0;
+}
+
+div[role=radiogroup] label {
+  display: block;
+  max-width: 240px;
+  -webkit-margin-start: 4px;
+  -webkit-margin-end: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+}
+
+#createFreeEmailRadio {
+    width: auto;
+    height: auto;
+}
+
+#email-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+#email-input-container {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0;
+  position: relative; /* for suggestion menu sizing */
+}
+
+#emailField,
+#createEmailField {
+  margin: 0;
+}
+
+[dir='rtl'] #email-container,
+[dir='rtl'] #currentEmailFields input,
+[dir='rtl'] #createEmailFields input {
+  direction: ltr; /* emails are always ltr */
+}
+
+#content_2 #createEmailInstr {
+    font-size: 11px;
+    margin-top: 6px;
+    margin-right: 0px;
+    width: 365px;
+    max-width:365px;
+    left:40px;
+    text-align: center;
+}
+
+#email-suffix {
+  -webkit-margin-start: 4px;
+  -webkit-margin-end: 0;
+}
+
+#name-fields {
+  display: -webkit-box;
+  display: -webkit-flex;
+  position: relative; /* for error icon positioning */
+}
+
+#name-fields > .field {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0;
+}
+#name-fields > .field + .field {
+  -webkit-margin-start: 5px;
+}
+
+#passwordInstr {
+  font-size: 11px;
+}
+
+.selected #passwordInstr {
+    color: white;
+}
+
+#questionSelector {
+    width: 260px;
+}
+
+#customQuestion {
+    display:none;
+    width: 260px;
+
+}
+#customQuestionInput {
+    width: 260px;
+}
+
+#answer {
+    width: 260px;
+}
+
+#answerField {
+    width: 260px;
+}
+
+.selected #questionInfo {
+    color: white;
+}
+
+#optInToEmails {
+  margin-top: 20px;
+}
+
+#optInToEmails .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+}
+
+#optInToEmails #emailUpdatesCheckboxLabel {
+  display: block;
+  white-space: normal;
+  -webkit-margin-start: 3px;
+  -webkit-margin-end: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+}
+
+#emailUpdatesCheckbox {
+  width: auto;
+  margin: 0;
+  -webkit-margin-end: 2px;
+  position: relative; /* better vertical alignment */
+  top: 2px; /* better vertical alignment */
+}
+
+#content_3 #recoveryLabel {
+  margin-top: 3px;
+}
+body.de-de #recoveryLabel label {
+  white-space: normal;
+  position: relative;
+  top: -1rem;
+}
+
+#suggestionFields {
+  margin-top: 10px;
+}
+
+/* @end */
+
+
+/*@group Create email page */
+
+#content_6 {
+    width: 434px;
+    margin-top:1px;
+    padding-top:16px;
+}
+
+#content_6 div.label.right {
+  font-size: 14px;
+  top:0px;
+  left:271px;
+  right:auto;
+  text-align: right;
+}
+
+#content_6 div.field.left {
+  text-align: right;
+  right: 173px;
+  left:auto;
+
+}
+
+#content_6 #createEmailField {
+    width: 164px;
+}
+
+#content_6 #suggestions {
+    width: 164px;
+    right: 173px;
+}
+
+#content_6 #createEmailInstr {
+    font-size: 11px;
+    margin-top: 6px;
+    margin-right: 0px;
+    width: 365px;
+    max-width:365px;
+    left:40px;
+    text-align: center;
+}
+
+#content_6 #createEmail .label{
+    left:168px;
+    right:auto;
+
+}
+
+#content_6 #suggestionsLabel .label{
+    left:168px;
+    right:auto;
+
+}
+
+/*@end*/
+/*@group Errors */
+
+div.errorAlert {
+  display: inline-block;
+  height: 30px;
+  left: 100px;
+  width:30px;
+  height:30px;
+  /* background-image is defined below */
+  background-position: 0px -2px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+@media
+only screen and (-webkit-max-device-pixel-ratio: 1),
+only screen and (max-device-pixel-ratio: 1) {
+  div.errorAlert {
+    background-image: url(../imgs/reg/error-right-icon.png);
+  }
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.01),
+only screen and (min-device-pixel-ratio: 1.01) {
+  div.errorAlert {
+    background-image: url(../imgs/hd/error-right-icon@2x.png);
+  }
+}
+
+
+
+#question.row.LV_INVALID {
+    background-position:232px -1px;
+}
+
+/*@end*/
+
+/*@group TOS */
+
+
+
+#content_4 {
+  width: 508px;
+  position: relative;
+  padding-top: 13px;
+}
+
+#termsbox {
+  padding: 7px;
+  color: rgb(56,56,56);
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  overflow-x: hidden;
+  overflow-y:scroll;
+  border-color: #929292;
+  border-style: solid;
+  border-width: 1px;
+  display:block;
+  margin-top: 0px;
+  height: 278px;
+  left: 76px;
+  top: 77px;
+  background-color: rgb(255, 255, 255);
+}
+
+.iw-il #termsbox { direction:ltr } /* Hebrew terms are still in English. */
+
+#termsPreamble {
+  position: absolute;
+  top: -18px;
+}
+
+#termsPreamble h2 {
+  margin: 8px 0 10px;
+  color: rgb(56,56,56);
+  font-size: 13px;
+  font-weight: bold;
+  width: 513px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body.mac._10_9 #termsPreamble h2,
+body.mac._10_8 #termsPreamble h2,
+body.mac._10_7 #termsPreamble h2,
+body.mac._10_6 #termsPreamble h2 {
+  text-shadow: 0px 1px 1px white;
+}
+
+div.tos-legal {
+  margin-top: 8px;
+  font-size: 11px;
+  color: rgba(50, 50, 50, 0.50);
+}
+
+div.tos-legal span {
+  -webkit-user-select: text;
+}
+
+input[type=checkbox]#agreeToTerms,
+label[for="agreeToTerms"] {
+  display: inline-block;
+  margin: 12px 0 0 0;
+  padding-bottom: 10px;
+}
+
+label[for="agreeToTerms"] {
+  width: 480px;
+  -webkit-margin-start: 7px;
+  max-width: none;
+  white-space: normal;
+  font-size: 13px;
+  font-weight: normal;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+
+@media print {
+  footer,
+  #terms-title,
+  .tos-caption {
+    display:none;
+  }
+
+  #termsbox {
+    height:auto;
+    overflow:hidden;
+    border:none;
+  }
+
+  #content_4 {
+    width:auto;
+  }
+}
+
+/*@end*/
+
+/* @group confirm dialog */
+
+
+.confirm-modal {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  z-index:100;
+}
+
+
+.confirm-sheet {
+  position: absolute;
+  left: 50%;
+  margin-left: -212px;
+  top: -150px;
+  width: 420px;
+  z-index: 100;
+  -webkit-box-shadow: #555 0 0 10px 0;
+  overflow: hidden;
+}
+.windows .confirm-sheet {
+  -webkit-box-shadow: none;
+  top: 0 !important; /* override inline CSS */
+}
+
+.confirm-sheet #confirmHeading {
+  outline: 0; /* focus is moved here for VoiceOver when the sheet is shown */
+}
+
+.confirm-sheet .view {
+  width: 420px;
+  background-color: #EAEAEA;
+  border: 0 solid #444;
+  overflow:hidden;
+  box-sizing: border-box;
+  padding: 25px 23px 18px;
+}
+.windows .confirm-sheet .view {
+  width: auto;
+  background: #fff;
+  padding: 14px 23px 0;
+}
+
+.confirm-sheet .icon {
+  height: 64px;
+  width: 64px;
+  /* background-image is defined below and in prefpane-setupservice.js */
+  background-size: 64px;
+  border: none;
+  overflow: hidden;
+  -webkit-margin-end: 13px;
+  margin-top: 1px;
+  display: inline-block;
+  vertical-align: top;
+}
+@media
+only screen and (-webkit-max-device-pixel-ratio: 1),
+only screen and (max-device-pixel-ratio: 1) {
+  .confirm-sheet .icon.icloud {
+    background-image: url(../../imgs/iCloud_64x64.png);
+  }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.01),
+only screen and (min-device-pixel-ratio: 1.01) {
+  .confirm-sheet .icon.icloud {
+    background-image: url(../../imgs/iCloud_128x128.png);
+  }
+}
+
+.windows .confirm-sheet .icon {
+  -webkit-margin-start: 28px;
+  margin-top: 1px;
+  margin-bottom: 15px;
+  width: 48px;
+  height: 48px;
+  background-size: 48px;
+  background-image: url(../imgs/reg/win-warning-icon.png);
+}
+
+.confirm-sheet .message-wrapper {
+  display: inline-block;
+  width: 290px;
+}
+.windows .confirm-sheet .message-wrapper {
+  width: 260px;
+}
+
+.confirm-sheet .title {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.4;
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+.windows .confirm-sheet .title {
+  font-size: 15px;
+  font-weight: normal;
+  color: #1d44a0;
+}
+
+.confirm-sheet .message {
+  font-size: 11px;
+  line-height: 15px;
+  overflow: hidden;
+}
+
+
+.confirm-sheet .buttons-wrapper {
+  text-align: end;
+  margin-top: 8px;
+}
+.windows .confirm-sheet .buttons-wrapper {
+  background: #eee;
+  border-top: 1px solid #ccc;
+  margin: 24px -10px 0;
+  box-sizing: border-box;
+  padding: 10px 18px 0;
+}
+
+.windows .buttons-wrapper input {
+  width: 72px;
+}
+
+.confirm-sheet .left-button {
+  -webkit-margin-start: 5px;
+  -webkit-appearance: button;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+
+.confirm-sheet .right-button {
+  -webkit-appearance: default-button;
+  overflow: hidden;
+  font-size: 13px;
+  width: 74px;
+}
+
+body.mac._10_10.focused #nextButton:not([disabled]),
+body.mac._10_10.focused .right-button:not([disbaled]) {
+  color: white;
+}
+
+/* @end */
+
+
+
+/* Choose iCloud email address state */
+
+/* centering */
+#content_7 { text-align:center }
+#content_7 > div { display:inline-block }
+#content_7 #suggestions-suffix { max-width:initial }
+#content_7 .field { width:auto }
+
+/* hide field labels */
+#content_7 #emailLabel,
+#content_7 #suggestionsLabel { display:none }
+
+
+#content_7 .row {
+  text-align: center;
+  margin-top: 8px;
+}
+
+#content_7 .field.text.error {
+  -webkit-margin-start: auto;
+  margin-top: 8px;
+  max-width: 352px;
+  text-align: center;
+}
+
+/* larger font size on this page */
+#content_7 input,
+#content_7 label,
+#content_7 select {
+  font-size: 15px;
+}
+
+/* Windows */
+body.windows {
+  background: #fff;
+  font-family: "Segoe UI", SegoeUI, Tahoma, 'sans-serif';
+}
+
+.windows #pages {
+  padding: 16px 0 0 0;
+}
+
+.windows .page {
+  min-width: 375px;
+}
+
+.windows .page-heading #page-title,
+.windows #content_7 {
+  padding: 0 36px 2px;
+}
+
+.windows .page-heading #page-title {
+  font-weight: normal;
+  color: #1d44a0;
+  display: inline-block;
+}
+
+.windows #content_4 {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.windows #termsPreamble h2,
+.windows #termsbox b {
+  font-weight: normal;
+}
+
+.windows #termsbox {
+  margin-top: 8px;
+}
+
+.windows #content_4 pre {
+  font-family: "Segoe UI", SegoeUI, Tahoma, 'sans-serif' !important;
+}
+
+.windows #content_4 #agreeToTerms {
+  position: relative;
+  top: 2px;
+}
+
+.windows #content_7 {
+  background: #fff;
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  display: inline-block;
+  text-align: start;
+}
+
+/* Windows footer */
+.windows footer {
+  background: #eee;
+  padding: 10px;
+}
+.windows #prevButton {
+  float: right;
+}
+.windows footer .loading-spinner {
+  position: relative;
+  top: -1px;
+}
+
+.windows #content_7 .row {
+  text-align: start;
+  margin-top: 2px;
+}
+
+/* Override input styles to be more like native Windows */
+.windows #content_7 input {
+  box-shadow: none;
+} .windows #content_7 input:hover,
+  .windows #content_7 input:hover + menu,
+  .windows #content_7 input + menu:hover {
+   border-color: #26a0da;
+} .windows #content_7 input:focus,
+  .windows #content_7 input:focus + menu,
+  .windows #content_7 input + menu select:focus {
+   border-color: #444;
+   outline: none;
+}
+.windows #content_7 input + menu {
+  background: #fff;
+} .windows #content_7 input + menu:hover,
+  .windows #content_7 input + menu:active {
+   background: #dedede;
+}
+.windows input + menu,
+.windows .field input:not([type=radio]).has-suggestions {
+  border-radius: 0;
+}
+
+/* error icon */
+.windows #content_7 #createEmail .error { top:5px }
+
+/* error message */
+.windows #content_7 .field.text.error {
+  margin-top: 4px;
+  text-align: start;
+  max-width: 270px;
+  -webkit-margin-start: 0;
+}
+
+/* error dialog */
+.windows .confirm-sheet .message {
+  font-size: 13px;
+  overflow: visible;
+}
+
+
+.icloud-icon {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url('../../imgs/iCloud_64x64.png');
+  background-size: 64px 64px;
+  width: 64px;
+  height: 64px;
+  top: 0px;
+  left: 7px;
+}
+/* We switched iCloud icons again for 10.10 */
+body._10_9 .icloud-icon {
+  background-image: url('../../imgs/iCloud_10_9_64x64.png');
+}
+
+body.rtl .icloud-icon {
+  left: auto;
+  right: 0px;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.01),
+       only screen and (min-device-pixel-ratio: 1.01) {
+  .icloud-icon {
+    background-image: url('../../imgs/iCloud_128x128.png');
+  }
+  body._10_9 .icloud-icon {
+    background-image: url('../../imgs/iCloud_10_9_128x128.png');
+  }
+  body._10_8 .icloud-icon,
+  body._10_7 .icloud-icon,
+  body._10_6 .icloud-icon {
+    background-image: url('../../imgs/iCloud_10_8_below_128x128.png');
+  }
+}
+
+
+/* We switched iCloud icons between 10.8 and 10.9
+   and need to persist the old variant for older clients */
+body._10_8 .icloud-icon,
+body._10_7 .icloud-icon,
+body._10_6 .icloud-icon {
+  background-image: url('../../imgs/iCloud_10_8_below_64x64.png');
+}
+
+
+footer #privacyBtn {
+  -webkit-appearence: button;
+  /*-webkit-margin-end: 171px;*/
+  float:left;
+}
+
+/* @end */
+
+
+/* Apple ID and Privacy */
+
+#privacyTitle {
+  position: absolute;
+  top: -18px;
+}
+
+#privacy-terms-title {
+ margin: 8px 0 10px;
+ color: rgb(56,56,56);
+ font-size: 13px;
+ font-weight: bold;
+ width: 513px;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
+
+#privacyContent {
+  padding: 7px;
+  color: rgb(56,56,56);
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  overflow-x: hidden;
+  overflow-y:scroll;
+  border-color: #929292;
+  border-style: solid;
+  border-width: 1px;
+  display:block;
+  margin-top: 0px;
+  height: 320px;
+  left: 76px;
+  top: 77px;
+  background-color: rgb(255, 255, 255);
+}
+
+#privacyFlow {
+ display: none;
+}
+
+#privacyDoneDiv{ 
+  float: right;
+  margin-top: 15px;
+}
+
+
+/* new term screen */
+#termsBlock{
+  /* padding: 7px; */
+  color: rgb(56, 56, 56);
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-color: #929292;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  /* margin-top: 0px; */
+  height: 250px;
+  /* left: 76px; */
+  /* top: 1px; */
+  background-color: rgb(255, 255, 255);
+  -webkit-margin-start: 2px;
+  -webkit-margin-end: 2px;
+  /* margin-bottom: 90px; */
+  position: relative;
+  font-family: -apple-system, -webkit-system-font, 'Lucida Grande', sans-serif; /*rdar://problem/27540106*/
+}
+#olist{
+  -webkit-margin-start: -15px;
+  font-weight: bold;
+}
+/*[dir=rtl] #olist{
+  margin-right: -15px;
+  font-weight: bold;
+}
+*/
+#olist li div {
+  font-weight: normal;
+}
+
+#checkBoxDiv #newTermLabel{
+  display: inline;
+/*  -webkit-margin-start: 5px;*/
+}
+
+#checkBoxDiv #newTermCheck{
+  margin-left:0px;
+}
+
+#checkBoxDiv{
+  white-space:normal;
+  font-size:13px;
+  font-weight:normal;
+  word-break: normal;
+  margin-top: 9px;
+  margin-bottom:12px;
+}
+
+#gcbd-terms-text pre, #icloud-terms pre, #newPrivacyContent, #newParentalTerms{
+  color: rgba(0,0,0,0.50);
+  margin-top: 2px;
+}
+
+.less , .more{
+  text-decoration:underline;
+}
+
+#gcbdBlock{
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 11px;
+  overflow-y:auto;
+}
+
+#gcbdLabel2{
+  padding-top: 10px
+}
+
+#gcbdLearnMore{
+  padding-top: 10px;
+  margin-bottom: 20px;
+  color: #368bf9;
+  cursor: pointer;
+}
+
+#gcbd-title{
+  font-size: 20px !important;
+  margin-top: 10px;
+}
+
+#gcbdImage {
+  background-image: url(../imgs/reg/macos-prefpane-icloudgcbd.png);
+  height: 100px;
+  width: 100px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.01),
+only screen and (min-device-pixel-ratio: 1.01) {
+  #gcbdImage {
+    background-image: url(../imgs/hd/macos-prefpane-icloudgcbd@2x.png);
+  }
+}
+
+#gcbdNotnow{
+  -webkit-appearance: button;
+}
+
+#gcbdBack{
+  -webkit-appearance: button;
+}
+
+#gcbdNext{
+  -webkit-appearance: default-button;
+}
+
+#gcbdButtons > span:nth-child(2){
+  float: right;
+}
+
+#gcbdButtons{
+  margin-top: 15px;
+}
+
+#gcbdLearnMoreBlock{
+  display: none;
+  /*border: 1px solid gray;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 11px;*/
+  height: 240px;
+
+}
+
+#learnMore-title{
+  display:none;
+  position: absolute;
+  top: -18px;
+}
+
+#learnMoreBack{
+  -webkit-appearance: button;
+  display:none;
+}
+
+#learnMoreButtons > span{
+  float:right;
+  margin-top: 15px
+}
+
+#label1{
+  padding-top: 10px
+}
+
+#label2{
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#label3 > ol{
+  -webkit-padding-start: 15px !important;
+}
+#label3 > ol > li{
+  margin-top: 10px;
+}
+
+
+#gcbdPreamble{
+  position: absolute;
+  top: -8px;
+}
+
+#gcbd-terms{
+  display: none;
+}
+
+#gcbd-termsLess{
+  display: none;
+}
+
+#gcbdPage{
+  display:none;
+}
+
+.gcbdLink{
+  color: #368bf9;
+  cursor: pointer;
+}
+
+#gcbdTerms-title{
+  display:none;
+  position: absolute;
+  top: -18px;
+}
+#gcbdNewTermsBlock{
+  display: none;
+  height: 240px;
+}
+
+#gcbdLearnMoreBlock > div{
+  margin-top: 5px;
+}
+
+#stopInstruction{
+  font-weight: bold;
+  margin-top: 10px !important;
+}
+
+#residentInstruction{
+  font-weight: bold;
+  margin-top: 15px !important;
+}
+
+#gcbdLabel2Div{
+  margin-top:10px;
+}
+
+@media (prefers-dark-interface) {
+    body {
+        background-color: window;
+        color: text;
+    }
+
+    #termsPreamble h2 {
+        color: text !important;
+    }
+
+    #termsBlock {
+        background-color: window;
+        color: text;
+    }
+
+    #gcbd-terms-text pre, #icloud-terms pre, #newPrivacyContent, #newParentalTerms {
+        color: text;
+    }
+}

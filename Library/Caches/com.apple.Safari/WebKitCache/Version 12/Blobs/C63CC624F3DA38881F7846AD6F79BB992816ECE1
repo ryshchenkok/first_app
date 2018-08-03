@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="initial-scale=1" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://turbinehq.com/xmlrpc.php" />
+<link rel="shortcut icon" href="https://turbine-wpengine.netdna-ssl.com/wp-content/themes/turbine-2013/favicon.ico" />
+<!--[if lt IE 9]>
+<script src="https://turbine-wpengine.netdna-ssl.com/wp-content/themes/turbine-2013/js/html5.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://turbine-wpengine.netdna-ssl.com/wp-content/themes/turbine-2013/css/oldies.css"/>
+<![endif]-->
+<!--[if IE 11]>
+<link rel="stylesheet" href="https://turbine-wpengine.netdna-ssl.com/wp-content/themes/turbine-2013/css/ie11.css"/>
+<![endif]-->
+<link rel="stylesheet" href="https://turbine-wpengine.netdna-ssl.com/wp-content/themes/turbine-2013/css/base.css" />
+
+<title>Turbine - Simple, online purchase orders</title>
+<meta name="description" content="Create, approve and manage purchase orders, POs and requisitions in one simple, online purchasing system using Turbine." />
+<link rel="canonical" href="https://turbinehq.com/tour/purchase-orders/" />
+<link rel="publisher" href="https://plus.google.com/u/0/b/118313867702741795230/118313867702741795230" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Turbine - Simple, online purchase orders" />
+<meta property="og:description" content="Create, approve and manage purchase orders, POs and requisitions in one simple, online purchasing system using Turbine." />
+<meta property="og:url" content="https://turbinehq.com/tour/purchase-orders/" />
+<meta property="og:site_name" content="Turbine" />
+<meta property="article:publisher" content="https://www.facebook.com/pages/TurbineHQcom/277247968993159" />
+<meta property="og:image" content="http://turbinehq.com/wp-content/themes/turbinehq-wp/images/banner/clock.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Create, approve and manage purchase orders, POs and requisitions in one simple, online purchasing system using Turbine." />
+<meta name="twitter:title" content="Turbine - Simple, online purchase orders" />
+<meta name="twitter:site" content="@turbinehq" />
+<meta name="twitter:image" content="http://turbinehq.com/wp-content/themes/turbinehq-wp/images/banner/clock.png" />
+<meta name="twitter:creator" content="@turbinehq" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/turbinehq.com\/","sameAs":["https:\/\/www.facebook.com\/pages\/TurbineHQcom\/277247968993159","http:\/\/www.linkedin.com\/company\/turbine-hq","https:\/\/plus.google.com\/u\/0\/b\/118313867702741795230\/118313867702741795230","https:\/\/twitter.com\/turbinehq"],"@id":"https:\/\/turbinehq.com\/#organization","name":"Turbine","logo":"http:\/\/turbinehq.com\/wp-content\/uploads\/2017\/09\/Turbine-Logo-dark.png"}</script>
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Turbine &raquo; Feed" href="https://turbinehq.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Turbine &raquo; Comments Feed" href="https://turbinehq.com/comments/feed/" />
+
+<script type="text/javascript" data-cfasync="false">
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-21670305-2';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-21670305-2', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/turbinehq.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='tm_clicktotweet-css' href='https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='cpsh-shortcodes-css' href='https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='egrower-css' href='https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/engagement-grower/public/css/egrower-bundle-2.1.0.css?ver=2.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css' href='https://turbine-wpengine.netdna-ssl.com/wp-content/themes/turbine-2013/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css' href='https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/recent-posts-widget-with-thumbnails/public.css?ver=6.2' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/turbinehq.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.0.8'></script>
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://turbinehq.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://turbinehq.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://turbinehq.com/wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='https://turbinehq.com/?p=4185' />
+<link rel="alternate" type="application/json+oembed" href="https://turbinehq.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fturbinehq.com%2Ftour%2Fpurchase-orders%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://turbinehq.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fturbinehq.com%2Ftour%2Fpurchase-orders%2F&#038;format=xml" />
+</head>
+<body class="page-template page-template-template_tour page-template-template_tour-php page page-id-4185 page-child parent-pageid-15">
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<div class="header-wrap">
+<h2 class="site-title"><a href="https://turbinehq.com/" title="Turbine" rel="home">Turbine</a></h2>
+<nav role="navigation" class="site-navigation main-navigation">
+<h2 class="assistive-text">Menu</h2>
+<div class="assistive-text skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+<div class="menu-primary-menu-container"><ul id="menu-primary-menu" class="menu"><li id="menu-item-4160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-4160"><a href="https://turbinehq.com/">Home</a></li>
+<li id="menu-item-4321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4321"><a href="https://turbinehq.com/tour/about-turbine/">Tour</a></li>
+<li id="menu-item-4158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4158"><a href="https://turbinehq.com/plans/">Pricing</a></li>
+<li id="menu-item-4157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4157"><a href="https://turbinehq.com/blog/">Blog</a></li>
+<li id="menu-item-4161" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4161"><a href="https://help.turbinehq.com/support">Support</a></li>
+<li id="menu-item-4156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4156"><a href="https://turbinehq.com/contact/">Contact</a></li>
+<li id="menu-item-4262" class="sign-in menu-item menu-item-type-custom menu-item-object-custom menu-item-4262"><a href="https://cdn.turbinehq.com/users/sign_in" data-component-display="SignInModalApp">Sign in</a></li>
+<li id="menu-item-4263" class="free-trial menu-item menu-item-type-custom menu-item-object-custom menu-item-4263"><a href="https://cdn.turbinehq.com/companies/new?plan=18" data-component-display="SignUpModalApp">Free Trial</a></li>
+</ul></div> </nav>
+</div>
+</header>
+<div id="main" class="site-main">
+<div data-component='SignInModalApp'></div>
+<div data-component='SignUpModalApp' data-component-params='{"plan":16}'></div> <div class="menu-tour-menu-container"><ul id="menu-tour-menu" class="menu"><li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4244"><a href="https://turbinehq.com/tour/about-turbine/">Turbine overview</a></li>
+<li id="menu-item-4243" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4185 current_page_item menu-item-4243"><a href="https://turbinehq.com/tour/purchase-orders/">Purchase orders</a></li>
+<li id="menu-item-4242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4242"><a href="https://turbinehq.com/tour/time-off/">Time off requests</a></li>
+<li id="menu-item-4241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4241"><a href="https://turbinehq.com/tour/expenses/">Expenses</a></li>
+<li id="menu-item-4240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4240"><a href="https://turbinehq.com/tour/employee-database/">Employee database</a></li>
+</ul></div> <div id="primary" class="content-area">
+<div id="content" class="site-content" role="main">
+<article id="post-4185" class="post-4185 page type-page status-publish hentry">
+<header class="entry-header">
+<h1 class="entry-title">Purchase orders</h1>
+</header>
+<div class="entry-content">
+<h2>Create, review and manage purchase orders online</h2>
+<p><iframe src="https://player.vimeo.com/video/218978315" width="500" height="281" frameborder="0" title="Turbine Purchases Video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+</div>
+</article>
+<div class="features">
+<div class="feature">
+<a class="image-link" href="">
+<img src="https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase.jpg" width="580" height="540" class="attachment- size- wp-post-image" alt="Turbine screenshot of a purchase order form" full srcset="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase.jpg 580w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase-300x279.jpg 300w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase-130x121.jpg 130w" sizes="(max-width: 580px) 100vw, 580px"><noscript><img width="580" height="540" src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase.jpg" class="attachment- size- wp-post-image" alt="Turbine screenshot of a purchase order form" full="" srcset="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase.jpg 580w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase-300x279.jpg 300w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase-130x121.jpg 130w" sizes="(max-width: 580px) 100vw, 580px" /></noscript>  </a>
+<a class="magnified-image-link" href="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase-magnified.jpg">
+<img src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase-magnified.jpg" alt="" />
+</a>
+<div class="entry">
+<h3>Simple online purchase order form</h3>
+<p>Turbine makes it easy for people to manage purchase orders online and for companies to get control over their spending.</p>
+<ul>
+<li>Employees request purchase orders</li>
+<li>Managers review and approve requests</li>
+<li>Send approved POs to suppliers</li>
+<li>Search for POs and cross-check them against invoices</li>
+</ul>
+</div>
+</div>
+<div class="feature">
+<a class="image-link" href="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/new-purchase-magnified.jpg">
+<img src="https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchases-long-large1.png" width="580" height="527" class="attachment- size- wp-post-image" alt="screenshot of the Turbine purchases" full srcset="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchases-long-large1.png 580w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchases-long-large1-300x272.png 300w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchases-long-large1-130x118.png 130w" sizes="(max-width: 580px) 100vw, 580px"><noscript><img width="580" height="527" src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchases-long-large1.png" class="attachment- size- wp-post-image" alt="screenshot of the Turbine purchases" full="" srcset="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchases-long-large1.png 580w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchases-long-large1-300x272.png 300w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchases-long-large1-130x118.png 130w" sizes="(max-width: 580px) 100vw, 580px" /></noscript> </a>
+<a class="magnified-image-link" href="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchase-overview-magnified.jpg">
+<img src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/purchase-overview-magnified.jpg" alt="" />
+</a>
+<div class="entry">
+<h3>Get control of your spending</h3>
+<p>No software required &#8211; it&#8217;s all online. Pay one low monthly fee for the whole company.</p>
+<ul>
+<li>Stop unauthorised spending</li>
+<li>Centralise decision-making</li>
+<li>Create a list of approved vendors</li>
+<li>Assign purchases to cost centres</li>
+<li>Set a budget for each cost centre</li>
+<li>Manage requests from different offices</li>
+<li>Cut the risk of delays or mistakes</li>
+<li>Works on browsers, phones and tablets</li>
+<li>Export to Excel for further analysis</li>
+</ul>
+</div>
+</div>
+</div>
+<ul class="next-previous">
+<li class="previous-post-link button"><a class="prev-page-anchor" href="https://turbinehq.com/tour/about-turbine/" rel="prev" title="Turbine overview">Turbine overview</a></li> <li class="next-post-link button"><a class="next-page-anchor" href="https://turbinehq.com/tour/time-off/" rel="next" title="Time off requests">Time off requests</a></li> </ul>
+</div>
+</div>
+<div class="testimonials">
+<ul class="posts">
+<li class="post">
+<blockquote>
+<p>Turbine is great for managing my remote workers. I can approve holiday requests on the go on my phone, keep track of expenses and let everyone see who&#8217;s working and when.</p>
+</blockquote>
+<img src="https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/09/Facebook-Page-Avatar-130x130.png" width="130" height="130" class="attachment-testimonial-thumb size-testimonial-thumb wp-post-image" alt="Articulate company logo" srcset="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/09/Facebook-Page-Avatar-130x130.png 130w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/09/Facebook-Page-Avatar.png 180w" sizes="(max-width: 130px) 100vw, 130px"><noscript><img width="130" height="130" src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/09/Facebook-Page-Avatar-130x130.png" class="attachment-testimonial-thumb size-testimonial-thumb wp-post-image" alt="Articulate company logo" srcset="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/09/Facebook-Page-Avatar-130x130.png 130w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/09/Facebook-Page-Avatar.png 180w" sizes="(max-width: 130px) 100vw, 130px" /></noscript> <h3>Matthew Stibbe, CEO and Writer-in-Chief at Articulate Marketing</h3>
+</li>
+<li class="post">
+<blockquote>
+<p>With 35 staff spread across offices in the UK and America, a single view of who’s off and how much holiday time people have is very useful. Turbine is very straightforward and easy to use.</p>
+</blockquote>
+<img src="https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/shutl-130x130.jpg" width="130" height="130" class="attachment-testimonial-thumb size-testimonial-thumb wp-post-image" alt="Shutl company logo" srcset="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/shutl-130x130.jpg 130w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/shutl-300x300.jpg 300w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/shutl.jpg 400w" sizes="(max-width: 130px) 100vw, 130px"><noscript><img width="130" height="130" src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/shutl-130x130.jpg" class="attachment-testimonial-thumb size-testimonial-thumb wp-post-image" alt="Shutl company logo" srcset="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/shutl-130x130.jpg 130w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/shutl-300x300.jpg 300w, https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/shutl.jpg 400w" sizes="(max-width: 130px) 100vw, 130px" /></noscript> <h3>Tom Allason, founder and CEO at Shutl</h3>
+</li>
+<li class="post">
+<blockquote>
+<p>Before Turbine, managing purchase orders was a bit of a nightmare. With Turbine it&#8217;s straightforward &#8211; it&#8217;s just more efficient and cleaner.</p>
+</blockquote>
+<img src="https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/monica-vinader.jpg" width="90" height="90" class="attachment-testimonial-thumb size-testimonial-thumb wp-post-image" alt="Monica Vinader company logo"><noscript><img width="90" height="90" src="https://turbine-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/monica-vinader.jpg" class="attachment-testimonial-thumb size-testimonial-thumb wp-post-image" alt="Monica Vinader company logo" /></noscript> <h3>Gabriela Vinader, head of operations at Monica Vinader</h3>
+</li>
+</ul> </div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="footer-wrap">
+<div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu"><li id="menu-item-4264" class="sign-in button menu-item menu-item-type-custom menu-item-object-custom menu-item-4264"><a href="https://cdn.turbinehq.com/users/sign_in" data-component-display="SignInModalApp">Sign in</a></li>
+<li id="menu-item-4265" class="free-trial button menu-item menu-item-type-custom menu-item-object-custom menu-item-4265"><a href="https://cdn.turbinehq.com/companies/new?plan=18" data-component-display="SignUpModalApp">Free Trial</a></li>
+<li id="menu-item-4266" class="rss menu-item menu-item-type-custom menu-item-object-custom menu-item-4266"><a href="https://turbinehq.com/feed">Blog posts RSS feed</a></li>
+<li id="menu-item-4267" class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-4267"><a href="https://twitter.com/turbinehq">@turbinehq on Twitter</a></li>
+<li id="menu-item-4268" class="linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-4268"><a href="https://www.linkedin.com/company/turbine-hq">Turbine on LinkedIn</a></li>
+<li id="menu-item-4296" class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-4296"><a href="https://www.facebook.com/pages/TurbineHQcom/277247968993159?fref=ts">Turbine on Facebook</a></li>
+</ul></div> <div id="search-4" class="widget widget_search"><form role="search" method="get" id="searchform" class="search-form" action="https://turbinehq.com/">
+<label class="assistive-text" for="s">Search</label>
+<input type="text" class="field" value="" name="s" id="s" />
+<input type="submit" class="submit" id="searchsubmit" value="Search" />
+</form></div> <div id="recent-posts-5" class="widget widget_recent_entries"> <h2 class="widget-title">Latest Blog Posts</h2> <ul>
+<li>
+<a href="https://turbinehq.com/2018/what-does-a-strong-business-plan-look-like/">What does a strong business plan look like?</a>
+</li>
+<li>
+<a href="https://turbinehq.com/2018/benefits-to-adopting-flexible-working/">5 benefits to adopting flexible working practices at your business</a>
+</li>
+<li>
+<a href="https://turbinehq.com/2018/agile-working-for-the-c-suite/">Here’s how agile working can work for the C-suite</a>
+</li>
+</ul>
+</div></br>
+</br>
+<div class="menu-footer-menu-column-2-container"><ul id="menu-footer-menu-column-2" class="menu"><li id="menu-item-4500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4500"><a href="https://turbinehq.com/blog/">Blog</a></li>
+<li id="menu-item-4350" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4350"><a href="http://support.turbinehq.com">Support</a></li>
+<li id="menu-item-4354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4354"><a href="https://turbinehq.com/contact/">Contact</a></li>
+<li id="menu-item-4356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4356"><a href="https://turbinehq.com/privacy-security-and-availability/">Security</a></li>
+<li id="menu-item-4353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4353"><a href="https://turbinehq.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-4352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4352"><a href="https://turbinehq.com/terms-and-conditions/">Terms and Conditions</a></li>
+</ul></div> <div class="site-info">
+<small>Copyright &copy; Turbine, 2010 - 2018.</small>
+</div>
+</div>
+</footer>
+</div>
+
+<script type="text/javascript">
+(function(d,w) {
+w._hsq = w._hsq || [];
+w._hsq.push(["setContentType", "standard-page"]);
+})(document, window);
+</script>
+
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2183131.js"></script>
+
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/engagement-grower/public/js/egrower-bundle-2.1.0.js'></script>
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-content/themes/turbine-2013/js/modernizr.custom.13480.js?ver=20120206'></script>
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-content/themes/turbine-2013/js/small-menu.js?ver=20120206'></script>
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/lazy-load/js/jquery.sonar.min.js?ver=0.6.1'></script>
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/lazy-load/js/lazy-load.js?ver=0.6.1'></script>
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var VisitorCountry = {"ip":"217.20.178.5","code":"UA","name":"Ukraine"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://turbine-wpengine.netdna-ssl.com/wp-content/plugins/visitor-country/visitor-country.js?ver=4.9.7'></script>
+<script type="text/javascript" src="https://cdn.turbinehq.com/assets/external/web_component_integration.js"></script>
+<script type="text/javascript" src="https://cdn.turbinehq.com/assets/external/currency_selector.js"></script>
+</body>
+</html>

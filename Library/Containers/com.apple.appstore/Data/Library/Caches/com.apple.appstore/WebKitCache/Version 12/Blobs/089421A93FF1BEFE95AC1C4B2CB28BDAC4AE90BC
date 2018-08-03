@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.apple.com/itms/" lang="en">
+
+
+  <head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="keywords" content="Mac App Store" /><meta name="description" content="Mac App Store" /><meta name="platform-cache-id" content="13" />
+
+
+
+<title>Search Results</title>
+
+
+
+
+
+
+<script>
+if (!window.its) {
+    window.its = {};
+}
+its.markupLoadStartTime = new Date().getTime();
+
+if (!window.onerror) window.onerror = function(message, url, lineNumber) {
+    if (!window._earlyOnerrorException) {
+        window._earlyOnerrorException = {message: message,
+                                         url: url,
+                                         lineNumber: lineNumber};
+    }
+};
+</script>
+
+
+    
+    <link charset="utf-8" rel="stylesheet" type="text/css" href="https://s.mzstatic.com/htmlResources/81e9215/da-storefront-base.css" />
+<link charset="utf-8" rel="stylesheet" type="text/css" href="https://s.mzstatic.com/htmlResources/81e9215/da-storefront-search.css" />
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript" charset="utf-8" src="/htmlResources/81e9215/frameworks-primaryinit01.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript" charset="utf-8">its.serverData={"storePlatformData":{},"pageData":{},"constants":{"fetchSoftwareUpdatesUrl":"https://su.itunes.apple.com/WebObjects/MZSoftwareUpdate.woa/wa/fetchSoftwareUpdates","Urls":{"upgradeITunesUrl":"http://www.apple.com/itunes/download/","upgradeSafariUrl":"http://www.apple.com/safari/download/"},"MZMediaType":{"MobileSoftware":{"id":8,"name":"MobileSoftwareApplications"},"MacSoftware":{"id":12,"name":"DesktopApps"},"Audiobooks":{"id":3,"name":"Audiobooks"},"MusicVideos":{"id":5,"name":"MusicVideos"},"iTunesU":{"id":10,"name":"iTunesU"},"EBooks":{"id":11,"name":"EBooks"},"Music":{"id":1,"name":"Music"},"Podcasts":{"id":2,"name":"Podcasts"},"ClassicSoftware":{"id":7,"name":"iPodGames"},"TVShows":{"id":4,"name":"TVShows"},"Movies":{"id":6,"name":"Movies"},"Ringtones":{"id":9,"name":"Ringtones"},"Textbooks":{"id":13,"name":"Textbooks"}},"SFSortOrder":{"PlaylistName":{"id":9},"RecentBestSellers":{"id":18},"SeriesOrder":{"id":17},"CmcRecommended":{"id":10},"Popularity":{"id":3},"OriginalReleaseDate":{"id":19},"ArtistName":{"id":8},"Featured":{"id":1},"TopRated":{"id":5},"Duration":{"id":11},"ReleaseDate":{"id":2},"TrackNumber":{"id":13},"Name":{"id":0},"AllTimeBestSellers":{"id":14},"ExpirationDate":{"id":6},"Price":{"id":7},"MostRecent":{"id":16},"PurchaseDate":{"id":4},"DateAdded":{"id":15},"DiscNumber":{"id":12}},"SFEntityType":{"Artist":{"id":1},"Playlist":{"id":4},"TopContents":{"id":7},"MultiRoom":{"id":3},"Search":{"id":6},"WeMix":{"id":8},"Cmc":{"id":2},"Work":{"id":10},"Wishlist":{"id":9},"TopAuthors":{"id":12},"Room":{"id":5},"TheyMix":{"id":11}},"countryCode":"ukr","languageCode":"en","SFCustomComponentCountryCode":"ukr","IXDisplayableKind":{"Artist":{"id":20,"cssClasses":[],"name":"artist"},"MobileSoftware":{"id":11,"cssClasses":["application"],"name":"iosSoftware","mtId":"8"},"Album":{"id":2,"cssClasses":["album","music"],"name":"album","mtId":"1"},"ShortFilm":{"id":8,"cssClasses":["short-film","movie","video"],"name":"shortFilm","mtId":"6"},"PodcastEpisode":{"id":15,"cssClasses":["podcast-episode"],"name":"podcastEpisode","mtId":"2"},"ApplePubEBook":{"id":36,"cssClasses":["ebook"],"name":"ibook","mtId":"11"},"Song":{"id":1,"cssClasses":["song","music"],"name":"song","mtId":"1"},"MovieBundle":{"id":24,"cssClasses":["bundle","movie","video"],"name":"movieBundle","mtId":"6"},"RingtoneAlbum":{"id":22,"cssClasses":[],"name":"ringtoneAlbum","mtId":"9"},"Book":{"id":3,"cssClasses":["audiobook"],"name":"book","mtId":"3"},"ToneAlbum":{"id":32,"cssClasses":[],"name":"toneAlbum","mtId":"9"},"TVEpisode":{"id":6,"cssClasses":["tv-episode","tv","video"],"name":"tvEpisode","mtId":"4"},"TVSeason":{"id":7,"cssClasses":["tv-season","tv","video"],"name":"tvSeason","mtId":"4"},"Course":{"id":34,"cssClasses":["course","itunes-u"],"name":"course","mtId":"10"},"ClassicSoftwarePackage":{"id":18,"cssClasses":["ipod-game"],"name":"gamePackage","mtId":"7"},"Movie":{"id":9,"cssClasses":["movie","video"],"name":"movie","mtId":"6"},"Booklet":{"id":13,"cssClasses":["booklet","music"],"name":"booklet","mtId":"1"},"SocialArtist":{"id":28,"cssClasses":[],"name":"socialArtist"},"EBook":{"id":25,"cssClasses":["ebook"],"name":"epubBook","mtId":"11"},"MacSoftware":{"id":30,"cssClasses":["application","mac-application"],"name":"desktopApp","mtId":"12"},"MusicVideo":{"id":5,"cssClasses":["music-video","music","video"],"name":"musicVideo","mtId":"5"},"Ringtone":{"id":21,"cssClasses":[],"name":"ringtone","mtId":"9"},"Podcast":{"id":4,"cssClasses":["podcast"],"name":"podcast","mtId":"2"},"Concert":{"id":26,"cssClasses":[],"name":"concert","mtId":"1"},"ApplePubTextbook":{"id":37,"cssClasses":["ebook"],"name":"ibookTextbook","mtId":"13"},"SoftwareAddOn":{"id":16,"cssClasses":["software-add-on","application"],"name":"softwareAddOn","mtId":"8"},"Tone":{"id":31,"cssClasses":[],"name":"tone","mtId":"9"},"WeMix":{"id":19,"cssClasses":["wemix","music"],"name":"itunesMix","mtId":"1"},"SocialPerson":{"id":27,"cssClasses":[],"name":"socialPerson"},"ClassicSoftware":{"id":10,"cssClasses":["ipod-game"],"name":"ipodGame","mtId":"7"},"MetaEBook":{"id":35,"cssClasses":["ebook"],"name":"metaEbook","mtId":"13"},"iTunesPass":{"id":12,"cssClasses":["itunes-pass","album","music"],"name":"itunesPass","mtId":"1"},"Mix":{"id":14,"cssClasses":["mix","music"],"name":"mix","mtId":"1"},"TheyMix":{"id":33,"cssClasses":[],"name":"thirdPartyMix"}},"AddToWishlistResult":{"ItemIsFree":{"id":6},"ListFull":{"id":3},"SomeContentAlreadyOwnedButUnfulfilled":{"id":5},"SomeContentAlreadyInWishlist":{"id":1},"Success":{"id":0},"Failure":{"id":2},"SomeContentAlreadyOwned":{"id":4}},"getEmailUrl":"https://itunes.apple.com/WebObjects/MZStore.woa/wa/generateEmail?cc=ua","resourceImagePathFrameworks":"https://s.mzstatic.com/htmlResources/81e9215/frameworks/images/","resourceBasePath":"https://s.mzstatic.com/htmlResources/81e9215"},"properties":{"DAH.SharingMenu.WhitelistedServiceIds":["com.apple.share.Twitter.post","com.apple.share.Facebook.post","com.apple.share.Messages.compose"],"DAH.SharingMenu.HashTag":"#MacAppStore","DAH.SharingMenu.ServiceInfo":{"com.apple.share.Facebook.post":{"locKey":"DAH.SharingMenu.Facebook"},"com.apple.share.Twitter.post":{"locKey":"DAH.SharingMenu.Twitter"},"com.apple.share.Messages.compose":{"locKey":"DAH.SharingMenu.iChat"}},"clientStatsLoadTimeGroup":"4032","MZHtmlResourcesUtil.allowDeferJsLoad":true,"ITSServerEnvironment":"prod","ITSServerInstance":"107501","ITSResourceRevNum":"81e9215","resourceUrlPrefix":"https://s.mzstatic.com","ITSLogger.ServerReportingProtocol":"https","ITSLogger.ServerReportingDomain":"metrics.mzstatic.com","ITSLogger.ServerReportingApp":"MZUserXP","ITSLogger.RecordStatsAction":"recordStats","ITSLogger.SenderName":"ITSClient","ITSLogger.UseLegacyLogFormat":false,"ITSLogger.mirrorToServerByDefaultOnErrors":true,"DynaLoader.allowDynaLoading":true,"itsLoggerQueueProcessingInterval":10000,"cobaltBundleId":"com.apple.itunesu","getCobaltAppLink":"https://itunes.apple.com/ua/app/id490217893","iTunesUEnrollLink":"https://itunes.apple.com/WebObjects/DZR.woa/wa/iTunesEnrollPopover?cc=ua","cobaltLearnMore":"https://itunes.apple.com/ua/learn-more?about=iTunesUUpgradePage&type=2","isCobaltEnabled":true,"isCobaltJavascriptRedirectEnabled":true,"isCobaltUpsellPageEnabled":true,"personalizedButtonsEnabled":true,"SF6.Personalization.isCMAEnabled":true,"SF6.Personalization.isCMSEnabled":false,"SFJ.isNFAEnabledInStorefront":true,"SFJ.isRecommendationsSwooshEnabledInStorefront":true,"SF6.StorePlatform.whitelistParams":["caller","dsid","id","p"],"vendLastSupportedVersionIfAvailable":true,"vendLastSupportedVersionMacOs":true,"isBookGiftingEnabled":true,"metrics":{"metricsUrl":"https://xp.apple.com/report","compoundSeparator":"_","tokenSeparator":"|","postFrequency":60000,"postFrequencyLowLatency":5000,"appInstallSamplingPercentage":0.9995,"deResFields":[{"fieldName":"capacityData"},{"fieldName":"capacityDataAvailable"},{"fieldName":"capacityDisk"},{"fieldName":"capacitySystem"},{"fieldName":"capacitySystemAvailable"}],"impressions":{"viewableThreshold":1000,"viewablePercentage":0.5},"performance":{"samplingPercentageUsers":1,"samplingPercentageUsersPageRender":1,"samplingPercentageCachedResponses":1,"sessionDuration":60000,"sessionDurationPageRender":60000},"fieldsMap":{"single":{"targetId":["id","adamId","contentId","type","link.adamId","link.id","link.type","fcId","userPreference","label","station-hash","linkIdentifier"]},"custom":{"location":["id","adamId","dataSetId","name","fcKind","kindIds","type","link.type","station-hash","core-seed-name"],"impressions":["id","adamId","link.type","station-hash"],"iAd":[]},"cookies":["itcCt","itscc","xp_ab","xp_abc"],"multi":{}},"metricsBase":{"storeFrontHeader":"143492-2,13","language":"2","platformId":"13","platformName":"MacAppStore","storeFront":"143492","environmentDataCenter":"NWK"},"iTunes":{"metricsUrl":"https://xp.apple.com/report","compoundSeparator":"_","tokenSeparator":"|","postFrequency":60000,"postFrequencyLowLatency":5000,"appInstallSamplingPercentage":0.9995,"deResFields":[{"fieldName":"capacityData"},{"fieldName":"capacityDataAvailable"},{"fieldName":"capacityDisk"},{"fieldName":"capacitySystem"},{"fieldName":"capacitySystemAvailable"}],"impressions":{"viewableThreshold":1000,"viewablePercentage":0.5},"performance":{"samplingPercentageUsers":1,"samplingPercentageUsersPageRender":1,"samplingPercentageCachedResponses":1,"sessionDuration":60000,"sessionDurationPageRender":60000},"fieldsMap":{"single":{"targetId":["id","adamId","contentId","type","link.adamId","link.id","link.type","fcId","userPreference","label","station-hash","linkIdentifier"]},"custom":{"location":["id","adamId","dataSetId","name","fcKind","kindIds","type","link.type","station-hash","core-seed-name"],"impressions":["id","adamId","link.type","station-hash"],"iAd":[]},"cookies":["itcCt","itscc","xp_ab","xp_abc"],"multi":{}},"metricsBase":{"storeFrontHeader":"143492-2,13","language":"2","platformId":"13","platformName":"MacAppStore","storeFront":"143492","environmentDataCenter":"NWK"}},"MacAppStore":{"metricsUrl":"https://xp.apple.com/report","compoundSeparator":"_","tokenSeparator":"|","postFrequency":60000,"postFrequencyLowLatency":5000,"appInstallSamplingPercentage":0.9995,"deResFields":[{"fieldName":"capacityData"},{"fieldName":"capacityDataAvailable"},{"fieldName":"capacityDisk"},{"fieldName":"capacitySystem"},{"fieldName":"capacitySystemAvailable"}],"impressions":{"viewableThreshold":1000,"viewablePercentage":0.5},"performance":{"samplingPercentageUsers":1,"samplingPercentageUsersPageRender":1,"samplingPercentageCachedResponses":1,"sessionDuration":60000,"sessionDurationPageRender":60000},"fieldsMap":{"single":{"targetId":["id","adamId","contentId","type","link.adamId","link.id","link.type","fcId","userPreference","label","station-hash","linkIdentifier"]},"custom":{"location":["id","adamId","dataSetId","name","fcKind","kindIds","type","link.type","station-hash","core-seed-name"],"impressions":["id","adamId","link.type","station-hash"],"iAd":[]},"cookies":["itcCt","itscc","xp_ab","xp_abc"],"multi":{}},"metricsBase":{"storeFrontHeader":"143492-2,13","language":"2","platformId":"13","platformName":"MacAppStore","storeFront":"143492","environmentDataCenter":"NWK"}},"Maps":{"metricsUrl":"https://xp.apple.com/report","compoundSeparator":"_","tokenSeparator":"|","postFrequency":60000,"postFrequencyLowLatency":5000,"disabled":true,"appInstallSamplingPercentage":0.9995,"deResFields":[{"fieldName":"capacityData"},{"fieldName":"capacityDataAvailable"},{"fieldName":"capacityDisk"},{"fieldName":"capacitySystem"},{"fieldName":"capacitySystemAvailable"}],"impressions":{"viewableThreshold":1000,"viewablePercentage":0.5},"performance":{"samplingPercentageUsers":1,"samplingPercentageUsersPageRender":1,"samplingPercentageCachedResponses":1,"sessionDuration":60000,"sessionDurationPageRender":60000},"fieldsMap":{"single":{"targetId":["id","adamId","contentId","type","link.adamId","link.id","link.type","fcId","userPreference","label","station-hash","linkIdentifier"]},"custom":{"location":["id","adamId","dataSetId","name","fcKind","kindIds","type","link.type","station-hash","core-seed-name"],"impressions":["id","adamId","link.type","station-hash"],"iAd":[]},"cookies":["itcCt","itscc","xp_ab","xp_abc"],"multi":{}},"metricsBase":{"storeFrontHeader":"143492-2,13","language":"2","platformId":"13","platformName":"MacAppStore","storeFront":"143492","environmentDataCenter":"NWK"}}},"MZStore.shouldAttemptToEvaluateXpathSecondTime":true,"MZStore.shouldCacheElementTypeProtoObjects":true,"isStoweUpgradeDialogEnabled":false,"stoweUpgradeSize":1600000000,"isStopPageOneEnabled":false,"SF.isNotifyMeEnabled":false,"SF.notifyMeIds":[],"SF.notifyMeIdsWithAppleWatchApp":[],"SF.notifyMeIdsWithTvApp":[],"isMovieAnywhereEnabled":true}}</script>
+<script type="text/javascript" charset="utf-8">
+if (!window.iTSLocalization) { iTSLocalization = {}; }
+iTSLocalization._strings = {"Js.MyAlerts.GeniusActivationNeeded.Button":"Go to Genius", "DABuyButton.aria.accept":"Accept, @@name@@, Free", "DAH.SharingMenu.Twitter":"Share on Twitter", "Js.Wishlist.RemoveTooltip":"Remove from Wish list", "DABuyButtonAlreadyInstalledExplanation":"Do you want to buy @@name@@ @@version@@?", "MHJavascriptLocalizations.DIBuyButtonDownloading":"Downloading", "DAHSoftwareInstall.Status.EstimatedTime.LessThanAMinute":"less than a minute", "DAHSoftwareInstall.Status.EstimatedTime.SecondsLeft":"@@seconds@@ @@secondUnit@@", "Js.Showcase.Next":"Next Item", "Js.DA.BuyButton.Installed":"Installed", "Js.PreflightCheckWarning.Continue":"Continue", "DABuyButtonInstall":"Install App", "DABuyButtonNewerVersionAlreadyInstalledMessage":"A newer version of this app is already installed on this computer", "DAHSoftwareInstall.Status.Paused":"Paused", "Js.CNConnections.Dialog.GetStarted":"Get Started", "Js.ReportAConcern.SigninMessage":"Enter your Apple ID and password, then click Sign In.", "DIBuyButtonDownloadingAria":"Downloading, @@name@@", "DABuyButton.aria.preOrder.buy":"Pre-order, @@name@@, @@price@@", "Js.TextTruncation.More":"More", "Js.QuickView.Unavailable.Title":"Quick View is currently unavailable for this item.", "CNConnections.Dialog.Post.Review.SignIn.Title":"Sign in to post.", "DAHSoftwareInstall.Status.EstimatedTime.hour":"hr", "CNConnections.Upload.UploadErrorHeading":"There Is a Problem With Your Upload", "CNConnections.Dialog.StopFollowing.Message":"CNConnections.Dialog.StopFollowing.Message", "CNConnections.Dialog.OptIn.Title":"Ping Will No Longer Be Available as of September 30", "DIBuyButtonDownloadedAria":"Downloaded, @@name@@", "Js.MyAlerts.GeniusActivationNeeded.Explanation":"Alerts based on your library content will not be enabled until you have turned on Genius. To learn more, click Go to Genius.", "_thousandsSeparator":",", "InAppPurchases":"In-App Purchases", "DAHSoftwareInstall.Status.EstimatedTime.DaysLeft":"@@days@@ @@dayUnit@@ @@hours@@ @@hourUnit@@", 
+"Js.CNConnections.LoginRequired.Message":"This requires Ping. Ping will no longer be available as of September 30, and we are not accepting new members. If you are already a Ping member, sign in below to continue.", "Js.Pagination.PreviousPage":"Previous Page", "DAHSoftwareInstall.Status.Error.MultipleUsers.description":"To update, log out all other users who are currently logged in to this computer.", "Js.TellAFriend.SigninTitle":"Sign in to tell a friend.", "Js.InlineReview.RateThis":"Rate this", "Js.InlineReview.5":"it’s great", "DAHSoftwareInstall.Status.EstimatedTime.minutes":"mins", "Js.InlineReview.4":"it’s good", "Js.InlineReview.3":"it’s ok", "DABuyButtonPreOrdered":"Pre-Ordered", "DAHSoftwareInstall.Status.EstimatedTime.second":"sec", "Js.InlineReview.2":"don’t like it", "Js.InlineReview.1":"hate it", "Js.InlinePreview.StopPreview":"Stop preview of @@title@@", "DAPreordersNotAvailableOnYourOS":"To pre-order this app, update to macOS 10.13.2 or later.", "DAHSoftwareInstall.Status.WaitingToInstall":"Waiting to install…", "DABuyButtonAlreadyInstalledNoVersionMessage":"@@installedname@@ is already installed and was not purchased from the Mac App Store.", "Close":"Close", "CNConnections.Dialog.OptIn.Message":"CNConnections.Dialog.OptIn.Message", "Js.DA.BuyButton.Open":"Open", "Js.CreateAccount":"Create Apple ID", "DAHSoftwareInstall.Status.EstimatedTime.hours":"hrs", "MZCommerce.Login_explanation":"Please enter your Apple ID and password and click Sign In.", "Js.CNConnections.OptInRequired.Title":"Ping", "Cancel":"Cancel", "DAHSoftwareInstall.Status.EstimatedTime.seconds":"secs", "DABuyButton.aria.installed":"Installed, @@name@@", "DABuyButton.aria.preOrder.free":"Pre-order, @@name@@, Free", "Js.ManageArtistAlerts.CheckAll.Actors":"Check All Actors", "SF.AskToBuy.PermissionBannerText":"Your request was sent and is awaiting approval from a parent. They can also @@bannerLinkText@@ on this device.", "DABuyButtonSameVersionAlreadyInstalledExplanation":"Do you want to buy @@name@@ @@version@@ again?", "DAHSoftwareInstall.Status.FileSizeSeparator":".", "DAPreorderLabel":"Pre-Order", "More":"More", "DAHSoftwareInstall.Status.EstimatedTime.minute":"min", "DABuyButtonPreOrder":"Pre-Order App", "Js.Pagination.DisabledButtonText":"disabled @@button_text@@", "Js.DA.BuyButton.Installing":"Installing", "Js.MyAlerts.CancelEmailSignUp.Message":"Are you sure you want to stop receiving email alerts?", "JS.errors.requiredLite":"Please fill in all required fields.", "CNConnections.Dialog.Post.Review.SignIn.Message":"CNConnections.Dialog.Post.Review.SignIn.Message", "SF.AskToBuy.PermissionBannerText.Free.bannerLinkText":"approve it in person", "MZCommerce.PurchaseBlockedForSpecialEdu_message":"This Apple ID cannot be used to make purchases.", "Js.ManageArtistAlerts.UncheckAll.Artists":"Uncheck All Artists", "Buy":"Buy", "Js.InlineRating.SigninTitle":"Sign in to rate this item.", "Js.ManageArtistAlerts.UncheckAll.Actors":"Uncheck All Actors", "MHJavascriptLocalizations.DIBuyButtonDownload":"Download", 
+"Js.CNConnections.OptInRequired.Message":"This requires Ping. Ping will no longer be available as of September 30, and we are not accepting new members. If you are already a Ping member, sign in below to continue.", "DAHSoftwareInstall.Status.Downloading":"@@completed@@ of @@total@@", "DABuyButtonLearnMoreURL.Mavericks":"http://support.apple.com/kb/HT5842", "DABuyButtonLearnMoreURL.Lion":"http://support.apple.com/kb/ht4949", "DAHSoftwareInstall.Status.EstimatedTime.HoursLeft":"@@hours@@ @@hourUnit@@ @@minutes@@ @@minuteUnit@@", "Js.Search.HintsTitle":"Suggestions", "DAHSoftwareInstall.Status.EstimatedTime.MinutesLeft":"@@minutes@@ @@minuteUnit@@", "DABuyButtonLearnMoreURL.MtnLion":"http://support.apple.com/kb/ht5444", "DAHSoftwareInstall.Status.Error.MultipleUsers":"Multiple Users Logged In", "Js.InlinePreview.PlayPreview":"Play preview of @@title@@", "SignIn":"Sign In", "DAHSoftwareInstall.Status.Error":"An error has occurred", "Js.ManageArtistAlerts.UncheckAll":"Uncheck All", "Js.iTunesStoreError.Message":"We could not complete your request.", "DVHMusicPurchasesPage.Restored":"Unhidden", "DAHSoftwareInstall.Status.Waiting":"Waiting…", "Done":"Done", "DABuyButton.aria.open":"Open, @@name@@", "Js.Pagination.NextPage":"Next Page", "Js.CNConnections.RequestSent":"Request sent", "MHJavascriptLocalizations.DIBuyButtonDownloaded":"Downloaded", "DABuyButton.aria.install":"Install, @@name@@, Free", "DABuyButtonLearnMore":"Learn More", "DAH.SharingMenu.iChat":"Share in Messages", "CNConnections.Upload.UploadErrorMessage":"Sorry, there was an error during upload.", "Js.PreflightCheckFailedError.UpdateTitle":"We could not complete your update.", "Js.InlineReview.SigninMessage":"Enter your Apple ID and password, then click Sign In.", "Js.PreflightCheckFailedError.Message":"This computer does not meet the minimum install requirements for the app", "Software.HasAddOns":"Offers In-App Purchases", "Less":"Less", "Js.MyAlerts.GeniusActivationNeeded.Message":"This requires Genius.", "Js.ManageArtistAlerts.CheckAll.Artists":"Check All Artists", "Js.TellAFriend.SigninMessage":"Enter your Apple ID and password, then click Sign In.", "CNConnections.Dialog.StopFollowing.Title":"Are you sure you want to stop following @@fullName@@?", "Js.PreflightCheckFailedErrorWithAppName.Title":"We could not complete your purchase of @@appName@@", "DTHBuyInfo.actionText.Accept":"Accept", "Js.PreflightCheckFailedError.Title":"We could not complete your purchase.", "Js.InlineReview.SigninTitle":"Sign in to write a review.", "Js.InlineRating.SigninMessage":"Sign in to continue.", "DAHSoftwareInstall.Status.EstimatedTime.TimeLeft":"@@time@@ remaining", "Js.DA.BuyButton.Install":"Install", "DABuyButton.aria.confirm.buy":"Confirm, Buy, @@name@@, @@price@@", "DAHSoftwareInstall.Status.EstimatedTime.days":"days", "Js.Pagination.Back":"Back", "DABuyButton.aria.installing":"Installing, @@name@@", "DTHBuyInfo.actionText.Gratis":"Free", "CNConnections.Dialog.PrivateUser.IllegalAction.Message":"If you would like to perform this action, please change your privacy settings.", "DAPreorderedLabel":"Pre-Ordered", "DAHSoftwareInstall.Status.EstimatedTime.day":"day", "DVHMusicPurchasesPage.Restore":"Unhide", "DABuyButton.aria.confirm.install":"Confirm, Install, @@name@@, Free", "DAHSoftwareInstall.Status.Installing":"Installing", "Js.QuickView.Unavailable.Text":"Please try again later.", "Js.MyAlerts.ConfirmEmailSignUp.Explanation":"You can change this preference at any time from your My Alerts page.", "Js.CNConnections.Dialog.Cancel":"Cancel", "Js.CNConnections.PeoplePopupMore":"and @@count@@ other@@s@@...", "Js.CNConnections.Confirmed":"Confirmed", "Js.CNConnections.UserReview.YouLiked":"You Liked", "MHJavascriptLocalizations.DIBuyButtonUpdate":"Update", "Yes":"Yes", "Js.Pagination.Next":"Next", "DABuyButton.aria.preOrdered":"Pre-ordered, @@name@@", "Js.ManageArtistAlerts.CheckAll":"Check All", "Js.ReportAConcern.SigninTitle":"Sign in to report a concern.", "Js.MyAlerts.CancelEmailSignUp.Explanation":"You can change this preference at any time from your My Alerts page.", "CNConnections.Dialog.PrivateUser.LeakyAction.Message":"This action will make your profile picture and name visible to others.", "Js.TextLimit.Remaining":"@@count@@ characters remaining", "CNConnections.Dialog.PrivateUser.LeakyAction.Title":"Are you sure you want to perform this action?", "DABuyButtonBuyNow":"Buy App", "Js.Pagination.PageNumberTitle":"page @@num@@", "DABuyButtonPreOrderedAllCaps":"PRE-ORDERED", "SF.AskToBuy.PermissionBannerText.bannerLinkText":"purchase it in person", "OK":"OK", "Js.InlineReview.Thanks":"Thanks!", "Js.InlineReview.Error":"Error", "CNConnections.Dialog.Like.Review.SignIn.Message":"CNConnections.Dialog.Like.Review.SignIn.Message", "Js.List.Item":"item", "DABuyButtonAlreadyInstalledMessage":"@@installedname@@ @@installedversion@@ is already installed and was not purchased from the Mac App Store", "No":"No", "Js.iTunesStoreError.Explanation":"There was an error in the App Store. Please try again later.", "Js.InlineReview.ClickToRate":"Click to rate", "DABuyButtonNewerVersionAlreadyInstalledExplanation":"If you want to replace it with this version, move the existing app to the trash.", "CNConnections.Dialog.PrivateUser.IllegalAction.Title":"Private users may not perform this action.", "DABuyButton.aria.buy":"Buy, @@name@@, @@price@@", "Js.MyAlerts.ConfirmEmailSignUp.Message":"Are you sure you want to receive email alerts?", "CNConnections.Dialog.OptIn.ButtonSubmit":"Learn More", "_decimalSeparator":".", "CNConnections.Dialog.OptIn.ButtonCancel":"Cancel", "MZCommerce.Login_message":"Sign In", "DIBuyButtonRedownloadAria":"Download, @@name@@: Free", "Js.CNConnections.LoginRequired.Title":"Sign in to access Ping.", "CNConnections.Dialog.OptIn.ButtonSignIn":"Sign In", "Js.Pagination.PageNumber":"Page @@num@@", "DAHSoftwareInstall.Status.EstimatedTime.Calculating":"Calculating…", "DAH.SharingMenu.Facebook":"Share to Facebook", "DIBuyButtonUpdateAria":"Update, @@name@@", "CNConnections.Dialog.Like.Review.SignIn.Title":"Sign in to like a review.", "Js.PreflightCheckWarning.Title":"Would you like to continue?", "CNConnections.Upload.MaxPhotosErrorMessage":"You can have no more than 20 photos in one post."}
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/htmlResources/81e9215/da-storefront-base.js"></script>
+<script type="text/javascript" charset="utf-8" src="/htmlResources/81e9215/da-storefront-sharing.js"></script>
+
+
+
+
+
+
+
+</head>
+
+  <body data-country="ukr" buy-button-metadata-url="https://se-edge.itunes.apple.com/WebObjects/MZStoreElements.woa/wa/buyButtonMetaData" class="ukr en search">
+  <script type="text/javascript">
+    if (window['iTSKit']) { iTSKit.preLoad(); }
+    if (window.its && its.kit) { its.kit.preload(); }
+  </script>
+
+  
+
+  
+  <div id="page">
+    <div id="wrapper">
+
+      <div id="content">
+
+        <div class="background"></div>
+
+        
+
+        
+
+        
+
+    <div class="columns">
+      <div class="main">
+
+        
+          
+
+          
+          <div display-page-number-separately="true" page-number-parameter="page" pill-identifier-parameter="pill" sort-key-parameter="sortOrdering" goto-page-href="https://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?cc=ua&pageCount=120&q=acrobat%20reader" class="lockup-container paginate application mac-application numbered">
+  <div class="title">
+    <h2>Search Results for “acrobat reader”</h2>
+    
+    
+    	
+	  
+    
+    <div class="select sort-controls">
+  <label>
+    <span>Sort By:</span>
+    <select metrics-loc="Selector">
+      
+        <option value="10" metrics-loc="Relevance">
+          Relevance
+        </option>
+      
+        <option value="6" metrics-loc="Most Popular">
+          Most Popular
+        </option>
+      
+        <option value="2" metrics-loc="Release Date">
+          Release Date
+        </option>
+      
+        <option value="13" metrics-loc="Customer Rating">
+          Customer Rating
+        </option>
+      
+    </select>
+  </label>
+</div>
+    
+  </div>
+  <div class="content-and-controls">
+    <div class="paginated-container">
+      <div page-number="1" sort-key pill-identifier="0" total-number-of-pages="1" class="paginated-content"><div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Reader Pro－Lite Edition" adam-id="919472673" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-reader-pro-lite-edition/id919472673?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Reader Pro－Lite Edition" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/13/c8/3b/13c83b5e-3e00-193a-e73e-caea3acd220b/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/13/c8/3b/13c83b5e-3e00-193a-e73e-caea3acd220b/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-reader-pro-lite-edition/id919472673?mt=12">PDF Reader Pro－Lite Edition</a></li><li class="genre">Business</li><li class="customer-ratings"><div class='rating' role='img' tabindex='-1' aria-label='5 stars, 67 Ratings'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span></div><span class="rating-count">67 Ratings</span>
+</div>
+</li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=919472673&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=826459775" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-reader-pro-lite-edition/id919472673?mt=12&#34;}" minimumOSVersion="10.9" hasInAppPurchases="1" bundle-id="com.brother.pdfreaderprofree.mac" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple115/v4/da/86/96/da8696af-771e-966d-2550-928781db7355/signed.dcr.1537808319129165144.pfpkg" versionID="826459775" adam-id="919472673" dk-id="30" item-name="PDF Reader Pro－Lite Edition" buy-params="productType=C&amp;price=0&amp;salableAdamId=919472673&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=826459775" version-string="2.2" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/13/c8/3b/13c83b5e-3e00-193a-e73e-caea3acd220b/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Reader Pro－Lite Edition">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-reader-pro-lite-edition/id919472673?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=919472673&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Office: Edit Text &amp; Reader" adam-id="1387816957" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-office-edit-text-reader/id1387816957?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Office: Edit Text &amp; Reader" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/77/e8/e3/77e8e35a-dfbb-57a7-436b-314dc5c6a430/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/77/e8/e3/77e8e35a-dfbb-57a7-436b-314dc5c6a430/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-office-edit-text-reader/id1387816957?mt=12">PDF Office: Edit Text &amp; Reader</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1387816957&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=828061660" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-office-edit-text-reader/id1387816957?mt=12&#34;}" minimumOSVersion="10.13" bundle-id="com.itsabouttime.pdfofficemacpro" original-price="USD 19.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/a3/43/bc/a343bc6e-a106-74f4-a867-499d31d971cd/signed.dcr.6988805270741530181.pfpkg" versionID="828061660" adam-id="1387816957" dk-id="30" item-name="PDF Office: Edit Text &amp; Reader" buy-params="productType=C&amp;price=19990&amp;salableAdamId=1387816957&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=828061660" version-string="1.1.1" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/77/e8/e3/77e8e35a-dfbb-57a7-436b-314dc5c6a430/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 19.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 19.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Office: Edit Text &amp; Reader">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-office-edit-text-reader/id1387816957?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1387816957&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Foxit Reader - Leading PDF reader by Foxit" adam-id="1032155965" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/foxit-reader-leading-pdf-reader-by-foxit/id1032155965?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Foxit Reader - Leading PDF reader by Foxit" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/a1/91/dd/a191ddd9-95b2-8b91-eed4-fc22617b4cfb/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/a1/91/dd/a191ddd9-95b2-8b91-eed4-fc22617b4cfb/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/foxit-reader-leading-pdf-reader-by-foxit/id1032155965?mt=12">Foxit Reader - Leading PDF reader by Foxit</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1032155965&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=822529788" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/foxit-reader-leading-pdf-reader-by-foxit/id1032155965?mt=12&#34;}" minimumOSVersion="10.8" bundle-id="com.foxitsoftware.FoxitReaderLite" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple117/v4/c8/6f/df/c86fdf57-1c4f-3d4f-1f9e-26ebcab7f872/signed.dcr.7831986364846821441.pfpkg" versionID="822529788" adam-id="1032155965" dk-id="30" item-name="Foxit Reader - Leading PDF reader by Foxit" buy-params="productType=C&amp;price=0&amp;salableAdamId=1032155965&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=822529788" version-string="2.4.1" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/a1/91/dd/a191ddd9-95b2-8b91-eed4-fc22617b4cfb/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Foxit Reader - Leading PDF reader by Foxit">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/foxit-reader-leading-pdf-reader-by-foxit/id1032155965?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1032155965&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Reader &ndash; Document Expert" adam-id="615956269" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-reader-document-expert/id615956269?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Reader – Document Expert" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is2-ssl.mzstatic.com/image/thumb/Purple115/v4/da/40/7a/da407a1b-e423-2171-77dd-7bb0de0a6399/source/150x150bb.png" src-swap="https://is2-ssl.mzstatic.com/image/thumb/Purple115/v4/da/40/7a/da407a1b-e423-2171-77dd-7bb0de0a6399/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-reader-document-expert/id615956269?mt=12">PDF Reader – Document Expert</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=615956269&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827284596" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-reader-document-expert/id615956269?mt=12&#34;}" minimumOSVersion="10.9" hasInAppPurchases="1" bundle-id="com.kdanmobile.pdfreader-mac" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple125/v4/f9/c9/1f/f9c91fa6-ce3c-79fc-8019-90989ff37681/signed.dcr.8642739099814057924.pfpkg" versionID="827284596" adam-id="615956269" dk-id="30" item-name="PDF Reader – Document Expert" buy-params="productType=C&amp;price=0&amp;salableAdamId=615956269&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827284596" version-string="2.5" large-icon="https://is2-ssl.mzstatic.com/image/thumb/Purple115/v4/da/40/7a/da407a1b-e423-2171-77dd-7bb0de0a6399/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Reader &ndash; Document Expert">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-reader-document-expert/id615956269?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=615956269&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Reader Pro－Your PDF Office" adam-id="825459243" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-reader-pro-your-pdf-office/id825459243?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Reader Pro－Your PDF Office" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/8b/58/24/8b582461-6066-af26-a688-a3e3e7be3719/source/150x150bb.png" src-swap="https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/8b/58/24/8b582461-6066-af26-a688-a3e3e7be3719/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-reader-pro-your-pdf-office/id825459243?mt=12">PDF Reader Pro－Your PDF Office</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=825459243&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=826459804" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-reader-pro-your-pdf-office/id825459243?mt=12&#34;}" minimumOSVersion="10.9" bundle-id="com.brother.pdfreaderpro.mac" original-price="USD 59.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple115/v4/1c/7f/c4/1c7fc474-57df-1302-4c2b-07345509c838/signed.dcr.1173299665389879660.pfpkg" versionID="826459804" adam-id="825459243" dk-id="30" item-name="PDF Reader Pro－Your PDF Office" buy-params="productType=C&amp;price=59990&amp;salableAdamId=825459243&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=826459804" version-string="2.2" large-icon="https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/8b/58/24/8b582461-6066-af26-a688-a3e3e7be3719/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 59.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 59.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Reader Pro－Your PDF Office">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-reader-pro-your-pdf-office/id825459243?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=825459243&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Reader - Document Viewer" adam-id="1185380569" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-reader-document-viewer/id1185380569?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Reader - Document Viewer" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/fd/d5/84/fdd584bb-2f0e-3a75-3134-089c22c91168/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/fd/d5/84/fdd584bb-2f0e-3a75-3134-089c22c91168/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-reader-document-viewer/id1185380569?mt=12">PDF Reader - Document Viewer</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1185380569&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827657208" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-reader-document-viewer/id1185380569?mt=12&#34;}" minimumOSVersion="10.11" hasInAppPurchases="1" bundle-id="MicPDF" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple125/v4/49/7e/c3/497ec39a-3bf6-854a-05d9-4e49eeb2a1c8/signed.dcr.1240250468715095664.pfpkg" versionID="827657208" adam-id="1185380569" dk-id="30" item-name="PDF Reader - Document Viewer" buy-params="productType=C&amp;price=0&amp;salableAdamId=1185380569&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827657208" version-string="1.3.2" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/fd/d5/84/fdd584bb-2f0e-3a75-3134-089c22c91168/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Reader - Document Viewer">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-reader-document-viewer/id1185380569?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1185380569&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Flyingbee Reader Lite" adam-id="1114430927" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/flyingbee-reader-lite/id1114430927?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Flyingbee Reader Lite" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/ac/0e/92/ac0e92c5-b9b5-1567-f2d8-f57dc5a8e3fa/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/ac/0e/92/ac0e92c5-b9b5-1567-f2d8-f57dc5a8e3fa/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/flyingbee-reader-lite/id1114430927?mt=12">Flyingbee Reader Lite</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1114430927&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=824095987" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/flyingbee-reader-lite/id1114430927?mt=12&#34;}" minimumOSVersion="10.10" bundle-id="com.flyingbee.PDFReaderMacLite" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/6d/74/ef/6d74efea-f084-fa53-483f-9027fe3edae4/signed.dcr.1717209800495326557.pfpkg" versionID="824095987" adam-id="1114430927" dk-id="30" item-name="Flyingbee Reader Lite" buy-params="productType=C&amp;price=0&amp;salableAdamId=1114430927&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=824095987" version-string="1.5" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/ac/0e/92/ac0e92c5-b9b5-1567-f2d8-f57dc5a8e3fa/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Flyingbee Reader Lite">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/flyingbee-reader-lite/id1114430927?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1114430927&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Reader Pro Edition" adam-id="1110060135" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-reader-pro-edition/id1110060135?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Reader Pro Edition" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/ac/31/47/ac3147e1-1903-b007-9be9-74b10bbf3aab/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/ac/31/47/ac3147e1-1903-b007-9be9-74b10bbf3aab/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-reader-pro-edition/id1110060135?mt=12">PDF Reader Pro Edition</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1110060135&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827725732" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-reader-pro-edition/id1110060135?mt=12&#34;}" minimumOSVersion="10.7" bundle-id="com.cokesoft.pdfreaderpro" original-price="USD 4.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple115/v4/4b/2e/53/4b2e536e-5a86-caf1-c647-ec693cd5a164/signed.dcr.8986538889996097947.pfpkg" versionID="827725732" adam-id="1110060135" dk-id="30" item-name="PDF Reader Pro Edition" buy-params="productType=C&amp;price=4990&amp;salableAdamId=1110060135&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827725732" version-string="1.0.9" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/ac/31/47/ac3147e1-1903-b007-9be9-74b10bbf3aab/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 4.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 4.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Reader Pro Edition">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-reader-pro-edition/id1110060135?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1110060135&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Reader Premium" adam-id="735128047" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-reader-premium/id735128047?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Reader Premium" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is2-ssl.mzstatic.com/image/thumb/Purple115/v4/d0/e0/6f/d0e06f8a-3e81-0f8b-f7ef-912a86a7945a/source/150x150bb.png" src-swap="https://is2-ssl.mzstatic.com/image/thumb/Purple115/v4/d0/e0/6f/d0e06f8a-3e81-0f8b-f7ef-912a86a7945a/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-reader-premium/id735128047?mt=12">PDF Reader Premium</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=735128047&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827284603" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-reader-premium/id735128047?mt=12&#34;}" minimumOSVersion="10.9" hasInAppPurchases="1" bundle-id="com.kdanmobile.pdfreaderpremium-mac" original-price="USD 59.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple115/v4/3c/ee/8b/3cee8b56-8542-28f5-c4cc-5367e3b68f45/signed.dcr.7121093963135024197.pfpkg" versionID="827284603" adam-id="735128047" dk-id="30" item-name="PDF Reader Premium" buy-params="productType=C&amp;price=59990&amp;salableAdamId=735128047&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827284603" version-string="3.2" large-icon="https://is2-ssl.mzstatic.com/image/thumb/Purple115/v4/d0/e0/6f/d0e06f8a-3e81-0f8b-f7ef-912a86a7945a/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 59.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 59.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Reader Premium">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-reader-premium/id735128047?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=735128047&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Flyingbee Reader" adam-id="1114429373" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/flyingbee-reader/id1114429373?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Flyingbee Reader" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/3a/61/32/3a6132e4-0d18-7268-452b-8fed0360223e/source/150x150bb.png" src-swap="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/3a/61/32/3a6132e4-0d18-7268-452b-8fed0360223e/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/flyingbee-reader/id1114429373?mt=12">Flyingbee Reader</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1114429373&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=824095991" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/flyingbee-reader/id1114429373?mt=12&#34;}" minimumOSVersion="10.11" bundle-id="com.flyingbee.PDFReaderMac" original-price="USD 9.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/31/e5/3f/31e53fa0-a3db-c91d-dd3e-29b592b99f34/signed.dcr.2220202136772592959.pfpkg" versionID="824095991" adam-id="1114429373" dk-id="30" item-name="Flyingbee Reader" buy-params="productType=C&amp;price=9990&amp;salableAdamId=1114429373&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=824095991" version-string="1.5" large-icon="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/3a/61/32/3a6132e4-0d18-7268-452b-8fed0360223e/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 9.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 9.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Flyingbee Reader">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/flyingbee-reader/id1114429373?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1114429373&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDFelement 6 Pro - PDF &amp; OCR" adam-id="1193983823" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdfelement-6-pro-pdf-ocr/id1193983823?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDFelement 6 Pro - PDF &amp; OCR" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/35/a1/44/35a14400-60b1-d888-eefd-da964e6026ba/source/150x150bb.png" src-swap="https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/35/a1/44/35a14400-60b1-d888-eefd-da964e6026ba/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdfelement-6-pro-pdf-ocr/id1193983823?mt=12">PDFelement 6 Pro - PDF &amp; OCR</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1193983823&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827527382" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdfelement-6-pro-pdf-ocr/id1193983823?mt=12&#34;}" minimumOSVersion="10.10" hasInAppPurchases="1" bundle-id="com.wondershare.PDFelement6.Professional" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple115/v4/47/d6/08/47d60894-92c6-46d5-71a6-d79594a24d6a/signed.dcr.8631501928019903919.pfpkg" versionID="827527382" adam-id="1193983823" dk-id="30" item-name="PDFelement 6 Pro - PDF &amp; OCR" buy-params="productType=C&amp;price=0&amp;salableAdamId=1193983823&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827527382" version-string="6.6.3" large-icon="https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/35/a1/44/35a14400-60b1-d888-eefd-da964e6026ba/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDFelement 6 Pro - PDF &amp; OCR">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdfelement-6-pro-pdf-ocr/id1193983823?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1193983823&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDFelement 6 - PDF Editor" adam-id="1193982190" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdfelement-6-pdf-editor/id1193982190?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDFelement 6 - PDF Editor" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple125/v4/5b/6e/de/5b6ede1e-f211-cc94-c3bb-53b2f2aa6e89/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple125/v4/5b/6e/de/5b6ede1e-f211-cc94-c3bb-53b2f2aa6e89/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdfelement-6-pdf-editor/id1193982190?mt=12">PDFelement 6 - PDF Editor</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1193982190&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827526502" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdfelement-6-pdf-editor/id1193982190?mt=12&#34;}" minimumOSVersion="10.10" hasInAppPurchases="1" bundle-id="com.wondershare.PDFelement6" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple115/v4/37/d9/34/37d934c3-b3a4-b82e-3fc4-dc2fe6c65455/signed.dcr.8461685426011853164.pfpkg" versionID="827526502" adam-id="1193982190" dk-id="30" item-name="PDFelement 6 - PDF Editor" buy-params="productType=C&amp;price=0&amp;salableAdamId=1193982190&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827526502" version-string="6.6.3" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple125/v4/5b/6e/de/5b6ede1e-f211-cc94-c3bb-53b2f2aa6e89/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDFelement 6 - PDF Editor">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdfelement-6-pdf-editor/id1193982190?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1193982190&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Professional Toolkit" adam-id="1308280121" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-professional-toolkit/id1308280121?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Professional Toolkit" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/ef/82/66/ef82665e-f685-4975-b2d6-4c81b625298b/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/ef/82/66/ef82665e-f685-4975-b2d6-4c81b625298b/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-professional-toolkit/id1308280121?mt=12">PDF Professional Toolkit</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1308280121&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=824345165" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-professional-toolkit/id1308280121?mt=12&#34;}" minimumOSVersion="10.12" bundle-id="com.domainname.MACPdfToolkit" original-price="USD 2.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/9c/5b/9b/9c5b9b04-720e-701b-1267-8abd62ffe37a/signed.dcr.6519036995690414867.pfpkg" versionID="824345165" adam-id="1308280121" dk-id="30" item-name="PDF Professional Toolkit" buy-params="productType=C&amp;price=2990&amp;salableAdamId=1308280121&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=824345165" version-string="1.2" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/ef/82/66/ef82665e-f685-4975-b2d6-4c81b625298b/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 2.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 2.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Professional Toolkit">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-professional-toolkit/id1308280121?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1308280121&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Editor - Forms, Notes Edit" adam-id="1066289205" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-editor-forms-notes-edit/id1066289205?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Editor - Forms, Notes Edit" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/f5/b5/0bf5b5a7-e8f4-89a6-193d-b646a5b063bc/source/150x150bb.png" src-swap="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/f5/b5/0bf5b5a7-e8f4-89a6-193d-b646a5b063bc/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-editor-forms-notes-edit/id1066289205?mt=12">PDF Editor - Forms, Notes Edit</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1066289205&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=824109914" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-editor-forms-notes-edit/id1066289205?mt=12&#34;}" minimumOSVersion="10.6" bundle-id="com.huayi.pdf" original-price="USD 24.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/a2/5b/27/a25b27d0-6fc9-cb08-5d8c-049e3e232fc5/signed.dcr.3941913280373122195.pfpkg" versionID="824109914" adam-id="1066289205" dk-id="30" item-name="PDF Editor - Forms, Notes Edit" buy-params="productType=C&amp;price=24990&amp;salableAdamId=1066289205&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=824109914" version-string="1.0.6" large-icon="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/f5/b5/0bf5b5a7-e8f4-89a6-193d-b646a5b063bc/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 24.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 24.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Editor - Forms, Notes Edit">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-editor-forms-notes-edit/id1066289205?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1066289205&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Pdf Searcher Professional" adam-id="1124566020" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-searcher-professional/id1124566020?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Pdf Searcher Professional" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/c4/5e/40/c45e4011-abac-9a4f-bbd1-660683746ac2/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/c4/5e/40/c45e4011-abac-9a4f-bbd1-660683746ac2/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-searcher-professional/id1124566020?mt=12">Pdf Searcher Professional</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1124566020&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=824687047" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-searcher-professional/id1124566020?mt=12&#34;}" minimumOSVersion="10.12" bundle-id="com.domainname.MACMemoryMonitor" original-price="USD 1.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple128/v4/e0/28/61/e0286199-d83c-4874-98d6-cecf00bdb4a9/signed.dcr.4637987728580232236.pfpkg" versionID="824687047" adam-id="1124566020" dk-id="30" item-name="Pdf Searcher Professional" buy-params="productType=C&amp;price=1990&amp;salableAdamId=1124566020&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=824687047" version-string="2.0" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/c4/5e/40/c45e4011-abac-9a4f-bbd1-660683746ac2/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 1.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 1.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Pdf Searcher Professional">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-searcher-professional/id1124566020?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1124566020&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="PDF Voice Professional" adam-id="1318140196" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/pdf-voice-professional/id1318140196?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="PDF Voice Professional" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/c7/05/14/c705142e-dd94-b050-a656-0424936a6fe9/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/c7/05/14/c705142e-dd94-b050-a656-0424936a6fe9/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/pdf-voice-professional/id1318140196?mt=12">PDF Voice Professional</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1318140196&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=825139741" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/pdf-voice-professional/id1318140196?mt=12&#34;}" minimumOSVersion="10.12" bundle-id="com.domainname.MACPdfVoice" original-price="USD 1.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple128/v4/bc/39/64/bc3964b2-43cc-f944-8ba8-ef007446471c/signed.dcr.8656124657539319353.pfpkg" versionID="825139741" adam-id="1318140196" dk-id="30" item-name="PDF Voice Professional" buy-params="productType=C&amp;price=1990&amp;salableAdamId=1318140196&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=825139741" version-string="1.1" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/c7/05/14/c705142e-dd94-b050-a656-0424936a6fe9/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 1.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 1.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for PDF Voice Professional">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/pdf-voice-professional/id1318140196?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1318140196&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+        
+
+        
+
+      </div>
+    </div>
+
+  
+
+      </div>
+
+
+      
+      
+
+    </div>
+  </div>
+
+  <footer>
+  <div class="legal">
+    <span class="copyright">Copyright © 2018 Apple Inc. <a target="_blank" href="https://www.apple.com/uk/legal/">All Rights Reserved.</a></span>
+    <ul class="list" role="presentation">
+      <li><a target="_blank" href="https://www.apple.com/legal/itunes/appstore/ukr/terms.html#PRIVACY">Privacy Policy</a></li>
+      <li><a target="_blank" href="http://www.apple.com/legal/itunes/appstore/ukr/terms.html">Terms and Conditions</a></li>
+      
+      <li><a href="https://itunes.apple.com/ua/faq">FAQ</a></li>
+    </ul>
+    
+    <div class="intl" metrics-loc="CountryPicker">
+      <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/countrySelectorPage"><img src-load-auto-after-dom-load="" width="30" height="30" src-swap-high-dpi="https://s.mzstatic.com/images/flags/-dsi-30/ukr.png" alt="My Store: Ukraine, Choose Store" src-swap="https://s.mzstatic.com/images/flags/30/ukr.png"></img></a>
+      
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script type="text/javascript">
+    var pageMetricsUrl = 'https://xp.apple.com/report/2/xp_its_main?responseType=image&eventType=page&app=MacAppStore&pageId=DAHSearchPage&pageType=finance&eventSource=server&page=finance_DAHSearchPage';
+    if (pageMetricsUrl) {
+        pageMetricsUrl += "&eventTime=" + encodeURIComponent((new Date()).getTime());
+    }
+    var billingSection = document.querySelector(".edit-billing, .creditcard");
+    if (billingSection !== null) {
+        var selectedPaymentType = document.querySelector(".credit-card-picker input.selected, #paymentTypeField");
+        if (selectedPaymentType !== null) {
+            pageMetricsUrl += "&pageDetails=pmtTyp%3D" + selectedPaymentType.value;
+        } 
+    }
+    if (its && its.cookies) {
+        var itcCt = its.cookies.getUnescaped("itcCt");
+        var itscc = its.cookies.getUnescaped("itscc");
+        var hasitcCt = false;
+        if (itcCt && itcCt !== "") {
+            pageMetricsUrl += "&cookie=itcCt%3D" + itcCt;
+            hasitcCt = true;
+        }
+        if (itscc && itscc != "") {
+            pageMetricsUrl += (hasitcCt) ? "%26" : "&cookie=";
+            pageMetricsUrl += "itscc%3D" + itscc;
+        }
+    }
+    var containingDiv = document.createElement('div');
+    containingDiv.innerHTML = "<img width='0' height='0' border='0' alt='' aria-hidden=true src='" + pageMetricsUrl + "'/>";
+    document.body.appendChild(containingDiv);
+
+    // NOTE: This should be considered temporary and replaced when a better solution is available.
+    //      right now, SFMetrics should be referenced for all of these, but MZComponents can't access anything
+    //      in MZStoreComponents so we're going to have to go with this workaround.
+    var metricsConfig = {
+        'metricsUrl' : 'https://xp.apple.com/report/2/',
+        'compoundSeparator' : '_',
+        'tokenSeparator' : '|',
+        'postFrequency' : 60000,
+        'metricsBase' : {}
+    };
+</script>
+
+</body>
+
+
+</html>

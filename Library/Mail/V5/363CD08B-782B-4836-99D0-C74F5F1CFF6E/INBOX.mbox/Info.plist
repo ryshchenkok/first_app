@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IMAPMailboxUnseenCount</key>
+	<integer>0</integer>
+	<key>MailboxID</key>
+	<string>558CE588-830A-4066-B5B0-F495DAA496EA</string>
+	<key>MailboxName</key>
+	<string>INBOX</string>
+</dict>
+</plist>

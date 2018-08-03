@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>F0068998-4EB3-4074-B5D4-BF3057CAE3E5</UUID>
+        <nextObjectID>101</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>851</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>RecordSession</key>
+                        <data>
+		5nwcTUcPTPPSFHmiAs8JJts+y8vfzPY7lxsg6pgxyK4=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array>
+                        <string></string>
+                    </array>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+</database>

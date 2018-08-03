@@ -1,0 +1,17 @@
+git
+cd .ssh
+ls -a
+f .
+open .
+cd ..
+cd ..
+cd ..
+open .
+git
+ruby -v
+rvm get stable
+ruby -v
+rails server
+sudo gem install rails
+/Volumes/M_Office_2016/MSO15.11.2Patch 
+/Users/kr/.ssh/kr.pub 

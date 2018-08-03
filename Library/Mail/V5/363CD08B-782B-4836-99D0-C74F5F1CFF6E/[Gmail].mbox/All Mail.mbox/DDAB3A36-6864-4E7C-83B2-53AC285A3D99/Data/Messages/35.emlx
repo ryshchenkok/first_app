@@ -1,0 +1,188 @@
+7586      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp1814806iof;
+        Thu, 2 Aug 2018 00:56:56 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpeqBtVjKcPhSKJHbqgHucykkX49htxi7tJZzhYOTXoj7F9COGMpeZ1kiz2+/SVq0TE3oIlb
+X-Received: by 2002:a50:de03:: with SMTP id z3-v6mr2100874edk.245.1533196616707;
+        Thu, 02 Aug 2018 00:56:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533196616; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WtI227xbWbrSD42biWo7FsMhYAiV3XkqiT5O2PAIZMcAhWPltSVPHNU58It9qgAuUh
+         VNGzRR+LmQb1Nt2TcU4Y4/y2ZL9b8soPXzI6I5T9BtQsAenLvUyE52nJ0IyabONIflOf
+         5RtkYkEuAmGcQHpRWEnu1ZTlobmCMpjs3NXB9SJZaFuHfcoSdaRHTqK9Qnak/Z1p54gT
+         cMz2rN/33uSOIFt7UfRzIa8r8GHf3BmJXO4BG72/R50DMC0708bP1/ZX101dZP5LX1bt
+         v9WOwxtqbOjQNKFE2CjvOynY9en/StOt68cxkoF7agAXsfVdIgsle4JubHJXHd3rjWK8
+         DLjg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=oxvOp+IA+vgfFjzyaDaszXfDfV+8aX1aBQMP4aT3kqI=;
+        b=YDn2szpoLLzqi6Rv1+bBO7522wCP4Gf1M+0YIOdyXsqEzA9qlHOtdry1RdY1eDIs+U
+         8L3Ornb9K0mUTpw1hXwOCmFnPFPKWijW4MXRQ63sun7/cmyvYf0xF+waxTpwYi3VDELm
+         EmR9GJ5ZMWJ3JEpFiUIrBtuup7yjD4BleB/hu/aFm5McZMqwM8qZe45aEE3Gh9+FoY+s
+         v93Yf0MnJB9OZ/6LrAcbyJzT6fL9DKgLOV/Onv1eWNMCCkA0v+8Jik9bg6kDQChhAXqH
+         tY5mrMjHTkZ4lBWzJFo0RwnR7afwzAu/Xoe9NF07UwDyUakZkQJUhQEQpTF1xKC/iLt+
+         gB3g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=TtMlJkc+;
+       spf=pass (google.com: domain of srs0+589680aa6be8ea453929e177a1152932d6e96751@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+589680aa6be8ea453929e177a1152932d6e96751@info.anahoret.com
+Return-Path: <srs0+589680aa6be8ea453929e177a1152932d6e96751@info.anahoret.com>
+Received: from smtp0.mailarbor.com (smtp0.mailarbor.com. [5.104.224.181])
+        by mx.google.com with ESMTPS id u9-v6si1601892edf.117.2018.08.02.00.56.56
+        for <kr@anadeainc.com>
+        (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 02 Aug 2018 00:56:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0+589680aa6be8ea453929e177a1152932d6e96751@info.anahoret.com designates 5.104.224.181 as permitted sender) client-ip=5.104.224.181;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=TtMlJkc+;
+       spf=pass (google.com: domain of srs0+589680aa6be8ea453929e177a1152932d6e96751@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+589680aa6be8ea453929e177a1152932d6e96751@info.anahoret.com
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 61959200499
+	for <kr@anadeainc.com>; Thu,  2 Aug 2018 07:56:56 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 53C321600B6
+	for <kr@anadeainc.com>; Thu,  2 Aug 2018 07:56:56 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.anahoret.com; q=dns/txt; s=mail; t=1533196616; bh=oxvOp+IA+vgfFjzyaDaszXfDfV+8aX1aBQMP4aT3kqI=; h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding; b=TtMlJkc+7tVHkSkwR9JNwAK2xfaianh6RuqyJdJrVYPCW/4ul8hVZP5Q2H72q6wWpeJMR4Q+gVNIP1Qe4J0xMYIH5O0dpWl7WHJ1QV8D94KveyKke4CIG1qB3CXg9IIO8j9l89oI6ZdUOgd8XN5WKiVgtNrd+dFjxdxC9mJiDU0=
+Date: Thu, 02 Aug 2018 07:56:56 +0000
+From: noreply@tracker.anahoret.com
+To: Konstantin Ryshchenko <kr@anadeainc.com>
+Message-ID: <589680aa6be8ea453929e177a1152932d6e96751@info.anahoret.com>
+Subject: You have made responsible for 'Alert display issue' story in Just
+ Play
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<style type=3D"text/css">
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  table th, table td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  table.daily-statistics {
+    width: 50%;
+  }
+  table.daily-statistics td.working_time {
+    text-align: right;
+  }
+  table.daily-statistics th {
+    background: #DDD;
+  }
+  table.digest {
+    width: 680px;
+  }
+  table.digest.planned_stories th {
+    background: #ddd;
+  }
+  table.digest.description th {
+    background: #ddd;
+  }
+  table.digest.rejected th {
+    background: red;
+  }
+  table.digest.completed th {
+    background: #d8e795;
+  }
+  table.digest.estimate th {
+    background: #dcf8ff;
+  }
+  table.digest.new_stories th {
+    background: #ddd;
+  }
+  table.digest td.time {
+    text-align: center;
+  }
+  table.digest td.story {
+    width: 400px;
+  }
+  table.digest td.name {
+    width: 130px;
+  }
+</style>
+
+  <p>Hi, you have a new story, created by Jonathan Fagg for the Just Play=
+ project!</p>
+
+
+<p>Players are still seeing alerts that the renewal is =E2=80=98upcoming=E2=
+=80=99 when it has already occured</p>
+<p>Both users who had a =E2=80=98failed subscription charge=E2=80=99 or w=
+ere =E2=80=98unsubscribed=E2=80=99 are seeing the wrong message.</p>
+<p><a href=3D"https://tracker.anahoret.com/system/files/52790/original/20=
+18-08-01_1342.png?1533123933"><img src=3D"https://tracker.anahoret.com/sy=
+stem/files/52790/original/2018-08-01_1342.png?1533123933" class=3D"popup"=
+ alt=3D""></a>\</p>
+<p><a href=3D"https://tracker.anahoret.com/system/files/52791/original/20=
+18-08-01_1356.png?1533124760"><img src=3D"https://tracker.anahoret.com/sy=
+stem/files/52791/original/2018-08-01_1356.png?1533124760" class=3D"popup"=
+ alt=3D""></a></p>
+<p>After the charge =E2=80=98date/time=E2=80=99 all users who are not reg=
+istered to following league should see =E2=80=98past renewal=E2=80=99 sta=
+te in the =E2=80=98My Teams=E2=80=99 page and the =E2=80=98Renew=E2=80=99=
+ alert on the dashboard.</p>
+<p><a href=3D"https://tracker.anahoret.com/system/files/52798/original/20=
+18-08-01_1454.png?1533128084"><img src=3D"https://tracker.anahoret.com/sy=
+stem/files/52798/original/2018-08-01_1454.png?1533128084" class=3D"popup"=
+ alt=3D""></a></p>
+<p><strong>JF 1/8</strong></p>
+<p>- In all cases related to the =E2=80=98renewal_send_date=E2=80=99 &amp=
+; =E2=80=98Renewal_charge_date=E2=80=99, the specific =E2=80=98local=E2=80=
+=99 time should also be added to the scope.</p>
+<p>In relation to the alerts / status above, they should change to =E2=80=
+=98Past renewal=E2=80=99 state after the =E2=80=98Renewal_charge_*time*=E2=
+=80=99 which is based on 11am in <strong>local</strong> timezone.</p>
+<p>Eg. When it is 11:01am in Melbourne, the alerts and status will change=
+ for the Melbourne league teams but for Perth teams it is only 9am so the=
+y will not yet be changed as the =E2=80=98Renewal_charge_time=E2=80=99 is=
+ still in the future.</p>
+
+<p>This is the same concept as the =E2=80=98Renewal reminder=E2=80=99 tab=
+s=E2=80=A6it all needs to be based on 11am on the day rather than the end=
+ of the day=E2=80=A6</p>
+<p>--</p>
+<p>Assignment made by: Alexander Koroid</p>
+<p>Responsible: Konstantin Ryshchenko, Alexander Dmitrenko</p>
+<p>Tags: bug, critical, to test, wait_for_deploy</p>
+<p>Story estimate: 2:00h </p>
+
+
+<p><a href=3D"https://tracker.anahoret.com/projects/247/stories/64848">ht=
+tps://tracker.anahoret.com/projects/247/stories/64848</a>.</p>
+
+<p>
+  <a href=3D"https://tracker.anahoret.com/profile/default_notification_se=
+ttings">Change notification setting</a>
+</p>
+
+
+
+  <p>Thank you,</p>
+  Just Play Team
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>28</integer>
+	<key>date-last-viewed</key>
+	<integer>1533196653</integer>
+	<key>date-received</key>
+	<integer>1533196616</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+	</array>
+	<key>remote-id</key>
+	<string>39</string>
+</dict>
+</plist>

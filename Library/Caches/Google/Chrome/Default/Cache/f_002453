@@ -1,0 +1,430 @@
+(function( $ ){
+
+    var methods = {
+        
+        init: function( settings ){
+
+            var DL = this,
+                id = $(DL)[0].id,
+                defaultSelect,
+                data = settings.data,
+                autocomplete = settings.autocomplete,
+                flag = settings.flag,
+                listEl,
+                options,
+                option,
+                maxHeight,
+                linkAutocomplete,
+                countryId,
+                arrow, 
+                firstLoad = true;
+
+            //////////////////////////////////////////////////
+            // Функция получения данных из html
+            //////////////////////////////////////////////////
+
+            var getData = function(){
+                var data = [];
+
+                $(DL).find('li').each(function(index, el) {
+                    var element = {};
+                    element.text =      $(el).text();
+                    element.section =   $(el).attr('data-section')    || false;
+                    element.flag =      $(el).attr('data-flag')       || false;
+                    element.link =      $(el).attr('data-link')       || false;
+                    data.push(element)
+                });
+
+                return data;
+            };
+
+
+            //////////////////////////////////////////////////
+            //////////////////////////////////////////////////
+
+            // Если при инициализации не указан массив опций, берем его из li в html
+            if (data === undefined ) {
+                data = getData()
+            } else{
+                data = data;
+            };
+
+            // Если при инициализации не указано, что должно быть написано в селекте, пишем первый элемент.
+            if (settings.defaultSelect === undefined ) {
+                defaultSelect = data[0]
+            } else{
+                defaultSelect = settings.defaultSelect;
+                $(defaultSelect).addClass(id+'_country-item--selected');
+            };
+
+            // Если при инициализации не указана максимальная высота, указываем по умолчанию
+            if (settings.maxHeightList === undefined ) {
+                maxHeight = 200
+            } else{
+                maxHeight = settings.maxHeightList;
+            }
+
+            // Если при инициализации указан элемент стрелки, сохраняем его в переменную
+            if (settings.arrow === undefined ) {
+                arrow = false;
+            } else{
+               arrow = settings.arrow;
+            }
+
+            // Если при инициализации указана ссылка для ajax, сохраняем ее в переменную
+            if (settings.link) {
+                linkAutocomplete = settings.link
+            }
+
+            // Если при инициализации указан ID страны, сохраняем его в переменную
+            if (settings.countryId) {
+                countryId = settings.countryId;
+            }
+
+
+            //////////////////////////////////////////////////
+            //////////////////////////////////////////////////
+
+            DL.html('');
+            DL.append(defaultSelect);
+
+            if (arrow != false) {
+                DL.append(arrow);
+                $(arrow).addClass(id + '-arrow')
+            };
+
+            DL.addClass('arr-drop-list__select');
+            DL.addClass(id + '__select');
+
+            listEl = $('<ul class="arr-drop-list__options '+id+'__options"></ul>');
+
+            if (autocomplete === true){
+                $('.'+id + '__select').append('<input id="'+id+'Input"> </input>')
+            };
+            
+
+            //////////////////////////////////////////////////
+            // Функция получения data по ajax
+            //////////////////////////////////////////////////
+
+            var getDataAjax = function(link, callback){
+                $.ajax({
+                    url: link,
+                    cache: false,
+                    beforeSend: function() {
+                        // console.log('Запрос отправлен');
+
+                        setTimeout(function(){
+                            if (firstLoad === true) {
+                                firstLoad = false;
+                                $('.country-navigation-preloader').show();
+                                $('.country-navigation-preloader').prependTo('.'+id+'__options')
+                                $('.country-navigation-preloader').addClass('is-active');
+                            };
+                        }, 100)
+
+                       
+                    }
+                }).done(function(data){
+                    // console.log('Ответ получен');
+                    
+                    setTimeout(function () {
+                        $('.country-navigation-preloader').hide();
+                    }, 100)
+
+                    if (callback) {
+                        callback(data);
+                    };
+                });
+            };
+
+
+            //////////////////////////////////////////////////
+            // Функция для конвертации объекта в массив
+            //////////////////////////////////////////////////
+
+            var converter = function(obj){
+                var arr = [];
+                for(var p in obj){
+                    for(var i = 0; i < obj[p].length; i++){
+                        if (p === 'regions') {
+                            obj[p][i].section = 'регионы';
+                        } else if(p === 'cities'){
+                            obj[p][i].section = 'города';
+                        } else if(p === 'countries'){
+                            obj[p][i].section = 'страны';
+                        } 
+
+                        obj[p][i].text = obj[p][i].name;
+                        obj[p][i].link = obj[p][i].url;
+
+                        arr.push(obj[p][i]);
+                    }
+                }
+                return arr;
+            };
+
+
+            //////////////////////////////////////////////////
+            // Функция создания списка
+            //////////////////////////////////////////////////
+
+            var listElGeneration = function(autocomplete, data){
+
+                // Если data в настройках при инициализации - массив строк
+                if (typeof data[0] === 'string' ) {
+
+                    for(var i = 0; i < data.length; i++){
+                        listEl.append('<li class="arr-drop-list__options__option '+id+'__options__option" data-item="' + data[i] + '">' + data[i] + '</li>');
+                    };
+
+                // Если data в настройках при инициализации НЕ массив строк 
+                } else{
+                    var dataSection = false;
+
+                    for(var i = 0; i < data.length; i++){
+
+                        if (data[i].section != dataSection && data[i].section != undefined) {
+                            dataSection = data[i].section;
+                            listEl.append('<li class="arr-drop-list__options__section '+id+'__options__section"> <div> </div> <div>' + data[i].section + '</div> </li>');
+                        };
+                        
+                        if (data[i].flag != false && data[i].flag != undefined)  {
+                            listEl.append('<li class="arr-drop-list__options__option '+id+'__options__option drop-list_country-item '+id+'__options__option" data-item="' + data[i].text + '" data-link="' + data[i].link + '"> <img src="' + data[i].flag + '"/"><span>' + data[i].text + '</span></li>');
+                        } else{
+                            listEl.append('<li class="arr-drop-list__options__option '+id+'__options__option" data-item="' + data[i].text + '" data-link="' + data[i].link + '">' + data[i].text + '</li>');
+                        };
+                    };
+                }
+
+                // Клик на пункт выпадающего списка
+                option = $(listEl).find('.'+id+'__options__option');
+
+                $(option).on('click.arrDropList', function() {
+
+                    var dataItem = $(this).attr('data-item');
+
+                    $($(DL).find('span')[0]).text(dataItem);
+                    $('#'+id+'Input').val(dataItem);
+                    $('#'+id+'Input').hide();
+
+                    setTimeout(function(){
+                        $('.'+id+'__options').hide();
+                        $('.'+id+'__select__clicker').show();
+                        $('.'+id+'_country-item--selected').show();
+                        $(arrow[0]).css('z-index', '999');
+                    }, 50);
+                    
+                    settings.callbackFunc(DL, this);
+                });
+            }
+
+
+            //////////////////////////////////////////////////
+            // Функция удаления списка
+            //////////////////////////////////////////////////
+
+
+            var listElRemove = function(){
+                $('.'+id+'__options').html('');
+                $(option).unbind('click.arrDropList');
+            }
+
+            //////////////////////////////////////////////////
+
+            if (autocomplete === true) {
+                getDataAjax('/site/locationautocomplete.html?countryId=' + countryId, function(d){
+                    d.country = [d.country];
+
+                    ////////////////////////////////////////////////////////////
+                    // d.country[0].flag = 'http://static1.arrivo.ru/flag/country/35/46/flagfrancyy-worldatlasсom.jpg'
+                    d.country[0].flag = flag;
+                    ////////////////////////////////////////////////////////////
+
+                    data = converter(d);
+                    listElGeneration(autocomplete, data);
+                });
+            };
+
+            listElGeneration(autocomplete, data);
+            DL.append(listEl);
+
+            $(listEl).css({
+                maxHeight: maxHeight+ 'px',
+                "overflow-y": 'scroll',
+                position: 'absolute',
+                top: parseInt(DL.css('height'))
+            }); 
+
+            options = listEl;
+            option = $(listEl).find('.'+id+'__options__option');
+            $(options).hide();
+
+
+            // Клик по селекту
+            DL.append('<div class="'+id+'__select__clicker arr-drop-list__select__clicker"> </div>')
+            DL.on('click.arrDropList', function(e) {
+                
+                if (autocomplete != true) {
+                    $(options).toggle();
+
+                    $('.'+id+'__select__clicker').toggle();
+                } else{
+                    if (e.target != $('.'+id+'-arrow')[0]) {
+                        $(options).show();
+                        $('.'+id+'__select__clicker').hide()
+                    } else{
+                        $(options).hide();
+                        $('.'+id+'__select__clicker').show();
+                    }
+                }
+            });
+
+            DL.find('span').on('click.arrDropList', function() {
+                $(options).show();
+            });
+
+
+            // Клик за пределами выпадающего списка
+            $(document).on('click.arrDropList', function (e){
+                if (!$(options).is(e.target) && $(options).has(e.target).length === 0 && !DL.is(e.target) && $(DL).has(e.target).length === 0) { 
+                    // console.log(1);
+                    $(options).hide();
+                    $(arrow[0]).css('z-index', '999');
+                }
+            });
+
+            // Клик по элементам выпадающего списка, но не по опции
+            $('.' + id+ '__options').on('click', function(event) {
+
+                // console.log($(event.target).closest(".dropList__options__option").length === 0);
+
+                // if ($(event.target).closest(".dropList__options__option").length === 0) {
+                if ($(event.target).closest('.' + id+ '__options__option').length === 0) {
+                        event.preventDefault();
+
+                        $('.'+id+'__select__clicker').show();
+                    setTimeout(function(){
+                        $('.'+id+'__select__clicker').click()
+                    }, 100)
+                    // event.preventDefault();
+                };
+            });
+
+
+            // События при клике по кликеру
+            $('.'+id+'__select__clicker').on('click.arrDropListInput', function(ev){
+                // console.log('клик по кликеру');
+
+                $(this).hide();
+                $('#'+id+'Input').show();
+                $('#'+id+'Input').focus();
+                $('.'+id+'_country-item--selected').hide();
+                $(arrow[0]).css('z-index', '99999');
+            });
+
+
+            // Событие, когда убран фокус
+            $('#'+id+'Input').focusout(function(){
+                // console.log('Убран фокус')
+                var input = this;
+                var link = linkAutocomplete + countryId + '&term=' + $(this).val();
+                
+                // Проверяем, пришли ли какие-то результаты по аяксу
+                getDataAjax(link, function(data){
+                    if (Array.isArray(data) === true && data.length === 0) {
+                        $(input).val('');
+                       
+                        getDataAjax('/site/locationautocomplete.html?countryId=' + countryId, function(data) {
+                            // data = converter(data);
+                            // listElGeneration(autocomplete, data);
+
+                            if (autocomplete === true) {
+                                getDataAjax('/site/locationautocomplete.html?countryId=' + countryId, function(data){
+                                    data.country = [data.country];
+
+                                    ////////////////////////////////////////////////////////////
+                                    // data.country[0].flag = 'http://static1.arrivo.ru/flag/country/35/46/flagfrancyy-worldatlasсom.jpg'
+                                    data.country[0].flag = flag;
+                                    ////////////////////////////////////////////////////////////
+
+                                    data = converter(data);
+                                    listElGeneration(autocomplete, data);
+                                });
+                            };
+
+                            // console.log('Регенерация списка');
+                            // console.log(data);
+                        });
+                    };;
+                })
+
+                setTimeout(function(){
+                    $('.'+id+'__select__clicker').show();
+                    
+                    if ( $('#'+id+'Input').val() === '') {
+                        $('.'+id+'__select__clicker').show();
+                        $('.'+id+'_country-item--selected').show();
+                    }
+                }, 100);
+            });
+
+
+            $(arrow).click(function(event) {
+                $(arrow[0]).css('z-index', '999');
+
+                // console.log('клик по стрелке');
+
+                // setTimeout(function(){
+                //     $(options).hide();
+                //     $('.'+id+'__select__clicker').show();
+                // }, 10)
+
+            });
+
+            //////////////////////////////////////////////////
+            //////////////////////////////////////////////////
+
+            // Событие нажатий клавиш, когда фокус в инпуте
+            $('#'+id+'Input').keyup(function(event) {
+                var link = linkAutocomplete + countryId + '&term=' + $(this).val();
+                $(options).show();
+
+                getDataAjax(link, function(data){
+
+                    if (data.country) {
+                        data.country = [data.country];
+
+                        ////////////////////////////////////////////////////////////
+                        // data.country[0].flag = 'http://static1.arrivo.ru/flag/country/35/46/flagfrancyy-worldatlasсom.jpg'
+                        data.country[0].flag = flag;
+                        ////////////////////////////////////////////////////////////
+                    };
+
+                    data = converter(data);
+                    listElRemove();
+                    listElGeneration(autocomplete, data);
+               
+                });
+            });
+        }
+    }
+
+    $.fn.arrDropList = function( method ){
+
+        if ($(this)[0] != undefined) {
+            if ( methods[method] ) {
+                return methods[ method ].apply( this, Array.prototype.slice.call( arguments, 1 ));
+            } else if ( typeof method === 'object' || ! method ) {
+                return methods.init.apply( this, arguments );
+            } else {
+                $.error( 'Метод с именем ' +  method + ' не существует' );
+            }
+        };
+    }
+
+})( jQuery )
+
+
+
+

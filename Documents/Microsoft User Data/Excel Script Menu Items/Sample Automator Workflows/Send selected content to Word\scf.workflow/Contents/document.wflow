@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>88.2</string>
+	<key>AMApplicationVersion</key>
+	<string>1.0.5</string>
+	<key>AMDocumentVersion</key>
+	<string>1</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.excel.workbook.object</string>
+						<string>com.microsoft.excel.sheet.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.excel.content.object</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array>
+					<dict>
+						<key>Display Name</key>
+						<string>Microsoft Excel</string>
+						<key>Resource</key>
+						<string>com.microsoft.excel</string>
+						<key>Type</key>
+						<string>application</string>
+						<key>Version</key>
+						<string>12.0</string>
+					</dict>
+				</array>
+				<key>ActionBundlePath</key>
+				<string>/Library/Automator/Get Selected Content from Excel Workbooks.action</string>
+				<key>ActionName</key>
+				<string>Get Selected Content from Excel Workbooks</string>
+				<key>ActionParameters</key>
+				<dict/>
+				<key>Application</key>
+				<array>
+					<string>Microsoft Excel</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.microsoft.Automator.Get_Selected_Content_from_Excel_Workbooks</string>
+				<key>CFBundleVersion</key>
+				<string>1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryDocuments</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAppleScriptAction</string>
+				<key>InputUUID</key>
+				<string>9946684D-A2AB-409B-AC76-5A10DDDEA6D4</string>
+				<key>Keywords</key>
+				<array/>
+				<key>OutputUUID</key>
+				<string>8AAE849F-1786-4F41-81D7-EB8BD2E093CB</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>7C87680B-EF17-4C8E-942B-03ECADC38DC2</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Microsoft Excel</string>
+				</array>
+				<key>arguments</key>
+				<dict/>
+				<key>nibPath</key>
+				<string>/Library/Automator/Get Selected Content from Excel Workbooks.action/Contents/Resources/en.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>852.000000:-1087.666626</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.excel.content.object</string>
+						<string>com.microsoft.excel.workbook.object</string>
+						<string>com.microsoft.excel.sheet.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.excel.content.object</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array>
+					<dict>
+						<key>Display Name</key>
+						<string>Microsoft Excel</string>
+						<key>Resource</key>
+						<string>com.microsoft.excel</string>
+						<key>Type</key>
+						<string>application</string>
+						<key>Version</key>
+						<string>12.0</string>
+					</dict>
+				</array>
+				<key>ActionBundlePath</key>
+				<string>/Library/Automator/Copy Excel Workbook Content to the Clipboard.action</string>
+				<key>ActionName</key>
+				<string>Copy Excel Workbook Content to the Clipboard</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>copyAppearance</key>
+					<string>As shown on screen</string>
+					<key>enableCopyAsPicture</key>
+					<false/>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Microsoft Excel</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.microsoft.Automator.Copy_Excel_Workbook_Content_to_the_Clipboard</string>
+				<key>CFBundleVersion</key>
+				<string>1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryDocuments</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAppleScriptAction</string>
+				<key>InputUUID</key>
+				<string>344702A4-3CCB-48A5-B930-D1F1E1387203</string>
+				<key>Keywords</key>
+				<array/>
+				<key>OutputUUID</key>
+				<string>B9B0871B-A529-4662-96E3-6C8225626887</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>D1635DAB-CE31-4DC0-8C63-4A2D57B166A1</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Microsoft Excel</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>enableCopyAsPicture</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string>As shown on screen</string>
+						<key>name</key>
+						<string>copyAppearance</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+				</dict>
+				<key>nibPath</key>
+				<string>/Library/Automator/Copy Excel Workbook Content to the Clipboard.action/Contents/Resources/en.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>1132.000000:-1134.333374</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.word.content.object</string>
+						<string>com.apple.applescript.text-object</string>
+						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.applescript.alias-object.image</string>
+						<string>com.apple.applescript.url-object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.word.document.object</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array>
+					<dict>
+						<key>Display Name</key>
+						<string>Microsoft Word</string>
+						<key>Resource</key>
+						<string>com.microsoft.word</string>
+						<key>Type</key>
+						<string>application</string>
+						<key>Version</key>
+						<string>12.0</string>
+					</dict>
+				</array>
+				<key>ActionBundlePath</key>
+				<string>/Library/Automator/Create New Word Document.action</string>
+				<key>ActionName</key>
+				<string>Create New Word Document</string>
+				<key>ActionParameters</key>
+				<dict/>
+				<key>Application</key>
+				<array>
+					<string>Microsoft Word</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.microsoft.Automator.Create_New_Word_Document</string>
+				<key>CFBundleVersion</key>
+				<string>1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryDocuments</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAppleScriptAction</string>
+				<key>InputUUID</key>
+				<string>E4B85730-5833-4CD1-BE50-98FF22914FEA</string>
+				<key>Keywords</key>
+				<array>
+					<string>make</string>
+					<string>create</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>3A3FF1A5-CEB7-43E8-A430-C8D83DAA2523</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>0142B68A-8708-482B-B1C1-A8680BB43BDB</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Microsoft Word</string>
+				</array>
+				<key>arguments</key>
+				<dict/>
+				<key>nibPath</key>
+				<string>/Library/Automator/Create New Word Document.action/Contents/Resources/en.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>572.000000:-1181.000000</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.word.document.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.word.document.object</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array>
+					<dict>
+						<key>Display Name</key>
+						<string>Microsoft Word</string>
+						<key>Resource</key>
+						<string>com.microsoft.word</string>
+						<key>Type</key>
+						<string>application</string>
+						<key>Version</key>
+						<string>12.0</string>
+					</dict>
+				</array>
+				<key>ActionBundlePath</key>
+				<string>/Library/Automator/Paste Clipboard Content into Word Documents.action</string>
+				<key>ActionName</key>
+				<string>Paste Clipboard Content into Word Documents</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>placementOption</key>
+					<integer>0</integer>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Microsoft Word</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.microsoft.Automator.Paste_Clipboard_Content_into_Word_Documents</string>
+				<key>CFBundleVersion</key>
+				<string>1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryDocuments</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAppleScriptAction</string>
+				<key>InputUUID</key>
+				<string>41EFCB9C-F530-4CC1-8BCD-17FCF31EB1A3</string>
+				<key>Keywords</key>
+				<array>
+					<string>copy</string>
+					<string>append</string>
+					<string>set</string>
+					<string>add</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>827B2350-F15E-4D3B-B40B-0B19C7E80229</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>2C7C0D73-9F91-44AE-838F-2D015D42942D</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Microsoft Word</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>placementOption</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>nibPath</key>
+				<string>/Library/Automator/Paste Clipboard Content into Word Documents.action/Contents/Resources/en.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>852.000000:-1227.666626</string>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>48A94D8C-F017-4C8E-A172-4600C43F68FE</key>
+		<dict>
+			<key>from</key>
+			<string>D1635DAB-CE31-4DC0-8C63-4A2D57B166A1 - B9B0871B-A529-4662-96E3-6C8225626887</string>
+			<key>to</key>
+			<string>0142B68A-8708-482B-B1C1-A8680BB43BDB - E4B85730-5833-4CD1-BE50-98FF22914FEA</string>
+		</dict>
+		<key>500EC0FA-6351-4C27-B154-5BE2E03898FF</key>
+		<dict>
+			<key>from</key>
+			<string>0142B68A-8708-482B-B1C1-A8680BB43BDB - 3A3FF1A5-CEB7-43E8-A430-C8D83DAA2523</string>
+			<key>to</key>
+			<string>2C7C0D73-9F91-44AE-838F-2D015D42942D - 41EFCB9C-F530-4CC1-8BCD-17FCF31EB1A3</string>
+		</dict>
+		<key>85267529-6D23-4C86-B492-2D0A61D3E85B</key>
+		<dict>
+			<key>from</key>
+			<string>7C87680B-EF17-4C8E-942B-03ECADC38DC2 - 8AAE849F-1786-4F41-81D7-EB8BD2E093CB</string>
+			<key>to</key>
+			<string>D1635DAB-CE31-4DC0-8C63-4A2D57B166A1 - 344702A4-3CCB-48A5-B930-D1F1E1387203</string>
+		</dict>
+	</dict>
+	<key>state</key>
+	<dict>
+		<key>actionsSplitView</key>
+		<real>175</real>
+		<key>layoutFrame</key>
+		<string>{{0, 0}, {536, 581}}</string>
+		<key>layoutScrollPosition</key>
+		<string>{{0, 0}, {536, 581}}</string>
+		<key>mainSplitView</key>
+		<real>373</real>
+		<key>minorSplitView</key>
+		<real>439</real>
+		<key>windowFrame</key>
+		<string>{{499, 469}, {939, 709}}</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,1400 @@
+/*
+===============================================================================
+    Author:     Eric M. Barnard - @ericmbarnard                                
+    License:    MIT (http://opensource.org/licenses/mit-license.php)           
+                                                                               
+    Description: Validation Library for KnockoutJS                             
+===============================================================================
+*/
+
+(function(e){typeof require=="function"&&typeof exports=="object"&&typeof module=="object"?e(require("knockout"),exports):typeof define=="function"&&define.amd?define(["knockout","exports"],e):e(ko,ko.validation={})})(function(e,t){function l(e,n,r){return n.validator(e(),r.params===undefined?!0:r.params)?!0:(e.error(t.formatMessage(r.message||n.message,r.params)),e.__valid__(!1),!1)}function c(e,n,r){e.isValidating(!0);var i=function(i){var s=!1,o="";if(!e.__valid__()){e.isValidating(!1);return}i.message?(s=i.isValid,o=i.message):s=i,s||(e.error(t.formatMessage(o||r.message||n.message,r.params)),e.__valid__(s)),e.isValidating(!1)};n.validator(e(),r.params||!0,i)}if(typeof e===undefined)throw"Knockout is required, please ensure it is loaded before loading this validation plug-in";var n=t;e.validation=n;var r={registerExtenders:!0,messagesOnModified:!0,errorsAsTitle:!0,errorsAsTitleOnModified:!1,messageTemplate:null,insertMessages:!0,parseInputAttributes:!1,writeInputAttributes:!1,decorateElement:!1,errorClass:null,errorElementClass:"validationElement",errorMessageClass:"validationMessage",grouping:{deep:!1,observable:!0}},i=e.utils.extend({},r),s=["required","pattern","min","max","step"],o=["email","number","date"],u=function(e){window.setImmediate?window.setImmediate(e):window.setTimeout(e,0)},a=function(){var e=(new Date).getTime(),t={},n="__ko_validation__";return{isArray:function(e){return e.isArray||Object.prototype.toString.call(e)==="[object Array]"},isObject:function(e){return e!==null&&typeof e=="object"},values:function(e){var t=[];for(var n in e)e.hasOwnProperty(n)&&t.push(e[n]);return t},getValue:function(e){return typeof e=="function"?e():e},hasAttribute:function(e,t){return e.getAttribute(t)!==null},getAttribute:function(e,t){return e.getAttribute(t)},setAttribute:function(e,t,n){return e.setAttribute(t,n)},isValidatable:function(e){return e&&e.rules&&e.isValid&&e.isModified},insertAfter:function(e,t){e.parentNode.insertBefore(t,e.nextSibling)},newId:function(){return e+=1},getConfigOptions:function(e){var t=a.contextFor(e);return t||i},setDomData:function(e,r){var i=e[n];i||(e[n]=i=a.newId()),t[i]=r},getDomData:function(e){var r=e[n];return r?t[r]:undefined},contextFor:function(e){switch(e.nodeType){case 1:case 8:var t=a.getDomData(e);if(t)return t;if(e.parentNode)return a.contextFor(e.parentNode)}return undefined},isEmptyVal:function(e){if(e===undefined)return!0;if(e===null)return!0;if(e==="")return!0},getOriginalElementTitle:function(e){var t=a.getAttribute(e,"data-orig-title"),n=e.title,r=a.hasAttribute(e,"data-orig-title");return r?t:n}}}(),f=function(){var n=0;return{utils:a,init:function(r,s){if(n>0&&!s)return;r=r||{},r.errorElementClass=r.errorElementClass||r.errorClass||i.errorElementClass,r.errorMessageClass=r.errorMessageClass||r.errorClass||i.errorMessageClass,e.utils.extend(i,r),i.registerExtenders&&t.registerExtenders(),n=1},configure:function(e){t.init(e)},reset:function(){i=jQuery.extend(i,r)},group:function(n,r){r=e.utils.extend(e.utils.extend({},i.grouping),r);var s=e.observableArray([]),o=null,u=function f(t,n){var i=[],o=e.utils.unwrapObservable(t);n=n!==undefined?n:r.deep?1:-1,e.isObservable(t)&&(t.isValid||t.extend({validatable:!0}),s.push(t)),o&&(a.isArray(o)?i=o:a.isObject(o)&&(i=a.values(o))),n!==0&&e.utils.arrayForEach(i,function(e){e&&!e.nodeType&&f(e,n+1)})};return r.observable?(u(n),o=e.computed(function(){var t=[];return e.utils.arrayForEach(s(),function(e){e.isValid()||t.push(e.error)}),t})):o=function(){var t=[];return s([]),u(n),e.utils.arrayForEach(s(),function(e){e.isValid()||t.push(e.error)}),t},o.showAllMessages=function(t){t===undefined&&(t=!0),o(),e.utils.arrayForEach(s(),function(e){e.isModified(t)})},n.errors=o,n.isValid=function(){return n.errors().length===0},n.isAnyMessageShown=function(){var t=!1;return o(),e.utils.arrayForEach(s(),function(e){!e.isValid()&&e.isModified()&&(t=!0)}),t},o},formatMessage:function(t,n){return typeof t=="function"?t(n):t.replace(/\{0\}/gi,e.utils.unwrapObservable(n))},addRule:function(e,t){return e.extend({validatable:!0}),e.rules.push(t),e},addAnonymousRule:function(e,n){var r=a.newId();n.message===undefined&&(n.message="Error"),t.rules[r]=n,t.addRule(e,{rule:r,params:n.params})},addExtender:function(n){e.extenders[n]=function(e,r){return r.message||r.onlyIf?t.addRule(e,{rule:n,message:r.message,params:a.isEmptyVal(r.params)?!0:r.params,condition:r.onlyIf}):t.addRule(e,{rule:n,params:r})}},registerExtenders:function(){if(i.registerExtenders)for(var n in t.rules)t.rules.hasOwnProperty(n)&&(e.extenders[n]||t.addExtender(n))},insertValidationMessage:function(e){var t=document.createElement("SPAN");return t.className=a.getConfigOptions(e).errorMessageClass,a.insertAfter(e,t),t},parseInputValidationAttributes:function(n,r){e.utils.arrayForEach(s,function(e){a.hasAttribute(n,e)&&t.addRule(r(),{rule:e,params:n.getAttribute(e)||!0})});var i=n.getAttribute("type");e.utils.arrayForEach(o,function(e){e===i&&t.addRule(r(),{rule:e==="date"?"dateISO":e,params:!0})})},writeInputValidationAttributes:function(t,n){var r=n();if(!r||!r.rules)return;var i=r.rules();e.utils.arrayForEach(s,function(n){var r,s=e.utils.arrayFirst(i,function(e){return e.rule.toLowerCase()===n.toLowerCase()});if(!s)return;r=s.params,s.rule==="pattern"&&s.params instanceof RegExp&&(r=s.params.source),t.setAttribute(n,r)}),i=null},makeBindingHandlerValidatable:function(t){var n=e.bindingHandlers[t].init;e.bindingHandlers[t].init=function(t,r,i,s,o){return n(t,r,i),e.bindingHandlers.validationCore.init(t,r,i,s,o)}}}}();e.utils.extend(n,f),n.rules={},n.rules.required={validator:function(e,t){var n=/^\s+|\s+$/g,r;return e===undefined||e===null?!t:(r=e,typeof e=="string"&&(r=e.replace(n,"")),t?(r+"").length>0:!0)},message:"This field is required."},n.rules.min={validator:function(e,t){return a.isEmptyVal(e)||e>=t},message:"Please enter a value greater than or equal to {0}."},n.rules.max={validator:function(e,t){return a.isEmptyVal(e)||e<=t},message:"Please enter a value less than or equal to {0}."},n.rules.minLength={validator:function(e,t){return a.isEmptyVal(e)||e.length>=t},message:"Please enter at least {0} characters."},n.rules.maxLength={validator:function(e,t){return a.isEmptyVal(e)||e.length<=t},message:"Please enter no more than {0} characters."},n.rules.pattern={validator:function(e,t){return a.isEmptyVal(e)||e.toString().match(t)!==null},message:"Please check this value."},n.rules.step={validator:function(e,t){return a.isEmptyVal(e)||e*100%(t*100)===0},message:"The value must increment by {0}"},n.rules.email={validator:function(e,t){return t?a.isEmptyVal(e)||t&&/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(e):!0},message:"Please enter a proper email address"},n.rules.date={validator:function(e,t){return t?a.isEmptyVal(e)||t&&!/Invalid|NaN/.test(new Date(e)):!0},message:"Please enter a proper date"},n.rules.dateISO={validator:function(e,t){return t?a.isEmptyVal(e)||t&&/^\d{4}[\/\-]\d{1,2}[\/\-]\d{1,2}$/.test(e):!0},message:"Please enter a proper date"},n.rules.number={validator:function(e,t){return t?a.isEmptyVal(e)||t&&/^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$/.test(e):!0},message:"Please enter a number"},n.rules.digit={validator:function(e,t){return t?a.isEmptyVal(e)||t&&/^\d+$/.test(e):!0},message:"Please enter a digit"},n.rules.phoneUS={validator:function(e,t){return t?typeof e!="string"?!1:a.isEmptyVal(e)?!0:(e=e.replace(/\s+/g,""),t&&e.length>9&&e.match(/^(1-?)?(\([2-9]\d{2}\)|[2-9]\d{2})-?[2-9]\d{2}-?\d{4}$/)):!0},message:"Please specify a valid phone number"},n.rules.equal={validator:function(e,t){var n=t;return e===a.getValue(n)},message:"Values must equal"},n.rules.notEqual={validator:function(e,t){var n=t;return e!==a.getValue(n)},message:"Please choose another value."},n.rules.unique={validator:function(t,n){var r=a.getValue(n.collection),i=a.getValue(n.externalValue),s=0;return!t||!r?!0:(e.utils.arrayFilter(e.utils.unwrapObservable(r),function(e){t===(n.valueAccessor?n.valueAccessor(e):e)&&s++}),s<(i!==undefined&&t!==i?1:2))},message:"Please make sure the value is unique."},function(){n.registerExtenders()}(),e.bindingHandlers.validationCore=function(){return{init:function(n,r,i,s,o){var f=a.getConfigOptions(n);f.parseInputAttributes&&u(function(){t.parseInputValidationAttributes(n,r)});if(f.insertMessages&&a.isValidatable(r())){var l=t.insertValidationMessage(n);f.messageTemplate?e.renderTemplate(f.messageTemplate,{field:r()},null,l,"replaceNode"):e.applyBindingsToNode(l,{validationMessage:r()})}f.writeInputAttributes&&a.isValidatable(r())&&t.writeInputValidationAttributes(n,r),f.decorateElement&&a.isValidatable(r())&&e.applyBindingsToNode(n,{validationElement:r()})},update:function(e,t,n,r,i){}}}(),f.makeBindingHandlerValidatable("value"),f.makeBindingHandlerValidatable("checked"),e.bindingHandlers.validationMessage={update:function(t,n){var r=n(),i=a.getConfigOptions(t),s=e.utils.unwrapObservable(r),o=null,u=!1,f=!1;r.extend({validatable:!0}),u=r.isModified(),f=r.isValid();var l=function(){return!i.messagesOnModified||u?f?null:r.error:null},c=function(){return!i.messagesOnModified||u?!f:!1};e.bindingHandlers.text.update(t,l),e.bindingHandlers.visible.update(t,c)}},e.bindingHandlers.validationElement={update:function(t,n){var r=n(),i=a.getConfigOptions(t),s=e.utils.unwrapObservable(r),o=null,u=!1,f=!1;r.extend({validatable:!0}),u=r.isModified(),f=r.isValid();var l=function(){var e={},t=u?!f:!1;return i.decorateElement||(t=!1),e[i.errorElementClass]=t,e};e.bindingHandlers.css.update(t,l);if(!i.errorsAsTitle)return;var c=a.getAttribute(t,"data-orig-title"),h=t.title,p=a.getAttribute(t,"data-orig-title")==="true",d=function(){if(!i.errorsAsTitleOnModified||u)return f?{title:a.getOriginalElementTitle(t),"data-orig-title":null}:{title:r.error,"data-orig-title":a.getOriginalElementTitle(t)}};e.bindingHandlers.attr.update(t,d)}},e.bindingHandlers.validationOptions=function(){return{init:function(t,n,r,s,o){var u=e.utils.unwrapObservable(n());if(u){var f=e.utils.extend({},i);e.utils.extend(f,u),a.setDomData(t,f)}}}}(),e.extenders.validation=function(n,r){return e.utils.arrayForEach(a.isArray(r)?r:[r],function(e){t.addAnonymousRule(n,e)}),n},e.extenders.validatable=function(n,r){if(r&&!a.isValidatable(n)){n.error=e.observable(null),n.rules=e.observableArray(),n.isValidating=e.observable(!1),n.__valid__=e.observable(!0),n.isModified=e.observable(!1);var i=e.computed(function(){var e=n(),r=n.rules();return t.validateObservable(n),!0});n.isValid=e.computed(function(){return n.__valid__()});var s=n.subscribe(function(){n.isModified(!0)});n._disposeValidation=function(){n.isValid.dispose(),n.rules.removeAll(),n.isModified._subscriptions.change=[],n.isValidating._subscriptions.change=[],n.__valid__._subscriptions.change=[],s.dispose(),i.dispose(),delete n.rules,delete n.error,delete n.isValid,delete n.isValidating,delete n.__valid__,delete n.isModified}}else r===!1&&a.isValidatable(n)&&n._disposeValidation&&n._disposeValidation();return n},n.validateObservable=function(e){var n=0,r,i,s=e.rules(),o=s.length;for(;n<o;n++){i=s[n];if(i.condition&&!i.condition())continue;r=t.rules[i.rule];if(r.async||i.async)c(e,r,i);else if(!l(e,r,i))return!1}return e.error(null),e.__valid__(!0),!0},e.validatedObservable=function(n){if(!t.utils.isObject(n))return e.observable(n).extend({validatable:!0});var r=e.observable(n);return r.errors=t.group(n),r.isValid=e.computed(function(){return r.errors().length===0}),r},n.localize=function(e){var n,r;for(r in e)t.rules.hasOwnProperty(r)&&(t.rules[r].message=e[r])},e.applyBindingsWithValidation=function(n,r,i){var s=arguments.length,o,u;s>2?(o=r,u=i):s<2?o=document.body:arguments[1].nodeType?o=r:u=arguments[1],t.init(),u&&t.utils.setDomData(o,u),e.applyBindings(n,r)};var h=e.applyBindings;e.applyBindings=function(e,n){t.init(),h(e,n)}});
+(function() {
+  ko.bindingHandlers.mockCheckbox = {
+    init: function(element, valueAccessor) {
+      var value = valueAccessor(),
+        $elem = $(element),
+
+        // Because of protected fields we use currentValue()
+        // isetead of real value
+        toggle = function(e) {
+          e.preventDefault();
+          value(!value.currentValue());
+
+          $(this).toggleClass('checked', value.currentValue());
+        };
+
+      $elem.on('click', toggle);
+      $elem.toggleClass('checked', value.currentValue());
+    },
+    update: function(element, valueAccessor) {
+      $(element).toggleClass('checked', ko.utils.unwrapObservable(valueAccessor()));
+    }
+  };
+}).call(this);
+(function() {
+  ko.bindingHandlers.selected = {
+    init: function(element) {
+      setTimeout(function() { element.select() }, 0)
+    }
+  };
+}).call(this);
+
+(function() {
+  ko.bindingHandlers.lastSelected = {
+    init: function(element, valueAccessor, allBindingsAccessor, viewModel, bindingContext) {
+      var collName = allBindingsAccessor().fromCollectionOf,
+      coll = bindingContext.$parent[collName](),
+      isLast = bindingContext.$index() == coll.length - 1;
+
+      if (isLast) setTimeout(function() { element.select() }, 0)  // Strange quirk
+    },
+    update: function() {}
+  };
+}).call(this);
+(function() {
+  ko.bindingHandlers.onKeyDown = {
+    init: function(element, valueAccessor, allBindings, vm) {
+      var keyMapping = valueAccessor();
+
+      ko.utils.registerEventHandler(element, "keydown", function(event) {
+        var keyCode = event.keyCode + "";
+
+        if (keyCode in keyMapping) {
+          event.stopPropagation();
+          setTimeout(function() {
+            keyMapping[keyCode].call(vm, vm, event); //set "this" to the data and also pass it as first arg, in case function has "this" bound
+          }, 0);
+        }
+        return true;
+      });
+    }
+  };
+}).call(this);
+(function() {
+  ko.extenders.element = function(target, element) {
+    target.DOMElement = element;
+
+    return target;
+  }
+}).call(this);
+
+(function() {
+  ko.bindingHandlers.nodeBinding = {
+    init: function(element, valueAccessor) {
+      valueAccessor().extend({ element: element });
+    }
+  };
+}).call(this);
+(function() {
+  ko.subscribable.fn.subscribeChanged = function(callback) {
+    var previousValue;
+    this.subscribe(function(_previousValue) {
+      previousValue = _previousValue;
+    }, undefined, 'beforeChange');
+    this.subscribe(function(latestValue) {
+      callback(latestValue, previousValue);
+    });
+  };
+}).call(this);
+(function() {
+  ko.bindingHandlers.ajaxCall = {
+    init: function(element, valueAccessor) {
+      var callback = valueAccessor(),
+
+      handler = function(e) {
+        e.preventDefault();
+
+        var $element = $(this),
+          ajaxSettings = null;
+
+        if (this.tagName == 'FORM') {
+          ajaxSettings = {
+            type:      'POST',
+            dataType:  'json',
+            data:      $element.serialize(),
+            url:       $element.attr('action')
+          }
+        } else {
+          ajaxSettings = {
+            type:      'GET',
+            dataType:  'json',
+            url:       $element.attr('href')
+          }
+        }
+
+        $.ajax(ajaxSettings).always(callback);
+      },
+
+      event = element.tagName == 'FORM' ? 'submit' : 'click';
+
+      $(element).on(event, handler);
+    },
+  };
+}).call(this);
+/**
+ * |-----------------|
+ * | jQuery-Clickout |
+ * |-----------------|
+ *  jQuery-Clickout is freely distributable under the MIT license.
+ *
+ *  <a href="https://github.com/chalbert/Backbone-Elements">More details & documentation</a>
+ *
+ * @author Nicolas Gilbert
+ *
+ * @requires jQuery
+ */
+
+
+(function(factory){
+  'use strict';
+
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery'], factory);
+  } else {
+    factory($);
+  }
+
+})(function ($){
+  'use strict';
+
+     /**
+      * A static counter is tied to the doc element to track click-out registration
+      * @static
+      */
+  var counter = 0,
+
+     /**
+      * On mobile Touch browsers, 'click' are not triggered on every element.
+      * Touchstart is.
+      * @static
+      */
+      is_touch_device = 'ontouchstart' in document.documentElement,
+      click = is_touch_device ? 'touchstart' : 'mousedown';
+
+
+  /**
+   * Shortcut for .on('clickout')
+   *
+   * @param data
+   * @param fn
+   */
+
+  $.fn.clickout = function(data, fn) {
+    if (!fn) {
+      fn = data;
+      data = null;
+    }
+
+    if (arguments.length > 0) {
+      this.on('clickout', data, fn);
+    } else {
+      return this.trigger('clickout');
+    }
+
+  };
+
+  /**
+   * Implements the 'special' jQuery event interface
+   * Native way to add non-conventional events
+   */
+  jQuery.event.special.clickout = {
+
+    /**
+     * When the event is added
+     * @param handleObj Event handler
+     */
+
+    add: function(handleObj){
+      counter++;
+
+      // Add counter to element
+      var target = handleObj.selector
+          ? $(this).find(handleObj.selector)
+          : $(this);
+      target.attr('data-clickout', counter);
+
+      // When the click is inside, extend the Event object to mark it as so
+      $(this).on(click + '.clickout' + counter, handleObj.selector, function(e){
+        e.originalEvent.clickin = $(this).data('clickout');
+      });
+
+      // Bind a click event to the document, to be cought after bubbling
+      $(document).bind(click + '.clickout' + counter, (function(id){
+      // A closure is used create a static id
+        return function(e){
+          // If the click is not inside the element, call the callback
+          if (!e.originalEvent.clickin || e.originalEvent.clickin !== id) {
+            handleObj.handler.apply(this, arguments);
+          }
+        };
+      })(counter));
+    },
+
+    /**
+     * When the event is removed
+     * @param handleObj Event handler
+     */
+    remove: function(handleObj) {
+      var target = handleObj.selector
+          ? $(this).find(handleObj.selector)
+          : $(this)
+        , id = target.attr('data-clickout');
+
+      target.removeAttr('data-clickout');
+
+      $(document).unbind(click + '.clickout' + id);
+      $(this).off(click + '.clickout' + id, handleObj.selector);
+      return false;
+    }
+  };
+
+  return $;
+
+});
+
+(function() {
+  ko.bindingHandlers.clickOut = {
+    init: function(element, valueAccessor, allBindings, vm) {
+      var func = valueAccessor();
+      var scope = allBindings()['scope'] || window;
+
+      $(element).on('clickout', function() {
+        func.call(scope, vm);
+      });
+    }
+  };
+}).call(this);
+(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  App.Classes.History = (function() {
+    function History() {
+      this.pop = bind(this.pop, this);
+      this.replace = bind(this.replace, this);
+      this.push = bind(this.push, this);
+      this.popped = false;
+      this.initialURL = location.href;
+    }
+
+    History.prototype.exists = function() {
+      return history && history.pushState;
+    };
+
+    History.prototype.push = function(url) {
+      if (this.exists()) {
+        return history.pushState(null, document.title, url);
+      }
+    };
+
+    History.prototype.replace = function(url) {
+      if (this.exists()) {
+        return history.replaceState(null, document.title, url);
+      }
+    };
+
+    History.prototype.pop = function(callback) {
+      var initialPop, params;
+      initialPop = !this.popped && location.href === this.initialURL;
+      this.popped = true;
+      if (initialPop) {
+        return;
+      }
+      if (this.exists()) {
+        params = $.deparam.querystring();
+        return callback(params);
+      }
+    };
+
+    return History;
+
+  })();
+
+}).call(this);
+/// Knockout Mapping plugin v2.4.1
+/// (c) 2013 Steven Sanderson, Roy Jacobs - http://knockoutjs.com/
+/// License: MIT (http://www.opensource.org/licenses/mit-license.php)
+(function(e){"function"===typeof require&&"object"===typeof exports&&"object"===typeof module?e(require("knockout"),exports):"function"===typeof define&&define.amd?define(["knockout","exports"],e):e(ko,ko.mapping={})})(function(e,f){function y(b,c){var a,d;for(d in c)if(c.hasOwnProperty(d)&&c[d])if(a=f.getType(b[d]),d&&b[d]&&"array"!==a&&"string"!==a)y(b[d],c[d]);else if("array"===f.getType(b[d])&&"array"===f.getType(c[d])){a=b;for(var e=d,l=b[d],n=c[d],t={},g=l.length-1;0<=g;--g)t[l[g]]=l[g];for(g=
+n.length-1;0<=g;--g)t[n[g]]=n[g];l=[];n=void 0;for(n in t)l.push(t[n]);a[e]=l}else b[d]=c[d]}function E(b,c){var a={};y(a,b);y(a,c);return a}function z(b,c){for(var a=E({},b),e=L.length-1;0<=e;e--){var f=L[e];a[f]&&(a[""]instanceof Object||(a[""]={}),a[""][f]=a[f],delete a[f])}c&&(a.ignore=h(c.ignore,a.ignore),a.include=h(c.include,a.include),a.copy=h(c.copy,a.copy),a.observe=h(c.observe,a.observe));a.ignore=h(a.ignore,j.ignore);a.include=h(a.include,j.include);a.copy=h(a.copy,j.copy);a.observe=h(a.observe,
+j.observe);a.mappedProperties=a.mappedProperties||{};a.copiedProperties=a.copiedProperties||{};return a}function h(b,c){"array"!==f.getType(b)&&(b="undefined"===f.getType(b)?[]:[b]);"array"!==f.getType(c)&&(c="undefined"===f.getType(c)?[]:[c]);return e.utils.arrayGetDistinctValues(b.concat(c))}function F(b,c,a,d,k,l,n){var t="array"===f.getType(e.utils.unwrapObservable(c));l=l||"";if(f.isMapped(b)){var g=e.utils.unwrapObservable(b)[p];a=E(g,a)}var j=n||k,h=function(){return a[d]&&a[d].create instanceof
+Function},x=function(b){var f=G,g=e.dependentObservable;e.dependentObservable=function(a,b,c){c=c||{};a&&"object"==typeof a&&(c=a);var d=c.deferEvaluation,M=!1;c.deferEvaluation=!0;a=new H(a,b,c);if(!d){var g=a,d=e.dependentObservable;e.dependentObservable=H;a=e.isWriteableObservable(g);e.dependentObservable=d;d=H({read:function(){M||(e.utils.arrayRemoveItem(f,g),M=!0);return g.apply(g,arguments)},write:a&&function(a){return g(a)},deferEvaluation:!0});d.__DO=g;a=d;f.push(a)}return a};e.dependentObservable.fn=
+H.fn;e.computed=e.dependentObservable;b=e.utils.unwrapObservable(k)instanceof Array?a[d].create({data:b||c,parent:j,skip:N}):a[d].create({data:b||c,parent:j});e.dependentObservable=g;e.computed=e.dependentObservable;return b},u=function(){return a[d]&&a[d].update instanceof Function},v=function(b,f){var g={data:f||c,parent:j,target:e.utils.unwrapObservable(b)};e.isWriteableObservable(b)&&(g.observable=b);return a[d].update(g)};if(n=I.get(c))return n;d=d||"";if(t){var t=[],s=!1,m=function(a){return a};
+a[d]&&a[d].key&&(m=a[d].key,s=!0);e.isObservable(b)||(b=e.observableArray([]),b.mappedRemove=function(a){var c="function"==typeof a?a:function(b){return b===m(a)};return b.remove(function(a){return c(m(a))})},b.mappedRemoveAll=function(a){var c=C(a,m);return b.remove(function(a){return-1!=e.utils.arrayIndexOf(c,m(a))})},b.mappedDestroy=function(a){var c="function"==typeof a?a:function(b){return b===m(a)};return b.destroy(function(a){return c(m(a))})},b.mappedDestroyAll=function(a){var c=C(a,m);return b.destroy(function(a){return-1!=
+e.utils.arrayIndexOf(c,m(a))})},b.mappedIndexOf=function(a){var c=C(b(),m);a=m(a);return e.utils.arrayIndexOf(c,a)},b.mappedGet=function(a){return b()[b.mappedIndexOf(a)]},b.mappedCreate=function(a){if(-1!==b.mappedIndexOf(a))throw Error("There already is an object with the key that you specified.");var c=h()?x(a):a;u()&&(a=v(c,a),e.isWriteableObservable(c)?c(a):c=a);b.push(c);return c});n=C(e.utils.unwrapObservable(b),m).sort();g=C(c,m);s&&g.sort();s=e.utils.compareArrays(n,g);n={};var J,A=e.utils.unwrapObservable(c),
+y={},z=!0,g=0;for(J=A.length;g<J;g++){var r=m(A[g]);if(void 0===r||r instanceof Object){z=!1;break}y[r]=A[g]}var A=[],B=0,g=0;for(J=s.length;g<J;g++){var r=s[g],q,w=l+"["+g+"]";switch(r.status){case "added":var D=z?y[r.value]:K(e.utils.unwrapObservable(c),r.value,m);q=F(void 0,D,a,d,b,w,k);h()||(q=e.utils.unwrapObservable(q));w=O(e.utils.unwrapObservable(c),D,n);q===N?B++:A[w-B]=q;n[w]=!0;break;case "retained":D=z?y[r.value]:K(e.utils.unwrapObservable(c),r.value,m);q=K(b,r.value,m);F(q,D,a,d,b,w,
+k);w=O(e.utils.unwrapObservable(c),D,n);A[w]=q;n[w]=!0;break;case "deleted":q=K(b,r.value,m)}t.push({event:r.status,item:q})}b(A);a[d]&&a[d].arrayChanged&&e.utils.arrayForEach(t,function(b){a[d].arrayChanged(b.event,b.item)})}else if(P(c)){b=e.utils.unwrapObservable(b);if(!b){if(h())return s=x(),u()&&(s=v(s)),s;if(u())return v(s);b={}}u()&&(b=v(b));I.save(c,b);if(u())return b;Q(c,function(d){var f=l.length?l+"."+d:d;if(-1==e.utils.arrayIndexOf(a.ignore,f))if(-1!=e.utils.arrayIndexOf(a.copy,f))b[d]=
+c[d];else if("object"!=typeof c[d]&&"array"!=typeof c[d]&&0<a.observe.length&&-1==e.utils.arrayIndexOf(a.observe,f))b[d]=c[d],a.copiedProperties[f]=!0;else{var g=I.get(c[d]),k=F(b[d],c[d],a,d,b,f,b),g=g||k;if(0<a.observe.length&&-1==e.utils.arrayIndexOf(a.observe,f))b[d]=g(),a.copiedProperties[f]=!0;else{if(e.isWriteableObservable(b[d])){if(g=e.utils.unwrapObservable(g),b[d]()!==g)b[d](g)}else g=void 0===b[d]?g:e.utils.unwrapObservable(g),b[d]=g;a.mappedProperties[f]=!0}}})}else switch(f.getType(c)){case "function":u()?
+e.isWriteableObservable(c)?(c(v(c)),b=c):b=v(c):b=c;break;default:if(e.isWriteableObservable(b))return q=u()?v(b):e.utils.unwrapObservable(c),b(q),q;h()||u();b=h()?x():e.observable(e.utils.unwrapObservable(c));u()&&b(v(b))}return b}function O(b,c,a){for(var d=0,e=b.length;d<e;d++)if(!0!==a[d]&&b[d]===c)return d;return null}function R(b,c){var a;c&&(a=c(b));"undefined"===f.getType(a)&&(a=b);return e.utils.unwrapObservable(a)}function K(b,c,a){b=e.utils.unwrapObservable(b);for(var d=0,f=b.length;d<
+f;d++){var l=b[d];if(R(l,a)===c)return l}throw Error("When calling ko.update*, the key '"+c+"' was not found!");}function C(b,c){return e.utils.arrayMap(e.utils.unwrapObservable(b),function(a){return c?R(a,c):a})}function Q(b,c){if("array"===f.getType(b))for(var a=0;a<b.length;a++)c(a);else for(a in b)c(a)}function P(b){var c=f.getType(b);return("object"===c||"array"===c)&&null!==b}function T(){var b=[],c=[];this.save=function(a,d){var f=e.utils.arrayIndexOf(b,a);0<=f?c[f]=d:(b.push(a),c.push(d))};
+this.get=function(a){a=e.utils.arrayIndexOf(b,a);return 0<=a?c[a]:void 0}}function S(){var b={},c=function(a){var c;try{c=a}catch(e){c="$$$"}a=b[c];void 0===a&&(a=new T,b[c]=a);return a};this.save=function(a,b){c(a).save(a,b)};this.get=function(a){return c(a).get(a)}}var p="__ko_mapping__",H=e.dependentObservable,B=0,G,I,L=["create","update","key","arrayChanged"],N={},x={include:["_destroy"],ignore:[],copy:[],observe:[]},j=x;f.isMapped=function(b){return(b=e.utils.unwrapObservable(b))&&b[p]};f.fromJS=
+function(b){if(0==arguments.length)throw Error("When calling ko.fromJS, pass the object you want to convert.");try{B++||(G=[],I=new S);var c,a;2==arguments.length&&(arguments[1][p]?a=arguments[1]:c=arguments[1]);3==arguments.length&&(c=arguments[1],a=arguments[2]);a&&(c=E(c,a[p]));c=z(c);var d=F(a,b,c);a&&(d=a);if(!--B)for(;G.length;){var e=G.pop();e&&(e(),e.__DO.throttleEvaluation=e.throttleEvaluation)}d[p]=E(d[p],c);return d}catch(f){throw B=0,f;}};f.fromJSON=function(b){var c=e.utils.parseJson(b);
+arguments[0]=c;return f.fromJS.apply(this,arguments)};f.updateFromJS=function(){throw Error("ko.mapping.updateFromJS, use ko.mapping.fromJS instead. Please note that the order of parameters is different!");};f.updateFromJSON=function(){throw Error("ko.mapping.updateFromJSON, use ko.mapping.fromJSON instead. Please note that the order of parameters is different!");};f.toJS=function(b,c){j||f.resetDefaultOptions();if(0==arguments.length)throw Error("When calling ko.mapping.toJS, pass the object you want to convert.");
+if("array"!==f.getType(j.ignore))throw Error("ko.mapping.defaultOptions().ignore should be an array.");if("array"!==f.getType(j.include))throw Error("ko.mapping.defaultOptions().include should be an array.");if("array"!==f.getType(j.copy))throw Error("ko.mapping.defaultOptions().copy should be an array.");c=z(c,b[p]);return f.visitModel(b,function(a){return e.utils.unwrapObservable(a)},c)};f.toJSON=function(b,c){var a=f.toJS(b,c);return e.utils.stringifyJson(a)};f.defaultOptions=function(){if(0<arguments.length)j=
+arguments[0];else return j};f.resetDefaultOptions=function(){j={include:x.include.slice(0),ignore:x.ignore.slice(0),copy:x.copy.slice(0)}};f.getType=function(b){if(b&&"object"===typeof b){if(b.constructor===Date)return"date";if(b.constructor===Array)return"array"}return typeof b};f.visitModel=function(b,c,a){a=a||{};a.visitedObjects=a.visitedObjects||new S;var d,k=e.utils.unwrapObservable(b);if(P(k))a=z(a,k[p]),c(b,a.parentName),d="array"===f.getType(k)?[]:{};else return c(b,a.parentName);a.visitedObjects.save(b,
+d);var l=a.parentName;Q(k,function(b){if(!(a.ignore&&-1!=e.utils.arrayIndexOf(a.ignore,b))){var j=k[b],g=a,h=l||"";"array"===f.getType(k)?l&&(h+="["+b+"]"):(l&&(h+="."),h+=b);g.parentName=h;if(!(-1===e.utils.arrayIndexOf(a.copy,b)&&-1===e.utils.arrayIndexOf(a.include,b)&&k[p]&&k[p].mappedProperties&&!k[p].mappedProperties[b]&&k[p].copiedProperties&&!k[p].copiedProperties[b]&&"array"!==f.getType(k)))switch(f.getType(e.utils.unwrapObservable(j))){case "object":case "array":case "undefined":g=a.visitedObjects.get(j);
+d[b]="undefined"!==f.getType(g)?g:f.visitModel(j,c,a);break;default:d[b]=c(j,a.parentName)}}});return d}});
+(function() {
+  var pad = function(num) {
+    var s = num + "";
+    while (s.length < 2) s = "0" + s;
+    return s;
+  },
+
+  trim = function(str) { return str.replace(/^\s+|\s+$/g, "") },
+
+  roundTo = function(num, div) {
+    var rem = num % div,
+      result = num - rem;
+
+    if(rem >= div / 2.0) result += div
+
+    return result
+  },
+
+  split = function(minutes, count) {
+    var result = [], m = null;
+
+    if (count < 2) {
+      result = [minutes];
+    } else {
+      m = roundTo(minutes / count, 5);
+      result = split(minutes - m, count - 1);
+      result.push(m);
+    }
+
+    return result.sort(function(a, b) {
+      return b - a;
+    });
+  };
+
+  ko.utils.isValidTime = function(value) {
+    return /^([0][0-9]|[0-9]+):[0-5][0-9]$/.test(value);
+  },
+
+  ko.utils.timeToMinutes = function(s) {
+    if (!ko.utils.isValidTime(s)) return 0;
+
+    var c = s.split(':');
+    return parseInt(c[0], 10) * 60 + parseInt(c[1], 10);
+  };
+
+  ko.utils.minutesToTime = function(m) {
+    return pad(Math.floor(m / 60)) + ':' + pad(m % 60);
+  };
+
+  ko.utils.timeAdd = function(s1, s2) {
+    return ko.utils.minutesToTime(ko.utils.timeToMinutes(s1) + ko.utils.timeToMinutes(s2));
+  };
+
+  ko.utils.timeSubtract = function(s1, s2) {
+    var m1 = ko.utils.timeToMinutes(s1),
+    m2 = ko.utils.timeToMinutes(s2),
+    diff = m1 - m2;
+
+    return diff < 0 ? "-" + ko.utils.minutesToTime(-diff) : ko.utils.minutesToTime(diff);
+  };
+
+  ko.utils.timeDivide = function(time, divisor) {
+    return ko.utils.arrayMap(split(ko.utils.timeToMinutes(time), divisor), function(t) {
+      return ko.utils.minutesToTime(t);
+    });
+  };
+
+  ko.utils.periodInMinutes = function(period) {
+    var interval = trim(period).split(/\s*-\s*/);
+
+    return ko.utils.timeToMinutes(ko.utils.timeSubtract(interval[1], interval[0]));
+  };
+
+  ko.utils.intervalStart = function(interval) {
+    return trim(interval).split(/\s*-\s*/)[0];
+  };
+
+  ko.utils.intervalEnd = function(interval) {
+    return trim(interval).split(/\s*-\s*/)[1];
+  };
+
+}).call(this);
+(function() {
+  ko.snapShotObservableArray = function() {
+    var _snapShot = [];
+    var result = ko.observableArray([]);
+
+    result.takeSnapShot = function(initialData) {
+      _snapShot = initialData;
+      this.restoreSnapShot();
+    };
+
+    result.restoreSnapShot = function() {
+      this(_snapShot.slice());
+    }
+
+    return result;
+  }
+}).call(this);
+(function() {
+  ko.extenders.protected = function(target) {
+    var _tempValue = ko.observable(target()),
+
+    result = ko.computed({
+      read: target,
+      write: _tempValue
+    });
+
+    result.commit = function() {                 //if different, commit temp value
+      if (_tempValue() !== target()) {
+        target(_tempValue());
+      }
+    }
+
+    result.reset = function() {                 //force subscribers to take original
+      target.valueHasMutated();
+      _tempValue(target());                     //reset temp value
+    }
+
+    result.currentValue = _tempValue            // Public Morozov in action.
+
+    return result;
+  }
+}).call(this);
+
+
+
+(function() {
+  var validate = function(val) {
+    var timePattern = "\\s*([01]?\\d|2[0-3]):([0-5]\\d)\\s*",
+    intervalPattern = new RegExp('^' + timePattern + '\\-' + timePattern + '$');
+
+    return intervalPattern.test(val) && (ko.utils.periodInMinutes(val) > 0);
+  }
+
+  ko.validation.rules['timeIntervalFormat'] = {
+    validator: function (val) {
+      return !!val ? validate(val) : true;
+    },
+
+    message: 'Wrong time interval format'
+  };
+}).call(this);
+
+(function() {
+  var timeWithinInterval = function(time, start, end) {
+    return time > start && time < end;
+  },
+
+  hasIntersection = function(first, second) {
+      var firstStart = ko.utils.timeToMinutes(ko.utils.intervalStart(first)),
+          firstEnd = ko.utils.timeToMinutes(ko.utils.intervalEnd(first)),
+          secondStart = ko.utils.timeToMinutes(ko.utils.intervalStart(second)),
+          secondEnd = ko.utils.timeToMinutes(ko.utils.intervalEnd(second)),
+
+      withinInterval = timeWithinInterval(firstStart, secondStart, secondEnd) || timeWithinInterval(firstEnd, secondStart, secondEnd),
+
+      equal = firstStart == secondStart && firstEnd == secondEnd,
+
+      wraps = firstStart < secondStart && firstEnd > secondEnd;
+
+      return withinInterval || equal || wraps;
+  };
+
+  ko.validation.rules['intervalsIntersection'] = {
+    validator: function (value, model) {
+      if (!value) { return true; }
+
+      var hasIntersections = ko.utils.arrayFilter(ko.utils.unwrapObservable(model.intervalsList), function(interval) {
+        return interval && hasIntersection(value, interval);
+      }),
+
+      isValid = !(hasIntersections.length > 0);
+
+      return isValid;
+    },
+
+    message: 'Interval intersects with another one'
+  };
+}).call(this);
+(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  App.Classes.IntervalModel = (function() {
+    var _initialData;
+
+    _initialData = {
+      interval: '',
+      start_time: '',
+      end_time: '',
+      remote: false
+    };
+
+    IntervalModel.prototype._mapping = function() {
+      return {
+        interval: {
+          create: (function(_this) {
+            return function(options) {
+              var interval;
+              interval = ko.observable(options.data).extend({
+                "protected": true
+              });
+              interval.currentValue.extend({
+                timeIntervalFormat: true
+              }).extend({
+                intervalsIntersection: _this
+              });
+              return interval;
+            };
+          })(this)
+        },
+        remote: {
+          create: (function(_this) {
+            return function(options) {
+              return ko.observable(options.data).extend({
+                "protected": true
+              });
+            };
+          })(this)
+        },
+        copy: ['id']
+      };
+    };
+
+    function IntervalModel(arg) {
+      var data;
+      this.day = arg.day, data = arg.data;
+      this.nextInterval = bind(this.nextInterval, this);
+      this.markAsDeleted = bind(this.markAsDeleted, this);
+      this._mapping = bind(this._mapping, this);
+      ko.mapping.fromJS(data, this._mapping(), this);
+      this.interval.subscribeChanged((function(_this) {
+        return function(newValue, oldValue) {
+          var end, ref, start;
+          if (newValue === oldValue || !newValue || !_this.interval.currentValue.isValid()) {
+            return;
+          }
+          ref = newValue.match(/[0-9]+:[0-9]+/g), start = ref[0], end = ref[1];
+          _this.start_time(start);
+          return _this.end_time(end);
+        };
+      })(this));
+      this._destroy = ko.observable(false).extend({
+        "protected": true
+      });
+      this.isValid = ko.computed((function(_this) {
+        return function() {
+          return _this._destroy.currentValue() || _this.interval.currentValue.isValid();
+        };
+      })(this));
+      this.intervalsList = ko.computed((function(_this) {
+        return function() {
+          var i, interval, len, ref, results;
+          ref = _this.day.visibleIntervals();
+          results = [];
+          for (i = 0, len = ref.length; i < len; i++) {
+            interval = ref[i];
+            if (interval !== _this) {
+              results.push(interval.interval.currentValue());
+            }
+          }
+          return results;
+        };
+      })(this));
+      this.work_date = this.day.work_date;
+    }
+
+    IntervalModel.prototype.markAsDeleted = function() {
+      return this._destroy(true);
+    };
+
+    IntervalModel.prototype.nextInterval = function(parent) {
+      if (this === _(parent.visibleIntervals()).last()) {
+        if (this.isValid()) {
+          return parent.currentIntervals.push(new App.Classes.IntervalModel({
+            data: _initialData,
+            day: this.day
+          }));
+        }
+      } else {
+        return _(parent.visibleIntervals()).last().performSelection();
+      }
+    };
+
+    IntervalModel.prototype.deleteInterval = function(parent, interval, event) {
+      var index, ref;
+      if (!event.target.value) {
+        index = parent.visibleIntervals().indexOf(interval);
+        interval.markAsDeleted();
+        if ((ref = parent.visibleIntervals()[index - 1]) != null) {
+          ref.performSelection();
+        }
+        return event.preventDefault();
+      }
+    };
+
+    IntervalModel.prototype.performSelection = function() {
+      return this.interval.DOMElement.select();
+    };
+
+    return IntervalModel;
+
+  })();
+
+}).call(this);
+(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  App.Classes.DayModelObserver = (function() {
+    var _initialTime;
+
+    DayModelObserver.observe = function(day) {
+      return new App.Classes.DayModelObserver(day);
+    };
+
+    _initialTime = '00:00';
+
+    function DayModelObserver(day1) {
+      this.day = day1;
+      this._resetProjectTime = bind(this._resetProjectTime, this);
+      this.day.total.subscribeChanged((function(_this) {
+        return function(newValue, oldValue) {
+          var times;
+          if (oldValue && newValue !== oldValue) {
+            times = ko.utils.arrayMap(_this.day.week.projects(), function(project) {
+              return project.times()[_this.day.index()];
+            });
+            return _this._resetProjectTime(times, _this.day.total());
+          }
+        };
+      })(this));
+      this.day.vacation.subscribe((function(_this) {
+        return function() {
+          return $.ajax({
+            url: "/vacations",
+            dataType: 'json',
+            data: {
+              date: _this.day.work_date,
+              vacation: _this.day.vacation()
+            },
+            type: 'POST'
+          }).then(function(response) {
+            $.publish('tracker:flash:invoke', ['notice', 'Successfully updated']);
+            return response;
+          }, function(response) {
+            $.publish('tracker:flash:invoke', ['error', 'Error occurred']);
+            return response;
+          });
+        };
+      })(this));
+    }
+
+    DayModelObserver.prototype._resetProjectTime = function(times, totalTime) {
+      var editableTimes, firstTime, oldTimes;
+      editableTimes = times.filter(function(time) {
+        return time.project.can.edit();
+      });
+      oldTimes = times.filter(function(time) {
+        return !time.project.can.edit() && time.project_time.currentValue() !== _initialTime;
+      });
+      if (editableTimes.length === 1 && !oldTimes.length) {
+        firstTime = editableTimes[0];
+        firstTime.project_time(totalTime);
+        return firstTime.project_time.commit();
+      }
+    };
+
+    return DayModelObserver;
+
+  })();
+
+}).call(this);
+(function() {
+  var root,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  root = typeof exports !== "undefined" && exports !== null ? exports : this;
+
+  App.Classes.DayModel = (function() {
+    DayModel.prototype._mapping = function() {
+      return {
+        intervals: {
+          create: (function(_this) {
+            return function(options) {
+              return new App.Classes.IntervalModel({
+                data: options.data,
+                day: _this
+              });
+            };
+          })(this)
+        },
+        copy: ['day_info', 'id', 'work_date', 'work_date_humanized']
+      };
+    };
+
+    function DayModel(arg) {
+      var data;
+      this.week = arg.week, data = arg.data;
+      this.focusOnInterval = bind(this.focusOnInterval, this);
+      this.cancelIntervalsEdit = bind(this.cancelIntervalsEdit, this);
+      this.acceptIntervalsEdit = bind(this.acceptIntervalsEdit, this);
+      this.intervalsEdit = bind(this.intervalsEdit, this);
+      this.htmlClass = bind(this.htmlClass, this);
+      this.index = bind(this.index, this);
+      this._mapping = bind(this._mapping, this);
+      ko.mapping.fromJS(data, this._mapping(), this);
+      this.currentIntervals = ko.snapShotObservableArray();
+      this.visibleIntervals = ko.computed(function() {
+        return ko.utils.arrayFilter(this.currentIntervals(), function(interval) {
+          return !interval._destroy.currentValue();
+        });
+      }, this);
+      this.total = ko.computed(function() {
+        return this.intervals().filter(function(interval) {
+          return !interval._destroy();
+        }).reduce(function(sum, interval) {
+          var period;
+          period = ko.utils.timeSubtract(interval.end_time(), interval.start_time());
+          return ko.utils.timeAdd(period, sum);
+        }, "00:00");
+      }, this);
+      this.overtime = ko.computed(function() {
+        return ko.utils.timeSubtract(this.total(), '08:00');
+      }, this);
+      this.hasOvertime = ko.computed(function() {
+        var overtimeInMinutes, totalInMinutes;
+        totalInMinutes = ko.utils.timeToMinutes(this.total());
+        overtimeInMinutes = ko.utils.timeToMinutes(this.overtime());
+        return totalInMinutes > 0 && overtimeInMinutes > 0;
+      }, this, {
+        deferEvaluation: true
+      });
+      this.editHovered = ko.observable(false);
+      this.projectsTotal = ko.computed(function() {
+        return this.week.projects().map((function(_this) {
+          return function(project) {
+            return project.times()[_this.index()];
+          };
+        })(this)).reduce(function(sum, time) {
+          if (time != null) {
+            return ko.utils.timeAdd(time.project_time.currentValue(), sum);
+          } else {
+            return sum;
+          }
+        }, '00:00');
+      }, this, {
+        deferEvaluation: true
+      });
+      this.excessTime = ko.computed(function() {
+        return ko.utils.timeSubtract(this.total(), this.projectsTotal());
+      }, this, {
+        deferEvaluation: true
+      });
+      this.nonEmtyIntervals = ko.computed(function() {
+        return ko.utils.arrayFilter(this.currentIntervals(), function(i) {
+          return i._destroy.currentValue() || !!i.interval.currentValue();
+        });
+      }, this);
+      this.isValid = ko.computed(function() {
+        return this.nonEmtyIntervals().every(function(interval) {
+          return interval.isValid();
+        });
+      }, this);
+      App.Classes.DayModelObserver.observe(this);
+    }
+
+    DayModel.prototype.editMouseOver = function() {
+      return this.editHovered(true);
+    };
+
+    DayModel.prototype.editMouseOut = function() {
+      return this.editHovered(false);
+    };
+
+    DayModel.prototype.index = function() {
+      return this.week.working_days().indexOf(this);
+    };
+
+    DayModel.prototype.htmlClass = function() {
+      var classes;
+      classes = [this.week.mode(this), this.day_info];
+      if (this.can.edit()) {
+        classes.push('editable');
+      }
+      if (this.total() !== '00:00') {
+        classes.push('edited');
+      }
+      if (this.editHovered()) {
+        classes.push('edit-hover');
+      }
+      return classes.join(' ');
+    };
+
+    DayModel.prototype.intervalsEdit = function() {
+      var defaultIntervals;
+      this.currentIntervals.takeSnapShot(this.intervals);
+      if (this.intervals().length === 0) {
+        defaultIntervals = ko.utils.arrayMap([['09:00', '12:00'], ['13:00', '18:00']], (function(_this) {
+          return function(arg) {
+            var end, intervalData, start;
+            start = arg[0], end = arg[1];
+            intervalData = {
+              interval: start + " - " + end,
+              start_time: start,
+              end_time: end,
+              remote: false
+            };
+            return new App.Classes.IntervalModel({
+              data: intervalData,
+              day: _this
+            });
+          };
+        })(this));
+        ko.utils.arrayPushAll(this.currentIntervals, defaultIntervals);
+      }
+      return this.week.editField(this);
+    };
+
+    DayModel.prototype.acceptIntervalsEdit = function() {
+      ko.utils.arrayForEach(this.currentIntervals(), function(i) {
+        if (!i.interval.currentValue()) {
+          return i.markAsDeleted();
+        }
+      });
+      if (this.isValid()) {
+        this.intervals(this.nonEmtyIntervals());
+        ko.utils.arrayForEach(this.intervals(), function(i) {
+          var field, j, len, ref, results;
+          ref = ['interval', 'remote', '_destroy'];
+          results = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            field = ref[j];
+            results.push(i[field].commit());
+          }
+          return results;
+        });
+        this.week.selectedItem(null);
+        return this.week.sync();
+      }
+    };
+
+    DayModel.prototype.cancelIntervalsEdit = function() {
+      ko.utils.arrayForEach(this.intervals(), function(i) {
+        var field, j, len, ref, results;
+        ref = ['interval', 'remote', '_destroy'];
+        results = [];
+        for (j = 0, len = ref.length; j < len; j++) {
+          field = ref[j];
+          results.push(i[field].reset());
+        }
+        return results;
+      });
+      this.week.selectedItem(null);
+      return this.currentIntervals.restoreSnapShot();
+    };
+
+    DayModel.prototype.focusOnInterval = function(interval) {
+      this.intervalsEdit();
+      return setTimeout((function() {
+        return interval.performSelection();
+      }), 0);
+    };
+
+    DayModel.prototype.toJS = function() {
+      var mapping;
+      mapping = {
+        ignore: ['interval'],
+        include: ['_delete', 'work_date']
+      };
+      return ko.mapping.toJS(this.intervals(), mapping);
+    };
+
+    return DayModel;
+
+  })();
+
+}).call(this);
+
+(function() {
+  ko.validation.rules['timeFormat'] = {
+    validator: function (val) {
+      var timePattern = /^\s*([01]?\d|2[0-3]):([0-5]\d)\s*$/;
+
+      return !!val ? timePattern.test(val) : true;
+    },
+
+    message: 'Wrong time format'
+  };
+}).call(this);
+
+
+
+(function() {
+  ko.validation.rules['timeLessThan'] = {
+    validator: function (_, values) {                            // yeap, compleatly ignoring field value
+      var actual = ko.utils.unwrapObservable(values[0]);
+      var limit = ko.utils.unwrapObservable(values[1]);
+
+      if (!actual || actual == '00:00') return true;
+
+      var actualMinutes = ko.utils.timeToMinutes(actual),
+          limitMinutes = ko.utils.timeToMinutes(limit);
+
+      return actualMinutes <= limitMinutes;
+    },
+
+    message: 'Project time should be less than total'
+  };
+}).call(this);
+(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  App.Classes.ProjectTimeModel = (function() {
+    var _mapping;
+
+    _mapping = {
+      ignore: ['minutes']
+    };
+
+    function ProjectTimeModel(arg) {
+      var data;
+      this.project = arg.project, data = arg.data;
+      this.cancelProjectTimeEdit = bind(this.cancelProjectTimeEdit, this);
+      this.acceptProjectTimeEdit = bind(this.acceptProjectTimeEdit, this);
+      this.editReport = bind(this.editReport, this);
+      this.editField = bind(this.editField, this);
+      this.dayIndex = bind(this.dayIndex, this);
+      this.week = bind(this.week, this);
+      ko.mapping.fromJS(data, _mapping, this);
+      this.projectsTotal = ko.computed(function() {
+        return this.week().projects().map((function(_this) {
+          return function(project) {
+            return project.times()[_this.dayIndex()];
+          };
+        })(this)).reduce(function(sum, time) {
+          if (time != null) {
+            return ko.utils.timeAdd(time.project_time.currentValue(), sum);
+          } else {
+            return sum;
+          }
+        }, '00:00');
+      }, this, {
+        deferEvaluation: true
+      });
+      this.dayTotal = ko.computed(function() {
+        var day;
+        day = this.week().working_days()[this.dayIndex()];
+        return day.total();
+      }, this, {
+        deferEvaluation: true
+      });
+      this.project_time = ko.observable(ko.utils.minutesToTime(data.minutes)).extend({
+        "protected": true
+      });
+      this.project_time.currentValue.extend({
+        timeFormat: true
+      }).extend({
+        timeLessThan: [this.projectsTotal, this.dayTotal]
+      });
+      this.isValid = ko.computed(function() {
+        return this.project_time.currentValue.isValid();
+      }, this);
+    }
+
+    ProjectTimeModel.prototype.week = function() {
+      return this.project.week;
+    };
+
+    ProjectTimeModel.prototype.dayIndex = function() {
+      return this.project.times().indexOf(this);
+    };
+
+    ProjectTimeModel.prototype.editField = function() {
+      if (this.project.can.edit()) {
+        return this.week().editField(this);
+      }
+    };
+
+    ProjectTimeModel.prototype.editReport = function() {
+      var report_url, win;
+      if (this.project.can.manage_reports()) {
+        report_url = this.project.report_url_tmpl().replace('DATE', this.week().working_days()[this.dayIndex()].work_date);
+        win = window.open(report_url, '_blank');
+        return win.focus();
+      }
+    };
+
+    ProjectTimeModel.prototype.acceptProjectTimeEdit = function() {
+      if (!this.project_time.currentValue()) {
+        this.project_time('00:00');
+      }
+      if (this.isValid()) {
+        this.project_time.commit();
+        this.week().sync();
+        return this.week().selectedItem(null);
+      }
+    };
+
+    ProjectTimeModel.prototype.cancelProjectTimeEdit = function() {
+      this.project_time.reset();
+      return this.week().selectedItem(null);
+    };
+
+    return ProjectTimeModel;
+
+  })();
+
+}).call(this);
+(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  App.Classes.ProjectModel = (function() {
+    ProjectModel.prototype._mapping = function() {
+      return {
+        times: {
+          create: (function(_this) {
+            return function(options) {
+              if (options.data != null) {
+                return new App.Classes.ProjectTimeModel({
+                  project: _this,
+                  data: options.data
+                });
+              } else {
+                return null;
+              }
+            };
+          })(this)
+        },
+        copy: ['id']
+      };
+    };
+
+    function ProjectModel(arg) {
+      var data;
+      this.week = arg.week, data = arg.data;
+      this.toJS = bind(this.toJS, this);
+      this._mapping = bind(this._mapping, this);
+      ko.mapping.fromJS(data, this._mapping(), this);
+      this.isValid = ko.computed((function(_this) {
+        return function() {
+          return _this.times().every(function(time) {
+            return (time == null) || time.isValid();
+          });
+        };
+      })(this));
+    }
+
+    ProjectModel.prototype.htmlClass = function(time) {
+      var classes;
+      classes = [this.week.mode(time), 'project-time'];
+      if (time != null) {
+        classes.push(this.week.working_days()[time.dayIndex()].day_info);
+      }
+      if (this.can.edit()) {
+        classes.push('editable');
+      }
+      if (this.week.working_days()[time.dayIndex()].total() !== '00:00') {
+        classes.push('edited');
+      }
+      return classes.join(' ');
+    };
+
+    ProjectModel.prototype.toJS = function() {
+      return this.times().filter(function(time) {
+        return time != null;
+      }).map((function(_this) {
+        return function(time, index) {
+          return {
+            project_id: _this.id,
+            minutes: ko.utils.timeToMinutes(time.project_time()),
+            worked_on: _this.week.working_days()[index].work_date,
+            id: time.id() ? time.id() : void 0
+          };
+        };
+      })(this)).filter(function(time) {
+        return (time.id != null) || time.minutes > 0;
+      });
+    };
+
+    return ProjectModel;
+
+  })();
+
+}).call(this);
+(function() {
+  var root,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  root = typeof exports !== "undefined" && exports !== null ? exports : this;
+
+  App.Classes.WeekModel = (function() {
+    var _initialTime;
+
+    _initialTime = '00:00';
+
+    WeekModel.prototype._mapping = function() {
+      return {
+        working_days: {
+          create: (function(_this) {
+            return function(options) {
+              return new App.Classes.DayModel({
+                data: options.data,
+                week: _this
+              });
+            };
+          })(this)
+        },
+        projects: {
+          create: (function(_this) {
+            return function(options) {
+              return new App.Classes.ProjectModel({
+                data: options.data,
+                week: _this
+              });
+            };
+          })(this)
+        },
+        copy: ['id']
+      };
+    };
+
+    function WeekModel(arg) {
+      var afterLoad, data;
+      data = arg.data, afterLoad = arg.afterLoad;
+      this.toJS = bind(this.toJS, this);
+      this.hasExcessTime = bind(this.hasExcessTime, this);
+      this.sync = bind(this.sync, this);
+      this.editField = bind(this.editField, this);
+      this.initializeWithData = bind(this.initializeWithData, this);
+      this._mapping = bind(this._mapping, this);
+      if (data != null) {
+        this.initializeWithData(data);
+      } else {
+        $.getJSON(window.location.pathname).then(this.initializeWithData).then(afterLoad);
+      }
+    }
+
+    WeekModel.prototype.initializeWithData = function(data) {
+      ko.mapping.fromJS(data, this._mapping(), this);
+      this.selectedItem = ko.observable();
+      return this.total = ko.computed(function() {
+        return this.working_days().reduce(function(sum, day) {
+          return ko.utils.timeAdd(day.total(), sum);
+        }, _initialTime);
+      }, this);
+    };
+
+    WeekModel.prototype.mode = function(item) {
+      if ((item != null) && this.selectedItem() === item) {
+        return "edit";
+      } else {
+        return "show";
+      }
+    };
+
+    WeekModel.prototype.templateToUse = function(name, item) {
+      return (this.mode(item) + name) + "Tmpl";
+    };
+
+    WeekModel.prototype.editField = function(item) {
+      return this.selectedItem(item);
+    };
+
+    WeekModel.prototype.changeWeek = function(response, status) {
+      if (status === 'error') {
+        return $.publish('tracker:flash:invoke', ['error', 'Error occurred']);
+      } else {
+        return root.employeePage.week(new App.Classes.WeekModel({
+          data: response
+        }));
+      }
+    };
+
+    WeekModel.prototype.changeWeekState = function(response, status) {
+      var state;
+      if (status === 'error') {
+        return $.publish('tracker:flash:invoke', ['error', 'Error occurred']);
+      } else {
+        root.employeePage.week(new App.Classes.WeekModel({
+          data: response
+        }));
+        if (response.week.errors.length) {
+          return $.publish('tracker:flash:invoke', ['error', response.week.errors.join("<br/>")]);
+        } else {
+          state = response.week.closed ? 'closed' : 'reopened';
+          return $.publish('tracker:flash:invoke', ['notice', "Week has been " + state]);
+        }
+      }
+    };
+
+    WeekModel.prototype.cancelWeekEdit = function() {
+      return this.selectedItem(null);
+    };
+
+    WeekModel.prototype.sync = function() {
+      return $.ajax({
+        url: window.location.href,
+        dataType: 'json',
+        data: {
+          week: this.toJS()
+        },
+        type: 'PUT'
+      }).then(function(response) {
+        $.publish('tracker:flash:invoke', ['notice', 'Successfully updated']);
+        return response;
+      }, function(response) {
+        $.publish('tracker:flash:invoke', ['error', 'Error occurred']);
+        return response;
+      }).then(function(response) {
+        return root.employeePage.week(new App.Classes.WeekModel({
+          data: response
+        }));
+      });
+    };
+
+    WeekModel.prototype.hasExcessTime = function() {
+      var excessDays;
+      excessDays = this.working_days().filter(function(day) {
+        return day.excessTime() !== _initialTime;
+      });
+      return !!excessDays.length;
+    };
+
+    WeekModel.prototype.toJS = function() {
+      return {
+        cgi_days: this.working_days().map(function(day) {
+          return {
+            date: day.work_date,
+            vacation: day.vacation()
+          };
+        }),
+        worked_times_attributes: this.working_days().reduce(function(intervals, day) {
+          return ko.utils.arrayPushAll(intervals, day.toJS());
+        }, []),
+        employee_project_worked_times_attributes: this.projects().reduce(function(project_times, project) {
+          return ko.utils.arrayPushAll(project_times, project.toJS());
+        }, [])
+      };
+    };
+
+    return WeekModel;
+
+  })();
+
+}).call(this);
+(function() {
+  var root;
+
+  root = typeof exports !== "undefined" && exports !== null ? exports : this;
+
+  ko.validation.configure({
+    insertMessages: false
+  });
+
+  ko.setTemplateEngine(new ko.nativeTemplateEngine);
+
+  App.Classes.Page = (function() {
+    function Page() {
+      this.week = ko.observable();
+      this.history = new App.Classes.History;
+      this.week.subscribeChanged((function(_this) {
+        return function(newValue, oldValue) {
+          var newUrl, oldUrl;
+          if (!(((oldValue != null ? oldValue.week : void 0) != null) && ((newValue != null ? newValue.week : void 0) != null))) {
+            return;
+          }
+          oldUrl = ko.utils.unwrapObservable(oldValue.week.current_url);
+          newUrl = ko.utils.unwrapObservable(newValue.week.current_url);
+          if (oldUrl !== newUrl) {
+            return _this.history.push(ko.utils.unwrapObservable(newUrl));
+          }
+        };
+      })(this));
+      root.addEventListener('popstate', (function(_this) {
+        return function(event) {
+          return _this.history.pop(function() {
+            var updatedWeek;
+            return updatedWeek = new App.Classes.WeekModel({
+              afterLoad: function() {
+                return root.employeePage.week(updatedWeek);
+              }
+            });
+          });
+        };
+      })(this));
+    }
+
+    return Page;
+
+  })();
+
+}).call(this);
+(function() {
+  ko.bindingHandlers.fadeInVisible = {
+    init: function(element, valueAccessor) {
+      var value = ko.unwrap(valueAccessor());
+      value ? $(element).show() : $(element).hide();
+    },
+
+    update: function(element, valueAccessor, allBindings) {
+      var value = valueAccessor(), allBindings = allBindings(),
+          valueUnwrapped = ko.unwrap(value),
+          duration = allBindings.showDuration || 3000;
+
+      if (typeof valueUnwrapped != 'undefined' && valueUnwrapped) {
+        $(element).fadeIn('fast').delay(duration).queue(function() {
+          value(false);
+          $(this).dequeue();
+        });
+      } else {
+        $(element).fadeOut(100);
+      }
+    }
+  };
+}).call(this);
+(function() {
+  var updateViewModel = function(viewModel, attributes) {
+    for (var key in attributes) {
+      if (attributes.hasOwnProperty(key)) {
+        viewModel[key](attributes[key]);
+      }
+    };
+  };
+
+  ko.bindingHandlers.initFromAttributes = {
+    init: function(element, valueAccessor, allBindingsAccessor, viewModel) {
+      var attributes = allBindingsAccessor()['initAttributes'];
+
+      if (attributes instanceof Array) {
+        attributes.forEach(function(attr) {
+          updateViewModel(viewModel, attr);
+        });
+      } else {
+        updateViewModel(viewModel, attributes);
+      }
+    }
+  };
+}).call(this);
+(function() {
+  App.Classes.Flash = (function() {
+    function Flash() {
+      this.text = ko.observable();
+      this.type = ko.observable();
+      this.isVisible = ko.observable(false);
+      $.subscribe('tracker:flash:invoke', (function(_this) {
+        return function(event, type, text) {
+          _this.type(type);
+          _this.text(text);
+          return _this.isVisible(true);
+        };
+      })(this));
+    }
+
+    Flash.prototype.close = function() {
+      return this.isVisible(false);
+    };
+
+    return Flash;
+
+  })();
+
+}).call(this);
+(function() {
+
+
+}).call(this);

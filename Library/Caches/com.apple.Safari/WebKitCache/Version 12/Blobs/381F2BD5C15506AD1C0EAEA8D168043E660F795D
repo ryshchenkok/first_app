@@ -1,0 +1,652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru_RU" lang="ru_RU">
+<head>
+<title> SystemAdministration &lt; Anahoret &lt; Anadea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="http://anahoret.com/wiki/bin/edit/Anahoret/SystemAdministration?t=1532337791" type="application/x-wiki" title="edit SystemAdministration" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/wiki/bin/view/Anahoret/WebRss" />
+
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/SkinTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/layout.css');
+@import url('/wiki/pub/System/PatternSkinTheme/style.css');
+@import url('/wiki/pub/System/PatternSkinTheme/colors.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/column_left.css');
+@import url('/wiki/pub/System/PatternSkinTheme/variant_foswiki_print.css');
+</style><style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#99CC99;
+	}
+	#patternTopBarContents { background-image:url(/wiki/pub/System/PatternSkin/header5.gif); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#ffffff;}
+.patternBookView {
+	border-color:#99CC99;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<style type="text/css" media="print">
+	@import url("/wiki/pub/System/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	height:1%;
+	overflow-x:auto;
+}
+.foswikiAttachments,
+.foswikiForm,
+.foswikiHelp,
+.foswikiPreviewArea,
+.patternPreviewPage .foswikiForm,
+.patternSigLine,
+.patternToolBar,
+.patternTop,
+.patternTopicAction,
+#patternSideBarContents .patternLeftBarPersonal,
+#patternSideBarContents h2,
+#patternSideBarContents li,
+#patternTopBarButtons ul {
+	height:1%;
+}
+#patternSideBarContents .patternLeftBarPersonal {
+	width:100%;
+}
+.foswikiFormStep {
+	height:100%;
+}
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:2px solid #ccc;
+}
+</style><![endif]-->
+<!--[if gt IE 8 ]><style type="text/css" media="screen">
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow: 0 0 10px #ccc;
+}
+</style><![endif]-->
+<meta name="foswiki.TWISTYANIMATIONSPEED" content="fast" /><!--TWISTYPLUGIN::META-->
+<style type="text/css" media="all">
+.foswikiTable {border-width:1px}
+.foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+.foswikiTable td {border-style:solid none; vertical-align:top}
+.foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+.foswikiTable th a:link {color:#000000}
+.foswikiTable th a:visited {color:#000000}
+.foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+.foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+.foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style><!--TABLEPLUGIN_default-->
+<style type="text/css" media="all">
+.foswikiTable#tableAnahoretEbooks1 td {vertical-align:middle; vertical-align:top}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol0 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol1 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol2 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol3 {text-align:right}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol4 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol5 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol6 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 td.foswikiTableCol7 {text-align:left}
+.foswikiTable#tableAnahoretEbooks1 th {vertical-align:middle; background-color:#ffffff; color:#0066cc; text-align:left}
+.foswikiTable#tableAnahoretEbooks1 th a:link {color:#0066cc}
+.foswikiTable#tableAnahoretEbooks1 th a:visited {color:#0066cc}
+.foswikiTable#tableAnahoretEbooks1 th a:hover {color:#0066cc; background-color:#ffffff}
+.foswikiTable#tableAnahoretEbooks1 th.foswikiSortedCol {background-color:#eeeeee}
+.foswikiTable#tableAnahoretEbooks1 tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable#tableAnahoretEbooks1 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f5f5f5}
+.foswikiTable#tableSystemAdministration2 td {vertical-align:middle; vertical-align:top}
+.foswikiTable#tableSystemAdministration2 td.foswikiTableCol0 {text-align:left}
+.foswikiTable#tableSystemAdministration2 td.foswikiTableCol1 {text-align:left}
+.foswikiTable#tableSystemAdministration2 td.foswikiTableCol2 {text-align:left}
+.foswikiTable#tableSystemAdministration2 td.foswikiTableCol3 {text-align:right}
+.foswikiTable#tableSystemAdministration2 td.foswikiTableCol4 {text-align:left}
+.foswikiTable#tableSystemAdministration2 td.foswikiTableCol5 {text-align:left}
+.foswikiTable#tableSystemAdministration2 td.foswikiTableCol6 {text-align:left}
+.foswikiTable#tableSystemAdministration2 td.foswikiTableCol7 {text-align:left}
+.foswikiTable#tableSystemAdministration2 th {vertical-align:middle; background-color:#ffffff; color:#0066cc; text-align:left}
+.foswikiTable#tableSystemAdministration2 th a:link {color:#0066cc}
+.foswikiTable#tableSystemAdministration2 th a:visited {color:#0066cc}
+.foswikiTable#tableSystemAdministration2 th a:hover {color:#0066cc; background-color:#ffffff}
+.foswikiTable#tableSystemAdministration2 th.foswikiSortedCol {background-color:#eeeeee}
+.foswikiTable#tableSystemAdministration2 tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable#tableSystemAdministration2 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f5f5f5}
+</style><!--TABLEPLUGIN_specific-->
+<link rel='stylesheet' href='/wiki/pub/System/TwistyPlugin/twisty.uncompressed.css?version=1.6.0' type='text/css' media='all' /><!--JQUERYPLUGIN::TWISTY: requires= missing ids: JavascriptFiles/foswikiPref-->
+<!--[if lte IE 9]>
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.11.2.uncompressed.js'></script>
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.8.0.uncompressed.js'></script>
+<!--<![endif]-->
+<!--JQUERYPLUGIN-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/livequery/jquery.livequery.uncompressed.js?version=1.3.1'></script><!--JQUERYPLUGIN::LIVEQUERY-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/foswiki/jquery.foswiki.uncompressed.js?version=2.01'></script><!--JQUERYPLUGIN::FOSWIKI: requires= missing ids: JQUERYPLUGIN::MIGRATE-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiPref.js"></script><!--JavascriptFiles/foswikiPref-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiString.js"></script><!--JavascriptFiles/foswikiString-->
+<script type='text/javascript'>
+jQuery.extend(foswiki, {
+ "preferences": {
+    "PUBURL": "http://anahoret.com/wiki/pub",
+    "PUBURLPATH": "/wiki/pub",
+    "SCRIPTSUFFIX": "",
+    "SCRIPTURL": "http://anahoret.com/wiki/bin",
+    "SCRIPTURLPATH": "/wiki/bin",
+    "SERVERTIME": "23 Jul 2018 - 12:23",
+    "SKIN": "pdf,pattern",
+    "SYSTEMWEB": "System",
+    "TOPIC": "SystemAdministration",
+    "USERNAME": "kr",
+    "USERSWEB": "Main",
+    "WEB": "Anahoret",
+    "WIKINAME": "KonstantinRyshchenko",
+    "WIKIUSERNAME": "Main.KonstantinRyshchenko",
+    "NAMEFILTER": "[\s\*?~^\$@%`\"'&;|<>\[\]#\x00-\x1f]"
+}});
+</script><!--JQUERYPLUGIN::FOSWIKI::PREFERENCES-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiForm.js"></script><!--JavascriptFiles/foswikiForm-->
+<script type="text/javascript" src="/wiki/pub/System/PatternSkin/pattern.js"></script><!--PatternSkin/pattern-->
+<script type='text/javascript' src='/wiki/pub/System/TwistyPlugin/jquery.twisty.uncompressed.js?version=1.6.0'></script><!--JQUERYPLUGIN::TWISTY-->
+</head>
+<body class="foswikiNoJs patternViewPage">
+<a name="PageTop"></a><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="/wiki/bin/view/Main/WebHome">Anadea</a><span class='foswikiSeparator'>&gt;</span><a href="/wiki/bin/view/Anahoret/WebHome">Anahoret Web</a><span class='foswikiSeparator'>&gt;</span><a href="http://anahoret.com/wiki/bin/view/Anahoret/SystemAdministration" title='Topic revision: 104 (23 Mar 2018 - 13:08:34)'>SystemAdministration</a> <span class='patternRevInfo'>(23 Mar 2018, <a href="/wiki/bin/view/Main/AndreyBulava">AndreyBulava</a>)</span></span><span class="patternToolBar foswikiRight"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/SystemAdministration?t=1532337791;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/SystemAdministration' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span><a href='/wiki/bin/view/Anahoret/SystemAdministration?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span></span><div class="foswikiClear"></div></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><h2><a name="A_208_159_209_128_208_176_208_178_208_184_208_187_208_176_208_184_208_188_208_181_208_189_208_190_208_178_208_176_208_189_208_184_209_143_208_191_208_190_208_187_209_140_208_183_208_190_208_178_208_176_209_130_208_181_208_187_209_140_209_129_208_186_208_184_209_133_208_176_208_186_208_186_208_176_209_131_208_189_209_130_208_190_208_178"></a>  Правила именования пользовательских аккаунтов </h2>
+<p></p>
+Аккаунты новых пользователей именуются по следующим правилам: <ol>
+<li> Первая буква имени + первая буква фамилии
+</li> <li> Первая буква имени + первая буква отчества + первая буква фамилии
+</li> <li> Первая буква имени + первая буква фамилии + вторая буква фамилии
+</li> <li> Первая буква имени + первая буква фамилии + третья буква фамилии
+</li></ol> 
+<p></p>
+<h2><a name="MacStadium"></a> MacStadium </h2>
+<a href="https://anahoret.com/wiki/Anahoret/ici" target="_top">Anadea's iOS CI server</a> (is dead, по выводам из практических попыток использования @vvv)
+<p></p>
+<hr />
+<p></p>
+<h2><a name="A_208_152_209_129_209_130_208_190_209_128_208_184_209_135_208_181_209_129_208_186_208_184_208_185_208_176_209_128_209_133_208_184_208_178"></a>  Исторический архив </h2>
+<p></p>
+<p></p>
+<a name="foswikiTOC"></a><div class="foswikiToc"> <ul>
+ <li>
+ <ul>
+ <li>
+ <ul>
+<li> <a href="#A_208_158_209_128_208_176_208_177_208_190_209_130_208_181_DevOps_208_190_209_130_208_180_208_181_208_187_208_176"> О работе DevOps отдела </a>
+</li> <li> <a href="#A_208_161_208_191_208_184_209_129_208_190_208_186_208_183_208_176_208_186_209_131_208_191_208_186_208_184"> Список закупки </a>
+</li> <li> <a href="#A_208_161_208_191_208_184_209_129_208_190_208_186_209_129_208_181_209_128_208_178_208_181_209_128_208_190_208_178"> Список серверов </a>
+</li> <li> <a href="#A_208_161_208_191_208_184_209_129_208_190_208_186_LDAP_209_129_208_181_209_128_208_178_208_181_209_128_208_190_208_178"> Список LDAP серверов </a>
+</li> <li> <a href="#A_208_160_208_176_208_183_208_187_208_184_209_135_208_189_209_139_208_181_208_184_208_189_209_129_209_130_209_128_209_131_208_186_209_134_208_184_208_184"> Различные инструкции </a>
+</li> <li> <a href="#A_208_162_208_181_209_129_209_130_Tomcat7"> Тест Tomcat7 </a>
+</li> <li> <a href="#A_208_161_208_181_209_128_208_178_208_181_209_128_208_176_208_151_208_176_208_186_208_176_208_183_209_135_208_184_208_186_208_190_208_178"> Сервера Заказчиков </a>
+</li></ul> 
+</li></ul> 
+</li> <li> <a href="#A_208_157_208_176_209_129_209_135_209_145_209_130_209_128_208_176_208_177_208_190_209_130_209_139_208_176_208_180_208_188_208_184_208_189_208_190_208_178"> Насчёт работы админов </a> <ul>
+<li> <a href="#A_208_167_209_130_208_190_208_180_208_190_208_187_208_182_208_189_208_190_208_177_209_139_209_130_209_140_208_178_208_189_209_131_209_130_209_128_208_184"> Что должно быть внутри </a>
+</li> <li> <a href="#A_208_146_208_189_208_181_209_136_208_189_208_184_208_181_209_129_208_181_209_128_208_178_208_184_209_129_209_139"> Внешние сервисы </a> <ul>
+<li> <a href="#A_208_161_209_129_209_139_208_187_208_186_208_184_208_189_208_176_209_128_208_181_208_183_209_131_208_187_209_140_209_130_208_176_209_130_209_139_208_178_209_129_209_130_209_128_208_181_209_135"> Ссылки на результаты встреч </a>
+</li> <li> <a href="#A_208_152_208_189_208_178_208_181_208_189_209_130_208_176_209_128_208_184_208_183_208_176_209_134_208_184_209_143"> Инвентаризация </a>
+</li> <li> <a href="#A_208_155_208_190_208_186_208_176_208_187_209_140_208_189_208_176_209_143_209_129_208_181_209_130_209_140_208_189_208_176_208_189_208_190_208_178_208_190_208_188_208_190_209_132_208_184_209_129_208_181"> Локальная сеть на новом офисе </a>
+</li> <li> <a href="#A_208_160_208_190_209_131_209_130_208_181_209_128_209_139"> Роутеры </a>
+</li> <li> <a href="#WI_45Fi_208_160_208_190_209_131_209_130_208_181_209_128_209_139_208_178_42_208_148_208_189_208_181_208_191_209_128_208_190_208_191_208_181_209_130_209_128_208_190_208_178_209_129_208_186_208_181_42"> WI-Fi Роутеры в Днепропетровске </a>
+</li> <li> <a href="#A_208_159_209_128_208_184_208_189_209_130_208_181_209_128_209_139_208_178_42_208_148_208_189_208_181_208_191_209_128_208_190_208_191_208_181_209_130_209_128_208_190_208_178_209_129_208_186_208_181_42"> Принтеры в Днепропетровске </a>
+</li> <li> <a href="#A_208_144_208_178_209_130_208_190_208_188_208_176_209_130_208_184_209_135_208_181_209_129_208_186_208_190_208_181_209_129_208_190_208_183_208_180_208_176_208_189_208_184_208_181_208_177_208_181_208_186_208_176_208_191_208_190_208_178"> Автоматическое создание бекапов </a>
+</li> <li> <a href="#A_208_156_208_190_208_189_208_184_209_130_208_190_209_128_208_184_208_189_208_179_208_184_NOC"> Мониторинг и NOC </a>
+</li> <li> <a href="#A_208_161_208_181_209_128_208_178_208_181_209_128_208_176_208_144_208_189_208_176_209_133_208_190_209_128_208_181_209_130_208_176"> Сервера Анахорета </a>
+</li> <li> <a href="#A_208_165_208_190_209_129_209_130_208_184_208_189_208_179_208_191_209_128_208_190_208_178_208_176_208_185_208_180_208_181_209_128_209_139_208_188_208_184_209_128_208_176"> Хостинг провайдеры мира </a>
+</li> <li> <a href="#A_208_159_208_190_209_129_209_130_208_176_208_178_209_137_208_184_208_186_208_184_209_130_208_181_209_133_208_189_208_184_208_186_208_184"> Поставщики техники </a>
+</li> <li> <a href="#A_208_159_209_128_208_190_208_181_208_186_209_130_BIG"> Проект BIG </a>
+</li> <li> <a href="#SSL_209_129_208_181_209_128_209_130_208_184_209_132_208_184_208_186_208_176_209_130_209_139"> SSL сертификаты </a>
+</li> <li> <a href="#A_208_152_208_189_209_130_208_181_209_128_208_189_208_181_209_130_208_191_209_128_208_190_208_178_208_176_208_185_208_180_208_181_209_128_209_139"> Интернет провайдеры </a>
+</li></ul> 
+</li></ul> 
+</li> <li> <a href="#A_208_161_209_130_208_176_209_128_208_190_208_181"> Старое </a> <ul>
+ <li>
+ <ul>
+<li> <a href="#A_208_152_209_137_208_181_208_188_208_191_209_128_208_190_208_179_209_128_208_176_208_188_208_188_209_131_209_129_208_186_208_187_208_176_208_180_45_208_184_208_189_208_178_208_181_208_189_209_130_208_176_209_128_208_184_208_183_208_176_209_134_208_184_209_142"> Ищем программу склад - инвентаризацию </a>
+</li></ul> 
+</li></ul> 
+</li></ul> 
+</div>
+<p></p>
+<h3><a name="A_208_158_209_128_208_176_208_177_208_190_209_130_208_181_DevOps_208_190_209_130_208_180_208_181_208_187_208_176"></a>  <a href="/wiki/bin/view/Anahoret/AboutSysAdmins">О работе DevOps отдела</a> </h3>
+<h3><a name="A_208_161_208_191_208_184_209_129_208_190_208_186_208_183_208_176_208_186_209_131_208_191_208_186_208_184"></a>  <a href="/wiki/bin/view/Anahoret/Purchases">Список закупки</a> </h3>
+<h3><a name="A_208_161_208_191_208_184_209_129_208_190_208_186_209_129_208_181_209_128_208_178_208_181_209_128_208_190_208_178"></a>  <a href="/wiki/bin/view/Anahoret/ServerList">Список серверов</a> </h3>
+<h3><a name="A_208_161_208_191_208_184_209_129_208_190_208_186_LDAP_209_129_208_181_209_128_208_178_208_181_209_128_208_190_208_178"></a>  <a href="/wiki/bin/view/Anahoret/LDAPList">Список LDAP серверов</a> </h3>
+<h3><a name="A_208_160_208_176_208_183_208_187_208_184_209_135_208_189_209_139_208_181_208_184_208_189_209_129_209_130_209_128_209_131_208_186_209_134_208_184_208_184"></a>  <a href="/wiki/bin/view/Anahoret/Manuals">Различные инструкции</a> </h3>
+<h3><a name="A_208_162_208_181_209_129_209_130_Tomcat7"></a>  <a href="/wiki/bin/view/Anahoret/JavaTest">Тест Tomcat7</a> </h3>
+<h3><a name="A_208_161_208_181_209_128_208_178_208_181_209_128_208_176_208_151_208_176_208_186_208_176_208_183_209_135_208_184_208_186_208_190_208_178"></a>  <a href="/wiki/bin/view/Anahoret/CustomersDB">Сервера Заказчиков</a> </h3>
+<h1><a name="A_208_157_208_176_209_129_209_135_209_145_209_130_209_128_208_176_208_177_208_190_209_130_209_139_208_176_208_180_208_188_208_184_208_189_208_190_208_178"></a>  Насчёт работы админов </h1>
+<p></p>
+<h2><a name="A_208_167_209_130_208_190_208_180_208_190_208_187_208_182_208_189_208_190_208_177_209_139_209_130_209_140_208_178_208_189_209_131_209_130_209_128_208_184"></a>  Что должно быть внутри </h2>
+<p></p>
+Ни на одном офисе не должно быть серверов.
+<p></p>
+У каждого сотрудника должен быть компьютер с MacOS (актуальной версии) достаточной мощности для комфортной работы
+Админ должен следить за своевременным обновлением ОС и установленных программ.
+<p></p>
+Также должен быть доступ в интернет.
+В каждом помещении нужно подключиться как минимум к двум провайдерам и подключить роутер, который умеет использовать одновременно несколько интернет-каналов.
+<p></p>
+Также в каждом помещении нужен вай-фай с доступом в интернет.
+<p></p>
+И ещё в каждом помещении нужен сетевой принтер/сканер.
+<p></p>
+Ещё нужна база запчастей и конфигураций компьютеров. Нужно будет провести инвентаризацию.
+<p></p>
+Нужен как минимум один резервный компьютер - работающий и настроенный, чтобы можно было выдать его новому сотруднику, или заменить поломанный.
+<p></p>
+<p></p>
+<p></p>
+<h2><a name="A_208_146_208_189_208_181_209_136_208_189_208_184_208_181_209_129_208_181_209_128_208_178_208_184_209_129_209_139"></a>  Внешние сервисы </h2> <ol>
+<li> Сайт anahoret.com (anadea.info)
+</li> <li> Tracker
+</li> <li> Journal
+</li> <li> Wiki
+</li> <li> Форум
+</li> <li> База данных LDAP
+</li> <li> Git-репозитарий
+</li> <li> email сервер (IMAP+SMTP), а также резервный почтовый сервер
+</li> <li> Jenkins-сервер (для daily build'ов)
+</li> <li> Staging-сервер для проектов
+</li> <li> Файловый сервер, доступный через VPN
+</li></ol> 
+<p></p>
+Для всех данных нужно делать резервные копии.
+<p></p>
+<h3><a name="A_208_161_209_129_209_139_208_187_208_186_208_184_208_189_208_176_209_128_208_181_208_183_209_131_208_187_209_140_209_130_208_176_209_130_209_139_208_178_209_129_209_130_209_128_208_181_209_135"></a>  Ссылки на результаты встреч </h3> <ol>
+<li> SysMeeting2012December04
+</li> <li> SysMeeting2013March20
+</li></ol> 
+<p></p>
+<h3><a name="A_208_152_208_189_208_178_208_181_208_189_209_130_208_176_209_128_208_184_208_183_208_176_209_134_208_184_209_143"></a>  Инвентаризация </h3> <ol>
+<li> <a href="/wiki/bin/view/Anahoret/Inventarisation">Используемые компьютеры</a>
+</li> <li>  <span class="foswikiNewLink">ПО<a href="/wiki/bin/edit/Anahoret/SOFT?topicparent=Anahoret.SystemAdministration" rel="nofollow" title="Create this topic">?</a></span>
+</li> <li> <a href="/wiki/bin/view/Anahoret/LiveEquipment">Рабочее оборудование</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/NotLiveEquipment">Нерабочее оборудование</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/ForSale">Для "продажи"</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/NetActive">Активное сетевое оборудование</a>
+</li></ol> 
+<p></p>
+<h3><a name="A_208_155_208_190_208_186_208_176_208_187_209_140_208_189_208_176_209_143_209_129_208_181_209_130_209_140_208_189_208_176_208_189_208_190_208_178_208_190_208_188_208_190_209_132_208_184_209_129_208_181"></a>  Локальная сеть на новом офисе </h3> <ol>
+<li> <a href="/wiki/bin/view/Anahoret/NetCrossJournal">Кроссовый журнал локальной сети</a>
+</li></ol> 
+<p></p>
+<h3><a name="A_208_160_208_190_209_131_209_130_208_181_209_128_209_139"></a>  Роутеры </h3>
+<strong>Core</strong> <ol>
+<li> 1-й порт Sonika - 5.153.129.13
+</li> <li> 2-й порт Telenet - 91.229.128.73
+</li></ol> 
+<p></p>
+<strong>Switches</strong> <ol>
+<li> 192.168.11.4 - S1 Core 1 (backup)
+</li> <li> 192.168.11.3 - S2 Core 2
+</li> <li> не управляемый - S3
+</li></ol> 
+<p></p>
+<strong>Repeaters</strong>
+<br />Данные передаются по VLAN №2, адрес сети 192.168.22.0/24 которая бриджами соединяется на Core и репитерах с Wi-Fi
+<p></p>
+Tagged VLAN 2 (DHCP 192.168.100.0/24): <ol>
+<li> Mobile - 192.168.22.5 (DLink, DD-Wrt) (P2, 23/16.2) (S1, p45)
+</li> <li> Designers - 192.168.22.6 (DLink, DD-Wrt) (P1, 40/21.7) (S2, p17)
+</li></ol> 
+<p></p>
+<h3><a name="WI_45Fi_208_160_208_190_209_131_209_130_208_181_209_128_209_139_208_178_42_208_148_208_189_208_181_208_191_209_128_208_190_208_191_208_181_209_130_209_128_208_190_208_178_209_129_208_186_208_181_42"></a>  WI-Fi Роутеры в <strong>Днепропетровске</strong> </h3> <ol>
+<li> Core
+</li></ol> 
+<pre>
+Wi-Fi сеть:
+Name: anahoret
+Pass: DneprEpyfnm
+IP: 192.168.100.10-254
+VLAN ID: 3
+VLAN IP: 192.168.22.20/24
+</pre> <ol>
+<li> Mikrotik на столе админов
+</li></ol> 
+<pre>
+Wi-Fi сеть:
+Name: anahoret
+Pass: epyfnm3epyfnm
+IP: 192.168.100.10-254
+VLAN ID: 3
+VLAN IP: 192.168.22.21/24
+</pre> <ol>
+<li> Роутер на столе Максима Черкасова
+</li></ol> 
+<pre>
+Wi-Fi сеть:
+Name: anahoretMobile
+Pass: epyfnmMobile
+IP: 192.168.105.100-254
+</pre> <ol>
+<li> Роутер на столе Антона Борщ
+</li></ol> 
+<pre>
+Wi-Fi сеть:
+Name: anahoretMobile2
+Pass: epyfnmMobile2
+IP: 192.168.106.100-254
+</pre>
+<p></p>
+<h3><a name="A_208_159_209_128_208_184_208_189_209_130_208_181_209_128_209_139_208_178_42_208_148_208_189_208_181_208_191_209_128_208_190_208_191_208_181_209_130_209_128_208_190_208_178_209_129_208_186_208_181_42"></a>  Принтеры в <strong>Днепропетровске</strong> </h3> <ol>
+<li> Printer Buh
+</li></ol> 
+<pre>
+Location: "Личный" принтер Натальи Войтовой
+Name: Buh
+Bonjour domain name: Buh.local
+IP: 192.168.34.5
+</pre> <ol>
+<li> Printer Office Managers
+</li></ol> 
+<pre>
+Location: Принтер возле Юлии Дикухи
+Name: Office_Managers
+Bonjour domain name: Office_Managers.local
+IP: 192.168.34.68
+</pre> <ol>
+<li> Printer Games
+</li></ol> 
+<pre>
+Location: Комната возле настольного тейниса
+Name: MFP_Games.local
+Bonjour domain name: MFP_Games.local
+IP: 192.168.34.80
+</pre>
+<p></p>
+<p></p>
+<h3><a name="A_208_144_208_178_209_130_208_190_208_188_208_176_209_130_208_184_209_135_208_181_209_129_208_186_208_190_208_181_209_129_208_190_208_183_208_180_208_176_208_189_208_184_208_181_208_177_208_181_208_186_208_176_208_191_208_190_208_178"></a>  Автоматическое создание бекапов </h3>
+<p></p>
+<strong>Core</strong>
+<p></p>
+Каждый понедельник в 12 дня автоматически делаются бекапы с Core на newdev в папку /home/itsupport/backup/mikrotik.
+<p></p>
+Хранение бекапов в виде структуры Year/Month/Day/$IP.backup
+<p></p>
+Имя файла формируется из IP-адреса устройства. 
+<p></p>
+<strong>Сервера</strong>
+<p></p>
+Бекапы ежедневные делаются rsnapshot на backup.anahoret.com в /home/backup.
+Схема: 7 ежедневных, 4 недельных, 6 ежемесячных.
+<p></p>
+Бекап настроен на: <ol>
+<li> Apps (/etc, /usr/local, wiki)
+</li> <li> Journal (/etc, /usr/local, /home/dl/bin, /home/max/journal, MySQL)
+</li> <li> Anadea.info (/etc, /usr/local, MySQL)
+</li> <li> LDAP Master (/etc, /usr/local, снапшоты базы)
+</li> <li> Tracker (MySQL, /usr/local, /var/www/apps/tracker/shared/system)
+</li> <li> Mail (/etc, /usr/local, /var/lib/amavis, IMAP)
+</li> <li> Sparkleshare (/etc, /usr/local, Samba, MySQL)
+</li> <li> Gitlab (/etc, /usr/local, MySQL, /home/git)
+</li> <li> Newdev (/etc, /home/itsupport/backup/bookshelf)
+</li> <li> Nagios (/etc, /usr/local)
+</li></ol> 
+<p></p>
+<h3><a name="A_208_156_208_190_208_189_208_184_209_130_208_190_209_128_208_184_208_189_208_179_208_184_NOC"></a>  Мониторинг и NOC </h3> <ol>
+<li> NOC - находится на newdev в /var/www/mrtg
+</li> <li> Мониторинг находится на <a href="http://nagios.anahoret.com" target="_top">http://nagios.anahoret.com</a> (DigitalOcean, USA)
+</li></ol> 
+<p></p>
+<h3><a name="A_208_161_208_181_209_128_208_178_208_181_209_128_208_176_208_144_208_189_208_176_209_133_208_190_209_128_208_181_209_130_208_176"></a>  Сервера Анахорета </h3> <ol>
+<li> <a href="/wiki/bin/view/Anahoret/ServersExternal">Внешние сервера</a>
+</li></ol> 
+<p></p>
+<h3><a name="A_208_165_208_190_209_129_209_130_208_184_208_189_208_179_208_191_209_128_208_190_208_178_208_176_208_185_208_180_208_181_209_128_209_139_208_188_208_184_209_128_208_176"></a>  Хостинг провайдеры мира </h3> <ol>
+<li> <a href="/wiki/bin/view/Anahoret/HostingUSA">Хостинг в США</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/HostingDE">Хостинг в Германии</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/HostingIE">Хостинг в Ирландии</a>
+</li> <li> <a href="http://lowendstock.com/" target="_top">VPS по низким ценам (список)</a>
+</li></ol> 
+<p></p>
+<h3><a name="A_208_159_208_190_209_129_209_130_208_176_208_178_209_137_208_184_208_186_208_184_209_130_208_181_209_133_208_189_208_184_208_186_208_184"></a>  Поставщики техники </h3> <ol>
+<li> <a href="http://www.texnika.com.ua/price" target="_top">АО Техника :: Цены</a> <ol>
+<li> Андрей Воронин, знакомый Славы, у которого скидка в Технике 050 5288252 или 095 6293055 Andrew Voronin &lt;av@biztex.dn.ua&gt;
+</li></ol> 
+</li></ol> 
+<p></p>
+<h3><a name="A_208_159_209_128_208_190_208_181_208_186_209_130_BIG"></a>  Проект BIG </h3> <ol>
+<li> <a href="/wiki/bin/view/Anahoret/BIG_internal">Описание проекта</a>
+</li></ol> 
+<p></p>
+<h3><a name="SSL_209_129_208_181_209_128_209_130_208_184_209_132_208_184_208_186_208_176_209_130_209_139"></a>  SSL сертификаты </h3> <ol>
+<li> <a href="https://cheapsslsecurity.com/" target="_top">https://cheapsslsecurity.com/</a>
+</li> <li> <a href="https://www.gogetssl.com/" target="_top">https://www.gogetssl.com/</a>
+</li> <li> <a href="https://www.rapidsslonline.com/" target="_top">https://www.rapidsslonline.com/</a>
+</li> <li> <a href="https://www.cheapssls.com/" target="_top">https://www.cheapssls.com/</a>
+</li> <li> <a href="https://www.ssl2buy.com/" target="_top">https://www.ssl2buy.com/</a>
+</li> <li> <a href="http://www.centriohost.com/ssl-certificate.html" target="_top">http://www.centriohost.com/ssl-certificate.html</a>
+</li></ol> 
+<p></p>
+<h3><a name="A_208_152_208_189_209_130_208_181_209_128_208_189_208_181_209_130_208_191_209_128_208_190_208_178_208_176_208_185_208_180_208_181_209_128_209_139"></a>  Интернет провайдеры </h3>
+<table class="foswikiTable" rules="none" border="1">
+	<tbody>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Провайдер </td>
+			<td class="foswikiTableCol1"> Подключение </td>
+			<td class="foswikiTableCol2"> Стоимость в мес. </td>
+			<td class="foswikiTableCol3 foswikiLastCol"> Контакты </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Матрица </td>
+			<td class="foswikiTableCol1"> нет возможности подключения </td>
+			<td class="foswikiTableCol2"> 5000 грн/мес за 50МБит канала </td>
+			<td class="foswikiTableCol3 foswikiLastCol"> 062-2102000 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дорис </td>
+			<td class="foswikiTableCol1"> ~20000 грн </td>
+			<td class="foswikiTableCol2"> 4000 грн/мес за 50Мбит канал </td>
+			<td class="foswikiTableCol3 foswikiLastCol"> 062-3324214 Максим Фильченко </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Киевстар/Голден телеком </td>
+			<td class="foswikiTableCol1"> Ведется расчет </td>
+			<td class="foswikiTableCol2"> 4000 грн/мес за 50Мбит </td>
+			<td class="foswikiTableCol3 foswikiLastCol"> 067-568-45-40 Алена </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Стелс </td>
+			<td class="foswikiTableCol1"> ~5000грн. </td>
+			<td class="foswikiTableCol2"> 2000 грн/мес за 50МБит </td>
+			<td class="foswikiTableCol3 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> INTS </td>
+			<td class="foswikiTableCol1"> ~20000 грн </td>
+			<td class="foswikiTableCol2"> 1000 грн/месяц за 50Мбит </td>
+			<td class="foswikiTableCol3 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Datagroup </td>
+			<td class="foswikiTableCol1"> 5000 подключение </td>
+			<td class="foswikiTableCol2"> 2000 грн/мес за 50 МБит </td>
+			<td class="foswikiTableCol3 foswikiLastCol"> Семин Сергей <a href="mailto&#58;Sergey&#46;Semin&#64;datagroup&#46;ua">Sergey.Semin&#64;datagroup.ua</a> 8-095-290-00-96 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> ДонАпекс </td>
+			<td class="foswikiTableCol1 foswikiLast"> ~3000 подключение </td>
+			<td class="foswikiTableCol2 foswikiLast"> &lt;2000 грн/мес за 50 МБит </td>
+			<td class="foswikiTableCol3 foswikiLastCol foswikiLast"> 095-450-98-61 Иван </td>
+		</tr>
+	</tbody></table>
+<p></p>
+Контакты Дмитрия - представителя арендодателя - 050 229 37 30
+<p></p>
+Александр "Соника" - 0504263526<br>
+Цена 100 Мб - 3000 грн.
+<p></p>
+Днепропетровск Трайфл Олег 067-567-61-54
+<p></p>
+Megalink<br>
+056 732 08 88<br>
+050 341 23 00<br>
+067 610 24 21
+<p></p>
+login: id008198<br>
+pass: 1629436
+<p></p>
+Сервер Статистики
+<p></p>
+id-telecom.net<br>
+login: st008827<br>
+pass: 7710890
+<p></p>
+<p></p>
+МЕНОРА
+<p></p>
+тел.админа Меноры <br>
+067 611 53 58 Юрий
+<p></p>
+тел. ответственного за проводку кабеля<br>
+050 340 35 64 Ринат
+<p></p>
+Заправка картриджей Днепропетровск<br>
+Оргтехцентр - 056 375 62 55<br>
+Александр - 066 189 26 62 (предпочтительно)
+<p></p>
+<h1><a name="A_208_161_209_130_208_176_209_128_208_190_208_181"></a>  Старое </h1>
+<p></p>
+<h3><a name="A_208_152_209_137_208_181_208_188_208_191_209_128_208_190_208_179_209_128_208_176_208_188_208_188_209_131_209_129_208_186_208_187_208_176_208_180_45_208_184_208_189_208_178_208_181_208_189_209_130_208_176_209_128_208_184_208_183_208_176_209_134_208_184_209_142"></a>  <a href="/wiki/bin/view/Anahoret/ERPSerch">Ищем программу склад - инвентаризацию</a> </h3>
+ </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><div class="foswikiAttachments foswikiFormStep">
+<div class="twistyPlugin foswikiMakeVisible"><span id="topicattachmentslist1show" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a href="#" class="patternTwistyButton"><img src="/wiki/pub/System/DocumentGraphics/toggleopen.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>6</span></span></a></span><span id="topicattachmentslist1hide" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a href="#" class="patternTwistyButton"><img src="/wiki/pub/System/DocumentGraphics/toggleclose.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>6</span></span></a></span></div><div class="twistyPlugin"><div id="topicattachmentslist1toggle" style="" class="twistyRememberSetting twistyContent twistyInited">
+<table summary="Topic attachments" id="tableSystemAdministration2" class="foswikiTable" rules="none" border="1"><caption>Topic attachments</caption>
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?sortcol=0;table=2;up=0#sorted_table" title="Sort by this column">I</a> </th>
+			<th class="foswikiTableCol1"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?sortcol=1;table=2;up=0#sorted_table" title="Sort by this column">Attachment</a> </th>
+			<th class="foswikiTableCol2"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?sortcol=2;table=2;up=0#sorted_table" title="Sort by this column">Action</a> </th>
+			<th class="foswikiTableCol3"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?sortcol=3;table=2;up=0#sorted_table" title="Sort by this column">Size</a> </th>
+			<th class="foswikiTableCol4"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?sortcol=4;table=2;up=0#sorted_table" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol5"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?sortcol=5;table=2;up=0#sorted_table" title="Sort by this column">Who</a> </th>
+			<th class="foswikiTableCol6 foswikiLastCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?sortcol=6;table=2;up=0#sorted_table" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Server_list.odg" /></span><span class="foswikiHidden">odg</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SystemAdministration/Server_list.odg">Server_list.odg</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SystemAdministration?filename=Server_list.odg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 13.2&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">01 Oct 2013 - 10:54</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/jpg.png" width="16" height="16" alt="office-1.jpg" /></span><span class="foswikiHidden">jpg</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SystemAdministration/office-1.jpg">office-1.jpg</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SystemAdministration?filename=office-1.jpg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 850.5&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">02 Apr 2013 - 16:03</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/jpg.png" width="16" height="16" alt="office-2.jpg" /></span><span class="foswikiHidden">jpg</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SystemAdministration/office-2.jpg">office-2.jpg</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SystemAdministration?filename=office-2.jpg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 750.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">02 Apr 2013 - 16:03</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/jpg.png" width="16" height="16" alt="office-3.jpg" /></span><span class="foswikiHidden">jpg</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SystemAdministration/office-3.jpg">office-3.jpg</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SystemAdministration?filename=office-3.jpg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 778.9&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">02 Apr 2013 - 16:03</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/jpg.png" width="16" height="16" alt="server_list.jpeg" /></span><span class="foswikiHidden">jpeg</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SystemAdministration/server_list.jpeg">server_list.jpeg</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SystemAdministration?filename=server_list.jpeg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 57.7&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">01 Oct 2013 - 10:54</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/jpg.png" width="16" height="16" alt="Схема_сети_Anadea.jpg" /></span><span class="foswikiHidden">jpg</span> </td>
+			<td class="foswikiTableCol1 foswikiLast"> <a href="/wiki/pub/Anahoret/SystemAdministration/%d0%a1%d1%85%d0%b5%d0%bc%d0%b0_%d1%81%d0%b5%d1%82%d0%b8_Anadea.jpg">Схема_сети_Anadea.jpg</a> </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="/wiki/bin/attach/Anahoret/SystemAdministration?filename=%d0%a1%d1%85%d0%b5%d0%bc%d0%b0_%d1%81%d0%b5%d1%82%d0%b8_Anadea.jpg;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3 foswikiLast"> 72.6&nbsp;K </td>
+			<td class="foswikiTableCol4 foswikiLast"> <span class="foswikiNoBreak">16 Apr 2013 - 15:52</span> </td>
+			<td class="foswikiTableCol5 foswikiLast"> <a href="/wiki/bin/view/Main/UnknownUser">UnknownUser</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> &nbsp; </td>
+		</tr>
+	</tbody></table>
+</div></div></div><a name="topic-actions"></a><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/SystemAdministration?t=1532337791;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/SystemAdministration' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SystemAdministration?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SystemAdministration?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/oops/Anahoret/SystemAdministration?template=oopshistory' rel='nofollow' title='View total topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a></span>: r104&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/SystemAdministration?rev1=103;rev2=104">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?rev=103">r103</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/SystemAdministration?rev1=102;rev2=103">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?rev=102">r102</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/SystemAdministration?rev1=101;rev2=102">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/SystemAdministration?rev=101">r101</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SystemAdministration?template=backlinksweb' rel='nofollow' title='Search the Anahoret Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SystemAdministration?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SystemAdministration?template=more&amp;maxrev=104&amp;currrev=104' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: 23 Mar 2018, <a href="/wiki/bin/view/Main/AndreyBulava">AndreyBulava</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator" style="border-color:#99CC99">
+<a href='http://anahoret.com/wiki/bin/view/Anahoret/WebHome'>Anahoret</a>
+</div> <ul>
+<li> <strong><a href="/wiki/bin/view/Anahoret/DeveloperDocumentation">Документация</a></strong> <hr />
+</li> <li> <strong><a href="/wiki/bin/view/Anahoret/WebHome" class="foswikiCurrentWebHomeLink"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/home.png" width="16" height="16" alt="home" /></span> Anahoret Web</a></strong>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicCreator?parent=SystemAdministration" target="_top"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/newtopic.png" width="16" height="16" alt="newtopic" /></span> Create New Topic</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicList"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/index.png" width="16" height="16" alt="index" /></span> Index</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebSearch"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/searchtopic.png" width="16" height="16" alt="searchtopic" /></span> Search</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebChanges"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/changes.png" width="16" height="16" alt="changes" /></span> Changes</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebNotify"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/notify.png" width="16" height="16" alt="notify" /></span> Notifications</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebStatistics"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/statistics.png" width="16" height="16" alt="statistics" /></span> Statistics</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebPreferences"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/wrench.png" width="16" height="16" alt="wrench" /></span> Preferences</a> <hr />
+</li> <li> <strong>Webs</strong>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#99CC99" />&nbsp;Anahoret</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Getsocio/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Getsocio</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Mailinator/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Mailinator</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Main/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFEFA6" />&nbsp;Main</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Projects/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFCC00" />&nbsp;Projects</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Sandbox/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#B9DAFF" />&nbsp;Sandbox</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Skills/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#ffa199" />&nbsp;Skills</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/System/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFD8AA" />&nbsp;System</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Tracker/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#33CC99" />&nbsp;Tracker</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Trash/InVision/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;<span class='foswikiWebIndent'></span>InVision</a></span>
+</li></ul> 
+<p></p>
+</div></div>
+</div>
+<div class="clear">&nbsp;</div>
+</div></div><div id="patternTopBar"><div id="patternTopBarContentsWrapper"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="http://anahoret.com/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/Main/WebHome/anadea-logo.png" border="0" alt="Anahoret wiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+ <ul>
+<li> <form name="jumpForm" action="/wiki/bin/view/Anahoret/SystemAdministration"><input id="jumpFormField" title="Jump" type="text" class="foswikiInputField foswikiDefaultText" name="topic" value="" size="18" /><noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript>   </form>
+</li> <li> <form name="quickSearchForm" action="/wiki/bin/view/Anahoret/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Anahoret" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript>   </form>
+</li></ul> 
+<p></p>
+</td></tr></table></div></div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"></div></div></div>
+</div>
+</div>
+</div>
+</div></body></html>

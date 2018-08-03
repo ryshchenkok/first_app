@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EmailApplicationList</key>
+	<array>
+		<dict>
+			<key>ApplicationName</key>
+			<string>Mail.app</string>
+			<key>ApplicationScreenName</key>
+			<string>Mail</string>
+			<key>Applescript</key>
+			<string>try
+			tell application id &quot;com.apple.mail&quot;
+				set newMessage to make new outgoing message with properties {subject:&quot;##subject##&quot;}
+				tell newMessage
+					set visible to true
+					tell content
+					##attachmentString##
+					make new paragraph at after the first paragraph with data &quot;##body##&quot;
+					end tell
+				end tell
+				activate
+			end tell
+			on error error_message number error_number
+			if the error_number is not -128 then
+				beep
+				display dialog error_message buttons {&quot;Cancel&quot;} default button 1
+			end if
+			end try
+			</string>
+			<key>ApplescriptAttachmentScript</key>
+			<string>make new attachment with properties {file name:&quot;##filename##&quot;} at before the first paragraph
+			</string>
+		</dict>
+		<dict>
+			<key>ApplicationName</key>
+			<string>AOL</string>
+			<key>ApplicationScreenName</key>
+			<string>AOL</string>
+			<key>Applescript</key>
+			<string>try
+			tell application &quot;AOL&quot;
+				set newMessage to make new document with properties {kind:mail, name:&quot;##subject##&quot;}
+				set text of newMessage to &quot;Created with Skitch - &lt; http://evernote.com &gt;&quot;
+				##attachmentString##
+				activate
+			end tell
+			on error error_message number error_number
+			if the error_number is not -128 then
+				beep
+				display dialog error_message buttons {&quot;Cancel&quot;} default button 1
+			end if
+			end try
+			</string>
+			<key>ApplescriptAttachmentScript</key>
+			<string>set filename to &quot;##filename##&quot;
+			make new attachment at end of newMessage with properties {local file:POSIX file filename}
+			</string>
+		</dict>
+		<dict>
+			<key>ApplicationName</key>
+			<string>Microsoft Entourage</string>
+			<key>ApplicationScreenName</key>
+			<string>Entourage</string>
+			<key>Applescript</key>
+			<string>try
+			tell application &quot;Microsoft Entourage&quot;
+				set newMessage to make new outgoing message with properties {subject:&quot;##subject##&quot;, content:&quot;Created with Skitch - &lt; http://evernote.com &gt;&quot;}
+				##attachmentString##
+				open newMessage
+				activate
+			end tell
+			on error error_message number error_number
+			if the error_number is not -128 then
+				beep
+				display dialog error_message buttons {&quot;Cancel&quot;} default button 1
+			end if
+			end try
+			</string>
+			<key>ApplescriptAttachmentScript</key>
+			<string>set filename to &quot;##filename##&quot;
+			make new attachment at newMessage with properties {file:POSIX file filename}
+			</string>
+		</dict>
+		<dict>
+			<key>ApplicationName</key>
+			<string>Microsoft Entourage.app</string>
+			<key>ApplicationScreenName</key>
+			<string>Entourage</string>
+			<key>Applescript</key>
+			<string>try
+			tell application &quot;Microsoft Entourage&quot;
+				set newMessage to make new outgoing message with properties {subject:&quot;##subject##&quot;, content:&quot;Created with Skitch - &lt; http://evernote.com &gt;&quot;}
+				##attachmentString##
+				open newMessage
+				activate
+			end tell
+			on error error_message number error_number
+			if the error_number is not -128 then
+				beep
+				display dialog error_message buttons {&quot;Cancel&quot;} default button 1
+			end if
+			end try
+			</string>
+			<key>ApplescriptAttachmentScript</key>
+			<string>set filename to &quot;##filename##&quot;
+			make new attachment at newMessage with properties {file:POSIX file filename}
+			</string>
+		</dict>
+		<dict>
+			<key>ApplicationName</key>
+			<string>Eudora.app</string>
+			<key>ApplicationScreenName</key>
+			<string>Eudora</string>
+			<key>Applescript</key>
+			<string>try
+			tell application &quot;Eudora&quot;
+				make new message at end of mailbox &quot;Out&quot;
+				set field &quot;Subject&quot; of message 0 to &quot;##subject##&quot;
+				set body of message 0 to &quot;Created with Skitch from - &lt; http://evernote.com &gt;&quot;
+				##attachmentString##
+				open message 0
+				activate
+			end tell
+			on error error_message number error_number
+			if the error_number is not -128 then
+				beep
+				display dialog error_message buttons {&quot;Cancel&quot;} default button 1
+			end if
+			end try
+			</string>
+			<key>ApplescriptAttachmentScript</key>
+			<string>set filename to &quot;##filename##&quot;
+			attach to message 0 documents POSIX file filename
+			</string>
+		</dict>
+	</array>
+	<key>subjectString</key>
+	<string>##subject##</string>
+	<key>bodyString</key>
+	<string>##body##</string>
+	<key>filenameString</key>
+	<string>##filename##</string>
+	<key>attachmentString</key>
+	<string>##attachmentString##</string>
+</dict>
+</plist>

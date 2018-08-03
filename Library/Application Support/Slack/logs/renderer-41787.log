@@ -1,0 +1,47 @@
+[08/03/18, 11:12:19:939] info: ╔═══════════════════════════════════════════════════════════════════════╗
+[08/03/18, 11:12:19:940] info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 08/03/18, 11:12:19:936      ║
+[08/03/18, 11:12:19:940] info: ╚═══════════════════════════════════════════════════════════════════════╝
+[08/03/18, 11:12:20:018] info: Initializing local storage instance at path: /Users/kr/Library/Application Support/Slack/local-settings.json
+[08/03/18, 11:12:20:303] info: Main window preload script finished
+{
+  "readyTime": 639.451514
+}
+[08/03/18, 11:12:23:015] info: Store: ADD_WINDOW
+{
+  "id": 10,
+  "subType": "calls_mini_panel",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/03/18, 11:12:23:021] info: Store: ADD_WINDOW
+{
+  "id": 11,
+  "subType": "calls_cursors",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/03/18, 11:12:23:027] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[08/03/18, 11:12:23:273] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V1"
+}
+[08/03/18, 11:12:23:331] info: Starting new Calls
+[08/03/18, 11:12:35:315] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/03/18, 11:14:45:690] error: Call from NATIVE to invalid JS method: onShutdownComplete - [object Object]
+[08/03/18, 11:14:45:692] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "vkLwIKiAGYrvY05",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 11:14:45:848] info: Store: REMOVE_WINDOW 9
+[08/03/18, 11:14:45:849] info: Window is unloading, window.desktop is no longer accessible
+[08/03/18, 11:14:45:852] info: Store: REMOVE_WINDOW 10

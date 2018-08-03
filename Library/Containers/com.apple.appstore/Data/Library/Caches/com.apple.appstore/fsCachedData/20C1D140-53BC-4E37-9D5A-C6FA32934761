@@ -1,0 +1,2993 @@
+/*global Setup CoreSetup mmesetupconstants mmesetupui AppleAccountSetup mmejsloc vettingFailed main DevAutocomplete DEBUG*/
+
+// Per <rdar://problem/16278176> we need to not call resize until DOM content is loaded
+document.addEventListener('DOMContentLoaded', function(){
+  window._domContentLoaded = true;
+  var queuedResize = window._queuedResize;
+  if (queuedResize) {
+    Setup.safeResizeTo(queuedResize[0], queuedResize[1]);
+  }
+});
+
+ // global singleton object for SetupApp .
+$.namespace('Setup') ; // create the setup name space/app. All objects should be instantiated under this namespace
+
+/*
+  $ utility for logging.
+*/
+
+window.onerror = function errorHandler(errorMsg, url, lineNumber) {
+  $.log(errorMsg);
+  $.log(url + ' Line:' + lineNumber);
+  Setup.showErrorPage(mmejsloc.ServerError, mmejsloc.CouldntActivateExistingMMEHint, null, function(index) { AppleAccountSetup.cancel()});
+}
+
+$.log = function(text) {
+    //if(undefined !== AppleAccountSetup.log) {
+     //   AppleAccountSetup.log(text);
+    //}
+
+    if (undefined !== console && undefined !== console.log && !mmesetupconstants.isDebugLogEnabled) {
+        console.log(text);
+    } else {
+        var log = $("#log");
+        log.html(log.html() + "<br>" + text);
+    }
+};
+
+$.extend(Setup,{
+  /*
+    @method
+    you oughta have a main!
+  */
+  main: function() {
+    $(function() {
+      mmesetupui.init();
+      try {
+        DevAutocomplete.init();
+      }
+      catch (e) { }
+    });
+  },
+
+  IPAD: "ipad",
+  IPHONE: "iphone",
+  OTHER: "other",  // we might have more devices in future. but for now it's others
+
+  device: function() {
+    var ret ;
+    var deviceType = mmesetupconstants.deviceType;
+    if(deviceType.indexOf('ipad')> -1 ){
+      ret = 'ipad';
+    } else if(deviceType.toLowerCase().indexOf('iphone')> -1){
+      ret = 'iphone';
+    } else if(deviceType.toLowerCase().indexOf('ipod')> -1){
+      ret = 'iphone';
+    } else {
+      ret = 'other';
+    }
+    return ret ;
+  }(),
+
+  // Per <rdar://problem/16278176> we need to not call resize until DOM content is loaded
+  safeResizeTo: function(width, height) {
+    if (!window._domContentLoaded) {
+      window._queuedResize = [width, height];
+    }
+    else {
+      window.resizeTo(width, height);
+    }
+  },
+  
+  windowResize: function() {
+    $.log("windowResize Setup", Setup);
+    if (Setup.device === Setup.OTHER) {
+      $.log('resizing window') ;
+      var rect = $('body #pages')[0].getBoundingClientRect() ;
+
+      var width          = rect.width,
+          height         = rect.height,
+          deltaAllowance = 20,
+          delta;
+
+      if (navigator.userAgent.search("Windows") < 0) {
+        // Adjust for any left and right window adornment.  We'll only adjust if
+        // the widths aren't far apart, though, because 10.7.3 has some bugs in
+        // that area.
+        delta = window.outerWidth - window.innerWidth;
+        if (delta > 0  &&  delta < deltaAllowance) width += delta;
+
+        delta = window.outerHeight - window.innerHeight;
+        if (delta > 0  &&  delta < deltaAllowance) height += delta;
+      }
+
+      $.log("Bounding rect:  {" + width + ", " + height + "},    (outer: {" + window.outerWidth + ", " + window.outerHeight + "},  inner: {" + window.innerWidth + ", " + window.innerHeight + "})");
+      $.log("Resizing to {" + width + ", " + height + "}");
+
+
+      if(undefined === AppleAccountSetup.resizeToWindow) {
+        $.log("using resize to window from AppleAccountSetup");
+        Setup.safeResizeTo(width, height);
+      }
+      else {
+        $.log("using window.resizeTo");
+        AppleAccountSetup.resizeToWindow(width, height);
+      }
+
+    }
+  },
+
+  BUTTON_MIN_WIDTH:74,
+
+  /*
+    buttonELement is the core query object
+  */
+  setButtonMinWidth: function(buttonElement) {
+  /*
+      74 is the min-width of any button in setupflow.
+      NOTE: using min-width in css on input tags doesn't seem to work, if you can get
+      that to work, this workaround isn't required
+  */
+
+
+    $.log('setButtonMinWidth called for element '+ buttonElement.attr('id') ) ;
+    if (buttonElement.is(':visible')) {
+      buttonElement.css('width', 'auto') ;// reset to auto so we can get a correct reading.
+      $.log(' buttonElement[0].getBoundingClientRect().width: ' + buttonElement[0].getBoundingClientRect().width) ;
+      if (buttonElement[0].getBoundingClientRect().width <= Setup.BUTTON_MIN_WIDTH ) {
+        buttonElement.css('width', Setup.BUTTON_MIN_WIDTH + 'px') ;
+      } else {
+        buttonElement.css('width', 'auto') ;
+      }
+    }
+  },
+  /*
+    @property
+    false by default. set to true when any server request is in flight
+    so that we don't try to validate what's input and enable disable any navigation buttons
+
+    not used in ios mode.
+  */
+  isRequestInFlight: false,
+
+  showLoadingSpinner: function(show){
+    if (Setup.device === Setup.OTHER) {
+      var loadingSpinner = $('.loading-spinner', 'footer'),
+          footerButtons = $('input[type=button]', 'footer');
+          
+      if (show) {
+        Setup.isRequestInFlight = true;
+        loadingSpinner.animate({opacity:1}, 0);
+        footerButtons.attr('disabled', true);
+      } else {
+        Setup.isRequestInFlight = false;
+        loadingSpinner.animate({opacity:0}, 100);
+        // undo disabled state to what it was before
+        footerButtons.each(function(){
+          $(this).attr('disabled', !!$(this).attr('disable-on-load'));
+        });
+      }
+    }
+  },
+
+  confirmWithCallback: function(message, title, okTitle, cancelTitle, callback) {
+    // read brand variable
+    if(mmesetupconstants.branding != null && mmesetupconstants.branding.length > 0) {
+        // alter the string replacing MobileMe with branding
+        if(message != null) message = message.replace("MobileMe", mmesetupconstants.branding);
+        if(title != null) title = title.replace("MobileMe", mmesetupconstants.branding);
+        if(okTitle != null) okTitle = okTitle.replace("MobileMe", mmesetupconstants.branding);
+        if(cancelTitle != null) cancelTitle = cancelTitle.replace("MobileMe", mmesetupconstants.branding);
+    }
+
+    if (message != null) message = message.replace("@@EmailDomain@@", mmesetupconstants.emailDomain);
+
+    // For strings that require the old brand name, use @@OldBranding@@ and @@NewBranding@@ substitution
+    if(message != null) message = message.replace("@@OldBranding@@", "MobileMe");
+    if(message != null) message = message.replace("@@NewBranding@@", "iCloud");
+    if(title != null) title = title.replace("@@OldBranding@@", "MobileMe");
+    if(title != null) title = title.replace("@@NewBranding@@", "iCloud");
+
+    AppleAccountSetup.confirmWithCallback(message, title, okTitle, cancelTitle, callback);
+  },
+  showExtraConfirmationSheet:function() {
+    return true;
+  },
+  showErrorPage : function(title, message, evalMethod, callback) {
+    // hide the current page
+    // show the error page
+    $('#page_' + mmesetupui.getCurrentPage()).hide();
+    $('#page_' + mmesetupui.getErrorPage()).show();
+    $('#error_page_title').html(title);
+    $('#error_page_hint').html(message);
+    // configure the navigation bar to hide  the right button and show only left button
+    AppleAccountSetup.setLeftNavButton(mmejsloc.Cancel,evalMethod);
+  },
+  showEmailDomainInInputField:function() {
+    return true;
+  }
+});
+/*
+  @class
+  hooks up live validation
+  subclass this as you please if you need to overwrite any methods
+*/
+Setup.Validator = $.Class.extend({
+  init: function(){
+
+    /*
+      if you happen to subclass this class and want to call the init method of
+      this class from the init method of your subclass. try using the below
+      statement, it *might* just work..
+      this.__proto__.__proto__.init()
+    */
+    this.initMonthSelectorValidator();
+    this.initDaySelectorValidator();
+    this.initYearSelectorValidator();
+    this.initCountrySelectorValidator();
+    this.initEmailFieldValidator();
+    this.initFirstNameFieldValidator();
+    this.initLastNameFieldValidator();
+    this.initPasswordFieldValidator();
+    this.initVerifyPasswordFieldValidator();
+    this.initCreateEmailFieldValidator();
+    this.initActivateEmailFieldValidator();
+    this.initThreeSecurityAnswersValidator();
+  },
+
+  initMonthSelectorValidator:function(){
+    $("#monthSelector").liveValidate({
+      validations: [{
+        method: "minLen",
+        minLen: 2,
+        errorMsg: mmejsloc.MonthInvalid,
+        errorTitle: mmejsloc.ChooseMonth
+      }]
+    });
+  },
+
+  initDaySelectorValidator:function(){
+    $("#daySelector").liveValidate({
+      validations: [{
+        method: "minLen",
+        minLen: 2,
+        errorMsg: mmejsloc.DayInvalid,
+        errorTitle: mmejsloc.ChooseDay
+      }, {
+        method: "leapYear",
+        errorMsg: mmejsloc.PleaseCorrectBirthDay,
+        errorTitle: mmejsloc.InvalidDay
+      }]
+    });
+  },
+
+  initYearSelectorValidator:function() {
+    $("#yearSelector").liveValidate({
+      validations: [{
+        method: "minLen",
+        minLen: 1,
+        errorMsg: mmejsloc.EnterBirthYear,
+        errorTitle: mmejsloc.EnterYear
+      },{
+        method: "integer",
+        min   : mmesetupconstants.numberOfAllowedYears,
+        errorMsg: mmejsloc.EnterValidYear,
+        errorTitle: mmejsloc.InvalidYear
+      }]
+    });
+    if (Setup.device !== Setup.OTHER) {
+      //$("#yearSelector").siblings('.hint').html(mmejsloc.SelectYear);
+    }
+  },
+
+  initCountrySelectorValidator: function() {
+    $("#countrySelector").liveValidate({
+      validations: [{
+        method: "minLen",
+        minLen: 2,
+        errorMsg: mmejsloc.CountryInvalid,
+        errorTitle: mmejsloc.ChooseACountry
+      }]
+    });
+  },
+
+  initEmailFieldValidator: function() {
+    $("#emailField").liveValidate({
+      validations: emailThirdPartyValidators
+    });
+    //$("#emailField").attr("placeholder", mmejsloc.EmailPrototype + "@me.com");
+  },
+
+  initFirstNameFieldValidator:function() {
+    $("#firstNameField").liveValidate({
+      validations: firstNameValidators
+    });
+    //$("#firstNameField").siblings('.hint').html(mmejsloc.EmailFName);
+
+  },
+
+  initLastNameFieldValidator: function() {
+    $("#lastNameField").liveValidate({
+      validations: lastNameValidators
+    });
+    //$("#lastNameField").siblings('.hint').html(mmejsloc.EmailLName);
+
+  },
+
+  initPasswordFieldValidator: function() {
+    $("#passwordField").liveValidate({
+      validations: passwordValidatorsWithoutMatch,
+      validationsError:  { errorMsg: mmejsloc.AppleIDPasswordExplanation, errorTitle: mmejsloc.WeakPasswordTitle }
+    });
+    //$("#passwordField").siblings('.hint').html(mmejsloc.PasswordRequired);
+  },
+
+  initVerifyPasswordFieldValidator: function() {
+    $("#verifyPasswordField").liveValidate({
+      validations: [{
+        method: "minLen",
+        minLen: 1,
+        errorTitle: mmejsloc.VerifyPasswordTitle,
+        errorMsg: mmejsloc.VerifyPassword
+      },{
+        method: "validatePasswordMatch",
+        errorTitle: mmejsloc.PasswordsDoNotMatchTitle,
+        errorMsg: mmejsloc.EnterPasswordAgain,
+        against: "#passwordField"
+      }]
+    });
+     //$("#verifyPasswordField").siblings('.hint').html(mmejsloc.RetypePassword);
+
+  },
+
+  initCreateEmailFieldValidator: function() {
+    $('#createEmailField').liveValidate({
+      validations:emailMeDotComValidators,
+      validationsError:  { errorMsg: mmejsloc.MeDotComEmailInvalidMsg, errorTitle: mmejsloc.EmailFieldErrorTitle }
+
+      //todo complete this list <rdar://problem/9084237>
+    }) ;
+    //$("#createEmailField").siblings('.hint').html(mmejsloc.CreateNewEmailHintNamePrefix) ;
+  },
+
+  initActivateEmailFieldValidator: function() {
+    $('#attachMeEmailField').liveValidate({
+      dfltValue: mmejsloc.CreateNewEmailHintNamePrefix,
+      validations:emailMeDotComValidators,
+      validationsError:  { errorMsg: mmejsloc.MeDotComEmailInvalidMsg, errorTitle: mmejsloc.EmailFieldErrorTitle }
+      //todo complete this list <rdar://problem/9084237>
+    }) ;
+    //$("#attachMeEmailField").siblings('.hint').html(mmejsloc.CreateNewEmailHintNamePrefix) ;
+  },
+
+  /**
+    Attach the validation rules to elements in three security question page
+  */
+  initThreeSecurityAnswersValidator: function() {
+    for (var idx=1; idx<=3; idx++) {
+      // bind answer validators
+      $("#securityAnswerField"+idx).bindValidatorsForSecurityPage({
+        validations: securityAnswerValidators,
+        position: idx
+      });
+      // bind on change validation for selectors
+      $("#securityQuestionSelector"+idx).bindValidatorsForSecurityPage({
+        validations: securityQuestionValidators,
+        position: idx
+      });
+    }
+    // bind the recovery email field
+    $("#recoveryEmailAddress").bindValidatorsForSecurityPage({
+      validations: rescueEmailValidators
+    });
+  },
+
+  /*
+    @returns Array of element IDs in security questions page
+  */
+  securityPageValidatableElements: function() {
+    return ["securityQuestionSelector1", "securityQuestionSelector2", "securityQuestionSelector3",
+            "securityAnswerField1", "securityAnswerField2", "securityAnswerField3",
+            "recoveryEmailAddress"];
+  },
+
+  /*
+    true if user wants to use existing email address
+    false if user wants a me.com address
+  */
+  isAppleIdRequired: true
+}) ;
+
+
+
+
+
+
+/*
+  @class
+  base class for event handlers.
+*/
+Setup.EventHandler = $.Class.extend({
+
+  /*
+    @method
+    init method containing common event handlers that apply across devices
+    if you want to hookup events on a per device basis, subclass this
+    call the init method of this class using
+    this.__proto__.__proto__.init() in the init method of the subclass
+  */
+  init : function() {
+    $("#monthSelector").change(
+      function() {
+        var maxDays = [31,29,31,30,31,30,31,31,30,31,30,31][parseInt($("#monthSelector").val(), 10) - 1];
+        var $daySelector = $('#daySelector');
+        var selected = $daySelector.val();
+        $daySelector.find('.varDay').remove();
+        for (var i = 29; i <= maxDays; ++i) {
+            $('<option/>').attr('value',i).addClass('varDay').text(i).appendTo($daySelector);
+        }
+        if (selected.length > 0 && parseInt(selected, 10) > maxDays) {
+            selected = "" + maxDays;
+        }
+        $daySelector.val(selected);
+      });
+
+    // bind the send TOS
+    $('.emailTosLink').click(function() {
+        mmesetupui.showEmailTosPage();
+    });
+    // bind the Back TOS
+    $('#backTOS').click(function() {
+        mmesetupui.prevPage();
+    });
+    // bind the Agree TOS
+    $('#agreeTOS').click(function() {
+        mmesetupui.nextPage();
+    });
+
+    $('#previousTOS').click(function() {
+      mmesetupui.tos.prevPageTOS() ;
+    });
+    $('#nextTOS').click(function() {
+      mmesetupui.tos.nextPageTOS() ;
+    });
+    $('#sendTosEmail').click(function() {
+      mmesetupui.emailTos() ;
+    });
+    $('#hideTosEmail').click(function() {
+      mmesetupui.hideEmailTosPage() ;
+    });
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** @class
+  Utility class containing methods and constants to make server calls
+  There's a "singleton" object mmesetupui.request and you can use the methods
+  in that instance to make the server calls.
+*/
+Setup.Request = $.Class.extend({
+  checkAppleIdAvailabilityUrl : "/setup/web/check_availability/",
+  checkMeEmailAvailabilityUrl : "/setup/web/check_availability/",
+  createAndRegisterAppleIdBaseUrl: "/setup/web/create_apple_id_and_account/",
+  registerWebBasic: "/setup/web/basic_auth_update_account",
+  registerWebToken: "/setup/web/token_auth_update_account",
+  activateMeEmailUrl: "/setup/web/activate_email",
+  emailTosUrl:"/setup/web/mailtos/",
+
+  /*
+    @method
+    @public
+    makes server call to check apple id availability
+    @param input {Object} hash returned by the validateForm method in mmesetupui closure.
+  */
+  activateMeEmail: function(input) {
+    $.log('enter activateMeEmail') ;
+    var dsPrsId;
+    Setup.showLoadingSpinner(true);
+    mmesetupui.setCanCallAvailability(false);
+    $.log("about to activate : " + input.data.meEmail);
+    $.ajax({
+      type: "POST",
+            timeout: mmesetupconstants.ajaxTimeout,
+      url: encodeURI(this.activateMeEmailUrl + "/" + input.data.meEmail),
+      data: {
+          meEmail: input.data.meEmail
+      },
+      beforeSend: function(xhr) {
+            xhr.setRequestHeader("X-Mme-Client-Info", mmesetupconstants.clientInfo);
+            xhr.setRequestHeader("Authorization", mmesetupconstants.authHeader);
+      },
+      success: function(data, textStatus, xhr) {
+        $.log('in activateMeEmail success') ;
+        var flag;
+          if (data.success) {
+            AppleAccountSetup.updateSucceeded();
+          }
+          else {
+              if (data.usernameErrorCode) {
+                  var validSuggestions = mmesetupui.filterInvalidEmails(data.suggestions);
+                  if(validSuggestions.length > 0) {
+                        mmesetupui.handleSuggestions(validSuggestions, input.data.meEmail);
+                        var emailField = $("#createEmailField");
+                        mmesetupui.showFieldError(emailField, mmejsloc.MeEmailAlreadyTaken);
+                  }
+                  else {
+                    // hide suggestions if visible
+                    mmesetupui.hideSuggestions();
+                    if (Setup.device === Setup.OTHER) {
+                        var emailField = $("#createEmailField");
+                        mmesetupui.showFieldError(emailField, mmejsloc.MeEmailAlreadyTaken);
+                    }
+                    else {
+                        if(! Setup.showEmailDomainInInputField()) {
+                            $("#createEmailField").val(input.data.meEmail.replace(mmesetupconstants.emailDomain, ""));
+                        }
+                        if(Setup.showExtraConfirmationSheet()) {
+                            flag = Setup.confirmWithCallback(data.message, mmejsloc.EmailFieldErrorTitle, null, mmejsloc.OK, null);
+                        }
+                    }
+                  }
+              } else if (data.passwordErrorCode) {
+                  if(Setup.showExtraConfirmationSheet()) {
+                    flag = Setup.confirmWithCallback(data.message, mmejsloc.PasswordFieldErrorTitle, null, mmejsloc.OK, mmesetupui.clearPasswordFields);
+                  }
+              }
+          }
+      },
+      error: function(xhr, textStatus, errorThrown) {
+          if(xhr.status == 401) {
+              AppleAccountSetup.cancel();
+          }
+          if(Setup.showExtraConfirmationSheet()) {
+            Setup.confirmWithCallback(mmejsloc.ProblemTurningOnMailHint, mmejsloc.ProblemTurningOnMailTitle, null, mmejsloc.OK,
+            function(index) {});
+          }
+          else {
+            mmesetupui.showFieldError($("#createEmailField"),mmejsloc.ServerErrorHint);
+          }
+          $.log("activate email error : " + errorThrown);
+      },
+      complete: function() {
+        Setup.showLoadingSpinner(false);
+        mmesetupui.setCanCallAvailability(true);
+      }
+    } // end ajax
+  );
+  },
+  /*
+    @method
+    @public
+    makes server call to check me email availability
+    @param input {Object} hash returned by the validateForm method in mmesetupui closure.
+  */
+  checkMeEmailAvailability: function(input) {
+    $.log('enter checkMeEmailAvailability') ;
+    Setup.showLoadingSpinner(true);
+    $.ajax({
+      type: "POST",
+            timeout: mmesetupconstants.ajaxTimeout,
+      url: encodeURI(this.checkMeEmailAvailabilityUrl + input.data.meEmail),
+      data: {
+          appleId: input.data.meEmail,
+          password: input.data.password,
+          firstName: input.data.firstName,
+          lastName: input.data.lastName
+      },
+      success: function(data, textStatus, xhr) {
+        $.log('in checkMeEmailAvailability success') ;
+        var flag;
+          if (data.success) {
+              mmesetupui.scrollPage(mmesetupui.getNEXT());
+          }
+          else {
+              if (data.usernameErrorCode) {
+                  var validSuggestions = mmesetupui.filterInvalidEmails(data.suggestions);
+                  if(validSuggestions.length > 0) {
+                    mmesetupui.handleSuggestions(validSuggestions, input.data.meEmail);
+                    var emailField = $("#createEmailField");
+                    mmesetupui.showFieldError(emailField, mmejsloc.MeEmailAlreadyTaken);
+                  }
+                  else {
+                    // hide suggestions if visible
+                    mmesetupui.hideSuggestions();
+                    if (Setup.device === Setup.OTHER) {
+                        var emailField = $("#createEmailField");
+                        mmesetupui.showFieldError(emailField, mmejsloc.MeEmailAlreadyTaken);
+                    }
+                    else {
+                        // put back the chosen apple id into the appropriate text field
+                        if(! Setup.showEmailDomainInInputField()) {
+                            $("#createEmailField").val(input.data.meEmail.replace(mmesetupconstants.emailDomain, ""));
+                        }
+                        flag = Setup.confirmWithCallback(data.message, mmejsloc.EmailFieldErrorTitle, null, mmejsloc.OK, null);
+                    }
+                  }
+              } else if (data.passwordErrorCode) {
+                  var message = data.message;
+                  var title = mmejsloc.PasswordFieldErrorTitle;
+
+                  if(data.passwordErrorCode == -21104) {
+                    title   = mmejsloc.DSError21104DialogTitle;
+                    message = mmejsloc.DSError21104DialogMessage;
+                  }
+
+                  flag = Setup.confirmWithCallback(message, title, null, mmejsloc.OK, mmesetupui.clearPasswordFields);
+              }
+          }
+      },
+      error: function(xhr, textStatus, errorThrown) {
+          Setup.confirmWithCallback(mmejsloc.ServerErrorHint, mmejsloc.ServerError, null, mmejsloc.OK,
+          function(index) {});
+          $.log("check me email availability error : " + errorThrown);
+      },
+      complete: function() {
+          Setup.showLoadingSpinner(false);
+          mmesetupui.setCanCallAvailability(true);
+      }
+    } // end ajax
+  );
+  },
+  checkAppleIdAvailability: function(input) {
+    $.log('enter checkAppleIdAvailability') ;
+    Setup.showLoadingSpinner(true);
+    $.ajax({
+      type: "POST",
+            timeout: mmesetupconstants.ajaxTimeout,
+      url: encodeURI(this.checkAppleIdAvailabilityUrl + input.data.appleId),
+      data: {
+          appleId: input.data.appleId,
+          password: input.data.password
+      },
+      success: function(data, textStatus, xhr) {
+        $.log('in checkAppleIdAvailability success') ;
+        var flag;
+          if (data.success) {
+              mmesetupui.scrollPage(mmesetupui.getNEXT());
+          }
+          else {
+              if (data.usernameErrorCode) {
+                  mmesetupui.showFieldError($("#emailField"),data.message);
+                  if(Setup.showExtraConfirmationSheet()) {
+                    flag = Setup.confirmWithCallback(data.message, mmejsloc.EmailFieldErrorTitle, null, mmejsloc.OK, null);
+                  }
+              } else if (data.passwordErrorCode) {
+                  var message = data.message;
+                  var title = mmejsloc.PasswordFieldErrorTitle;
+                  var inlineMessage = data.message;
+
+                  if(data.passwordErrorCode == -21104) {
+                    title   = mmejsloc.DSError21104DialogTitle;
+                    message = mmejsloc.DSError21104DialogMessage;
+                    inlineMessage = mmejsloc.DSError21104InlineError;
+                  }
+
+                  mmesetupui.showFieldError($("#passwordField"),inlineMessage);
+                  if(Setup.showExtraConfirmationSheet()) {
+                    flag = Setup.confirmWithCallback(message, title, null, mmejsloc.OK, mmesetupui.clearPasswordFields);
+                  }
+              }
+              else {
+                Setup.confirmWithCallback(mmejsloc.ServerErrorHint, mmejsloc.ServerError, null, mmejsloc.OK,
+                function(index) {});
+              }
+          }
+      },
+      error: function(xhr, textStatus, errorThrown) {
+          Setup.confirmWithCallback(mmejsloc.ServerErrorHint, mmejsloc.ServerError, null, mmejsloc.OK,
+          function(index) {});
+                $.log("check apple id availability error : " + errorThrown);
+      },
+      complete: function() {
+        Setup.showLoadingSpinner(false);
+        mmesetupui.setCanCallAvailability(true);
+      }
+    } // end ajax
+  );
+  },
+  /*
+    @method
+    @public
+    makes server call to get iCloud email suggestions
+  */
+  getICloudEmailSuggestions: function() {
+    $.log('enter getICloudEmailSuggestions');
+    Setup.showLoadingSpinner(true);
+    mmesetupui.setCanCallAvailability(false);
+    $.ajax({
+      type: "POST",
+      timeout: mmesetupconstants.ajaxTimeout,
+      url: encodeURI(this.activateMeEmailUrl + '/' + '_'), // intentionally fail server side email validation
+      data: {
+        meEmail: '_'
+      },
+      beforeSend: function(xhr) {
+        xhr.setRequestHeader("Authorization", mmesetupconstants.authHeader);
+      },
+      success: function(data, textStatus, xhr) {
+        $.log('in getICloudEmailSuggestions success');
+        var validSuggestions = mmesetupui.filterInvalidEmails(data.suggestions);
+        if(validSuggestions.length > 0) {
+          mmesetupui.handleSuggestions(validSuggestions);
+        }
+      },
+      error: function(xhr, textStatus, errorThrown) {
+        if(xhr.status == 401) {
+          AppleAccountSetup.cancel();
+        }
+        mmesetupui.showFieldError($('#createEmailField'),mmejsloc.ServerErrorHint);
+        $.log('get suggestions error : ' + errorThrown);
+      },
+      complete: function() {
+        Setup.showLoadingSpinner(false);
+        mmesetupui.setCanCallAvailability(true);
+      }
+    } // end ajax
+  );
+  },
+  
+  /*
+    @method
+    @private
+    Utility method used by createAndRegister method to do preflight tasks
+    prior to sending request to create apple id.
+    @param data {Object}  ??
+    @param appleId  {String}  appleId
+    @param password {String}  password
+  */
+  getEndpointInfo: function(data, appleId, password) {
+      var endpointInfo = {
+          url: "",
+          header: ""
+      };
+      // creating new apple id
+      if (!mmesetupconstants.authRequired) {
+          endpointInfo.url = this.createAndRegisterAppleIdBaseUrl + data.udid;
+          endpointInfo.header = "";
+      }
+      //Ts and Cs change and regular user validation fails
+      //so device only has dsprsid and authToken
+      else if (mmesetupconstants.updateMode) {
+          // strip out basic and go from there
+          var userId;
+          endpointInfo.header = mmesetupconstants.authHeader.substring(6);
+          var decoded = $.base64.decode(endpointInfo.header) ;
+          var a = decoded.split(":", 2);
+          userId = a[0] ;
+          if(isNaN(a[0]) || a[0] == mmesetupconstants.appleId) {
+            endpointInfo.url =  this.registerWebBasic + "/" + userId + "/" + data.udid;
+            endpointInfo.header = mmesetupconstants.authHeader;
+          }
+          else {
+            endpointInfo.url =  this.registerWebToken + "/" + userId + "/" + data.udid;
+            endpointInfo.header = mmesetupconstants.authHeader;
+          }
+      }
+      // user is registering account using existing appleid and password
+      // basic auth is required so that they can
+      // update profile information or accept new Ts and Cs
+      else {
+          endpointInfo.header = " Basic " + $.base64.encode(appleId + ":" + password);
+          endpointInfo.url = this.registerWebBasic + "/" + appleId + "/" + data.udid;
+      }
+      return endpointInfo;
+  },
+
+
+  /*
+    @boolean
+    @private
+    Reflects whether or not the createAndRegister request can be tried again.
+    
+    It’s possible to get an error back from the server because the NAS token is
+    out of date. When that happens we want to refresh the token and retry. However,
+    we only want to refresh the token and retry the request once. This property is
+    used to track whether the request has already been retried.
+  */
+  _createAndRegisterResent: false,
+
+
+  /*
+    @method
+    @public
+    Makes either register, or create and register calls to server
+    @param data {Object}  ??
+    @param appleId  {String}  appleId
+    @param password {String}  password
+  */
+  createAndRegister: function(data,appleId, password){   
+    // save arguments in case we need to retry this request
+    var fn_data = data;
+    var fn_appleId = appleId;
+    var fn_password = password;
+    
+    var endpointInfo = this.getEndpointInfo(data,password, appleId);
+    $.log("in register endpointInfo " + endpointInfo.url);
+    Setup.showLoadingSpinner(true);
+    
+    $.ajax(
+    {
+        type: "POST",
+        data: $.param(data),
+        timeout: mmesetupconstants.ajaxTimeout,
+        url: endpointInfo.url,
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader("Authorization", endpointInfo.header);
+            // means we are creating an apple id and account on this path
+            if(mmesetupconstants.nasQualify != null && mmesetupconstants.nasQualify.length > 0) {
+                xhr.setRequestHeader("X-Mme-Client-Info", mmesetupconstants.clientInfo);
+                xhr.setRequestHeader("X-Mme-Nas-Qualify", mmesetupconstants.nasQualify);
+            }
+            // if(endpointInfo.url.indexOf("basic_auth_update_account")!==-1 || endpointInfo.url.indexOf("token_auth_update_account")!==-1){
+//               xhr.setRequestHeader("x-Apple-Gcbd-Accept", window.gcbdNotNowClicked ? false: true)
+//             }
+        },
+        success: function(data, textStatus, xhr) {
+                $.log("register non debug mode");
+                // we get a bag back when it succeeds
+                // or sometimes we get back json when it succeeds
+                if(data.success)  {
+                    $.log("register non debug mode : could be success");
+                    if (mmesetupconstants.updateMode) {
+                      if(endpointInfo.url.indexOf("basic_auth_update_account")!==-1 || endpointInfo.url.indexOf("token_auth_update_account")!==-1){
+                        if(window.registerAccount){
+                          window.registerAccount=false
+                          $.log("success on register update mode");
+                          AppleAccountSetup.updateSucceeded();
+                          $.log("success on register exit update mode");
+                          Setup.showLoadingSpinner(false);
+                          if(mmesetupconstants.copyCookie) {
+                          	try{
+                                  window.InternetAccount.transferCookie("https://setup.icloud.com/setup/", "termsAccepted", function(){});
+                                } catch(e) {
+                              	  $.log("Unable to transfer cookie \"termsAccepted\"");
+                                }
+                          }
+                        }
+
+                      } else{
+                        $.log("success on register update mode");
+                        AppleAccountSetup.updateSucceeded();
+                        $.log("success on register exit update mode");
+                        Setup.showLoadingSpinner(false);
+                        if(mmesetupconstants.copyCookie) {
+                        	try{
+                                window.InternetAccount.transferCookie("https://setup.icloud.com/setup/", "termsAccepted", function(){});
+                              } catch(e) {
+                            	  $.log("Unable to transfer cookie \"termsAccepted\"");
+                              }
+                        }
+                      }
+                      
+                        
+                    }
+                    else {
+                        $.log("success on register create mode");
+                        var emailId;
+                        // we need to send the final register call
+                        // based on whether we are creating a free appleid
+                        // using an existing email address or using a me.com
+                        // email address
+                        if (mmesetupui.validator.isAppleIdRequired === true) {
+                            emailId = $('#emailField').val();
+                        } else {
+                            // check if suggestions are visible and if so
+                            // pick up the appropriate apple id from it
+                            emailId = $('#createEmailField').val();
+                            if (emailId.indexOf(mmesetupconstants.emailDomain)<1) {
+                                emailId += mmesetupconstants.emailDomain;
+                            }
+                        }
+                        if(data.vettingFailed) {
+                            Setup.showLoadingSpinner(false);
+                            $.log("success on register but vetting failed");
+                            Setup.showErrorPage(mmejsloc.VettingMessageTitle, mmejsloc.VettingMessageNonVettable, "mmesetupui.cancelFlow()", function(index) { AppleAccountSetup.cancel()});
+                        }
+                        else {
+                            AppleAccountSetup.register(emailId, password);
+                            $.log("success on register exit create mode");
+                        }
+                    }
+                }
+                else {
+                    $.log("register non debug mode : could be failure");
+                   if (mmesetupconstants.updateMode) {
+                            Setup.showLoadingSpinner(false);
+                            $.log("register non debug mode : failed in update mode");
+                            Setup.confirmWithCallback(mmejsloc.CouldntActivateExistingMMEHint, mmejsloc.CouldntActivateMMETitle, null, mmejsloc.OK, function(){
+                              AppleAccountSetup.cancel();
+                            });
+                   }
+                   else {
+                      $.log("register non debug mode : failed in create mode");
+                      if(data.dsError !== undefined && data.dsError || data.DsPrsId < 0) {
+                        // can we retry the request?
+                        if(!mmesetupui.request._createRequestAlreadyResent && InternetAccount.getNASToken) {
+                          InternetAccount.getNASToken(function(updatedToken){ // update absinthe token
+                            mmesetupconstants.nasQualify = updatedToken;
+
+                            // retry request once token is updated
+                            mmesetupui.request._createRequestAlreadyResent = true;
+                            mmesetupui.request.createAndRegister(fn_data, fn_appleId, fn_password);
+                          });
+                        }
+                        // we cannot retry the request
+                        else {
+                          Setup.showLoadingSpinner(false);
+                          $.log("register non debug mode : failed in create mode with ds error");
+                          Setup.confirmWithCallback(mmejsloc.CouldntCreateAccountHint, mmejsloc.CouldntCreateAccountTitle, null, mmejsloc.OK, function(){
+                            AppleAccountSetup.cancel();
+                          });
+                          if (Setup.device !== Setup.OTHER) {
+                            $.log("calling prev page after ds error.");
+                            mmesetupui.prevPage();
+                          }
+                        }
+                      }
+                      else {
+                        Setup.showLoadingSpinner(false);
+                        $.log("register non debug mode : failed in create mode with setup error");
+                        Setup.confirmWithCallback(mmejsloc.CouldntActivateNewMMEHint, mmejsloc.CouldntActivateMMETitle, null, mmejsloc.OK, function(index) {
+                            AppleAccountSetup.cancel();
+                        });
+                        mmesetupconstants.authRequired = true;
+                        if (Setup.device !== Setup.OTHER) {
+                          mmesetupui.prevPage();
+                        }
+                      }
+                   }
+                }
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            Setup.showLoadingSpinner(false);
+            var obj = jQuery.parseJSON(xhr.responseText);
+            $.log("error in register : updateMode " + mmesetupconstants.updateMode);
+            Setup.confirmWithCallback(mmejsloc.ServerErrorHint, mmejsloc.SorryError, null, mmejsloc.OK,
+            function(index) {AppleAccountSetup.cancel(); });
+        }
+    }
+    );
+
+  },
+  /*
+    @method
+    @public
+    makes server call to send the terms and conditions to the supplied email id.
+    @param appleID {String} email id to send the terms and services to.
+  */
+  emailTos: function(emailId, countryId){
+    $.ajax(
+        {
+            type: "POST",
+            url: encodeURI(this.emailTosUrl + emailId),
+            data: {
+                appleId: emailId,
+                countryCode: countryId
+            },
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader("X-Mme-Client-Info", mmesetupconstants.clientInfo);
+            },
+            success: function(data, textStatus, xhr) {
+                mmesetupui.setEmailInFlight(false);
+                if(mmesetupui.getCurrentPage() === mmesetupui.getT_AND_C_PAGE()) {
+                    var flag = Setup.confirmWithCallback(mmejsloc.TOSEmailSentMessage, mmejsloc.TOS, null, mmejsloc.OK, function(index) {});
+                    mmesetupui.hideEmailTosPage();
+                }
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                mmesetupui.setEmailInFlight(false);
+                Setup.confirmWithCallback(mmejsloc.TOSEmailErrorMessage, mmejsloc.TOS, null, mmejsloc.OK,
+                function(index) {});
+            },
+            complete:function()  {
+              Setup.showLoadingSpinner(false);
+            }
+        }
+    );
+
+  }
+}) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  @class
+  Class to deal with layout and navigation of terms and service.
+
+
+*/
+ Setup.TOS = $.Class.extend({
+  pageBreaks : [] ,
+  approxCharsToBreakOn : parseInt("1500", 10) ,
+  totalPageCount : null ,
+  completeTerms : null ,
+  currentOrientation : 0, // 0: portrait 1: landscape used in iPad only
+  currentPageTOS: 1,
+
+  init: function(){
+    
+    //this.addPrivacyBtn();
+    this.setupPagination() ;
+    document.onscroll= this.snapBack;
+    document.ontouchend= this.snapBack;
+
+  },
+  // addPrivacyBtn: function() {
+  //   console.log("adding privacy btn ", $("footer"));
+  //   var privacyBtnHtml = "<input type='button' id='privacyBtn' value = 'Apple Id and Privacy'>";
+  //   $("footer").prepend(privacyBtnHtml);
+  // },
+
+  setupPagination: function(){
+    if (vettingFailed) {
+         Setup.confirmWithCallback(mmejsloc.VettingMessageNonVettable, mmejsloc.VettingMessageTitle, null, mmejsloc.OK, function(index) {
+             AppleAccountSetup.cancel();
+         });
+         $('#termsPreamble').children().filter(':gt(2)').hide();
+         $('#content_4').children().filter(':gt(0)').hide();
+         return;
+    }
+    if (mmesetupconstants.isAccountMigrated) {
+         Setup.confirmWithCallback(mmejsloc.MobileMeMigratedMessage, mmejsloc.MobileMeMigratedTitle, null, mmejsloc.OK, function(index) {
+             AppleAccountSetup.cancel();
+         });
+         $('#termsPreamble').children().filter(':gt(2)').hide();
+         $('#content_4').children().filter(':gt(0)').hide();
+         return;
+    }
+    this.completeTerms = document.getElementById('completeTerms').innerHTML;
+
+    var atEnd = false;
+    var currentIndex = 1;
+    var hasPageBreaks = (this.completeTerms.indexOf('<br>', endIndexGuess) > -1) ;
+
+    while (!atEnd) {
+        var startIndex = (currentIndex == 1) ? 0: this.pageBreaks[currentIndex - 1].end;
+        var endIndexGuess = Math.min(startIndex + this.approxCharsToBreakOn, this.completeTerms.length);
+        var endIndex;
+        if(hasPageBreaks)
+            endIndex = this.completeTerms.indexOf('<br>', endIndexGuess);
+        else
+            endIndex = endIndexGuess + 1500;
+
+        atEnd = endIndex == -1;
+
+        var pageEnd = atEnd ? endIndexGuess: endIndex;
+        if ((this.completeTerms.length - pageEnd) < 150) {
+          atEnd = true;
+          pageEnd = this.completeTerms.length;
+        }
+
+        this.pageBreaks[currentIndex++] = {
+            start: startIndex,
+            end: pageEnd
+        };
+        // display the first page as soon as we have it
+        if (startIndex === 0) {
+            this.totalPageCount = 2;
+            this.displayPage(1);
+        }
+    }
+    this.totalPageCount = this.pageBreaks.length - 1;
+    document.getElementById('pageCountBottom').innerHTML = this.totalPageCount;
+    document.getElementById('backTOS').innerHTML = mmejsloc.Disagree;
+    document.getElementById('agreeTOS').innerHTML = mmejsloc.Agree;
+    if(window.innerHeight/window.innerWidth > 1004/768) this.currentOrientation = 1;
+
+    //  Move buttons up to work around the bug where the keyboard stays up on T&Cs page and the buttons are hidden behind it.
+    if($("#seedTosContent").size() > 0) {
+        var bottomButtonOffset =  $('body').hasClass('ipad')? 150 :50 ;
+        $("#currentTermsPage").css("min-height", window.innerHeight - bottomButtonOffset);
+    }
+
+  },
+
+  prevPageTOS: function() {
+      if (this.currentPageTOS > 1) this.displayPage(--this.currentPageTOS);
+  },
+
+  nextPageTOS: function() {
+      if (this.currentPageTOS < this.totalPageCount) this.displayPage(++this.currentPageTOS);
+  },
+
+  displayPage: function(pageNumber) {
+      document.getElementById('pageNumberTop').innerHTML = mmejsloc.TOSPageNumberTop.replace("@@Number@@", pageNumber);
+      document.getElementById('pageNumberBottom').innerHTML = pageNumber;
+
+      if($("#seedTosContent").size() == 0) {
+        document.getElementById('currentTermsPage').innerHTML = this.completeTerms.substring(this.pageBreaks[pageNumber].start, this.pageBreaks[pageNumber].end);
+      }
+
+      if (pageNumber === 1) {
+          document.getElementById('termsPreamble').removeAttribute("style");
+          document.getElementById('topCounter').setAttribute("style", "display:none");
+      }
+      if (pageNumber === 2) {
+          document.getElementById('termsPreamble').setAttribute("style", "display:none");
+          document.getElementById('topCounter').removeAttribute("style");
+      }
+      
+      this.updateButtonState(pageNumber);
+      window.scrollTo(0, 0);
+  },
+
+  updateButtonState : function(pageNumber) {
+      var previous = document.getElementById('previousTOS'),
+      next = document.getElementById('nextTOS'),
+      prevClass = "button previousTOS" + ((pageNumber > 1) ? '': ' disabled'),
+      nextClass = "button nextTOS" + ((pageNumber < this.totalPageCount) ? '': ' disabled');
+
+      if (previous.className !== prevClass) previous.className = prevClass;
+      if (next.className !== nextClass) next.className = nextClass;
+
+      // update the aria-disabled state at the same time as the class name
+      previous.setAttribute('aria-disabled', (previous.className.indexOf('disabled') !=-1 ? 'true' : 'false'));
+      next.setAttribute('aria-disabled', (next.className.indexOf('disabled') !=-1 ? 'true' : 'false'));
+
+  },
+
+  snapBack: function() {
+    if ( navigator.userAgent.indexOf('iPad')> -1 && !mmesetupconstants.updateMode && $('body').hasClass('ios_4_2')) {
+      var needSnapBack = false;
+      var keyboardHeight;
+      var contentHeight = $('#content_'+mmesetupui.getCurrentPage())[0].getBoundingClientRect().height;
+      if ( mmesetupui.getCurrentPage()==1 ) {
+        keyboardHeight = this.currentOrientation == 1 ? 163 : 460;
+        needSnapBack = true;
+      } else if ( mmesetupui.getCurrentPage()==2 ) {
+        if($('#page_5')[0].getBoundingClientRect().height>0) {
+          contentHeight = $('#page_5')[0].getBoundingClientRect().height;
+          keyboardHeight = this.currentOrientation == 1 ? 150 : 337;
+        } else {
+          keyboardHeight = this.currentOrientation == 1 ? 204 : 398;
+        }
+        needSnapBack = true;
+      } else if ( mmesetupui.getCurrentPage()==3 && mmesetupui.getKeyboardOn()) {
+        keyboardHeight = this.currentOrientation == 1 ? 308 : 460;
+        needSnapBack = true;
+      }
+      if(needSnapBack && $('body').scrollTop()>contentHeight-keyboardHeight) {
+          window.scrollTo(0, contentHeight-keyboardHeight);
+      }
+    }
+    return true;
+  }
+}) ;
+
+
+/*
+  $ utility to livevalidate
+  @params options {Object} options hash
+*/
+$.fn.liveValidate = function(options) {
+    var validations = options["validations"] || [];
+    var validationsError = options["validationsError"] || null;
+
+    var elem = $(this);
+    var dfltValue = options["dfltValue"] || "";
+    var type = options["dataType"];
+    function blurCurrent() {}
+    function onFocus() {
+      if(Setup.device === Setup.IPHONE && elem.is('select')){
+        if (elem.hasClass("defaulted")){
+          elem.removeClass("defaulted");
+        }
+      }
+
+      mmesetupui.setCurrentFocusedElement(elem);
+    }
+
+    function onBlur() {
+        var currentValue = elem.val();
+        var errorMsg;
+        var errorTitle = mmejsloc.MissingRequiredFields;
+        var numFailures = 0;
+        // validations: { method: "confirmation", errorMsg: "Passwords do not match" }
+        for (var i = 0; i < validations.length; ++i) {
+            var validation = validations[i];
+            var valid = validationMethods[validation.method](validation, currentValue);
+            if (!valid)  {
+                if (numFailures == 0) {
+                    errorMsg = validation.errorMsg;
+                    errorTitle = validation.errorTitle || mmejsloc.MissingRequiredFields;
+                }
+                if (numFailures == 0 || validation.countForMultiple == undefined || validation.countForMultiple) {
+                    numFailures++;
+                }
+                break;
+            }
+        }
+
+        if (numFailures == 0) {
+            //Valid input, remove hint
+            elem.siblings('.hint').css({ opacity: 0 });
+            elem.removeClass("defaulted");
+         }
+
+        var data = {
+            valid: numFailures == 0,
+            errorMsg: errorMsg,
+            errorTitle:errorTitle
+        };
+        elem.data("_validation", data);
+        $.log("validation for " + elem.attr("id") + ": " + data.valid + " ( title=" + data.errorTitle + " : msg=" + data.errorMsg + ")");
+        mmesetupui.validateField(elem, data);
+    }
+
+    this.focus(onFocus).blur(onBlur);
+
+    return this;
+} ;
+
+/*
+  $ utility to validate a security question field.
+
+  @params options {Object} validations hash
+*/
+$.fn.bindValidatorsForSecurityPage = function(options) {
+  var elem        = $(this),
+      isInput     = elem.is('input'),
+      isSelect    = elem.is('select'),
+      isLabel     = elem.is('label'),
+      validations = options["validations"] || [],
+      position    = options["position"] || null,
+      selector    = isInput ? $("#securityQuestionSelector"+position) : elem,
+      inputField  = isSelect ? $("#securityAnswerField"+position) : elem;
+
+  function onFocus() {
+    mmesetupui.setCurrentFocusedElement(elem);
+  };
+
+  // Function to prevent leading space characters on keydown
+  function preventLeadingSpaces(evt) {
+    if (evt.keyCode === 32 && evt.target.selectionStart === 0) {
+      evt.preventDefault();
+    }
+  };
+
+  // This function is attached to keyup, blur, change events performed on answer field
+  function validateForErrors(evt) {
+    var currentValue  = elem.val(),
+        eventType     = evt.type,
+        errorTitle    = mmejsloc.MissingRequiredFields,
+        errorMsg, validationRule, isValid, currentValidationMethod;
+
+    for (var i = 0; i < validations.length; ++i) {
+      validationRule = validations[i];
+      currentValidationMethod = validationRule.method;
+      isValid = validationMethods[currentValidationMethod](validationRule, currentValue, position);
+      if (!isValid)  {
+        errorMsg    = validationRule.errorMsg;
+        errorTitle  = validationRule.errorTitle || mmejsloc.MissingRequiredFields;
+        break;
+      }
+    }
+
+    // Do not consider error case for 'validateSecurityQuestionIsChosen' if it
+    // happens on keyup of input elemet. It should just be handled on blur.
+    if (currentValidationMethod == "validateSecurityQuestionIsChosen" && eventType == "keyup") {
+      isValid = true;
+    }
+
+    // HACK: This check should be in validateAnswerMinLength function
+    // Ignore min length validations on tab
+    if (currentValidationMethod == "validateAnswerMinLength" && eventType == "keyup" && evt.which == 9 && isInput) {
+      isValid = true;
+    }
+
+    var data = {
+      valid       : isValid,
+      errorMsg    : errorMsg,
+      errorTitle  : errorTitle
+    };
+    elem.data("_validation", data);
+    mmesetupui.validateField(elem, data);
+
+    if (!isValid) {
+      if (isInput) {
+        // "choose security question" type error should always come below the selector
+        if (currentValidationMethod == "validateSecurityQuestionIsChosen") {
+          if (eventType == "blur" || eventType == "change") {
+            mmesetupui.showFieldError(selector, data.errorMsg);
+          }
+        } else {
+          mmesetupui.showFieldError(inputField, data.errorMsg);
+        }
+      }
+      else if (isSelect) {
+        // "validateSecurityQuestionDoesNotMatchAnswer" type error should always come below the input field
+        if (currentValidationMethod == "validateSecurityQuestionDoesNotMatchAnswer") {
+          mmesetupui.showFieldError(inputField, data.errorMsg);
+        } else {
+          mmesetupui.showFieldError(selector, data.errorMsg);
+        }
+      }
+
+    } else {
+      selector.hideErrorDetails();
+      inputField.hideErrorDetails();
+    }
+    return isValid;
+  };
+
+  // custom event to show question list
+  function showQuestionList(evt) {
+    mmesetupui.showQuestionList(position);
+  }
+
+  if (isInput) {
+    this.keydown(preventLeadingSpaces);
+  }
+  else if (isSelect) {
+    this.change(validateForErrors);
+  } else if (isLabel) {
+    this.click(showQuestionList);
+  }
+  this.focus(onFocus).bind("performValidation", validateForErrors);
+
+  return this;
+};
+
+/*
+  $ utility - Removes error display attached to the element on which this is called.
+*/
+$.fn.hideErrorDetails = function() {
+  var elem = $(this);
+  elem.removeClass("LV_INVALID");
+  elem.attr('aria-invalid','false');
+  elem.parents('.row').children('div.error').remove();
+  elem.parents('.row').removeClass("LV_INVALID");
+
+  return this;
+};
+
+/*
+
+  $ utility
+*/
+$.fn.disableLiveValidate = function(options) {
+    this.unbind('focus');
+    this.unbind('blur');
+} ;
+
+/*
+  $ utility for logging.
+*/
+
+$.serverLog = function(text) {
+        $.ajax({
+          type: "POST",
+          url: "/setup/testing/log",
+          data: {
+            line: text
+          },
+          success: function(){
+            var log = $("#log");
+            log.html(log.html() + "succesful server log : <br>");
+          }
+        });
+};
+
+$.log = function(text) {
+    if(undefined !== AppleAccountSetup.log) {
+        AppleAccountSetup.log(text);
+    }
+
+    if (undefined !== console && undefined !== console.log && !mmesetupconstants.isDebugLogEnabled) {
+        console.log(text);
+    } else {
+        var log = $("#log");
+        log.html(log.html() + "<br>" + text);
+    }
+};
+
+/*
+  @closure -
+
+  TODO: make this a class and make it sing!
+*/
+mmesetupui = function() {
+
+    var BACK = 0;
+    var NEXT = 1;
+    var canCallAvailability = true;
+    var emailInFlight  = false;
+    var currentPage = 0;
+    var U13_PAGE = 0;
+    var DATE_PAGE = 1;
+    var FORM_PAGE = 2;
+    var THREE_SECURITY_QUESTIONS_PAGE = 3;
+    var THREE_SECURITY_QUESTIONS_IPAD = 30;
+    var SECURITY_QUESTION_IPHONE_1 = 31;
+    var SECURITY_QUESTION_IPHONE_2 = 32;
+    var SECURITY_QUESTION_IPHONE_3 = 33;
+    var SECURITY_QUESTION_RESCUE_EMAIL_PAGE = 34;
+    var T_AND_C_PAGE = 4;
+    var LAST_PAGE = 5;
+    var QUESTION_PAGE = 6;
+    var CREATE_EMAIL_PAGE = 7;
+    var ERROR_PAGE = 8;
+    var TOS_EMAIL_PAGE = 9;
+    var data;
+    var m_deviceInfo;
+    var currentFocusedElement;
+    var dsAccountCreated = false;
+    var PREV_PAGE_METHOD = "mmesetupui.prevPage()";
+    var NEXT_PAGE_METHOD = "mmesetupui.nextPage()";
+    var CANCEL_METHOD = "mmesetupui.cancelFlow()";
+    var keyboardOn = false;
+
+    var navBarTitles, navBarLeftLabels, navBarLeftCallbacks, navBarRightLabels, navBarRightCallbacks;
+    /**
+      iPhone/iTouch have two additional intermediate pages for security questions
+
+      1 - CountryAndBirthSubpage
+      2 - AccountFormSubpage
+      3 - Security Question One     (all questions in one page for iPads)
+      4 - Security Question Two     (only for iPhone/iTouch)
+      5 - Security Question Three   (only for iPhone/iTouch)
+      6 - Recovery Email
+      7 - TOSSubpage
+      8 - ThankYouSubpage
+    */
+    if (Setup.device === Setup.IPHONE) {
+      navBarTitles          = [mmejsloc.NewAcct, mmejsloc.NewAcct, mmejsloc.Question1of3, mmejsloc.Question2of3, mmejsloc.Question3of3, mmejsloc.RecoveryEmailLabel, mmejsloc.ICloudTerms, mmejsloc.CreatingAppleID];
+      navBarLeftLabels      = [mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel];
+      navBarLeftCallbacks   = [CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD];
+      navBarRightLabels     = [mmejsloc.Next, mmejsloc.Next, mmejsloc.Next, mmejsloc.Next, mmejsloc.Next, mmejsloc.Next, null, null];
+      navBarRightCallbacks  = [NEXT_PAGE_METHOD, NEXT_PAGE_METHOD, NEXT_PAGE_METHOD, NEXT_PAGE_METHOD, NEXT_PAGE_METHOD, NEXT_PAGE_METHOD, null, null];
+    } else {
+      navBarTitles          = [mmejsloc.NewAcct, mmejsloc.NewAcct, mmejsloc.SecurityQuestionsLabel, mmejsloc.RecoveryEmailLabel, mmejsloc.ICloudTerms, mmejsloc.CreatingAppleID];
+      navBarLeftLabels      = [mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel, mmejsloc.Cancel];
+      navBarLeftCallbacks   = [CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD, CANCEL_METHOD];
+      navBarRightLabels     = [mmejsloc.Next, mmejsloc.Next, mmejsloc.Next, mmejsloc.Next, null, null];
+      navBarRightCallbacks  = [NEXT_PAGE_METHOD, NEXT_PAGE_METHOD, NEXT_PAGE_METHOD, NEXT_PAGE_METHOD, null, null];
+    }
+
+    var scrollPosB4QuestionPane;
+    var previousQuestion;
+
+    // password and appleid
+    var m_password;
+    var m_appleId;
+
+    var validElements = { };
+
+    var validatableElements = [];
+
+    var filledOutElements = { };
+
+    // The name of the input fields get replaced with these values.  ID : "value for name field";
+    var fieldToParamMapper = {
+        emailField: "appleId",
+        firstNameField: "firstName",
+        lastNameField: "lastName",
+        passwordField: "password",
+        countrySelector: "country",
+        securityQuestionSelector1: "securityQuestionSelector1",
+        securityQuestionSelector2: "securityQuestionSelector2",
+        securityQuestionSelector3: "securityQuestionSelector3",
+        securityAnswerField1: "securityAnswerField1",
+        securityAnswerField2: "securityAnswerField2",
+        securityAnswerField3: "securityAnswerField3",
+        createEmailField: "meEmail",
+        emailUpdatesCheckbox: "emailUpdates",
+        recoveryEmailAddress: "recovery-email"
+    };
+
+
+    var validatePage = function() {
+        var valid = true;
+        var errorMsg = "";
+        var errorTitle=mmejsloc.MissingRequiredFields;
+
+       var firstInvalidElement;
+        for (var i in validatableElements) {
+            var elem = $('#' + validatableElements[i]);
+            elem.blur();        //  Ensure that we validate
+            var validation = elem.data('_validation');
+            
+            var shouldHideError = function() {
+              var ret = true;
+              // The create email field isn’t validated the same way as the rest of the form
+              if ((elem.is('#createEmailField') && !$('#createEmailField .error').length > 0)) {
+                ret = false;
+              }
+              // First and last name fields share errors.
+              else if ((elem.is('#lastNameField') && $('#firstNameField').hasClass('LV_INVALID'))) {
+                ret = false;
+              }
+              return ret;
+            }
+            
+            if(validation.valid && shouldHideError()) {
+              mmesetupui.hideFieldError(elem);
+            }
+
+            if (!validation || !validation.valid) {
+                if (valid) {
+                    errorMsg = validation ? validation.errorMsg : "error"; valid = false;
+                    errorTitle = validation ? validation.errorTitle : "error";
+                } else {
+                    errorTitle = mmejsloc.InvalidInformation;
+                    errorMsg = mmejsloc.CorrectFieldsToComplete;
+                }
+
+                // Don't show errors on the verify password field unless their passsword passes inspection
+                if (!elem.is('#verifyPasswordField') || !$('#passwordField').parents('.row').hasClass('LV_INVALID')) {
+                  mmesetupui.showFieldError(elem, validation.errorMsg);
+                }
+                
+                // Don't make the user delete the verify password field if their password didn't pass inspection
+                if ($('#passwordField').parents('.row').hasClass('LV_INVALID')) {
+                  $('#verifyPasswordField').val('');
+                }
+
+                if(!firstInvalidElement) {
+                  firstInvalidElement = elem ;
+                }
+            }
+        }
+        if (firstInvalidElement)  {
+          var padding =  $('body').hasClass('ipad')? 30 :20 ;
+          var offsetTop = firstInvalidElement[0].offsetTop;
+          // Note: we are special casing here because the questionField is hidden- don't tell anyone
+          if(firstInvalidElement.attr('id') === 'questionSelector'){
+            offsetTop = $('#answerField')[0].offsetTop;
+          }
+          $('body').scrollTop(offsetTop - padding) ;
+
+          //attempt to setfocus as well. works only on the ipad.
+          // firstInvalidElement.focus() ;
+        }
+        //Resize window because error messages change the form height.
+        Setup.windowResize() ;
+        return { valid: valid, errorMsg: errorMsg , errorTitle : errorTitle};
+    } ;
+
+    /**
+      Runs through all the validatableElements on three security question page.
+      If only one error: Returns validation object of that error field
+      If more than one errors: Retuns validation object with message of multiple errors.
+    */
+    var validateThreeSecurityPage = function() {
+      var errroCount  = 0,
+          valid       = true,
+          idx, elem, elemValidation, errorTitle, errorMsg, hasInvalidData;
+
+      for (idx in validatableElements) {
+        elem = $('#' + validatableElements[idx]);
+        if (elem.is('input') || elem.is('label')) {
+          elem.trigger('performValidation');
+        } else {
+          elem.change();
+        }
+        hasInvalidData  = !!elem.parents('.row.LV_INVALID').length;
+        elemValidation = elem.data('_validation');
+        if (elemValidation && hasInvalidData) {
+          ++errroCount;
+          valid       = false;
+          errorTitle  = elemValidation.errorTitle;
+          errorMsg    = elemValidation.errorMsg;
+        }
+      }
+
+      if (errroCount>1) {
+        errorTitle  = mmejsloc.InvalidInformation;
+        errorMsg    = mmejsloc.CorrectFieldsToComplete;
+      }
+      return { valid: valid, errorTitle: errorTitle, errorMsg: errorMsg };
+    };
+
+    var validateForm = function() {
+        var data = {};
+        var extraData = {} ;
+        var valid = true;
+
+        for (var element in validElements) {
+            var paramName = fieldToParamMapper[element];
+            $.log("validateForm : " + paramName + " : " + element);
+            if (paramName) {
+                data[paramName] = $("#" + element).val();
+            }
+            else {
+                extraData[element] = $("#" + element).val();
+            }
+            if (! validElements[element]) {
+                valid = false;
+            }
+        }
+
+        // populate params for server
+        // birth day is only for auth purposes
+        data["birthday"] = extraData["yearSelector"] + "/" + extraData["monthSelector"] + "/" + extraData["daySelector"];
+        //if (data["meEmail"] !== undefined && data["meEmail"].length > 0) {
+        //    data["meEmail"] = data["meEmail"] + mmesetupconstants.emailDomain;
+        //}
+
+        if (mmesetupui.isCreateMeEmailMode()) {
+            // in case an email value without the domain appended managed to slip through,
+            // also needed in the prefpane case
+            if (data["meEmail"].indexOf(mmesetupconstants.emailDomain) < 0)
+              data["meEmail"] = data["meEmail"] + mmesetupconstants.emailDomain;
+        }
+        else {
+            data["meEmail"] = "";
+        }
+
+
+         $.log("validateForm: " + valid);
+         return {
+            success: valid,
+            data: data
+         };
+    } ;
+
+    /*
+      @params isMe {Boolean} true if checking for me.com email
+                             false if checking for appleid
+    */
+    var checkAvailability = function(isMe) {
+      var result = validateForm();
+
+      if (result.success) {
+        if (canCallAvailability) {
+          canCallAvailability = false;
+          if (isMe) {
+            mmesetupui.request.checkMeEmailAvailability(result) ;
+          } else {
+            mmesetupui.request.checkAppleIdAvailability(result) ;
+          }
+
+        }
+        else {
+          // we are still doing checkAvailability
+          $.log("ignore next button click cause we are still checking availability.");
+        }
+      } else {
+        Setup.confirmWithCallback(mmejsloc.MissingHint, mmejsloc.MissingRequiredFields, null, mmejsloc.OK, function(index) {});
+      }
+    };
+
+    var activateMeEmail = function() {
+      var result = validateForm();
+
+      if (result.success) {
+        if (canCallAvailability) {
+          canCallAvailability = false;
+          mmesetupui.request.activateMeEmail(result) ;
+        }
+        else {
+          // we are still doing checkAvailability
+          $.log("ignore next button click cause we are still checking availability.");
+        }
+      } else {
+        Setup.confirmWithCallback(mmejsloc.MissingHint, mmejsloc.MissingRequiredFields, null, mmejsloc.OK, function(index) {});
+      }
+    };
+
+    var register = function() {
+        $.log("in register updateMode 1 " + mmesetupconstants.updateMode);
+
+        var result = true;
+        // accepted t's and c's
+        // save the appleId and password to
+        // pass onto the native ui
+        var data = {
+            "udid": m_deviceInfo.udid,
+            "aps-token": m_deviceInfo.apsToken,
+            "mobileme-setup-token": m_deviceInfo.setupToken,
+            "tos-version": m_deviceInfo.tosVersion,
+            "language": m_deviceInfo.language,
+            "timezone": m_deviceInfo.timezone,
+            "certQualify": m_deviceInfo.certQualify,
+            "certId": m_deviceInfo.certId,
+            "emailUpdates": $("#emailUpdatesCheckbox").attr("checked")
+        };
+        
+        if(m_deviceInfo["parentalConsent-version"] && m_deviceInfo["parentalConsent-version"]!== ""){
+          data["parentalConsent-version"] = m_deviceInfo["parentalConsent-version"];
+        }
+        
+        $.log("in register updateMode " + mmesetupconstants.updateMode);
+
+        if (!mmesetupconstants.updateMode) {
+            result = validateForm();
+            $.log("in register success " + result.success);
+
+            if (result.success) {
+
+                // copy over all values to the
+                // body to be posted to the server
+                // to create the ds account
+                for (var param in result.data) {
+                    data[param] = result.data[param] ;
+                }
+            }
+            else {
+                // show error
+                // validate form and go back to
+                // previous page
+                Setup.confirmWithCallback(mmejsloc.NewAcctErrorHint, mmejsloc.NewAcctError, null, mmejsloc.OK,
+                function(index) {});
+                mmesetupui.scrollPage(mmesetupui.getBACK());
+            }
+            m_password = result.data.password;
+            m_appleId = result.data.appleId;
+        }
+        $.log('calling create and register..') ;
+        mmesetupui.request.createAndRegister(data,m_appleId, m_password) ;
+    } ;
+
+    var nextEnabled = 2;
+
+    var renderNavigationBar = function() {
+        mmesetupui.renderValidNavigationBar(validateForm().success);
+    } ;
+
+	var showStartupErrors = function() {
+	    var flag;
+        if (mmesetupconstants.internalServerError) {
+	        flag = Setup.confirmWithCallback(mmejsloc.ErrorTryAgain, mmejsloc.CouldntCreateAccountTitle, null, mmejsloc.OK,
+	        function(index) {
+	            AppleAccountSetup.cancel();
+	        }
+	        );
+	        return;
+	    }
+	    else if (!mmesetupconstants.deviceQualified) {
+	        flag = Setup.confirmWithCallback(mmejsloc.UnsupportedHint, mmejsloc.DeviceUnsupported, null, mmejsloc.OK,
+	        function(index) {
+	            if (index === 0) {
+	                AppleAccountSetup.cancel();
+	            }
+	            else {
+	                AppleAccountSetup.cancel();
+	            }
+	        }
+	        );
+	        return;
+	    }
+        else if (mmesetupconstants.hasTooManyBurns) {
+            $.log("support.deviceId:" + mmesetupconstants.deviceId);
+            flag = Setup.confirmWithCallback(mmejsloc.DeviceTooManyBurnsHint, mmejsloc.DeviceTooManyBurns, null, mmejsloc.OK,
+            function(index) {
+                if (index === 0) {
+                    AppleAccountSetup.cancel();
+                }
+                else {
+                    AppleAccountSetup.cancel();
+                }
+            }
+            );
+            return;
+        }
+        else if (mmesetupconstants.appleIdCreationDisabled) {
+            flag = Setup.confirmWithCallback(mmejsloc.AppleIdCreationDisabledHint, mmejsloc.AppleIdCreationDisabled, null, mmejsloc.OK,
+            function(index) {
+                if (index === 0) {
+                    AppleAccountSetup.cancel();
+                }
+                else {
+                    AppleAccountSetup.cancel();
+                }
+            }
+            );
+            return;
+        }
+	    else if (!mmesetupconstants.isAllowedPersonType) {
+	        flag = Setup.confirmWithCallback(mmejsloc.PersonTypeErrorHint, mmejsloc.PersonTypeErrorTitle, null, mmejsloc.OK,
+	        function(index) {
+	            if (index === 0) {
+	                AppleAccountSetup.cancel();
+	            }
+	            else {
+	                AppleAccountSetup.cancel();
+	            }
+	        }
+	        );
+	        return;
+	    }
+        else if (mmesetupconstants.mailboxAlreadyProvisioned) {
+            AppleAccountSetup.updateSucceeded();
+	        return;
+        }
+        else if(mmesetupconstants.iCloudDotComMailWarning) {
+            var iconElement = $('.confirm-sheet .view .icon');
+            iconElement.addClass('icloud');
+            if(mmesetupconstants.isOSX108OrNewer) {
+                flag = Setup.confirmWithCallback(mmejsloc.OSXUpdateString, mmejsloc.OSXUpdateTitle, mmejsloc.OpenAppStore, mmejsloc.NotNow,
+                    function(index) {
+                        if (index === 0) {
+                            window.location = "macappstore://showUpdatesPage";
+                            setTimeout('AppleAccountSetup.cancel()', 20);
+                        }
+                        else {
+                            AppleAccountSetup.cancel();
+                        }
+                    });
+            } else {
+                flag = Setup.confirmWithCallback(mmejsloc.OSXUpdateStringLion, mmejsloc.OSXUpdateTitle, null, mmejsloc.OK, function() { AppleAccountSetup.cancel(); });
+            }
+        }
+        else if(mmesetupconstants.errorProvisioningMailbox) {
+	        flag = Setup.confirmWithCallback(mmejsloc.ProblemTurningOnMailHint, mmejsloc.ProblemTurningOnMailTitle, null, mmejsloc.OK,
+	        function(index) {
+	            if (index === 0) {
+	                AppleAccountSetup.cancel();
+	            }
+	        }
+	        );
+	        return;
+        }
+	    else if (false) {
+	        flag = Setup.confirmWithCallback(mmejsloc.MobileMeMigratedMessage, mmejsloc.MobileMeMigratedTitle, null, mmejsloc.OK,
+	        function(index) {
+	            if (index === 0) {
+	                AppleAccountSetup.cancel();
+	            }
+	            else {
+	                AppleAccountSetup.cancel();
+	            }
+	        }
+	        );
+	        return;
+	    }
+
+	};
+    /*
+      mmesetupui object properties
+    */
+    return {
+       getBACK:               function(){ return BACK; },
+       getNEXT:               function(){ return NEXT; },
+       getCurrentPage:        function(){ return currentPage; },
+       getT_AND_C_PAGE:       function(){ return T_AND_C_PAGE; },
+       getErrorPage:       function(){ return ERROR_PAGE; },
+       getCurrentPage:        function(){ return currentPage; },
+       getKeyboardOn:         function(){ return keyboardOn; },
+       getPreviousQuestion:   function(){ return previousQuestion; },
+       // page_id to order mapping for iPhone
+       iPhoneIndexMapping : {
+         1  : 0,
+         2  : 1,
+         31 : 2,
+         32 : 3,
+         33 : 4,
+         34 : 5,
+         4  : 6,
+         5  : 7
+       },
+       // page_id to order mapping for iPad
+       iPadIndexMapping : {
+         1  : 0,
+         2  : 1,
+         30 : 2,
+         34 : 3,
+         4  : 4,
+         5  : 5
+       },
+
+       setCanCallAvailability: function(value){
+         canCallAvailability = value;
+         return canCallAvailability ;
+       },
+       setEmailInFlight: function(value){
+         emailInFlight = value ;
+         return emailInFlight ;
+       },
+       setCurrentFocusedElement: function(el) {
+           currentFocusedElement = el;
+       },
+
+       setPreviousQuestion:function(value) {
+         previousQuestion = value ;
+         return previousQuestion ;
+       },
+
+       setCurrentPage:function(value) {
+         currentPage = value ;
+         return currentPage ;
+       },
+
+        cancelFlow: function() {
+            if(Setup.showExtraConfirmationSheet()) {
+                Setup.confirmWithCallback(mmejsloc.CancelWarningMessage, mmejsloc.CancelWarningTitle, mmejsloc.DontCancelSetup, mmejsloc.CancelSetup, function(index) {
+                // if they hit cancel , we cancel them out of the wizard
+                if(index == 1) {
+                    AppleAccountSetup.cancel();
+                }
+            });
+            }
+            else {
+                AppleAccountSetup.cancel();
+            }
+
+        },
+        hideEmailTosPage : function() {
+            $('#page_' + TOS_EMAIL_PAGE).hide();
+            $('#page_' + T_AND_C_PAGE).show();
+            renderNavigationBar();
+        },
+        showEmailTosPage : function() {
+            // hide the TOS page
+            $('#page_' + ERROR_PAGE).hide();
+            $('#page_' + T_AND_C_PAGE).hide();
+            // show the send tos page
+            $('#page_' + TOS_EMAIL_PAGE).show();
+            // setup the navigation bar
+            AppleAccountSetup.setLeftNavButton(mmejsloc.Cancel,"mmesetupui.hideEmailTosPage()");
+            AppleAccountSetup.setRightNavButton(mmejsloc.Send,"mmesetupui.emailTos()");
+        },
+        emailTos: function() {
+        // get the apple id u want to use to send the email to
+        // and the password if available
+            var emailId = $('#tosEmailField').val();
+            if(emailId.length == 0) {
+                // show an error asking for an email id
+                Setup.confirmWithCallback(mmejsloc.TosEmailMissingHint, mmejsloc.EmailFieldErrorTitle, null, mmejsloc.OK, function(){});
+                return;
+            }
+
+            if(emailInFlight) {
+                $.log("ignoring email request.");
+                return;
+            }
+
+            var countryCode = $('#countryCode_field').val();
+            if (!countryCode || countryCode.length == 0) {
+                countryCode =  $('#countrySelector').val();
+            }
+
+           mmesetupui.setEmailInFlight(true) ;
+           mmesetupui.request.emailTos(emailId, countryCode) ;
+        },
+        nextPage: function() {
+          var valid ;
+          console.log("nextPage called")
+            mmesetupui.configurePageValidation();
+            if (currentFocusedElement) currentFocusedElement.blur();
+            currentFocusedElement = null;
+            if (currentPage == FORM_PAGE) {
+              console.log("form page");
+                valid = validatePage();
+                if (valid.valid) {
+                    if (!mmesetupconstants.updateMode) {
+                      if (mmesetupui.validator.isAppleIdRequired === true) {
+                        checkAvailability(false);
+                      } else {
+                        // don't check now, check when user enter me email
+                        checkAvailability(true);
+                        //mmesetupui.scrollPage(mmesetupui.getNEXT());
+                      }
+                    }
+                } else {
+                    // dont do it for the mac
+                    if(Setup.showExtraConfirmationSheet()) {
+                        Setup.confirmWithCallback(valid.errorMsg, valid.errorTitle, null, mmejsloc.OK, function(index) {});
+                    }
+                }
+
+            }
+
+            else if ( currentPage == THREE_SECURITY_QUESTIONS_PAGE  ||
+                      currentPage == THREE_SECURITY_QUESTIONS_IPAD  ||
+                      currentPage == SECURITY_QUESTION_IPHONE_1     ||
+                      currentPage == SECURITY_QUESTION_IPHONE_2     ||
+                      currentPage == SECURITY_QUESTION_IPHONE_3     ||
+                      currentPage == SECURITY_QUESTION_RESCUE_EMAIL_PAGE ) {
+                        
+                        console.log("multiple page");
+              var validationObject = validateThreeSecurityPage();
+              if (validationObject.valid) {
+                mmesetupui.scrollPage(mmesetupui.getNEXT());
+              } else {
+                // dont do it for the mac
+                if(Setup.showExtraConfirmationSheet()) {
+                    Setup.confirmWithCallback(validationObject.errorMsg, validationObject.errorTitle, null, mmejsloc.OK, function(index) {});
+                }
+              }
+            }
+
+            else if (currentPage == CREATE_EMAIL_PAGE) {
+              console.log("CREATE_EMAIL_PAGE page");
+                valid = validatePage();
+                if (valid.valid) {
+                    if(mmesetupconstants.activateMeEmail) {
+                       // show confirmation before activating email
+                       //$.log("going to show email add confirmation here.");
+
+                       var  email = $('#createEmailField').val();
+                       if (email.indexOf(mmesetupconstants.emailDomain)<1) {
+                        email += mmesetupconstants.emailDomain;
+                       }
+                       var title = mmejsloc.CreateEmailConfirmationTitle.replace("@@email@@", email);
+                       Setup.confirmWithCallback(mmejsloc.CreateEmailConfirmationWarning, title, mmejsloc.Create, mmejsloc.Cancel, function(index) {
+                        if(index == 0) {
+                            activateMeEmail();
+                        }
+                       });
+                    }
+                    else if (!mmesetupconstants.updateMode) {
+                      if (mmesetupui.validator.isAppleIdRequired === false) {
+                        checkAvailability(true);
+                      } else {
+                         $.log('Unpossible condition, mmesetupui.validator.isAppleIdRequired is true and user is in create apple id page!') ;
+                      }
+                    }
+                } else {
+                    if(Setup.showExtraConfirmationSheet()) {
+                        Setup.confirmWithCallback(valid.errorMsg, valid.errorTitle, null, mmejsloc.OK, function(index) {});
+                    }
+                }
+            } else if (currentPage === T_AND_C_PAGE) {
+              console.log("TC page");
+                if(Setup.showExtraConfirmationSheet()) {
+                              Setup.confirmWithCallback(mmejsloc.TOSAgree, mmejsloc.TOS, mmejsloc.Cancel, mmejsloc.Agree,
+                                                        function(index) {
+                                                          console.log("index ", index)
+                                                          if (index == 1) mmesetupui.scrollPage(NEXT);
+                                                        } );
+                }
+                else {
+                    mmesetupui.scrollPage(NEXT);
+                }
+            } else if (currentPage == DATE_PAGE) {
+                valid = validatePage();
+                if (valid.valid) {
+                    // check for eligibility
+                    var bday = new Date();
+                    bday.setFullYear($('#yearSelector').val());
+                    bday.setMonth($('#monthSelector').val() - 1);
+                    bday.setDate($('#daySelector').val());
+                    bday.setHours(0);
+                    bday.setMinutes(0);
+                    bday.setSeconds(0);
+
+                    var now = new Date();
+                    var cutoffDate = new Date();
+                    cutoffDate.setFullYear(now.getFullYear() - mmesetupconstants.minAgeInYears);
+                    cutoffDate.setMonth(now.getMonth());
+                    cutoffDate.setDate(now.getDate());
+                    cutoffDate.setHours(0);
+                    cutoffDate.setMinutes(0);
+                    cutoffDate.setSeconds(0);
+                    // check for age if not appropriate
+                    if (cutoffDate.getTime() < bday.getTime()) {
+                        var eligibilityMessage = mmejsloc.EligibilityMessage;
+
+                        // In Yosemite and above this error message references Family Sharing
+                        // which did not exist previously so earlier platforms need a different message.
+                        var clientInfo = mmesetupconstants.clientInfo;
+                        if(clientInfo.indexOf("OS X;") > -1) {
+                          var OSXver = clientInfo.getStrBetween("OS X;", ";");
+                          OSXver = OSXver.split('.');
+                          OSXMajorVer = parseInt(OSXver[0], 10);
+                          OSXMinorVer = parseInt(OSXver[1], 10);
+                          if(OSXMajorVer == 10 && OSXMinorVer <= 9) {
+                            eligibilityMessage = mmejsloc.EligibilityMessagePreFamily;
+                          } 
+                        }
+                        
+                        Setup.confirmWithCallback(eligibilityMessage.replace('@@number@@', mmesetupconstants.minAgeInYears), mmejsloc.EligibilityTitle, null, mmejsloc.OK,
+                        function(index) {
+                            AppleAccountSetup.cancel();
+                        });
+                        return;
+                    }
+                    else {
+                        mmesetupui.scrollPage(mmesetupui.getNEXT());
+                    }
+                } else {
+                    if(Setup.showExtraConfirmationSheet()) {
+                        Setup.confirmWithCallback(valid.errorMsg, valid.errorTitle, null, mmejsloc.OK, function(index) {});
+                    }
+                }
+            }
+        },
+        validateField: function(elem, data) {
+            var id = elem.attr("id");
+            validElements[id] = data.valid;
+        },
+
+        /**
+          We should not ideally validate inputs in security questions page if
+          user has navigated back to the form page
+        */
+        removeSecurityPageValidatableElements: function() {
+          var elemArray = mmesetupui.validator.securityPageValidatableElements(),
+              len       = elemArray.length,
+              idx, elem;
+
+          for (idx=0; idx<len; idx++) {
+            elem = elemArray[idx];
+            delete validElements[elem];
+          }
+          mmesetupui.setCurrentFocusedElement(null);
+        },
+
+        scrollPage: function(direction) {
+          /*
+          check if we really want to scroll or just fire register
+          if (prefpane) {
+            if (activateMeEmail === true ) {
+               fire register from email page
+            } else {
+               fire register from tos page
+            }
+          }
+          */
+          if (Setup.device === Setup.OTHER  &&
+              ((currentPage === CREATE_EMAIL_PAGE && mmesetupconstants.activateMeEmail === true) ||
+                currentPage === T_AND_C_PAGE)) {
+                  $.log("about to call register from prefpane");
+                  try {
+                    register();
+                  } catch(e) {
+                    $.log("error calling register from prefpane: " + e);
+                  }
+          }
+
+        /*
+          U13_PAGE warning is 0;
+          DATE_PAGE is 1;
+          FORM_PAGE is 2;
+          THREE_SECURITY_QUESTIONS_PAGE is 3;         -- only for MacPrefPane
+          THREE_SECURITY_QUESTIONS_IPAD = 30          -- only for iPad
+          SECURITY_QUESTION_IPHONE_1 = 31;            -- only for iPhone
+          SECURITY_QUESTION_IPHONE_2 = 32;            -- only for iPhone
+          SECURITY_QUESTION_IPHONE_3 = 33;            -- only for iPhone
+          SECURITY_QUESTION_RESCUE_EMAIL_PAGE = 34;   -- both for iPad and iPhone
+          T_AND_C_PAGE is 4;
+          LAST_PAGE is 5;
+          QUESTION_PAGE is 6;
+          CREATE_EMAIL_PAGE is 7;
+        */
+          var isPrePane = Setup.device === Setup.OTHER  ? true : false,
+              isIphone  = Setup.device === Setup.IPHONE ? true : false,
+              isIpad    = Setup.device === Setup.IPAD   ? true : false,
+              page3     = $("#page_3"),
+              newPage;
+
+          switch (currentPage) {
+            case U13_PAGE:
+              if(currentPage > mmesetupconstants.startPage){
+                newPage= U13_PAGE
+              }
+              break;
+            case DATE_PAGE:
+              if (direction === NEXT) newPage = FORM_PAGE;
+              break;
+
+            case FORM_PAGE:
+              if(direction === NEXT) {
+                if (isPrePane) {
+                  newPage = THREE_SECURITY_QUESTIONS_PAGE;
+                } else {
+                  page3.show();
+                  newPage = isIphone ? SECURITY_QUESTION_IPHONE_1 : THREE_SECURITY_QUESTIONS_IPAD;
+                }
+              } else if (direction === BACK && currentPage > mmesetupconstants.startPage) {
+                newPage = DATE_PAGE ;
+              }
+              break ;
+
+            // only for MacPrefPane
+            case THREE_SECURITY_QUESTIONS_PAGE:
+              if (direction === NEXT) {
+                newPage = T_AND_C_PAGE;
+              } else if (direction === BACK && currentPage > mmesetupconstants.startPage) {
+                newPage = FORM_PAGE;
+                this.removeSecurityPageValidatableElements();
+              }
+              break;
+
+            // only for iPad
+            case THREE_SECURITY_QUESTIONS_IPAD:
+              if (direction === NEXT) {
+                newPage = SECURITY_QUESTION_RESCUE_EMAIL_PAGE;
+              } else if (direction === BACK && currentPage > mmesetupconstants.startPage) {
+                newPage = FORM_PAGE;
+                page3.hide();
+              }
+              break;
+
+            // only for iPhone
+            case SECURITY_QUESTION_IPHONE_1:
+              if (direction === NEXT) {
+                newPage = SECURITY_QUESTION_IPHONE_2;
+              } else if (direction === BACK && currentPage > mmesetupconstants.startPage) {
+                newPage = FORM_PAGE;
+                page3.hide();
+              }
+              break;
+
+            // only for iPhone
+            case SECURITY_QUESTION_IPHONE_2:
+              if (direction === NEXT) {
+                newPage = SECURITY_QUESTION_IPHONE_3;
+              } else if (direction === BACK && currentPage > mmesetupconstants.startPage) {
+                newPage = SECURITY_QUESTION_IPHONE_1;
+              }
+              break;
+
+            // only for iPhone
+            case SECURITY_QUESTION_IPHONE_3:
+              if (direction === NEXT) {
+                newPage = SECURITY_QUESTION_RESCUE_EMAIL_PAGE;
+              } else if (direction === BACK && currentPage > mmesetupconstants.startPage) {
+                newPage = SECURITY_QUESTION_IPHONE_2;
+              }
+              break;
+
+            // both for iPad and iPhone
+            case SECURITY_QUESTION_RESCUE_EMAIL_PAGE:
+              if (direction === NEXT) {
+                newPage = T_AND_C_PAGE;
+                page3.hide();
+              } else if (direction === BACK && currentPage > mmesetupconstants.startPage) {
+                newPage = isIpad ? THREE_SECURITY_QUESTIONS_IPAD : SECURITY_QUESTION_IPHONE_3;
+              }
+              break;
+
+            case CREATE_EMAIL_PAGE:
+              if (direction === NEXT) {
+                if (mmesetupconstants.activateMeEmail) {
+                  if (Setup.device === Setup.OTHER) {
+                    newPage = currentPage ;
+                  } else {
+                    newPage = LAST_PAGE ;
+                  }
+                } else {
+                  newPage = T_AND_C_PAGE ;
+                }
+              } else if(direction === BACK && currentPage > mmesetupconstants.startPage){
+                newPage = FORM_PAGE ;
+              }
+              //todo: fix mail and notes enabled flow.rdar://9075862
+              break;
+
+            case T_AND_C_PAGE:
+              console.log("T_AND_C_PAGE ");
+              console.log("direction ",direction);
+              console.log("currentPage ",currentPage);
+              console.log("mmesetupconstants.startPage ",mmesetupconstants.startPage);
+              if (direction === NEXT) {
+                if (Setup.device === Setup.OTHER) {
+                  newPage = currentPage ;
+                } else {
+                  newPage = LAST_PAGE ;
+                }
+              } else if (direction === BACK && currentPage > mmesetupconstants.startPage) {
+                if (isIphone || isIpad) {
+                  newPage = SECURITY_QUESTION_RESCUE_EMAIL_PAGE;
+                  page3.show();
+                } else {
+                  newPage = THREE_SECURITY_QUESTIONS_PAGE;
+                }
+              }
+              break ;
+
+            case LAST_PAGE:
+              console.log("LAST_PAGE");
+              if (direction === BACK) {
+                newPage = T_AND_C_PAGE;
+              }
+          }
+
+            if (!newPage) return ;
+            var currPage, nextPage;
+            currPage    = $("#page_" + currentPage);
+            currentPage = newPage ;
+            nextPage    = $("#page_" + currentPage);
+
+            // move the page to the right of the
+            // current page and make it visible and scrolled to the top
+            mmesetupui.configurePageValidation();
+            renderNavigationBar();
+            currPage.hide();
+            $('body').scrollTop(0);
+            $(window).scrollTop(10);
+            keyboardOn = $(window).scrollTop() > 0;
+            $(window).scrollTop(0);
+            nextPage.show();
+            Setup.windowResize();
+
+            if(Setup.device === Setup.OTHER) {
+              nextPage.find('input,select').first().focus();
+            }
+            $.log("called scroll page next with dir=" + direction + " : page=" + currentPage);
+            if(Setup.device === Setup.OTHER &&
+               currentPage === T_AND_C_PAGE &&
+               $('#terms-title').length > 0 &&
+               $('#terms-title').html().indexOf('@@email@@') > -1) {
+              var email="" ;
+
+              if(mmesetupui.validator.isAppleIdRequired === true ||
+                 mmesetupconstants.updateMode ||
+                 mmesetupconstants.activateMeEmail) {
+                 email = $('#emailField').val();
+              } else {
+                email = $('#createEmailField').val();
+                if (email.indexOf(mmesetupconstants.emailDomain)<1) {
+                    email += mmesetupconstants.emailDomain;
+                }
+              }
+              $('#terms-title').html($('#terms-title').html().replace("@@email@@", email)) ;
+
+            }
+            $.log("ash currentPage "+ currentPage);
+            // if the last page is shown
+            // then we need to start the ajax request
+            if (currentPage === LAST_PAGE) {
+                // show the spinner
+                $("#page_3_spinner").show();
+                $.log("about to call register");
+
+                try {
+                    register();
+                }
+                catch(err) {
+                    $.log("error calling register : " + err);
+                }
+            }
+            $.log("done with scroll page next with dir=" + direction + " : page=" + currentPage);
+        },
+        prevPage: function() {
+            if (currentPage == mmesetupconstants.startPage) {
+                AppleAccountSetup.cancel();
+            }
+            else {
+                if (currentPage == T_AND_C_PAGE) {
+                  mmesetupui.tos.currentPageTOS=1;
+                  mmesetupui.tos.displayPage(1);
+                }
+                mmesetupui.scrollPage(mmesetupui.getBACK());
+            }
+        },
+        clearPasswordFields: function() {
+            $('#passwordField').val("");
+            $('#passwordField').blur();
+            $('#verifyPasswordField').val("");
+            $('#verifyPasswordField').blur();
+        },
+
+        renderValidNavigationBar: function(success) {
+            if (Setup.device !== Setup.OTHER) {
+              var index, navTitle;
+              // iPhone has intermediate pages for showing security questions one by one
+              if (Setup.device === Setup.IPHONE) {
+                index = mmesetupui.iPhoneIndexMapping[currentPage];
+              } else {
+                index = mmesetupui.iPadIndexMapping[currentPage];
+              }
+              $.log("Begin rendering nav bar: " + success + " : current page : " + (index+1));
+
+              navTitle = navBarTitles[index];
+              if(currentPage == mmesetupconstants.startPage && mmesetupconstants.ncenv !== "") {
+                  navTitle = mmesetupconstants.ncenv + " " + navTitle;
+              }
+              AppleAccountSetup.setNavTitle(navTitle);
+              AppleAccountSetup.setLeftNavButton(navBarLeftLabels[index], navBarLeftCallbacks[index]);
+              if (success) {
+                  AppleAccountSetup.setRightNavButton(navBarRightLabels[index], navBarRightCallbacks[index]);
+              }
+              else {
+                  AppleAccountSetup.setRightNavButton(navBarRightLabels[index], null);
+              }
+              $.log("End rendering nav bar: " + success + " : current page : " + (index+1));
+            } else {
+              $.log('rendering navigation footer:' + success + ": current page" + currentPage) ;
+              mmesetupui.renderPrefPaneNavElements(success);
+
+            }
+            nextEnabled = success;
+        },
+        /*
+          @method
+          renders navigation elements (title and buttons) for prefpane
+        */
+        renderPrefPaneNavElements: function(isInputValid) {
+          $('#prevButton, #nextButton').unbind() ;
+          var pageTitle = $('#page-title') ;
+          var pageDesc = $('#page-desc') ;
+          var prevButton = $('#prevButton') ;
+          var nextButton = $('#nextButton') ;
+          var icloudIcon = $('#page_0 .icloud-icon');
+          var pages =      $('#pages');
+
+
+          var cancelMethod = function(){
+            if ($(this).attr('disabled') === false){
+              $.log('called mmesetupui.cancelFlow from prevButton click') ;
+              mmesetupui.cancelFlow();
+            } else {
+              $.log('ignoring cancel setup trigger') ;
+            }
+          } ;
+
+          var nextPageMethod = function() {
+            console.log("nextPageMethod called");
+            var $this = $(this) ;
+            if ($this.attr('disabled') === false){
+              $.log('called mmesetupui.nextPage from nextButton click') ;
+              mmesetupui.nextPage();
+            } else {
+              $.log('ignoring next page trigger') ;
+            }
+          };
+          var getPositionAtSpace = function(str, strToFind, nthStrCount){
+            return str.split(strToFind, nthStrCount).join(strToFind).length;
+          };
+          
+          var addMoreInGcbd = function(){
+            console.log("add More in gcbd");
+            var gcbdHtmlTerms = $("#gcbd-terms-text pre").html();
+            if(!window.gcbdTerms){
+                window.gcbdTerms = gcbdHtmlTerms;
+            }
+            if(gcbdHtmlTerms){ 
+              if($("#gcbd-termsMore").length===0){
+                var index = getPositionAtSpace(gcbdHtmlTerms," ", 20);
+                var icloudMoreLink = "<span id=\"gcbd-termsMore\" class=\"more\"><b> <u>"+mmejsloc.MoreLink+"</u></b></span>"
+                //insert more link
+                $("#gcbd-terms-text pre").html(gcbdHtmlTerms.substring(0, index) + icloudMoreLink);
+              }  
+            }
+          };
+          
+          var clickedGcbdLess = function() {
+            $("#gcbd-termsLess").hide();
+            addMoreInGcbd();
+            $("#gcbd-termsMore").click(clickedGcbdMore);
+          };
+          
+          var clickedGcbdMore = function() {
+            $("#gcbd-termsLess").show();
+            $("#gcbd-terms-text pre").html(window.iCloudTerms)
+          };
+          
+          
+          var clickediCloudLess = function() {
+            console.log("iCloud less clicked");
+            $("#icloud-terms #terms").hide();
+            $("#icloud-terms #summary").show();
+          };
+          
+          var clickediCloudMore = function() {
+            console.log("iCloud more clicked");
+            $("#icloud-terms #terms").show();
+            $("#icloud-terms #summary").hide();
+
+          };
+          
+          var addMoreInPrivacy = function(){
+            console.log("add More in Privacy");
+            var privacyHtmlTerms = $("#newPrivacyContent").html();
+            if(!window.privacyTerms){
+                window.privacyTerms = privacyHtmlTerms;
+            }
+            if($("#privacy-termsMore").length===0){
+              var index = getPositionAtSpace(privacyHtmlTerms," ", 20);
+       
+              var privacyMoreLink = "<span id=\"privacy-termsMore\" class=\"more\"><b> <u>"+mmejsloc.MoreLink+"</u></b></span>"
+              //insert more link
+              $("#newPrivacyContent").html(privacyHtmlTerms.substring(0, index) + privacyMoreLink);
+            }
+          };
+          
+          var clickedPrivacyLess = function() {
+            console.log("privacy less clicked");
+            $("#privacy-termsLess").hide();
+            addMoreInPrivacy();
+            $("#privacy-termsMore").click(clickedPrivacyMore);
+          };
+          
+          var clickedPrivacyMore = function() {
+            $("#privacy-termsLess").show();
+            console.log("privacy more clicked");
+            $("#newPrivacyContent").html(window.privacyTerms)
+          };
+          
+          var addMoreInParental = function() {
+            console.log("add More in parental");
+            var parentalHtmlTerms = $("#newParentalTerms").html();
+            if(!window.parentalTerms){
+                window.parentalTerms = parentalHtmlTerms;
+            }
+            if($("#parental-termsMore").length===0){
+              console.log("more link not present");
+              var index = getPositionAtSpace(parentalHtmlTerms," ", 20);
+            
+              console.log("index to add is ", index);
+              var parentalMoreLink = "<span id=\"parental-termsMore\"><b> <u>"+mmejsloc.MoreLink+"</u></b></span>"
+              //insert more link
+              $("#newParentalTerms").html(parentalHtmlTerms.substring(0, index) + parentalMoreLink);
+            }
+            
+          }
+          
+          var clickedParentalLess = function(){
+            console.log("parental less clicked");
+            $("#parental-termsLess").hide();
+            addMoreInParental();
+            $("#parental-termsMore").click(clickedParentalMore);
+          }
+          
+          var clickedParentalMore = function() {
+            $("#parental-termsLess").show();
+            console.log("parental more clicked");
+            $("#newParentalTerms").html(window.parentalTerms)
+          }
+          
+          $.log("currentPage "+ currentPage);
+          switch(currentPage) {
+          case U13_PAGE:
+            if(mmesetupconstants.startPage===0){
+              $('footer > .left').hide();
+              pageTitle.show().text(mmejsloc.U13CreateAccountErrorTitle);
+              pageDesc.show().text(mmejsloc.EligibilityMessage.replace('@@number@@', mmesetupconstants.minAgeInYears));
+              prevButton.hide();
+              pages.css("padding-left", "80px");
+              icloudIcon.css("top", "13px");
+              nextButton.show().val(mmejsloc.OK).click(cancelMethod) ;
+              //nextButton.hide();
+            }
+            break;
+            case DATE_PAGE:
+              $('footer > .left').hide();
+              pageTitle.show().text(mmejsloc.NewAcct);
+              pageDesc.show().text(mmejsloc.CountryAndBirthSubPageStep);
+              prevButton.show().val(mmejsloc.Cancel).click(cancelMethod) ;
+              nextButton.show().val(mmejsloc.Next).click(nextPageMethod).attr('disabled', !isInputValid) ;
+              break ;
+            case FORM_PAGE:
+              $('footer > .left').hide();
+              pageTitle.show().text(mmejsloc.NewAcct);
+              pageDesc.show().text(mmejsloc.CreateEmailSubPageStep);
+              prevButton.show().val(mmejsloc.Back).click(mmesetupui.prevPage) ;
+              nextButton.show().val(mmejsloc.Next).click(nextPageMethod).attr('disabled', !isInputValid) ;
+              break ;
+            case THREE_SECURITY_QUESTIONS_PAGE:
+              $('footer > .left').hide();
+              pageTitle.show().text(mmejsloc.NewAcct);
+              pageDesc.show().text(mmejsloc.ThreeSecurityQuestionsStep);
+              prevButton.show().val(mmejsloc.Back).click(mmesetupui.prevPage) ;
+              nextButton.show().val(mmejsloc.Next).click(nextPageMethod).attr('disabled', !isInputValid) ;
+              break ;
+            case CREATE_EMAIL_PAGE:
+              pageDesc.hide() ;
+              $('footer > .left').hide();
+              if(mmesetupconstants.activateMeEmail) {
+                if(mmesetupconstants.notesEnabled) {
+                    pageTitle.show().text(mmejsloc.ChooseNotesAddress) ;
+                }
+                else {
+                    pageTitle.show().text(mmejsloc.ChooseEmailAddress) ;
+                }
+                prevButton.show().val(mmejsloc.Cancel).click(cancelMethod) ;
+                nextButton.show().val(mmejsloc.OK).click(nextPageMethod).attr('disabled', !isInputValid) ;
+              } else {
+                pageTitle.show().text(mmejsloc.NewAcct);
+                pageDesc.show().text(mmejsloc.CreateEmailSubPageDesc);
+                prevButton.show().val(mmejsloc.Back).click(mmesetupui.prevPage) ;
+                nextButton.show().val(mmejsloc.Next).click(nextPageMethod).attr('disabled', !isInputValid) ;
+              }
+              break ;
+            case T_AND_C_PAGE:
+              window.registerAccount=true;
+              $.log(pageTitle);
+              $.log(pageDesc);
+              pageTitle.hide();
+              pageDesc.hide();
+              
+              $.log($("#page_0"));
+              $("#page_0").hide();
+              if(!mmesetupconstants.termsUIV2){
+              if(! document.getElementById("privacyBtn")) {
+                console.log("addding privacybtn");
+                var privacyBtnHtml = '<input type="button" id="privacyBtn" value="'+mmejsloc.AppleIdAndPrivacyBtn+'" style="-webkit-appearance: button;">';
+                $("footer").prepend(privacyBtnHtml);
+                $("#privacyBtn").click(this.handlePrivacyBtnClick);
+                $("#privacyBtnDone").click(this.handlePrivacyDoneBtnClick);
+              }
+            }
+              //show new UI only when server sends the flag
+            var isIOS = mmesetupconstants.clientInfo.indexOf("iPhone OS");
+              if(mmesetupconstants.termsUIV2 && isIOS < 0){
+                if(mmesetupconstants.isGcbd && !window.gcbdClicked){
+                  $("#prefTermsPage").hide();
+                  $("#gcbdPage").show();
+                  $("footer").hide();
+                  if(!InternetAccount.setTermsContext){
+                    $("#gcbdNotnow").hide();
+                  }
+                 
+                 $("#gcbdLearnMore").click(function(){
+                   $("#gcbdTermsBlock").hide();
+                   $("#gcbdLearnMoreBlock").show();
+                   $("#learnMore-title").show();
+                   $("#gcbdPreamble").hide();
+                   $("#gcbdButtons").hide();
+                   $("#learnMoreBack").show();
+                 });
+                 
+                 $("#learnMoreBack").click(function(){
+                   $("#gcbdTermsBlock").show();
+                   $("#gcbdLearnMoreBlock").hide();
+                   $("#learnMore-title").hide();
+                   $("#gcbdPreamble").show();
+                   $("#gcbdButtons").show();
+                   $("#learnMoreBack").hide();
+                   $("#gcbdNewTermsBlock").hide();
+                   $("#gcbdTerms-title").hide();
+                 })
+                 
+                 if(mmesetupconstants.showTerms){
+                   $("#gcbdNext").click(function(){
+                     window.gcbdClicked=true;
+                     window.gcbdNotNowClicked=false;
+                     $("#prefTermsPage").show();
+                     $("#gcbdPage").hide();
+                     $("footer").show();
+                     $("#gcbd-terms").show();
+                     Setup.windowResize();
+                   })
+                 } else{
+                   $("#gcbdNext").click(nextPageMethod)
+                 }
+                 
+                 
+                 
+                 $("#gcbdBack").click(cancelMethod);
+                 
+                 if(mmesetupconstants.isNotNowEnabled){
+                   $("#gcbdNotnow").hide()
+                   if(InternetAccount.setTermsContext){
+                     $("#gcbdNotnow").click(function(){
+                   
+                         InternetAccount.setTermsContext("notNow");
+                   
+                       window.gcbdClicked=true;
+                       window.gcbdNotNowClicked=true;
+                       $("#prefTermsPage").show();
+                       $("#gcbdPage").hide();
+                       $("footer").show();
+                   
+                       $("#gcbd-terms").hide();
+                   
+                     });
+                   }
+                 } else{
+                   $("#gcbdNotnow").hide()
+                 }
+                 $(".gcbdLink").click(function(){
+                   $("#gcbdTermsBlock").hide();
+                   $("#gcbdNewTermsBlock").show();
+                   $("#gcbdTerms-title").show();
+                   $("#gcbdPreamble").hide();
+                   $("#gcbdButtons").hide();
+                   $("#learnMoreBack").show();
+                 });
+                 
+                  Setup.setButtonMinWidth($("#gcbdBack"));
+                  Setup.setButtonMinWidth($("#gcbdNotnow"));
+                  Setup.setButtonMinWidth($("#gcbdNext"));
+                  Setup.setButtonMinWidth($("#learnMoreBack"));
+                  
+                  $("#gcbd-termsLess").click(clickedGcbdLess);
+                  $("#gcbd-termsLess").hide();
+                  addMoreInGcbd();
+                  $("#gcbd-termsMore").click(clickedGcbdMore);
+                  
+                  console.log("cancelMethod ", cancelMethod);
+                  console.log("nextPageMethod ", nextPageMethod);
+                  $('footer > .left').show();
+                  prevButton.show().val(mmejsloc.Cancel).click(cancelMethod) ;
+                  nextButton.show().val(mmejsloc.Continue).click(nextPageMethod).attr('disable-on-load', 'true').attr('disabled', 'disabled');
+                  // if(mmesetupconstants.showTerms){
+//                     $('footer > .left').show();
+//                     prevButton.show().val(mmejsloc.Cancel).click(cancelMethod) ;
+//                     nextButton.show().val(mmejsloc.Continue).click(nextPageMethod).attr('disable-on-load', 'true').attr('disabled', 'disabled');
+//                   }
+//
+                  
+                } else{
+                  $('footer > .left').show();
+                  prevButton.show().val(mmejsloc.Cancel).click(cancelMethod) ;
+                  nextButton.show().val(mmejsloc.Continue).click(nextPageMethod).attr('disable-on-load', 'true').attr('disabled', 'disabled');
+                }
+                $("#icloud-termsLess").click(clickediCloudLess);
+                $("#icloud-termsMore").click(clickediCloudMore);
+                clickediCloudLess();
+
+                //for privacy
+                $("#privacy-termsLess").click(clickedPrivacyLess);
+                $("#privacy-termsLess").hide();
+                if(mmesetupconstants && mmesetupconstants.privacyEnabled) {
+                    addMoreInPrivacy();
+                }
+                $("#privacy-termsMore").click(clickedPrivacyMore);
+              
+                //for parental
+                if($("#newParentalTerms").length !== 0){
+                  $("#parental-termsLess").click(clickedParentalLess);
+                  $("#parental-termsLess").hide();
+                  addMoreInParental();
+                  $("#parental-termsMore").click(clickedParentalMore);
+                }
+              }
+              $('footer > .left').show();
+              
+              $.log("after UIV2")
+              // replace the @@ email if necessary
+              if(mmesetupconstants.updateMode) {
+                var termsTitle = $('#terms-title');
+                if(termsTitle.length > 0) {
+                    if(termsTitle.html().indexOf('@@email@@') > -1) {
+                        var email = $('#emailField').val();
+                        termsTitle.html(termsTitle.html().replace("@@email@@", email)) ;
+                    }
+                }
+              }
+              break ;
+            case LAST_PAGE:
+              pageTitle.hide();
+              pageDesc.hide();
+              $('footer > .left').hide();
+              prevButton.hide();
+              nextButton.hide();
+              break;
+          }
+
+          Setup.setButtonMinWidth(prevButton) ;
+          Setup.setButtonMinWidth(nextButton) ;
+        },
+        handlePrivacyDoneBtnClick: function() {
+          $("#prefTermsPage").show();
+          $("#privacyFlow").hide();
+          $("footer").show();
+        },
+        handlePrivacyBtnClick: function () {
+          $("#prefTermsPage").hide();
+          $("#privacyFlow").show();
+          $("footer").hide();
+        },
+        // Field validation is set up on page load, and used when you hit next and when the next page loads.
+        configurePageValidation : function(page) {
+            var validatableFields ;
+            page = page || currentPage;
+            if (currentPage == DATE_PAGE) {
+              validatableFields = ["countrySelector", "monthSelector", "daySelector", "yearSelector"] ;
+            } else if (currentPage == FORM_PAGE) {
+              // TA Todo: This needs to be updated.
+              // Distinguishes if you're in Jasper mode or Telluride where there are 2 email options.
+              if(mmesetupui.validator.isAppleIdRequired === true){
+                validatableFields = ["emailField", "firstNameField", "lastNameField", "passwordField", "verifyPasswordField"] ;
+              } else {
+                validatableFields = ["createEmailField", "firstNameField", "lastNameField", "passwordField", "verifyPasswordField"] ;
+              }
+
+            } else if (currentPage === THREE_SECURITY_QUESTIONS_PAGE) {
+              validatableFields = ["securityQuestionSelector1", "securityQuestionSelector2", "securityQuestionSelector3",
+                                    "securityAnswerField1", "securityAnswerField2", "securityAnswerField3",
+                                    "recoveryEmailAddress"];
+            }
+            else if (currentPage === THREE_SECURITY_QUESTIONS_IPAD) {
+              validatableFields = ["securityQuestionSelector1", "securityQuestionSelector2", "securityQuestionSelector3",
+                                    "securityAnswerField1", "securityAnswerField2", "securityAnswerField3"];
+            }
+            else if (currentPage === SECURITY_QUESTION_IPHONE_1) {
+              validatableFields = ["securityQuestionSelector1", "securityAnswerField1"];
+            } else if (currentPage === SECURITY_QUESTION_IPHONE_2) {
+              validatableFields = ["securityQuestionSelector2", "securityAnswerField2"];
+            } else if (currentPage === SECURITY_QUESTION_IPHONE_3) {
+              validatableFields = ["securityQuestionSelector3", "securityAnswerField3"];
+            } else if (currentPage === SECURITY_QUESTION_RESCUE_EMAIL_PAGE) {
+              validatableFields = ["recoveryEmailAddress"];
+            }
+            else if(currentPage === CREATE_EMAIL_PAGE){
+               validatableFields = ['createEmailField'] ;
+            } else {
+              validatableFields = [];
+            }
+            validatableElements = [];
+            for (var i in validatableFields) {
+                validatableElements.push(validatableFields[i]);
+            }
+            if (currentPage == FORM_PAGE) {
+              mmesetupui.modifyValidatedFields();
+            }
+        },
+
+
+        // When the page dynamically shows or hides input fields, we need to let the validator know what fields to validate.
+        modifyValidatedFields: function() {
+          if (currentPage == FORM_PAGE) {
+            if (mmesetupui.isCreateMeEmailMode()) {
+                if ($.inArray("createEmailField", validatableElements) < 0) {
+                  validatableElements.push("createEmailField");
+                }
+                validatableElements = $.grep(validatableElements, function(value, i) {
+                  return (value != 'emailField');
+                });
+                delete validElements['emailField'];
+            } else {
+                if ($.inArray("emailField", validatableElements) < 0) {
+                  validatableElements.push("emailField");
+                }
+                validatableElements = $.grep(validatableElements, function(value, i) {
+                  return (value != 'createEmailField');
+                });
+                delete validElements['createEmailField'];
+            }
+          }
+        },
+
+        /**
+          Disables the Next button if:
+          1. For mandatory fields -> Either the data is not entered or it's not valid
+          2. For optional field   -> If there is an invalid data
+        */
+        checkFilledOut : function() {
+          if (Setup.isRequestInFlight === true ) return ;
+            var result = true, elem, i;
+            for (i in validatableElements) {
+                if (result) {
+                  elem = $('#' + validatableElements[i]);
+                  // validate emailField only if isAppleIdRequired is true
+                  if (elem.attr('id') === 'emailField' && mmesetupui.validator.isAppleIdRequired === false) {
+                    continue ;
+                  } else if (elem.attr('id') === 'createEmailField' && mmesetupui.validator.isAppleIdRequired === true) {
+                    continue ;
+                  } else if (elem.attr('id') === 'recoveryEmailAddress') {
+                    continue;
+                  }
+                  result = (elem.val() || "").length > 0 ;
+                }
+            }
+
+            if (nextEnabled != result) mmesetupui.renderValidNavigationBar(result);
+        },
+        hideFieldError: function(elem) {
+            elem.removeClass("LV_INVALID");
+            elem.attr('aria-invalid','false');
+            elem.parents('.row label + *').children('div.error').remove();
+            elem.parents('.row').removeClass("LV_INVALID");
+        },
+        showFieldError: function(elem, errorTitle) {
+     /* PrefPane field error display */
+        if(Setup.device === Setup.OTHER){
+            mmesetupui.hideFieldError(elem);
+            
+            var fieldError = '<div class="field text error" role="log">' + errorTitle +'</div>';
+            var id = $(elem).attr('id');
+
+            if(elem.is('input')){
+              elem.addClass("LV_INVALID");
+            }
+            // Also add the LV_INVALID to the row div regardless if the arrow glyph is inside or outside the element.
+            // Need this for vertical spacing of rows that have errors inside of them.
+            elem.parents('.row label + *').append(fieldError);
+            elem.parents('.row').addClass("LV_INVALID");
+
+            Setup.windowResize() ;
+
+        } else {
+            if(!elem.hasClass('LV_INVALID')){
+                elem.parents('.row').addClass("LV_INVALID");
+            }
+        }
+        elem.attr('aria-invalid','true');
+        elem.focus(); // move focus to the first invalid field
+    },
+    filterInvalidEmails : function(suggestions) {
+        var filteredSuggestions = [];
+        for(var i=0; i< suggestions.length; i++) {
+            var sug = suggestions[i];
+            if(matchValidEmailRegex(sug)) {
+                filteredSuggestions.push(sug);
+            }
+        }
+        return filteredSuggestions;
+    },
+        init: function() {
+
+          if (window.InternetAccount !== undefined) {
+            window.AppleAccountSetup = window.InternetAccount ;
+            window.AppleAccountSetup.setNavTitle = function() {};
+            window.AppleAccountSetup.setLeftNavButton = function() {};
+            window.AppleAccountSetup.setRightNavButton = function() {};
+          }
+
+          mmesetupui.request = new Setup.Request() ;
+          Setup.windowResize() ;
+
+
+            // todo kbehara : need to remove his
+            // setup some ui settings
+            // read all hidden fields
+            m_deviceInfo = {};
+            m_deviceInfo.udid = $("#udid_field").attr("value");
+            m_deviceInfo.apsToken = $("#apstoken_field").attr("value");
+            m_deviceInfo.setupToken = $("#setuptoken_field").attr("value");
+            m_deviceInfo.timezone = $("#timezone_field").attr("value");
+            m_deviceInfo.language = $("#language_field").attr("value");
+            m_deviceInfo.tosVersion = $("#tosversion_field").attr("value");
+            m_deviceInfo.certQualify = $("#certQualify_field").attr("value");
+            m_deviceInfo.certId = $("#certId_field").attr("value");
+            m_deviceInfo["parentalConsent-version"] = $("#parentalConsentversion_field").attr("value");
+
+            // initialize the
+            //check for debug
+            var debugDiv = $("#mmejs_debug");
+            if (debugDiv.length == 1) {
+                var val = debugDiv.attr("value");
+                if (val == "on") {
+                    DEBUG = true;
+                }
+                else {
+                    DEBUG = false;
+                }
+            }
+            mmesetupui.deviceInit() ;
+            $.log("done with mmesetupui.init");
+
+            // perform post device init operations
+            $.log("mmesetupconstants.activateMeEmail ",mmesetupconstants.activateMeEmail);
+            if (mmesetupconstants.activateMeEmail) {
+              mmesetupui.validator.isAppleIdRequired = false ;
+            }
+            
+            $.log("mmesetupconstants.updateMode ", mmesetupconstants.updateMode);
+
+            if(mmesetupconstants.updateMode) {
+              mmesetupconstants.authRequired = true;
+            }
+
+            // render the the prefpane elements in initial state
+            $.log("renderPrefPaneNavElements false");
+            mmesetupui.renderPrefPaneNavElements(false);
+            $.log("windowResize");
+            Setup.windowResize();
+
+      			showStartupErrors();
+
+      			// signal that we’re ready to be shown
+      			if (window.InternetAccount !== undefined) {
+
+        			if(!!InternetAccount.webClientIsReady) {
+        			  InternetAccount.webClientIsReady();
+        			}
+        	    }
+          }
+        };
+
+} ();
+

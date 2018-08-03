@@ -1,0 +1,65 @@
+1138      
+MIME-Version: 1.0
+Received: by 2002:a0c:ac4a:0:0:0:0:0 with HTTP; Mon, 23 Jul 2018 00:32:14
+ -0700 (PDT)
+Date: Mon, 23 Jul 2018 10:32:14 +0300
+Delivered-To: kr@anadeainc.com
+Message-ID: <CADhWGCryA4Kjd0nb1UYPw3vLEiRo3KxcOzbAbrJV3rjO9gec5w@mail.gmail.com>
+Subject: 
+From: =?UTF-8?B?0JrQvtC90YHRgtCw0L3RgtC40L0g0KDRi9GJ0LXQvdC60L4=?=
+ <kr@anadeainc.com>
+To: ryshchenko.k@gmail.com
+Content-Type: multipart/mixed; boundary="000000000000ef705e0571a5a421"
+
+
+--000000000000ef705e0571a5a421
+Content-Type: multipart/ALTERNATIVE;
+	boundary=000000000000ef705b0571a5a41f
+
+
+--000000000000ef705b0571a5a41f
+Content-Transfer-Encoding: 7BIT
+Content-Type: TEXT/PLAIN;
+	charset=UTF-8
+
+
+
+--000000000000ef705b0571a5a41f
+Content-Transfer-Encoding: 7BIT
+Content-Type: TEXT/HTML;
+	charset=UTF-8
+
+<div dir="ltr"><br></div>
+
+--000000000000ef705b0571a5a41f--
+
+--000000000000ef705e0571a5a421
+Content-Transfer-Encoding: BASE64
+Content-Disposition: ATTACHMENT;
+	filename=ConsultingAgreementSpdKonstantinRyshchenko.pdf
+Content-Type: APPLICATION/PDF;
+	name=ConsultingAgreementSpdKonstantinRyshchenko.pdf
+X-Apple-Content-Length: 406744
+
+
+--000000000000ef705e0571a5a421--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>5</integer>
+	<key>date-last-viewed</key>
+	<integer>0</integer>
+	<key>date-received</key>
+	<integer>1532331134</integer>
+	<key>flags</key>
+	<integer>25770001409</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>4</integer>
+	</array>
+	<key>remote-id</key>
+	<string>9</string>
+</dict>
+</plist>

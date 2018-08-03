@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru_RU" lang="ru_RU">
+<head>
+<title> SpdHowto &lt; Anahoret &lt; Anadea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="http://anahoret.com/wiki/bin/edit/Anahoret/SpdHowto?t=1532330979" type="application/x-wiki" title="edit SpdHowto" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/wiki/bin/view/Anahoret/WebRss" />
+
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/SkinTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/layout.css');
+@import url('/wiki/pub/System/PatternSkinTheme/style.css');
+@import url('/wiki/pub/System/PatternSkinTheme/colors.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/column_left.css');
+@import url('/wiki/pub/System/PatternSkinTheme/variant_foswiki_print.css');
+</style><style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#99CC99;
+	}
+	#patternTopBarContents { background-image:url(/wiki/pub/System/PatternSkin/header5.gif); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#ffffff;}
+.patternBookView {
+	border-color:#99CC99;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<style type="text/css" media="print">
+	@import url("/wiki/pub/System/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	height:1%;
+	overflow-x:auto;
+}
+.foswikiAttachments,
+.foswikiForm,
+.foswikiHelp,
+.foswikiPreviewArea,
+.patternPreviewPage .foswikiForm,
+.patternSigLine,
+.patternToolBar,
+.patternTop,
+.patternTopicAction,
+#patternSideBarContents .patternLeftBarPersonal,
+#patternSideBarContents h2,
+#patternSideBarContents li,
+#patternTopBarButtons ul {
+	height:1%;
+}
+#patternSideBarContents .patternLeftBarPersonal {
+	width:100%;
+}
+.foswikiFormStep {
+	height:100%;
+}
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:2px solid #ccc;
+}
+</style><![endif]-->
+<!--[if gt IE 8 ]><style type="text/css" media="screen">
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow: 0 0 10px #ccc;
+}
+</style><![endif]-->
+<meta name="foswiki.TWISTYANIMATIONSPEED" content="fast" /><!--TWISTYPLUGIN::META-->
+<style type="text/css" media="all">
+.foswikiTable {border-width:1px}
+.foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+.foswikiTable td {border-style:solid none; vertical-align:top}
+.foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+.foswikiTable th a:link {color:#000000}
+.foswikiTable th a:visited {color:#000000}
+.foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+.foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+.foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style><!--TABLEPLUGIN_default-->
+<style type="text/css" media="all">
+.foswikiTable#tableSpdHowto1 td {vertical-align:middle; vertical-align:top}
+.foswikiTable#tableSpdHowto1 td.foswikiTableCol0 {text-align:left}
+.foswikiTable#tableSpdHowto1 td.foswikiTableCol1 {text-align:left}
+.foswikiTable#tableSpdHowto1 td.foswikiTableCol2 {text-align:left}
+.foswikiTable#tableSpdHowto1 td.foswikiTableCol3 {text-align:right}
+.foswikiTable#tableSpdHowto1 td.foswikiTableCol4 {text-align:left}
+.foswikiTable#tableSpdHowto1 td.foswikiTableCol5 {text-align:left}
+.foswikiTable#tableSpdHowto1 td.foswikiTableCol6 {text-align:left}
+.foswikiTable#tableSpdHowto1 td.foswikiTableCol7 {text-align:left}
+.foswikiTable#tableSpdHowto1 th {vertical-align:middle; background-color:#ffffff; color:#0066cc; text-align:left}
+.foswikiTable#tableSpdHowto1 th a:link {color:#0066cc}
+.foswikiTable#tableSpdHowto1 th a:visited {color:#0066cc}
+.foswikiTable#tableSpdHowto1 th a:hover {color:#0066cc; background-color:#ffffff}
+.foswikiTable#tableSpdHowto1 th.foswikiSortedCol {background-color:#eeeeee}
+.foswikiTable#tableSpdHowto1 tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable#tableSpdHowto1 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f5f5f5}
+</style><!--TABLEPLUGIN_specific-->
+<link rel='stylesheet' href='/wiki/pub/System/TwistyPlugin/twisty.uncompressed.css?version=1.6.0' type='text/css' media='all' /><!--JQUERYPLUGIN::TWISTY: requires= missing ids: JavascriptFiles/foswikiPref-->
+<!--[if lte IE 9]>
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.11.2.uncompressed.js'></script>
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.8.0.uncompressed.js'></script>
+<!--<![endif]-->
+<!--JQUERYPLUGIN-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/livequery/jquery.livequery.uncompressed.js?version=1.3.1'></script><!--JQUERYPLUGIN::LIVEQUERY-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/foswiki/jquery.foswiki.uncompressed.js?version=2.01'></script><!--JQUERYPLUGIN::FOSWIKI: requires= missing ids: JQUERYPLUGIN::MIGRATE-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiPref.js"></script><!--JavascriptFiles/foswikiPref-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiString.js"></script><!--JavascriptFiles/foswikiString-->
+<script type='text/javascript'>
+jQuery.extend(foswiki, {
+ "preferences": {
+    "PUBURL": "http://anahoret.com/wiki/pub",
+    "PUBURLPATH": "/wiki/pub",
+    "SCRIPTSUFFIX": "",
+    "SCRIPTURL": "http://anahoret.com/wiki/bin",
+    "SCRIPTURLPATH": "/wiki/bin",
+    "SERVERTIME": "23 Jul 2018 - 10:29",
+    "SKIN": "pdf,pattern",
+    "SYSTEMWEB": "System",
+    "TOPIC": "SpdHowto",
+    "USERNAME": "kr",
+    "USERSWEB": "Main",
+    "WEB": "Anahoret",
+    "WIKINAME": "KonstantinRyshchenko",
+    "WIKIUSERNAME": "Main.KonstantinRyshchenko",
+    "NAMEFILTER": "[\s\*?~^\$@%`\"'&;|<>\[\]#\x00-\x1f]"
+}});
+</script><!--JQUERYPLUGIN::FOSWIKI::PREFERENCES-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiForm.js"></script><!--JavascriptFiles/foswikiForm-->
+<script type="text/javascript" src="/wiki/pub/System/PatternSkin/pattern.js"></script><!--PatternSkin/pattern-->
+<script type='text/javascript' src='/wiki/pub/System/TwistyPlugin/jquery.twisty.uncompressed.js?version=1.6.0'></script><!--JQUERYPLUGIN::TWISTY-->
+</head>
+<body class="foswikiNoJs patternViewPage">
+<a name="PageTop"></a><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="/wiki/bin/view/Main/WebHome">Anadea</a><span class='foswikiSeparator'>&gt;</span><a href="/wiki/bin/view/Anahoret/WebHome">Anahoret Web</a><span class='foswikiSeparator'>&gt;</span><a href="http://anahoret.com/wiki/bin/view/Anahoret/SpdHowto" title='Topic revision: 20 (02 Aug 2012 - 15:30:09)'>SpdHowto</a> <span class='patternRevInfo'>(02 Aug 2012, <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a>)</span></span><span class="patternToolBar foswikiRight"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/SpdHowto?t=1532330979;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/SpdHowto' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span><a href='/wiki/bin/view/Anahoret/SpdHowto?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span></span><div class="foswikiClear"></div></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><h1><a name="A_208_161_208_159_208_148"></a>  СПД  </h1>
+<p></p>
+<a href="/wiki/bin/view/Anahoret/HasDone">Состояние дел у уже оформленных предпринимателей</a>
+<p></p>
+<p></p>
+<h2><a name="A_208_160_208_181_208_179_208_184_209_129_209_130_209_128_208_176_209_134_208_184_209_143_208_167_208_159_40_208_164_208_158_208_159_44_208_161_208_159_208_148_41"></a>  Регистрация ЧП (ФОП, СПД) </h2>
+<p></p>
+Жители г. Донецка регистрируются в "едином окне". ул. 50-летия СССР, 150. Чуть ниже Крытого рынка, за магазином "Стол и Стул", кафе "О'Рио", в глубине двора. Документы подаются с утра  с ПН по ПТ с 8:00 до 12:00. Выдача документов осуществляется с 14:00 до 16:00 по ПН-ЧТ и с 13:30 до 15:00 в ПТ.
+<p></p>
+Также в "Едином Окне" осуществляются консультации: ПН, ВТ, СР, ЧТ - с 8:30 до 16:00 (перерыв с 12:00 до 13:00), ПТ - с 8:30 до 15:00 (с перерывом) - каб. №17
+<p></p>
+Для госрегистрации нужно подать следующие документы (описание необходимого есть на стенде в "окне", первое помещение):
+<p></p> <ul>
+<li> Форма № 10 . (см в прикрепленных файлах)
+</li></ul> 
+<p></p>
+Заполняется печатными буквами ручкой обязательно на украинском языке.
+<p></p>
+Код КВЕД зависит от вида и рода будущей деятельности: <ul>
+<li> 62.01 	Комп'ютерне програмування
+</li> <li> 62.02 	Консультування з питань інформатизації
+</li> <li> 62.03 	Діяльність із керування комп'ютерним устаткованням
+</li> <li> 62.09 	Інша діяльність у сфері інформаційних технологій і комп'ютерних систем
+</li></ul> 
+<p></p>
+Код КВЕД заносится полностью - одна цифра или знак = одна клетка. Аналогично записывается название вида деятельности.
+<p></p> <ul>
+<li> Копия паспорта и идентификационного кода (можно сделать там, к.12)
+</li> <li> Копию квитанции или платёжного поручения с отметкой банка об оплате регистрационного сбора. (Можно оплатить прямо там, есть филиал банка, к. 11)
+</li></ul> 
+<p></p>
+    <strong>Реквизиты</strong>:
+<p></p> <ul>
+<li> Одержувач: Місцевий бюджет
+</li> <li> ОКПО (ідентифікаційний код): 23977045
+</li> <li> Розрахунковий рахунок: 31416512700002 в ГУДКУ у Донецькій області
+</li> <li> МФО: 834016
+</li> <li> Вид платежу: Реєстраційний збір за проведення державної реєстрації фізичної особи-підприємця
+</li> <li> Код платежу: 22010300
+</li> <li> Сума: 34 грн.
+</li></ul> 
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+При заполнении платежки нужно с собой иметь идентификационный код.
+<p></p> <ul>
+<li> 20 листов бумаги + скоросшиватель бумажный (можно купить на Крытом рынке в любом канцелярском ларьке) 
+</li></ul> 
+<p></p>
+Если документы для проведения госрегистрации подаются лично, с собой нужно иметь паспорт и его копию. Документы подают в каб. 14, от входа направо, в конец коридора. В кабинете много сотрудников, можно обращаться к любому. Оформленное свидетельство выдают на следующий день после обеда (после 14:00 до 16:00), с собой нужно иметь паспорт. 
+<p></p>
+Если документы за вас подаёт уполномоченное лицо, то оно должно предъявить свой паспорт и документ, удостоверяющий его полномочия, а также их копии.
+<p></p> <ul>
+<li> Налоговая инспекция самостоятельно ставит на учет частного предпринимателя не позднее следующего рабочего дня со дня получения сведений от Государственного регистратора. На следующий день после постановки на учет физическому лицу-предпринимателю высылается по адресу прописки справка по форме 4-ОПП о постановке на учет. 
+</li></ul> 
+<p></p>
+ После получения выписки из реестра о госрегистрации ФОП (она же - свидетельство о госрегистрации ФОП), нужно подойти в налоговую и написать заявление о переходе на единый налог.
+<img src="/wiki/pub/System/DocumentGraphics/warning.png" alt="ALERT!" title="ALERT!" width="16" height="16" border="0" /> Это надо сделать до конца месяца, в котором произошла регистрация, а то попадете на общую систему(т.е. не надо регистрироваться в конце месяца). 
+<p></p>
+С 2012 года свидетельство об уплате единого налога выдается на неограниченное время действия в течение 10 календарных дней со дня подачи заявления.
+<p></p>
+Форму-заявление о переходе на единый налог см. в прикрепленных файлах.
+<p></p>
+Это заявление подается Вашему инспектору. К кому Вас прикрепили, можно узнать в комнате, где раздают идентификационные коды (проще всего узнать об этом у охранника, которые проверяет паспорт при посещении налоговой). 
+Заявление о переходе на единый налог может быть подано и почтой. 
+<p></p>
+В этот же визит в налоговую можно отдать на регистрацию "журнал доходов и расходов"  (продается в налоговой или в специальных магазинах для бухгалтеров, например, есть такой на пересечении Гурова и 50-летия СССР). 
+<p></p> <ul>
+<li> Регистрация в пенсионном фонде также происходит автоматически, высылается заказное письмо по месту жительства со справкой о постановке на учет. К справке прилагают расчет единого социального взноса (ЕСВ) и реквизиты, куда его платить. Если подойти в пенсионный фонд после регистрации (это необязательный шаг), то можно познакомиться со своим инспектором, именно ему надо будет сдавать отчеты. 
+</li></ul> 
+<p></p>
+<h2><a name="A_208_145_208_176_208_189_208_186"></a>  Банк </h2>
+<p></p>
+<h3><a name="A_208_158_209_130_208_186_209_128_209_139_209_130_208_184_208_181_208_184_208_178_208_181_208_180_208_181_208_189_208_184_208_181_209_130_208_181_208_186_209_131_209_137_208_181_208_179_208_190_209_129_209_135_208_181_209_130_208_176"></a>  Открытие и ведение текущего счета </h3>
+<p></p>
+Нужно завести рассчетный счет (гривна), рассчетный счет (доллары), карточный счет (гривна), на который будет выводиться наличка и сниматься в банкоматах.
+Сначала открывают гривневый счет. Вы подаете пакет документов. Банк оформляет все и посылает запрос-оповещение в налоговую о том, что Вы открыли счет.
+Потом налоговая разрешает банку начать операции со счетом. Раньше для этого приходилось ехать в налоговую со спецбумажкой и возвращать ее подписанную в банк. Сейчас все клянутся (я посетила с 10 банков), что процедура происходит автоматически.
+После открытия гривневого счета будет открыт долларовый. Документы еще раз приносить не нужно. Просто подпишете отдельный договор.
+<p></p>
+   Пакет документов для открытия счетов:   <ul>
+<li> паспорт (+копия)
+</li> <li> ИНН (+копия)
+</li> <li> заявление (заполняется на бланках банка), всевозможные анкеты от банка
+</li> <li> свидетельство о госрегистации (оригинал + нотариально заверенная копия, а может смогут заверить и в банке, это надо узнавать по каждому банку отдельно)
+</li> <li> форма 4-ОПП (о том, что налоговая Вас взяла на учет), (оригинал+копия. Копию заверят в банке)
+</li> <li> справка из пенсионного фонда (+копия. Копию заверят в банке)
+</li> <li> в банке оформят карточки с подписями и заверят
+</li></ul> 
+<p></p>
+<img src="/wiki/pub/System/DocumentGraphics/warning.png" alt="ALERT!" title="ALERT!" width="16" height="16" border="0" /> Не нужно: <ul>
+<li> "Копия страхового свидетельства" - у вас не будет наемных работников
+</li></ul> 
+<p></p>
+<p></p>
+<p></p>
+<h3><a name="A_208_160_208_176_209_129_209_135_208_181_209_130_208_189_208_190_45_208_154_208_176_209_129_209_129_208_190_208_178_208_190_208_181_208_158_208_177_209_129_208_187_209_131_208_182_208_184_208_178_208_176_208_189_208_184_208_181"></a>  Расчетно-Кассовое Обслуживание </h3>
+У каждого банка своя политика (и свои акции, тарифные пакеты) по обслуживанию частного предпринимателя. Выберете сами подходящий.
+На что обратить внимание: <ul>
+<li> наличие полноценного интернет-банкинга или клиент-банка, стоимость такой услуги, стоимость "электронных ключей", если они требуются
+</li> <li> стоимость месячного обслуживания (может быть фиксированной, а может быть, например, нулем, если операций по счету в этот месяц не было)
+</li> <li> стоимость платежек (например, Вы захотите со счета оплатить единый налог или взнос в пенсионный фонд, какую комиссию с Вас возьмут?)
+</li> <li> стоимость переброски денег на карточку для обналички, комиссия за снятие в банкомате
+</li> <li> стоимость операции по обмену валюты
+</li> <li> стоимость выписок со счета (они могут понадобиться, если вдруг налоговая решит устроить Вам проверку)
+</li> <li> стоимость закрытия счета 
+</li></ul> 
+<p></p>
+<p></p>
+<h3><a name="A_208_159_209_128_208_190_209_134_208_181_208_180_209_131_209_128_208_176_209_128_208_176_208_177_208_190_209_130_209_139_209_129_208_177_208_176_208_189_208_186_208_190_208_188"></a>  Процедура работы с банком </h3>
+В банк относите договор. Он будет на английском, снабжен переводом на русский язык, заверен. Банк одобряет договор, копию оставляет у себя в валютном отделе. (Или не одобряет, тогда переделываем под требования банка). 
+<p></p>
+К вам на валютный счет поступают деньги (или вот-вот поступят). Вы в течении одного-трех (в зависимости от банка) дней должны предоставить им копию "Акта выполненных работ", в котором будет прописано, что такая-то сумма, выплачена в связи с тем-то и тем-то. (Пример акта будет позже. Я буду его готовить для вас.) Как только банк получает "Акт" - деньги появляются на валютном счете.
+<p></p>
+ С этого  счета деньги можно только продать на межбанковской бирже (Вы как бы даете поручение об этом банку, для этого есть специальная процедура, будет поддерживаться интернет-банком или клиент-банком). 
+Полученные от продажи гривны будут зачислены на Ваш гривневый счет. Оттуда гривны можно перебросить на карту для снятия наличности или оплатить этими деньгами налоги.
+<p></p>
+Вам могут предложить завести чековую книжку. Необходимости в ней нет, т.к. вы будут использовать интернет-банкинг.
+<p></p>
+<p></p>
+Поинтересуйтесь, как работает валютный отдел перед открытием счета. Например, они могут требовать нотариального заверения перевода "Акта о выполненных работах" (а это деньги и время), а могут принимать перевод заверенный только Вами (так делает Приватбанк, к примеру).
+<p></p>
+<img src="/wiki/pub/System/DocumentGraphics/warning.png" alt="ALERT!" title="ALERT!" width="16" height="16" border="0" /> Операции со счетом СПД рекомендуется выполнять самостоятельно, если вас не устраивает, что кто-то другой имеет доступ к вашему счету.
+<p></p>
+<h2><a name="A_208_157_208_176_208_187_208_190_208_179_208_184_208_184_208_191_208_187_208_176_209_130_208_181_208_182_208_184_208_178_208_191_208_190_208_187_209_140_208_183_209_131_208_179_208_190_209_129_209_131_208_180_208_176_209_128_209_129_209_130_208_178_208_176"></a>  Налоги и платежи в пользу государства </h2>
+Плательщики единого налога 3 группы оплачивают:  <ul>
+<li> Единый налог: 5% от выручки за квартал. 
+</li></ul> 
+<p></p>
+Реквизиты для платежей позже добавлю по каждому району Донецка.
+<p></p>
+Оплата производится не позднее 50 дней от окончания квартала. например, за 2 квартал 2012 года налог должен быть заплачен до 20 августа 2012. 
+<img src="/wiki/pub/System/DocumentGraphics/warning.png" alt="ALERT!" title="ALERT!" width="16" height="16" border="0" /> Не нужно платить в последний день, банк может слишком долго обрабатывать платеж, он не поступит в налоговую вовремя - нарветесь на штраф и пеню. <ul>
+<li> ЕСВ (единый социальный взнос) --- платеж в пенсионный фонд. Если платите за месяц, то нужно оплатить до 20 числа следующего месяца (т.е. платеж за июль 2012 года должен быть произведен до 20 августа 2012 года). Но можно платить сразу за квартал, а то и за год. Сумма платежа зависит от установленной государством минимальной зарплаты, варьируется от месяца к месяцу: <ul>
+<li> июль (до 20 августа): 382,39 грн.
+</li> <li> август (до 20 сентября): 382,39 грн.
+</li> <li> сентябрь (до 20 октября): 382,39 грн.
+</li> <li> октябрь (до 20 ноября): 387,95 грн.
+</li> <li> ноябрь (до 20 декабря): 387,95 грн.
+</li> <li> декабрь (до 20 января 2013 г.): 393,50 грн.
+</li></ul> 
+</li></ul> 
+<p></p>
+Реквизиты для платежей  есть в справке из Пенсионного фонда. Позже выложу единый файл по всем районам Донецка.
+<p></p>
+<h2><a name="A_208_158_209_130_209_135_208_181_209_130_208_189_208_190_209_129_209_130_209_140"></a>  Отчетность </h2> <ul>
+<li> Налоговая декларация о доходах сдается по итогам каждого квартала в течении 40 дней. Сдается 4 раза в год.
+</li></ul> 
+<p></p>
+Например, отчет по 2 кварталу может быть сдан до 10 августа 2012 года
+Бланк декларации в прикрепленном файле. Пустые места заполняются прочерками. Там где сумма - проставляются числа нарастающим итогом <img src="/wiki/pub/System/DocumentGraphics/warning.png" alt="ALERT!" title="ALERT!" width="16" height="16" border="0" /> с начала года.
+<p></p>
+Декларация может быть сдана  <ol>
+<li> Электронным путем, для этого нужно будет получить электронную цифровую подпись (см ниже)
+</li> <li> Отправлена не позднее 30 дня после окончания квартала почтой ценным письмом с описью вложения и уведомлением о вручении
+</li> <li> Лично отнесена в налоговую и сдана в специальный кабинет, где принимают отчетность  (в этом случае можно вооружиться двумя экземплярами декларации, один сдать, а на другом поставить отметку налоговой о получении)
+</li></ol> 
+<p></p> <ul>
+<li> Отчет в пенсионный фонд за прошедший год  (персонификация) должен быть подан до 31 марта следующего года. Сдается один раз в год   Персонификацию (отчет в ПФ) в 2012 году можно подать одним из таких способов:
+</li>  </ul><ol>
+<li> В электронном виде, используя электронную цифровую подпись (ЭЦП), исходя из постановления ПФ Украины, он отправляется через центр, где обрабатывают электронные отчеты. 
+</li> <li> Можно подать и бумажный бланк отчета, его необходимо заверить печатью (при наличии таковой) и подписью. К нему прилагается и электронная форма. 
+</li> <li> На бумаге, если число застрахованных лиц у страховщика не превышает 5.
+</li></ol> 
+<p></p>
+<img src="/wiki/pub/System/DocumentGraphics/warning.png" alt="ALERT!" title="ALERT!" width="16" height="16" border="0" /> Отчет в пенсионный фонд нельзя отсылать по почте, его не примут.
+<p></p> <ul>
+<li> Предприниматель ведет "Книгу доходов и расходов", инструкция в прикрепленном файле.
+</li></ul> 
+<p></p>
+<p></p>
+<h3><a name="A_208_173_208_187_208_181_208_186_209_130_209_128_208_190_208_189_208_189_208_176_209_143_209_134_208_184_209_132_209_128_208_190_208_178_208_176_209_143_208_191_208_190_208_180_208_191_208_184_209_129_209_140_40_208_180_208_187_209_143_209_129_208_180_208_176_209_135_208_184_208_190_209_130_209_135_208_181_209_130_208_190_208_178_41"></a>  Электронная цифровая подпись (для сдачи отчетов)  </h3>
+Информация и программное обеспечение здесь: <a href="http://sts.gov.ua/elektronna-zvitnist/platnikam-podatkiv-pro-ele/" target="_top">http://sts.gov.ua/elektronna-zvitnist/platnikam-podatkiv-pro-ele/</a>
+<p></p>
+Сама свежая версия системы: <a href="http://sts.gov.ua/elektronna-zvitnist/platnikam-podatkiv-pro-ele/programne-zabezpechennya-/opz-programne-zabezpechennya/" target="_top">http://sts.gov.ua/elektronna-zvitnist/platnikam-podatkiv-pro-ele/programne-zabezpechennya-/opz-programne-zabezpechennya/</a>
+<p></p>
+Инструкция по работе с системой в прикрепленном файле.
+<p></p>
+    * Электронные ключи  <ul>
+ <li>
+ <ul>
+<li> <a href="http://vinbuh.blogspot.com/2012/04/1-2012_28.html" target="_top">Начиная с 1 мая 2012 года платить за электронные ключи для подачи налоговой отчетности не нужно</a>
+</li></ul> 
+</li></ul> 
+К сожалению, процесс еще не запущен. По одним данным эти ключи начнут раздавать с июня, по другим - с июля. И этими "новыми" ключами пока что можно будет подписывать только налоговую отчетность. <ul>
+ <li>
+ <ul>
+<li> <a href="http://www.ukrcc.com/ua/package-documents/" target="_top">ЗАЯВНИК - ФІЗИЧНА ОСОБА-ПІДПРИЄМЕЦЬ (ФОП)</a>
+</li></ul> 
+</li></ul> 
+Это "старое" состояние дел - ключи предоставляли комерческие фирмы за деньги (абонплату).
+<p></p>
+<h3><a name="A_208_159_208_190_208_187_208_181_208_183_208_189_209_139_208_181_209_129_209_129_209_139_208_187_208_186_208_184"></a>  Полезные ссылки </h3>
+<p></p> <ol>
+<li> <a href="http://www.juridicheskij-supermarket.ua/page_entrepreneur-taxation.html" target="_top">http://www.juridicheskij-supermarket.ua/page_entrepreneur-taxation.html</a>
+</li> <li> <a href="http://fnews.com.ua/finhelp/kved-2012" target="_top">http://fnews.com.ua/finhelp/kved-2012</a>
+</li> <li> <a href="http://blog.liga.net/user/izabuta/article/8130.aspx" target="_top">http://blog.liga.net/user/izabuta/article/8130.aspx</a>
+</li> <li> <a href="http://yuzhny.in.ua/article/read/nalogi_2012.html" target="_top">http://yuzhny.in.ua/article/read/nalogi_2012.html</a> - Упрощенная система налогобложения 2012г.
+</li></ol> 
+<p></p>
+<p></p>
+-- <a href="/wiki/bin/view/Main/AlexanderMikhalchuk">AlexanderMikhalchuk</a> - 10 May 2012 </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><div class="foswikiAttachments foswikiFormStep">
+<div class="twistyPlugin foswikiMakeVisible"><span id="topicattachmentslist1show" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a href="#" class="patternTwistyButton"><img src="/wiki/pub/System/DocumentGraphics/toggleopen.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>10</span></span></a></span><span id="topicattachmentslist1hide" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a href="#" class="patternTwistyButton"><img src="/wiki/pub/System/DocumentGraphics/toggleclose.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>10</span></span></a></span></div><div class="twistyPlugin"><div id="topicattachmentslist1toggle" style="" class="twistyRememberSetting twistyContent twistyInited">
+<table summary="Topic attachments" id="tableSpdHowto1" class="foswikiTable" rules="none" border="1"><caption>Topic attachments</caption>
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?sortcol=0;table=1;up=0#sorted_table" title="Sort by this column">I</a> </th>
+			<th class="foswikiTableCol1"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?sortcol=1;table=1;up=0#sorted_table" title="Sort by this column">Attachment</a> </th>
+			<th class="foswikiTableCol2"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?sortcol=2;table=1;up=0#sorted_table" title="Sort by this column">Action</a> </th>
+			<th class="foswikiTableCol3"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?sortcol=3;table=1;up=0#sorted_table" title="Sort by this column">Size</a> </th>
+			<th class="foswikiTableCol4"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?sortcol=4;table=1;up=0#sorted_table" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol5"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?sortcol=5;table=1;up=0#sorted_table" title="Sort by this column">Who</a> </th>
+			<th class="foswikiTableCol6 foswikiLastCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?sortcol=6;table=1;up=0#sorted_table" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/doc.png" width="16" height="16" alt="EN_zayava_new.doc" /></span><span class="foswikiHidden">doc</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SpdHowto/EN_zayava_new.doc">EN_zayava_new.doc</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=EN_zayava_new.doc;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 65.5&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">15 May 2012 - 14:54</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> заявление о переходе на единый налог </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/doc.png" width="16" height="16" alt="PUMB_spisok_docs.doc" /></span><span class="foswikiHidden">doc</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SpdHowto/PUMB_spisok_docs.doc">PUMB_spisok_docs.doc</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=PUMB_spisok_docs.doc;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 24.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 May 2012 - 14:17</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/pdf.png" width="16" height="16" alt="podatkova_deklaratsiya_platnika.pdf" /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SpdHowto/podatkova_deklaratsiya_platnika.pdf">podatkova_deklaratsiya_platnika.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=podatkova_deklaratsiya_platnika.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 252.7&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">13 Jul 2012 - 11:09</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Квартальная декларация, единый налог, бланк </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="ЄСВ_реквизиты.odt" /></span><span class="foswikiHidden">odt</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SpdHowto/%d0%84%d0%a1%d0%92_%d1%80%d0%b5%d0%ba%d0%b2%d0%b8%d0%b7%d0%b8%d1%82%d1%8b.odt">ЄСВ_реквизиты.odt</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=%d0%84%d0%a1%d0%92_%d1%80%d0%b5%d0%ba%d0%b2%d0%b8%d0%b7%d0%b8%d1%82%d1%8b.odt;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 20.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">02 Aug 2012 - 15:30</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Реквизиты для оплаты единого взноса в пенсионный фонд </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="Еще_не_оформлены_ЧП.odt" /></span><span class="foswikiHidden">odt</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SpdHowto/%d0%95%d1%89%d0%b5_%d0%bd%d0%b5_%d0%be%d1%84%d0%be%d1%80%d0%bc%d0%bb%d0%b5%d0%bd%d1%8b_%d0%a7%d0%9f.odt">Еще_не_оформлены_ЧП.odt</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=%d0%95%d1%89%d0%b5_%d0%bd%d0%b5_%d0%be%d1%84%d0%be%d1%80%d0%bc%d0%bb%d0%b5%d0%bd%d1%8b_%d0%a7%d0%9f.odt;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 12.7&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">10 Jul 2012 - 16:48</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Еще не оформленные сотрудники </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/doc.png" width="16" height="16" alt="ФОРМА_10.doc" /></span><span class="foswikiHidden">doc</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SpdHowto/%d0%a4%d0%9e%d0%a0%d0%9c%d0%90_10.doc">ФОРМА_10.doc</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=%d0%a4%d0%9e%d0%a0%d0%9c%d0%90_10.doc;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 82.5&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">15 May 2012 - 14:37</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> форма для регистрации ЧП </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/doc.png" width="16" height="16" alt="инструкция_электронная_отчетность.doc" /></span><span class="foswikiHidden">doc</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SpdHowto/%d0%b8%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%ba%d1%86%d0%b8%d1%8f_%d1%8d%d0%bb%d0%b5%d0%ba%d1%82%d1%80%d0%be%d0%bd%d0%bd%d0%b0%d1%8f_%d0%be%d1%82%d1%87%d0%b5%d1%82%d0%bd%d0%be%d1%81%d1%82%d1%8c.doc">инструкция_электронная_отчетность.doc</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=%d0%b8%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%ba%d1%86%d0%b8%d1%8f_%d1%8d%d0%bb%d0%b5%d0%ba%d1%82%d1%80%d0%be%d0%bd%d0%bd%d0%b0%d1%8f_%d0%be%d1%82%d1%87%d0%b5%d1%82%d0%bd%d0%be%d1%81%d1%82%d1%8c.doc;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 896.0&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 May 2012 - 15:26</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="образец_заполнения_формы_№10.JPG" /></span><span class="foswikiHidden">JPG</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SpdHowto/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%b5%d1%86_%d0%b7%d0%b0%d0%bf%d0%be%d0%bb%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f_%d1%84%d0%be%d1%80%d0%bc%d1%8b_%e2%84%9610.JPG">образец_заполнения_формы_№10.JPG</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%b5%d1%86_%d0%b7%d0%b0%d0%bf%d0%be%d0%bb%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f_%d1%84%d0%be%d1%80%d0%bc%d1%8b_%e2%84%9610.JPG;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 3067.9&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">15 May 2012 - 14:47</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/JuliaDykukha">JuliaDykukha</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/doc.png" width="16" height="16" alt="порядок_ведения_книги_доходов_и_расходов.rtf" /></span><span class="foswikiHidden">rtf</span> </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/pub/Anahoret/SpdHowto/%d0%bf%d0%be%d1%80%d1%8f%d0%b4%d0%be%d0%ba_%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d1%8f_%d0%ba%d0%bd%d0%b8%d0%b3%d0%b8_%d0%b4%d0%be%d1%85%d0%be%d0%b4%d0%be%d0%b2_%d0%b8_%d1%80%d0%b0%d1%81%d1%85%d0%be%d0%b4%d0%be%d0%b2.rtf">порядок_ведения_книги_доходов_и_расходов.rtf</a> </td>
+			<td class="foswikiTableCol2"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=%d0%bf%d0%be%d1%80%d1%8f%d0%b4%d0%be%d0%ba_%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d1%8f_%d0%ba%d0%bd%d0%b8%d0%b3%d0%b8_%d0%b4%d0%be%d1%85%d0%be%d0%b4%d0%be%d0%b2_%d0%b8_%d1%80%d0%b0%d1%81%d1%85%d0%be%d0%b4%d0%be%d0%b2.rtf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3"> 21.9&nbsp;K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 May 2012 - 15:40</span> </td>
+			<td class="foswikiTableCol5"> <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/else.png" width="16" height="16" alt="єдиний_податок.XLS" /></span><span class="foswikiHidden">XLS</span> </td>
+			<td class="foswikiTableCol1 foswikiLast"> <a href="/wiki/pub/Anahoret/SpdHowto/%d1%94%d0%b4%d0%b8%d0%bd%d0%b8%d0%b9_%d0%bf%d0%be%d0%b4%d0%b0%d1%82%d0%be%d0%ba.XLS">єдиний_податок.XLS</a> </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="/wiki/bin/attach/Anahoret/SpdHowto?filename=%d1%94%d0%b4%d0%b8%d0%bd%d0%b8%d0%b9_%d0%bf%d0%be%d0%b4%d0%b0%d1%82%d0%be%d0%ba.XLS;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td align="right" class="foswikiTableCol3 foswikiLast"> 19.0&nbsp;K </td>
+			<td class="foswikiTableCol4 foswikiLast"> <span class="foswikiNoBreak">18 May 2012 - 17:43</span> </td>
+			<td class="foswikiTableCol5 foswikiLast"> <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> реквизиты для оплаты единого налога </td>
+		</tr>
+	</tbody></table>
+</div></div></div><a name="topic-actions"></a><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/SpdHowto?t=1532330979;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/SpdHowto' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SpdHowto?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SpdHowto?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/oops/Anahoret/SpdHowto?template=oopshistory' rel='nofollow' title='View total topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a></span>: r20&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/SpdHowto?rev1=19;rev2=20">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?rev=19">r19</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/SpdHowto?rev1=18;rev2=19">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?rev=18">r18</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/SpdHowto?rev1=17;rev2=18">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/SpdHowto?rev=17">r17</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SpdHowto?template=backlinksweb' rel='nofollow' title='Search the Anahoret Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SpdHowto?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/SpdHowto?template=more&amp;maxrev=20&amp;currrev=20' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: 02 Aug 2012, <a href="/wiki/bin/view/Main/GalinaRomashchenko">GalinaRomashchenko</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator" style="border-color:#99CC99">
+<a href='http://anahoret.com/wiki/bin/view/Anahoret/WebHome'>Anahoret</a>
+</div> <ul>
+<li> <strong><a href="/wiki/bin/view/Anahoret/DeveloperDocumentation">Документация</a></strong> <hr />
+</li> <li> <strong><a href="/wiki/bin/view/Anahoret/WebHome" class="foswikiCurrentWebHomeLink"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/home.png" width="16" height="16" alt="home" /></span> Anahoret Web</a></strong>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicCreator?parent=SpdHowto" target="_top"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/newtopic.png" width="16" height="16" alt="newtopic" /></span> Create New Topic</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicList"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/index.png" width="16" height="16" alt="index" /></span> Index</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebSearch"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/searchtopic.png" width="16" height="16" alt="searchtopic" /></span> Search</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebChanges"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/changes.png" width="16" height="16" alt="changes" /></span> Changes</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebNotify"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/notify.png" width="16" height="16" alt="notify" /></span> Notifications</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebStatistics"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/statistics.png" width="16" height="16" alt="statistics" /></span> Statistics</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebPreferences"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/wrench.png" width="16" height="16" alt="wrench" /></span> Preferences</a> <hr />
+</li> <li> <strong>Webs</strong>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#99CC99" />&nbsp;Anahoret</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Getsocio/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Getsocio</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Mailinator/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Mailinator</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Main/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFEFA6" />&nbsp;Main</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Projects/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFCC00" />&nbsp;Projects</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Sandbox/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#B9DAFF" />&nbsp;Sandbox</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Skills/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#ffa199" />&nbsp;Skills</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/System/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFD8AA" />&nbsp;System</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Tracker/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#33CC99" />&nbsp;Tracker</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Trash/InVision/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;<span class='foswikiWebIndent'></span>InVision</a></span>
+</li></ul> 
+<p></p>
+</div></div>
+</div>
+<div class="clear">&nbsp;</div>
+</div></div><div id="patternTopBar"><div id="patternTopBarContentsWrapper"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="http://anahoret.com/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/Main/WebHome/anadea-logo.png" border="0" alt="Anahoret wiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+ <ul>
+<li> <form name="jumpForm" action="/wiki/bin/view/Anahoret/SpdHowto"><input id="jumpFormField" title="Jump" type="text" class="foswikiInputField foswikiDefaultText" name="topic" value="" size="18" /><noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript>   </form>
+</li> <li> <form name="quickSearchForm" action="/wiki/bin/view/Anahoret/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Anahoret" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript>   </form>
+</li></ul> 
+<p></p>
+</td></tr></table></div></div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"></div></div></div>
+</div>
+</div>
+</div>
+</div></body></html>

@@ -1,0 +1,163 @@
+4803      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp3819686iof;
+        Mon, 30 Jul 2018 04:05:12 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpehEO+NIET8LRoix4bW+hQJJHPGMOd0g9QyLNlFEIyVI3iYxR5eLjn1rNng0sfRezHKlnt0
+X-Received: by 2002:adf:e841:: with SMTP id d1-v6mr17520813wrn.269.1532948712184;
+        Mon, 30 Jul 2018 04:05:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532948712; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vAudNpXkwgiuivsu5byP7F6X/5K2WAaS4evuGRTRi5dRy+hpENAHVbUbogX0AT7+Kh
+         UN4MjrODxZcZ5IQACAObsPlJm/ls50Z/9QWzdTbj7KrxmAx2FVtE4hnb0ADubxtXlYVz
+         wgPDf5H5VDlzQEKBqneA7l3oBuvi4D3yYegUzCWnAEtqTwWEdJ4uNpaaR5/4oHZipe2T
+         Y4dS15Wc5aHfwRHH100t3OW1j3MmBa2wnAv+KOLo74YwZk+jwDvxJ5cPjKfxYt7gmsuK
+         0ACac/x2vlA9zLIukibwl54VjHxSOdsAKORgWcLpjEg2LSqtyHDBwnEojJ0jW1IDNqxs
+         qtSQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:arc-authentication-results;
+        bh=yGNjNqZV5cCg9YP/VEw8O0g6Mx+Htqg3s6lp+2jUnpg=;
+        b=JwfWOfmQKFlFMkMobTt4QwnP7Vpb8gKKqOAnTZUsJfyU0yb010DxTw3p4ex7BnYh7A
+         IcDv7Iyhe27OL2GVz+70l6wxRwqydg5kFKX3LExkxnRqWeoKj+bFWfgMOg5KI1L8WsKB
+         pEeEly1pcmiLxK/KqiKYJ6jeWEpylMuQOotRJuFLCRwLHWsMgxtdoJ5qIHAZht6CQR5q
+         IAU6mDKBGxLvwYYLznjc8y5DMS+gYIwyDECqUogNPmIZRURPGg0l5+yJnOIpvQnftH5V
+         vQnKicofradVuugut94e/y6Z+wDjXI3OTa3FxwmA84KphOgVsONgYoZeKjR0me+dFZ9i
+         k1UA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=softfail (google.com: domain of transitioning gitlab@anahoret.com does not designate 78.41.203.246 as permitted sender) smtp.mailfrom=gitlab@anahoret.com
+Return-Path: <gitlab@anahoret.com>
+Received: from server117.snelserver.com (gitlab.anahoret.com. [78.41.203.246])
+        by mx.google.com with ESMTP id h18-v6si10884628wrr.20.2018.07.30.04.05.11
+        for <kr@anadeainc.com>;
+        Mon, 30 Jul 2018 04:05:12 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning gitlab@anahoret.com does not designate 78.41.203.246 as permitted sender) client-ip=78.41.203.246;
+Authentication-Results: mx.google.com;
+       spf=softfail (google.com: domain of transitioning gitlab@anahoret.com does not designate 78.41.203.246 as permitted sender) smtp.mailfrom=gitlab@anahoret.com
+Received: by server117.snelserver.com (Postfix, from userid 1005)
+	id 902061B02547; Mon, 30 Jul 2018 14:05:11 +0300 (EEST)
+Date: Mon, 30 Jul 2018 14:05:11 +0300
+From: GitLab <gitlab@anahoret.com>
+Reply-To: GitLab <noreply@gitlab.anahoret.com>
+To: kr@anadeainc.com
+Message-ID: <5b5ef0e771165_50133fb960b04600149399@gitlab.anahoret.com.mail>
+Subject: SSH key was added to your account
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b5ef0e77081c_50133fb960b0460014928d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b5ef0e77081c_50133fb960b0460014928d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi =D0=9A=D0=BE=D0=BD=D1=81=D1=82=D0=B0=D0=BD=D1=82=D0=B8=D0=BD =D0=A0=D1=
+=8B=D1=89=D0=B5=D0=BD=D0=BA=D0=BE!
+
+A new public key was added to your account:
+
+Title: kr@anadeainc.com
+
+If this key was added in error, you can remove it at https://gitlab.anaho=
+ret.com/profile/keys
+
+----==_mimepart_5b5ef0e77081c_50133fb960b0460014928d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D'en'>
+<head>
+<meta content=3D'text/html; charset=3Dutf-8' http-equiv=3D'Content-Type'>=
+
+<title>
+GitLab
+</title>
+</meta>
+</head>
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  p.details {
+    font-style:italic;
+    color:#777
+  }
+  .footer p {
+    font-size:small;
+    color:#777
+  }
+  pre.commit-message {
+    white-space: pre-wrap;
+  }
+  .file-stats a {
+    text-decoration: none;
+  }
+  .file-stats .new-file {
+    color: #090;
+  }
+  .file-stats .deleted-file {
+    color: #B00;
+  }
+</style>
+<body>
+<div class=3D'content'>
+<p>
+Hi =D0=9A=D0=BE=D0=BD=D1=81=D1=82=D0=B0=D0=BD=D1=82=D0=B8=D0=BD =D0=A0=D1=
+=8B=D1=89=D0=B5=D0=BD=D0=BA=D0=BE!
+</p>
+<p>
+A new public key was added to your account:
+</p>
+<p>
+title:
+<code>kr@anadeainc.com</code>
+</p>
+<p>
+If this key was added in error, you can remove it under
+<a href=3D"https://gitlab.anahoret.com/profile/keys">SSH Keys</a>
+</p>
+
+</div>
+<div class=3D'footer' style=3D'margin-top: 10px;'>
+<p>
+&mdash;
+<br>
+<a href=3D"https://gitlab.anahoret.com/u/kr">View it on GitLab</a>.
+<br>
+You're receiving this email because of your account on gitlab.anahoret.co=
+m.
+If you'd like to receive fewer emails, you can
+adjust your notification settings.
+
+</p>
+</div>
+</body>
+</html>
+
+----==_mimepart_5b5ef0e77081c_50133fb960b0460014928d--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>22</integer>
+	<key>date-last-viewed</key>
+	<integer>1532948723</integer>
+	<key>date-received</key>
+	<integer>1532948712</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>remote-id</key>
+	<string>30</string>
+</dict>
+</plist>

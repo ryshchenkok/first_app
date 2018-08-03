@@ -1,0 +1,159 @@
+[08/02/18, 15:08:03:329] info: ╔═══════════════════════════════════════════════════════════════════════╗
+[08/02/18, 15:08:03:330] info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 08/02/18, 15:08:03:327      ║
+[08/02/18, 15:08:03:330] info: ╚═══════════════════════════════════════════════════════════════════════╝
+[08/02/18, 15:08:03:429] info: Initializing local storage instance at path: /Users/kr/Library/Application Support/Slack/local-settings.json
+[08/02/18, 15:08:03:846] info: Main window preload script finished
+{
+  "readyTime": 898.900211
+}
+[08/02/18, 15:08:21:726] info: Store: FOREGROUND_APP
+[08/02/18, 15:08:51:312] info: Store: FOREGROUND_APP
+[08/02/18, 15:09:33:184] info: Store: FOREGROUND_APP
+[08/02/18, 15:10:02:663] info: Store: FOREGROUND_APP
+[08/02/18, 15:10:41:904] info: Store: FOREGROUND_APP
+[08/02/18, 15:11:18:468] info: Store: FOREGROUND_APP
+[08/02/18, 15:12:15:572] info: Store: FOREGROUND_APP
+[08/02/18, 15:14:52:780] info: Store: FOREGROUND_APP
+[08/02/18, 15:15:18:330] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U69MKMHQX-ge0b0d5dce35-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "97o2h6uOyBMqJQk",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533212118.000045&team=T4ALJRY56",
+  "msg": "1533212118.000045",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:15:20:990] info: Store: FOREGROUND_APP
+[08/02/18, 15:15:48:801] info: Store: FOREGROUND_APP
+[08/02/18, 15:16:16:275] info: Store: FOREGROUND_APP
+[08/02/18, 15:16:23:270] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "LlOPhrCmQYOY187",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:16:33:455] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:13:436] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:30:835] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:52:829] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:06:507] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:21:802] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:30:156] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:37:691] info: Store: FOREGROUND_APP
+[08/02/18, 15:19:40:801] info: Store: FOREGROUND_APP
+[08/02/18, 15:23:37:812] info: Store: FOREGROUND_APP
+[08/02/18, 15:24:26:673] info: Store: FOREGROUND_APP
+[08/02/18, 15:24:49:922] info: Store: FOREGROUND_APP
+[08/02/18, 15:25:19:355] info: Store: FOREGROUND_APP
+[08/02/18, 15:28:29:247] info: Store: FOREGROUND_APP
+[08/02/18, 15:34:51:218] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:11:945] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:20:870] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    561,
+    238
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:24:540] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    94,
+    195
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:27:796] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    80,
+    239
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:43:695] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:52:277] info: Store: FOREGROUND_APP
+[08/02/18, 15:36:13:772] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    77,
+    241
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:36:33:134] info: Store: FOREGROUND_APP
+[08/02/18, 15:36:56:837] info: Store: FOREGROUND_APP
+[08/02/18, 15:37:14:000] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "Wzr8IEFn4z9Wq4W",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:14:348] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "B7AnhqHjwpmVJDA",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:14:381] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "mVmETrI9jVnmn5L",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:16:581] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "p6pzs8SGn3gwz23",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:16:934] info: Store: REMOVE_WINDOW 5
+[08/02/18, 15:37:16:940] info: Store: REMOVE_WINDOW 6
+[08/02/18, 15:37:16:952] info: Store: REMOVE_WINDOW 7
+[08/02/18, 15:37:16:953] info: Window is unloading, window.desktop is no longer accessible

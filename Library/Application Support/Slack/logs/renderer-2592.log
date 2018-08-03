@@ -1,0 +1,29 @@
+[07/24/18, 09:26:02:112] info: ╔═══════════════════════════════════════════════════════════════════════╗
+[07/24/18, 09:26:02:113] info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 07/24/18, 09:26:02:110      ║
+[07/24/18, 09:26:02:113] info: ╚═══════════════════════════════════════════════════════════════════════╝
+[07/24/18, 11:39:00:432] error: Jul-24 11:39:00.431 (T4ALJRY56) user_typing event from user (U7KBBCHBM) not in model; ignoring
+[07/24/18, 11:39:12:695] error: Jul-24 11:39:12.695 (T4ALJRY56) user_typing event from user (U7KBBCHBM) not in model; ignoring
+[07/24/18, 11:39:18:285] error: Jul-24 11:39:18.285 (T4ALJRY56) user_typing event from user (U7KBBCHBM) not in model; ignoring
+[07/24/18, 11:40:33:441] error: Jul-24 11:40:33.441 (T4ALJRY56) user_typing event from user (U7KBBCHBM) not in model; ignoring
+[07/24/18, 11:40:38:463] error: Jul-24 11:40:38.462 (T4ALJRY56) user_typing event from user (U7KBBCHBM) not in model; ignoring
+[07/24/18, 11:40:48:524] error: Jul-24 11:40:48.523 (T4ALJRY56) user_typing event from user (U7KBBCHBM) not in model; ignoring
+[07/24/18, 12:21:10:946] error: Jul-24 12:21:10.946 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[07/24/18, 13:27:12:405] error: Jul-24 13:27:12.405 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:27:21:026] error: Jul-24 13:27:21.026 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:27:49:270] error: Jul-24 13:27:49.270 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:28:33:493] error: Jul-24 13:28:33.493 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:29:21:528] error: Jul-24 13:29:21.528 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:30:18:972] error: Jul-24 13:30:18.972 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:30:24:216] error: Jul-24 13:30:24.216 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:30:30:035] error: Jul-24 13:30:30.034 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:30:36:049] error: Jul-24 13:30:36.049 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:30:56:554] error: Jul-24 13:30:56.554 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:31:01:604] error: Jul-24 13:31:01.603 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:31:07:513] error: Jul-24 13:31:07.513 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:31:13:156] error: Jul-24 13:31:13.156 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:31:18:230] error: Jul-24 13:31:18.230 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:31:23:307] error: Jul-24 13:31:23.307 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:31:38:450] error: Jul-24 13:31:38.449 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:31:43:512] error: Jul-24 13:31:43.512 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:31:48:710] error: Jul-24 13:31:48.710 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring
+[07/24/18, 13:31:53:735] error: Jul-24 13:31:53.735 (T4ALJRY56) user_typing event from user (U4RCQ4T0X) not in model; ignoring

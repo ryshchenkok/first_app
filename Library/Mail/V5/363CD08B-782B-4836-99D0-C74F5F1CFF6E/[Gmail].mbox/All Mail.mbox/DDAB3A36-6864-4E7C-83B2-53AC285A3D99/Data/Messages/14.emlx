@@ -1,0 +1,453 @@
+15464     
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a0c:81f4:0:0:0:0:0 with SMTP id 49-v6csp1476307qve;
+        Mon, 23 Jul 2018 09:08:55 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpf+6xtMIS62zhGZiyq0LnA4g6O0pmdRaSuCH0lFZ6J3NCPl/arqYBiqjObFJhEBmS0ZxIHo
+X-Received: by 2002:ac8:3a6:: with SMTP id t38-v6mr12828868qtg.68.1532362135634;
+        Mon, 23 Jul 2018 09:08:55 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532362135; cv=none;
+        d=google.com; s=arc-20160816;
+        b=RrmkD9foDOKwrBSRhwIM9i7jWKs4MBKXf23qiDzZ/cioVKMHK8IEGBl4da64gLXPG+
+         5YBsb9kmymbjeRlsfqEMXsmi5ZCec1A8bS9C4iwqdGfrAwX2b7GmIz4sylLtpP/nGV/p
+         q7oUap7rcGy32P1n4kTtAeJjEp3pH2sZtPphcY8H5+zW4rbHVfUg611rkXxREGCswks2
+         efz21iIYHJOSoMU/DId/31sI3HTxtoIjkdYtP0pc27vilkDXoCRvztNVDhDKCMMfeB6N
+         utx+YZ1A27eWgMGIq6GufOFVE0CiF4ZDwevrHh8MJysC3c8wXSa2jxotpfDPabo8ZJzj
+         zQOg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:date:message-id:mime-version:auto-submitted:reply-to
+         :from:subject:to:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=9Dr3Z0oih9yseoQghdowz61l6LH+pw6gk0GqNt+U768=;
+        b=q0g5ZPrSclqohO47Nr57CX7j1Ql5F6MxUiK/D8GPKOx6BwM/sU8ADsdHgn4kR2hQsS
+         i/iBnyLy2IkTXCu5gGdAousAAhEC5lsCVDQ9wLJqk0rIv3ZM1tkKSYX3jZsbDF7XwCLV
+         vz7Eg0LLHABot/gTE3uXIkarP3AL1xCG2DmkVrFwpD7gdupI3wytnrjteJV/ex8p1+nz
+         QusLF9q0i/vpQuiaWKtICMT71AtUe3i1MllyeNdrT/7t3v7P6doHc2I+3d0ZoCirgQC1
+         kRGDpnJ12aR1HsUKgtkP/AWkchHVpVLDFQov55z7D2lMj3p+KBU+kvS1soU7wa52LIqI
+         2PMQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@slack.com header.s=awh63k4dkfmxz2frn2qxdlz7l34bhian header.b=PcO4mLlz;
+       dkim=pass header.i=@amazonses.com header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=grIpyXOD;
+       spf=pass (google.com: domain of 01000164c7e6952f-11f7b669-a398-4e27-ae19-c9f817f030e6-000000@mail.slack.com designates 54.240.35.24 as permitted sender) smtp.mailfrom=01000164c7e6952f-11f7b669-a398-4e27-ae19-c9f817f030e6-000000@mail.slack.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=slack.com
+Return-Path: <01000164c7e6952f-11f7b669-a398-4e27-ae19-c9f817f030e6-000000@mail.slack.com>
+Received: from a35-24.smtp-out.amazonses.com (a35-24.smtp-out.amazonses.com. [54.240.35.24])
+        by mx.google.com with ESMTPS id y2-v6si764015qkl.233.2018.07.23.09.08.55
+        for <kr@anadeainc.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 23 Jul 2018 09:08:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 01000164c7e6952f-11f7b669-a398-4e27-ae19-c9f817f030e6-000000@mail.slack.com designates 54.240.35.24 as permitted sender) client-ip=54.240.35.24;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@slack.com header.s=awh63k4dkfmxz2frn2qxdlz7l34bhian header.b=PcO4mLlz;
+       dkim=pass header.i=@amazonses.com header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=grIpyXOD;
+       spf=pass (google.com: domain of 01000164c7e6952f-11f7b669-a398-4e27-ae19-c9f817f030e6-000000@mail.slack.com designates 54.240.35.24 as permitted sender) smtp.mailfrom=01000164c7e6952f-11f7b669-a398-4e27-ae19-c9f817f030e6-000000@mail.slack.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=slack.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=awh63k4dkfmxz2frn2qxdlz7l34bhian; d=slack.com; t=1532362135;
+	h=To:Subject:From:Reply-To:MIME-Version:Content-Type:Message-Id:Date;
+	bh=xhU72+2fQK7bZPWUW+utiu07C8n+KfVFzpuoWUfFOXw=;
+	b=PcO4mLlz9LyFKGXTMtnl+n43QSpoICTtuDUfJwHio/Ug0CtBQhUDm2e0S4aVSqMM
+	GzEQ+s9qfTo+spgTk7tv8A3MxDg/mCDKagxpYMxR95HJ5b4Ox5k0s4TnXIUewfxuem1
+	BA5gcM1ndqM4SqUyu++0HrhxQ3GxwyKeO0t3k3Zs=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1532362135;
+	h=To:Subject:From:Reply-To:MIME-Version:Content-Type:Message-Id:Date:Feedback-ID;
+	bh=xhU72+2fQK7bZPWUW+utiu07C8n+KfVFzpuoWUfFOXw=;
+	b=grIpyXODVaEz1UmNhnn4D9hTYIY0q9vZxBHPVloq+0QbH/Aed0ybBLwkzcwjeVXl
+	CzXOvVxXko+a/JQQCyJxbbUvaHK6AdDSmP9cORvFxw9h5Z5bQBZSv0iDCd2NHGjFeMI
+	1YWpS+346w0N6k2u2ijdPdytZFqErIlxmCjNMDnM=
+To: kr@anadeainc.com
+Subject: =?utf-8?Q?Confirm_kr=40anadeainc=2ecom_on_Slack?=
+From: "Slack" <no-reply-siRyYynp75y3B1KobYNnXl0v@slack.com>
+Reply-To: no-reply-siRyYynp75y3B1KobYNnXl0v@slack.com
+Auto-Submitted: auto-generated
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="__slack_1667600160__"
+Message-ID: <01000164c7e6952f-11f7b669-a398-4e27-ae19-c9f817f030e6-000000@email.amazonses.com>
+Date: Mon, 23 Jul 2018 16:08:54 +0000
+X-SES-Outgoing: 2018.07.23-54.240.35.24
+Feedback-ID: 1.us-east-1.kwXgUBITdY2w2KyDhc4cKlXKai8tXy8Sx50cu3XZbqE=:AmazonSES
+
+
+--__slack_1667600160__
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Confirm your email address on Slack
+
+Hello! We just need to verify that kr@anadeainc.com is your email
+address, and then we’ll help you find your Slack workspaces or create
+a new one.
+
+From your mobile device, click the link below to confirm.
+
+https://go.slack.com/get-started/enQtNDAyNjUyOTUyNzUyLTI5NWFkZWI2MDNjZmVmZmQ0ZTFmYmI1NjU3Y2UyNTM5MDUyZjRiODY4NDcyZTcxZDg1NDExODJmMzIxMjRlMTM?e=a3JAYW5hZGVhaW5jLmNvbQ%3D%3D&i=default&m=slack&x=x-a403124605316
+
+Didn’t request this email?
+No worries! Your address may have been entered by mistake. If you ignore
+or delete this email, nothing further will happen.
+
+--__slack_1667600160__
+Content-Type: text/html; charset="utf-8"
+Content-Disposition: inline
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<title>Confirm kr@anadeainc.com on Slack</title>
+
+	<style type="text/css">
+		
+
+		/* Global Resets */
+
+		body, .background_main, p, table, td, div {
+			font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		}
+
+		img {
+			border: none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%;
+		}
+
+		p {
+			padding-bottom: 2px;
+		}
+
+		body {
+			background: #fff;
+			font-size: 17px;
+			line-height: 24px;
+			margin: 0;
+			padding: 0;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+			width: 100%;
+		}
+
+		td {
+			font-size: 17px;
+			line-height: 24px;
+			vertical-align: top;
+		}
+
+		/* Footer */
+		.email_footer td, .email_footer p, .email_footer span, .email_footer a {
+			font-size: 15px;
+			text-align: center;
+		}
+
+		.email_footer td {
+			padding-top: 20px;
+		}
+
+		/* Typography */
+		h1, h2, h3, h4 {
+			color: #434245;
+			font-weight: 400;
+			line-height: 1.4;
+			margin: 0;
+			margin-bottom: 12px;
+		}
+
+		h1 {
+			font-size: 30px;
+			line-height: 36px;
+			font-weight: 900;
+			letter-spacing: -.75px;
+			text-align: left;
+		}
+
+		p, ul, ol {
+			font-size: 17px;
+			line-height: 24px;
+			font-weight: normal;
+			margin: 0;
+			margin-bottom: 15px;
+		}
+
+		p li, ul li, ol li {
+			list-style-position: inside;
+			margin-left: 5px;
+		}
+
+		a {
+			color: #3498db;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.button_link::after {
+			position: absolute;
+			content: '';
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			border-radius: 4px;
+		}
+
+		.button_link:hover::after {
+			box-shadow: inset 0 -2px #237c4a;
+		}
+
+		.preview_text {
+			color: transparent;
+			display: none;
+			height: 0;
+			max-height: 0;
+			max-width: 0;
+			opacity: 0;
+			overflow: hidden;
+			mso-hide: all;
+			visibility: hidden;
+			width: 0;
+			font-size: 1px;
+			line-height:1px;
+		}
+
+		.preview_text a {
+			color: #3AA3E3 !important;
+			font-weight: bold;
+		}
+
+		/* Responsive and Mobile Friendly Styles */
+		/* Yahoo Mail has a history of rendering all media query styles with class selectors unless class is used as an attribute */
+		@media only screen and (max-width: 600px) {
+			table[class="background_main"] .sm_full_width {
+				width: 100% !important;
+			}
+			table[class="background_main"] .sm_align_center {
+				text-align: center !important;
+			}
+			table[class="background_main"] .sm_auto_width {
+				width: auto !important;
+			}
+			table[class="background_main"] .sm_auto_height {
+				height: auto !important;
+			}
+
+			table[class="background_main"] .sm_border_box {
+				box-sizing: border-box !important;
+			}
+
+			table[class="background_main"] .sm_block {
+				display: block !important;
+			}
+			table[class="background_main"] .sm_inline_block {
+				display: inline-block !important;
+			}
+			table[class="background_main"] .sm_table {
+				display: table !important;
+			}
+
+			table[class="background_main"] .sm_no_side_padding {
+				padding-right: 0 !important;
+				padding-left: 0 !important;
+			}
+			table[class="background_main"] .sm_no_border_radius {
+				border-radius: 0 !important;
+			}
+			table[class="background_main"] .sm_no_padding {
+				padding-right: 0 !important;
+				padding-left: 0 !important;
+			}
+			table[class="background_main"] .sm_os_icons_height {
+				/* this is to make the parent element the same height as the inline-block img inside */
+				height: 44px;
+			}
+			.social_img_bottom_margin {
+				/*this class is for social_user_outreach email only*/
+				margin-bottom: 20px !important;
+			}
+			.social_p_bottom_margin {
+				/*this class is for social_user_outreach email only*/
+				margin-bottom: 40px !important;
+			}
+		}
+
+		/* More client-specific styles */
+		@media all {
+			.ExternalClass {
+				width: 100%;
+			}
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+				line-height: 100%;
+			}
+			.email_footer a {
+				color: #434245 !important;
+				font-family: inherit !important;
+				font-size: inherit !important;
+				font-weight: inherit !important;
+				line-height: inherit !important;
+				text-decoration: none !important;
+			}
+		}
+		a:hover {
+			text-decoration: underline !important;
+		}
+
+		
+	</style>
+</head>
+<body>
+		<!--[if mso]>
+	<style type="text/css">
+		
+		.background_main, table, table td, p, div, h1, h2, h3, h4, h5, h6 {
+			font-family: Arial, sans-serif !important;
+		}
+		
+	</style>
+	<![endif]-->
+
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" class="background_main" style="background-color: #ffffff; padding-top: 20px; color: #434245; width: 100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; ">
+		<tr>
+			<td valign="top" class="sm_full_width" style="margin: 0 auto; width: 100%; max-width: 600px; display: block;">
+				<div class="sm_no_padding" style="margin: 0 auto; padding: 30px 0 40px; display: block; box-sizing: border-box;">
+					
+					<table style="width: 100%; color: #434245;" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td style="box-sizing: border-box;">
+								<table border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td>
+<!--[if mso]>
+<table cellpadding="0" cellspacing="0" border="0" style="padding: 0; margin: 0; width: 100%;">
+	<tr>
+		<td colspan="3" style="padding: 0; margin: 0; font-size: 20px; height: 20px;" height="20">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="padding: 0; margin: 0;">&nbsp;</td>
+		<td style="padding: 0; margin: 0;" width="540">
+<![endif]-->
+	<img style="width: 38px; height: 38px; margin: 0 0 15px 0; padding-right: 30px; padding-left: 30px;" alt="" width="38" height="38" src=https://slack.com/x-a403124605316/img/email/slack_hash@2x.png />
+
+<h1 style="font-size: 30px; padding-right: 30px; padding-left: 30px;">
+	Confirm your email address on Slack</h1>
+
+<p style="font-size: 17px; padding-right: 30px; padding-left: 30px;">
+			Hello! We just need to verify that <strong>kr@anadeainc.com</strong> is your email address, and then we’ll help you find your Slack workspaces or create a new one.	</p>
+
+<p style="font-size: 17px; padding-right: 30px; padding-left: 30px; margin-bottom: 20px;">
+	📱 <strong>From your mobile device</strong>, tap the button below to confirm:</p>
+
+<div style="padding-right: 30px; padding-left: 30px; margin-top: 40px; margin-bottom: 30px;">
+	
+	
+<table style="width: 100%; " class="sm_table">
+	<tr style="width: 100%;">
+		<td style="width: 100%;">
+			<span style="display: inline-block; position:relative; border-radius:4px; background-color:#2ea664; " class="sm_full_width">
+				<a class="button_link sm_full_width sm_border_box" href="https://go.slack.com/get-started/enQtNDAyNjUyOTUyNzUyLTI5NWFkZWI2MDNjZmVmZmQ0ZTFmYmI1NjU3Y2UyNTM5MDUyZjRiODY4NDcyZTcxZDg1NDExODJmMzIxMjRlMTM?e=a3JAYW5hZGVhaW5jLmNvbQ%3D%3D&amp;i=default&amp;m=slack&amp;x=x-a403124605316" style="min-width:196px; border-top:13px solid; border-bottom:13px solid; border-right:24px solid; border-left:24px solid; border-color:#2ea664; border-radius:4px; background-color:#2ea664; color:#ffffff; font-size:18px; line-height:18px; word-break:break-word; text-shadow:0 1px 1px #2e9a5f;  display: inline-block; text-align: center; font-weight: 900; text-decoration: none !important;">
+					Confirm Email Address
+				</a>
+			</span>
+		</td>
+	</tr>
+</table></div>
+
+<p style="font-size: 17px; padding-right: 30px; padding-left: 30px; margin-top: 40px; margin-bottom: 30px;">
+	<strong>Didn’t request this email?</strong><br/>
+	No worries! Your address may have been entered by mistake. If you ignore or delete this email, nothing further will happen.</p>
+
+<!--[if mso]>
+		</td>
+		<td style="padding: 0; margin: 0;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="padding: 0; margin: 0; font-size: 20px; height: 20px;" height="20">&nbsp;</td>
+	</tr>
+</table>
+<![endif]-->
+
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="email_footer" style="padding: 0 30px 40px; border-top: 1px solid #E1E1E4; line-height: 24px; font-size: 15px; color: #717274; text-align: center; width: 100%;">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="margin-top: 20px; background-color: white;">
+						<tr>
+							<td>&nbsp;</td>
+							<td>
+							<span style="display: block;">
+																
+								Made by <a href="https://slack.com" style="text-decoration: none; color: #434245;">Slack Technologies, Inc</a>
+								<br/>
+								500 Howard Street&nbsp;&nbsp;San&nbsp;Francisco,&nbsp;CA&nbsp;94105&nbsp;&nbsp;United States
+																							</span>
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>
+								<span>
+									<a href="https://slackhq.com" style="text-decoration: none; color: #434245;">
+										Our Blog									</a>
+									<span style="color: #D8D8D8;">&nbsp;&bull;&nbsp;</span>
+
+									
+									<a href=https://slack.com/x-a403124605316/account/notifications style="text-decoration: none; color: #434245;">
+										Email Preferences									</a>
+									<span style="color: #D8D8D8;">&nbsp;&bull;&nbsp;</span>
+
+									
+									<a href="https://slack.com/legal" style="text-decoration: none; color: #434245;">
+										Policies									</a>
+								</span>
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+--__slack_1667600160__--
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>12</integer>
+	<key>date-last-viewed</key>
+	<integer>1532529641</integer>
+	<key>date-received</key>
+	<integer>1532362135</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+	</array>
+	<key>remote-id</key>
+	<string>18</string>
+</dict>
+</plist>

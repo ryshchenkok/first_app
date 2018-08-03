@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>88.2</string>
+	<key>AMApplicationVersion</key>
+	<string>1.0.5</string>
+	<key>AMDocumentVersion</key>
+	<string>1</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMActionVersion</key>
+				<string>1.1</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.entourage.message.object</string>
+						<string>com.microsoft.entourage.contact.object</string>
+						<string>com.microsoft.entourage.event.object</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array>
+					<dict>
+						<key>Display Name</key>
+						<string>Microsoft Entourage</string>
+						<key>Resource</key>
+						<string>com.microsoft.entourage</string>
+						<key>Type</key>
+						<string>application</string>
+						<key>Version</key>
+						<string>12.0</string>
+					</dict>
+				</array>
+				<key>ActionBundlePath</key>
+				<string>/Library/Automator/Get Selected Entourage Items.action</string>
+				<key>ActionName</key>
+				<string>Get Selected Entourage Items</string>
+				<key>ActionParameters</key>
+				<dict/>
+				<key>Application</key>
+				<array>
+					<string>Microsoft Entourage</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.microsoft.Automator.Get_Selected_Entourage_Items</string>
+				<key>CFBundleVersion</key>
+				<string>1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryMail</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAppleScriptAction</string>
+				<key>InputUUID</key>
+				<string>082E50E5-0140-45A9-8268-C7D33AB63BB7</string>
+				<key>Keywords</key>
+				<array>
+					<string>selection</string>
+					<string>pass</string>
+					<string>obtain</string>
+					<string>mail</string>
+					<string>email</string>
+					<string>contact</string>
+					<string>event</string>
+					<string>message</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>8F5B70A3-CDC4-4CAE-9BB0-EFA4BEBB5FCE</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>5F7696C8-5D35-4FCA-B489-BF301135658C</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Microsoft Entourage</string>
+				</array>
+				<key>arguments</key>
+				<dict/>
+				<key>nibPath</key>
+				<string>/Library/Automator/Get Selected Entourage Items.action/Contents/Resources/en.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>842.000000:-2342.666748</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.entourage.message.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.microsoft.entourage.message.object</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array>
+					<dict>
+						<key>Display Name</key>
+						<string>Microsoft Entourage</string>
+						<key>Resource</key>
+						<string>com.microsoft.entourage</string>
+						<key>Type</key>
+						<string>application</string>
+						<key>Version</key>
+						<string>12.0</string>
+					</dict>
+				</array>
+				<key>ActionBundlePath</key>
+				<string>/Library/Automator/Mark Entourage Mail Message as a To Do Item.action</string>
+				<key>ActionName</key>
+				<string>Mark Entourage Mail Message as a To Do Item</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>enableReminder</key>
+					<false/>
+					<key>theEndDate</key>
+					<date>2008-03-07T16:26:10Z</date>
+					<key>theReminderDate</key>
+					<date>2008-03-07T16:26:10Z</date>
+					<key>theReminderTime</key>
+					<date>2008-03-07T16:26:10Z</date>
+					<key>theStartDate</key>
+					<date>2008-03-07T16:26:10Z</date>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Microsoft Entourage</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.microsoft.Automator.Mark_Entourage_Mail_Message_as_a_To_Do_Item</string>
+				<key>CFBundleVersion</key>
+				<string>1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryMail</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAppleScriptAction</string>
+				<key>InputUUID</key>
+				<string>006623D3-94D1-46CB-A1D9-DAB0C2DB4677</string>
+				<key>Keywords</key>
+				<array>
+					<string>flag</string>
+					<string>mail</string>
+					<string>email</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>361971B0-130A-440E-AD5B-14A026272EF7</string>
+				<key>ShowWhenRun</key>
+				<true/>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>DD9A06D1-1496-4388-98ED-C158D4EFFF82</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Microsoft Entourage</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>enableReminder</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<date>2000-01-01T08:00:00Z</date>
+						<key>name</key>
+						<string>theStartDate</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<date>2000-01-01T08:00:00Z</date>
+						<key>name</key>
+						<string>theEndDate</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<date>2000-01-01T08:00:00Z</date>
+						<key>name</key>
+						<string>theReminderDate</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<date>2000-01-01T08:00:00Z</date>
+						<key>name</key>
+						<string>theReminderTime</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>nibPath</key>
+				<string>/Library/Automator/Mark Entourage Mail Message as a To Do Item.action/Contents/Resources/en.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>1122.000000:-2389.333252</string>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>6C765949-C625-4BCE-B291-A6C56281C4D3</key>
+		<dict>
+			<key>from</key>
+			<string>5F7696C8-5D35-4FCA-B489-BF301135658C - 8F5B70A3-CDC4-4CAE-9BB0-EFA4BEBB5FCE</string>
+			<key>to</key>
+			<string>DD9A06D1-1496-4388-98ED-C158D4EFFF82 - 006623D3-94D1-46CB-A1D9-DAB0C2DB4677</string>
+		</dict>
+	</dict>
+	<key>state</key>
+	<dict>
+		<key>actionsSplitView</key>
+		<real>175</real>
+		<key>layoutFrame</key>
+		<string>{{0, 0}, {564, 682}}</string>
+		<key>layoutScrollPosition</key>
+		<string>{{0, 0}, {564, 682}}</string>
+		<key>mainSplitView</key>
+		<real>373</real>
+		<key>minorSplitView</key>
+		<real>540</real>
+		<key>windowFrame</key>
+		<string>{{76, 367}, {967, 810}}</string>
+	</dict>
+</dict>
+</plist>

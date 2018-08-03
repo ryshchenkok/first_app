@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>AllCriteriaMustBeSatisfied</key>
+		<true/>
+		<key>AutoResponseType</key>
+		<integer>0</integer>
+		<key>Criteria</key>
+		<array>
+			<dict>
+				<key>CriterionUniqueId</key>
+				<string>3E568843-6C0D-4082-B736-F1B473658CBA</string>
+				<key>Header</key>
+				<string>SenderIsNotInAddressBook</string>
+			</dict>
+			<dict>
+				<key>CriterionUniqueId</key>
+				<string>B4DF172C-1324-47FE-B1A1-0BCA43B4AA43</string>
+				<key>Header</key>
+				<string>SenderIsNotInAddressHistory</string>
+			</dict>
+			<dict>
+				<key>CriterionUniqueId</key>
+				<string>3029CB88-75AF-4B1A-B0D0-D7E8AC17A90A</string>
+				<key>Header</key>
+				<string>NoRecipientIncludesFullName</string>
+			</dict>
+			<dict>
+				<key>CriterionUniqueId</key>
+				<string>21AE8DF5-1913-4373-9944-A792D6348DC1</string>
+				<key>Header</key>
+				<string>IsJunkMail</string>
+			</dict>
+		</array>
+		<key>Deletes</key>
+		<false/>
+		<key>HighlightTextUsingColor</key>
+		<false/>
+		<key>IsOneAndOnlyJunkRule</key>
+		<true/>
+		<key>MarkFlagged</key>
+		<false/>
+		<key>MarkRead</key>
+		<false/>
+		<key>NotifyUser</key>
+		<false/>
+		<key>RuleId</key>
+		<string>B5C9E29F-6475-40EF-AC38-019D0B21717A</string>
+		<key>RuleName</key>
+		<string>Junk</string>
+		<key>SendNotification</key>
+		<false/>
+		<key>ShouldCopyMessage</key>
+		<false/>
+		<key>ShouldTransferMessage</key>
+		<false/>
+		<key>TimeStamp</key>
+		<integer>554037213</integer>
+	</dict>
+</array>
+</plist>

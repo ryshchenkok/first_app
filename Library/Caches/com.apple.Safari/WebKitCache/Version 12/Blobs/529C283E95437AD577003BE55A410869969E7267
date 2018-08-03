@@ -1,0 +1,938 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru_RU" lang="ru_RU">
+<head>
+<title> AnahoretLibrary &lt; Anahoret &lt; Anadea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/wiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="http://anahoret.com/wiki/bin/edit/Anahoret/AnahoretLibrary?t=1532336076" type="application/x-wiki" title="edit AnahoretLibrary" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/wiki/bin/view/Anahoret/WebRss" />
+
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/SkinTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/layout.css');
+@import url('/wiki/pub/System/PatternSkinTheme/style.css');
+@import url('/wiki/pub/System/PatternSkinTheme/colors.css');
+</style>
+<style type="text/css" media="all">
+@import url('/wiki/pub/System/PatternSkinTheme/column_left.css');
+@import url('/wiki/pub/System/PatternSkinTheme/variant_foswiki_print.css');
+</style><style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#99CC99;
+	}
+	#patternTopBarContents { background-image:url(/wiki/pub/System/PatternSkin/header5.gif); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#ffffff;}
+.patternBookView {
+	border-color:#99CC99;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<style type="text/css" media="print">
+	@import url("/wiki/pub/System/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	height:1%;
+	overflow-x:auto;
+}
+.foswikiAttachments,
+.foswikiForm,
+.foswikiHelp,
+.foswikiPreviewArea,
+.patternPreviewPage .foswikiForm,
+.patternSigLine,
+.patternToolBar,
+.patternTop,
+.patternTopicAction,
+#patternSideBarContents .patternLeftBarPersonal,
+#patternSideBarContents h2,
+#patternSideBarContents li,
+#patternTopBarButtons ul {
+	height:1%;
+}
+#patternSideBarContents .patternLeftBarPersonal {
+	width:100%;
+}
+.foswikiFormStep {
+	height:100%;
+}
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:2px solid #ccc;
+}
+</style><![endif]-->
+<!--[if gt IE 8 ]><style type="text/css" media="screen">
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow: 0 0 10px #ccc;
+}
+</style><![endif]-->
+<meta name="foswiki.TWISTYANIMATIONSPEED" content="fast" /><!--TWISTYPLUGIN::META-->
+<style type="text/css" media="all">
+.foswikiTable {border-width:1px}
+.foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+.foswikiTable td {border-style:solid none; vertical-align:top}
+.foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+.foswikiTable th a:link {color:#000000}
+.foswikiTable th a:visited {color:#000000}
+.foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+.foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+.foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style><!--TABLEPLUGIN_default-->
+<!--[if lte IE 9]>
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.11.2.uncompressed.js'></script>
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/jquery-1.8.0.uncompressed.js'></script>
+<!--<![endif]-->
+<!--JQUERYPLUGIN-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/livequery/jquery.livequery.uncompressed.js?version=1.3.1'></script><!--JQUERYPLUGIN::LIVEQUERY-->
+<script type='text/javascript' src='/wiki/pub/System/JQueryPlugin/plugins/foswiki/jquery.foswiki.uncompressed.js?version=2.01'></script><!--JQUERYPLUGIN::FOSWIKI: requires= missing ids: JQUERYPLUGIN::MIGRATE-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiPref.js"></script><!--JavascriptFiles/foswikiPref-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiString.js"></script><!--JavascriptFiles/foswikiString-->
+<script type='text/javascript'>
+jQuery.extend(foswiki, {
+ "preferences": {
+    "PUBURL": "http://anahoret.com/wiki/pub",
+    "PUBURLPATH": "/wiki/pub",
+    "SCRIPTSUFFIX": "",
+    "SCRIPTURL": "http://anahoret.com/wiki/bin",
+    "SCRIPTURLPATH": "/wiki/bin",
+    "SERVERTIME": "23 Jul 2018 - 11:54",
+    "SKIN": "pdf,pattern",
+    "SYSTEMWEB": "System",
+    "TOPIC": "AnahoretLibrary",
+    "USERNAME": "kr",
+    "USERSWEB": "Main",
+    "WEB": "Anahoret",
+    "WIKINAME": "KonstantinRyshchenko",
+    "WIKIUSERNAME": "Main.KonstantinRyshchenko",
+    "NAMEFILTER": "[\s\*?~^\$@%`\"'&;|<>\[\]#\x00-\x1f]"
+}});
+</script><!--JQUERYPLUGIN::FOSWIKI::PREFERENCES-->
+<script type="text/javascript" src="/wiki/pub/System/JavascriptFiles/foswikiForm.js"></script><!--JavascriptFiles/foswikiForm-->
+<script type="text/javascript" src="/wiki/pub/System/PatternSkin/pattern.js"></script><!--PatternSkin/pattern-->
+</head>
+<body class="foswikiNoJs patternViewPage">
+<a name="PageTop"></a><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="/wiki/bin/view/Main/WebHome">Anadea</a><span class='foswikiSeparator'>&gt;</span><a href="/wiki/bin/view/Anahoret/WebHome">Anahoret Web</a><span class='foswikiSeparator'>&gt;</span><a href="http://anahoret.com/wiki/bin/view/Anahoret/AnahoretLibrary" title='Topic revision: 176 (26 Jun 2018 - 15:36:41)'>AnahoretLibrary</a> <span class='patternRevInfo'>(26 Jun 2018, <a href="/wiki/bin/view/Main/TatyanaRyzhkova">TatyanaRyzhkova</a>)</span></span><span class="patternToolBar foswikiRight"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/AnahoretLibrary?t=1532336076;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/AnahoretLibrary' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span><a href='/wiki/bin/view/Anahoret/AnahoretLibrary?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span></span><div class="foswikiClear"></div></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><h2><a name="A_208_145_208_184_208_177_208_187_208_184_208_190_209_130_208_181_208_186_208_176"></a>  Библиотека </h2>
+<p></p>
+<a href="https://bookshelf.anahoret.com" target="_top">https://bookshelf.anahoret.com</a>
+<p></p>
+<table class="foswikiTable" rules="none" border="1">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretLibrary?sortcol=0;table=1;up=0#sorted_table" title="Sort by this column">Автор</a> </th>
+			<th class="foswikiTableCol1"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretLibrary?sortcol=1;table=1;up=0#sorted_table" title="Sort by this column">Название</a> </th>
+			<th class="foswikiTableCol2"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretLibrary?sortcol=2;table=1;up=0#sorted_table" title="Sort by this column">офис</a> </th>
+			<th class="foswikiTableCol3"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretLibrary?sortcol=3;table=1;up=0#sorted_table" title="Sort by this column">взял</a> </th>
+			<th class="foswikiTableCol4"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretLibrary?sortcol=4;table=1;up=0#sorted_table" title="Sort by this column">дата взятия</a> </th>
+			<th class="foswikiTableCol5 foswikiLastCol"> <a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretLibrary?sortcol=5;table=1;up=0#sorted_table" title="Sort by this column">дата возврата</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Gojko Adzic and David Evans </td>
+			<td class="foswikiTableCol1"> Fifty quick ideas to improve your user stories </td>
+			<td class="foswikiTableCol2"> Днепр </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Gojko Adzic </td>
+			<td class="foswikiTableCol1"> Specification by Example </td>
+			<td class="foswikiTableCol2"> Днепр </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Gojko Adzic </td>
+			<td class="foswikiTableCol1"> Impact mapping </td>
+			<td class="foswikiTableCol2"> Днепр </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Jurgen Appelo </td>
+			<td class="foswikiTableCol1"> Management 3.0 </td>
+			<td class="foswikiTableCol2"> Днепр </td>
+			<td class="foswikiTableCol3"> nal </td>
+			<td class="foswikiTableCol4"> 2017/12/11 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Roman Pichler </td>
+			<td class="foswikiTableCol1"> Agile product Management with Scrum </td>
+			<td class="foswikiTableCol2"> Днепр </td>
+			<td class="foswikiTableCol3"> tr </td>
+			<td class="foswikiTableCol4"> 2018.02.09 </td>
+			<td align="center" class="foswikiTableCol5 foswikiLastCol"> 2018.06.26 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Jeff Patton </td>
+			<td class="foswikiTableCol1"> User Story mapping </td>
+			<td class="foswikiTableCol2"> Днепр </td>
+			<td class="foswikiTableCol3 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Роберт Мартин </td>
+			<td class="foswikiTableCol1"> Идеальный программист. Как стать профессионалом разработки ПО </td>
+			<td class="foswikiTableCol2"> второй </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Мартин Фаулер </td>
+			<td class="foswikiTableCol1"> Предметно-ориентированные языки программирования </td>
+			<td class="foswikiTableCol2"> первый </td>
+			<td class="foswikiTableCol3"> SI </td>
+			<td class="foswikiTableCol4"> 2011.10.13 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 2012.08.02 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Шварц Б., Зайцев П., Ткаченко В., Заводны Д. </td>
+			<td class="foswikiTableCol1"> MySQL Изд 2. Оптимизация производительности </td>
+			<td class="foswikiTableCol2"> &nbsp; </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дейв Крейн и др. </td>
+			<td class="foswikiTableCol1"> Ajax в действии </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> SS </td>
+			<td class="foswikiTableCol4"> 22.06.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 08.10.2012 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Эрик А. Мейер </td>
+			<td class="foswikiTableCol1"> CSS - Каскадные таблицы стилей. Подробное руководство. 2 изд. </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td colspan="3"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дэвид Астелс и др. </td>
+			<td class="foswikiTableCol1"> Практическое руководство по экстремальному программированию </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Эрих Гамма и еще трое </td>
+			<td class="foswikiTableCol1"> Приёмы объектно-ориентированного проектирования </td>
+			<td colspan="4"> новый </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Айвор Хортон </td>
+			<td class="foswikiTableCol1"> Java2 том 1 </td>
+			<td colspan="4"> старый </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Айвор Хортон </td>
+			<td class="foswikiTableCol1"> Java2 том 2 </td>
+			<td colspan="4"> старый </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Мартин Фаулер </td>
+			<td class="foswikiTableCol1"> Рефакторинг: улучшение существующего кода </td>
+			<td class="foswikiTableCol2"> второй </td>
+			<td class="foswikiTableCol3"> aba </td>
+			<td class="foswikiTableCol4"> 14.12.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Джошуа Кериевски </td>
+			<td class="foswikiTableCol1"> Рефакторинг с использованием шаблонов </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Мартин Фаулер </td>
+			<td class="foswikiTableCol1"> Архитектура корпоративных программных приложений </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Хоп, Вульф </td>
+			<td class="foswikiTableCol1"> Шаблоны интеграции корпоративных приложений </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Стивен Холзнер </td>
+			<td class="foswikiTableCol1"> XSLT </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Брюс Эккель </td>
+			<td class="foswikiTableCol1"> Философия Java 1 изд. </td>
+			<td colspan="4"> старый </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Брюс Эккель </td>
+			<td class="foswikiTableCol1"> Философия Java 4 изд. </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> AK </td>
+			<td class="foswikiTableCol4"> 03.11.2008 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 03.12.2008 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Брюс Эккель </td>
+			<td class="foswikiTableCol1"> Философия Java 4 изд. </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Эрик Аллен </td>
+			<td class="foswikiTableCol1"> Типичные ошибки проектирования </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td colspan="2" class="foswikiTableCol4"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Гудман Д. </td>
+			<td class="foswikiTableCol1"> Javascript и DHTML. Сборник рецептов </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дэвид Флэнаган </td>
+			<td class="foswikiTableCol1"> Javascript. Подробное руководство </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дэвид Флэнаган </td>
+			<td class="foswikiTableCol1"> Javascript. Подробное руководство (2й экземпляр) </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> AD </td>
+			<td class="foswikiTableCol4"> 24.06.2010 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дэвид Флэнаган </td>
+			<td class="foswikiTableCol1"> Javascript. Подробное руководство (5-е издание) </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> 03.09.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Кент Бек </td>
+			<td class="foswikiTableCol1"> Экстремальное программирование: разработка через тестирование </td>
+			<td class="foswikiTableCol2"> 4 офис </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> 08.11.2011 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 25.09.2012 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Кент Бек </td>
+			<td class="foswikiTableCol1"> Экстремальное программирование </td>
+			<td class="foswikiTableCol2"> - </td>
+			<td class="foswikiTableCol3"> VK </td>
+			<td class="foswikiTableCol4"> 29.05.2008 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> - </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Кент Бек </td>
+			<td class="foswikiTableCol1"> Экстремальное программирование (2-й экземпляр) </td>
+			<td class="foswikiTableCol2"> 1-й </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Кент Бек </td>
+			<td class="foswikiTableCol1"> Шаблоны реализации корпоративных приложений </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Кент Бек, Мартин Фаулер </td>
+			<td colspan="2" class="foswikiTableCol1"> Экстремальное программирование: планирование </td>
+			<td colspan="2" class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol5"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Джерард Месарош </td>
+			<td class="foswikiTableCol1"> Шаблоны тестирования xUnit </td>
+			<td class="foswikiTableCol2"> 2 </td>
+			<td class="foswikiTableCol3"> ABA </td>
+			<td class="foswikiTableCol4"> 05.10.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 05.11.2012 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Эндрю Троелсен </td>
+			<td class="foswikiTableCol1"> C# и платформа .NET </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Эрик Рей </td>
+			<td class="foswikiTableCol1"> Изучаем XML </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Стив Круг </td>
+			<td class="foswikiTableCol1"> Веб-дизайн </td>
+			<td class="foswikiTableCol2"> 5й </td>
+			<td class="foswikiTableCol3"> TZ </td>
+			<td class="foswikiTableCol4"> 01.02.13 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Стив Макконнелл </td>
+			<td class="foswikiTableCol1"> Профессиональная разработка программного обеспечения </td>
+			<td class="foswikiTableCol2"> - </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Роберт Л. Зиглер </td>
+			<td class="foswikiTableCol1"> Брандмауэры в Linux </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Герберт Шилдт </td>
+			<td class="foswikiTableCol1"> Справочник программиста по C/C++ </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Джон Влиссидес </td>
+			<td class="foswikiTableCol1"> Применение шаблонов проектирования. Дополнительные штрихи </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Артур Гриффитс </td>
+			<td class="foswikiTableCol1"> Программинование GNOME/GTK+ </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Бьерн Страуструп </td>
+			<td class="foswikiTableCol1"> Язык программирования C++ Третье издание </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Пол Гиббонз </td>
+			<td class="foswikiTableCol1"> Платформа .NET для Java-программистов </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Поль Дюбуа </td>
+			<td class="foswikiTableCol1"> MySQL </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Роберт Седжвик </td>
+			<td class="foswikiTableCol1"> Фундаментальные алгоритмы на С++ </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> М. Карлинг и др. </td>
+			<td class="foswikiTableCol1"> Системное администрирование Linux </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дж. Ханк Рейнвотер </td>
+			<td class="foswikiTableCol1"> Как пасти котов </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> SI </td>
+			<td colspan="2" class="foswikiTableCol4"> 27.01.2012 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Бьерн Страуструп </td>
+			<td class="foswikiTableCol1"> Дизайн и эволюция языка C++ </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> IA </td>
+			<td class="foswikiTableCol4"> 1.09.08 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 15.09.08 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Эдвард Йордон </td>
+			<td class="foswikiTableCol1"> Путь камикадзе. Как разработчику ПО выжить в безнадёжном проекте </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> SI </td>
+			<td class="foswikiTableCol4"> 27.01.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 15.01.2014 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дж. Уорсли, Дж. Дрейк </td>
+			<td class="foswikiTableCol1"> PostgreSQL для профессионалов </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дэвид Джордан </td>
+			<td class="foswikiTableCol1"> Обработка объектных баз данных в C++ </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> A. Климов </td>
+			<td class="foswikiTableCol1"> Программирование КПК и смартфонов на .NET Compact Framework </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Брюс Е. Крелль </td>
+			<td class="foswikiTableCol1"> Pocket PC. Руководство разработчика </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Джефф Элджер </td>
+			<td class="foswikiTableCol1"> С++ </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Скотт Мейерс </td>
+			<td class="foswikiTableCol1"> Наиболее эффективное использование С++ </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Теренс Чан </td>
+			<td class="foswikiTableCol1"> Системное программирование на C++ для Unix </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Леен Аммерааль </td>
+			<td class="foswikiTableCol1"> STL для программистов на С++ </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Джерри Пик и др. </td>
+			<td class="foswikiTableCol1"> Unix: Инструментальные стредства </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Кен Ауэр </td>
+			<td class="foswikiTableCol1"> Экстремальное программирование: постановка процесса. С первых шагов и до победного конца </td>
+			<td class="foswikiTableCol2"> 5-й </td>
+			<td class="foswikiTableCol3"> TZ </td>
+			<td class="foswikiTableCol4"> 03.01.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 03.02.1013 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Герберт Шилдт </td>
+			<td class="foswikiTableCol1"> Java 2 v5.0 (Tiger) </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дж. Фридл </td>
+			<td class="foswikiTableCol1"> Регулярные выражения </td>
+			<td class="foswikiTableCol2"> &nbsp; </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Кристофер Шмитт </td>
+			<td class="foswikiTableCol1"> CSS. Рецепты программирования </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Хэл Фултон </td>
+			<td class="foswikiTableCol1"> Программирование на языке Ruby </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> ir </td>
+			<td class="foswikiTableCol4"> 06.08.09 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 24.11.2009 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Чад Фоулер </td>
+			<td class="foswikiTableCol1"> Rails. Сборник рецептов </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Д. Томас, Д.Х. Хэнссон </td>
+			<td class="foswikiTableCol1"> Гибкая разработка веб-приложений в среде Rails </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Д. Томас, Д.Х. Хэнссон </td>
+			<td class="foswikiTableCol1"> Гибкая разработка веб-приложений в среде Rails (2й экз.) </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Д. Томас, Д.Х. Хэнссон </td>
+			<td class="foswikiTableCol1"> Гибкая разработка веб-приложений в среде Rails 4 издание (3 экз.) </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Д. Томас, Д.Х. Хэнссон </td>
+			<td class="foswikiTableCol1"> Гибкая разработка веб-приложений в среде Rails 4 издание (1 экз.) </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Альфред Ахо, Джон Хопкрофт, Джеффри Ульман </td>
+			<td class="foswikiTableCol1"> Структуры данных и алгоритмы </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Джоэл Спольски </td>
+			<td class="foswikiTableCol1"> Джоэл о программировании </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дональд Э. Кнут </td>
+			<td class="foswikiTableCol1"> Искусство программирования. Том 1. Основные алгоритмы </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дональд Э. Кнут </td>
+			<td class="foswikiTableCol1"> Искусство программирования. Том 2. Получисленные алгоритмы </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дональд Э. Кнут </td>
+			<td class="foswikiTableCol1"> Искусство программирования. Том 3. Сортировка и поиск </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> К. Дж. Дейт </td>
+			<td class="foswikiTableCol1"> Введение в системы баз данных </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Альфред В. Ахо и др. </td>
+			<td class="foswikiTableCol1"> Компиляторы: принципы, технологии и инструментарий </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> И. Портянкин </td>
+			<td class="foswikiTableCol1"> Swing: эффективные пользовательские интерфейсы </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Поль М. Дюваль и др. </td>
+			<td class="foswikiTableCol1"> Непрерывная интеграция </td>
+			<td colspan="4"> новый </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Гради Буч и др. </td>
+			<td class="foswikiTableCol1"> Объектно-ориентированный анализ и проектирование с примерами приложений (Третье издание) </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Майкл Фитцджеральд </td>
+			<td class="foswikiTableCol1"> Изучаем Ruby </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Рейсиг Д. - автор всемилюбимой библиотеки jQuery </td>
+			<td class="foswikiTableCol1"> <a href="/wiki/bin/view/Anahoret/JavaScript">JavaScript</a>. Профессиональные приемы программирования </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> VOZ </td>
+			<td class="foswikiTableCol4"> 17.11.2011 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Ч. Кейзоун, Дж. Лотт </td>
+			<td class="foswikiTableCol1"> Программирование c использованием Adobe Flex </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Э. Хант, Д. Томас </td>
+			<td class="foswikiTableCol1"> Программист-прагматик </td>
+			<td class="foswikiTableCol2"> новый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Оби Фернандес </td>
+			<td class="foswikiTableCol1"> Путь Rails </td>
+			<td class="foswikiTableCol2"> старый </td>
+			<td class="foswikiTableCol3"> anb </td>
+			<td class="foswikiTableCol4"> 2.09.2010 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 2.10.2010 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Бер Бибо, Иегуда Кац </td>
+			<td class="foswikiTableCol1"> jQuery. Подробное руководство по продвинутому <a href="/wiki/bin/view/Anahoret/JavaScript">JavaScript</a> </td>
+			<td class="foswikiTableCol2"> 4-й </td>
+			<td class="foswikiTableCol3"> AVK </td>
+			<td class="foswikiTableCol4"> 09.09.2011 </td>
+			<td align="right" class="foswikiTableCol5 foswikiLastCol"> 27.04.2012 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Дейтел П., Дейтел Х., Дэйтел Э., Моргано М. </td>
+			<td class="foswikiTableCol1"> Android для программистов. Создаем приложения </td>
+			<td class="foswikiTableCol2"> 1-й </td>
+			<td class="foswikiTableCol3"> dsb </td>
+			<td class="foswikiTableCol4"> 12.10.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> &nbsp; </td>
+			<td class="foswikiTableCol1"> Англо-русский словарь американского сленга </td>
+			<td class="foswikiTableCol2"> 5-й </td>
+			<td class="foswikiTableCol3"> TZ </td>
+			<td class="foswikiTableCol4"> 09.12.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 09.02.2013 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> &nbsp; </td>
+			<td class="foswikiTableCol1"> Английский для наших </td>
+			<td class="foswikiTableCol2"> 5-й </td>
+			<td class="foswikiTableCol3"> TZ </td>
+			<td class="foswikiTableCol4"> 09.12.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 09.02.2013 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Майк Кон </td>
+			<td class="foswikiTableCol1"> Пользовательские истории. Гибкая разработка программного обеспечения </td>
+			<td class="foswikiTableCol2"> первый </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Гленфорд Майерс, Том Баджетт, Кори Сандлер </td>
+			<td class="foswikiTableCol1"> Искусство тестирования программ (третье издание) </td>
+			<td class="foswikiTableCol2"> второй </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Лайза Криспин, Джанет Грегори </td>
+			<td class="foswikiTableCol1"> Гибкое тестирование. Практическое руководство для тестировщиков ПО и гибких команд </td>
+			<td class="foswikiTableCol2"> второй </td>
+			<td class="foswikiTableCol3"> dsm </td>
+			<td class="foswikiTableCol4"> 20.02.2013 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Питер Сейбел </td>
+			<td class="foswikiTableCol1"> Кодеры за работой. Размышления о ремесле программиста </td>
+			<td class="foswikiTableCol2"> второй </td>
+			<td class="foswikiTableCol3"> aad </td>
+			<td class="foswikiTableCol4"> 14.12.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Джо Мараско </td>
+			<td class="foswikiTableCol1"> IT проекты: фронтовые очерки. Эссе об управлении успешными проектами </td>
+			<td class="foswikiTableCol2"> второй </td>
+			<td class="foswikiTableCol3"> dak </td>
+			<td class="foswikiTableCol4"> 14.12.2012 </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> 08.01.2013 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Джефф Рэшка, Элфрид Дастин, Джон Пол </td>
+			<td class="foswikiTableCol1"> Тестирование программного обеспечения. Внедрение, управление и автоматизация </td>
+			<td class="foswikiTableCol2"> второй </td>
+			<td class="foswikiTableCol3"> &nbsp; </td>
+			<td class="foswikiTableCol4"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> Стив Макконнелл </td>
+			<td class="foswikiTableCol1 foswikiLast"> Совершенный код </td>
+			<td class="foswikiTableCol2 foswikiLast"> второй </td>
+			<td class="foswikiTableCol3 foswikiLast"> &nbsp; </td>
+			<td class="foswikiTableCol4 foswikiLast"> &nbsp; </td>
+			<td class="foswikiTableCol5 foswikiLastCol foswikiLast"> &nbsp; </td>
+		</tr>
+	</tbody></table> </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><a name="topic-actions"></a><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><span class="foswikiRequiresChangePermission"><a href='http://anahoret.com/wiki/bin/edit/Anahoret/AnahoretLibrary?t=1532336076;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/attach/Anahoret/AnahoretLibrary' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretLibrary?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretLibrary?&amp;cover=print&amp;contenttype=application/pdf' rel='nofollow'>PDF</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><span class="foswikiRequiresChangePermission"><a href='/wiki/bin/oops/Anahoret/AnahoretLibrary?template=oopshistory' rel='nofollow' title='View total topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a></span>: r176&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/AnahoretLibrary?rev1=175;rev2=176">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretLibrary?rev=175">r175</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/AnahoretLibrary?rev1=174;rev2=175">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretLibrary?rev=174">r174</a>&nbsp;<a rel="nofollow" href="/wiki/bin/compare/Anahoret/AnahoretLibrary?rev1=173;rev2=174">&lt;</a>&nbsp;<a rel="nofollow" href="/wiki/bin/view/Anahoret/AnahoretLibrary?rev=173">r173</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretLibrary?template=backlinksweb' rel='nofollow' title='Search the Anahoret Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretLibrary?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/wiki/bin/view/Anahoret/AnahoretLibrary?template=more&amp;maxrev=176&amp;currrev=176' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: 26 Jun 2018, <a href="/wiki/bin/view/Main/TatyanaRyzhkova">TatyanaRyzhkova</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator" style="border-color:#99CC99">
+<a href='http://anahoret.com/wiki/bin/view/Anahoret/WebHome'>Anahoret</a>
+</div> <ul>
+<li> <strong><a href="/wiki/bin/view/Anahoret/DeveloperDocumentation">Документация</a></strong> <hr />
+</li> <li> <strong><a href="/wiki/bin/view/Anahoret/WebHome" class="foswikiCurrentWebHomeLink"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/home.png" width="16" height="16" alt="home" /></span> Anahoret Web</a></strong>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicCreator?parent=AnahoretLibrary" target="_top"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/newtopic.png" width="16" height="16" alt="newtopic" /></span> Create New Topic</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebTopicList"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/index.png" width="16" height="16" alt="index" /></span> Index</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebSearch"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/searchtopic.png" width="16" height="16" alt="searchtopic" /></span> Search</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebChanges"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/changes.png" width="16" height="16" alt="changes" /></span> Changes</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebNotify"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/notify.png" width="16" height="16" alt="notify" /></span> Notifications</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebStatistics"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/statistics.png" width="16" height="16" alt="statistics" /></span> Statistics</a>
+</li> <li> <a href="/wiki/bin/view/Anahoret/WebPreferences"> <span class="foswikiIcon"><img src="/wiki/pub/System/DocumentGraphics/wrench.png" width="16" height="16" alt="wrench" /></span> Preferences</a> <hr />
+</li> <li> <strong>Webs</strong>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#99CC99" />&nbsp;Anahoret</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Getsocio/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Getsocio</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Mailinator/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;Mailinator</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Main/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFEFA6" />&nbsp;Main</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Projects/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFCC00" />&nbsp;Projects</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Sandbox/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#B9DAFF" />&nbsp;Sandbox</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Skills/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#ffa199" />&nbsp;Skills</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/System/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#FFD8AA" />&nbsp;System</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Tracker/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#33CC99" />&nbsp;Tracker</a></span>
+</li> <li> <span style="white-space:nowrap"><a href="/wiki/bin/view/Trash/InVision/WebHome"><img src="http://anahoret.com/wiki/pub/System/DocumentGraphics/web-bg.png" border="0" alt="" width="16" height="16" style="background-color:#efefef" />&nbsp;<span class='foswikiWebIndent'></span>InVision</a></span>
+</li></ul> 
+<p></p>
+</div></div>
+</div>
+<div class="clear">&nbsp;</div>
+</div></div><div id="patternTopBar"><div id="patternTopBarContentsWrapper"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="http://anahoret.com/wiki/bin/view/Anahoret/WebHome"><img src="http://anahoret.com/wiki/pub/Main/WebHome/anadea-logo.png" border="0" alt="Anahoret wiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+ <ul>
+<li> <form name="jumpForm" action="/wiki/bin/view/Anahoret/AnahoretLibrary"><input id="jumpFormField" title="Jump" type="text" class="foswikiInputField foswikiDefaultText" name="topic" value="" size="18" /><noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript>   </form>
+</li> <li> <form name="quickSearchForm" action="/wiki/bin/view/Anahoret/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Anahoret" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript>   </form>
+</li></ul> 
+<p></p>
+</td></tr></table></div></div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"></div></div></div>
+</div>
+</div>
+</div>
+</div></body></html>

@@ -1,0 +1,556 @@
+30336     
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a0c:81f4:0:0:0:0:0 with SMTP id 49-v6csp1363820qve;
+        Mon, 23 Jul 2018 04:41:15 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpenI7MWcNb0BEMVOheSTG6/UMpEdo5ZPGg2IYxvDRGh2/qrI4+GjdHR2kDOxZ7W7SzapEit
+X-Received: by 2002:a25:7802:: with SMTP id t2-v6mr6700347ybc.207.1532346075044;
+        Mon, 23 Jul 2018 04:41:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532346075; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Xb9HPqQgOSGMdgGU6tZJGtBFcajFhdwAWQWQiUIUF4hqnb82Hhlcs1ez/5M5a6gsG9
+         hoVchxetQsBFJJ/i3h6jtEcfD+mjsRBsT9o2Svod3nyBPBmYcg9NEree8pcAn4/K9B6l
+         O+/cw+MnC0blQlewJMr8XKKJrJCIFbWzhOPgPcpzaZg7t1yCzlbgJPCYDNoIJwQzJdGs
+         Amm+6S7L4KnILih1TtcXfHegdkQz9ZPcy3q/Fu5/kMdqmHHIBjzqiXkJynpapi2HQEym
+         OoHCWQWaymGpTNm3eWCFZEyVC+WeqpaNKPv+Dj6HCbFnxjhl1erbKYhwL55nG+VbOjGl
+         wnqA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-id:reply-to:mime-version
+         :list-unsubscribe:date:subject:to:from:dkim-signature
+         :arc-authentication-results;
+        bh=oC8oRZGjom7zoPKuUmbnsziHzWmti1djeLVi8rL/MrM=;
+        b=r7MAp93jOLcSpw86ql3jxHjlVyJOM1mqKRQA7X+OJMkQP9N+RXtRV0CC0xdtcpkboy
+         WJt7Bhw/1vJKE9sjqMZp/VhBih7kbZgYpIY0qNDGIAncs4VK3Sfp3Q2QVuJZZgr7kj10
+         TqTRe1yiogY/1VUdSausEQBCrltgeXlcH878ekdB9i8m1roMkngh/46rk7+9JKUmYJew
+         Q0ZFgTPDHrgBJUqfka//WJ2G9QpzcapQx5z4MdzidBHzICKlbi7S1/4y9CGIEaHCU3YD
+         MOgOJwRN5ERn/39Wa6C/lpqXDu8+6Y8cqCUMKdVhDreiKlx2j1KGp+xihfVsrIyMbSis
+         +LZg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@email.skype.com header.s=200608 header.b=wkbkm0Co;
+       spf=pass (google.com: domain of bounce-35_html-1504122373-16192-7227104-23964@bounce.email.skype.com designates 136.147.186.22 as permitted sender) smtp.mailfrom=bounce-35_HTML-1504122373-16192-7227104-23964@bounce.email.skype.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=email.skype.com
+Return-Path: <bounce-35_HTML-1504122373-16192-7227104-23964@bounce.email.skype.com>
+Received: from mta22.email2.microsoft.com (mta22.email2.microsoft.com. [136.147.186.22])
+        by mx.google.com with ESMTPS id u9-v6si2068539ybo.49.2018.07.23.04.41.14
+        for <kr@anadeainc.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 23 Jul 2018 04:41:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-35_html-1504122373-16192-7227104-23964@bounce.email.skype.com designates 136.147.186.22 as permitted sender) client-ip=136.147.186.22;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@email.skype.com header.s=200608 header.b=wkbkm0Co;
+       spf=pass (google.com: domain of bounce-35_html-1504122373-16192-7227104-23964@bounce.email.skype.com designates 136.147.186.22 as permitted sender) smtp.mailfrom=bounce-35_HTML-1504122373-16192-7227104-23964@bounce.email.skype.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=email.skype.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=email.skype.com;
+ h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:Reply-To:List-ID:Message-ID:Content-Type:Content-Transfer-Encoding; i=hello@email.skype.com;
+ bh=lPp/kLbYF3tE1JMZWz5GnIdqz44=;
+ b=wkbkm0Co0s+a4aem/+tXaG6A3c0Z0mKvkHsKCy65pnjKCenOB239vXft5eIQX2gS6jlK4eujkNrx
+   mgglbiTb6H0FAlHK35VVnS/kt40tDh3p1lWx/joCxKTd60dGs5wEATT6lqcvZL+hjqZq0K88sIrX
+   uYb99TTdPx3sRsLISo4=
+Received: by mta22.email2.microsoft.com id hamvdm163hs0 for <kr@anadeainc.com>; Mon, 23 Jul 2018 11:41:14 +0000 (envelope-from <bounce-35_HTML-1504122373-16192-7227104-23964@bounce.email.skype.com>)
+From: "Skype" <hello@email.skype.com>
+To: <kr@anadeainc.com>
+Subject: =?UTF-8?B?0JLRltGC0LDRlNC80L4g0LIgU2t5cGU=?=
+Date: Mon, 23 Jul 2018 05:41:14 -0600
+List-Unsubscribe: <mailto:leave-fd8317751a3c402029-fe0315757560057f77177776-fefc1576746d06-fe9813727763057d71-fef716737c6200@leave.email.skype.com>
+MIME-Version: 1.0
+Reply-To: "NoReply" <reply-fefc1576746d06-35_HTML-AC824E789ABD0E2AE8FEF263751FAD97-7227104-23964@email.skype.com>
+List-ID: <7225442.xt.local>
+X-CSA-Complaints: whitelistcomplaints@eco.de
+x-job: 7227104_16192
+Message-ID: <3e3f67f2-1247-4420-bba4-221325b0812b@atl1s07mta668.xt.local>
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" dir="ltr" lang="uk-ua">
+<head>
+
+<!--[if gte mso 9]>
+<xml>
+	<o:OfficeDocumentSettings>
+	<o:PixelsPerInch>96</o:PixelsPerInch>
+	</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+	<meta name="x-apple-disable-message-reformatting" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="date=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style type="text/css">
+		@import url(https://asgcdn.azureedge.net/general/fonts/cyrilic.css);
+
+		.ExternalClass *{line-height:100%;}
+		#outlook a{padding:0;}
+		a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important;font-size:inherit!important;font-family:inherit!important;font-weight:inherit!important;line-height:inherit!important;}
+		body{padding:0;margin:0;}
+		p{padding:0;margin:0;}
+		table{border-collapse:collapse;margin:0;padding:0;mso-table-lspace:0pt;mso-table-rspace:0;-ms-text-size-adjust:auto;-webkit-text-size-adjust:100%;}
+		tr{mso-line-height-rule:exactly;}
+		td{margin:0;padding:0;mso-line-height-rule:exactly;}
+		img{-ms-interpolation-mode:bicubic;border:0;outline:none;image-rendering:-webkit-optimize-contrast;}
+		input::-moz-focus-inner{border:0;outline:0;}
+
+		@media screen and (max-device-width:480px),(max-width:480px)
+		{
+		.mob_width_full{width:100%!important;min-width:100%!important;}
+		.mob_height_auto{height:auto!important;}
+		.mob_align_center{text-align:center!important;}
+		.mob_width_136{width:136px!important;}
+		.mob_width_76{width:76px!important;}
+		.mob_width_50per{width:50%!important;}
+		.mob_padding_T25{padding-top:25px!important;}
+		.mob_padding_T35{padding-top:35px!important;}
+		.mob_padding_T40{padding-top:40px!important;}
+		.mob_padding_T75{padding-top:75px!important;}
+		.mob_display_none{display:none!important;}
+		.mobile-display-block{display:block!important;}
+		.mobile-height-auto{height:auto!important;}
+		.mobile-padding-B40{padding-bottom:40px!important;}
+		.mobile-padding-LR0{padding-left:0!important;padding-right:0!important;}
+		.mobile-padding-LR20{padding-left:20px!important;padding-right:20px!important;}
+		.mobile-width-full{width:100%!important;min-width:100%!important;}
+		}
+	</style>
+	<title>
+		Вітаємо в Skype 
+	</title>
+</head>
+
+<body style="color:#ffffff;font-size:0;">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width:100%;">
+<tr>
+	<td style="font-size:0;line-height:0;max-height:0;opacity:0;overflow:hidden;mso-hide:all;display:none;">
+		Запустити Skype
+	</td>
+</tr>
+<tr>
+	<td style="font-size:0;line-height:0;max-height:0;opacity:0;overflow:hidden;mso-hide:all;display:none;">
+		&nbsp;| Дякуємо, що приєдналися до Skype | Ви зареєструвалися – час знайти й додати друзів. Для цього потрібно лише кілька секунд. Skype дарує вам радість спілкування.
+	</td>
+</tr>
+<tr>
+	<td align="center">
+
+		<table align="center" class="mob_width_full" width="660" border="0" cellspacing="0" cellpadding="0" style="width:660px;" bgcolor="#ffffff">
+			<!-- eyebrow -->
+			<tr>
+				<td>
+
+				
+
+					<table width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;min-width:100%;">
+						<tr>
+							<td align="center" style="padding:7px 20px 0;font-size:10px;line-height:14px;font-weight:normal;font-family:'Segoe UI','Segoe UI Regular',SUWR,Arial,sans-serif;;color:#737373;">
+								<a href="https://click.email.skype.com/?qs=9c2fc869ce93c2c44157c083cc4c5b1a789d05eb062a71378966c79133d881f74e7b44cc78ac49974cbf949489a0be932eaa493d54f1837f921ec4f291598654" target="_blank" style="color:#737373;text-decoration:underline;" ><strong style="font-weight:normal;">Запустити Skype</strong></a>&nbsp;|&nbsp;<a href="https://click.email.skype.com/?qs=07981b198ad45c1f7e5ee40482ed72a35bebedbde5759b0dad2d34c450f92737076053329fb034d842cd81f30a27b49bd1922875a9d0ade8df4f7faa0d3a1792" target="_blank" style="color:#737373;text-decoration:underline;" ><strong style="font-weight:normal;">Переглянути в браузері</strong></a>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+			<!-- logos -->
+			<tr>
+				<td>
+
+					<table width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;min-width:100%;">
+						<tr>
+							<td style="padding:14px 20px 15px;">
+
+								<table align="left" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td>
+											<a href="https://click.email.skype.com/?qs=3d9f36a2668e04b9962efbce453879d07715620f9c379a740e9abce5bba52a3cf5aab8c099da1e116cd05d9241bbd7622c8c6f84bfc32bad624b0088a0af62bb" target="_blank" >
+												<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/header_logo_microsoft_double.png" width="94" height="20" alt="Microsoft" title="Microsoft" border="0" style="display:block;color:#000000;">
+											</a>
+										</td>
+									</tr>
+								</table>
+
+								<table align="right" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td>
+											<a href="https://click.email.skype.com/?qs=466fd1209746a275e15511e0141f3f19c2a489b0402080c4452e06d9b719a86983c88be7bec189aca6531e97da0dfd00efe2cb1f8856d76dc165eec4da2a4c07" target="_blank" >
+												<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/header_logo_skype_r2_double.png" width="79" height="24" alt="Skype" title="Skype" border="0" style="display:block;color:#00aff0;">
+											</a>
+										</td>
+									</tr>
+								</table>
+
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+			
+			<!-- Hero -->
+			<tr>
+				<td align="center">
+					<a href="https://click.email.skype.com/?qs=d3edb196dbedc2303ac8ebafda7054e65560d8a4716071a0cc979ca9091076137cd1861530ca967083d1db0ba55231249180468a8ca60d9b89e90f6a681bcaba" target="_blank" >
+						<img class="mob_width_full mob_height_auto" src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/hero_lifestyle_r2_double.jpg" align="center" width="660" height="330" alt="Зображення жінки, що дивиться на телефон і всміхається" title="Зображення жінки, що дивиться на телефон і всміхається" border="0" style="display:block;color:#00000;">
+					</a>
+				</td>
+			</tr>
+			<!-- Module 1 -->
+			<tr>
+				<td align="center" style="padding:0 20px;">
+
+					<table align="center" class="mob_width_full" width="550" cellspacing="0" cellpadding="0" border="0" style="width:550px;">
+						<tr>
+							<td align="center" style="padding:58px 0 0;font-size:38px;line-height:51px;font-weight:normal;font-family:'Segoe UI Semibold','Segoe UI',SUWSB,Arial,sans-serif;;color:#505050;">
+								Дякуємо, що приєдналися до Skype
+							</td>
+						</tr>
+						<tr>
+							<td align="center" style="padding:38px 0 0;font-size:16px;line-height:21px;font-weight:normal;font-family:'Segoe UI','Segoe UI Regular',SUWR,Arial,sans-serif;;color:#505050;">
+								Ви зареєструвалися – час знайти й додати друзів. Для цього потрібно лише кілька секунд. Skype дарує вам радість спілкування.
+							</td>
+						</tr>
+						<tr>
+							<td align="center" style="padding:35px 0 30px;">
+
+								<table align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#1686d9" style="-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;-khtml-border-radius:20px;">
+									<tr>
+										<td align="center" style="padding:10px 40px;font-size:15px;line-height:22px;font-weight:normal;font-family:'Segoe UI Semibold','Segoe UI',SUWSB,Arial,sans-serif;;color:#ffffff;">
+											<a href="https://click.email.skype.com/?qs=74ca50175f181ad3a4c17d0785df53ea6b6f1d89100753bd81ba20691910374b16c42962112917fd5a8d194d99d2e5c15394c60951a9d0e44e394c648ec3dbed" target="_blank" style="color:#ffffff;text-decoration:none;" ><strong style="font-weight:normal;">Запустити Skype</strong></a>
+										</td>
+									</tr>
+								</table>
+
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+<tr>
+	<td align="center"class="mobile-padding-LR20" bgcolor="#f4f4f4" style="padding:25px 15px 15px;">
+
+		<table align="center" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+			<tr>
+				<td align="center" class="-mso-line-height-correction" style="padding:0 10px 23px;font-size:20px;letter-spacing:-0.5px;line-height:25px;font-weight:normal;font-family:'Segoe UI Semibold','Segoe UI',SUWSB,Arial,sans-serif;;color:#505050;">
+					Користуйтеся Skype на різних пристроях
+				</td>
+			</tr>
+		</table>
+	
+	</td>
+</tr>
+
+<!-- T4 v.20180410 (alternate-t0-b0) -->
+<tr>
+	<td align="center"class="mobile-padding-LR20" bgcolor="#f4f4f4" style="padding:0 15px 0;">
+		
+		<table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;min-width:100%;">
+			<tr>
+				<!-- T4A -->
+				<td align="center" valign="top" class="mobile-display-block" style="padding:0;">
+
+					<table align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#ffffff;width:180px;max-width:180px;">
+						
+						<tr>
+							<td align="center" style="padding:0 0 15px;">
+								<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/icon-mobile@2x.png" align="center" alt="Для мобільних пристроїв" width="180" height="76" border="0" style="display:block;">
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" valign="top" class="-mso-line-height-correction" style="padding:0 10px 20px;font-size:16px;letter-spacing:-0.16px;line-height:20px;font-weight:normal;font-family:'Segoe UI','Segoe UI Regular',SUWR,Arial,sans-serif;;color:#505050;">
+								Для мобільних пристроїв
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" style="padding:0 5px 28px;">
+
+								<table align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="center" style="padding:0;vertical-align:middle;font-size:16px;line-height:16px;letter-spacing:-0.16px;font-family:'Segoe UI Semibold','Segoe UI',SUWSB,Arial,sans-serif;;font-weight:normal;color:#0078d6;">
+											<a href="https://click.email.skype.com/?qs=5fe5e4f05076080b7d951e35e559d7f28c4600135cc489bc4b18ceb6dacbfa6b2f80170a3ab518d41a529a1427238bea290b4ed47033b2ffbbfc2a3f2cf3f707"  target="_blank" style="color:#0078d6;text-decoration:underline;font-weight:normal;"><strong style="font-weight:normal;">Завантажити</strong></a>
+										</td>
+										<td width="10" style="font-size:1px;width:10px;min-width:10px;">
+											&nbsp;
+										</td>
+										<td>
+											<a href="https://click.email.skype.com/?qs=5fe5e4f05076080b7d951e35e559d7f28c4600135cc489bc4b18ceb6dacbfa6b2f80170a3ab518d41a529a1427238bea290b4ed47033b2ffbbfc2a3f2cf3f707"  target="_blank">
+												<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/ctaright@2x.png" alt="Синій круг із білою стрілкою" width="23" height="23" border="0" style="display:block;">
+											</a>
+										</td>
+									</tr>
+								</table>
+
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="mobile-padding-B40" valign="top" align="center" style="padding-bottom:0;background-color:#f4f4f4;line-height:4px;">
+								<img src="https://asgcdn.azureedge.net/general/skype/fy18/templates/transactional/t4_bottomw@2x.png" align="center" alt="End of section" width="180" height="4" border="0" style="display:block;">
+							</td>
+						</tr>
+					</table>
+
+				</td>
+				<!-- T4B -->
+				<td align="center" valign="top" class="mobile-display-block" style="padding:0;">
+
+					<table align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#ffffff;width:180px;max-width:180px;">
+						
+						<tr>
+							<td align="center" style="padding:0 0 15px;">
+								<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/icon-desktop@2x.png" align="center" alt="Для настільних комп’ютерів" width="180" height="76" border="0" style="display:block;">
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" valign="top" class="-mso-line-height-correction" style="padding:0 10px 20px;font-size:16px;letter-spacing:-0.16px;line-height:20px;font-weight:normal;font-family:'Segoe UI','Segoe UI Regular',SUWR,Arial,sans-serif;;color:#505050;">
+								Для настільних комп’ютерів*
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" style="padding:0 5px 28px;">
+
+								<table align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="center" style="padding:0;vertical-align:middle;font-size:16px;line-height:16px;letter-spacing:-0.16px;font-family:'Segoe UI Semibold','Segoe UI',SUWSB,Arial,sans-serif;;font-weight:normal;color:#0078d6;">
+											<a href="https://click.email.skype.com/?qs=3e328024cf3e29c78c5fbc6130591ab79dc25b11a6fec1c0f3f022714aab847bbfecf0cf2d7769126859acb372ab379ffe1f1b57fb3dac84e583b3cebe8e3d51"  target="_blank" style="color:#0078d6;text-decoration:underline;font-weight:normal;"><strong style="font-weight:normal;">Завантажити</strong></a>
+										</td>
+										<td width="10" style="font-size:1px;width:10px;min-width:10px;">
+											&nbsp;
+										</td>
+										<td>
+											<a href="https://click.email.skype.com/?qs=3e328024cf3e29c78c5fbc6130591ab79dc25b11a6fec1c0f3f022714aab847bbfecf0cf2d7769126859acb372ab379ffe1f1b57fb3dac84e583b3cebe8e3d51"  target="_blank">
+												<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/ctaright@2x.png" alt="Синій круг із білою стрілкою" width="23" height="23" border="0" style="display:block;">
+											</a>
+										</td>
+									</tr>
+								</table>
+
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="mobile-padding-B40" valign="top" align="center" style="padding-bottom:0;background-color:#f4f4f4;line-height:4px;">
+								<img src="https://asgcdn.azureedge.net/general/skype/fy18/templates/transactional/t4_bottomw@2x.png" align="center" alt="End of section" width="180" height="4" border="0" style="display:block;">
+							</td>
+						</tr>
+					</table>
+
+				</td>
+				<!-- T4C -->
+				<td align="center" valign="top" class="mobile-display-block" style="padding:0;">
+
+					<table align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#ffffff;width:180px;max-width:180px;">
+						
+						<tr>
+							<td align="center" style="padding:0 0 15px;">
+								<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/icon-tablet@2x.png" align="center" alt="Для планшетів" width="180" height="76" border="0" style="display:block;">
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" valign="top" class="-mso-line-height-correction" style="padding:0 10px 20px;font-size:16px;letter-spacing:-0.16px;line-height:20px;font-weight:normal;font-family:'Segoe UI','Segoe UI Regular',SUWR,Arial,sans-serif;;color:#505050;">
+								Для планшетів
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" style="padding:0 5px 28px;">
+
+								<table align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="center" style="padding:0;vertical-align:middle;font-size:16px;line-height:16px;letter-spacing:-0.16px;font-family:'Segoe UI Semibold','Segoe UI',SUWSB,Arial,sans-serif;;font-weight:normal;color:#0078d6;">
+											<a href="https://click.email.skype.com/?qs=423fb174f04299aa8fae835cd4ae6e92af27d9f7971c41b4fdc1892841049095e054a5d945e5798d00cd614647e779adccfa404473b6d2be0bb4543ab3c940f8"  target="_blank" style="color:#0078d6;text-decoration:underline;font-weight:normal;"><strong style="font-weight:normal;">Завантажити</strong></a>
+										</td>
+										<td width="10" style="font-size:1px;width:10px;min-width:10px;">
+											&nbsp;
+										</td>
+										<td>
+											<a href="https://click.email.skype.com/?qs=423fb174f04299aa8fae835cd4ae6e92af27d9f7971c41b4fdc1892841049095e054a5d945e5798d00cd614647e779adccfa404473b6d2be0bb4543ab3c940f8"  target="_blank">
+												<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/ctaright@2x.png" alt="Синій круг із білою стрілкою" width="23" height="23" border="0" style="display:block;">
+											</a>
+										</td>
+									</tr>
+								</table>
+
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" valign="top" style="background-color:#f4f4f4;line-height:4px;">
+								<img src="https://asgcdn.azureedge.net/general/skype/fy18/templates/transactional/t4_bottomw@2x.png" align="center" alt="End of section" width="180" height="4" border="0" style="display:block;">
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+		</table>
+
+	</td>
+</tr>
+
+<tr>
+	<td align="center"class="mobile-padding-LR20" bgcolor="#f4f4f4" style="padding:25px 15px 15px;">
+
+		<table align="center" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+			<tr>
+				<td align="left" class="-mso-line-height-correction" style="padding:0 10px 23px;font-size:16px;letter-spacing:-0.5px;line-height:25px;font-weight:normal;font-family:'Segoe UI','Segoe UI Regular',SUWR,Arial,sans-serif;;color:#505050;">
+					*&nbsp;Якщо ви користуєтеся Windows&nbsp;10, Skype на вашому комп’ютері вже встановлено.
+				</td>
+			</tr>
+		</table>
+	
+	</td>
+</tr>
+
+<!-- U5 v.20180516 (default) -->
+<tr>
+	<td bgcolor="#ffffff" style="padding:30px 20px 31px;">
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;min-width:100%;">
+			<tr>
+				<td align="left" style="padding:0;font-size:20px;line-height:26px;letter-spacing:-0.32px;font-weight:normal;font-family:'Segoe UI Semibold','Segoe UI',SUWSB,Arial,sans-serif;;color:#0078d6;">
+					Зведення облікового запису
+				</td>
+			</tr>
+			<tr>
+				<td class="useremail" align="left" style="padding:3px 0 0;font-size:14px;line-height:19px;letter-spacing:-0.16px;font-weight:normal;font-family:'Segoe UI','Segoe UI Regular',SUWR,Arial,sans-serif;;color:#6e6e6e;">
+					<b style="font-family:'Segoe UI Semibold','Segoe UI',SUWSB,Arial,sans-serif;;font-weight:normal;">Ім’я облікового запису:</b> <a href="#" style="text-decoration:none;color:#737373;cursor:text;">kr@anadeainc.com</a>
+				</td>
+			</tr>
+			<tr>
+				<td align="left" style="padding:3px 0 0;font-size:14px;line-height:19px;letter-spacing:-0.16px;font-weight:normal;font-family:'Segoe UI Semibold','Segoe UI',SUWSB,Arial,sans-serif;;color:#6e6e6e;">
+					<a href="https://click.email.skype.com/?qs=17119359d997c43c5a968c2564cfc3b23144627a2b93b1c510b9fa213e13be5c28bd52ee2bf86c7044a38e1b6132580d2c80ff6a0fefa888e12e2d85e494cca1" target="_blank" style="color:#6e6e6e;text-decoration:underline;" ><strong style="font-weight:normal;">Мій обліковий запис</strong></a>
+					|
+					<a href="https://click.email.skype.com/?qs=c495800d8a9343498514cfca04b7b82815b560b0a979650201ce37244bae779fe8e8a1ab1113501d3ce050ffa0d5efa4023507f9d4eabe05a84cfd12a886b14f" target="_blank" style="color:#6e6e6e;text-decoration:underline;" ><strong style="font-weight:normal;">Довідка</strong></a>
+					|
+					<a href="https://click.email.skype.com/?qs=2792e67d0f5fe018f6f408b9b965c7be0afed6df52ed57ba75a4c3d02ad27bc710fc1855613e236e5a78803decc7281bd31f435e450a66f8909139a5d2f61188" target="_blank" style="color:#6e6e6e;text-decoration:underline;" ><strong style="font-weight:normal;">Skype.com</strong></a>
+				</td>
+			</tr>
+		</table>
+
+	</td>
+</tr>
+
+			<!-- Social media bar -->
+			<tr>
+				<td class="mob_align_center" style="padding:15px 20px 25px;">
+
+					<table class="mob_align_center" border="0" cellspacing="0" cellpadding="0" style="display:inline-block;">
+						<tr>
+							<td>
+								<a href="https://click.email.skype.com/?qs=b7db5a425de33e3f19c05153b07c6d84f10127af5226d60efa3fdc212365c45b7376fd2a9825f3d46a0415ae865052999a8ecdc000b07a8d1b1066a475598fc6" target="_blank" >
+									<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/socialbar_twitter_double.png" width="22" height="18" alt="Значок Twitter" title="Значок Twitter" border="0" style="display:block;color:#737373;">
+								</a>
+							</td>
+							<td width="25" style="width:25px;min-width:25px;font-size:1px;line-height:1px;">
+								&nbsp;
+							</td>
+							<td>
+								<a href="https://click.email.skype.com/?qs=fc7dbe1e474beaaa5caffe1b94d8b818d3ee5a3c7d7cfc2488d0569495b9965dce12ba0507e30bda2ea108ad2c5fd0bf21cae1e829b8a1029c3aa5fac0e9bf3e" target="_blank" >
+									<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/socialbar_instagram_double.png" width="17" height="18" alt="Значок Instagram" title="Значок Instagram" border="0" style="display:block;color:#737373;">
+								</a>
+							</td>
+							<td width="25" style="width:25px;min-width:25px;font-size:1px;line-height:1px;">
+								&nbsp;
+							</td>
+							<td>
+								<a href="https://click.email.skype.com/?qs=3b7532da81320d9d2c576b0f729066c6029df52ab306e6d2aaf69cbb9a68f21d88ce8c0efa1ffc2dfb40e5750f60ccc65aa34f49441ca74ff3af5500101918cc" target="_blank" >
+									<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/socialbar_facebook_double.png" width="18" height="18" alt="Значок Facebook" title="Значок Facebook" border="0" style="display:block;color:#737373;">
+								</a>
+							</td>
+							<td width="25" style="width:25px;min-width:25px;font-size:1px;line-height:1px;">
+								&nbsp;
+							</td>
+							<td>
+								<a href="https://click.email.skype.com/?qs=d86e6f972e6004dcc3c298f108d36255a2057140ccf9a31de8b91d6903f8746a88279b79a88a116ddbcdb4d3227eb9169f114c54eacd644383463ead63c2d2b8" target="_blank" >
+									<img src="https://asgcdn.azureedge.net/2018-06-skype-welcome-email-june-crf/images/uk-ua/socialbar_rss_double.png" width="18" height="18" alt="Значок блогів Skype" title="Значок блогів Skype" border="0" style="display:block;color:#737373;">
+								</a>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+			<!-- Footer -->
+
+<!-- Footer v.20180601 (default) -->
+<tr>
+	<td bgcolor="#f0f0f0" style="padding:17px 20px 30px;">
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;min-width:100%;">
+			<tr>
+				<td align="left" style="padding:0;font-size:10px;line-height:14px;font-weight:normal;font-family:'Segoe UI','Segoe UI Regular',SUWR,Arial,sans-serif;;color:#6b6b6b;">
+					Skype не призначено для дзвінків до служб екстреної допомоги. Skype не є заміною звичайного телефона та не призначений для дзвінків до служб екстреної допомоги.<br>Skype і (або) корпорація Майкрософт (Microsoft Corporation), 2003-2018. Назва Skype, відповідні товарні знаки й емблеми, а також символ "S" є товарними знаками компанії Skype або пов'язаних із нею організацій. <a
+				href="https://click.email.skype.com/?qs=49510c8d3365175d374a233ca7f6e370642ce3ec41b00a78338177592f06422f2d16f56086bdfdbc326d0734253f80e15d896182e42500084891141929b5d06d"  target="_blank" style="color:#6b6b6b;text-decoration:underline;font-weight:normal;"><strong style="color:#6b6b6b;text-decoration:underline;font-weight:normal;">Декларація про конфіденційність</strong></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="address" align="left" style="padding:14px 0 0;font-size:10px;line-height:14px;font-weight:normal;font-family:'Segoe UI','Segoe UI Regular',SUWR,Arial,sans-serif;;color:#6b6b6b;">
+					<a href="#" style="color:#6b6b6b;text-decoration:none;cursor:text;">
+						Microsoft Corporation, One Microsoft Way, Redmond, WA 98052 USA<br>Skype Communications S.A.R.L. 23&#8209;2&zwj;9 R&zwj;iv&zwj;es d&zwj;e Cl&zwj;aus&zwj;en, L&#8209;21&zwj;65&nbsp;Luxe&zwj;mbourg
+					</a>
+				</td>
+			</tr>
+			
+
+			<tr>
+				<td align="left" style="padding:20px 0 0;">
+
+						<table align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding:0;">
+									<a href="https://click.email.skype.com/?qs=9bfc33b6556a66805254398c8b5f296e6e886a3fa261c7f4c223a0fe0fb2ba27db005be4054ff7fde89e0d7875407a5af30bb78042b57d810da1f0b187034904"  target="_blank">
+										<img src="https://asgcdn.azureedge.net/general/skype/fy18/templates/transactional/logomicrosoft@4x.png" alt="Microsoft" border="0" width="100" height="21" style="display:block;">
+									</a>
+								</td>
+							</tr>
+						</table>
+				</td>
+			</tr>
+		</table>
+
+	</td>
+</tr>
+
+		</table>
+
+	</td>
+</tr>
+</table>
+
+<img src="https://click.email.skype.com/open.aspx?ffcb10-fefc1576746d06-fdf515737362047c7c1c7677-fe9813727763057d71-ff971775-fe0315757560057f77177776-fef716737c6200&d=70049" width="1" height="1">
+
+</body>
+</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>8</integer>
+	<key>date-last-viewed</key>
+	<integer>1532433416</integer>
+	<key>date-received</key>
+	<integer>1532346075</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>remote-id</key>
+	<string>12</string>
+</dict>
+</plist>

@@ -1,0 +1,161 @@
+5453      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp2068895iof;
+        Thu, 2 Aug 2018 05:37:50 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpeviDHdqTDWnnPxdcUBPaslD1r6ugVPAGjy23t102B+oHiZqmZLt0q6/vTpk8rpJztSjfYb
+X-Received: by 2002:a50:b410:: with SMTP id b16-v6mr3216135edh.190.1533213470190;
+        Thu, 02 Aug 2018 05:37:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533213470; cv=none;
+        d=google.com; s=arc-20160816;
+        b=H4G/iqkBNJLK2+ecTj8JcKseqNXpBVjH+3PKOCGKaA2wjbs+5DTMdf83NJpGSXc2Q2
+         oOtIMLd0I4wiuTsqToU6djXy+jHt1LopLE9SOSKCX95iULgyJh3wv8HJBOkylSBQonOv
+         6ru8MQCR8501gAEcym4c2E9A2E3Gzz7PLqXtLf1XNdVV4g5jjOqs55y422pPlX4BHGNX
+         Id1XtG9LvIKplk3xO37RyRhnKSOdZgAjVqQn4V4gqF9owYtoC9r5vKWXlcWsG4ctjr/u
+         fXQblq0zjcA5AeBcIbCIh2sYcMXajiPKCLypv05u/jO6YMHs/tkYknXndY7i1nBA02tR
+         Pe3A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=TLYdOL+SJEuHq7GBk6ueT5iBGZIfkhOH3qddT8xnYXw=;
+        b=d3mcxwiS30m28bT9oV/OcanOrCTlJ1ZZfWYG+kuhz+gOhIZAtQNcTxXdLg+xwpgUB3
+         uhBHR9kcZoR05OO9i322pr4Sc2GY2d4MHpxpWJwPcRqjrmHQt/t6LOYp6maE/WwzsJdf
+         i9/x5uYcLFsEEuI6X93D0aYI2FOVZ6dR/8ec1vvZNTS+ZsFqXISL1E21rHIYkX/qts4N
+         s3fC1VlQQO2Bo9Z0vS3aW5COOeoveaMKPTgB/jbkjFotA9p6yF6TZBswyaR0Wz/3Qa0d
+         Qe0/JcVcaQueJoIWOyEr7vDou8Jvbn7NKrfPyUzL5YB8axNHo4EiDV6npbg9fTGRMTvf
+         1nOA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=esUZcyGX;
+       spf=pass (google.com: domain of srs0+24df2e8cf92be1334723e5b4334b6c1c468270b2@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+24df2e8cf92be1334723e5b4334b6c1c468270b2@info.anahoret.com
+Return-Path: <srs0+24df2e8cf92be1334723e5b4334b6c1c468270b2@info.anahoret.com>
+Received: from smtp0.mailarbor.com (smtp0.mailarbor.com. [5.104.224.181])
+        by mx.google.com with ESMTPS id j51-v6si545794ede.264.2018.08.02.05.37.49
+        for <kr@anadeainc.com>
+        (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 02 Aug 2018 05:37:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0+24df2e8cf92be1334723e5b4334b6c1c468270b2@info.anahoret.com designates 5.104.224.181 as permitted sender) client-ip=5.104.224.181;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=esUZcyGX;
+       spf=pass (google.com: domain of srs0+24df2e8cf92be1334723e5b4334b6c1c468270b2@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+24df2e8cf92be1334723e5b4334b6c1c468270b2@info.anahoret.com
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id B2D23201499
+	for <kr@anadeainc.com>; Thu,  2 Aug 2018 12:37:49 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id A26F81600B6
+	for <kr@anadeainc.com>; Thu,  2 Aug 2018 12:37:49 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.anahoret.com; q=dns/txt; s=mail; t=1533213469; bh=TLYdOL+SJEuHq7GBk6ueT5iBGZIfkhOH3qddT8xnYXw=; h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding; b=esUZcyGXWChnSctyO5a9BNtEpLRNcXd7GI93rUumP/qQNSpMINk4fLUPN0z2D5RrQRT6nIoDMlVOCb4CszDIab7Ozz90PLAftfMllbQ/ONSAOeCGfECoOyYN1tWJAGnOp71yvGhx/S+eEF2H8k6C+DDWaxB582MWCYa5lFuB7zg=
+Date: Thu, 02 Aug 2018 12:37:49 +0000
+From: noreply@tracker.anahoret.com
+To: Konstantin Ryshchenko <kr@anadeainc.com>
+Message-ID: <24df2e8cf92be1334723e5b4334b6c1c468270b2@info.anahoret.com>
+Subject: Just Play digest
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<style type="text/css">
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  table th, table td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  table.daily-statistics {
+    width: 50%;
+  }
+  table.daily-statistics td.working_time {
+    text-align: right;
+  }
+  table.daily-statistics th {
+    background: #DDD;
+  }
+  table.digest {
+    width: 680px;
+  }
+  table.digest.planned_stories th {
+    background: #ddd;
+  }
+  table.digest.description th {
+    background: #ddd;
+  }
+  table.digest.rejected th {
+    background: red;
+  }
+  table.digest.completed th {
+    background: #d8e795;
+  }
+  table.digest.estimate th {
+    background: #dcf8ff;
+  }
+  table.digest.new_stories th {
+    background: #ddd;
+  }
+  table.digest td.time {
+    text-align: center;
+  }
+  table.digest td.story {
+    width: 400px;
+  }
+  table.digest td.name {
+    width: 130px;
+  }
+</style>
+
+
+
+  <p>
+    Hello, Konstantin Ryshchenko. Your have some activities in Just Play
+  </p>
+      <b>1 story was changed</b>
+      <table class='digest description'>
+        <th>Story</th>
+        <th>Changed by</th>
+        <th>Changed at (GMT+2)</th>
+        <tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64454">Update Allocation validation</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    12:36
+  </td>
+</tr>
+
+      </table>
+
+<p>
+  <a href="https://tracker.anahoret.com/profile/default_notification_settings">Change digest settings</a>
+</p>
+
+
+
+  <p>Thank you,</p>
+  Just Play Team
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>34</integer>
+	<key>date-last-viewed</key>
+	<integer>1533214059</integer>
+	<key>date-received</key>
+	<integer>1533213470</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+	</array>
+	<key>remote-id</key>
+	<string>45</string>
+</dict>
+</plist>

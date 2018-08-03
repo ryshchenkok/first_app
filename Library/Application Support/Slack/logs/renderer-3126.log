@@ -1,0 +1,3402 @@
+[07/24/18, 14:56:24:701] info: ╔═══════════════════════════════════════════════════════════════════════╗
+[07/24/18, 14:56:24:702] info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 07/24/18, 14:56:24:698      ║
+[07/24/18, 14:56:24:702] info: ╚═══════════════════════════════════════════════════════════════════════╝
+[07/24/18, 14:56:24:880] info: Initializing local storage instance at path: /Users/kr/Library/Application Support/Slack/local-settings.json
+[07/24/18, 14:56:25:042] info: NetworkStatus: Waiting for network online…
+[07/24/18, 14:56:25:278] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[07/24/18, 14:56:25:281] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[07/24/18, 14:56:25:493] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[07/24/18, 14:56:25:603] info: Store: SET_UPDATE_STATUS up-to-date
+[07/24/18, 14:56:25:900] info: Store: SET_NETWORK_STATUS online
+[07/24/18, 14:56:25:901] info: Store: MAIN_WINDOW_SHOWN
+[07/24/18, 14:56:25:915] info: Store: ADD_WINDOW
+{
+  "id": 3,
+  "type": "sign-in"
+}
+[07/24/18, 14:57:13:555] info: Store: FOREGROUND_APP
+[07/24/18, 14:57:56:221] info: Store: FOREGROUND_APP
+[07/24/18, 14:58:31:316] info: Store: HANDLE_DEEP_LINK
+{
+  "url": "slack://T4ALJRY56/magic-login/403373121297-c96740071fccdc10f85afea9069506536af603552fa241037a1cd7a7f6dba671"
+}
+[07/24/18, 14:58:31:754] info: Store: ADD_NEW_TEAM
+{
+  "id": "UBV12AYCA",
+  "name": "[REDACTED]",
+  "team_id": "T4ALJRY56",
+  "team_name": "[REDACTED]",
+  "team_url": "[REDACTED]"
+}
+[07/24/18, 14:58:31:771] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "unloaded",
+  "teamId": "T4ALJRY56"
+}
+[07/24/18, 14:58:36:399] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "T4ALJRY56"
+}
+[07/24/18, 14:58:37:384] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T4ALJRY56"
+}
+[07/24/18, 14:58:37:823] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/24/18, 14:58:37:826] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[07/24/18, 14:58:37:828] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[07/24/18, 14:58:37:837] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T4ALJRY56",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[07/24/18, 14:58:38:098] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[07/24/18, 14:58:38:183] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[07/24/18, 14:58:38:196] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "webapp-loaded",
+  "teamId": "T4ALJRY56"
+}
+[07/24/18, 14:58:38:389] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    384,
+    121
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[07/24/18, 14:58:38:448] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T4ALJRY56"
+}
+[07/24/18, 14:58:38:449] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T4ALJRY56",
+  "token": "xoxs-⋯"
+}
+[07/24/18, 14:58:41:838] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/24/18, 14:59:58:966] info: Store: FOREGROUND_APP
+[07/24/18, 15:00:01:826] info: Store: REMOVE_WINDOW 3
+[07/24/18, 15:00:43:390] info: Store: FOREGROUND_APP
+[07/24/18, 15:01:16:673] info: Store: FOREGROUND_APP
+[07/24/18, 15:01:23:677] info: Store: FOREGROUND_APP
+[07/24/18, 15:02:43:407] info: Store: FOREGROUND_APP
+[07/24/18, 15:02:44:163] info: Store: FOREGROUND_APP
+[07/24/18, 15:03:03:164] info: Store: FOREGROUND_APP
+[07/24/18, 15:03:09:727] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/24/18, 15:05:36:695] info: Store: FOREGROUND_APP
+[07/24/18, 15:06:52:841] info: Store: FOREGROUND_APP
+[07/24/18, 15:08:34:265] info: Store: FOREGROUND_APP
+[07/24/18, 15:11:30:717] info: Store: FOREGROUND_APP
+[07/24/18, 15:11:58:499] info: Store: FOREGROUND_APP
+[07/24/18, 15:12:21:052] info: Store: FOREGROUND_APP
+[07/24/18, 15:13:24:628] info: Store: FOREGROUND_APP
+[07/24/18, 15:13:28:963] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/24/18, 15:13:33:066] info: Store: SELECT_CHANNEL DBV15HC83
+[07/24/18, 15:13:55:150] info: Store: FOREGROUND_APP
+[07/24/18, 15:16:23:885] info: Store: FOREGROUND_APP
+[07/24/18, 15:17:04:582] info: Store: FOREGROUND_APP
+[07/24/18, 15:18:30:806] info: Store: FOREGROUND_APP
+[07/24/18, 15:22:01:603] info: Store: FOREGROUND_APP
+[07/24/18, 15:22:39:986] info: Store: FOREGROUND_APP
+[07/24/18, 15:24:00:294] info: Store: FOREGROUND_APP
+[07/24/18, 15:26:38:589] info: Store: FOREGROUND_APP
+[07/24/18, 15:27:49:931] info: Store: FOREGROUND_APP
+[07/24/18, 15:36:54:553] info: Store: FOREGROUND_APP
+[07/24/18, 15:37:10:531] info: Store: FOREGROUND_APP
+[07/24/18, 15:37:13:082] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/24/18, 15:37:14:209] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/24/18, 15:37:15:302] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/24/18, 15:37:18:866] info: Store: FOREGROUND_APP
+[07/24/18, 15:40:31:249] info: Store: FOREGROUND_APP
+[07/24/18, 15:43:44:913] info: Store: FOREGROUND_APP
+[07/24/18, 15:47:10:667] info: Store: FOREGROUND_APP
+[07/24/18, 15:47:44:729] info: Store: FOREGROUND_APP
+[07/24/18, 15:49:35:825] info: Store: FOREGROUND_APP
+[07/24/18, 15:53:06:172] info: Store: FOREGROUND_APP
+[07/24/18, 15:53:33:355] info: Store: FOREGROUND_APP
+[07/24/18, 15:53:34:650] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/24/18, 15:55:11:055] info: Store: FOREGROUND_APP
+[07/24/18, 15:55:24:917] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/24/18, 15:55:26:444] info: Store: SELECT_CHANNEL C5WEWLR7C
+[07/24/18, 15:55:38:788] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/24/18, 15:56:00:557] info: Store: SELECT_CHANNEL C5WEWLR7C
+[07/24/18, 15:56:24:164] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/24/18, 15:57:51:048] info: Store: FOREGROUND_APP
+[07/24/18, 15:58:13:744] info: Store: FOREGROUND_APP
+[07/24/18, 16:02:23:968] info: Store: FOREGROUND_APP
+[07/24/18, 16:02:43:275] info: Store: FOREGROUND_APP
+[07/24/18, 16:02:45:043] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/24/18, 16:06:09:456] info: Store: FOREGROUND_APP
+[07/24/18, 16:06:26:884] info: Store: FOREGROUND_APP
+[07/24/18, 16:07:30:318] info: Store: FOREGROUND_APP
+[07/24/18, 16:08:23:750] info: Store: FOREGROUND_APP
+[07/24/18, 16:08:28:660] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/24/18, 16:09:03:463] info: Store: FOREGROUND_APP
+[07/24/18, 16:11:14:040] info: Store: FOREGROUND_APP
+[07/24/18, 16:11:38:318] info: Store: FOREGROUND_APP
+[07/24/18, 16:12:42:841] info: Store: FOREGROUND_APP
+[07/24/18, 16:14:21:786] info: Store: FOREGROUND_APP
+[07/24/18, 16:15:41:545] info: Store: FOREGROUND_APP
+[07/24/18, 16:17:21:345] info: Store: FOREGROUND_APP
+[07/24/18, 16:18:04:604] info: Store: FOREGROUND_APP
+[07/24/18, 16:21:02:515] info: Store: FOREGROUND_APP
+[07/24/18, 16:21:15:340] info: Store: FOREGROUND_APP
+[07/24/18, 16:24:55:042] info: Store: FOREGROUND_APP
+[07/24/18, 16:25:08:318] info: Store: FOREGROUND_APP
+[07/24/18, 16:25:10:790] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/24/18, 16:25:47:080] info: Store: FOREGROUND_APP
+[07/24/18, 16:30:46:434] info: Store: FOREGROUND_APP
+[07/24/18, 16:32:05:316] info: Store: FOREGROUND_APP
+[07/24/18, 16:32:48:267] info: Store: FOREGROUND_APP
+[07/24/18, 16:36:40:598] info: Store: FOREGROUND_APP
+[07/24/18, 16:36:48:133] info: Store: FOREGROUND_APP
+[07/24/18, 16:36:50:836] info: Store: FOREGROUND_APP
+[07/24/18, 16:38:18:922] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4BB6L54H-gc7d1cde7c7c-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "xkAwfJhwKg7RmGM",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532439498.000479&team=T4ALJRY56",
+  "msg": "1532439498.000479",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/24/18, 16:38:23:025] info: Store: FOREGROUND_APP
+[07/24/18, 16:38:26:534] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/24/18, 16:39:48:288] info: Store: FOREGROUND_APP
+[07/24/18, 16:40:53:667] info: Store: FOREGROUND_APP
+[07/24/18, 16:40:56:016] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/24/18, 16:41:23:056] info: Store: FOREGROUND_APP
+[07/24/18, 16:41:33:400] info: Store: FOREGROUND_APP
+[07/24/18, 16:43:10:218] info: Store: FOREGROUND_APP
+[07/24/18, 16:43:12:320] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/24/18, 16:43:30:697] info: Store: FOREGROUND_APP
+[07/24/18, 16:44:38:282] info: Store: FOREGROUND_APP
+[07/24/18, 16:45:56:733] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U7KBBCHBM-0e07afef0685-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "lYlNi1iqMgNN8Jx",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532439956.000341&team=T4ALJRY56",
+  "msg": "1532439956.000341",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/24/18, 16:46:01:291] info: Store: FOREGROUND_APP
+[07/24/18, 16:46:02:819] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/24/18, 16:46:29:648] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 5,
+  "params": "[REDACTED]"
+}
+[07/24/18, 16:46:34:755] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U7KBBCHBM-0e07afef0685-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "PNkATvsjOZWQR0D",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532439994.000438&team=T4ALJRY56",
+  "msg": "1532439994.000438",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/24/18, 16:46:36:026] info: Store: FOREGROUND_APP
+[07/24/18, 16:47:24:330] info: Store: FOREGROUND_APP
+[07/24/18, 16:48:51:510] info: Store: FOREGROUND_APP
+[07/24/18, 16:53:23:396] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4BB6L54H-gc7d1cde7c7c-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "wpzvIRtKMQlL98l",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532440403.000151&team=T4ALJRY56",
+  "msg": "1532440403.000151",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/24/18, 16:53:28:414] info: Store: FOREGROUND_APP
+[07/24/18, 17:00:07:956] info: Store: FOREGROUND_APP
+[07/24/18, 17:02:04:047] info: Store: FOREGROUND_APP
+[07/24/18, 17:02:23:484] info: Store: FOREGROUND_APP
+[07/24/18, 17:03:13:014] info: Store: FOREGROUND_APP
+[07/24/18, 17:03:29:279] info: Store: FOREGROUND_APP
+[07/24/18, 17:03:32:710] info: Store: FOREGROUND_APP
+[07/24/18, 17:04:39:869] info: Store: FOREGROUND_APP
+[07/24/18, 17:12:20:689] info: Store: FOREGROUND_APP
+[07/24/18, 17:13:53:556] info: Store: FOREGROUND_APP
+[07/24/18, 17:16:05:061] info: Store: FOREGROUND_APP
+[07/24/18, 17:16:10:685] info: Store: FOREGROUND_APP
+[07/24/18, 17:17:50:494] info: Store: FOREGROUND_APP
+[07/24/18, 17:18:24:840] info: Store: FOREGROUND_APP
+[07/24/18, 17:18:27:320] info: Store: FOREGROUND_APP
+[07/24/18, 17:19:01:593] info: Store: FOREGROUND_APP
+[07/24/18, 17:19:03:230] info: Store: FOREGROUND_APP
+[07/24/18, 17:19:06:320] info: Store: SELECT_CHANNEL DBV544BHT
+[07/24/18, 17:19:06:685] info: Store: SELECT_CHANNEL DBVUBGBFF
+[07/24/18, 17:19:08:111] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/24/18, 17:19:08:645] info: Store: SELECT_CHANNEL DBV15HC83
+[07/24/18, 17:19:09:221] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/24/18, 17:19:10:213] info: Store: SELECT_CHANNEL DBUT11DGT
+[07/24/18, 17:19:11:390] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/24/18, 17:19:15:239] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/24/18, 17:20:02:967] info: Store: FOREGROUND_APP
+[07/24/18, 17:20:48:578] info: Store: FOREGROUND_APP
+[07/24/18, 17:20:55:215] info: Store: FOREGROUND_APP
+[07/24/18, 17:20:56:592] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/24/18, 17:21:50:115] info: Store: FOREGROUND_APP
+[07/24/18, 17:22:22:106] info: Store: FOREGROUND_APP
+[07/24/18, 17:23:53:227] info: Store: FOREGROUND_APP
+[07/24/18, 17:23:55:697] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/24/18, 17:23:59:985] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 5,
+  "params": "[REDACTED]"
+}
+[07/24/18, 17:25:23:542] info: Store: FOREGROUND_APP
+[07/24/18, 17:30:04:790] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    384,
+    121
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[07/24/18, 17:30:31:545] info: Store: FOREGROUND_APP
+[07/24/18, 17:31:40:238] info: Store: FOREGROUND_APP
+[07/24/18, 17:32:52:406] info: Store: FOREGROUND_APP
+[07/24/18, 17:33:47:521] info: Store: FOREGROUND_APP
+[07/24/18, 17:34:51:497] info: Store: FOREGROUND_APP
+[07/24/18, 17:35:38:756] info: Store: FOREGROUND_APP
+[07/24/18, 17:38:07:114] info: Store: FOREGROUND_APP
+[07/24/18, 17:40:59:648] info: Store: FOREGROUND_APP
+[07/24/18, 17:42:09:415] info: Store: FOREGROUND_APP
+[07/24/18, 17:44:22:626] info: Store: FOREGROUND_APP
+[07/24/18, 17:48:48:717] info: Store: FOREGROUND_APP
+[07/24/18, 17:49:46:644] info: Store: FOREGROUND_APP
+[07/24/18, 17:51:53:669] info: Store: FOREGROUND_APP
+[07/24/18, 17:52:33:725] info: Store: FOREGROUND_APP
+[07/24/18, 17:54:24:629] info: Store: FOREGROUND_APP
+[07/24/18, 17:54:28:395] info: Store: FOREGROUND_APP
+[07/24/18, 17:55:30:821] info: Store: FOREGROUND_APP
+[07/24/18, 17:56:18:632] info: Store: FOREGROUND_APP
+[07/24/18, 17:57:05:430] info: Store: FOREGROUND_APP
+[07/24/18, 17:58:08:344] info: Store: FOREGROUND_APP
+[07/24/18, 17:58:42:254] info: Store: FOREGROUND_APP
+[07/24/18, 17:58:46:415] info: Store: FOREGROUND_APP
+[07/24/18, 18:00:11:391] info: Store: FOREGROUND_APP
+[07/24/18, 18:00:43:745] info: Store: FOREGROUND_APP
+[07/24/18, 18:00:56:120] info: Store: FOREGROUND_APP
+[07/24/18, 18:02:49:410] info: Store: FOREGROUND_APP
+[07/24/18, 18:02:51:689] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/24/18, 18:02:52:784] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/24/18, 20:56:44:629] info: Store: SET_UPDATE_STATUS check-for-update
+[07/24/18, 20:56:45:767] info: Store: SET_UPDATE_STATUS up-to-date
+[07/25/18, 02:57:04:991] info: Store: SET_UPDATE_STATUS check-for-update
+[07/25/18, 02:57:06:403] info: Store: SET_UPDATE_STATUS up-to-date
+[07/25/18, 08:44:56:935] info: Store: FOREGROUND_APP
+[07/25/18, 08:45:02:590] info: Store: FOREGROUND_APP
+[07/25/18, 08:45:05:244] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/25/18, 08:46:09:174] info: Store: FOREGROUND_APP
+[07/25/18, 08:48:48:008] info: Store: FOREGROUND_APP
+[07/25/18, 08:56:50:301] info: Store: FOREGROUND_APP
+[07/25/18, 08:57:05:353] info: Store: SET_UPDATE_STATUS check-for-update
+[07/25/18, 08:57:06:690] info: Store: SET_UPDATE_STATUS up-to-date
+[07/25/18, 08:57:26:613] info: Store: FOREGROUND_APP
+[07/25/18, 09:06:47:446] info: Store: FOREGROUND_APP
+[07/25/18, 09:07:08:545] info: Store: FOREGROUND_APP
+[07/25/18, 09:13:02:171] info: Store: FOREGROUND_APP
+[07/25/18, 09:13:48:614] info: Store: FOREGROUND_APP
+[07/25/18, 09:14:22:356] info: Store: FOREGROUND_APP
+[07/25/18, 09:14:30:556] info: Store: FOREGROUND_APP
+[07/25/18, 09:15:00:316] info: Store: FOREGROUND_APP
+[07/25/18, 09:15:26:085] info: Store: FOREGROUND_APP
+[07/25/18, 09:15:29:470] info: Store: FOREGROUND_APP
+[07/25/18, 09:15:30:269] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/25/18, 09:16:08:645] info: Store: FOREGROUND_APP
+[07/25/18, 09:17:07:774] info: Store: FOREGROUND_APP
+[07/25/18, 09:19:23:736] info: Store: FOREGROUND_APP
+[07/25/18, 09:21:35:576] info: Store: FOREGROUND_APP
+[07/25/18, 09:21:42:784] info: Store: FOREGROUND_APP
+[07/25/18, 09:21:59:763] info: Store: FOREGROUND_APP
+[07/25/18, 09:22:18:170] info: Store: FOREGROUND_APP
+[07/25/18, 09:23:43:738] info: Store: FOREGROUND_APP
+[07/25/18, 09:23:45:186] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 09:25:07:370] info: Store: FOREGROUND_APP
+[07/25/18, 09:25:43:595] info: Store: FOREGROUND_APP
+[07/25/18, 09:26:25:659] info: Store: FOREGROUND_APP
+[07/25/18, 09:27:12:050] info: Store: FOREGROUND_APP
+[07/25/18, 09:27:44:106] info: Store: FOREGROUND_APP
+[07/25/18, 09:29:06:948] info: Store: FOREGROUND_APP
+[07/25/18, 09:31:06:838] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-USLACKBOT-sv1444671949-512",
+  "channel": "DBUE3KNN5",
+  "content": "[REDACTED]",
+  "id": "DkDlf3uZGB47P7J",
+  "launchUri": "slack://channel?id=DBUE3KNN5&message=1532500266.000176&team=T4ALJRY56",
+  "msg": "1532500266.000176",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/25/18, 09:31:11:040] info: Store: FOREGROUND_APP
+[07/25/18, 09:31:12:781] info: Store: SELECT_CHANNEL DBUE3KNN5
+[07/25/18, 09:31:27:782] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 09:31:32:885] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/25/18, 09:33:08:469] info: Store: FOREGROUND_APP
+[07/25/18, 09:33:10:166] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 09:33:15:831] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/25/18, 09:35:45:585] info: Store: FOREGROUND_APP
+[07/25/18, 09:35:47:215] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 09:38:29:730] info: Store: FOREGROUND_APP
+[07/25/18, 09:43:09:791] info: Store: FOREGROUND_APP
+[07/25/18, 09:44:07:970] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-UAGJU9C20-94541ca18f26-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "KrNvTMCADnYljRJ",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1532501047.000206&team=T4ALJRY56",
+  "msg": "1532501047.000206",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/25/18, 09:44:13:026] info: Store: SELECT_CHANNEL C4C2U8DHV
+[07/25/18, 09:44:16:097] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "DBWGSGDQW",
+  "content": "[REDACTED]",
+  "id": "kRkNhrF9MNXZ9EA",
+  "launchUri": "slack://channel?id=DBWGSGDQW&message=1532501055.000059&team=T4ALJRY56",
+  "msg": "1532501055.000059",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/25/18, 09:44:22:508] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 09:45:40:236] info: Store: SELECT_CHANNEL DBV15HC83
+[07/25/18, 09:45:41:548] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 09:46:57:759] info: Store: FOREGROUND_APP
+[07/25/18, 09:47:00:023] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/25/18, 09:47:00:980] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 09:47:13:293] info: Store: FOREGROUND_APP
+[07/25/18, 09:47:35:771] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "DBWGSGDQW",
+  "content": "[REDACTED]",
+  "id": "pYpliyHGnkww62l",
+  "launchUri": "slack://channel?id=DBWGSGDQW&message=1532501255.000183&team=T4ALJRY56",
+  "msg": "1532501255.000183",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/25/18, 09:47:40:855] info: Store: FOREGROUND_APP
+[07/25/18, 10:09:49:964] info: Store: FOREGROUND_APP
+[07/25/18, 10:10:58:654] info: Store: FOREGROUND_APP
+[07/25/18, 10:11:05:780] info: Store: FOREGROUND_APP
+[07/25/18, 10:12:49:474] info: Store: FOREGROUND_APP
+[07/25/18, 10:13:53:605] info: Store: FOREGROUND_APP
+[07/25/18, 10:14:51:415] info: Store: FOREGROUND_APP
+[07/25/18, 10:15:54:943] info: Store: FOREGROUND_APP
+[07/25/18, 10:15:58:279] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/25/18, 10:23:41:522] info: Store: FOREGROUND_APP
+[07/25/18, 10:24:02:867] info: Store: FOREGROUND_APP
+[07/25/18, 10:24:04:821] info: Store: SELECT_CHANNEL DBUT11DGT
+[07/25/18, 10:24:47:679] info: Store: FOREGROUND_APP
+[07/25/18, 10:26:13:197] info: Store: FOREGROUND_APP
+[07/25/18, 10:26:42:957] info: Store: FOREGROUND_APP
+[07/25/18, 10:26:44:727] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 10:28:16:749] info: Store: FOREGROUND_APP
+[07/25/18, 10:30:30:544] info: Store: FOREGROUND_APP
+[07/25/18, 10:31:14:217] info: Store: FOREGROUND_APP
+[07/25/18, 10:43:39:903] info: Store: FOREGROUND_APP
+[07/25/18, 10:44:47:518] info: Store: FOREGROUND_APP
+[07/25/18, 10:45:26:334] info: Store: FOREGROUND_APP
+[07/25/18, 10:45:33:399] info: Store: FOREGROUND_APP
+[07/25/18, 10:55:10:438] info: Store: FOREGROUND_APP
+[07/25/18, 10:56:31:062] info: Store: FOREGROUND_APP
+[07/25/18, 11:01:41:464] info: Store: FOREGROUND_APP
+[07/25/18, 11:01:58:336] info: Store: FOREGROUND_APP
+[07/25/18, 11:13:36:323] info: Store: FOREGROUND_APP
+[07/25/18, 11:44:08:522] info: Store: FOREGROUND_APP
+[07/25/18, 11:49:38:858] info: Store: FOREGROUND_APP
+[07/25/18, 11:50:12:995] info: Store: FOREGROUND_APP
+[07/25/18, 11:50:41:300] info: Store: FOREGROUND_APP
+[07/25/18, 11:50:54:604] info: Store: FOREGROUND_APP
+[07/25/18, 11:51:04:715] info: Store: FOREGROUND_APP
+[07/25/18, 11:51:49:758] info: Store: FOREGROUND_APP
+[07/25/18, 11:55:16:991] info: Store: FOREGROUND_APP
+[07/25/18, 11:55:23:166] info: Store: FOREGROUND_APP
+[07/25/18, 11:58:17:331] info: Store: FOREGROUND_APP
+[07/25/18, 11:58:44:519] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4R8RHSSJ-22c21cc98a8d-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "KrNvTZIADn5KDLz",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1532509124.000179&team=T4ALJRY56",
+  "msg": "1532509124.000179",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/25/18, 11:58:48:411] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "C4C2U8DHV",
+  "messageId": "1532509124.000179",
+  "notificationId": "KrNvTZIADn5KDLz",
+  "teamId": "T4ALJRY56"
+}
+[07/25/18, 11:58:48:414] info: Store: SELECT_TEAM T4ALJRY56
+[07/25/18, 11:58:48:427] info: Store: SELECT_CHANNEL C4C2U8DHV
+[07/25/18, 11:59:39:259] info: Store: FOREGROUND_APP
+[07/25/18, 11:59:45:320] info: Store: FOREGROUND_APP
+[07/25/18, 11:59:58:100] info: Store: FOREGROUND_APP
+[07/25/18, 12:00:38:976] info: Store: FOREGROUND_APP
+[07/25/18, 12:21:45:213] info: Store: FOREGROUND_APP
+[07/25/18, 12:22:33:014] info: Store: FOREGROUND_APP
+[07/25/18, 12:30:43:716] info: Store: FOREGROUND_APP
+[07/25/18, 12:31:22:180] info: Store: FOREGROUND_APP
+[07/25/18, 12:35:44:287] info: Store: FOREGROUND_APP
+[07/25/18, 12:42:14:025] info: Store: FOREGROUND_APP
+[07/25/18, 12:45:19:981] info: Store: FOREGROUND_APP
+[07/25/18, 12:51:13:712] info: Store: FOREGROUND_APP
+[07/25/18, 13:00:05:661] info: Store: FOREGROUND_APP
+[07/25/18, 13:02:22:157] info: Store: FOREGROUND_APP
+[07/25/18, 13:02:41:414] info: Store: FOREGROUND_APP
+[07/25/18, 13:03:51:298] info: Store: FOREGROUND_APP
+[07/25/18, 13:03:53:302] info: Store: FOREGROUND_APP
+[07/25/18, 13:03:54:631] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/25/18, 13:07:45:592] info: Store: FOREGROUND_APP
+[07/25/18, 13:10:26:547] info: Store: FOREGROUND_APP
+[07/25/18, 13:10:35:233] info: Store: FOREGROUND_APP
+[07/25/18, 13:11:44:642] info: Store: FOREGROUND_APP
+[07/25/18, 13:12:18:668] info: Store: FOREGROUND_APP
+[07/25/18, 13:12:49:485] info: Store: FOREGROUND_APP
+[07/25/18, 13:14:08:046] info: Store: FOREGROUND_APP
+[07/25/18, 13:29:32:864] info: Store: FOREGROUND_APP
+[07/25/18, 13:30:10:701] info: Store: FOREGROUND_APP
+[07/25/18, 13:30:16:541] info: Store: FOREGROUND_APP
+[07/25/18, 13:39:22:005] info: Store: FOREGROUND_APP
+[07/25/18, 13:51:34:771] info: Store: FOREGROUND_APP
+[07/25/18, 13:58:57:693] info: Store: FOREGROUND_APP
+[07/25/18, 14:02:52:905] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4Y7V3AUV-g39429503c3f-512",
+  "channel": "DBW3221ND",
+  "content": "[REDACTED]",
+  "id": "n50jtgSZQ0VVPk2",
+  "launchUri": "slack://channel?id=DBW3221ND&message=1532516572.000269&team=T4ALJRY56",
+  "msg": "1532516572.000269",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/25/18, 14:02:55:930] info: Store: FOREGROUND_APP
+[07/25/18, 14:02:57:007] info: Store: SELECT_CHANNEL DBW3221ND
+[07/25/18, 14:14:25:186] info: Store: FOREGROUND_APP
+[07/25/18, 14:23:58:264] info: Store: FOREGROUND_APP
+[07/25/18, 14:24:58:180] info: Store: FOREGROUND_APP
+[07/25/18, 14:29:49:940] info: Store: FOREGROUND_APP
+[07/25/18, 14:34:14:243] info: Store: FOREGROUND_APP
+[07/25/18, 14:42:08:897] info: Store: FOREGROUND_APP
+[07/25/18, 14:44:02:080] info: Store: FOREGROUND_APP
+[07/25/18, 14:46:20:081] info: Store: FOREGROUND_APP
+[07/25/18, 14:48:11:163] info: Store: FOREGROUND_APP
+[07/25/18, 14:48:17:955] info: Store: FOREGROUND_APP
+[07/25/18, 14:48:22:344] info: Store: FOREGROUND_APP
+[07/25/18, 14:57:05:731] info: Store: SET_UPDATE_STATUS check-for-update
+[07/25/18, 14:57:06:336] info: Store: SET_UPDATE_STATUS up-to-date
+[07/25/18, 14:57:43:660] info: Store: FOREGROUND_APP
+[07/25/18, 15:15:00:756] info: Store: FOREGROUND_APP
+[07/25/18, 15:19:39:832] info: Store: FOREGROUND_APP
+[07/25/18, 15:26:04:799] info: Store: FOREGROUND_APP
+[07/25/18, 15:31:58:328] info: Store: FOREGROUND_APP
+[07/25/18, 15:34:06:841] info: Store: FOREGROUND_APP
+[07/25/18, 15:36:05:898] info: Store: FOREGROUND_APP
+[07/25/18, 15:36:11:661] info: Store: FOREGROUND_APP
+[07/25/18, 15:42:19:940] info: Store: FOREGROUND_APP
+[07/25/18, 15:42:38:720] info: Store: FOREGROUND_APP
+[07/25/18, 15:47:16:560] info: Store: FOREGROUND_APP
+[07/25/18, 15:51:43:616] info: Store: FOREGROUND_APP
+[07/25/18, 15:51:59:015] info: Store: FOREGROUND_APP
+[07/25/18, 15:55:18:060] info: Store: FOREGROUND_APP
+[07/25/18, 15:56:12:509] info: Store: FOREGROUND_APP
+[07/25/18, 16:00:05:629] info: Store: FOREGROUND_APP
+[07/25/18, 16:07:39:038] info: Store: FOREGROUND_APP
+[07/25/18, 16:08:08:505] info: Store: FOREGROUND_APP
+[07/25/18, 16:08:29:552] info: Store: FOREGROUND_APP
+[07/25/18, 16:09:16:527] info: Store: FOREGROUND_APP
+[07/25/18, 16:11:13:306] info: Store: FOREGROUND_APP
+[07/25/18, 16:18:08:150] info: Store: FOREGROUND_APP
+[07/25/18, 16:19:22:454] info: Store: FOREGROUND_APP
+[07/25/18, 16:19:40:831] info: Store: FOREGROUND_APP
+[07/25/18, 16:21:59:667] info: Store: FOREGROUND_APP
+[07/25/18, 16:28:13:919] info: Store: FOREGROUND_APP
+[07/25/18, 16:29:11:239] info: Store: FOREGROUND_APP
+[07/25/18, 16:35:26:956] info: Store: FOREGROUND_APP
+[07/25/18, 16:37:52:964] info: Store: FOREGROUND_APP
+[07/25/18, 16:51:32:871] info: Store: FOREGROUND_APP
+[07/25/18, 16:52:39:403] info: Store: FOREGROUND_APP
+[07/25/18, 16:58:21:147] info: Store: FOREGROUND_APP
+[07/25/18, 16:58:32:189] info: Store: FOREGROUND_APP
+[07/25/18, 17:06:54:724] info: Store: FOREGROUND_APP
+[07/25/18, 17:08:02:011] info: Store: FOREGROUND_APP
+[07/25/18, 17:14:47:140] info: Store: FOREGROUND_APP
+[07/25/18, 17:31:18:019] info: Store: FOREGROUND_APP
+[07/25/18, 17:31:22:173] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/25/18, 17:32:43:634] info: Store: FOREGROUND_APP
+[07/25/18, 17:32:45:392] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/25/18, 17:32:52:450] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 17:32:52:825] info: Store: SELECT_CHANNEL DBUT11DGT
+[07/25/18, 17:32:54:463] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 17:32:55:384] info: Store: SELECT_CHANNEL DBUT11DGT
+[07/25/18, 17:33:02:321] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/25/18, 17:33:15:680] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/25/18, 17:33:19:874] info: Store: FOREGROUND_APP
+[07/25/18, 17:34:19:761] info: Store: FOREGROUND_APP
+[07/25/18, 17:39:27:159] info: Store: FOREGROUND_APP
+[07/25/18, 17:39:28:244] info: Store: SELECT_CHANNEL DBV544BHT
+[07/25/18, 17:39:38:225] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    145,
+    171
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[07/25/18, 17:51:56:982] info: Store: FOREGROUND_APP
+[07/25/18, 17:51:59:827] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/25/18, 17:54:25:206] info: Store: FOREGROUND_APP
+[07/25/18, 17:55:03:541] info: Store: FOREGROUND_APP
+[07/25/18, 17:59:24:461] info: Store: FOREGROUND_APP
+[07/25/18, 18:00:24:602] info: Store: FOREGROUND_APP
+[07/25/18, 18:01:25:392] info: Store: FOREGROUND_APP
+[07/25/18, 20:57:06:115] info: Store: SET_UPDATE_STATUS check-for-update
+[07/25/18, 20:57:07:275] info: Store: SET_UPDATE_STATUS up-to-date
+[07/26/18, 02:57:06:478] info: Store: SET_UPDATE_STATUS check-for-update
+[07/26/18, 02:57:07:646] info: Store: SET_UPDATE_STATUS up-to-date
+[07/26/18, 08:42:06:652] info: Store: FOREGROUND_APP
+[07/26/18, 08:42:10:176] info: Store: FOREGROUND_APP
+[07/26/18, 08:42:28:897] info: Store: FOREGROUND_APP
+[07/26/18, 08:42:58:009] info: Store: FOREGROUND_APP
+[07/26/18, 08:43:39:826] info: Store: FOREGROUND_APP
+[07/26/18, 08:46:13:257] info: Store: FOREGROUND_APP
+[07/26/18, 08:47:35:082] info: Store: FOREGROUND_APP
+[07/26/18, 08:48:13:154] info: Store: FOREGROUND_APP
+[07/26/18, 08:48:15:258] info: Store: SELECT_CHANNEL DBW3221ND
+[07/26/18, 08:57:06:843] info: Store: SET_UPDATE_STATUS check-for-update
+[07/26/18, 08:57:07:855] info: Store: SET_UPDATE_STATUS up-to-date
+[07/26/18, 09:19:42:898] info: Store: FOREGROUND_APP
+[07/26/18, 09:40:32:321] info: Store: FOREGROUND_APP
+[07/26/18, 09:40:53:093] info: Store: FOREGROUND_APP
+[07/26/18, 09:41:01:024] info: Store: FOREGROUND_APP
+[07/26/18, 10:00:17:365] info: Store: FOREGROUND_APP
+[07/26/18, 10:07:38:776] info: Store: FOREGROUND_APP
+[07/26/18, 10:26:49:353] info: Store: FOREGROUND_APP
+[07/26/18, 10:36:27:367] info: Store: FOREGROUND_APP
+[07/26/18, 10:39:25:757] info: Store: FOREGROUND_APP
+[07/26/18, 10:47:45:358] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C3QSDAR-645a2f4c90d6-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "kRkNhgT9M08pQoN",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532591265.000076&team=T4ALJRY56",
+  "msg": "1532591265.000076",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/26/18, 10:47:49:043] info: Store: FOREGROUND_APP
+[07/26/18, 10:47:51:081] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/26/18, 11:06:13:592] info: Store: FOREGROUND_APP
+[07/26/18, 11:07:10:389] info: Store: FOREGROUND_APP
+[07/26/18, 11:12:58:031] info: Store: FOREGROUND_APP
+[07/26/18, 11:12:59:649] info: Store: SELECT_CHANNEL DBVUBGBFF
+[07/26/18, 11:13:00:072] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/26/18, 11:13:01:559] info: Store: SELECT_CHANNEL DBVUBGBFF
+[07/26/18, 11:13:09:663] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/26/18, 11:13:10:667] info: Store: SELECT_CHANNEL DBV15HC83
+[07/26/18, 11:13:11:503] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/26/18, 11:13:12:488] info: Store: SELECT_CHANNEL DBUT11DGT
+[07/26/18, 11:13:13:018] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/26/18, 11:13:14:119] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/26/18, 11:13:15:087] info: Store: SELECT_CHANNEL DBV544BHT
+[07/26/18, 11:13:15:911] info: Store: SELECT_CHANNEL DBW3221ND
+[07/26/18, 11:13:16:935] info: Store: SELECT_CHANNEL DBVUBGBFF
+[07/26/18, 11:13:19:383] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/26/18, 11:41:22:969] info: Store: FOREGROUND_APP
+[07/26/18, 11:47:20:902] info: Store: FOREGROUND_APP
+[07/26/18, 11:51:34:193] info: Store: FOREGROUND_APP
+[07/26/18, 12:21:18:452] info: Store: FOREGROUND_APP
+[07/26/18, 12:22:12:735] info: Store: FOREGROUND_APP
+[07/26/18, 12:22:51:273] info: Store: FOREGROUND_APP
+[07/26/18, 12:29:05:868] info: Store: FOREGROUND_APP
+[07/26/18, 12:29:29:204] info: Store: FOREGROUND_APP
+[07/26/18, 12:36:24:095] info: Store: FOREGROUND_APP
+[07/26/18, 12:39:11:906] info: Store: FOREGROUND_APP
+[07/26/18, 12:40:57:842] info: Store: FOREGROUND_APP
+[07/26/18, 12:41:28:945] info: Store: FOREGROUND_APP
+[07/26/18, 12:41:56:419] info: Store: FOREGROUND_APP
+[07/26/18, 12:43:27:731] info: Store: FOREGROUND_APP
+[07/26/18, 12:44:33:373] info: Store: FOREGROUND_APP
+[07/26/18, 12:45:41:478] info: Store: FOREGROUND_APP
+[07/26/18, 12:45:43:023] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/26/18, 12:50:00:132] info: Store: FOREGROUND_APP
+[07/26/18, 12:51:48:951] info: Store: FOREGROUND_APP
+[07/26/18, 12:52:01:595] info: Store: SELECT_CHANNEL C5WEWLR7C
+[07/26/18, 12:52:02:951] info: Store: SELECT_CHANNEL C4C2U8DHV
+[07/26/18, 12:54:37:470] info: Store: FOREGROUND_APP
+[07/26/18, 13:03:24:718] info: Store: FOREGROUND_APP
+[07/26/18, 13:03:34:749] info: Store: FOREGROUND_APP
+[07/26/18, 13:21:28:217] info: Store: FOREGROUND_APP
+[07/26/18, 13:29:56:421] info: Store: FOREGROUND_APP
+[07/26/18, 13:29:58:685] info: Store: FOREGROUND_APP
+[07/26/18, 13:30:21:597] info: Store: FOREGROUND_APP
+[07/26/18, 13:47:10:520] info: Store: FOREGROUND_APP
+[07/26/18, 13:50:57:801] info: Store: FOREGROUND_APP
+[07/26/18, 14:06:31:479] info: Store: FOREGROUND_APP
+[07/26/18, 14:06:33:210] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/26/18, 14:29:50:753] info: Store: FOREGROUND_APP
+[07/26/18, 14:30:15:512] info: Store: FOREGROUND_APP
+[07/26/18, 14:32:33:273] info: Store: FOREGROUND_APP
+[07/26/18, 14:36:12:882] info: Store: FOREGROUND_APP
+[07/26/18, 14:42:39:661] info: Store: FOREGROUND_APP
+[07/26/18, 14:42:42:488] info: Store: SELECT_CHANNEL DBV15HC83
+[07/26/18, 14:42:43:045] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/26/18, 14:42:43:406] info: Store: SELECT_CHANNEL DBVUBGBFF
+[07/26/18, 14:42:44:006] info: Store: SELECT_CHANNEL DBW3221ND
+[07/26/18, 14:42:44:507] info: Store: SELECT_CHANNEL DBV544BHT
+[07/26/18, 14:42:45:710] info: Store: SELECT_CHANNEL DBUE3KNN5
+[07/26/18, 14:42:46:218] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/26/18, 14:42:51:310] info: Store: FOREGROUND_APP
+[07/26/18, 14:45:27:709] info: Store: FOREGROUND_APP
+[07/26/18, 14:45:52:425] info: Store: FOREGROUND_APP
+[07/26/18, 14:57:07:220] info: Store: SET_UPDATE_STATUS check-for-update
+[07/26/18, 14:57:08:388] info: Store: SET_UPDATE_STATUS up-to-date
+[07/26/18, 15:20:41:157] info: Store: FOREGROUND_APP
+[07/26/18, 15:27:44:537] info: Store: FOREGROUND_APP
+[07/26/18, 15:29:41:081] info: Store: FOREGROUND_APP
+[07/26/18, 15:29:41:926] info: Store: FOREGROUND_APP
+[07/26/18, 15:29:45:496] info: Store: FOREGROUND_APP
+[07/26/18, 15:52:47:271] info: Store: FOREGROUND_APP
+[07/26/18, 16:06:58:208] info: Store: FOREGROUND_APP
+[07/26/18, 16:44:07:052] info: Store: FOREGROUND_APP
+[07/26/18, 16:44:08:748] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    145,
+    171
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[07/26/18, 16:44:15:866] info: Store: FOREGROUND_APP
+[07/26/18, 16:45:11:438] info: Store: FOREGROUND_APP
+[07/26/18, 16:45:14:342] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/26/18, 16:45:26:212] info: Store: SELECT_CHANNEL DBXJWHSS1
+[07/26/18, 16:46:44:203] info: Store: FOREGROUND_APP
+[07/26/18, 16:47:01:925] info: Store: FOREGROUND_APP
+[07/26/18, 16:47:20:325] info: Store: FOREGROUND_APP
+[07/26/18, 16:47:56:644] info: Store: FOREGROUND_APP
+[07/26/18, 16:48:14:430] info: Store: FOREGROUND_APP
+[07/26/18, 16:49:08:822] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U847T1213-g45638142094-512",
+  "channel": "DBXJWHSS1",
+  "content": "[REDACTED]",
+  "id": "jRjNhkU7lM2EQNx",
+  "launchUri": "slack://channel?id=DBXJWHSS1&message=1532612948.000428&team=T4ALJRY56",
+  "msg": "1532612948.000428",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/26/18, 16:49:13:551] info: Store: FOREGROUND_APP
+[07/26/18, 16:49:26:438] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U847T1213-g45638142094-512",
+  "channel": "DBXJWHSS1",
+  "content": "[REDACTED]",
+  "id": "BBAjhJcjw7pOx2G",
+  "launchUri": "slack://channel?id=DBXJWHSS1&message=1532612966.000184&team=T4ALJRY56",
+  "msg": "1532612966.000184",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/26/18, 16:49:29:991] info: Store: FOREGROUND_APP
+[07/26/18, 16:49:39:915] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U847T1213-g45638142094-512",
+  "channel": "DBXJWHSS1",
+  "content": "[REDACTED]",
+  "id": "XDv2s6fk1rEoBqP",
+  "launchUri": "slack://channel?id=DBXJWHSS1&message=1532612979.000445&team=T4ALJRY56",
+  "msg": "1532612979.000445",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/26/18, 16:49:43:150] info: Store: FOREGROUND_APP
+[07/26/18, 16:50:07:751] info: Store: FOREGROUND_APP
+[07/26/18, 16:50:29:959] info: Store: FOREGROUND_APP
+[07/26/18, 16:50:52:400] info: Store: FOREGROUND_APP
+[07/26/18, 16:51:27:147] info: Store: FOREGROUND_APP
+[07/26/18, 17:00:15:445] info: Store: FOREGROUND_APP
+[07/26/18, 17:09:08:945] info: Store: FOREGROUND_APP
+[07/26/18, 17:09:17:729] info: Store: FOREGROUND_APP
+[07/26/18, 17:10:22:650] info: Store: FOREGROUND_APP
+[07/26/18, 17:10:25:786] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/26/18, 17:11:29:027] info: Store: FOREGROUND_APP
+[07/26/18, 17:12:23:940] info: Store: FOREGROUND_APP
+[07/26/18, 17:13:06:412] info: Store: FOREGROUND_APP
+[07/26/18, 17:13:56:676] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4BC9SZ1P-90e852adbf62-512",
+  "channel": "DBV24V3LJ",
+  "content": "[REDACTED]",
+  "id": "VOqKHOhJwrNwJAy",
+  "launchUri": "slack://channel?id=DBV24V3LJ&message=1532614436.000371&team=T4ALJRY56",
+  "msg": "1532614436.000371",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/26/18, 17:13:59:661] info: Store: FOREGROUND_APP
+[07/26/18, 17:25:41:790] info: Store: FOREGROUND_APP
+[07/26/18, 17:34:45:584] info: Store: FOREGROUND_APP
+[07/26/18, 17:35:25:834] info: Store: FOREGROUND_APP
+[07/26/18, 17:35:45:890] info: Store: FOREGROUND_APP
+[07/26/18, 17:41:30:099] info: Store: FOREGROUND_APP
+[07/26/18, 17:48:49:186] info: Store: FOREGROUND_APP
+[07/26/18, 17:55:00:604] info: Store: FOREGROUND_APP
+[07/26/18, 17:55:57:171] info: Store: FOREGROUND_APP
+[07/26/18, 17:56:32:148] info: Store: FOREGROUND_APP
+[07/26/18, 17:58:43:070] info: Store: FOREGROUND_APP
+[07/26/18, 17:59:06:056] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4BC9SZ1P-90e852adbf62-512",
+  "channel": "DBV24V3LJ",
+  "content": "[REDACTED]",
+  "id": "82n0sLiMQEyWv7N",
+  "launchUri": "slack://channel?id=DBV24V3LJ&message=1532617145.000647&team=T4ALJRY56",
+  "msg": "1532617145.000647",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/26/18, 17:59:08:956] info: Store: FOREGROUND_APP
+[07/26/18, 18:00:53:048] info: Store: FOREGROUND_APP
+[07/26/18, 18:02:01:967] info: Store: FOREGROUND_APP
+[07/26/18, 18:03:08:807] info: Store: FOREGROUND_APP
+[07/26/18, 18:03:38:591] info: Store: FOREGROUND_APP
+[07/26/18, 20:57:07:607] info: Store: SET_UPDATE_STATUS check-for-update
+[07/26/18, 20:57:08:891] info: Store: SET_UPDATE_STATUS up-to-date
+[07/27/18, 02:57:07:961] info: Store: SET_UPDATE_STATUS check-for-update
+[07/27/18, 02:57:09:136] info: Store: SET_UPDATE_STATUS up-to-date
+[07/27/18, 08:51:42:534] info: Store: FOREGROUND_APP
+[07/27/18, 08:57:08:312] info: Store: SET_UPDATE_STATUS check-for-update
+[07/27/18, 08:57:09:503] info: Store: SET_UPDATE_STATUS up-to-date
+[07/27/18, 09:12:15:485] info: Store: FOREGROUND_APP
+[07/27/18, 09:20:25:879] info: Store: FOREGROUND_APP
+[07/27/18, 09:21:28:855] info: Store: FOREGROUND_APP
+[07/27/18, 09:22:09:174] info: Store: FOREGROUND_APP
+[07/27/18, 09:22:30:484] info: Store: FOREGROUND_APP
+[07/27/18, 09:22:31:408] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/27/18, 10:04:02:949] info: Store: FOREGROUND_APP
+[07/27/18, 10:07:20:040] info: Store: FOREGROUND_APP
+[07/27/18, 10:07:23:506] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/27/18, 10:09:27:425] info: Store: FOREGROUND_APP
+[07/27/18, 10:10:17:361] info: Store: FOREGROUND_APP
+[07/27/18, 10:22:59:376] info: Store: FOREGROUND_APP
+[07/27/18, 10:24:32:790] info: Store: FOREGROUND_APP
+[07/27/18, 10:25:32:375] info: Store: FOREGROUND_APP
+[07/27/18, 10:26:45:706] info: Store: FOREGROUND_APP
+[07/27/18, 10:27:28:809] info: Store: FOREGROUND_APP
+[07/27/18, 10:27:41:962] info: Store: SELECT_CHANNEL DBWBJCWUW
+[07/27/18, 10:31:47:860] info: Store: FOREGROUND_APP
+[07/27/18, 10:31:49:463] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/27/18, 10:34:06:918] info: Store: FOREGROUND_APP
+[07/27/18, 10:38:41:074] info: Store: FOREGROUND_APP
+[07/27/18, 10:39:13:680] info: Store: FOREGROUND_APP
+[07/27/18, 10:39:45:290] info: Store: FOREGROUND_APP
+[07/27/18, 10:41:12:617] info: Store: FOREGROUND_APP
+[07/27/18, 10:41:37:784] info: Store: FOREGROUND_APP
+[07/27/18, 10:41:54:700] info: Store: FOREGROUND_APP
+[07/27/18, 10:44:40:116] info: Store: FOREGROUND_APP
+[07/27/18, 10:51:03:648] info: Store: FOREGROUND_APP
+[07/27/18, 11:09:06:732] info: Store: FOREGROUND_APP
+[07/27/18, 11:51:35:433] info: Store: FOREGROUND_APP
+[07/27/18, 11:51:44:619] info: Store: FOREGROUND_APP
+[07/27/18, 11:56:51:702] info: Store: FOREGROUND_APP
+[07/27/18, 13:47:08:978] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-UA0JPSQRM-617163292351-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "BBAjh6sjw75ARAp",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532688428.000267&team=T4ALJRY56",
+  "msg": "1532688428.000267",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 13:54:03:436] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4BARTMK3-g56ef59b518d-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "Z6xNcGty4MWYnvW",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532688843.000087&team=T4ALJRY56",
+  "msg": "1532688843.000087",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 14:24:30:227] info: Store: FOREGROUND_APP
+[07/27/18, 14:24:33:371] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/27/18, 14:45:18:905] info: Store: FOREGROUND_APP
+[07/27/18, 14:45:42:912] info: Store: FOREGROUND_APP
+[07/27/18, 14:45:45:232] info: Store: SELECT_CHANNEL DBW3221ND
+[07/27/18, 14:49:30:985] info: Store: FOREGROUND_APP
+[07/27/18, 14:55:29:740] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4ALJRY9E-9e896e47e1f1-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "BBAjh1ujw7BkloK",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532692529.000200&team=T4ALJRY56",
+  "msg": "1532692529.000200",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 14:55:33:256] info: Store: FOREGROUND_APP
+[07/27/18, 14:55:35:587] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/27/18, 14:57:08:694] info: Store: SET_UPDATE_STATUS check-for-update
+[07/27/18, 14:57:09:802] info: Store: SET_UPDATE_STATUS up-to-date
+[07/27/18, 14:59:00:864] info: Store: FOREGROUND_APP
+[07/27/18, 15:04:17:438] info: Store: FOREGROUND_APP
+[07/27/18, 15:10:56:615] info: Store: FOREGROUND_APP
+[07/27/18, 15:10:58:550] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/27/18, 15:10:59:365] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/27/18, 15:11:00:044] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/27/18, 15:45:17:885] info: Store: FOREGROUND_APP
+[07/27/18, 15:50:53:741] info: Store: SYSTEM_TEXT_SETTINGS_CHANGED
+[07/27/18, 15:56:09:532] info: Store: FOREGROUND_APP
+[07/27/18, 15:56:11:305] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/27/18, 16:00:32:145] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "0RNPhRCWEov668j",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532696432.000018&team=T4ALJRY56",
+  "msg": "1532696432.000018",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 16:00:34:258] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "C4BEHCR61",
+  "messageId": "1532696432.000018",
+  "notificationId": "0RNPhRCWEov668j",
+  "teamId": "T4ALJRY56"
+}
+[07/27/18, 16:00:34:259] info: Store: SELECT_TEAM T4ALJRY56
+[07/27/18, 16:01:38:561] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1PPVA6-gdb31c304b0c-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "J6MrcVFLjk1Q9Ql",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532696498.000225&team=T4ALJRY56",
+  "msg": "1532696498.000225",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 16:01:42:093] info: Store: FOREGROUND_APP
+[07/27/18, 16:02:08:910] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4CMR6J6A-g8f912c6fb5b-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "XDv2s9Hk1rKl1G4",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532696528.000381&team=T4ALJRY56",
+  "msg": "1532696528.000381",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 16:02:14:912] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4CMR6J6A-g8f912c6fb5b-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "DkDlfZIZG8NgVjA",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532696534.000338&team=T4ALJRY56",
+  "msg": "1532696534.000338",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 16:02:16:870] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "C4BEHCR61",
+  "messageId": "1532696534.000338",
+  "notificationId": "DkDlfZIZG8NgVjA",
+  "teamId": "T4ALJRY56"
+}
+[07/27/18, 16:02:16:870] info: Store: SELECT_TEAM T4ALJRY56
+[07/27/18, 16:02:21:041] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4B9XTEAU-g24aa6f5397a-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "OYjzi1SrQW1VgOp",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532696540.000460&team=T4ALJRY56",
+  "msg": "1532696540.000460",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 16:02:22:792] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "C4BEHCR61",
+  "messageId": "1532696540.000460",
+  "notificationId": "OYjzi1SrQW1VgOp",
+  "teamId": "T4ALJRY56"
+}
+[07/27/18, 16:02:22:793] info: Store: SELECT_TEAM T4ALJRY56
+[07/27/18, 16:02:25:338] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "68l4I6T5K90Zqzq",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532696545.000092&team=T4ALJRY56",
+  "msg": "1532696545.000092",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 16:02:44:436] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "pYpligUGnxloxMD",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532696564.000152&team=T4ALJRY56",
+  "msg": "1532696564.000152",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 16:02:47:794] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "C4BEHCR61",
+  "messageId": "1532696564.000152",
+  "notificationId": "pYpligUGnxloxMD",
+  "teamId": "T4ALJRY56"
+}
+[07/27/18, 16:02:47:794] info: Store: SELECT_TEAM T4ALJRY56
+[07/27/18, 16:03:04:953] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4BAB3ELQ-ga2f8c051ef3-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "NkgyfDcRMyAGX3x",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1532696584.000403&team=T4ALJRY56",
+  "msg": "1532696584.000403",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/27/18, 16:03:11:565] info: Store: FOREGROUND_APP
+[07/27/18, 16:06:48:559] info: Store: FOREGROUND_APP
+[07/27/18, 16:22:09:216] info: Store: FOREGROUND_APP
+[07/27/18, 16:25:15:297] info: Store: FOREGROUND_APP
+[07/27/18, 16:25:24:984] info: Store: FOREGROUND_APP
+[07/27/18, 16:28:56:188] info: Store: FOREGROUND_APP
+[07/27/18, 16:28:58:100] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/27/18, 16:29:30:036] info: Store: FOREGROUND_APP
+[07/27/18, 16:36:19:330] info: Store: FOREGROUND_APP
+[07/27/18, 16:38:57:214] info: Store: FOREGROUND_APP
+[07/27/18, 17:05:48:629] info: Store: FOREGROUND_APP
+[07/27/18, 17:06:10:025] info: Store: FOREGROUND_APP
+[07/27/18, 17:21:13:435] info: Store: FOREGROUND_APP
+[07/27/18, 17:21:19:404] info: Store: SELECT_CHANNEL DBXJWHSS1
+[07/27/18, 17:21:19:769] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/27/18, 17:38:20:303] info: Store: FOREGROUND_APP
+[07/27/18, 17:47:03:015] info: Store: FOREGROUND_APP
+[07/27/18, 17:53:40:009] info: Store: FOREGROUND_APP
+[07/27/18, 20:57:09:082] info: Store: SET_UPDATE_STATUS check-for-update
+[07/27/18, 20:57:10:293] info: Store: SET_UPDATE_STATUS up-to-date
+[07/28/18, 02:57:21:746] info: Store: SET_UPDATE_STATUS check-for-update
+[07/28/18, 02:57:23:211] info: Store: SET_UPDATE_STATUS up-to-date
+[07/28/18, 08:57:22:110] info: Store: SET_UPDATE_STATUS check-for-update
+[07/28/18, 08:57:23:268] info: Store: SET_UPDATE_STATUS up-to-date
+[07/28/18, 14:57:42:469] info: Store: SET_UPDATE_STATUS check-for-update
+[07/28/18, 14:57:43:554] info: Store: SET_UPDATE_STATUS up-to-date
+[07/28/18, 20:57:51:488] info: Store: SET_UPDATE_STATUS check-for-update
+[07/28/18, 20:57:52:706] info: Store: SET_UPDATE_STATUS up-to-date
+[07/29/18, 02:57:52:005] info: Store: SET_UPDATE_STATUS check-for-update
+[07/29/18, 02:57:53:717] info: Store: SET_UPDATE_STATUS up-to-date
+[07/29/18, 08:58:12:365] info: Store: SET_UPDATE_STATUS check-for-update
+[07/29/18, 08:58:13:670] info: Store: SET_UPDATE_STATUS up-to-date
+[07/29/18, 14:58:22:529] info: Store: SET_UPDATE_STATUS check-for-update
+[07/29/18, 14:58:23:644] info: Store: SET_UPDATE_STATUS up-to-date
+[07/29/18, 20:58:41:542] info: Store: SET_UPDATE_STATUS check-for-update
+[07/29/18, 20:58:42:739] info: Store: SET_UPDATE_STATUS up-to-date
+[07/30/18, 02:59:01:910] info: Store: SET_UPDATE_STATUS check-for-update
+[07/30/18, 02:59:03:100] info: Store: SET_UPDATE_STATUS up-to-date
+[07/30/18, 08:58:52:142] info: Store: FOREGROUND_APP
+[07/30/18, 08:58:55:383] info: Store: SELECT_CHANNEL DBXJWHSS1
+[07/30/18, 08:58:57:268] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/30/18, 08:58:57:980] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/30/18, 08:58:58:550] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/30/18, 08:58:58:859] info: Store: SELECT_CHANNEL DBXJWHSS1
+[07/30/18, 08:59:02:282] info: Store: SET_UPDATE_STATUS check-for-update
+[07/30/18, 08:59:03:391] info: Store: SET_UPDATE_STATUS up-to-date
+[07/30/18, 09:27:04:651] info: Store: FOREGROUND_APP
+[07/30/18, 09:33:12:063] info: Store: FOREGROUND_APP
+[07/30/18, 10:16:31:025] info: Store: FOREGROUND_APP
+[07/30/18, 10:16:33:042] info: Store: SELECT_CHANNEL DBW23NN7R
+[07/30/18, 10:54:44:379] info: Store: FOREGROUND_APP
+[07/30/18, 11:37:57:194] info: Store: FOREGROUND_APP
+[07/30/18, 11:57:54:109] info: Store: FOREGROUND_APP
+[07/30/18, 12:27:46:413] info: Store: FOREGROUND_APP
+[07/30/18, 12:27:48:755] info: Store: FOREGROUND_APP
+[07/30/18, 12:59:22:990] info: Store: FOREGROUND_APP
+[07/30/18, 13:02:23:358] info: Store: FOREGROUND_APP
+[07/30/18, 13:02:29:926] info: Store: FOREGROUND_APP
+[07/30/18, 13:07:32:960] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6P929MJT-g515909c90b3-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "0RNPhVfWEpBDzlA",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1532945252.000299&team=T4ALJRY56",
+  "msg": "1532945252.000299",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 13:07:34:190] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6P929MJT-g515909c90b3-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "68l4Iwh5KvQ6ABn",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1532945254.000041&team=T4ALJRY56",
+  "msg": "1532945254.000041",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 13:07:37:046] info: Store: FOREGROUND_APP
+[07/30/18, 13:07:38:097] info: Store: SELECT_CHANNEL C4C2U8DHV
+[07/30/18, 13:12:25:021] info: Store: FOREGROUND_APP
+[07/30/18, 13:17:14:816] info: Store: FOREGROUND_APP
+[07/30/18, 13:17:24:880] info: Store: FOREGROUND_APP
+[07/30/18, 13:19:18:235] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U9BJM8N1J-d88c3ab004cc-512",
+  "channel": "GC0DE316J",
+  "content": "[REDACTED]",
+  "id": "4xjPTKiWn5oXkl7",
+  "launchUri": "slack://channel?id=GC0DE316J&message=1532945958.000002&team=T4ALJRY56",
+  "msg": "1532945958.000002",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 13:19:24:965] info: Store: FOREGROUND_APP
+[07/30/18, 13:19:26:024] info: Store: SELECT_CHANNEL GC0DE316J
+[07/30/18, 13:20:29:704] info: Store: FOREGROUND_APP
+[07/30/18, 13:21:02:282] info: Store: FOREGROUND_APP
+[07/30/18, 13:21:15:422] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U9BJM8N1J-d88c3ab004cc-512",
+  "channel": "GC0DE316J",
+  "content": "[REDACTED]",
+  "id": "QWlBcPskXvn5nYn",
+  "launchUri": "slack://channel?id=GC0DE316J&message=1532946075.000083&team=T4ALJRY56",
+  "msg": "1532946075.000083",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 13:21:17:376] info: Store: FOREGROUND_APP
+[07/30/18, 13:21:57:634] info: Store: FOREGROUND_APP
+[07/30/18, 13:23:55:982] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "GC0DE316J",
+  "content": "[REDACTED]",
+  "id": "5ykXcKt2rjAwlAQ",
+  "launchUri": "slack://channel?id=GC0DE316J&message=1532946235.000289&team=T4ALJRY56",
+  "msg": "1532946235.000289",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 13:24:48:235] info: Store: FOREGROUND_APP
+[07/30/18, 13:25:43:763] info: Store: FOREGROUND_APP
+[07/30/18, 13:26:13:730] info: Store: FOREGROUND_APP
+[07/30/18, 13:29:17:524] info: Store: FOREGROUND_APP
+[07/30/18, 13:45:24:413] info: Store: FOREGROUND_APP
+[07/30/18, 13:46:44:233] info: Store: FOREGROUND_APP
+[07/30/18, 13:46:53:767] info: Store: FOREGROUND_APP
+[07/30/18, 13:46:55:659] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/30/18, 13:50:31:621] info: Store: FOREGROUND_APP
+[07/30/18, 13:50:34:452] info: Store: SELECT_CHANNEL GC0DE316J
+[07/30/18, 13:51:30:792] info: Store: FOREGROUND_APP
+[07/30/18, 13:58:56:588] info: Store: FOREGROUND_APP
+[07/30/18, 14:05:02:851] info: Store: FOREGROUND_APP
+[07/30/18, 14:05:37:945] info: Store: FOREGROUND_APP
+[07/30/18, 14:05:44:391] info: Store: FOREGROUND_APP
+[07/30/18, 14:06:36:635] info: Store: FOREGROUND_APP
+[07/30/18, 14:06:39:024] info: Store: SELECT_CHANNEL DBXJWHSS1
+[07/30/18, 14:12:03:082] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "DBWGSGDQW",
+  "content": "[REDACTED]",
+  "id": "R6mDcpuOxEyOPZW",
+  "launchUri": "slack://channel?id=DBWGSGDQW&message=1532949122.000268&team=T4ALJRY56",
+  "msg": "1532949122.000268",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 14:12:06:085] info: Store: FOREGROUND_APP
+[07/30/18, 14:12:07:204] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/30/18, 14:25:04:383] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "DBWGSGDQW",
+  "content": "[REDACTED]",
+  "id": "xkAwfVCwKxN4xWR",
+  "launchUri": "slack://channel?id=DBWGSGDQW&message=1532949904.000084&team=T4ALJRY56",
+  "msg": "1532949904.000084",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 14:25:31:456] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "GC0DE316J",
+  "content": "[REDACTED]",
+  "id": "xkAwflFwKxN4LRq",
+  "launchUri": "slack://channel?id=GC0DE316J&message=1532949931.000100&team=T4ALJRY56",
+  "msg": "1532949931.000100",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 14:25:48:229] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "GC0DE316J",
+  "content": "[REDACTED]",
+  "id": "gJONI6H3gJPkLwq",
+  "launchUri": "slack://channel?id=GC0DE316J&message=1532949948.000014&team=T4ALJRY56",
+  "msg": "1532949948.000014",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 14:27:17:819] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "DBWGSGDQW",
+  "content": "[REDACTED]",
+  "id": "1wOPI9IXgWKKvGx",
+  "launchUri": "slack://channel?id=DBWGSGDQW&message=1532950037.000193&team=T4ALJRY56",
+  "msg": "1532950037.000193",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 14:27:29:374] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "DBWGSGDQW",
+  "content": "[REDACTED]",
+  "id": "L9OwS1SmQAGGwBy",
+  "launchUri": "slack://channel?id=DBWGSGDQW&message=1532950049.000077&team=T4ALJRY56",
+  "msg": "1532950049.000077",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 14:29:49:782] info: Store: FOREGROUND_APP
+[07/30/18, 14:29:51:480] info: Store: SELECT_CHANNEL GC0DE316J
+[07/30/18, 14:30:00:343] info: Store: FOREGROUND_APP
+[07/30/18, 14:30:03:375] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/30/18, 14:31:05:720] info: Store: START_DOWNLOAD
+{
+  "id": "FBZ35LF8T",
+  "teamId": "T4ALJRY56",
+  "url": "[REDACTED]"
+}
+[07/30/18, 14:31:05:726] info: Store: UPDATE_DOWNLOAD
+{
+  "downloadState": "started",
+  "id": "FBZ35LF8T",
+  "teamId": "T4ALJRY56"
+}
+[07/30/18, 14:31:06:031] info: Store: UPDATE_DOWNLOAD
+{
+  "downloadPath": "[REDACTED]",
+  "downloadState": "progressing",
+  "id": "FBZ35LF8T",
+  "requestState": null,
+  "teamId": "T4ALJRY56"
+}
+[07/30/18, 14:31:06:032] info: Store: UPDATE_DOWNLOAD
+{
+  "id": "FBZ35LF8T",
+  "isPaused": false,
+  "progress": 0,
+  "teamId": "T4ALJRY56"
+}
+[07/30/18, 14:31:06:038] info: Store: UPDATE_DOWNLOAD
+{
+  "id": "FBZ35LF8T",
+  "isPaused": false,
+  "progress": 0,
+  "teamId": "T4ALJRY56"
+}
+[07/30/18, 14:31:06:039] info: Store: UPDATE_DOWNLOAD
+{
+  "id": "FBZ35LF8T",
+  "isPaused": false,
+  "progress": 1,
+  "teamId": "T4ALJRY56"
+}
+[07/30/18, 14:31:06:039] info: Store: UPDATE_DOWNLOAD
+{
+  "id": "FBZ35LF8T",
+  "isPaused": false,
+  "progress": 1,
+  "teamId": "T4ALJRY56"
+}
+[07/30/18, 14:31:06:049] info: Store: UPDATE_DOWNLOAD
+{
+  "id": "FBZ35LF8T",
+  "isPaused": false,
+  "progress": 1,
+  "teamId": "T4ALJRY56"
+}
+[07/30/18, 14:31:06:112] info: Store: UPDATE_DOWNLOAD
+{
+  "downloadState": "completed",
+  "endTime": 1532950266111,
+  "id": "FBZ35LF8T",
+  "requestState": null,
+  "teamId": "T4ALJRY56"
+}
+[07/30/18, 14:31:06:121] info: Store: DOWNLOAD_NOTIFICATION
+{
+  "avatarImage": "",
+  "body": "",
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "T4ALJRY56FBZ35LF8T",
+  "initials": "",
+  "msg": "[REDACTED]",
+  "silent": false,
+  "sound": "confirm_delivery.mp3",
+  "ssbFilename": "confirm_delivery.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "Download complete",
+  "type": 1
+}
+[07/30/18, 14:31:07:893] info: Store: CLICK_DOWNLOAD_NOTIFICATION
+{
+  "fileLaunchPath": "[REDACTED]",
+  "notificationId": "T4ALJRY56FBZ35LF8T",
+  "teamId": "T4ALJRY56"
+}
+[07/30/18, 14:31:17:557] info: Store: SELECT_CHANNEL GC0DE316J
+[07/30/18, 14:31:18:912] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 5,
+  "params": "[REDACTED]"
+}
+[07/30/18, 14:31:41:716] info: Store: FOREGROUND_APP
+[07/30/18, 14:31:48:415] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[07/30/18, 14:31:52:718] info: Store: SELECT_CHANNEL GC0DE316J
+[07/30/18, 14:32:02:678] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[07/30/18, 14:32:37:566] info: Store: FOREGROUND_APP
+[07/30/18, 14:32:40:127] info: Store: SELECT_CHANNEL GC0DE316J
+[07/30/18, 14:32:43:566] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/30/18, 14:32:44:178] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U9BJM8N1J-d88c3ab004cc-512",
+  "channel": "DBZ02HZ5Z",
+  "content": "[REDACTED]",
+  "id": "v2yrsmTAGWZ0KK3",
+  "launchUri": "slack://channel?id=DBZ02HZ5Z&message=1532950364.000013&team=T4ALJRY56",
+  "msg": "1532950364.000013",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/30/18, 14:32:45:188] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[07/30/18, 14:33:13:801] info: Store: FOREGROUND_APP
+[07/30/18, 14:33:19:519] info: Store: SELECT_CHANNEL DBV15HC83
+[07/30/18, 14:33:20:383] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/30/18, 14:33:21:892] info: Store: SELECT_CHANNEL DBV15HC83
+[07/30/18, 14:33:22:221] info: Store: SELECT_CHANNEL DBVUBGBFF
+[07/30/18, 14:33:23:117] info: Store: SELECT_CHANNEL DBW3221ND
+[07/30/18, 14:33:23:556] info: Store: SELECT_CHANNEL DBV544BHT
+[07/30/18, 14:33:25:053] info: Store: SELECT_CHANNEL DBV24V3LJ
+[07/30/18, 14:33:25:446] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[07/30/18, 14:41:46:091] info: Store: FOREGROUND_APP
+[07/30/18, 14:41:52:678] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/30/18, 14:42:03:291] info: Store: SELECT_CHANNEL GC0DE316J
+[07/30/18, 14:59:02:655] info: Store: SET_UPDATE_STATUS check-for-update
+[07/30/18, 14:59:03:906] info: Store: SET_UPDATE_STATUS up-to-date
+[07/30/18, 15:05:44:818] info: Store: FOREGROUND_APP
+[07/30/18, 15:39:15:856] info: Store: FOREGROUND_APP
+[07/30/18, 16:07:42:994] info: Store: FOREGROUND_APP
+[07/30/18, 16:08:16:804] info: Store: FOREGROUND_APP
+[07/30/18, 16:08:23:855] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[07/30/18, 16:48:10:413] info: Store: FOREGROUND_APP
+[07/30/18, 16:48:42:751] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/30/18, 16:54:35:567] info: Store: FOREGROUND_APP
+[07/30/18, 16:54:39:641] info: Store: SELECT_CHANNEL GC0DE316J
+[07/30/18, 16:54:44:968] info: Store: SELECT_CHANNEL DBWGSGDQW
+[07/30/18, 16:54:52:399] info: Store: SELECT_CHANNEL GC0DE316J
+[07/30/18, 17:38:19:917] info: Store: FOREGROUND_APP
+[07/30/18, 17:38:21:247] info: Store: FOREGROUND_APP
+[07/30/18, 17:43:06:621] info: Store: FOREGROUND_APP
+[07/30/18, 17:46:35:980] info: Store: FOREGROUND_APP
+[07/30/18, 20:59:03:031] info: Store: SET_UPDATE_STATUS check-for-update
+[07/30/18, 20:59:04:267] info: Store: SET_UPDATE_STATUS up-to-date
+[07/31/18, 02:59:03:382] info: Store: SET_UPDATE_STATUS check-for-update
+[07/31/18, 02:59:04:586] info: Store: SET_UPDATE_STATUS up-to-date
+[07/31/18, 08:59:03:732] info: Store: SET_UPDATE_STATUS check-for-update
+[07/31/18, 08:59:04:940] info: Store: SET_UPDATE_STATUS up-to-date
+[07/31/18, 09:26:59:540] info: Store: SYSTEM_TEXT_SETTINGS_CHANGED
+[07/31/18, 09:31:02:594] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C9CMQ13-gcd30adfae9a-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "R6mDc2UOxE56V53",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1533018662.000117&team=T4ALJRY56",
+  "msg": "1533018662.000117",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/31/18, 09:31:14:294] info: Store: FOREGROUND_APP
+[07/31/18, 09:31:15:983] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/31/18, 09:49:09:745] info: Store: FOREGROUND_APP
+[07/31/18, 09:49:11:266] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[07/31/18, 10:14:19:377] info: Store: FOREGROUND_APP
+[07/31/18, 10:15:11:214] info: Store: FOREGROUND_APP
+[07/31/18, 10:16:03:371] info: Store: FOREGROUND_APP
+[07/31/18, 10:16:46:325] info: Store: FOREGROUND_APP
+[07/31/18, 10:17:28:390] info: Store: FOREGROUND_APP
+[07/31/18, 10:19:00:927] info: Store: FOREGROUND_APP
+[07/31/18, 10:20:51:265] info: Store: FOREGROUND_APP
+[07/31/18, 10:29:40:346] info: Store: FOREGROUND_APP
+[07/31/18, 10:29:42:554] info: Store: FOREGROUND_APP
+[07/31/18, 10:30:48:811] info: Store: FOREGROUND_APP
+[07/31/18, 11:38:19:249] info: Store: FOREGROUND_APP
+[07/31/18, 11:58:18:231] info: Store: FOREGROUND_APP
+[07/31/18, 13:09:12:818] info: Store: FOREGROUND_APP
+[07/31/18, 13:10:21:539] info: Store: FOREGROUND_APP
+[07/31/18, 13:16:49:403] info: Store: FOREGROUND_APP
+[07/31/18, 13:20:36:586] info: Store: FOREGROUND_APP
+[07/31/18, 13:20:38:116] info: Store: SELECT_CHANNEL DBXJWHSS1
+[07/31/18, 13:22:07:812] info: Store: FOREGROUND_APP
+[07/31/18, 13:39:50:912] info: Store: FOREGROUND_APP
+[07/31/18, 13:39:52:613] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    145,
+    171
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[07/31/18, 13:49:49:586] info: Store: FOREGROUND_APP
+[07/31/18, 14:23:10:712] info: Store: FOREGROUND_APP
+[07/31/18, 14:40:12:981] info: Store: FOREGROUND_APP
+[07/31/18, 14:59:04:106] info: Store: SET_UPDATE_STATUS check-for-update
+[07/31/18, 14:59:04:827] info: Store: SET_UPDATE_STATUS up-to-date
+[07/31/18, 14:59:36:688] info: Store: FOREGROUND_APP
+[07/31/18, 15:14:57:658] info: Store: FOREGROUND_APP
+[07/31/18, 15:38:03:251] info: Store: FOREGROUND_APP
+[07/31/18, 17:00:42:437] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4ALJRY9E-9e896e47e1f1-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "v2yrsYcAGW7R5LM",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1533045642.000192&team=T4ALJRY56",
+  "msg": "1533045642.000192",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[07/31/18, 17:00:47:341] info: Store: FOREGROUND_APP
+[07/31/18, 17:00:48:446] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/31/18, 17:06:05:133] info: Store: FOREGROUND_APP
+[07/31/18, 17:08:01:130] info: Store: FOREGROUND_APP
+[07/31/18, 17:53:08:387] info: Store: FOREGROUND_APP
+[07/31/18, 20:59:14:159] info: Store: SET_UPDATE_STATUS check-for-update
+[07/31/18, 20:59:15:290] info: Store: SET_UPDATE_STATUS up-to-date
+[07/31/18, 23:56:34:946] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "page-will-navigate",
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:45:894] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:49:921] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:50:447] info: Store: SELECT_CHANNEL C4BEHCR61
+[07/31/18, 23:56:50:451] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US"
+}
+[07/31/18, 23:56:50:826] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:50:933] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:431] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "webapp-loaded",
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:434] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:450] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[07/31/18, 23:56:51:695] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T4ALJRY56"
+}
+[07/31/18, 23:56:51:751] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T4ALJRY56",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[08/01/18, 01:33:12:886] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "page-will-navigate",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:20:203] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:23:690] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:084] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:236] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/01/18, 01:33:24:239] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:252] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T4ALJRY56",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[08/01/18, 01:33:24:604] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:703] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:711] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "webapp-loaded",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:715] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[08/01/18, 01:33:24:963] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 02:59:34:504] info: Store: SET_UPDATE_STATUS check-for-update
+[08/01/18, 02:59:35:735] info: Store: SET_UPDATE_STATUS up-to-date
+[08/01/18, 08:55:51:001] info: Store: FOREGROUND_APP
+[08/01/18, 08:59:34:864] info: Store: SET_UPDATE_STATUS check-for-update
+[08/01/18, 08:59:36:032] info: Store: SET_UPDATE_STATUS up-to-date
+[08/01/18, 09:15:22:953] info: Store: FOREGROUND_APP
+[08/01/18, 09:18:19:301] info: Store: FOREGROUND_APP
+[08/01/18, 09:32:15:020] info: Store: FOREGROUND_APP
+[08/01/18, 09:39:25:385] info: Store: FOREGROUND_APP
+[08/01/18, 09:45:11:572] info: Store: FOREGROUND_APP
+[08/01/18, 09:45:19:931] info: Store: FOREGROUND_APP
+[08/01/18, 09:45:21:056] info: Store: SELECT_CHANNEL DBW3221ND
+[08/01/18, 09:50:40:745] info: Store: FOREGROUND_APP
+[08/01/18, 09:55:35:560] info: Store: FOREGROUND_APP
+[08/01/18, 09:59:42:355] info: Store: FOREGROUND_APP
+[08/01/18, 10:25:07:016] info: Store: FOREGROUND_APP
+[08/01/18, 10:29:17:989] info: Store: FOREGROUND_APP
+[08/01/18, 10:29:19:004] info: Store: SELECT_CHANNEL DBV544BHT
+[08/01/18, 10:59:10:245] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U5S7MTBGU-9cbbb453b2f1-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "ZDxWFMhy4RVyLjp",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533110350.000046&team=T4ALJRY56",
+  "msg": "1533110350.000046",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 10:59:13:123] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "C4C2U8DHV",
+  "messageId": "1533110350.000046",
+  "notificationId": "ZDxWFMhy4RVyLjp",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 10:59:13:128] info: Store: SELECT_TEAM T4ALJRY56
+[08/01/18, 10:59:13:193] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/01/18, 11:28:24:026] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-UA42AGEQ2-ecc4889458c2-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "QqlOTXikX5nLVyo",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533112103.000371&team=T4ALJRY56",
+  "msg": "1533112103.000371",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 11:45:02:116] info: Store: FOREGROUND_APP
+[08/01/18, 11:45:24:228] info: Store: SELECT_CHANNEL C5WEWLR7C
+[08/01/18, 11:45:25:192] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/01/18, 11:45:28:529] info: Store: SELECT_CHANNEL DBV544BHT
+[08/01/18, 11:58:21:789] info: Store: FOREGROUND_APP
+[08/01/18, 12:30:55:044] info: Store: FOREGROUND_APP
+[08/01/18, 12:47:21:453] info: Store: FOREGROUND_APP
+[08/01/18, 12:47:23:118] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    145,
+    171
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/01/18, 12:47:59:965] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6P929MJT-g515909c90b3-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "MmP9uxsWl93gAg5",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533116879.000313&team=T4ALJRY56",
+  "msg": "1533116879.000313",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 12:51:15:719] info: Store: FOREGROUND_APP
+[08/01/18, 12:51:17:165] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/01/18, 12:51:31:478] info: Store: FOREGROUND_APP
+[08/01/18, 13:11:09:575] info: Store: FOREGROUND_APP
+[08/01/18, 13:11:11:269] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/01/18, 13:12:13:636] info: Store: FOREGROUND_APP
+[08/01/18, 13:12:14:877] info: Store: SELECT_CHANNEL DBW3221ND
+[08/01/18, 13:16:39:125] info: Store: FOREGROUND_APP
+[08/01/18, 13:16:40:651] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/01/18, 13:18:00:996] info: Store: FOREGROUND_APP
+[08/01/18, 13:18:45:854] info: Store: FOREGROUND_APP
+[08/01/18, 13:19:03:894] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "DBWGSGDQW",
+  "content": "[REDACTED]",
+  "id": "nV0zT6tZQzMM4lx",
+  "launchUri": "slack://channel?id=DBWGSGDQW&message=1533118743.000260&team=T4ALJRY56",
+  "msg": "1533118743.000260",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 13:19:06:541] info: Store: FOREGROUND_APP
+[08/01/18, 13:19:21:865] info: Store: FOREGROUND_APP
+[08/01/18, 14:39:01:126] info: Store: FOREGROUND_APP
+[08/01/18, 14:59:45:243] info: Store: SET_UPDATE_STATUS check-for-update
+[08/01/18, 14:59:46:479] info: Store: SET_UPDATE_STATUS up-to-date
+[08/01/18, 15:27:12:833] info: Store: FOREGROUND_APP
+[08/01/18, 15:29:47:421] info: Store: FOREGROUND_APP
+[08/01/18, 15:29:48:879] info: Store: SELECT_CHANNEL DBW3221ND
+[08/01/18, 15:30:03:938] info: Store: FOREGROUND_APP
+[08/01/18, 15:30:05:100] info: Store: SELECT_CHANNEL DBV544BHT
+[08/01/18, 15:35:54:370] info: Store: FOREGROUND_APP
+[08/01/18, 16:04:44:888] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "KkN6s4uADr4JJ87",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1533128684.000367&team=T4ALJRY56",
+  "msg": "1533128684.000367",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 16:07:52:330] info: Store: FOREGROUND_APP
+[08/01/18, 16:07:53:996] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/01/18, 16:13:18:460] info: Store: FOREGROUND_APP
+[08/01/18, 16:13:20:127] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    145,
+    171
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/01/18, 16:13:24:436] info: Store: SELECT_CHANNEL GC0DE316J
+[08/01/18, 16:15:36:305] info: Store: FOREGROUND_APP
+[08/01/18, 17:32:54:417] info: Store: FOREGROUND_APP
+[08/01/18, 17:33:11:977] info: Store: SELECT_CHANNEL DBV24V3LJ
+[08/01/18, 17:33:15:152] info: Store: SELECT_CHANNEL DBVUBGBFF
+[08/01/18, 17:33:18:472] info: Store: SELECT_CHANNEL DBV15HC83
+[08/01/18, 17:33:20:448] info: Store: SELECT_CHANNEL DBVUBGBFF
+[08/01/18, 17:33:25:526] info: Store: SELECT_CHANNEL DBW3221ND
+[08/01/18, 17:33:26:176] info: Store: SELECT_CHANNEL DBV544BHT
+[08/01/18, 17:33:27:756] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/01/18, 17:33:28:264] info: Store: SELECT_CHANNEL DBW23NN7R
+[08/01/18, 17:33:29:543] info: Store: SELECT_CHANNEL DBV24V3LJ
+[08/01/18, 17:33:30:599] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/01/18, 17:33:36:248] info: Store: SELECT_CHANNEL GC0DE316J
+[08/01/18, 17:33:37:192] info: Store: SELECT_CHANNEL DBXJWHSS1
+[08/01/18, 17:33:39:015] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/01/18, 17:53:20:553] info: Store: FOREGROUND_APP
+[08/01/18, 18:00:14:592] info: Store: FOREGROUND_APP
+[08/01/18, 20:55:26:322] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4GLY61D5-b3ed0f3aeadb-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "Nng8hPCRMlwOqWD",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533146126.000135&team=T4ALJRY56",
+  "msg": "1533146126.000135",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 21:00:05:619] info: Store: SET_UPDATE_STATUS check-for-update
+[08/01/18, 21:00:06:960] info: Store: SET_UPDATE_STATUS up-to-date
+[08/02/18, 03:00:25:886] info: Store: SET_UPDATE_STATUS check-for-update
+[08/02/18, 03:00:27:227] info: Store: SET_UPDATE_STATUS up-to-date
+[08/02/18, 08:58:24:890] info: Store: FOREGROUND_APP
+[08/02/18, 08:58:26:854] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 08:59:11:722] info: Store: FOREGROUND_APP
+[08/02/18, 09:00:36:233] info: Store: SET_UPDATE_STATUS check-for-update
+[08/02/18, 09:00:37:501] info: Store: SET_UPDATE_STATUS up-to-date
+[08/02/18, 09:05:05:943] info: Store: FOREGROUND_APP
+[08/02/18, 09:20:56:966] info: Store: FOREGROUND_APP
+[08/02/18, 09:23:05:109] info: Store: FOREGROUND_APP
+[08/02/18, 09:23:20:533] info: Store: SELECT_CHANNEL DBW3221ND
+[08/02/18, 09:23:38:100] info: Store: FOREGROUND_APP
+[08/02/18, 09:23:39:788] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/02/18, 09:23:57:797] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/02/18, 09:23:58:381] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/02/18, 09:46:06:681] info: Store: FOREGROUND_APP
+[08/02/18, 10:08:38:398] info: Store: FOREGROUND_APP
+[08/02/18, 10:14:17:921] info: Store: FOREGROUND_APP
+[08/02/18, 10:14:19:033] info: Store: SELECT_CHANNEL GC156TD52
+[08/02/18, 10:14:55:735] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 10:14:56:228] info: Store: SELECT_CHANNEL GC156TD52
+[08/02/18, 10:15:18:961] info: Store: FOREGROUND_APP
+[08/02/18, 10:15:41:322] info: Store: FOREGROUND_APP
+[08/02/18, 10:17:53:842] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C9CMQ13-gcd30adfae9a-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "KkN6sBFADrDwjMw",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194273.000231&team=T4ALJRY56",
+  "msg": "1533194273.000231",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:18:04:507] info: Store: FOREGROUND_APP
+[08/02/18, 10:18:35:168] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4CJ1JL12-8cd39142922b-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "5EkWhRH2rVrJB31",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194314.000324&team=T4ALJRY56",
+  "msg": "1533194314.000324",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:18:37:026] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "GC156TD52",
+  "messageId": "1533194314.000324",
+  "notificationId": "5EkWhRH2rVrJB31",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 10:18:37:028] info: Store: SELECT_TEAM T4ALJRY56
+[08/02/18, 10:19:38:003] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C9CMQ13-gcd30adfae9a-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "87n9hBIMQKQAR7q",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194377.000273&team=T4ALJRY56",
+  "msg": "1533194377.000273",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:20:32:978] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4CJ1JL12-8cd39142922b-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "77mAh2SNgPgzokA",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194432.000220&team=T4ALJRY56",
+  "msg": "1533194432.000220",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:21:05:877] info: Store: FOREGROUND_APP
+[08/02/18, 10:23:15:493] info: Store: FOREGROUND_APP
+[08/02/18, 10:25:38:145] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4G04V0US-g21a6edd858e-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "MmP9ujTWl9lmAgl",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194738.000017&team=T4ALJRY56",
+  "msg": "1533194738.000017",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:25:41:435] info: Store: FOREGROUND_APP
+[08/02/18, 10:25:59:745] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-UA3E4APH7-e97111818d3d-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "A7zmhMUYxJxgVvW",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194759.000187&team=T4ALJRY56",
+  "msg": "1533194759.000187",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:28:21:021] info: Store: FOREGROUND_APP
+[08/02/18, 10:28:49:113] info: Store: FOREGROUND_APP
+[08/02/18, 10:40:17:167] info: Store: FOREGROUND_APP
+[08/02/18, 10:40:50:973] info: Store: FOREGROUND_APP
+[08/02/18, 10:54:08:758] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "DC18WV9K5",
+  "content": "[REDACTED]",
+  "id": "v7yjh0cAGgmzBVn",
+  "launchUri": "slack://channel?id=DC18WV9K5&message=1533196448.000248&team=T4ALJRY56",
+  "msg": "1533196448.000248",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:56:11:950] info: Store: FOREGROUND_APP
+[08/02/18, 10:56:13:645] info: Store: SELECT_CHANNEL DC18WV9K5
+[08/02/18, 10:56:44:298] info: Store: FOREGROUND_APP
+[08/02/18, 10:56:53:748] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "DC18WV9K5",
+  "content": "[REDACTED]",
+  "id": "rNrYhNfyW6nj2oN",
+  "launchUri": "slack://channel?id=DC18WV9K5&message=1533196613.000267&team=T4ALJRY56",
+  "msg": "1533196613.000267",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:56:56:149] info: Store: FOREGROUND_APP
+[08/02/18, 10:57:27:048] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "DC18WV9K5",
+  "content": "[REDACTED]",
+  "id": "A7zmh7hYxJDQDzN",
+  "launchUri": "slack://channel?id=DC18WV9K5&message=1533196646.000338&team=T4ALJRY56",
+  "msg": "1533196646.000338",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:59:08:608] info: Store: FOREGROUND_APP
+[08/02/18, 11:02:45:554] info: Store: FOREGROUND_APP
+[08/02/18, 11:13:25:711] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "Nng8hXiRMlKPRmq",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197605.000136&team=T4ALJRY56",
+  "msg": "1533197605.000136",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:13:31:070] info: Store: FOREGROUND_APP
+[08/02/18, 11:13:32:333] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/02/18, 11:14:08:536] info: Store: FOREGROUND_APP
+[08/02/18, 11:14:36:835] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "xNAlhMswK0rBZJ7",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197676.000157&team=T4ALJRY56",
+  "msg": "1533197676.000157",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:14:38:679] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "CC2DW6X0X",
+  "messageId": "1533197676.000157",
+  "notificationId": "xNAlhMswK0rBZJ7",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 11:14:38:683] info: Store: SELECT_TEAM T4ALJRY56
+[08/02/18, 11:15:24:229] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "JjMPsXtLjmx7BnW",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197724.000047&team=T4ALJRY56",
+  "msg": "1533197724.000047",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:15:29:760] info: Store: FOREGROUND_APP
+[08/02/18, 11:16:33:172] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4S90BGCS-e35cd2d74032-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "yOBmsguRJgoqgWn",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197792.000353&team=T4ALJRY56",
+  "msg": "1533197792.000353",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:17:07:656] info: Store: FOREGROUND_APP
+[08/02/18, 11:17:40:570] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "ZDxWF3Cy4R5ZK1G",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197860.000147&team=T4ALJRY56",
+  "msg": "1533197860.000147",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:17:45:895] info: Store: FOREGROUND_APP
+[08/02/18, 11:18:12:956] info: Store: FOREGROUND_APP
+[08/02/18, 11:29:12:466] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1PPVA6-gdb31c304b0c-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "E7EPhYFPvklEyw7",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533198552.000130&team=T4ALJRY56",
+  "msg": "1533198552.000130",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:29:15:663] info: Store: FOREGROUND_APP
+[08/02/18, 11:29:17:383] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 11:31:26:023] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4S90BGCS-e35cd2d74032-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "B7AnhnHjwpxZq6n",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533198685.000330&team=T4ALJRY56",
+  "msg": "1533198685.000330",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:31:31:360] info: Store: FOREGROUND_APP
+[08/02/18, 11:31:32:669] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/02/18, 11:38:16:639] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "PpkYTnIjORKYwrA",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533199096.000208&team=T4ALJRY56",
+  "msg": "1533199096.000208",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:38:19:475] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "CC2DW6X0X",
+  "messageId": "1533199096.000208",
+  "notificationId": "PpkYTnIjORKYwrA",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 11:38:19:478] info: Store: SELECT_TEAM T4ALJRY56
+[08/02/18, 11:38:31:752] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "gVOkTES3gxRwLvj",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533199111.000231&team=T4ALJRY56",
+  "msg": "1533199111.000231",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:38:48:139] info: Store: FOREGROUND_APP
+[08/02/18, 11:47:05:058] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6R98FXK5-794d87ee301a-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "VyqNHnTJwNBDwJG",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533199624.000342&team=T4ALJRY56",
+  "msg": "1533199624.000342",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:47:08:192] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6R98FXK5-794d87ee301a-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "B7AnhxUjwpxmxRP",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533199628.000043&team=T4ALJRY56",
+  "msg": "1533199628.000043",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:47:09:893] info: Store: FOREGROUND_APP
+[08/02/18, 19:49:35:828] info: Store: FOREGROUND_APP
+[08/02/18, 19:54:08:645] info: Store: FOREGROUND_APP
+[08/02/18, 20:02:47:736] info: Store: FOREGROUND_APP
+[08/02/18, 20:05:08:178] info: Store: FOREGROUND_APP
+[08/02/18, 13:18:47:749] info: Store: FOREGROUND_APP
+[08/02/18, 13:47:34:813] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U5J106NQP-a161787059ff-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "Nng8hDcRMlnk6X5",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533206854.000221&team=T4ALJRY56",
+  "msg": "1533206854.000221",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 13:47:37:372] info: Store: FOREGROUND_APP
+[08/02/18, 13:47:38:655] info: Store: SELECT_CHANNEL GC156TD52
+[08/02/18, 13:48:04:137] info: Store: FOREGROUND_APP
+[08/02/18, 13:58:40:881] info: Store: FOREGROUND_APP
+[08/02/18, 13:58:59:731] info: Store: FOREGROUND_APP
+[08/02/18, 14:27:22:955] info: Store: FOREGROUND_APP
+[08/02/18, 14:35:38:729] info: Store: FOREGROUND_APP
+[08/02/18, 14:50:51:016] info: Store: FOREGROUND_APP
+[08/02/18, 14:53:34:196] info: Store: FOREGROUND_APP
+[08/02/18, 14:53:36:224] info: Store: SELECT_CHANNEL DBV24V3LJ
+[08/02/18, 14:53:43:196] info: Store: FOREGROUND_APP
+[08/02/18, 14:54:41:529] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "gVOkT9f3gxlMvAl",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533210881.000090&team=T4ALJRY56",
+  "msg": "1533210881.000090",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 14:54:45:320] info: Store: FOREGROUND_APP
+[08/02/18, 14:54:46:910] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/02/18, 14:55:00:157] info: Store: FOREGROUND_APP
+[08/02/18, 14:55:02:294] info: Store: SELECT_CHANNEL DBV24V3LJ
+[08/02/18, 14:55:37:153] info: Store: FOREGROUND_APP
+[08/02/18, 14:56:12:254] info: Store: FOREGROUND_APP
+[08/02/18, 15:00:39:461] info: Store: SET_UPDATE_STATUS check-for-update
+[08/02/18, 15:00:40:535] info: Store: SET_UPDATE_STATUS up-to-date
+[08/02/18, 15:03:02:190] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "YBwMhBhVmrXGmA8",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533211382.000021&team=T4ALJRY56",
+  "msg": "1533211382.000021",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:03:35:950] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "XAvMuoik1EyDr8j",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533211415.000292&team=T4ALJRY56",
+  "msg": "1533211415.000292",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:04:12:398] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "LlOPh9smQYOPWAK",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533211452.000065&team=T4ALJRY56",
+  "msg": "1533211452.000065",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:04:37:121] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6R98FXK5-794d87ee301a-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "G7J9hltQ5B8pnKQ",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533211477.000010&team=T4ALJRY56",
+  "msg": "1533211477.000010",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:07:50:054] info: Store: FOREGROUND_APP
+[08/02/18, 15:07:51:445] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/02/18, 15:07:58:383] info: Store: ADD_WINDOW
+{
+  "id": 5,
+  "subType": "calls",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/02/18, 15:08:02:697] info: Store: ADD_WINDOW
+{
+  "id": 6,
+  "subType": "calls_mini_panel",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/02/18, 15:08:02:741] info: Store: ADD_WINDOW
+{
+  "id": 7,
+  "subType": "calls_cursors",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/02/18, 15:08:02:757] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[08/02/18, 15:08:21:731] info: Store: FOREGROUND_APP
+[08/02/18, 15:08:51:313] info: Store: FOREGROUND_APP
+[08/02/18, 15:09:33:185] info: Store: FOREGROUND_APP
+[08/02/18, 15:10:02:663] info: Store: FOREGROUND_APP
+[08/02/18, 15:10:41:904] info: Store: FOREGROUND_APP
+[08/02/18, 15:11:18:475] info: Store: FOREGROUND_APP
+[08/02/18, 15:12:15:577] info: Store: FOREGROUND_APP
+[08/02/18, 15:14:52:782] info: Store: FOREGROUND_APP
+[08/02/18, 15:15:18:333] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U69MKMHQX-ge0b0d5dce35-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "97o2h6uOyBMqJQk",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533212118.000045&team=T4ALJRY56",
+  "msg": "1533212118.000045",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:15:20:991] info: Store: FOREGROUND_APP
+[08/02/18, 15:15:48:802] info: Store: FOREGROUND_APP
+[08/02/18, 15:16:16:275] info: Store: FOREGROUND_APP
+[08/02/18, 15:16:23:273] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "LlOPhrCmQYOY187",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:16:33:456] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:13:437] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:30:835] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:52:830] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:06:508] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:21:803] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:30:155] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:37:691] info: Store: FOREGROUND_APP
+[08/02/18, 15:19:40:801] info: Store: FOREGROUND_APP
+[08/02/18, 15:23:37:819] info: Store: FOREGROUND_APP
+[08/02/18, 15:24:26:673] info: Store: FOREGROUND_APP
+[08/02/18, 15:24:49:923] info: Store: FOREGROUND_APP
+[08/02/18, 15:25:19:355] info: Store: FOREGROUND_APP
+[08/02/18, 15:28:29:255] info: Store: FOREGROUND_APP
+[08/02/18, 15:34:51:221] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:11:945] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:20:870] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    561,
+    238
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:24:541] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    94,
+    195
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:27:797] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    80,
+    239
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:43:695] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:52:278] info: Store: FOREGROUND_APP
+[08/02/18, 15:36:13:774] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    77,
+    241
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:36:33:135] info: Store: FOREGROUND_APP
+[08/02/18, 15:36:56:840] info: Store: FOREGROUND_APP
+[08/02/18, 15:37:14:001] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "Wzr8IEFn4z9Wq4W",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:14:349] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "B7AnhqHjwpmVJDA",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:14:383] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "mVmETrI9jVnmn5L",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:16:582] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "p6pzs8SGn3gwz23",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:16:935] info: Store: REMOVE_WINDOW 5
+[08/02/18, 15:37:16:945] info: Store: REMOVE_WINDOW 6
+[08/02/18, 15:37:16:953] info: Store: REMOVE_WINDOW 7
+[08/02/18, 16:02:57:845] info: Store: FOREGROUND_APP
+[08/02/18, 16:07:31:405] info: Store: FOREGROUND_APP
+[08/02/18, 16:43:34:855] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U9BJM8N1J-d88c3ab004cc-512",
+  "channel": "DBZ02HZ5Z",
+  "content": "[REDACTED]",
+  "id": "ZDxWFZTy4RpOYzn",
+  "launchUri": "slack://channel?id=DBZ02HZ5Z&message=1533217414.000396&team=T4ALJRY56",
+  "msg": "1533217414.000396",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 16:43:38:869] info: Store: FOREGROUND_APP
+[08/02/18, 16:43:39:316] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U9BJM8N1J-d88c3ab004cc-512",
+  "channel": "DBZ02HZ5Z",
+  "content": "[REDACTED]",
+  "id": "qXq2IqUEGoDK02n",
+  "launchUri": "slack://channel?id=DBZ02HZ5Z&message=1533217419.000125&team=T4ALJRY56",
+  "msg": "1533217419.000125",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 16:43:40:019] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/02/18, 16:45:22:466] info: Store: FOREGROUND_APP
+[08/02/18, 16:49:31:071] info: Store: FOREGROUND_APP
+[08/02/18, 17:10:30:708] info: Store: FOREGROUND_APP
+[08/02/18, 17:20:20:095] info: Store: FOREGROUND_APP
+[08/02/18, 17:20:21:965] info: Store: SELECT_CHANNEL DC18WV9K5
+[08/02/18, 17:21:15:028] info: Store: FOREGROUND_APP
+[08/02/18, 17:21:16:561] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/02/18, 17:25:10:126] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C3QSDAR-645a2f4c90d6-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "MmP9uwcWl9z3ppq",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1533219910.000028&team=T4ALJRY56",
+  "msg": "1533219910.000028",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 17:25:13:521] info: Store: FOREGROUND_APP
+[08/02/18, 17:25:15:346] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/20/18, 17:26:24:960] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[08/20/18, 17:26:25:097] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 17:40:03:904] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C3QSDAR-645a2f4c90d6-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "1zO9IQfXgkzNVNE",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533220803.000574&team=T4ALJRY56",
+  "msg": "1533220803.000574",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 17:44:23:959] info: Store: FOREGROUND_APP
+[08/02/18, 17:44:25:403] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 17:44:27:504] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/02/18, 17:44:29:592] info: Store: SELECT_CHANNEL C5WEWLR7C
+[08/02/18, 17:44:29:993] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 17:53:46:907] info: Store: FOREGROUND_APP
+[08/02/18, 17:53:49:200] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/02/18, 18:23:25:175] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6P929MJT-g515909c90b3-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "0yN9HGDhWEqYpZoo",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533223405.000070&team=T4ALJRY56",
+  "msg": "1533223405.000070",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 20:01:22:504] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 20:01:22:624] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 21:00:51:937] info: Store: SET_UPDATE_STATUS check-for-update
+[08/02/18, 21:00:53:149] info: Store: SET_UPDATE_STATUS up-to-date
+[08/03/18, 03:01:12:271] info: Store: SET_UPDATE_STATUS check-for-update
+[08/03/18, 03:01:13:685] info: Store: SET_UPDATE_STATUS up-to-date
+[08/03/18, 03:58:07:801] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "page-will-navigate",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 03:58:28:575] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 03:58:32:100] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 03:58:32:624] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/03/18, 03:58:32:627] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 03:58:32:642] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T4ALJRY56",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[08/03/18, 03:58:33:002] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 03:58:33:047] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 03:58:33:108] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 03:58:33:124] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "webapp-loaded",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 03:58:33:128] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[08/03/18, 03:58:33:311] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 08:54:56:502] info: Store: FOREGROUND_APP
+[08/03/18, 08:54:59:638] info: Store: SELECT_CHANNEL DC18WV9K5
+[08/03/18, 08:55:01:168] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/03/18, 09:01:12:618] info: Store: SET_UPDATE_STATUS check-for-update
+[08/03/18, 09:01:14:093] info: Store: SET_UPDATE_STATUS up-to-date
+[08/03/18, 09:01:22:390] info: Store: FOREGROUND_APP
+[08/03/18, 09:13:43:763] info: Store: FOREGROUND_APP
+[08/03/18, 09:36:40:112] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://a.slack-edge.com/436da/img/unknown_avatar.png",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "3GV3ImhDGzzBOPM",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533278199.000265&team=T4ALJRY56",
+  "msg": "1533278199.000265",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 09:36:49:552] info: Store: FOREGROUND_APP
+[08/03/18, 09:36:51:307] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/03/18, 09:39:54:319] info: Store: FOREGROUND_APP
+[08/03/18, 10:21:59:779] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4DDSPW1E-f8c0912bf91f-512",
+  "channel": "DC1JDME81",
+  "content": "[REDACTED]",
+  "id": "GEWAUBiQ5PLv01X",
+  "launchUri": "slack://channel?id=DC1JDME81&message=1533280919.000193&team=T4ALJRY56",
+  "msg": "1533280919.000193",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 10:22:47:054] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4DDSPW1E-f8c0912bf91f-512",
+  "channel": "DC1JDME81",
+  "content": "[REDACTED]",
+  "id": "QRgXfBskXnKgELN",
+  "launchUri": "slack://channel?id=DC1JDME81&message=1533280966.000322&team=T4ALJRY56",
+  "msg": "1533280966.000322",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 10:22:48:869] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4DDSPW1E-f8c0912bf91f-512",
+  "channel": "DC1JDME81",
+  "content": "[REDACTED]",
+  "id": "pPLnHxtGnB9joWy",
+  "launchUri": "slack://channel?id=DC1JDME81&message=1533280968.000225&team=T4ALJRY56",
+  "msg": "1533280968.000225",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 10:25:05:626] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4DDSPW1E-f8c0912bf91f-512",
+  "channel": "DC1JDME81",
+  "content": "[REDACTED]",
+  "id": "R7jXS5uOxry8yQq",
+  "launchUri": "slack://channel?id=DC1JDME81&message=1533281105.000176&team=T4ALJRY56",
+  "msg": "1533281105.000176",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 10:25:20:664] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4DDSPW1E-f8c0912bf91f-512",
+  "channel": "DC1JDME81",
+  "content": "[REDACTED]",
+  "id": "R7jXS0COxry87ml",
+  "launchUri": "slack://channel?id=DC1JDME81&message=1533281120.000177&team=T4ALJRY56",
+  "msg": "1533281120.000177",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 10:27:23:721] info: Store: FOREGROUND_APP
+[08/03/18, 10:27:25:118] info: Store: SELECT_CHANNEL C4GEUL203
+[08/03/18, 10:27:26:926] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 10:28:28:955] info: Store: FOREGROUND_APP
+[08/03/18, 10:28:30:823] info: Store: SELECT_CHANNEL DBV544BHT
+[08/03/18, 10:28:44:755] info: Store: FOREGROUND_APP
+[08/03/18, 10:28:46:215] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 10:29:17:383] info: Store: FOREGROUND_APP
+[08/03/18, 10:29:21:286] info: Store: FOREGROUND_APP
+[08/03/18, 10:30:20:360] info: Store: FOREGROUND_APP
+[08/03/18, 10:30:21:982] info: Store: SELECT_CHANNEL DBV544BHT
+[08/03/18, 10:33:54:129] info: Store: FOREGROUND_APP
+[08/03/18, 10:33:55:568] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 10:34:06:905] info: Store: SELECT_CHANNEL C4GEUL203
+[08/03/18, 10:35:54:359] info: Store: FOREGROUND_APP
+[08/03/18, 10:35:55:810] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 10:37:07:939] info: Store: FOREGROUND_APP
+[08/03/18, 10:38:20:902] info: Store: FOREGROUND_APP
+[08/03/18, 10:38:22:058] info: Store: SELECT_CHANNEL DBV544BHT
+[08/03/18, 10:38:53:331] info: Store: FOREGROUND_APP
+[08/03/18, 10:38:54:506] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 10:39:08:390] info: Store: FOREGROUND_APP
+[08/03/18, 10:40:18:964] info: Store: FOREGROUND_APP
+[08/03/18, 10:40:57:788] info: Store: FOREGROUND_APP
+[08/03/18, 10:40:59:499] info: Store: SELECT_CHANNEL C4GEUL203
+[08/03/18, 10:44:14:052] info: Store: FOREGROUND_APP
+[08/03/18, 10:44:15:446] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 10:46:05:529] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4RB20V54-b1571cfb27ae-512",
+  "channel": "DC25NH4N6",
+  "content": "[REDACTED]",
+  "id": "R7jXSRFOxr4zOBE",
+  "launchUri": "slack://channel?id=DC25NH4N6&message=1533282365.000140&team=T4ALJRY56",
+  "msg": "1533282365.000140",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 10:46:08:052] info: Store: FOREGROUND_APP
+[08/03/18, 10:46:09:061] info: Store: SELECT_CHANNEL DC25NH4N6
+[08/03/18, 10:46:20:453] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4RB20V54-b1571cfb27ae-512",
+  "channel": "DC25NH4N6",
+  "content": "[REDACTED]",
+  "id": "EBWySnHPvLqmkEX",
+  "launchUri": "slack://channel?id=DC25NH4N6&message=1533282380.000093&team=T4ALJRY56",
+  "msg": "1533282380.000093",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 10:46:38:378] info: Store: FOREGROUND_APP
+[08/03/18, 10:46:47:539] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4RB20V54-b1571cfb27ae-512",
+  "channel": "DC25NH4N6",
+  "content": "[REDACTED]",
+  "id": "By9vczIjwnEYV4z",
+  "launchUri": "slack://channel?id=DC25NH4N6&message=1533282407.000133&team=T4ALJRY56",
+  "msg": "1533282407.000133",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 10:46:49:604] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "DC25NH4N6",
+  "messageId": "1533282407.000133",
+  "notificationId": "By9vczIjwnEYV4z",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 10:46:49:604] info: Store: SELECT_TEAM T4ALJRY56
+[08/03/18, 10:46:55:202] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 5,
+  "params": "[REDACTED]"
+}
+[08/03/18, 10:48:05:102] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4RB20V54-b1571cfb27ae-512",
+  "channel": "DC25NH4N6",
+  "content": "[REDACTED]",
+  "id": "By9vc0SjwnEz8ox",
+  "launchUri": "slack://channel?id=DC25NH4N6&message=1533282484.000321&team=T4ALJRY56",
+  "msg": "1533282484.000321",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 10:48:06:949] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "DC25NH4N6",
+  "messageId": "1533282484.000321",
+  "notificationId": "By9vc0SjwnEz8ox",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 10:48:06:950] info: Store: SELECT_TEAM T4ALJRY56
+[08/03/18, 10:48:18:266] info: Store: FOREGROUND_APP
+[08/03/18, 10:49:05:292] info: Store: FOREGROUND_APP
+[08/03/18, 10:49:06:385] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 11:06:12:982] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4DDSPW1E-f8c0912bf91f-512",
+  "channel": "DC1JDME81",
+  "content": "[REDACTED]",
+  "id": "M6WXtjTWlq439m7",
+  "launchUri": "slack://channel?id=DC1JDME81&message=1533283572.000304&team=T4ALJRY56",
+  "msg": "1533283572.000304",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 11:06:21:657] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4DDSPW1E-f8c0912bf91f-512",
+  "channel": "DC1JDME81",
+  "content": "[REDACTED]",
+  "id": "zoYAIvUK9xNW2KY",
+  "launchUri": "slack://channel?id=DC1JDME81&message=1533283581.000186&team=T4ALJRY56",
+  "msg": "1533283581.000186",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 11:06:23:358] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "DC1JDME81",
+  "messageId": "1533283581.000186",
+  "notificationId": "zoYAIvUK9xNW2KY",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 11:06:23:359] info: Store: SELECT_TEAM T4ALJRY56
+[08/03/18, 11:08:08:611] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4RB20V54-b1571cfb27ae-512",
+  "channel": "DC25NH4N6",
+  "content": "[REDACTED]",
+  "id": "XRpPf7ck1LWW4WX",
+  "launchUri": "slack://channel?id=DC25NH4N6&message=1533283688.000152&team=T4ALJRY56",
+  "msg": "1533283688.000152",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 11:08:11:333] info: Store: FOREGROUND_APP
+[08/03/18, 11:08:12:628] info: Store: SELECT_CHANNEL DC25NH4N6
+[08/03/18, 11:08:30:904] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 11:08:32:799] info: Store: SELECT_CHANNEL DC25NH4N6
+[08/03/18, 11:08:52:709] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4RB20V54-b1571cfb27ae-512",
+  "channel": "DC25NH4N6",
+  "content": "[REDACTED]",
+  "id": "LRWGfofmQkx4rj0",
+  "launchUri": "slack://channel?id=DC25NH4N6&message=1533283732.000185&team=T4ALJRY56",
+  "msg": "1533283732.000185",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 11:08:55:786] info: Store: FOREGROUND_APP
+[08/03/18, 11:10:33:635] info: Store: FOREGROUND_APP
+[08/03/18, 11:10:53:835] info: Store: FOREGROUND_APP
+[08/03/18, 11:11:36:965] info: Store: FOREGROUND_APP
+[08/03/18, 11:11:40:549] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 11:11:44:100] info: Store: SELECT_CHANNEL DC25NH4N6
+[08/03/18, 11:11:53:748] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4RB20V54-b1571cfb27ae-512",
+  "channel": "DC25NH4N6",
+  "content": "[REDACTED]",
+  "id": "wl7xtYhKMABz4nq",
+  "launchUri": "slack://channel?id=DC25NH4N6&message=1533283913.000210&team=T4ALJRY56",
+  "msg": "1533283913.000210",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 11:12:02:109] info: Store: FOREGROUND_APP
+[08/03/18, 11:12:15:992] info: Store: ADD_WINDOW
+{
+  "id": 8,
+  "subType": "calls_incoming_call",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/03/18, 11:12:18:956] info: Store: REMOVE_WINDOW 8
+[08/03/18, 11:12:18:990] info: Store: ADD_WINDOW
+{
+  "id": 9,
+  "subType": "calls",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/03/18, 11:12:22:936] info: Store: ADD_WINDOW
+{
+  "id": 10,
+  "subType": "calls_mini_panel",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/03/18, 11:12:22:958] info: Store: ADD_WINDOW
+{
+  "id": 11,
+  "subType": "calls_cursors",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/03/18, 11:12:22:983] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[08/03/18, 11:14:45:616] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "vkLwIKiAGYrvY05",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 11:14:45:849] info: Store: REMOVE_WINDOW 9
+[08/03/18, 11:14:45:853] info: Store: REMOVE_WINDOW 10
+[08/03/18, 11:14:45:916] info: Store: REMOVE_WINDOW 11
+[08/03/18, 11:21:38:772] info: Store: FOREGROUND_APP
+[08/03/18, 11:22:12:948] info: Store: FOREGROUND_APP
+[08/03/18, 11:22:15:105] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 11:22:30:770] info: Store: FOREGROUND_APP
+[08/03/18, 11:22:34:559] info: Store: SELECT_CHANNEL DC25NH4N6
+[08/03/18, 11:22:35:515] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 11:42:11:832] info: Store: FOREGROUND_APP
+[08/03/18, 12:30:13:940] info: Store: FOREGROUND_APP
+[08/03/18, 12:30:16:969] info: Store: SELECT_CHANNEL GC0DE316J
+[08/03/18, 12:30:19:061] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 12:35:44:729] info: Store: FOREGROUND_APP
+[08/03/18, 12:52:25:288] info: Store: FOREGROUND_APP
+[08/03/18, 12:59:00:262] info: Store: FOREGROUND_APP
+[08/03/18, 13:03:38:938] info: Store: FOREGROUND_APP
+[08/03/18, 13:05:38:073] info: Store: FOREGROUND_APP
+[08/03/18, 13:10:05:019] info: Store: FOREGROUND_APP
+[08/03/18, 13:11:06:896] info: Store: FOREGROUND_APP
+[08/03/18, 13:11:18:618] info: Store: FOREGROUND_APP
+[08/03/18, 13:11:45:027] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4PQU1AG7-gb241cfc8c62-512",
+  "channel": "C4GEUL203",
+  "content": "[REDACTED]",
+  "id": "WRo1f9sn4JPy5pO",
+  "launchUri": "slack://channel?id=C4GEUL203&message=1533291104.000275&team=T4ALJRY56",
+  "msg": "1533291104.000275",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:11:50:430] info: Store: FOREGROUND_APP
+[08/03/18, 13:11:52:628] info: Store: SELECT_CHANNEL C4GEUL203
+[08/03/18, 13:12:23:597] info: Store: FOREGROUND_APP
+[08/03/18, 13:12:28:592] info: Store: SELECT_CHANNEL DBUT11DGT
+[08/03/18, 13:12:55:595] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C16M1NW-ga9ef8ad5316-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "AxKrHYtYxk614pG",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1533291175.000114&team=T4ALJRY56",
+  "msg": "1533291175.000114",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:13:51:651] info: Store: FOREGROUND_APP
+[08/03/18, 13:13:52:477] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/03/18, 13:14:01:941] info: Store: SELECT_CHANNEL DBUT11DGT
+[08/03/18, 13:14:20:123] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JGDL0QH-d349956b7e2c-512",
+  "channel": "DBUT11DGT",
+  "content": "[REDACTED]",
+  "id": "XRpPf1uk1LoGnx9",
+  "launchUri": "slack://channel?id=DBUT11DGT&message=1533291259.000355&team=T4ALJRY56",
+  "msg": "1533291259.000355",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:14:23:829] info: Store: FOREGROUND_APP
+[08/03/18, 13:14:31:003] info: Store: FOREGROUND_APP
+[08/03/18, 13:15:50:613] info: Store: FOREGROUND_APP
+[08/03/18, 13:15:53:629] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/03/18, 13:16:07:237] info: Store: SELECT_CHANNEL DBUT11DGT
+[08/03/18, 13:18:10:619] info: Store: FOREGROUND_APP
+[08/03/18, 13:24:25:773] info: Store: FOREGROUND_APP
+[08/03/18, 13:24:52:209] info: Store: FOREGROUND_APP
+[08/03/18, 13:27:16:701] info: Store: FOREGROUND_APP
+[08/03/18, 13:28:34:941] info: Store: FOREGROUND_APP
+[08/03/18, 13:29:01:875] info: Store: FOREGROUND_APP
+[08/03/18, 13:34:48:339] info: Store: FOREGROUND_APP
+[08/03/18, 13:35:44:402] info: Store: FOREGROUND_APP
+[08/03/18, 13:35:45:768] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 13:37:42:030] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "pPLnHjCGnB5MypO",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533292661.000233&team=T4ALJRY56",
+  "msg": "1533292661.000233",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:37:46:368] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "DAWxcyFZG6XKW3n",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533292665.000286&team=T4ALJRY56",
+  "msg": "1533292665.000286",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:37:46:570] info: Store: FOREGROUND_APP
+[08/03/18, 13:37:48:463] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/03/18, 13:38:05:934] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "gPMyHBH3gkYLJ9M",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533292685.000212&team=T4ALJRY56",
+  "msg": "1533292685.000212",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:38:08:601] info: Store: FOREGROUND_APP
+[08/03/18, 13:38:15:887] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    77,
+    241
+  ],
+  "size": [
+    1094,
+    694
+  ]
+}
+[08/03/18, 13:38:54:415] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    77,
+    241
+  ],
+  "size": [
+    783,
+    642
+  ]
+}
+[08/03/18, 13:39:12:371] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "3GV3IvIDGzwVqgN",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533292752.000066&team=T4ALJRY56",
+  "msg": "1533292752.000066",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:39:13:396] info: Store: FOREGROUND_APP
+[08/03/18, 13:40:04:571] info: Store: SELECT_CHANNEL DC18WV9K5
+[08/03/18, 13:40:07:505] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/03/18, 13:41:41:874] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "q9LoCYSEGW1GGYy",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533292901.000205&team=T4ALJRY56",
+  "msg": "1533292901.000205",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:41:46:108] info: Store: FOREGROUND_APP
+[08/03/18, 13:42:07:736] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 5,
+  "params": "[REDACTED]"
+}
+[08/03/18, 13:42:27:543] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "QRgXf1TkXnlzKpo",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533292947.000107&team=T4ALJRY56",
+  "msg": "1533292947.000107",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:42:28:406] info: Store: FOREGROUND_APP
+[08/03/18, 13:42:53:388] info: Store: SELECT_CHANNEL C5U65707M
+[08/03/18, 13:42:53:716] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/03/18, 13:43:44:500] info: Store: FOREGROUND_APP
+[08/03/18, 13:43:48:261] info: Store: SELECT_CHANNEL DC18WV9K5
+[08/03/18, 13:46:51:825] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4S90BGCS-e35cd2d74032-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "QRgXfnUkXnlR2Vq",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533293211.000127&team=T4ALJRY56",
+  "msg": "1533293211.000127",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 13:46:56:191] info: Store: FOREGROUND_APP
+[08/03/18, 13:46:58:189] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/03/18, 13:47:00:909] info: Store: SELECT_CHANNEL C4GEUL203
+[08/03/18, 13:47:03:493] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/03/18, 13:49:10:191] info: Store: FOREGROUND_APP
+[08/03/18, 13:50:33:664] info: Store: FOREGROUND_APP
+[08/03/18, 13:50:41:697] info: Store: FOREGROUND_APP
+[08/03/18, 14:10:18:062] info: Store: FOREGROUND_APP
+[08/03/18, 14:14:06:666] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "yn2zSqcRJv6KwJL",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533294846.000127&team=T4ALJRY56",
+  "msg": "1533294846.000127",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 14:14:10:081] info: Store: FOREGROUND_APP
+[08/03/18, 14:14:14:964] info: Store: FOREGROUND_APP
+[08/03/18, 14:14:50:310] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "lPE0HxfqMlJ4Y4K",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533294890.000049&team=T4ALJRY56",
+  "msg": "1533294890.000049",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 14:14:54:215] info: Store: FOREGROUND_APP
+[08/03/18, 14:22:32:165] info: Store: FOREGROUND_APP
+[08/03/18, 14:34:28:945] info: Store: FOREGROUND_APP
+[08/03/18, 14:50:02:669] info: Store: FOREGROUND_APP
+[08/03/18, 14:50:09:093] info: Store: SELECT_CHANNEL C5U65707M
+[08/03/18, 14:50:09:526] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/03/18, 15:00:31:783] info: Store: FOREGROUND_APP
+[08/03/18, 15:01:12:987] info: Store: SET_UPDATE_STATUS check-for-update
+[08/03/18, 15:01:14:592] info: Store: SET_UPDATE_STATUS up-to-date
+[08/03/18, 15:16:16:648] info: Store: FOREGROUND_APP
+[08/03/18, 15:16:18:902] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/03/18, 15:27:57:774] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "6jKMUwh5KQ3GVgk",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533299277.000223&team=T4ALJRY56",
+  "msg": "1533299277.000223",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 15:27:59:817] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "CC2DW6X0X",
+  "messageId": "1533299277.000223",
+  "notificationId": "6jKMUwh5KQ3GVgk",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 15:27:59:819] info: Store: SELECT_TEAM T4ALJRY56
+[08/03/18, 15:27:59:858] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/03/18, 15:28:12:496] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "XRpPfoik1Lg0jrD",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533299292.000116&team=T4ALJRY56",
+  "msg": "1533299292.000116",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 15:28:15:391] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "CC2DW6X0X",
+  "messageId": "1533299292.000116",
+  "notificationId": "XRpPfoik1Lg0jrD",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 15:28:15:393] info: Store: SELECT_TEAM T4ALJRY56
+[08/03/18, 15:28:39:133] info: Store: FOREGROUND_APP
+[08/03/18, 15:28:41:895] info: Store: SELECT_CHANNEL DC1JDME81
+[08/03/18, 15:31:07:880] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "GEWAU4sQ5PO6g57",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533299467.000249&team=T4ALJRY56",
+  "msg": "1533299467.000249",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 15:31:11:534] info: Store: FOREGROUND_APP
+[08/03/18, 15:31:13:749] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/03/18, 15:52:51:237] info: Store: FOREGROUND_APP
+[08/03/18, 16:14:45:698] info: Store: FOREGROUND_APP
+[08/03/18, 16:16:31:535] info: Store: FOREGROUND_APP
+[08/03/18, 16:46:41:433] info: Store: FOREGROUND_APP
+[08/03/18, 17:01:43:717] info: Store: FOREGROUND_APP
+[08/03/18, 17:04:14:753] info: Store: FOREGROUND_APP
+[08/03/18, 17:08:08:957] info: Store: FOREGROUND_APP
+[08/03/18, 17:12:17:907] info: Store: FOREGROUND_APP
+[08/03/18, 17:32:32:827] info: Store: FOREGROUND_APP
+[08/03/18, 17:32:35:651] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/03/18, 17:34:51:474] info: Store: FOREGROUND_APP
+[08/03/18, 17:34:53:051] info: Store: SELECT_CHANNEL DBXJWHSS1
+[08/03/18, 17:35:04:938] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/03/18, 17:35:05:328] info: Store: SELECT_CHANNEL DBV24V3LJ
+[08/03/18, 17:35:06:169] info: Store: SELECT_CHANNEL DC18WV9K5
+[08/03/18, 17:35:09:458] info: Store: SELECT_CHANNEL DBW23NN7R
+[08/03/18, 17:35:11:497] info: Store: SELECT_CHANNEL DBXJWHSS1
+[08/03/18, 17:35:11:889] info: Store: SELECT_CHANNEL DBUT11DGT
+[08/03/18, 17:35:13:440] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/03/18, 17:35:17:823] info: Store: SELECT_CHANNEL DBW3221ND
+[08/03/18, 17:35:21:392] info: Store: SELECT_CHANNEL DC25NH4N6
+[08/03/18, 17:35:25:050] info: Store: SELECT_CHANNEL DBW3221ND
+[08/03/18, 17:35:52:402] info: Store: FOREGROUND_APP
+[08/03/18, 17:36:07:902] info: Store: FOREGROUND_APP
+[08/03/18, 17:36:24:451] info: Store: FOREGROUND_APP
+[08/03/18, 17:36:31:459] info: Store: SELECT_CHANNEL DBW23NN7R
+[08/03/18, 17:51:48:081] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C3QSDAR-645a2f4c90d6-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "QRgXfqtkXn0XJlX",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533307907.000578&team=T4ALJRY56",
+  "msg": "1533307907.000578",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/03/18, 17:52:15:835] info: Store: FOREGROUND_APP

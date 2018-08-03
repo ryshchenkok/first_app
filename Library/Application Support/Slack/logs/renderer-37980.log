@@ -1,0 +1,1133 @@
+[08/01/18, 01:33:20:487] info: ╔═══════════════════════════════════════════════════════════════════════╗
+[08/01/18, 01:33:20:488] info: ║      Slack 3.2.0, darwin 17.7.0 on x64 at 08/01/18, 01:33:20:484      ║
+[08/01/18, 01:33:20:488] info: ╚═══════════════════════════════════════════════════════════════════════╝
+[08/01/18, 01:33:20:578] info: Initializing local storage instance at path: /Users/kr/Library/Application Support/Slack/local-settings.json
+[08/01/18, 01:33:20:906] info: cld3::loadModule: loading cld3 module
+[08/01/18, 01:33:20:928] info: cld3Loader::loadModule: running environment is NODE
+[08/01/18, 01:33:20:928] info: cld3Loader::loadModule: constructed module object for runtime
+[08/01/18, 01:33:21:228] info: cld3Loader::initializeRuntime: successfully initialized module
+[08/01/18, 01:33:21:229] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[08/01/18, 01:33:21:242] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, spellchecker is not available
+[08/01/18, 01:33:21:253] info: TouchBarIntegration: Initializing TouchBar classes
+[08/01/18, 01:33:21:257] info: Main window preload script finished
+{
+  "readyTime": 7630.098815
+}
+[08/01/18, 01:33:23:717] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:853] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:854] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/01/18, 01:33:24:855] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:855] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T4ALJRY56",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[08/01/18, 01:33:24:959] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:961] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:961] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "webapp-loaded",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:24:962] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[08/01/18, 01:33:25:024] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 01:33:25:549] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V1"
+}
+[08/01/18, 01:33:30:253] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 01:33:37:625] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 02:59:34:504] info: Store: SET_UPDATE_STATUS check-for-update
+[08/01/18, 02:59:35:735] info: Store: SET_UPDATE_STATUS up-to-date
+[08/01/18, 08:55:51:001] info: Store: FOREGROUND_APP
+[08/01/18, 08:59:34:864] info: Store: SET_UPDATE_STATUS check-for-update
+[08/01/18, 08:59:36:031] info: Store: SET_UPDATE_STATUS up-to-date
+[08/01/18, 09:15:22:952] info: Store: FOREGROUND_APP
+[08/01/18, 09:18:19:301] info: Store: FOREGROUND_APP
+[08/01/18, 09:32:15:020] info: Store: FOREGROUND_APP
+[08/01/18, 09:39:25:401] info: Store: FOREGROUND_APP
+[08/01/18, 09:45:11:575] info: Store: FOREGROUND_APP
+[08/01/18, 09:45:19:932] info: Store: FOREGROUND_APP
+[08/01/18, 09:45:21:159] info: Store: SELECT_CHANNEL DBW3221ND
+[08/01/18, 09:45:27:065] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 09:50:40:747] info: Store: FOREGROUND_APP
+[08/01/18, 09:55:35:564] info: Store: FOREGROUND_APP
+[08/01/18, 09:59:42:358] info: Store: FOREGROUND_APP
+[08/01/18, 10:25:07:024] info: Store: FOREGROUND_APP
+[08/01/18, 10:29:17:990] info: Store: FOREGROUND_APP
+[08/01/18, 10:29:19:083] info: Store: SELECT_CHANNEL DBV544BHT
+[08/01/18, 10:29:26:564] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 10:59:10:246] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U5S7MTBGU-9cbbb453b2f1-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "ZDxWFMhy4RVyLjp",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533110350.000046&team=T4ALJRY56",
+  "msg": "1533110350.000046",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 10:59:13:121] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "C4C2U8DHV",
+  "messageId": "1533110350.000046",
+  "notificationId": "ZDxWFMhy4RVyLjp",
+  "teamId": "T4ALJRY56"
+}
+[08/01/18, 10:59:13:123] info: Store: SELECT_TEAM T4ALJRY56
+[08/01/18, 10:59:13:222] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/01/18, 10:59:13:850] error: Aug-1 10:59:13.849 file:FBNGXBP3J (slurpFilesFromMessagesModern) has reactions in local model, but we are upserting an object that does NOT have reactions, which seems suspicious
+[08/01/18, 10:59:23:772] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 11:28:24:024] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-UA42AGEQ2-ecc4889458c2-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "QqlOTXikX5nLVyo",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533112103.000371&team=T4ALJRY56",
+  "msg": "1533112103.000371",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 11:45:02:121] info: Store: FOREGROUND_APP
+[08/01/18, 11:45:24:333] info: Store: SELECT_CHANNEL C5WEWLR7C
+[08/01/18, 11:45:25:297] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/01/18, 11:45:28:635] info: Store: SELECT_CHANNEL DBV544BHT
+[08/01/18, 11:45:32:437] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 11:45:32:437] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 11:45:34:605] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 11:58:21:788] info: Store: FOREGROUND_APP
+[08/01/18, 12:30:55:054] info: Store: FOREGROUND_APP
+[08/01/18, 12:47:21:453] info: Store: FOREGROUND_APP
+[08/01/18, 12:47:23:119] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    145,
+    171
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/01/18, 12:47:59:965] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6P929MJT-g515909c90b3-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "MmP9uxsWl93gAg5",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533116879.000313&team=T4ALJRY56",
+  "msg": "1533116879.000313",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 12:51:15:724] info: Store: FOREGROUND_APP
+[08/01/18, 12:51:17:298] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/01/18, 12:51:23:168] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 12:51:31:478] info: Store: FOREGROUND_APP
+[08/01/18, 13:11:09:680] info: Store: FOREGROUND_APP
+[08/01/18, 13:11:11:350] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/01/18, 13:11:19:385] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 13:12:13:618] info: Store: FOREGROUND_APP
+[08/01/18, 13:12:14:981] info: Store: SELECT_CHANNEL DBW3221ND
+[08/01/18, 13:12:21:827] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 13:16:39:130] info: Store: FOREGROUND_APP
+[08/01/18, 13:16:40:699] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/01/18, 13:16:46:686] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 13:18:01:014] info: Store: FOREGROUND_APP
+[08/01/18, 13:18:45:858] info: Store: FOREGROUND_APP
+[08/01/18, 13:19:03:893] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JMSKNLD-c7e4de8db557-512",
+  "channel": "DBWGSGDQW",
+  "content": "[REDACTED]",
+  "id": "nV0zT6tZQzMM4lx",
+  "launchUri": "slack://channel?id=DBWGSGDQW&message=1533118743.000260&team=T4ALJRY56",
+  "msg": "1533118743.000260",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 13:19:06:546] info: Store: FOREGROUND_APP
+[08/01/18, 13:19:21:868] info: Store: FOREGROUND_APP
+[08/01/18, 13:39:06:004] error: Aug-1 13:39:06.003 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4104: received goodbye from server
+[08/01/18, 14:39:01:126] info: Store: FOREGROUND_APP
+[08/01/18, 14:59:45:243] info: Store: SET_UPDATE_STATUS check-for-update
+[08/01/18, 14:59:46:479] info: Store: SET_UPDATE_STATUS up-to-date
+[08/01/18, 15:27:12:835] info: Store: FOREGROUND_APP
+[08/01/18, 15:29:47:422] info: Store: FOREGROUND_APP
+[08/01/18, 15:29:48:989] info: Store: SELECT_CHANNEL DBW3221ND
+[08/01/18, 15:29:54:887] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 15:30:03:940] info: Store: FOREGROUND_APP
+[08/01/18, 15:30:05:206] info: Store: SELECT_CHANNEL DBV544BHT
+[08/01/18, 15:30:13:994] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 15:35:54:378] info: Store: FOREGROUND_APP
+[08/01/18, 16:04:44:887] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "KkN6s4uADr4JJ87",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1533128684.000367&team=T4ALJRY56",
+  "msg": "1533128684.000367",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 16:07:52:335] info: Store: FOREGROUND_APP
+[08/01/18, 16:07:54:071] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/01/18, 16:08:00:814] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 16:13:18:460] info: Store: FOREGROUND_APP
+[08/01/18, 16:13:20:127] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    145,
+    171
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/01/18, 16:13:24:546] info: Store: SELECT_CHANNEL GC0DE316J
+[08/01/18, 16:13:30:442] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 16:15:36:310] info: Store: FOREGROUND_APP
+[08/01/18, 17:32:54:436] info: Store: FOREGROUND_APP
+[08/01/18, 17:33:12:049] info: Store: SELECT_CHANNEL DBV24V3LJ
+[08/01/18, 17:33:15:215] info: Store: SELECT_CHANNEL DBVUBGBFF
+[08/01/18, 17:33:17:982] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:18:535] info: Store: SELECT_CHANNEL DBV15HC83
+[08/01/18, 17:33:20:535] info: Store: SELECT_CHANNEL DBVUBGBFF
+[08/01/18, 17:33:21:160] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:24:546] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:25:569] info: Store: SELECT_CHANNEL DBW3221ND
+[08/01/18, 17:33:26:222] info: Store: SELECT_CHANNEL DBV544BHT
+[08/01/18, 17:33:26:455] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:27:842] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/01/18, 17:33:28:320] info: Store: SELECT_CHANNEL DBW23NN7R
+[08/01/18, 17:33:29:587] info: Store: SELECT_CHANNEL DBV24V3LJ
+[08/01/18, 17:33:30:696] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/01/18, 17:33:31:535] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:32:181] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:33:759] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:34:275] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:35:548] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:36:364] info: Store: SELECT_CHANNEL GC0DE316J
+[08/01/18, 17:33:36:607] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:37:240] info: Store: SELECT_CHANNEL DBXJWHSS1
+[08/01/18, 17:33:39:135] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/01/18, 17:33:43:096] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:45:137] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:33:47:148] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/01/18, 17:53:20:557] info: Store: FOREGROUND_APP
+[08/01/18, 18:00:14:599] info: Store: FOREGROUND_APP
+[08/01/18, 20:55:26:322] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4GLY61D5-b3ed0f3aeadb-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "Nng8hPCRMlwOqWD",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533146126.000135&team=T4ALJRY56",
+  "msg": "1533146126.000135",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/01/18, 21:00:05:619] info: Store: SET_UPDATE_STATUS check-for-update
+[08/01/18, 21:00:06:959] info: Store: SET_UPDATE_STATUS up-to-date
+[08/02/18, 01:41:59:003] error: Aug-2 01:41:59.002 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4104: received goodbye from server
+[08/02/18, 03:00:25:884] info: Store: SET_UPDATE_STATUS check-for-update
+[08/02/18, 03:00:27:227] info: Store: SET_UPDATE_STATUS up-to-date
+[08/02/18, 08:58:24:890] info: Store: FOREGROUND_APP
+[08/02/18, 08:58:27:005] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 08:58:32:859] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 08:59:11:725] info: Store: FOREGROUND_APP
+[08/02/18, 09:00:36:234] info: Store: SET_UPDATE_STATUS check-for-update
+[08/02/18, 09:00:37:500] info: Store: SET_UPDATE_STATUS up-to-date
+[08/02/18, 09:05:05:945] info: Store: FOREGROUND_APP
+[08/02/18, 09:20:56:968] info: Store: FOREGROUND_APP
+[08/02/18, 09:23:05:133] info: Store: FOREGROUND_APP
+[08/02/18, 09:23:20:655] info: Store: SELECT_CHANNEL DBW3221ND
+[08/02/18, 09:23:26:541] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 09:23:38:102] info: Store: FOREGROUND_APP
+[08/02/18, 09:23:39:888] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/02/18, 09:23:45:795] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 09:23:57:928] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/02/18, 09:23:58:475] info: Store: SELECT_CHANNEL DBWGSGDQW
+[08/02/18, 09:24:05:240] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 09:24:06:001] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 09:46:06:686] info: Store: FOREGROUND_APP
+[08/02/18, 10:08:38:414] info: Store: FOREGROUND_APP
+[08/02/18, 10:14:17:923] info: Store: FOREGROUND_APP
+[08/02/18, 10:14:19:227] info: Store: SELECT_CHANNEL GC156TD52
+[08/02/18, 10:14:25:041] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 10:14:55:866] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 10:14:56:289] info: Store: SELECT_CHANNEL GC156TD52
+[08/02/18, 10:15:01:738] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 10:15:02:231] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 10:15:18:964] info: Store: FOREGROUND_APP
+[08/02/18, 10:15:41:323] info: Store: FOREGROUND_APP
+[08/02/18, 10:17:53:842] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C9CMQ13-gcd30adfae9a-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "KkN6sBFADrDwjMw",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194273.000231&team=T4ALJRY56",
+  "msg": "1533194273.000231",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:18:04:507] info: Store: FOREGROUND_APP
+[08/02/18, 10:18:35:168] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4CJ1JL12-8cd39142922b-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "5EkWhRH2rVrJB31",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194314.000324&team=T4ALJRY56",
+  "msg": "1533194314.000324",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:18:37:025] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "GC156TD52",
+  "messageId": "1533194314.000324",
+  "notificationId": "5EkWhRH2rVrJB31",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 10:18:37:026] info: Store: SELECT_TEAM T4ALJRY56
+[08/02/18, 10:19:38:003] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C9CMQ13-gcd30adfae9a-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "87n9hBIMQKQAR7q",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194377.000273&team=T4ALJRY56",
+  "msg": "1533194377.000273",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:20:32:978] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4CJ1JL12-8cd39142922b-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "77mAh2SNgPgzokA",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194432.000220&team=T4ALJRY56",
+  "msg": "1533194432.000220",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:21:05:877] info: Store: FOREGROUND_APP
+[08/02/18, 10:23:15:495] info: Store: FOREGROUND_APP
+[08/02/18, 10:25:38:145] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4G04V0US-g21a6edd858e-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "MmP9ujTWl9lmAgl",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194738.000017&team=T4ALJRY56",
+  "msg": "1533194738.000017",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:25:41:441] info: Store: FOREGROUND_APP
+[08/02/18, 10:25:59:745] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-UA3E4APH7-e97111818d3d-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "A7zmhMUYxJxgVvW",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533194759.000187&team=T4ALJRY56",
+  "msg": "1533194759.000187",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:28:21:026] info: Store: FOREGROUND_APP
+[08/02/18, 10:28:49:115] info: Store: FOREGROUND_APP
+[08/02/18, 10:40:17:169] info: Store: FOREGROUND_APP
+[08/02/18, 10:40:50:977] info: Store: FOREGROUND_APP
+[08/02/18, 10:54:08:758] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "DC18WV9K5",
+  "content": "[REDACTED]",
+  "id": "v7yjh0cAGgmzBVn",
+  "launchUri": "slack://channel?id=DC18WV9K5&message=1533196448.000248&team=T4ALJRY56",
+  "msg": "1533196448.000248",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:56:11:955] info: Store: FOREGROUND_APP
+[08/02/18, 10:56:13:735] info: Store: SELECT_CHANNEL DC18WV9K5
+[08/02/18, 10:56:19:649] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 10:56:44:313] info: Store: FOREGROUND_APP
+[08/02/18, 10:56:53:748] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "DC18WV9K5",
+  "content": "[REDACTED]",
+  "id": "rNrYhNfyW6nj2oN",
+  "launchUri": "slack://channel?id=DC18WV9K5&message=1533196613.000267&team=T4ALJRY56",
+  "msg": "1533196613.000267",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:56:56:165] info: Store: FOREGROUND_APP
+[08/02/18, 10:57:27:048] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1E47GS-6910865a716b-512",
+  "channel": "DC18WV9K5",
+  "content": "[REDACTED]",
+  "id": "A7zmh7hYxJDQDzN",
+  "launchUri": "slack://channel?id=DC18WV9K5&message=1533196646.000338&team=T4ALJRY56",
+  "msg": "1533196646.000338",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 10:59:08:626] info: Store: FOREGROUND_APP
+[08/02/18, 11:02:45:577] info: Store: FOREGROUND_APP
+[08/02/18, 11:13:25:711] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "Nng8hXiRMlKPRmq",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197605.000136&team=T4ALJRY56",
+  "msg": "1533197605.000136",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:13:31:094] info: Store: FOREGROUND_APP
+[08/02/18, 11:13:32:458] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/02/18, 11:13:38:336] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 11:14:08:536] info: Store: FOREGROUND_APP
+[08/02/18, 11:14:36:835] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "xNAlhMswK0rBZJ7",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197676.000157&team=T4ALJRY56",
+  "msg": "1533197676.000157",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:14:38:679] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "CC2DW6X0X",
+  "messageId": "1533197676.000157",
+  "notificationId": "xNAlhMswK0rBZJ7",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 11:14:38:683] info: Store: SELECT_TEAM T4ALJRY56
+[08/02/18, 11:15:24:229] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "JjMPsXtLjmx7BnW",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197724.000047&team=T4ALJRY56",
+  "msg": "1533197724.000047",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:15:29:763] info: Store: FOREGROUND_APP
+[08/02/18, 11:16:33:172] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4S90BGCS-e35cd2d74032-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "yOBmsguRJgoqgWn",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197792.000353&team=T4ALJRY56",
+  "msg": "1533197792.000353",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:17:07:658] info: Store: FOREGROUND_APP
+[08/02/18, 11:17:40:570] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "ZDxWF3Cy4R5ZK1G",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533197860.000147&team=T4ALJRY56",
+  "msg": "1533197860.000147",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:17:45:901] info: Store: FOREGROUND_APP
+[08/02/18, 11:18:12:995] info: Store: FOREGROUND_APP
+[08/02/18, 11:29:12:465] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C1PPVA6-gdb31c304b0c-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "E7EPhYFPvklEyw7",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533198552.000130&team=T4ALJRY56",
+  "msg": "1533198552.000130",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:29:15:665] info: Store: FOREGROUND_APP
+[08/02/18, 11:29:17:460] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 11:29:23:385] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 11:31:26:023] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4S90BGCS-e35cd2d74032-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "B7AnhnHjwpxZq6n",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533198685.000330&team=T4ALJRY56",
+  "msg": "1533198685.000330",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:31:31:361] info: Store: FOREGROUND_APP
+[08/02/18, 11:31:32:736] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/02/18, 11:31:38:672] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 11:38:16:639] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "PpkYTnIjORKYwrA",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533199096.000208&team=T4ALJRY56",
+  "msg": "1533199096.000208",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:38:19:475] info: Store: CLICK_NOTIFICATION
+{
+  "channel": "CC2DW6X0X",
+  "messageId": "1533199096.000208",
+  "notificationId": "PpkYTnIjORKYwrA",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 11:38:19:478] info: Store: SELECT_TEAM T4ALJRY56
+[08/02/18, 11:38:31:752] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "gVOkTES3gxRwLvj",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533199111.000231&team=T4ALJRY56",
+  "msg": "1533199111.000231",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:38:48:142] info: Store: FOREGROUND_APP
+[08/02/18, 11:47:05:058] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6R98FXK5-794d87ee301a-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "VyqNHnTJwNBDwJG",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533199624.000342&team=T4ALJRY56",
+  "msg": "1533199624.000342",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:47:08:192] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6R98FXK5-794d87ee301a-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "B7AnhxUjwpxmxRP",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533199628.000043&team=T4ALJRY56",
+  "msg": "1533199628.000043",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 11:47:09:892] info: Store: FOREGROUND_APP
+[08/02/18, 19:49:35:825] info: Store: FOREGROUND_APP
+[08/02/18, 19:54:08:692] info: Store: FOREGROUND_APP
+[08/02/18, 20:02:47:787] info: Store: FOREGROUND_APP
+[08/02/18, 20:05:08:181] info: Store: FOREGROUND_APP
+[08/02/18, 13:18:47:748] info: Store: FOREGROUND_APP
+[08/02/18, 13:42:32:527] error: Aug-2 13:42:32.527 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4104: received goodbye from server
+[08/02/18, 13:47:34:812] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U5J106NQP-a161787059ff-512",
+  "channel": "GC156TD52",
+  "content": "[REDACTED]",
+  "id": "Nng8hDcRMlnk6X5",
+  "launchUri": "slack://channel?id=GC156TD52&message=1533206854.000221&team=T4ALJRY56",
+  "msg": "1533206854.000221",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 13:47:37:371] info: Store: FOREGROUND_APP
+[08/02/18, 13:47:38:717] info: Store: SELECT_CHANNEL GC156TD52
+[08/02/18, 13:47:44:658] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 13:48:04:140] info: Store: FOREGROUND_APP
+[08/02/18, 13:58:40:880] info: Store: FOREGROUND_APP
+[08/02/18, 13:58:59:731] info: Store: FOREGROUND_APP
+[08/02/18, 14:27:22:951] info: Store: FOREGROUND_APP
+[08/02/18, 14:35:38:731] info: Store: FOREGROUND_APP
+[08/02/18, 14:50:51:016] info: Store: FOREGROUND_APP
+[08/02/18, 14:53:34:196] info: Store: FOREGROUND_APP
+[08/02/18, 14:53:36:338] info: Store: SELECT_CHANNEL DBV24V3LJ
+[08/02/18, 14:53:43:198] info: Store: FOREGROUND_APP
+[08/02/18, 14:53:43:465] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 14:54:41:529] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "gVOkT9f3gxlMvAl",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533210881.000090&team=T4ALJRY56",
+  "msg": "1533210881.000090",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 14:54:45:321] info: Store: FOREGROUND_APP
+[08/02/18, 14:54:47:042] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/02/18, 14:54:54:531] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 14:55:00:162] info: Store: FOREGROUND_APP
+[08/02/18, 14:55:02:347] info: Store: SELECT_CHANNEL DBV24V3LJ
+[08/02/18, 14:55:09:133] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 14:55:37:155] info: Store: FOREGROUND_APP
+[08/02/18, 14:56:12:256] info: Store: FOREGROUND_APP
+[08/02/18, 14:56:29:470] warn: SpellChecker::updateDetectedLanguage: cld could not detect language correctly, empty result returned
+[08/02/18, 15:00:39:461] info: Store: SET_UPDATE_STATUS check-for-update
+[08/02/18, 15:00:40:535] info: Store: SET_UPDATE_STATUS up-to-date
+[08/02/18, 15:03:02:190] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "YBwMhBhVmrXGmA8",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533211382.000021&team=T4ALJRY56",
+  "msg": "1533211382.000021",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:03:35:950] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "XAvMuoik1EyDr8j",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533211415.000292&team=T4ALJRY56",
+  "msg": "1533211415.000292",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:04:12:399] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4JLR0VFW-1c87cb026c55-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "LlOPh9smQYOPWAK",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533211452.000065&team=T4ALJRY56",
+  "msg": "1533211452.000065",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:04:37:121] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6R98FXK5-794d87ee301a-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "G7J9hltQ5B8pnKQ",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533211477.000010&team=T4ALJRY56",
+  "msg": "1533211477.000010",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:07:50:057] info: Store: FOREGROUND_APP
+[08/02/18, 15:07:51:597] info: Store: SELECT_CHANNEL CC2DW6X0X
+[08/02/18, 15:07:57:449] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 15:07:58:388] info: Store: ADD_WINDOW
+{
+  "id": 5,
+  "subType": "calls",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/02/18, 15:08:02:643] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:02:648] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:02:782] info: Store: ADD_WINDOW
+{
+  "id": 6,
+  "subType": "calls_mini_panel",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/02/18, 15:08:02:793] info: Store: ADD_WINDOW
+{
+  "id": 7,
+  "subType": "calls_cursors",
+  "teamId": "T4ALJRY56",
+  "type": "webapp"
+}
+[08/02/18, 15:08:02:793] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[08/02/18, 15:08:02:973] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:03:062] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:03:127] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:03:572] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:050] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:073] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:092] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:108] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:122] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:137] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:164] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:186] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:214] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:242] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:04:262] info: Signaling child from postMessage: 5
+[08/02/18, 15:08:21:738] info: Store: FOREGROUND_APP
+[08/02/18, 15:08:51:313] info: Store: FOREGROUND_APP
+[08/02/18, 15:09:33:194] info: Store: FOREGROUND_APP
+[08/02/18, 15:10:02:662] info: Store: FOREGROUND_APP
+[08/02/18, 15:10:41:904] info: Store: FOREGROUND_APP
+[08/02/18, 15:11:06:284] info: Signaling child from postMessage: 5
+[08/02/18, 15:11:07:096] info: Signaling child from postMessage: 5
+[08/02/18, 15:11:18:470] info: Store: FOREGROUND_APP
+[08/02/18, 15:12:15:573] info: Store: FOREGROUND_APP
+[08/02/18, 15:14:52:780] info: Store: FOREGROUND_APP
+[08/02/18, 15:15:18:330] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U69MKMHQX-ge0b0d5dce35-512",
+  "channel": "CC2DW6X0X",
+  "content": "[REDACTED]",
+  "id": "97o2h6uOyBMqJQk",
+  "launchUri": "slack://channel?id=CC2DW6X0X&message=1533212118.000045&team=T4ALJRY56",
+  "msg": "1533212118.000045",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:15:20:992] info: Store: FOREGROUND_APP
+[08/02/18, 15:15:48:805] info: Store: FOREGROUND_APP
+[08/02/18, 15:16:16:279] info: Store: FOREGROUND_APP
+[08/02/18, 15:16:23:196] info: Signaling child from postMessage: 5
+[08/02/18, 15:16:23:210] info: Signaling child from postMessage: 5
+[08/02/18, 15:16:23:223] info: Signaling child from postMessage: 5
+[08/02/18, 15:16:23:244] info: Signaling child from postMessage: 5
+[08/02/18, 15:16:23:272] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "LlOPhrCmQYOY187",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:16:33:456] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:13:436] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:30:836] info: Store: FOREGROUND_APP
+[08/02/18, 15:17:52:828] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:06:506] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:21:805] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:30:157] info: Store: FOREGROUND_APP
+[08/02/18, 15:18:37:689] info: Store: FOREGROUND_APP
+[08/02/18, 15:19:40:798] info: Store: FOREGROUND_APP
+[08/02/18, 15:23:37:817] info: Store: FOREGROUND_APP
+[08/02/18, 15:24:26:675] info: Store: FOREGROUND_APP
+[08/02/18, 15:24:49:921] info: Store: FOREGROUND_APP
+[08/02/18, 15:25:19:351] info: Store: FOREGROUND_APP
+[08/02/18, 15:28:29:252] info: Store: FOREGROUND_APP
+[08/02/18, 15:34:51:225] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:11:943] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:20:869] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    561,
+    238
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:24:540] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    94,
+    195
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:27:797] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    80,
+    239
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:35:43:694] info: Store: FOREGROUND_APP
+[08/02/18, 15:35:52:280] info: Store: FOREGROUND_APP
+[08/02/18, 15:36:13:772] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    77,
+    241
+  ],
+  "size": [
+    797,
+    608
+  ]
+}
+[08/02/18, 15:36:33:133] info: Store: FOREGROUND_APP
+[08/02/18, 15:36:56:838] info: Store: FOREGROUND_APP
+[08/02/18, 15:37:14:003] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "Wzr8IEFn4z9Wq4W",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:14:351] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "B7AnhqHjwpmVJDA",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:14:386] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "mVmETrI9jVnmn5L",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:16:583] info: Store: NEW_NOTIFICATION
+{
+  "channel": "",
+  "content": "[REDACTED]",
+  "id": "p6pzs8SGn3gwz23",
+  "msg": "",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 15:37:16:618] info: Signaling child from postMessage: 6
+[08/02/18, 15:37:17:094] info: Store: REMOVE_WINDOW 5
+[08/02/18, 15:37:17:095] info: Store: REMOVE_WINDOW 6
+[08/02/18, 15:37:17:095] info: Store: REMOVE_WINDOW 7
+[08/02/18, 16:02:57:844] info: Store: FOREGROUND_APP
+[08/02/18, 16:07:31:407] info: Store: FOREGROUND_APP
+[08/02/18, 16:43:34:855] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U9BJM8N1J-d88c3ab004cc-512",
+  "channel": "DBZ02HZ5Z",
+  "content": "[REDACTED]",
+  "id": "ZDxWFZTy4RpOYzn",
+  "launchUri": "slack://channel?id=DBZ02HZ5Z&message=1533217414.000396&team=T4ALJRY56",
+  "msg": "1533217414.000396",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 16:43:38:869] info: Store: FOREGROUND_APP
+[08/02/18, 16:43:39:320] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U9BJM8N1J-d88c3ab004cc-512",
+  "channel": "DBZ02HZ5Z",
+  "content": "[REDACTED]",
+  "id": "qXq2IqUEGoDK02n",
+  "launchUri": "slack://channel?id=DBZ02HZ5Z&message=1533217419.000125&team=T4ALJRY56",
+  "msg": "1533217419.000125",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 16:43:40:123] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/02/18, 16:43:46:022] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 16:44:03:821] warn: SpellChecker::updateDetectedLanguage: cld could not detect language correctly, empty result returned
+[08/02/18, 16:45:22:468] info: Store: FOREGROUND_APP
+[08/02/18, 16:49:31:070] info: Store: FOREGROUND_APP
+[08/02/18, 17:10:30:706] info: Store: FOREGROUND_APP
+[08/02/18, 17:20:20:095] info: Store: FOREGROUND_APP
+[08/02/18, 17:20:22:033] info: Store: SELECT_CHANNEL DC18WV9K5
+[08/02/18, 17:20:27:968] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 17:21:15:031] info: Store: FOREGROUND_APP
+[08/02/18, 17:21:16:654] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/02/18, 17:21:22:562] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 17:25:10:128] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C3QSDAR-645a2f4c90d6-512",
+  "channel": "C4BEHCR61",
+  "content": "[REDACTED]",
+  "id": "MmP9uwcWl9z3ppq",
+  "launchUri": "slack://channel?id=C4BEHCR61&message=1533219910.000028&team=T4ALJRY56",
+  "msg": "1533219910.000028",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 17:25:13:522] info: Store: FOREGROUND_APP
+[08/02/18, 17:25:15:370] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/02/18, 17:25:23:536] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/20/18, 17:26:22:615] error: Aug-20 17:26:22.614 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/20/18, 17:26:25:147] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[08/20/18, 17:26:25:148] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 17:40:03:904] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U4C3QSDAR-645a2f4c90d6-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "1zO9IQfXgkzNVNE",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533220803.000574&team=T4ALJRY56",
+  "msg": "1533220803.000574",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 17:44:23:960] info: Store: FOREGROUND_APP
+[08/02/18, 17:44:25:450] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 17:44:25:676] error: Aug-2 17:44:25.676 file:FBNGXBP3J (slurpFilesFromMessagesModern) has reactions in local model, but we are upserting an object that does NOT have reactions, which seems suspicious
+[08/02/18, 17:44:27:531] info: Store: SELECT_CHANNEL C4BEHCR61
+[08/02/18, 17:44:29:687] info: Store: SELECT_CHANNEL C5WEWLR7C
+[08/02/18, 17:44:30:068] info: Store: SELECT_CHANNEL C4C2U8DHV
+[08/02/18, 17:44:31:405] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 17:44:33:510] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 17:44:35:592] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 17:44:35:999] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 17:53:46:907] info: Store: FOREGROUND_APP
+[08/02/18, 17:53:49:295] info: Store: SELECT_CHANNEL DBZ02HZ5Z
+[08/02/18, 17:53:55:203] info: Couldn't get hint text from messages in channel: Failed to fetch recent messages
+[08/02/18, 18:23:25:175] info: Store: NEW_NOTIFICATION
+{
+  "avatarImage": "https://ca.slack-edge.com/T4ALJRY56-U6P929MJT-g515909c90b3-512",
+  "channel": "C4C2U8DHV",
+  "content": "[REDACTED]",
+  "id": "0yN9HGDhWEqYpZoo",
+  "launchUri": "slack://channel?id=C4C2U8DHV&message=1533223405.000070&team=T4ALJRY56",
+  "msg": "1533223405.000070",
+  "ssbFilename": "knock_brush.mp3",
+  "subtitle": "",
+  "teamId": "T4ALJRY56",
+  "title": "[REDACTED]"
+}
+[08/02/18, 19:58:04:871] error: Aug-2 19:58:04.871 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/02/18, 19:58:27:801] error: Aug-2 19:58:27.801 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/02/18, 19:58:27:802] error: Aug-2 19:58:27.802 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/02/18, 19:58:50:670] error: Aug-2 19:58:50.669 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/02/18, 19:58:50:670] error: Aug-2 19:58:50.670 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/02/18, 19:59:15:823] error: Aug-2 19:59:15.823 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/02/18, 19:59:15:823] error: Aug-2 19:59:15.823 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/02/18, 19:59:24:555] error: Aug-2 19:59:24.554 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/02/18, 19:59:44:891] error: Aug-2 19:59:44.891 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/02/18, 19:59:57:761] error: Aug-2 19:59:57.761 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/02/18, 20:00:30:091] error: Aug-2 20:00:30.090 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/02/18, 20:00:30:091] error: Aug-2 20:00:30.091 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/02/18, 20:00:45:821] error: Aug-2 20:00:45.821 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/02/18, 20:00:58:943] error: Aug-2 20:00:58.943 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4106: received an "error" message from socket
+[08/02/18, 20:00:58:948] error: 2018/8/2 20:00:58.948 logging error: {"subtype":"flannel_start_error","message":"Unexpected start error: Socket URL has expired","stack":"Error: Unexpected start error: Socket URL has expired\n    at e (https://a.slack-edge.com/bv1-4/rollup-core_required_ts.6c3e7e604d7728b2b58a.min.js:1:21879)\n    at t.execute (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:2658247)\n    at o.dispatch (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:2660669)\n    at dispatch (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:2659046)\n    at https://a.slack-edge.com/bv1-4/modern.vendor.55b96c9922a38d86f982.min.js:1:853\n    at l (https://a.slack-edge.com/bv1-4/application.705c447fdcf73cd6844c.min.js:1:787469)\n    at https://a.slack-edge.com/bv1-4/application.705c447fdcf73cd6844c.min.js:1:2580850\n    at Array.forEach (<anonymous>)\n    at https://a.slack-edge.com/bv1-4/application.705c447fdcf73cd6844c.min.js:1:2580619\n    at i (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:2005699)\n    at S._settlePromiseFromHandler (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:1978184)\n    at S._settlePromise (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:1979036)\n    at S._settlePromiseCtx (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:1979576)\n    at i._drainQueue (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:1936750)\n    at i._drainQueues (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:1936803)\n    at drainQueues (https://a.slack-edge.com/bv1-4/rollup-core_required_libs.eb77e435d1ecfa8fa776.min.js:1:1935093)"}
+[08/02/18, 20:01:22:681] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_132.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-03-01/148112329525_7500b2127e471fc80b6b_original.png"
+  },
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 20:01:22:683] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T4ALJRY56"
+}
+[08/02/18, 21:00:51:937] info: Store: SET_UPDATE_STATUS check-for-update
+[08/02/18, 21:00:53:148] info: Store: SET_UPDATE_STATUS up-to-date
+[08/02/18, 23:47:13:657] error: Aug-2 23:47:13.656 file:FBNGXBP3J (slurpFilesFromMessagesModern) has reactions in local model, but we are upserting an object that does NOT have reactions, which seems suspicious
+[08/03/18, 01:02:31:318] error: Aug-3 01:02:31.317 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/03/18, 01:02:53:302] error: Aug-3 01:02:53.302 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/03/18, 01:02:53:302] error: Aug-3 01:02:53.302 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/03/18, 01:03:03:070] error: Aug-3 01:03:03.069 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/03/18, 01:03:28:021] error: Aug-3 01:03:28.021 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/03/18, 01:03:28:021] error: Aug-3 01:03:28.021 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/03/18, 01:03:37:966] error: Aug-3 01:03:37.966 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/03/18, 01:04:14:106] error: Aug-3 01:04:14.106 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/03/18, 01:04:14:107] error: Aug-3 01:04:14.107 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/03/18, 03:01:12:272] info: Store: SET_UPDATE_STATUS check-for-update
+[08/03/18, 03:01:13:685] info: Store: SET_UPDATE_STATUS up-to-date
+[08/03/18, 03:10:29:697] error: Aug-3 03:10:29.697 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/03/18, 03:10:51:537] error: Aug-3 03:10:51.536 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/03/18, 03:10:51:537] error: Aug-3 03:10:51.537 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/03/18, 03:11:01:021] error: Aug-3 03:11:01.021 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/03/18, 03:11:26:275] error: Aug-3 03:11:26.274 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/03/18, 03:11:26:275] error: Aug-3 03:11:26.275 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/03/18, 03:11:36:156] error: Aug-3 03:11:36.155 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4108: unexpected socket closure
+[08/03/18, 03:11:59:785] error: Aug-3 03:11:59.785 SOCKET-MANAGER (T4ALJRY56) Closing socket because we spent 20000 ms in fast_reconnecting state; giving up
+[08/03/18, 03:11:59:786] error: Aug-3 03:11:59.786 SOCKET-MANAGER (T4ALJRY56) Closing socket because #4107: client state machine got stuck
+[08/03/18, 03:58:07:800] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "page-will-navigate",
+  "teamId": "T4ALJRY56"
+}
+[08/03/18, 03:58:07:806] info: Window is unloading, window.desktop is no longer accessible

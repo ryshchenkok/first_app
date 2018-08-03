@@ -1,0 +1,43 @@
+754       
+From: =?utf-8?B?0JrQvtC90YHRgtCw0L3RgtC40L0g0KDRi9GJ0LXQvdC60L4=?= <kr@anadeainc.com>
+Content-Type: multipart/mixed;
+	boundary="Apple-Mail=_DF0543C1-1391-4EB0-84DE-5FFDACDDC2E1"
+Mime-Version: 1.0 (Mac OS X Mail 11.5 \(3445.9.1\))
+Subject: 
+X-Universally-Unique-Identifier: A2B4DC1C-B8CD-49AA-B58D-F31FB827742F
+Message-Id: <27E7DC90-4EB0-4BFA-B68D-13883C9003D7@anadeainc.com>
+Date: Wed, 1 Aug 2018 16:59:05 +0300
+To: vladimir.a.golub@metinvestholding.com
+
+
+--Apple-Mail=_DF0543C1-1391-4EB0-84DE-5FFDACDDC2E1
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+	filename=certificate.pdf
+Content-Type: application/pdf;
+	name=certificate.pdf;
+	x-unix-mode=0666
+X-Apple-Content-Length: 659885
+
+
+--Apple-Mail=_DF0543C1-1391-4EB0-84DE-5FFDACDDC2E1--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>26</integer>
+	<key>date-last-viewed</key>
+	<integer>1533132641</integer>
+	<key>date-received</key>
+	<integer>1533131945</integer>
+	<key>flags</key>
+	<integer>8623685633</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>4</integer>
+	</array>
+	<key>remote-id</key>
+	<string>37</string>
+</dict>
+</plist>

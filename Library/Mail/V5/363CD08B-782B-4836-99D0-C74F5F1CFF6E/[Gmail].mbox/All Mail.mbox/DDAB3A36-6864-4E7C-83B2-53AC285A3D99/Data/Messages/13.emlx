@@ -1,0 +1,159 @@
+8452      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a0c:81f4:0:0:0:0:0 with SMTP id 49-v6csp1434645qve;
+        Mon, 23 Jul 2018 07:30:26 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpd2myT8fXidja1m8GQm37IbeFUUKYX5EwyXY2Fe4ibivgG8TzerC2bQS9osNwuH+HIIwzbn
+X-Received: by 2002:a37:58c3:: with SMTP id m186-v6mr11694667qkb.119.1532356226605;
+        Mon, 23 Jul 2018 07:30:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532356226; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KlRSVAzozOhuX2RUc5PQWSE/Ud7o7fzUdbBfqFytoIFUgEETagec3lmIsSQyU5s1F5
+         RdpheKkg9mySvZRt7t+oIiq65P6cPqab5gwtKj37fXrzOy8VfJ3V5o1CUVNLrHUmR7n7
+         FbUdLMBp/DGEIrkF6n66U45bAuWasBURpm5c4uxXlUhNIOyOoS91DqFImxe7lzUrc49S
+         u3C/CR36X2BW00c58cSQGxIm1kPvVobaNozzgaJDkSDmxx+H9Wu/NdHMmp/aYZYCkufP
+         QMYG7oKLNsSf4DUyrdTuWBKPFWAGQ3zv29AOIfLIL9VFkwjIokfYWJlQNfzsO3t5eWGV
+         N9Jw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=hDsCKg1NwnWaJs+X6ig2kNIgNcGBc73MPSJxwh5cmWE=;
+        b=0/myL4IR8N5l9QoRKvc2rJE/Wjg0IweCnlHCdCUxuBSobcZMs9jZlAEaAGDOmuJNEP
+         Dg5YXcnhs/GHmx3Vq2Ht52m6gT4Lqww/GykJyamsZ+5FSxqZW9lEhRGpAdT9OztBgAf1
+         Sr/yg6G7QuNTLpC0oi39O6VGsmRVyp1fb5vUKTYkfRqZwmkr1gbhvn4DKTwrV4FviG1+
+         Bv5Ru5saKw5WCY/kHxUiHrWRA9ySICOF0pUcOMpas6q5LbHBuudMmsb1XxWWJjiuf9h/
+         Vs0QzUkk6V6hzsLKO+el8J9ipk2B+PLPtqPPKsGI4Axy2A2PS9boLYHpxpoXECAIn+6u
+         0CbA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@turbinehq.com header.s=s1 header.b=NnX2Yrjx;
+       spf=pass (google.com: domain of bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com designates 167.89.89.152 as permitted sender) smtp.mailfrom="bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com"
+Return-Path: <bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com>
+Received: from o1.email.turbinehq.com ([167.89.89.152])
+        by mx.google.com with ESMTPS id b184-v6si500425qkd.69.2018.07.23.07.30.26
+        for <kr@anadeainc.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);
+        Mon, 23 Jul 2018 07:30:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com designates 167.89.89.152 as permitted sender) client-ip=167.89.89.152;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@turbinehq.com header.s=s1 header.b=NnX2Yrjx;
+       spf=pass (google.com: domain of bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com designates 167.89.89.152 as permitted sender) smtp.mailfrom="bounces+2663986-ba43-kr=anadeainc.com@email.turbinehq.com"
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=turbinehq.com; 
+	h=from:to:subject:mime-version:content-type:content-transfer-encoding; 
+	s=s1; bh=jDHaSZmpQM3hcIiLp1DQlI2IqDI=; b=NnX2YrjxPwnRqmdo2dNOjbs
+	083uyyvvSQLyPIrtTdn9njRy1WShNXFz+rH+0WySuMWsoc3HMCMXCgtFDyGggzHa
+	o4WKl3W8syoVnEnaF6wuW22OQHw1RvabECBCDuSWOj1W1tN6oXbc/dxzBIYHcz1R
+	rb6/GjCXfgjVPPtzVIzE=
+Received: by filter0036p3iad2.sendgrid.net with SMTP id filter0036p3iad2-27137-5B55E681-92
+        2018-07-23 14:30:25.791861804 +0000 UTC m=+486451.522658280
+Received: from turbinehq.com (cdn.turbinehq.com [188.166.30.195])
+	by ismtpd0003p1lon1.sendgrid.net (SG) with ESMTP id _xNAK9GXQReFzD-vhWUT4A
+	for <kr@anadeainc.com>; Mon, 23 Jul 2018 14:30:25.563 +0000 (UTC)
+Date: Mon, 23 Jul 2018 14:30:25 +0000 (UTC)
+From: anahoret <noreply@anahoret.turbinehq.com>
+To: kr@anadeainc.com
+Message-ID: <5b55e68172ef0_51883f90f226076011649379@cdn.turbinehq.com.mail>
+Subject: [Turbine] Create your own account on Turbine
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b55e68172aa0_51883f90f226076011649257";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SG-EID: ye4MbRmuRQV19pTOoxljgV3ahpeU1DpSfcOUXIBm+bE2uec2gwhIqqpLtfA5mlszoy3iE5BXbOK4na
+ pLoNOYD4AK1qWRqcgLOEaKbMwlj+Vm6C33+1NndnrHPFP/vJY1dKEdINwCYyFaFcI37nuqmVmx4q+s
+ RRwO+1zcsjKplhyDsLHDtiECQLtmMPeCqSB3XoXl0j4m+ZASL2hP3Nff8jadytD+HhYd7DabzVVGht
+ A=
+
+----==_mimepart_5b55e68172aa0_51883f90f226076011649257
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Logo ( https://u2663986.ct.sendgrid.net/wf/click?upn=VDtJYJchT4xDpExYhzr5rvoesk-2BsfUWoTU0gVA6KsFwXWJK60lPV4n2yzLmyWAge_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAKOjxiYxh3xhNiUfth1Ah4dsVL3raxKQv8Nhn3GQF0JNjpz22TgL79-2FY2K-2BYryrTUYaqLjOsRY-2F9z7B5yAIbDDQQSkMdb9N80xZI1JXsDIBiAR0n0t6wczmU7NWxJpCcmCk6YSNW32pLQqptsgWVEUGK6HniuO6XHkax-2FPPTAW7Q-3D-3D )
+
+Hello Konstantin Ryshchenko.
+
+Your employer, anahoret, uses Turbine, an online system for
+managing paperwork, such as time off, purchase and expense
+requests.
+
+They have set up an account for you.
+
+To activate it, please click on the link below and set your
+password.
+
+Get started with Turbine. 
+( https://u2663986.ct.sendgrid.net/wf/click?upn=22UTdCp8tqNbkKKwgK-2BdKUVjvMifV62EQrW5vIQtIGAzzY-2F9N2QbdCkZDOd-2BVs14uRIBPYDbxRub9Ni9Cq-2F7aQ-2Bl4NotmFOwtvenG21kDVc7kV4e5EZT7XHdxb7ZCVBp_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAKOjxiYxh3xhNiUfth1Ah4cXooj6-2BNWXeVcHGGJsSNpGfM4wWaWt8px7LloZu46zcfuvj0yGJuh8DPOmREMM-2FkSQOFhdoux3daewVHTrDdV0-2BreoCZjxnKk7HTmHhXTc-2Fidp8aLXVItaFcotfiL1cNoHO-2BPzxjriTSa-2FCoZrePxw-3D-3D )
+
+
+If you have any questions, please talk to your Turbine
+administrator..
+----==_mimepart_5b55e68172aa0_51883f90f226076011649257
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  </head>
+  <body style=";" bgcolor="#6B7E8D">
+<style type="text/css">
+body {
+background: #6B7E8D;
+}
+</style>
+    <div class="all" style="background: #6B7E8D;">
+      <div class="header" style="background: #4A5761; font-family: Arial, Tahoma, Verdana, sans-serif; margin: .5em; overflow: hidden; padding: .5em;">
+        <a class="logo" href="https://u2663986.ct.sendgrid.net/wf/click?upn=VDtJYJchT4xDpExYhzr5rvoesk-2BsfUWoTU0gVA6KsFwXWJK60lPV4n2yzLmyWAge_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAKOjxiYxh3xhNiUfth1Ah4v03a0V9Btnjc-2FdJ6q0owjtMthokRNi1cDtiQ5zpAnzHtbyxDby841ANYESLteGsZHxDGx085MkMPIPayc2r7RdJOWeWRA70JZtj5lxx868uKmuIPPrV9e3h9bf-2FQhaAHz82qmAQ6mZkTo-2Bn5d2y-2BEA-3D-3D">
+  <img src="https://cdn.turbinehq.com/assets/mailers/logo-241fdfcf3d7361ad8077c8c5d6fa69cf150b1da6600df9b5963e9c384296af4c.png" alt="Logo">
+</a>
+      </div>
+
+      <div class="content" style="background: #F3F3F3; margin: .5em; padding: .5em 1em 1em;">
+        <p>Hello <strong>Konstantin Ryshchenko</strong>.</p>
+<p>Your employer, <strong>anahoret</strong>, uses Turbine, an online system for managing paperwork, such as time off, purchase and expense requests.</p>
+<p>They have set up an account for you.</p>
+<p>To activate it, please click on the link below and set your password.</p>
+<a href="https://u2663986.ct.sendgrid.net/wf/click?upn=22UTdCp8tqNbkKKwgK-2BdKUVjvMifV62EQrW5vIQtIGAzzY-2F9N2QbdCkZDOd-2BVs14uRIBPYDbxRub9Ni9Cq-2F7aQ-2Bl4NotmFOwtvenG21kDVc7kV4e5EZT7XHdxb7ZCVBp_FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAKOjxiYxh3xhNiUfth1Ah4VQ33-2FposzQ0BATjLOeQieusLWTeWeIFLvLw3hASGp1rlUr-2FKUmwhHhUusbrPEXpOGMjaXf7oUsbD0KpF5Yf2qUvLMLZhTkcTBXVGQIM-2BkTr990Z3PB9lbw9Cy2a5GW1DtwSLrIBC-2FSwHT54KXAaTgA-3D-3D" style="color: #6689A6;">Get started with Turbine.</a>
+
+<p>
+  If you have any questions, please talk to your Turbine administrator..
+</p>
+
+      </div>
+
+      <div class="footer" style="color: #ffffff; font-size: .8em; margin: .5em; padding: .5em;">
+        
+      </div>
+    </div>
+  
+<img src="https://u2663986.ct.sendgrid.net/wf/open?upn=FO1fx6FNV7xPXU-2F7y2X05O9XZhJi12H-2FH1xhLh1VTvAKOjxiYxh3xhNiUfth1Ah443RvXxVHbyixUSIYbqdmc9gu5UdDVvhyNXwg5aVKhQv2rSfo9vfOkor2Rp9LkkhtgzTDAJ6PzcbZ3M6LozJdfnnvR4IbuSHVyvbNILfsp0nm4BhoD845ddRhZNSGUduAcMwyTYPRT-2BPQYupnmwwVPZXGrKKAkgYIalpSpnLifOM-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+----==_mimepart_5b55e68172aa0_51883f90f226076011649257--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>11</integer>
+	<key>date-last-viewed</key>
+	<integer>1532530332</integer>
+	<key>date-received</key>
+	<integer>1532356226</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+	</array>
+	<key>remote-id</key>
+	<string>17</string>
+</dict>
+</plist>

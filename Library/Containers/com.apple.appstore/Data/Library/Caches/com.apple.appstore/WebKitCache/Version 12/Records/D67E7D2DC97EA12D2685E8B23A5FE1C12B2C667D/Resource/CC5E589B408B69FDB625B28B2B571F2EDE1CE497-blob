@@ -1,0 +1,633 @@
+
+  
+  
+<div class='customer-ratings'>
+  <h4>Customer Ratings</h4>
+  <div class="ratings-container">
+    <div class="histogram-container">
+      
+      
+<div class="ratings-histogram">
+  <a href="#" aria-label='5 stars, Summary rating:'>Summary rating:</a>
+
+  
+    <div class='rating' role='img' tabindex='-1' aria-label='5 stars, 67 Ratings'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span></div><span class="rating-count">67 Ratings</span>
+</div>
+
+  
+
+  <div class="vote" role="text" aria-label='5 stars, 63 ratings'>
+    <div class='stars' role='img' tabindex='-1' aria-label='5 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span></div></div>
+
+    <div class="graph">
+      <span class="bar" style="width: 100%;"></span>
+    </div>
+    <span class="total">63</span>
+  </div>
+
+  <div class="vote" role="text" aria-label='4 stars, 1 rating'>
+    <div class='stars' role='img' tabindex='-1' aria-label='4 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star ghost">&nbsp;</span></div></div>
+
+    <div class="graph">
+      <span class="bar" style="width: 1%;"></span>
+    </div>
+    <span class="total">1</span>
+  </div>
+
+  <div class="vote" role="text" aria-label='3 stars, 2 ratings'>
+    <div class='stars' role='img' tabindex='-1' aria-label='3 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star ghost">&nbsp;</span><span class="rating-star ghost">&nbsp;</span></div></div>
+
+    <div class="graph">
+      <span class="bar" style="width: 3%;"></span>
+    </div>
+    <span class="total">2</span>
+  </div>
+
+  <div class="vote" role="text" aria-label='2 stars, 0 ratings'>
+    <div class='stars' role='img' tabindex='-1' aria-label='2 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star ghost">&nbsp;</span><span class="rating-star ghost">&nbsp;</span><span class="rating-star ghost">&nbsp;</span></div></div>
+
+    <div class="graph">
+      <span class="bar" style="width: 0%;"></span>
+    </div>
+    <span class="total">0</span>
+  </div>
+
+  <div class="vote" role="text" aria-label='1 star, 1 rating'>
+    <div class='stars' role='img' tabindex='-1' aria-label='1 star'><div><span class="rating-star">&nbsp;</span><span class="rating-star ghost">&nbsp;</span><span class="rating-star ghost">&nbsp;</span><span class="rating-star ghost">&nbsp;</span><span class="rating-star ghost">&nbsp;</span></div></div>
+
+    <div class="graph">
+      <span class="bar" style="width: 1%;"></span>
+    </div>
+    <span class="total">1</span>
+  </div>
+
+</div>
+
+      
+        
+      
+      
+
+      
+    </div>
+
+    <div class="rating-widget-container">
+      <div rating-url='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/userRateContent?id=919472673&displayable-kind=30' class="rate-stars"><h5 class="rating-label">Rate this application:</h5><div role=""><span star-count="1" role="radio" aria-checked="false" aria-label="rate 1 star, hate it"></span><span star-count="2" role="radio" aria-checked="false" aria-label="rate 2 stars, don't like it"></span><span star-count="3" role="radio" aria-checked="false" aria-label="rate 3 stars, it's ok"></span><span star-count="4" role="radio" aria-checked="false" aria-label="rate 4 stars, it's good"></span><span star-count="5" role="radio" aria-checked="false" aria-label="rate 5 stars, it's great"></span></div><span class="rating-desc" aria-hidden="true"></span></div>
+
+      <div class="has-not-purchased">To rate this app, you must have purchased it from the Mac App Store.</div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+<div class="customer-reviews" >
+  <div class="title hidden"><h4>Write a Review</h4></div>
+  <div class="inline-review" content='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/writeUserReview?id=919472673&amp;displayable-kind=30'></div>
+  <div class="title">
+    <h4>Customer Reviews</h4>
+  </div>
+  
+    
+  
+
+  <div class="paginate all-reviews" goto-page-href='https://itunes.apple.com/ua/customer-reviews?displayable-kind=30&amp;id=919472673&amp;update=1'>
+  
+  <div class="write-a-review">
+    
+    <a href='#' class="write-a-review-link see-all">Write a Review</a>
+    <div class="has-not-purchased">To review this app, you must have purchased it from the Mac App Store.</div>
+  </div>
+  
+
+
+
+  <div class="controls-container">
+
+    
+    <div class="select"><label class="select">Sort By:<select name="sort">
+      <option value='1'>Most Helpful</option><option value='2'>Most Favourable</option><option value='3'>Most Critical</option><option value='4'>Most Recent</option>
+    </select></label></div>
+    
+
+    
+    <div class="pagination-controls">
+    </div>
+    
+
+  </div>
+
+  <div class="paginated-container">
+    <div class="paginated-content" page-number='1' sort-key='1' total-number-of-pages='1' pill-identifier="0">
+
+  
+    
+<div class="da-review customer-review">
+
+ <div class="review-header">
+  <div class="review-meta">
+   <h5>
+    <span class="customerReviewTitle">Does not understand pdf with forms</span>
+    <div class='rating' role='img' tabindex='-1' aria-label='3 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star ghost">&nbsp;</span><span class="rating-star ghost">&nbsp;</span></div></div>
+
+   </h5>
+   <span class="user-info">by
+    <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=318686577' class="reviewer">Khristina from Ukraine</a>
+     -
+     Version
+     1.1.1
+    
+    -
+     09 November 2015
+   </span>
+  </div>
+  <div class="review-see-all">
+   <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=318686577' class="see-all">
+   All Reviews by This User
+   </a>
+  </div>
+ </div>
+ <p class="content" data-text-truncate-lines="6">
+  Have pdf with forms. Reader shows only blank pages as preview does.
+ </p>
+ 
+ 
+ 
+ <div class="feedback">
+   <div class="helpful-wrapper">
+    
+     <div class="stats">0 
+      out of 
+      1
+      customers found this review helpful
+     </div>
+    
+    <div class="rate" reviewer-dsid='' content='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/rateUserReview?userReviewId=1284345312'>Was this review helpful? 
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='Yes'
+        class='helpful-vote' vote="1">Yes</a> |
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='No'
+        class='helpful-vote' vote="0">No</a>
+    </div>
+   </div>
+   <div class="report-a-concern" report-a-concern-fragment-url='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/reportAConcernFragment?userReviewId=1284345312'>
+    <a href="javascript:void(0)" oncontextmenu="return false;" class="report" alt='Report a Concern'>Report a Concern</a>
+   </div>
+ </div>
+</div>
+
+  
+    
+<div class="da-review customer-review">
+
+ <div class="review-header">
+  <div class="review-meta">
+   <h5>
+    <span class="customerReviewTitle">Good one</span>
+    <div class='rating' role='img' tabindex='-1' aria-label='5 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span></div></div>
+
+   </h5>
+   <span class="user-info">by
+    <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=422552146' class="reviewer">Vlad_Kru777</a>
+     -
+     Version
+     1.2
+    
+    -
+     18 April 2017
+   </span>
+  </div>
+  <div class="review-see-all">
+   <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=422552146' class="see-all">
+   All Reviews by This User
+   </a>
+  </div>
+ </div>
+ <p class="content" data-text-truncate-lines="6">
+  Like it. Thnx
+ </p>
+ 
+ 
+ 
+ <div class="feedback">
+   <div class="helpful-wrapper">
+    
+    <div class="rate" reviewer-dsid='' content='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/rateUserReview?userReviewId=1591967938'>Was this review helpful? 
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='Yes'
+        class='helpful-vote' vote="1">Yes</a> |
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='No'
+        class='helpful-vote' vote="0">No</a>
+    </div>
+   </div>
+   <div class="report-a-concern" report-a-concern-fragment-url='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/reportAConcernFragment?userReviewId=1591967938'>
+    <a href="javascript:void(0)" oncontextmenu="return false;" class="report" alt='Report a Concern'>Report a Concern</a>
+   </div>
+ </div>
+</div>
+
+  
+    
+<div class="da-review customer-review">
+
+ <div class="review-header">
+  <div class="review-meta">
+   <h5>
+    <span class="customerReviewTitle">Очень неплохо!</span>
+    <div class='rating' role='img' tabindex='-1' aria-label='5 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span></div></div>
+
+   </h5>
+   <span class="user-info">by
+    <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=330403051' class="reviewer">svkras</a>
+     -
+     Version
+     1.1.1
+    
+    -
+     13 August 2016
+   </span>
+  </div>
+  <div class="review-see-all">
+   <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=330403051' class="see-all">
+   All Reviews by This User
+   </a>
+  </div>
+ </div>
+ <p class="content" data-text-truncate-lines="6">
+  Очень неплохо! пожалуй лучшее из всего что есть
+ </p>
+ 
+ 
+ 
+ <div class="feedback">
+   <div class="helpful-wrapper">
+    
+     <div class="stats">3 
+      out of 
+      3
+      customers found this review helpful
+     </div>
+    
+    <div class="rate" reviewer-dsid='' content='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/rateUserReview?userReviewId=1432143803'>Was this review helpful? 
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='Yes'
+        class='helpful-vote' vote="1">Yes</a> |
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='No'
+        class='helpful-vote' vote="0">No</a>
+    </div>
+   </div>
+   <div class="report-a-concern" report-a-concern-fragment-url='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/reportAConcernFragment?userReviewId=1432143803'>
+    <a href="javascript:void(0)" oncontextmenu="return false;" class="report" alt='Report a Concern'>Report a Concern</a>
+   </div>
+ </div>
+</div>
+
+  
+    
+<div class="da-review customer-review">
+
+ <div class="review-header">
+  <div class="review-meta">
+   <h5>
+    <span class="customerReviewTitle">язык программы</span>
+    <div class='rating' role='img' tabindex='-1' aria-label='5 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span></div></div>
+
+   </h5>
+   <span class="user-info">by
+    <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=499885546' class="reviewer">gartval</a>
+     -
+     Version
+     1.2
+    
+    -
+     07 February 2017
+   </span>
+  </div>
+  <div class="review-see-all">
+   <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=499885546' class="see-all">
+   All Reviews by This User
+   </a>
+  </div>
+ </div>
+ <p class="content" data-text-truncate-lines="6">
+  не могу установить русский язык программы
+ </p>
+ 
+ 
+ 
+ <div class="feedback">
+   <div class="helpful-wrapper">
+    
+     <div class="stats">1 
+      out of 
+      4
+      customers found this review helpful
+     </div>
+    
+    <div class="rate" reviewer-dsid='' content='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/rateUserReview?userReviewId=1539180066'>Was this review helpful? 
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='Yes'
+        class='helpful-vote' vote="1">Yes</a> |
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='No'
+        class='helpful-vote' vote="0">No</a>
+    </div>
+   </div>
+   <div class="report-a-concern" report-a-concern-fragment-url='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/reportAConcernFragment?userReviewId=1539180066'>
+    <a href="javascript:void(0)" oncontextmenu="return false;" class="report" alt='Report a Concern'>Report a Concern</a>
+   </div>
+ </div>
+</div>
+
+  
+
+</div>
+  </div>
+
+  <div class="footer">
+
+
+  
+  <div class="pagination-controls">
+  </div>
+  
+
+  </div>
+
+  </div>
+
+  
+  <div class="paginate current-reviews" goto-page-href='https://itunes.apple.com/ua/customer-reviews?displayable-kind=30&amp;id=919472673&amp;update=1&amp;appVersion=current'>
+  
+  <div class="write-a-review">
+    
+    <a href='#' class="write-a-review-link see-all">Write a Review</a>
+    <div class="has-not-purchased">To review this app, you must have purchased it from the Mac App Store.</div>
+  </div>
+  
+
+  <div class="controls-container">
+
+    
+    <div class="select"><label class="select">Sort By:<select name="sort">
+      <option value='1'>Most Helpful</option><option value='2'>Most Favourable</option><option value='3'>Most Critical</option><option value='4'>Most Recent</option>
+    </select></label></div>
+    
+
+    
+    <div class="pagination-controls">
+    </div>
+    
+
+  </div>
+
+  <div class="paginated-container">
+    <div class="paginated-content" page-number='1' sort-key='1' total-number-of-pages='1' pill-identifier="0">
+
+  
+    
+<div class="da-review customer-review">
+
+ <div class="review-header">
+  <div class="review-meta">
+   <h5>
+    <span class="customerReviewTitle">Does not understand pdf with forms</span>
+    <div class='rating' role='img' tabindex='-1' aria-label='3 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star ghost">&nbsp;</span><span class="rating-star ghost">&nbsp;</span></div></div>
+
+   </h5>
+   <span class="user-info">by
+    <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=318686577' class="reviewer">Khristina from Ukraine</a>
+     -
+     Version
+     1.1.1
+    
+    -
+     09 November 2015
+   </span>
+  </div>
+  <div class="review-see-all">
+   <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=318686577' class="see-all">
+   All Reviews by This User
+   </a>
+  </div>
+ </div>
+ <p class="content" data-text-truncate-lines="6">
+  Have pdf with forms. Reader shows only blank pages as preview does.
+ </p>
+ 
+ 
+ 
+ <div class="feedback">
+   <div class="helpful-wrapper">
+    
+     <div class="stats">0 
+      out of 
+      1
+      customers found this review helpful
+     </div>
+    
+    <div class="rate" reviewer-dsid='' content='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/rateUserReview?userReviewId=1284345312'>Was this review helpful? 
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='Yes'
+        class='helpful-vote' vote="1">Yes</a> |
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='No'
+        class='helpful-vote' vote="0">No</a>
+    </div>
+   </div>
+   <div class="report-a-concern" report-a-concern-fragment-url='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/reportAConcernFragment?userReviewId=1284345312'>
+    <a href="javascript:void(0)" oncontextmenu="return false;" class="report" alt='Report a Concern'>Report a Concern</a>
+   </div>
+ </div>
+</div>
+
+  
+    
+<div class="da-review customer-review">
+
+ <div class="review-header">
+  <div class="review-meta">
+   <h5>
+    <span class="customerReviewTitle">Good one</span>
+    <div class='rating' role='img' tabindex='-1' aria-label='5 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span></div></div>
+
+   </h5>
+   <span class="user-info">by
+    <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=422552146' class="reviewer">Vlad_Kru777</a>
+     -
+     Version
+     1.2
+    
+    -
+     18 April 2017
+   </span>
+  </div>
+  <div class="review-see-all">
+   <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=422552146' class="see-all">
+   All Reviews by This User
+   </a>
+  </div>
+ </div>
+ <p class="content" data-text-truncate-lines="6">
+  Like it. Thnx
+ </p>
+ 
+ 
+ 
+ <div class="feedback">
+   <div class="helpful-wrapper">
+    
+    <div class="rate" reviewer-dsid='' content='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/rateUserReview?userReviewId=1591967938'>Was this review helpful? 
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='Yes'
+        class='helpful-vote' vote="1">Yes</a> |
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='No'
+        class='helpful-vote' vote="0">No</a>
+    </div>
+   </div>
+   <div class="report-a-concern" report-a-concern-fragment-url='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/reportAConcernFragment?userReviewId=1591967938'>
+    <a href="javascript:void(0)" oncontextmenu="return false;" class="report" alt='Report a Concern'>Report a Concern</a>
+   </div>
+ </div>
+</div>
+
+  
+    
+<div class="da-review customer-review">
+
+ <div class="review-header">
+  <div class="review-meta">
+   <h5>
+    <span class="customerReviewTitle">Очень неплохо!</span>
+    <div class='rating' role='img' tabindex='-1' aria-label='5 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span></div></div>
+
+   </h5>
+   <span class="user-info">by
+    <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=330403051' class="reviewer">svkras</a>
+     -
+     Version
+     1.1.1
+    
+    -
+     13 August 2016
+   </span>
+  </div>
+  <div class="review-see-all">
+   <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=330403051' class="see-all">
+   All Reviews by This User
+   </a>
+  </div>
+ </div>
+ <p class="content" data-text-truncate-lines="6">
+  Очень неплохо! пожалуй лучшее из всего что есть
+ </p>
+ 
+ 
+ 
+ <div class="feedback">
+   <div class="helpful-wrapper">
+    
+     <div class="stats">3 
+      out of 
+      3
+      customers found this review helpful
+     </div>
+    
+    <div class="rate" reviewer-dsid='' content='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/rateUserReview?userReviewId=1432143803'>Was this review helpful? 
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='Yes'
+        class='helpful-vote' vote="1">Yes</a> |
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='No'
+        class='helpful-vote' vote="0">No</a>
+    </div>
+   </div>
+   <div class="report-a-concern" report-a-concern-fragment-url='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/reportAConcernFragment?userReviewId=1432143803'>
+    <a href="javascript:void(0)" oncontextmenu="return false;" class="report" alt='Report a Concern'>Report a Concern</a>
+   </div>
+ </div>
+</div>
+
+  
+    
+<div class="da-review customer-review">
+
+ <div class="review-header">
+  <div class="review-meta">
+   <h5>
+    <span class="customerReviewTitle">язык программы</span>
+    <div class='rating' role='img' tabindex='-1' aria-label='5 stars'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span></div></div>
+
+   </h5>
+   <span class="user-info">by
+    <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=499885546' class="reviewer">gartval</a>
+     -
+     Version
+     1.2
+    
+    -
+     07 February 2017
+   </span>
+  </div>
+  <div class="review-see-all">
+   <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=499885546' class="see-all">
+   All Reviews by This User
+   </a>
+  </div>
+ </div>
+ <p class="content" data-text-truncate-lines="6">
+  не могу установить русский язык программы
+ </p>
+ 
+ 
+ 
+ <div class="feedback">
+   <div class="helpful-wrapper">
+    
+     <div class="stats">1 
+      out of 
+      4
+      customers found this review helpful
+     </div>
+    
+    <div class="rate" reviewer-dsid='' content='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/rateUserReview?userReviewId=1539180066'>Was this review helpful? 
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='Yes'
+        class='helpful-vote' vote="1">Yes</a> |
+     <a href="javascript:void(0)" oncontextmenu="return false;"
+        alt='No'
+        class='helpful-vote' vote="0">No</a>
+    </div>
+   </div>
+   <div class="report-a-concern" report-a-concern-fragment-url='https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/reportAConcernFragment?userReviewId=1539180066'>
+    <a href="javascript:void(0)" oncontextmenu="return false;" class="report" alt='Report a Concern'>Report a Concern</a>
+   </div>
+ </div>
+</div>
+
+  
+
+</div>
+  </div>
+
+  <div class="footer">
+
+
+  
+  <div class="pagination-controls">
+  </div>
+  
+
+  </div>
+
+  </div>
+  
+</div>
+

@@ -1,0 +1,201 @@
+6389      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp47852iof;
+        Fri, 3 Aug 2018 05:04:55 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpfrTDul+6Ynj24GHM/d4uAr+zOGDEbZ0kcfIbHu7c6SleI+CklwKHJ3t7rz1kVXPKuVEIkb
+X-Received: by 2002:a50:a8e4:: with SMTP id k91-v6mr7368115edc.4.1533297895153;
+        Fri, 03 Aug 2018 05:04:55 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533297895; cv=none;
+        d=google.com; s=arc-20160816;
+        b=t2ZeRUU1Cxw5AZ7mVdRzt5cdlNQw8pgezXH06aHQbUU44txmUlx0GqpKIcCa/+fSxV
+         N/UyZlR4Sxq1wMjvq2rRzAyDRNH1k+jkSjoBR61p4jiL0kZUuFo1NlZ/WypJ3+lC3QcK
+         KtiYHmbQQQalmE+FwaMyNcNGnh8WNBIaHjI5p6i540FxB0uTw6nyu784dB51baeUWy+9
+         AGM5EJDOTl5XsbAxhdQi+RjqZWOnunXcQmHKWmga/slDCAwUokBM8212yzfD8nNF84Km
+         JJx43ABJaTc9m3SUYK3Sl6VL776VTmCLZSXdxaxGduPATskFovNX5K0WRLAstLc9qycp
+         GLEw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=z1Cyjn/nM5iF3Bs6369mPe1Z8lyrHUZCwJrkHeQTA3k=;
+        b=cBtIcx6vp1vqFCmgu7drx26wPdUFMKVjHz4ar1oOTcbsJNksWCNZJ8e2MqhJWLoeEV
+         Nq6qQYwW+TI6RTn9khDQFX8tlBx1tNrl4zETFa5JkiqhBLMY2nI7IqiMLAijB9ZomrMZ
+         4PLhyZG50jaPLI0D8jkN6QCp05SQygYOzR9IVFdcYeRtpIXSAoo9MGpbXfS/49EjhC3F
+         Y29asYvTfV+EPsPtQKrRmpa1r0Giovphq3a9SMpHqe2YnJYli5LbUCHxj1kUIU1frjNW
+         t9dWDxwjMs6TsaM5Lwva4Odck1eb8ZZubfZBhfHBhow9khCdBD8XFjLSqDdwSuiBGBao
+         +ZQg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=SYGhYc3z;
+       spf=pass (google.com: domain of srs0+be9d27aef547b262804b6ef9a6c156e87d52cead@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+be9d27aef547b262804b6ef9a6c156e87d52cead@info.anahoret.com
+Return-Path: <srs0+be9d27aef547b262804b6ef9a6c156e87d52cead@info.anahoret.com>
+Received: from smtp0.mailarbor.com (smtp0.mailarbor.com. [5.104.224.181])
+        by mx.google.com with ESMTPS id y42-v6si884632ede.17.2018.08.03.05.04.54
+        for <kr@anadeainc.com>
+        (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Fri, 03 Aug 2018 05:04:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0+be9d27aef547b262804b6ef9a6c156e87d52cead@info.anahoret.com designates 5.104.224.181 as permitted sender) client-ip=5.104.224.181;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=SYGhYc3z;
+       spf=pass (google.com: domain of srs0+be9d27aef547b262804b6ef9a6c156e87d52cead@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+be9d27aef547b262804b6ef9a6c156e87d52cead@info.anahoret.com
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id B5CEE200499
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 12:04:54 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id A8E771600B6
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 12:04:54 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.anahoret.com; q=dns/txt; s=mail; t=1533297894; bh=z1Cyjn/nM5iF3Bs6369mPe1Z8lyrHUZCwJrkHeQTA3k=; h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding; b=SYGhYc3zkPFXRWDychkCvmQSDWGi6ZaC76cVj7qzq5zgONt5GT3eVY9aPWHsXUo46iBL6mCMtwZDiAFM7YI7FTuabIujZvaP6SvuVbT3gcyd6Hk4pzkgmPeNj6RLORn+F829Pd592NJjZXpr1f0koYZWa4sAR1KTkonaRp6VbME=
+Date: Fri, 03 Aug 2018 12:04:54 +0000
+From: noreply@tracker.anahoret.com
+To: Konstantin Ryshchenko <kr@anadeainc.com>
+Message-ID: <be9d27aef547b262804b6ef9a6c156e87d52cead@info.anahoret.com>
+Subject: Just Play digest
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<style type="text/css">
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  table th, table td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  table.daily-statistics {
+    width: 50%;
+  }
+  table.daily-statistics td.working_time {
+    text-align: right;
+  }
+  table.daily-statistics th {
+    background: #DDD;
+  }
+  table.digest {
+    width: 680px;
+  }
+  table.digest.planned_stories th {
+    background: #ddd;
+  }
+  table.digest.description th {
+    background: #ddd;
+  }
+  table.digest.rejected th {
+    background: red;
+  }
+  table.digest.completed th {
+    background: #d8e795;
+  }
+  table.digest.estimate th {
+    background: #dcf8ff;
+  }
+  table.digest.new_stories th {
+    background: #ddd;
+  }
+  table.digest td.time {
+    text-align: center;
+  }
+  table.digest td.story {
+    width: 400px;
+  }
+  table.digest td.name {
+    width: 130px;
+  }
+</style>
+
+
+
+  <p>
+    Hello, Konstantin Ryshchenko. Your have some activities in Just Play
+  </p>
+      <b>3 stories were changed</b>
+      <table class='digest description'>
+        <th>Story</th>
+        <th>Changed by</th>
+        <th>Changed at (GMT+2)</th>
+        <tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64880">Update &#39;Info&#39; count on Dashboard</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    10:07
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64879">Duplicates on &#39;Past Renewals&#39; tab</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    10:18
+  </td>
+</tr>
+<tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64868">Remove &#39;informed_start_date&#39; concept</a>
+  </td>
+  <td class='name'>
+    Jonathan Fagg
+  </td>
+  <td class='time'>
+    10:51
+  </td>
+</tr>
+
+      </table>
+      <b>1 story was rejected by customer(s)</b>
+      <table class='digest rejected'>
+        <th>Story</th>
+        <th>Changed by</th>
+        <th>Changed at (GMT+2)</th>
+        <tr>
+  <td class='story'>
+    <a href="https://tracker.anahoret.com/projects/247/stories/64880">Update &#39;Info&#39; count on Dashboard</a>
+  </td>
+  <td class='name'>
+    Alexander Dmitrenko
+  </td>
+  <td class='time'>
+    10:39
+  </td>
+</tr>
+
+      </table>
+
+<p>
+  <a href="https://tracker.anahoret.com/profile/default_notification_settings">Change digest settings</a>
+</p>
+
+
+
+  <p>Thank you,</p>
+  Just Play Team
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>47</integer>
+	<key>date-last-viewed</key>
+	<integer>1533297916</integer>
+	<key>date-received</key>
+	<integer>1533297895</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+	</array>
+	<key>remote-id</key>
+	<string>59</string>
+</dict>
+</plist>

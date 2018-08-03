@@ -1,0 +1,172 @@
+6825      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp119606iof;
+        Fri, 3 Aug 2018 00:20:49 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpe7Fj6gRo/acVvQz227dOTWFzMkgXxftqeoCiryDxKx4qtS+vRqNou8LxuNUL38ASGM+30s
+X-Received: by 2002:a50:b084:: with SMTP id j4-v6mr6451928edd.172.1533280849701;
+        Fri, 03 Aug 2018 00:20:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533280849; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KzQ1cOGB47blGaogfQi0OK4H5ABEAQPUbrs/NphXJ3qY5hOOtxShIcJH6Oc132XGVk
+         2HHu6uqUXeyJyjPHgm5rlsRPhG+yV/vEJP6xxALZF0RmJmdNwhETQVjzBMuL0q43CQMA
+         fbudNppQT9krk1L6IzNpzZ83ADQQEnfulizpW9nY6UtsMZn4/0gmymGPul08fgApArEu
+         GRBEhKDtk6sWuldlPmyGmlDwCmW+AF6mToPX27yQ22V5ROdHjdTuGys1pvbUnw/odTgg
+         fplzTe2hV1bB5GMKVO9AZMX+X9ptdogxyFXXtiCe7xdGGDetbwWfTjngRnAMdKomF85d
+         OSXA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=hJbTZx0/ckbHCWr+JzKXNUHjbOJJ58I92lzfKAjb/IU=;
+        b=YzcGZHPL5Ddytv2b6jGTD0g30bhaQw2yZH738E2ufi4arjOzIOjBBs9Tx7Fsh/xb+d
+         CRoBDRdr4nxNrArQK8SsvS1f1nhWSk3hVb4vS81WhnVGo8asnMoxBBN6S4nGZkDgUVdr
+         vvO//TEpDCSLl7tSicD+/CUqryvE0Da3hdeUsZSVSNERWo6ybDQCc+fLauF6dL/aEG7S
+         UpG1eHj4au+P8QE8nRPJjOgCaH7NMP5U/x9HQl3YDwg/eR6hwtdJNNbkERBHSzNBa5wN
+         xEQeZLDFjIpQUhrTjdp+4l4SsfYxTF/v/yQUZw7r9HsZLZ/isMH3z6RwIJncjLyHrF29
+         +K5Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=qywXTyLt;
+       spf=pass (google.com: domain of srs0+11a9c559d49cfa2fc5217a5130c5783b5ba1b6cc@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+11a9c559d49cfa2fc5217a5130c5783b5ba1b6cc@info.anahoret.com
+Return-Path: <srs0+11a9c559d49cfa2fc5217a5130c5783b5ba1b6cc@info.anahoret.com>
+Received: from smtp0.mailarbor.com (smtp0.mailarbor.com. [5.104.224.181])
+        by mx.google.com with ESMTPS id i20-v6si1218863edb.403.2018.08.03.00.20.49
+        for <kr@anadeainc.com>
+        (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Fri, 03 Aug 2018 00:20:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0+11a9c559d49cfa2fc5217a5130c5783b5ba1b6cc@info.anahoret.com designates 5.104.224.181 as permitted sender) client-ip=5.104.224.181;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=qywXTyLt;
+       spf=pass (google.com: domain of srs0+11a9c559d49cfa2fc5217a5130c5783b5ba1b6cc@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+11a9c559d49cfa2fc5217a5130c5783b5ba1b6cc@info.anahoret.com
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 568FF200463
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 07:20:49 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 49AD91600B6
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 07:20:49 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.anahoret.com; q=dns/txt; s=mail; t=1533280849; bh=hJbTZx0/ckbHCWr+JzKXNUHjbOJJ58I92lzfKAjb/IU=; h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding; b=qywXTyLtohZp5slqYrGWEuFOqkitSc8Ji3vKv+EPhGOwuC4sUuXG4Jurah2QLeUos68okSHEsmj7/fQzi2pK6vJXWdhJI8+ty7mvs36Z8xW2oKpYVxin2gS7LxbDSBlBRHEib7uBTZ0dUhbhfU+rYbasu6G3n6ocaQ+PLGYfo3s=
+Date: Fri, 03 Aug 2018 07:20:49 +0000
+From: noreply@tracker.anahoret.com
+To: Konstantin Ryshchenko <kr@anadeainc.com>
+Message-ID: <11a9c559d49cfa2fc5217a5130c5783b5ba1b6cc@info.anahoret.com>
+Subject: =?UTF-8?Q?You_have_made_responsible_for_'=D0=9D=D0=B5?=
+ =?UTF-8?Q?_=D1=83=D1=87=D0=B8=D1=82=D1=8B=D0=B2=D0=B0=D0=B5=D1=82=D1=81=D1=8F?=
+ =?UTF-8?Q?_=D0=BA=D1=83=D1=80=D1=81_=D0=BF=D1=80=D0=B8?=
+ =?UTF-8?Q?_=D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=D0=B8?=
+ =?UTF-8?Q?_=D0=BA=D0=BE=D0=BD=D0=BA=D1=80=D0=B5=D1=82=D0=BD=D0=BE=D0=B3=D0=BE?=
+ =?UTF-8?Q?_=D0=B8=D0=BD=D0=B2=D0=BE=D0=B9=D1=81=D0=B0'_story_in_[A]_Tracker?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<style type=3D"text/css">
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  table th, table td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  table.daily-statistics {
+    width: 50%;
+  }
+  table.daily-statistics td.working_time {
+    text-align: right;
+  }
+  table.daily-statistics th {
+    background: #DDD;
+  }
+  table.digest {
+    width: 680px;
+  }
+  table.digest.planned_stories th {
+    background: #ddd;
+  }
+  table.digest.description th {
+    background: #ddd;
+  }
+  table.digest.rejected th {
+    background: red;
+  }
+  table.digest.completed th {
+    background: #d8e795;
+  }
+  table.digest.estimate th {
+    background: #dcf8ff;
+  }
+  table.digest.new_stories th {
+    background: #ddd;
+  }
+  table.digest td.time {
+    text-align: center;
+  }
+  table.digest td.story {
+    width: 400px;
+  }
+  table.digest td.name {
+    width: 130px;
+  }
+</style>
+
+  <p>Hi, you have a new story, created by Pavel Kononovich for the [A] Tr=
+acker project!</p>
+
+
+<p>=D0=9F=D1=80=D0=B8 =D0=B2=D1=8B=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D0=B5=D0=
+=BD=D0=BD=D0=BE=D0=BC =D0=BA=D1=83=D1=80=D1=81=D0=B5<br>
+<a href=3D"https://tracker.anahoret.com/system/files/52640/original/Scree=
+n_Shot_2018-07-23_at_14.11.52.png?1532415295"><img src=3D"https://tracker=
+.anahoret.com/system/files/52640/original/Screen_Shot_2018-07-23_at_14.11=
+.52.png?1532415295" class=3D"popup" alt=3D""></a></p>
+<p>=D0=9F=D0=BE=D1=81=D0=BB=D0=B5 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D0=
+=B5=D0=BD=D0=B8=D1=8F =D0=BA=D0=BE=D0=BD=D0=BA=D1=80=D0=B5=D1=82=D0=BD=D0=
+=BE=D0=B3=D0=BE =D0=B8=D0=BD=D0=B2=D0=BE=D0=B9=D1=81=D0=B0<br>
+<a href=3D"https://tracker.anahoret.com/system/files/52641/original/Scree=
+n_Shot_2018-07-23_at_14.24.16.png?1532415331"><img src=3D"https://tracker=
+.anahoret.com/system/files/52641/original/Screen_Shot_2018-07-23_at_14.24=
+.16.png?1532415331" class=3D"popup" alt=3D""></a></p>
+<p>=D0=A1=D0=B1=D1=80=D0=B0=D1=81=D1=8B=D0=B2=D0=B0=D0=B5=D1=82=D1=81=D1=8F=
+ =D0=BF=D0=B5=D1=80=D0=B5=D1=81=D1=87=D0=B5=D1=82 =D0=BA=D1=83=D1=80=D1=81=
+=D0=B0</p>
+<p>--</p>
+<p>Assignment made by: Julia Kozak</p>
+<p>Responsible: Konstantin Ryshchenko, Pavel Kononovich</p>
+<p>Tags: bug, to test</p>
+
+
+
+<p><a href=3D"https://tracker.anahoret.com/projects/2/stories/64741">http=
+s://tracker.anahoret.com/projects/2/stories/64741</a>.</p>
+
+<p>
+  <a href=3D"https://tracker.anahoret.com/profile/default_notification_se=
+ttings">Change notification setting</a>
+</p>
+
+
+
+  <p>Thank you,</p>
+  [A] Tracker Team
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>43</integer>
+	<key>date-last-viewed</key>
+	<integer>1533282002</integer>
+	<key>date-received</key>
+	<integer>1533280849</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>remote-id</key>
+	<string>55</string>
+</dict>
+</plist>

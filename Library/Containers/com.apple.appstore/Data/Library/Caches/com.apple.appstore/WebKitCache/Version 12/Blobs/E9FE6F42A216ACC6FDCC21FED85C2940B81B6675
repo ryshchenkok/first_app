@@ -1,0 +1,989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.apple.com/itms/" lang="en">
+
+
+  <head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="keywords" content="Mac App Store" /><meta name="description" content="Mac App Store" /><meta name="platform-cache-id" content="13" />
+
+
+
+<title>Search Results</title>
+
+
+
+
+
+
+<script>
+if (!window.its) {
+    window.its = {};
+}
+its.markupLoadStartTime = new Date().getTime();
+
+if (!window.onerror) window.onerror = function(message, url, lineNumber) {
+    if (!window._earlyOnerrorException) {
+        window._earlyOnerrorException = {message: message,
+                                         url: url,
+                                         lineNumber: lineNumber};
+    }
+};
+</script>
+
+
+    
+    <link charset="utf-8" rel="stylesheet" type="text/css" href="https://s.mzstatic.com/htmlResources/81e9215/da-storefront-base.css" />
+<link charset="utf-8" rel="stylesheet" type="text/css" href="https://s.mzstatic.com/htmlResources/81e9215/da-storefront-search.css" />
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript" charset="utf-8" src="/htmlResources/81e9215/frameworks-primaryinit01.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript" charset="utf-8">its.serverData={"storePlatformData":{},"pageData":{},"constants":{"fetchSoftwareUpdatesUrl":"https://su.itunes.apple.com/WebObjects/MZSoftwareUpdate.woa/wa/fetchSoftwareUpdates","Urls":{"upgradeITunesUrl":"http://www.apple.com/itunes/download/","upgradeSafariUrl":"http://www.apple.com/safari/download/"},"MZMediaType":{"MobileSoftware":{"id":8,"name":"MobileSoftwareApplications"},"MacSoftware":{"id":12,"name":"DesktopApps"},"Audiobooks":{"id":3,"name":"Audiobooks"},"MusicVideos":{"id":5,"name":"MusicVideos"},"iTunesU":{"id":10,"name":"iTunesU"},"EBooks":{"id":11,"name":"EBooks"},"Music":{"id":1,"name":"Music"},"Podcasts":{"id":2,"name":"Podcasts"},"ClassicSoftware":{"id":7,"name":"iPodGames"},"TVShows":{"id":4,"name":"TVShows"},"Movies":{"id":6,"name":"Movies"},"Ringtones":{"id":9,"name":"Ringtones"},"Textbooks":{"id":13,"name":"Textbooks"}},"SFSortOrder":{"PlaylistName":{"id":9},"RecentBestSellers":{"id":18},"SeriesOrder":{"id":17},"CmcRecommended":{"id":10},"Popularity":{"id":3},"OriginalReleaseDate":{"id":19},"ArtistName":{"id":8},"Featured":{"id":1},"TopRated":{"id":5},"Duration":{"id":11},"ReleaseDate":{"id":2},"TrackNumber":{"id":13},"Name":{"id":0},"AllTimeBestSellers":{"id":14},"ExpirationDate":{"id":6},"Price":{"id":7},"MostRecent":{"id":16},"PurchaseDate":{"id":4},"DateAdded":{"id":15},"DiscNumber":{"id":12}},"SFEntityType":{"Artist":{"id":1},"Playlist":{"id":4},"TopContents":{"id":7},"MultiRoom":{"id":3},"Search":{"id":6},"WeMix":{"id":8},"Cmc":{"id":2},"Work":{"id":10},"Wishlist":{"id":9},"TopAuthors":{"id":12},"Room":{"id":5},"TheyMix":{"id":11}},"countryCode":"ukr","languageCode":"en","SFCustomComponentCountryCode":"ukr","IXDisplayableKind":{"Artist":{"id":20,"cssClasses":[],"name":"artist"},"MobileSoftware":{"id":11,"cssClasses":["application"],"name":"iosSoftware","mtId":"8"},"Album":{"id":2,"cssClasses":["album","music"],"name":"album","mtId":"1"},"ShortFilm":{"id":8,"cssClasses":["short-film","movie","video"],"name":"shortFilm","mtId":"6"},"PodcastEpisode":{"id":15,"cssClasses":["podcast-episode"],"name":"podcastEpisode","mtId":"2"},"ApplePubEBook":{"id":36,"cssClasses":["ebook"],"name":"ibook","mtId":"11"},"Song":{"id":1,"cssClasses":["song","music"],"name":"song","mtId":"1"},"MovieBundle":{"id":24,"cssClasses":["bundle","movie","video"],"name":"movieBundle","mtId":"6"},"RingtoneAlbum":{"id":22,"cssClasses":[],"name":"ringtoneAlbum","mtId":"9"},"Book":{"id":3,"cssClasses":["audiobook"],"name":"book","mtId":"3"},"ToneAlbum":{"id":32,"cssClasses":[],"name":"toneAlbum","mtId":"9"},"TVEpisode":{"id":6,"cssClasses":["tv-episode","tv","video"],"name":"tvEpisode","mtId":"4"},"TVSeason":{"id":7,"cssClasses":["tv-season","tv","video"],"name":"tvSeason","mtId":"4"},"Course":{"id":34,"cssClasses":["course","itunes-u"],"name":"course","mtId":"10"},"ClassicSoftwarePackage":{"id":18,"cssClasses":["ipod-game"],"name":"gamePackage","mtId":"7"},"Movie":{"id":9,"cssClasses":["movie","video"],"name":"movie","mtId":"6"},"Booklet":{"id":13,"cssClasses":["booklet","music"],"name":"booklet","mtId":"1"},"SocialArtist":{"id":28,"cssClasses":[],"name":"socialArtist"},"EBook":{"id":25,"cssClasses":["ebook"],"name":"epubBook","mtId":"11"},"MacSoftware":{"id":30,"cssClasses":["application","mac-application"],"name":"desktopApp","mtId":"12"},"MusicVideo":{"id":5,"cssClasses":["music-video","music","video"],"name":"musicVideo","mtId":"5"},"Ringtone":{"id":21,"cssClasses":[],"name":"ringtone","mtId":"9"},"Podcast":{"id":4,"cssClasses":["podcast"],"name":"podcast","mtId":"2"},"Concert":{"id":26,"cssClasses":[],"name":"concert","mtId":"1"},"ApplePubTextbook":{"id":37,"cssClasses":["ebook"],"name":"ibookTextbook","mtId":"13"},"SoftwareAddOn":{"id":16,"cssClasses":["software-add-on","application"],"name":"softwareAddOn","mtId":"8"},"Tone":{"id":31,"cssClasses":[],"name":"tone","mtId":"9"},"WeMix":{"id":19,"cssClasses":["wemix","music"],"name":"itunesMix","mtId":"1"},"SocialPerson":{"id":27,"cssClasses":[],"name":"socialPerson"},"ClassicSoftware":{"id":10,"cssClasses":["ipod-game"],"name":"ipodGame","mtId":"7"},"MetaEBook":{"id":35,"cssClasses":["ebook"],"name":"metaEbook","mtId":"13"},"iTunesPass":{"id":12,"cssClasses":["itunes-pass","album","music"],"name":"itunesPass","mtId":"1"},"Mix":{"id":14,"cssClasses":["mix","music"],"name":"mix","mtId":"1"},"TheyMix":{"id":33,"cssClasses":[],"name":"thirdPartyMix"}},"AddToWishlistResult":{"ItemIsFree":{"id":6},"ListFull":{"id":3},"SomeContentAlreadyOwnedButUnfulfilled":{"id":5},"SomeContentAlreadyInWishlist":{"id":1},"Success":{"id":0},"Failure":{"id":2},"SomeContentAlreadyOwned":{"id":4}},"getEmailUrl":"https://itunes.apple.com/WebObjects/MZStore.woa/wa/generateEmail?cc=ua","resourceImagePathFrameworks":"https://s.mzstatic.com/htmlResources/81e9215/frameworks/images/","resourceBasePath":"https://s.mzstatic.com/htmlResources/81e9215"},"properties":{"DAH.SharingMenu.WhitelistedServiceIds":["com.apple.share.Twitter.post","com.apple.share.Facebook.post","com.apple.share.Messages.compose"],"DAH.SharingMenu.HashTag":"#MacAppStore","DAH.SharingMenu.ServiceInfo":{"com.apple.share.Facebook.post":{"locKey":"DAH.SharingMenu.Facebook"},"com.apple.share.Twitter.post":{"locKey":"DAH.SharingMenu.Twitter"},"com.apple.share.Messages.compose":{"locKey":"DAH.SharingMenu.iChat"}},"clientStatsLoadTimeGroup":"4032","MZHtmlResourcesUtil.allowDeferJsLoad":true,"ITSServerEnvironment":"prod","ITSServerInstance":"204907","ITSResourceRevNum":"81e9215","resourceUrlPrefix":"https://s.mzstatic.com","ITSLogger.ServerReportingProtocol":"https","ITSLogger.ServerReportingDomain":"metrics.mzstatic.com","ITSLogger.ServerReportingApp":"MZUserXP","ITSLogger.RecordStatsAction":"recordStats","ITSLogger.SenderName":"ITSClient","ITSLogger.UseLegacyLogFormat":false,"ITSLogger.mirrorToServerByDefaultOnErrors":true,"DynaLoader.allowDynaLoading":true,"itsLoggerQueueProcessingInterval":10000,"cobaltBundleId":"com.apple.itunesu","getCobaltAppLink":"https://itunes.apple.com/ua/app/id490217893","iTunesUEnrollLink":"https://itunes.apple.com/WebObjects/DZR.woa/wa/iTunesEnrollPopover?cc=ua","cobaltLearnMore":"https://itunes.apple.com/ua/learn-more?about=iTunesUUpgradePage&type=2","isCobaltEnabled":true,"isCobaltJavascriptRedirectEnabled":true,"isCobaltUpsellPageEnabled":true,"personalizedButtonsEnabled":true,"SF6.Personalization.isCMAEnabled":true,"SF6.Personalization.isCMSEnabled":false,"SFJ.isNFAEnabledInStorefront":true,"SFJ.isRecommendationsSwooshEnabledInStorefront":true,"SF6.StorePlatform.whitelistParams":["caller","dsid","id","p"],"vendLastSupportedVersionIfAvailable":true,"vendLastSupportedVersionMacOs":true,"isBookGiftingEnabled":true,"metrics":{"metricsUrl":"https://xp.apple.com/report","compoundSeparator":"_","tokenSeparator":"|","postFrequency":60000,"postFrequencyLowLatency":5000,"appInstallSamplingPercentage":0.9995,"deResFields":[{"fieldName":"capacityData"},{"fieldName":"capacityDataAvailable"},{"fieldName":"capacityDisk"},{"fieldName":"capacitySystem"},{"fieldName":"capacitySystemAvailable"}],"impressions":{"viewableThreshold":1000,"viewablePercentage":0.5},"performance":{"samplingPercentageUsers":1,"samplingPercentageUsersPageRender":1,"samplingPercentageCachedResponses":1,"sessionDuration":60000,"sessionDurationPageRender":60000},"fieldsMap":{"single":{"targetId":["id","adamId","contentId","type","link.adamId","link.id","link.type","fcId","userPreference","label","station-hash","linkIdentifier"]},"custom":{"location":["id","adamId","dataSetId","name","fcKind","kindIds","type","link.type","station-hash","core-seed-name"],"impressions":["id","adamId","link.type","station-hash"],"iAd":[]},"cookies":["itcCt","itscc","xp_ab","xp_abc"],"multi":{}},"metricsBase":{"storeFrontHeader":"143492-2,13","language":"2","platformId":"13","platformName":"MacAppStore","storeFront":"143492","environmentDataCenter":"ST11"},"iTunes":{"metricsUrl":"https://xp.apple.com/report","compoundSeparator":"_","tokenSeparator":"|","postFrequency":60000,"postFrequencyLowLatency":5000,"appInstallSamplingPercentage":0.9995,"deResFields":[{"fieldName":"capacityData"},{"fieldName":"capacityDataAvailable"},{"fieldName":"capacityDisk"},{"fieldName":"capacitySystem"},{"fieldName":"capacitySystemAvailable"}],"impressions":{"viewableThreshold":1000,"viewablePercentage":0.5},"performance":{"samplingPercentageUsers":1,"samplingPercentageUsersPageRender":1,"samplingPercentageCachedResponses":1,"sessionDuration":60000,"sessionDurationPageRender":60000},"fieldsMap":{"single":{"targetId":["id","adamId","contentId","type","link.adamId","link.id","link.type","fcId","userPreference","label","station-hash","linkIdentifier"]},"custom":{"location":["id","adamId","dataSetId","name","fcKind","kindIds","type","link.type","station-hash","core-seed-name"],"impressions":["id","adamId","link.type","station-hash"],"iAd":[]},"cookies":["itcCt","itscc","xp_ab","xp_abc"],"multi":{}},"metricsBase":{"storeFrontHeader":"143492-2,13","language":"2","platformId":"13","platformName":"MacAppStore","storeFront":"143492","environmentDataCenter":"ST11"}},"MacAppStore":{"metricsUrl":"https://xp.apple.com/report","compoundSeparator":"_","tokenSeparator":"|","postFrequency":60000,"postFrequencyLowLatency":5000,"appInstallSamplingPercentage":0.9995,"deResFields":[{"fieldName":"capacityData"},{"fieldName":"capacityDataAvailable"},{"fieldName":"capacityDisk"},{"fieldName":"capacitySystem"},{"fieldName":"capacitySystemAvailable"}],"impressions":{"viewableThreshold":1000,"viewablePercentage":0.5},"performance":{"samplingPercentageUsers":1,"samplingPercentageUsersPageRender":1,"samplingPercentageCachedResponses":1,"sessionDuration":60000,"sessionDurationPageRender":60000},"fieldsMap":{"single":{"targetId":["id","adamId","contentId","type","link.adamId","link.id","link.type","fcId","userPreference","label","station-hash","linkIdentifier"]},"custom":{"location":["id","adamId","dataSetId","name","fcKind","kindIds","type","link.type","station-hash","core-seed-name"],"impressions":["id","adamId","link.type","station-hash"],"iAd":[]},"cookies":["itcCt","itscc","xp_ab","xp_abc"],"multi":{}},"metricsBase":{"storeFrontHeader":"143492-2,13","language":"2","platformId":"13","platformName":"MacAppStore","storeFront":"143492","environmentDataCenter":"ST11"}},"Maps":{"metricsUrl":"https://xp.apple.com/report","compoundSeparator":"_","tokenSeparator":"|","postFrequency":60000,"postFrequencyLowLatency":5000,"disabled":true,"appInstallSamplingPercentage":0.9995,"deResFields":[{"fieldName":"capacityData"},{"fieldName":"capacityDataAvailable"},{"fieldName":"capacityDisk"},{"fieldName":"capacitySystem"},{"fieldName":"capacitySystemAvailable"}],"impressions":{"viewableThreshold":1000,"viewablePercentage":0.5},"performance":{"samplingPercentageUsers":1,"samplingPercentageUsersPageRender":1,"samplingPercentageCachedResponses":1,"sessionDuration":60000,"sessionDurationPageRender":60000},"fieldsMap":{"single":{"targetId":["id","adamId","contentId","type","link.adamId","link.id","link.type","fcId","userPreference","label","station-hash","linkIdentifier"]},"custom":{"location":["id","adamId","dataSetId","name","fcKind","kindIds","type","link.type","station-hash","core-seed-name"],"impressions":["id","adamId","link.type","station-hash"],"iAd":[]},"cookies":["itcCt","itscc","xp_ab","xp_abc"],"multi":{}},"metricsBase":{"storeFrontHeader":"143492-2,13","language":"2","platformId":"13","platformName":"MacAppStore","storeFront":"143492","environmentDataCenter":"ST11"}}},"MZStore.shouldAttemptToEvaluateXpathSecondTime":true,"MZStore.shouldCacheElementTypeProtoObjects":true,"isStoweUpgradeDialogEnabled":false,"stoweUpgradeSize":1600000000,"isStopPageOneEnabled":false,"SF.isNotifyMeEnabled":false,"SF.notifyMeIds":[],"SF.notifyMeIdsWithAppleWatchApp":[],"SF.notifyMeIdsWithTvApp":[],"isMovieAnywhereEnabled":true}}</script>
+<script type="text/javascript" charset="utf-8">
+if (!window.iTSLocalization) { iTSLocalization = {}; }
+iTSLocalization._strings = {"Js.MyAlerts.GeniusActivationNeeded.Button":"Go to Genius", "DABuyButton.aria.accept":"Accept, @@name@@, Free", "DAH.SharingMenu.Twitter":"Share on Twitter", "Js.Wishlist.RemoveTooltip":"Remove from Wish list", "DABuyButtonAlreadyInstalledExplanation":"Do you want to buy @@name@@ @@version@@?", "MHJavascriptLocalizations.DIBuyButtonDownloading":"Downloading", "DAHSoftwareInstall.Status.EstimatedTime.LessThanAMinute":"less than a minute", "DAHSoftwareInstall.Status.EstimatedTime.SecondsLeft":"@@seconds@@ @@secondUnit@@", "Js.Showcase.Next":"Next Item", "Js.DA.BuyButton.Installed":"Installed", "Js.PreflightCheckWarning.Continue":"Continue", "DABuyButtonInstall":"Install App", "DABuyButtonNewerVersionAlreadyInstalledMessage":"A newer version of this app is already installed on this computer", "DAHSoftwareInstall.Status.Paused":"Paused", "Js.CNConnections.Dialog.GetStarted":"Get Started", "Js.ReportAConcern.SigninMessage":"Enter your Apple ID and password, then click Sign In.", "DIBuyButtonDownloadingAria":"Downloading, @@name@@", "DABuyButton.aria.preOrder.buy":"Pre-order, @@name@@, @@price@@", "Js.TextTruncation.More":"More", "Js.QuickView.Unavailable.Title":"Quick View is currently unavailable for this item.", "CNConnections.Dialog.Post.Review.SignIn.Title":"Sign in to post.", "DAHSoftwareInstall.Status.EstimatedTime.hour":"hr", "CNConnections.Upload.UploadErrorHeading":"There Is a Problem With Your Upload", "CNConnections.Dialog.StopFollowing.Message":"CNConnections.Dialog.StopFollowing.Message", "CNConnections.Dialog.OptIn.Title":"Ping Will No Longer Be Available as of September 30", "DIBuyButtonDownloadedAria":"Downloaded, @@name@@", "Js.MyAlerts.GeniusActivationNeeded.Explanation":"Alerts based on your library content will not be enabled until you have turned on Genius. To learn more, click Go to Genius.", "_thousandsSeparator":",", "InAppPurchases":"In-App Purchases", "DAHSoftwareInstall.Status.EstimatedTime.DaysLeft":"@@days@@ @@dayUnit@@ @@hours@@ @@hourUnit@@", 
+"Js.CNConnections.LoginRequired.Message":"This requires Ping. Ping will no longer be available as of September 30, and we are not accepting new members. If you are already a Ping member, sign in below to continue.", "Js.Pagination.PreviousPage":"Previous Page", "DAHSoftwareInstall.Status.Error.MultipleUsers.description":"To update, log out all other users who are currently logged in to this computer.", "Js.TellAFriend.SigninTitle":"Sign in to tell a friend.", "Js.InlineReview.RateThis":"Rate this", "Js.InlineReview.5":"it’s great", "DAHSoftwareInstall.Status.EstimatedTime.minutes":"mins", "Js.InlineReview.4":"it’s good", "Js.InlineReview.3":"it’s ok", "DABuyButtonPreOrdered":"Pre-Ordered", "DAHSoftwareInstall.Status.EstimatedTime.second":"sec", "Js.InlineReview.2":"don’t like it", "Js.InlineReview.1":"hate it", "Js.InlinePreview.StopPreview":"Stop preview of @@title@@", "DAPreordersNotAvailableOnYourOS":"To pre-order this app, update to macOS 10.13.2 or later.", "DAHSoftwareInstall.Status.WaitingToInstall":"Waiting to install…", "DABuyButtonAlreadyInstalledNoVersionMessage":"@@installedname@@ is already installed and was not purchased from the Mac App Store.", "Close":"Close", "CNConnections.Dialog.OptIn.Message":"CNConnections.Dialog.OptIn.Message", "Js.DA.BuyButton.Open":"Open", "Js.CreateAccount":"Create Apple ID", "DAHSoftwareInstall.Status.EstimatedTime.hours":"hrs", "MZCommerce.Login_explanation":"Please enter your Apple ID and password and click Sign In.", "Js.CNConnections.OptInRequired.Title":"Ping", "Cancel":"Cancel", "DAHSoftwareInstall.Status.EstimatedTime.seconds":"secs", "DABuyButton.aria.installed":"Installed, @@name@@", "DABuyButton.aria.preOrder.free":"Pre-order, @@name@@, Free", "Js.ManageArtistAlerts.CheckAll.Actors":"Check All Actors", "SF.AskToBuy.PermissionBannerText":"Your request was sent and is awaiting approval from a parent. They can also @@bannerLinkText@@ on this device.", "DABuyButtonSameVersionAlreadyInstalledExplanation":"Do you want to buy @@name@@ @@version@@ again?", "DAHSoftwareInstall.Status.FileSizeSeparator":".", "DAPreorderLabel":"Pre-Order", "More":"More", "DAHSoftwareInstall.Status.EstimatedTime.minute":"min", "DABuyButtonPreOrder":"Pre-Order App", "Js.Pagination.DisabledButtonText":"disabled @@button_text@@", "Js.DA.BuyButton.Installing":"Installing", "Js.MyAlerts.CancelEmailSignUp.Message":"Are you sure you want to stop receiving email alerts?", "JS.errors.requiredLite":"Please fill in all required fields.", "CNConnections.Dialog.Post.Review.SignIn.Message":"CNConnections.Dialog.Post.Review.SignIn.Message", "SF.AskToBuy.PermissionBannerText.Free.bannerLinkText":"approve it in person", "MZCommerce.PurchaseBlockedForSpecialEdu_message":"This Apple ID cannot be used to make purchases.", "Js.ManageArtistAlerts.UncheckAll.Artists":"Uncheck All Artists", "Buy":"Buy", "Js.InlineRating.SigninTitle":"Sign in to rate this item.", "Js.ManageArtistAlerts.UncheckAll.Actors":"Uncheck All Actors", "MHJavascriptLocalizations.DIBuyButtonDownload":"Download", 
+"Js.CNConnections.OptInRequired.Message":"This requires Ping. Ping will no longer be available as of September 30, and we are not accepting new members. If you are already a Ping member, sign in below to continue.", "DAHSoftwareInstall.Status.Downloading":"@@completed@@ of @@total@@", "DABuyButtonLearnMoreURL.Mavericks":"http://support.apple.com/kb/HT5842", "DABuyButtonLearnMoreURL.Lion":"http://support.apple.com/kb/ht4949", "DAHSoftwareInstall.Status.EstimatedTime.HoursLeft":"@@hours@@ @@hourUnit@@ @@minutes@@ @@minuteUnit@@", "Js.Search.HintsTitle":"Suggestions", "DAHSoftwareInstall.Status.EstimatedTime.MinutesLeft":"@@minutes@@ @@minuteUnit@@", "DABuyButtonLearnMoreURL.MtnLion":"http://support.apple.com/kb/ht5444", "DAHSoftwareInstall.Status.Error.MultipleUsers":"Multiple Users Logged In", "Js.InlinePreview.PlayPreview":"Play preview of @@title@@", "SignIn":"Sign In", "DAHSoftwareInstall.Status.Error":"An error has occurred", "Js.ManageArtistAlerts.UncheckAll":"Uncheck All", "Js.iTunesStoreError.Message":"We could not complete your request.", "DVHMusicPurchasesPage.Restored":"Unhidden", "DAHSoftwareInstall.Status.Waiting":"Waiting…", "Done":"Done", "DABuyButton.aria.open":"Open, @@name@@", "Js.Pagination.NextPage":"Next Page", "Js.CNConnections.RequestSent":"Request sent", "MHJavascriptLocalizations.DIBuyButtonDownloaded":"Downloaded", "DABuyButton.aria.install":"Install, @@name@@, Free", "DABuyButtonLearnMore":"Learn More", "DAH.SharingMenu.iChat":"Share in Messages", "CNConnections.Upload.UploadErrorMessage":"Sorry, there was an error during upload.", "Js.PreflightCheckFailedError.UpdateTitle":"We could not complete your update.", "Js.InlineReview.SigninMessage":"Enter your Apple ID and password, then click Sign In.", "Js.PreflightCheckFailedError.Message":"This computer does not meet the minimum install requirements for the app", "Software.HasAddOns":"Offers In-App Purchases", "Less":"Less", "Js.MyAlerts.GeniusActivationNeeded.Message":"This requires Genius.", "Js.ManageArtistAlerts.CheckAll.Artists":"Check All Artists", "Js.TellAFriend.SigninMessage":"Enter your Apple ID and password, then click Sign In.", "CNConnections.Dialog.StopFollowing.Title":"Are you sure you want to stop following @@fullName@@?", "Js.PreflightCheckFailedErrorWithAppName.Title":"We could not complete your purchase of @@appName@@", "DTHBuyInfo.actionText.Accept":"Accept", "Js.PreflightCheckFailedError.Title":"We could not complete your purchase.", "Js.InlineReview.SigninTitle":"Sign in to write a review.", "Js.InlineRating.SigninMessage":"Sign in to continue.", "DAHSoftwareInstall.Status.EstimatedTime.TimeLeft":"@@time@@ remaining", "Js.DA.BuyButton.Install":"Install", "DABuyButton.aria.confirm.buy":"Confirm, Buy, @@name@@, @@price@@", "DAHSoftwareInstall.Status.EstimatedTime.days":"days", "Js.Pagination.Back":"Back", "DABuyButton.aria.installing":"Installing, @@name@@", "DTHBuyInfo.actionText.Gratis":"Free", "CNConnections.Dialog.PrivateUser.IllegalAction.Message":"If you would like to perform this action, please change your privacy settings.", "DAPreorderedLabel":"Pre-Ordered", "DAHSoftwareInstall.Status.EstimatedTime.day":"day", "DVHMusicPurchasesPage.Restore":"Unhide", "DABuyButton.aria.confirm.install":"Confirm, Install, @@name@@, Free", "DAHSoftwareInstall.Status.Installing":"Installing", "Js.QuickView.Unavailable.Text":"Please try again later.", "Js.MyAlerts.ConfirmEmailSignUp.Explanation":"You can change this preference at any time from your My Alerts page.", "Js.CNConnections.Dialog.Cancel":"Cancel", "Js.CNConnections.PeoplePopupMore":"and @@count@@ other@@s@@...", "Js.CNConnections.Confirmed":"Confirmed", "Js.CNConnections.UserReview.YouLiked":"You Liked", "MHJavascriptLocalizations.DIBuyButtonUpdate":"Update", "Yes":"Yes", "Js.Pagination.Next":"Next", "DABuyButton.aria.preOrdered":"Pre-ordered, @@name@@", "Js.ManageArtistAlerts.CheckAll":"Check All", "Js.ReportAConcern.SigninTitle":"Sign in to report a concern.", "Js.MyAlerts.CancelEmailSignUp.Explanation":"You can change this preference at any time from your My Alerts page.", "CNConnections.Dialog.PrivateUser.LeakyAction.Message":"This action will make your profile picture and name visible to others.", "Js.TextLimit.Remaining":"@@count@@ characters remaining", "CNConnections.Dialog.PrivateUser.LeakyAction.Title":"Are you sure you want to perform this action?", "DABuyButtonBuyNow":"Buy App", "Js.Pagination.PageNumberTitle":"page @@num@@", "DABuyButtonPreOrderedAllCaps":"PRE-ORDERED", "SF.AskToBuy.PermissionBannerText.bannerLinkText":"purchase it in person", "OK":"OK", "Js.InlineReview.Thanks":"Thanks!", "Js.InlineReview.Error":"Error", "CNConnections.Dialog.Like.Review.SignIn.Message":"CNConnections.Dialog.Like.Review.SignIn.Message", "Js.List.Item":"item", "DABuyButtonAlreadyInstalledMessage":"@@installedname@@ @@installedversion@@ is already installed and was not purchased from the Mac App Store", "No":"No", "Js.iTunesStoreError.Explanation":"There was an error in the App Store. Please try again later.", "Js.InlineReview.ClickToRate":"Click to rate", "DABuyButtonNewerVersionAlreadyInstalledExplanation":"If you want to replace it with this version, move the existing app to the trash.", "CNConnections.Dialog.PrivateUser.IllegalAction.Title":"Private users may not perform this action.", "DABuyButton.aria.buy":"Buy, @@name@@, @@price@@", "Js.MyAlerts.ConfirmEmailSignUp.Message":"Are you sure you want to receive email alerts?", "CNConnections.Dialog.OptIn.ButtonSubmit":"Learn More", "_decimalSeparator":".", "CNConnections.Dialog.OptIn.ButtonCancel":"Cancel", "MZCommerce.Login_message":"Sign In", "DIBuyButtonRedownloadAria":"Download, @@name@@: Free", "Js.CNConnections.LoginRequired.Title":"Sign in to access Ping.", "CNConnections.Dialog.OptIn.ButtonSignIn":"Sign In", "Js.Pagination.PageNumber":"Page @@num@@", "DAHSoftwareInstall.Status.EstimatedTime.Calculating":"Calculating…", "DAH.SharingMenu.Facebook":"Share to Facebook", "DIBuyButtonUpdateAria":"Update, @@name@@", "CNConnections.Dialog.Like.Review.SignIn.Title":"Sign in to like a review.", "Js.PreflightCheckWarning.Title":"Would you like to continue?", "CNConnections.Upload.MaxPhotosErrorMessage":"You can have no more than 20 photos in one post."}
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/htmlResources/81e9215/da-storefront-base.js"></script>
+<script type="text/javascript" charset="utf-8" src="/htmlResources/81e9215/da-storefront-sharing.js"></script>
+
+
+
+
+
+
+
+</head>
+
+  <body data-country="ukr" buy-button-metadata-url="https://se-edge.itunes.apple.com/WebObjects/MZStoreElements.woa/wa/buyButtonMetaData" class="ukr en search">
+  <script type="text/javascript">
+    if (window['iTSKit']) { iTSKit.preLoad(); }
+    if (window.its && its.kit) { its.kit.preload(); }
+  </script>
+
+  
+
+  
+  <div id="page">
+    <div id="wrapper">
+
+      <div id="content">
+
+        <div class="background"></div>
+
+        
+
+        
+
+        
+
+    <div class="columns">
+      <div class="main">
+
+        
+          
+
+          
+          <div display-page-number-separately="true" page-number-parameter="page" pill-identifier-parameter="pill" sort-key-parameter="sortOrdering" goto-page-href="https://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?cc=ua&pageCount=120&q=open%20office" class="lockup-container paginate application mac-application numbered">
+  <div class="title">
+    <h2>Search Results for “open office”</h2>
+    
+    
+    	
+	  
+    
+    <div class="select sort-controls">
+  <label>
+    <span>Sort By:</span>
+    <select metrics-loc="Selector">
+      
+        <option value="10" metrics-loc="Relevance">
+          Relevance
+        </option>
+      
+        <option value="6" metrics-loc="Most Popular">
+          Most Popular
+        </option>
+      
+        <option value="2" metrics-loc="Release Date">
+          Release Date
+        </option>
+      
+        <option value="13" metrics-loc="Customer Rating">
+          Customer Rating
+        </option>
+      
+    </select>
+  </label>
+</div>
+    
+  </div>
+  <div class="content-and-controls">
+    <div class="paginated-container">
+      <div page-number="1" sort-key pill-identifier="0" total-number-of-pages="1" class="paginated-content"><div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="1Doc:Word Processor for Writer" adam-id="1096528668" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/1doc-word-processor-for-writer/id1096528668?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="1Doc:Word Processor for Writer" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/77/5b/c3/775bc3b6-3aa4-fc0b-5e87-87ec476a76e4/source/150x150bb.png" src-swap="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/77/5b/c3/775bc3b6-3aa4-fc0b-5e87-87ec476a76e4/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/1doc-word-processor-for-writer/id1096528668?mt=12">1Doc:Word Processor for Writer</a></li><li class="genre">Business</li><li class="customer-ratings"><div class='rating' role='img' tabindex='-1' aria-label='4 and a half stars, 166 Ratings'><div><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star">&nbsp;</span><span class="rating-star half">&nbsp;</span></div><span class="rating-count">166 Ratings</span>
+</div>
+</li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1096528668&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=828046263" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/1doc-word-processor-for-writer/id1096528668?mt=12&#34;}" minimumOSVersion="10.10" hasInAppPurchases="1" bundle-id="com.yelab.Word-Master" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/92/73/64/92736465-ae86-6331-2b75-8e8f5385f65c/signed.dcr.3288480690661461016.pfpkg" versionID="828046263" adam-id="1096528668" dk-id="30" item-name="1Doc:Word Processor for Writer" buy-params="productType=C&amp;price=0&amp;salableAdamId=1096528668&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=828046263" version-string="1.1.2" large-icon="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/77/5b/c3/775bc3b6-3aa4-fc0b-5e87-87ec476a76e4/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for 1Doc:Word Processor for Writer">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/1doc-word-processor-for-writer/id1096528668?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1096528668&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="X Word - for Microsoft Word Edition &amp; Open Office Format" adam-id="598600872" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/x-word-for-microsoft-word-edition-open-office-format/id598600872?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="X Word - for Microsoft Word Edition &amp; Open Office Format" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple49/v4/0e/68/4a/0e684ac0-bdc3-186e-6bad-e0d06b34488d/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple49/v4/0e/68/4a/0e684ac0-bdc3-186e-6bad-e0d06b34488d/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/x-word-for-microsoft-word-edition-open-office-format/id598600872?mt=12">X Word - for Microsoft Word Edition &amp; Open Office Format</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=598600872&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=816985562" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/x-word-for-microsoft-word-edition-open-office-format/id598600872?mt=12&#34;}" minimumOSVersion="10.10" bundle-id="com.fututime.xword1" original-price="USD 19.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple49/v4/2d/68/17/2d681789-0055-d4ef-04cf-69cf8bc9f8fe/signed.dcr.8006203272063271275.pfpkg" versionID="816985562" adam-id="598600872" dk-id="30" item-name="X Word - for Microsoft Word Edition &amp; Open Office Format" buy-params="productType=C&amp;price=19990&amp;salableAdamId=598600872&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=816985562" version-string="1.5.1" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple49/v4/0e/68/4a/0e684ac0-bdc3-186e-6bad-e0d06b34488d/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 19.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 19.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for X Word - for Microsoft Word Edition &amp; Open Office Format">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/x-word-for-microsoft-word-edition-open-office-format/id598600872?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=598600872&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Go Word - for Microsoft Word Edition &amp; Open Office Format" adam-id="702178333" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/go-word-for-microsoft-word-edition-open-office-format/id702178333?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Go Word - for Microsoft Word Edition &amp; Open Office Format" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple20/v4/88/54/c2/8854c23c-f3b8-072f-6ae6-d405bd91edb2/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple20/v4/88/54/c2/8854c23c-f3b8-072f-6ae6-d405bd91edb2/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/go-word-for-microsoft-word-edition-open-office-format/id702178333?mt=12">Go Word - for Microsoft Word Edition &amp; Open Office Format</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=702178333&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=813094733" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/go-word-for-microsoft-word-edition-open-office-format/id702178333?mt=12&#34;}" minimumOSVersion="10.6.8" bundle-id="com.iosappdev2013incultrawrite" original-price="USD 24.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple49/v4/98/24/de/9824de81-3a56-7a28-a5c9-7ca0766b7a99/encrypted8674190865178406301.pfpkg" versionID="813094733" adam-id="702178333" dk-id="30" item-name="Go Word - for Microsoft Word Edition &amp; Open Office Format" buy-params="productType=C&amp;price=24990&amp;salableAdamId=702178333&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=813094733" version-string="1.2.6" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple20/v4/88/54/c2/8854c23c-f3b8-072f-6ae6-d405bd91edb2/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 24.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 24.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Go Word - for Microsoft Word Edition &amp; Open Office Format">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/go-word-for-microsoft-word-edition-open-office-format/id702178333?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=702178333&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Document Writer Pro - For MS Word and Open Office" adam-id="985525076" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/document-writer-pro-for-ms-word-and-open-office/id985525076?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Document Writer Pro - For MS Word and Open Office" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is2-ssl.mzstatic.com/image/thumb/Purple3/v4/2c/4e/71/2c4e7195-9821-9cf0-dfe5-8370ffd49ca8/source/150x150bb.png" src-swap="https://is2-ssl.mzstatic.com/image/thumb/Purple3/v4/2c/4e/71/2c4e7195-9821-9cf0-dfe5-8370ffd49ca8/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/document-writer-pro-for-ms-word-and-open-office/id985525076?mt=12">Document Writer Pro - For MS Word and Open Office</a></li><li class="genre">Utilities</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=985525076&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=813247345" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/document-writer-pro-for-ms-word-and-open-office/id985525076?mt=12&#34;}" minimumOSVersion="10.7" bundle-id="com.sharky.writer" original-price="USD 5.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple49/v4/85/93/2d/85932dca-5506-d567-848e-218b86990be3/encrypted8434871202201916997.pfpkg" versionID="813247345" adam-id="985525076" dk-id="30" item-name="Document Writer Pro - For MS Word and Open Office" buy-params="productType=C&amp;price=5990&amp;salableAdamId=985525076&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=813247345" version-string="1.1" large-icon="https://is2-ssl.mzstatic.com/image/thumb/Purple3/v4/2c/4e/71/2c4e7195-9821-9cf0-dfe5-8370ffd49ca8/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 5.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 5.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Document Writer Pro - For MS Word and Open Office">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/document-writer-pro-for-ms-word-and-open-office/id985525076?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=985525076&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Open File - Pub,WPD Viewer" adam-id="1268513032" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/open-file-pub-wpd-viewer/id1268513032?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Open File - Pub,WPD Viewer" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/32/40/99/32409929-a8c8-a1ca-35e1-59359de28af3/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/32/40/99/32409929-a8c8-a1ca-35e1-59359de28af3/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/open-file-pub-wpd-viewer/id1268513032?mt=12">Open File - Pub,WPD Viewer</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1268513032&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=824164441" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/open-file-pub-wpd-viewer/id1268513032?mt=12&#34;}" minimumOSVersion="10.11" hasInAppPurchases="1" bundle-id="MicFileFree" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/2f/54/ca/2f54caf6-2fd2-4979-33ad-350b3322be92/signed.dcr.2934747463815826603.pfpkg" versionID="824164441" adam-id="1268513032" dk-id="30" item-name="Open File - Pub,WPD Viewer" buy-params="productType=C&amp;price=0&amp;salableAdamId=1268513032&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=824164441" version-string="1.3.1" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/32/40/99/32409929-a8c8-a1ca-35e1-59359de28af3/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Open File - Pub,WPD Viewer">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/open-file-pub-wpd-viewer/id1268513032?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1268513032&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Collabora Office" adam-id="918120011" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/collabora-office/id918120011?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Collabora Office" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple62/v4/4f/b3/73/4fb37340-ff5a-c3b3-f80a-e3cef795fa6c/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple62/v4/4f/b3/73/4fb37340-ff5a-c3b3-f80a-e3cef795fa6c/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/collabora-office/id918120011?mt=12">Collabora Office</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=918120011&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=825914020" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/collabora-office/id918120011?mt=12&#34;}" minimumOSVersion="10.9.0" bundle-id="com.collabora.libreoffice" original-price="USD 29.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple128/v4/fd/0b/e9/fd0be9c6-8e8b-5f7a-fc3c-12132aa4af0c/signed.dcr.8254560145491151340.pfpkg" versionID="825914020" adam-id="918120011" dk-id="30" item-name="Collabora Office" buy-params="productType=C&amp;price=29990&amp;salableAdamId=918120011&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=825914020" version-string="5.3-40" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple62/v4/4f/b3/73/4fb37340-ff5a-c3b3-f80a-e3cef795fa6c/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 29.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 29.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Collabora Office">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/collabora-office/id918120011?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=918120011&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Document Writer - PDF Support" adam-id="1114453740" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/document-writer-pdf-support/id1114453740?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Document Writer - PDF Support" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/cc/fb/85/ccfb85b1-0518-d1e2-95dd-3bf8fd7dad2e/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/cc/fb/85/ccfb85b1-0518-d1e2-95dd-3bf8fd7dad2e/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/document-writer-pdf-support/id1114453740?mt=12">Document Writer - PDF Support</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1114453740&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827551606" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/document-writer-pdf-support/id1114453740?mt=12&#34;}" minimumOSVersion="10.11" hasInAppPurchases="1" bundle-id="WordWriter" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple115/v4/ee/87/d7/ee87d72e-d59d-be89-554b-a957edb6ad2d/signed.dcr.6069363762874555668.pfpkg" versionID="827551606" adam-id="1114453740" dk-id="30" item-name="Document Writer - PDF Support" buy-params="productType=C&amp;price=0&amp;salableAdamId=1114453740&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827551606" version-string="1.6.1" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/cc/fb/85/ccfb85b1-0518-d1e2-95dd-3bf8fd7dad2e/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Document Writer - PDF Support">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/document-writer-pdf-support/id1114453740?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1114453740&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Works Document Reader - Open &amp; Convert Your WPS Files" adam-id="981953641" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/works-document-reader-open-convert-your-wps-files/id981953641?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Works Document Reader - Open &amp; Convert Your WPS Files" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/aa/d5/3e/aad53e2a-77b4-1ceb-bd47-e70459419c0d/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/aa/d5/3e/aad53e2a-77b4-1ceb-bd47-e70459419c0d/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/works-document-reader-open-convert-your-wps-files/id981953641?mt=12">Works Document Reader - Open &amp; Convert Your WPS Files</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=981953641&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=812127213" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/works-document-reader-open-convert-your-wps-files/id981953641?mt=12&#34;}" minimumOSVersion="10.7" bundle-id="com.dengxinbei.worksdocumentreader" original-price="USD 2.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple69/v4/bc/8b/b3/bc8bb336-2b8d-2897-336c-3cc66476f9d2/encrypted6781222304006283722.pfpkg" versionID="812127213" adam-id="981953641" dk-id="30" item-name="Works Document Reader - Open &amp; Convert Your WPS Files" buy-params="productType=C&amp;price=2990&amp;salableAdamId=981953641&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=812127213" version-string="2.0.0" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/aa/d5/3e/aad53e2a-77b4-1ceb-bd47-e70459419c0d/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 2.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 2.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Works Document Reader - Open &amp; Convert Your WPS Files">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/works-document-reader-open-convert-your-wps-files/id981953641?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=981953641&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="OfficeDocs - Templates for Microsoft Office" adam-id="962330105" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/officedocs-templates-for-microsoft-office/id962330105?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="OfficeDocs - Templates for Microsoft Office" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/4d/4e/6f/4d4e6f4b-45dc-7657-7055-bbdb9eb04a70/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/4d/4e/6f/4d4e6f4b-45dc-7657-7055-bbdb9eb04a70/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/officedocs-templates-for-microsoft-office/id962330105?mt=12">OfficeDocs - Templates for Microsoft Office</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=962330105&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=820118530" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/officedocs-templates-for-microsoft-office/id962330105?mt=12&#34;}" minimumOSVersion="10.9" bundle-id="com.moonapps.Suite-for-MS-Office---Word--Excel--Powerpoint---Templates" original-price="USD 39.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple91/v4/83/41/8e/83418eb7-1a15-c0cb-0b28-650ea7af6b22/signed.dcr.6464106775064976821.pfpkg" versionID="820118530" adam-id="962330105" dk-id="30" item-name="OfficeDocs - Templates for Microsoft Office" buy-params="productType=C&amp;price=39990&amp;salableAdamId=962330105&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=820118530" version-string="1.3" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/4d/4e/6f/4d4e6f4b-45dc-7657-7055-bbdb9eb04a70/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 39.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 39.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for OfficeDocs - Templates for Microsoft Office">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/officedocs-templates-for-microsoft-office/id962330105?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=962330105&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="1Doc for Microsoft Office 365 Online" adam-id="1126606236" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/1doc-for-microsoft-office-365-online/id1126606236?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="1Doc for Microsoft Office 365 Online" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple91/v4/8b/1a/23/8b1a230b-d42d-03a6-2948-b3bc5146bc7b/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple91/v4/8b/1a/23/8b1a230b-d42d-03a6-2948-b3bc5146bc7b/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/1doc-for-microsoft-office-365-online/id1126606236?mt=12">1Doc for Microsoft Office 365 Online</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1126606236&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=820754181" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/1doc-for-microsoft-office-365-online/id1126606236?mt=12&#34;}" minimumOSVersion="10.9" bundle-id="com.tapless.xdocs" original-price="USD 19.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple122/v4/80/3d/97/803d97fb-c265-5fde-85cd-97cf1165d008/signed.dcr.6508078327300014826.pfpkg" versionID="820754181" adam-id="1126606236" dk-id="30" item-name="1Doc for Microsoft Office 365 Online" buy-params="productType=C&amp;price=19990&amp;salableAdamId=1126606236&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=820754181" version-string="1.5.2" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple91/v4/8b/1a/23/8b1a230b-d42d-03a6-2948-b3bc5146bc7b/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 19.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 19.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for 1Doc for Microsoft Office 365 Online">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/1doc-for-microsoft-office-365-online/id1126606236?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1126606236&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="WordPerfect Document Reader - Open &amp; Convert Your WPD Files" adam-id="981953624" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/wordperfect-document-reader-open-convert-your-wpd-files/id981953624?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="WordPerfect Document Reader - Open &amp; Convert Your WPD Files" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple7/v4/e2/e2/29/e2e22935-f081-efc7-a39b-87acd469ce08/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple7/v4/e2/e2/29/e2e22935-f081-efc7-a39b-87acd469ce08/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/wordperfect-document-reader-open-convert-your-wpd-files/id981953624?mt=12">WordPerfect Document Reader - Open &amp; Convert Your WPD Files</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=981953624&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=812127209" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/wordperfect-document-reader-open-convert-your-wpd-files/id981953624?mt=12&#34;}" minimumOSVersion="10.7" bundle-id="com.dengxinbei.wordperfectreader" original-price="USD 3.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple49/v4/5d/60/e6/5d60e6ae-1247-3cfc-f686-4fa92344dbf7/encrypted6474902342697041687.pfpkg" versionID="812127209" adam-id="981953624" dk-id="30" item-name="WordPerfect Document Reader - Open &amp; Convert Your WPD Files" buy-params="productType=C&amp;price=3990&amp;salableAdamId=981953624&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=812127209" version-string="2.0.0" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple7/v4/e2/e2/29/e2e22935-f081-efc7-a39b-87acd469ce08/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 3.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 3.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for WordPerfect Document Reader - Open &amp; Convert Your WPD Files">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/wordperfect-document-reader-open-convert-your-wpd-files/id981953624?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=981953624&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Doc Writer: Word Processor" adam-id="1109319989" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/doc-writer-word-processor/id1109319989?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Doc Writer: Word Processor" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/fe/53/7d/fe537d60-73e8-48f7-0403-f7c4f7cb503c/source/150x150bb.png" src-swap="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/fe/53/7d/fe537d60-73e8-48f7-0403-f7c4f7cb503c/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/doc-writer-word-processor/id1109319989?mt=12">Doc Writer: Word Processor</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button is-free-download="1" update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1109319989&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827841379" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/doc-writer-word-processor/id1109319989?mt=12&#34;}" minimumOSVersion="10.10" hasInAppPurchases="1" bundle-id="com.CHY.Word-Simple" original-price="Get" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/84/f2/92/84f29292-6294-a58d-168c-ce1d031058e9/signed.dcr.1702150747118696027.pfpkg" versionID="827841379" adam-id="1109319989" dk-id="30" item-name="Doc Writer: Word Processor" buy-params="productType=C&amp;price=0&amp;salableAdamId=1109319989&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827841379" version-string="1.0.8" large-icon="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/fe/53/7d/fe537d60-73e8-48f7-0403-f7c4f7cb503c/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">Get</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>Get</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Doc Writer: Word Processor">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/doc-writer-word-processor/id1109319989?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1109319989&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="MW Bundle for MS Office" adam-id="1192174999" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/mw-bundle-for-ms-office/id1192174999?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="MW Bundle for MS Office" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/1e/a6/3f/1ea63f86-edce-38cf-b689-a1e3588c728b/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/1e/a6/3f/1ea63f86-edce-38cf-b689-a1e3588c728b/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/mw-bundle-for-ms-office/id1192174999?mt=12">MW Bundle for MS Office</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1192174999&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=820421186" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/mw-bundle-for-ms-office/id1192174999?mt=12&#34;}" minimumOSVersion="10.9" bundle-id="com.mcalisterworthington.TemplatesForMSOffice" original-price="USD 39.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple122/v4/f3/56/dc/f356dc21-056a-637a-04b5-ad2732453a6c/signed.dcr.8796013318569145025.pfpkg" versionID="820421186" adam-id="1192174999" dk-id="30" item-name="MW Bundle for MS Office" buy-params="productType=C&amp;price=39990&amp;salableAdamId=1192174999&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=820421186" version-string="1.0" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/1e/a6/3f/1ea63f86-edce-38cf-b689-a1e3588c728b/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 39.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 39.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for MW Bundle for MS Office">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/mw-bundle-for-ms-office/id1192174999?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1192174999&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="QuickView for Safari" adam-id="1394039767" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/quickview-for-safari/id1394039767?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="QuickView for Safari" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/aa/6e/e1/aa6ee104-9f87-b0ff-b9bd-5af38475f7d2/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/aa/6e/e1/aa6ee104-9f87-b0ff-b9bd-5af38475f7d2/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/quickview-for-safari/id1394039767?mt=12">QuickView for Safari</a></li><li class="genre">Utilities</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1394039767&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827638434" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/quickview-for-safari/id1394039767?mt=12&#34;}" minimumOSVersion="10.12" bundle-id="com.alexandrudenk.QuickView-for-Safari" original-price="USD 2.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/d9/ca/1b/d9ca1bed-c842-dd3e-e770-9ee0d5a62715/signed.dcr.6138407053420785739.pfpkg" versionID="827638434" adam-id="1394039767" dk-id="30" item-name="QuickView for Safari" buy-params="productType=C&amp;price=2990&amp;salableAdamId=1394039767&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827638434" version-string="1.5.0" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/aa/6e/e1/aa6ee104-9f87-b0ff-b9bd-5af38475f7d2/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 2.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 2.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for QuickView for Safari">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/quickview-for-safari/id1394039767?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1394039767&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Writed Pro - for Word, OpenOffice, Markdown and RTF" adam-id="1085596405" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/writed-pro-for-word-openoffice-markdown-and-rtf/id1085596405?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Writed Pro - for Word, OpenOffice, Markdown and RTF" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple69/v4/a5/fe/44/a5fe449f-17a4-28e9-1bfb-21add157be8a/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple69/v4/a5/fe/44/a5fe449f-17a4-28e9-1bfb-21add157be8a/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/writed-pro-for-word-openoffice-markdown-and-rtf/id1085596405?mt=12">Writed Pro - for Word, OpenOffice, Markdown and RTF</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1085596405&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=816490092" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/writed-pro-for-word-openoffice-markdown-and-rtf/id1085596405?mt=12&#34;}" minimumOSVersion="10.7" bundle-id="com.stahllabs.WritedProApp" original-price="USD 4.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple69/v4/93/d1/37/93d13774-f0ca-f8ff-c735-26a7f905f6b4/signed.dcr.5939186204779563768.pfpkg" versionID="816490092" adam-id="1085596405" dk-id="30" item-name="Writed Pro - for Word, OpenOffice, Markdown and RTF" buy-params="productType=C&amp;price=4990&amp;salableAdamId=1085596405&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=816490092" version-string="1.0" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple69/v4/a5/fe/44/a5fe449f-17a4-28e9-1bfb-21add157be8a/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 4.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 4.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Writed Pro - for Word, OpenOffice, Markdown and RTF">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/writed-pro-for-word-openoffice-markdown-and-rtf/id1085596405?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1085596405&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="NeoOffice" adam-id="639210716" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/neooffice/id639210716?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="NeoOffice" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/82/4a/8f/824a8fcb-418b-23be-f7ff-a1bce125dc75/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/82/4a/8f/824a8fcb-418b-23be-f7ff-a1bce125dc75/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/neooffice/id639210716?mt=12">NeoOffice</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=639210716&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=827965123" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/neooffice/id639210716?mt=12&#34;}" minimumOSVersion="10.12" bundle-id="org.neooffice.NeoOfficeSecureEdition" original-price="USD 29.99" preflight="http://osxapps.itunes.apple.com/itunes-assets/Purple118/v4/5d/fa/7c/5dfa7ca8-9f4e-db40-8e28-7b7079807cf2/signed.dcr.49065219986331941.pfpkg" versionID="827965123" adam-id="639210716" dk-id="30" item-name="NeoOffice" buy-params="productType=C&amp;price=29990&amp;salableAdamId=639210716&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=827965123" version-string="2017.11" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/82/4a/8f/824a8fcb-418b-23be-f7ff-a1bce125dc75/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 29.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 29.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for NeoOffice">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/neooffice/id639210716?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=639210716&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Word Document Writer Pro for Microsoft Word Processor &amp; Open Office Format" adam-id="1063953052" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/word-document-writer-pro-for-microsoft-word-processor/id1063953052?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Word Document Writer Pro for Microsoft Word Processor &amp; Open Office Format" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is2-ssl.mzstatic.com/image/thumb/Purple111/v4/2b/08/9a/2b089a7b-7f18-f43e-a1df-1df244bc03fe/source/150x150bb.png" src-swap="https://is2-ssl.mzstatic.com/image/thumb/Purple111/v4/2b/08/9a/2b089a7b-7f18-f43e-a1df-1df244bc03fe/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/word-document-writer-pro-for-microsoft-word-processor/id1063953052?mt=12">Word Document Writer Pro for Microsoft Word Processor &amp; Open Office Format</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1063953052&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=816941576" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/word-document-writer-pro-for-microsoft-word-processor/id1063953052?mt=12&#34;}" minimumOSVersion="10.11" bundle-id="com.itsabouttime.word" original-price="USD 19.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple49/v4/75/63/3e/75633e86-8357-0af7-8212-1ac0df0f9007/signed.dcr.8244041050002432201.pfpkg" versionID="816941576" adam-id="1063953052" dk-id="30" item-name="Word Document Writer Pro for Microsoft Word Processor &amp; Open Office Format" buy-params="productType=C&amp;price=19990&amp;salableAdamId=1063953052&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=816941576" version-string="1.0.4" large-icon="https://is2-ssl.mzstatic.com/image/thumb/Purple111/v4/2b/08/9a/2b089a7b-7f18-f43e-a1df-1df244bc03fe/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 19.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 19.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Word Document Writer Pro for Microsoft Word Processor &amp; Open Office Format">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/word-document-writer-pro-for-microsoft-word-processor/id1063953052?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1063953052&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="XPS Opener &ndash; View &amp; Convert XML Paper Specification Documents" adam-id="981887889" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/xps-opener-view-convert-xml-paper-specification-documents/id981887889?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="XPS Opener – View &amp; Convert XML Paper Specification Documents" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple3/v4/d3/ff/53/d3ff5390-4c6a-6bbe-8c97-371a80740e94/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple3/v4/d3/ff/53/d3ff5390-4c6a-6bbe-8c97-371a80740e94/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/xps-opener-view-convert-xml-paper-specification-documents/id981887889?mt=12">XPS Opener – View &amp; Convert XML Paper Specification Documents</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=981887889&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=812125718" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/xps-opener-view-convert-xml-paper-specification-documents/id981887889?mt=12&#34;}" minimumOSVersion="10.7" bundle-id="com.yinxiaoqi.xpsopener" original-price="USD 2.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple49/v4/61/e2/73/61e273ad-d99d-3ecb-a0d1-5531e50046cc/encrypted4005868948980677424.pfpkg" versionID="812125718" adam-id="981887889" dk-id="30" item-name="XPS Opener – View &amp; Convert XML Paper Specification Documents" buy-params="productType=C&amp;price=2990&amp;salableAdamId=981887889&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=812125718" version-string="2.0.0" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple3/v4/d3/ff/53/d3ff5390-4c6a-6bbe-8c97-371a80740e94/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 2.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 2.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for XPS Opener &ndash; View &amp; Convert XML Paper Specification Documents">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/xps-opener-view-convert-xml-paper-specification-documents/id981887889?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=981887889&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Turbo Word - Word Processor for Your Daily Writing" adam-id="650732515" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/turbo-word-word-processor-for-your-daily-writing/id650732515?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Turbo Word - Word Processor for Your Daily Writing" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple2/v4/4b/ad/ce/4badce1d-2b12-167c-274c-20501c71260c/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple2/v4/4b/ad/ce/4badce1d-2b12-167c-274c-20501c71260c/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/turbo-word-word-processor-for-your-daily-writing/id650732515?mt=12">Turbo Word - Word Processor for Your Daily Writing</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=650732515&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=15434374" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/turbo-word-word-processor-for-your-daily-writing/id650732515?mt=12&#34;}" minimumOSVersion="10.6.6" bundle-id="com.cathyworkshop.turboword" original-price="USD 9.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple69/v4/3a/86/ba/3a86bab2-7b00-e05d-e258-f863f712e8d2/encrypted5145417046212223097.pfpkg" versionID="15434374" adam-id="650732515" dk-id="30" item-name="Turbo Word - Word Processor for Your Daily Writing" buy-params="productType=C&amp;price=9990&amp;salableAdamId=650732515&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=15434374" version-string="1.1.2" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple2/v4/4b/ad/ce/4badce1d-2b12-167c-274c-20501c71260c/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 9.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 9.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Turbo Word - Word Processor for Your Daily Writing">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/turbo-word-word-processor-for-your-daily-writing/id650732515?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=650732515&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Write Pad" adam-id="700330367" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/write-pad/id700330367?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Write Pad" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is4-ssl.mzstatic.com/image/thumb/Purple6/v4/d9/02/bd/d902bd6b-be74-8d79-aa65-6976e605dd41/source/150x150bb.png" src-swap="https://is4-ssl.mzstatic.com/image/thumb/Purple6/v4/d9/02/bd/d902bd6b-be74-8d79-aa65-6976e605dd41/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/write-pad/id700330367?mt=12">Write Pad</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=700330367&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=16883382" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/write-pad/id700330367?mt=12&#34;}" minimumOSVersion="10.6.6" bundle-id="com.cathyworkshop.wordwrite" original-price="USD 9.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple69/v4/a1/96/39/a19639a9-4f20-9e8b-babb-05bd320e683f/encrypted1871336805261554144.pfpkg" versionID="16883382" adam-id="700330367" dk-id="30" item-name="Write Pad" buy-params="productType=C&amp;price=9990&amp;salableAdamId=700330367&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=16883382" version-string="1.5.0" large-icon="https://is4-ssl.mzstatic.com/image/thumb/Purple6/v4/d9/02/bd/d902bd6b-be74-8d79-aa65-6976e605dd41/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 9.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 9.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Write Pad">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/write-pad/id700330367?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=700330367&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Templates Document - for Pages and Word" adam-id="823406246" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/templates-document-for-pages-and-word/id823406246?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Templates Document - for Pages and Word" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e5/12/ba/e512bac0-ab0c-e316-e1dc-1c4251c639bc/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e5/12/ba/e512bac0-ab0c-e316-e1dc-1c4251c639bc/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/templates-document-for-pages-and-word/id823406246?mt=12">Templates Document - for Pages and Word</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=823406246&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=820071830" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/templates-document-for-pages-and-word/id823406246?mt=12&#34;}" minimumOSVersion="10.7" bundle-id="com.fututime.documentpackage" original-price="USD 24.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple111/v4/24/70/e1/2470e1de-e401-7bac-98ba-8d41592509d3/signed.dcr.3334627494859262711.pfpkg" versionID="820071830" adam-id="823406246" dk-id="30" item-name="Templates Document - for Pages and Word" buy-params="productType=C&amp;price=24990&amp;salableAdamId=823406246&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=820071830" version-string="1.1" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e5/12/ba/e512bac0-ab0c-e316-e1dc-1c4251c639bc/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 24.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 24.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Templates Document - for Pages and Word">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/templates-document-for-pages-and-word/id823406246?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=823406246&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Simple Winmail - DAT Viewer" adam-id="1108867221" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/simple-winmail-dat-viewer/id1108867221?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Simple Winmail - DAT Viewer" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple60/v4/64/25/4d/64254d23-781c-afec-3a1a-e25dc80f8bd0/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple60/v4/64/25/4d/64254d23-781c-afec-3a1a-e25dc80f8bd0/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/simple-winmail-dat-viewer/id1108867221?mt=12">Simple Winmail - DAT Viewer</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1108867221&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=817221075" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/simple-winmail-dat-viewer/id1108867221?mt=12&#34;}" minimumOSVersion="10.10" bundle-id="com.moonapps.winmail" original-price="USD 1.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple18/v4/8c/4a/a9/8c4aa9d1-95e3-61ae-e8f5-f826f099df93/signed.dcr.1790738677222570377.pfpkg" versionID="817221075" adam-id="1108867221" dk-id="30" item-name="Simple Winmail - DAT Viewer" buy-params="productType=C&amp;price=1990&amp;salableAdamId=1108867221&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=817221075" version-string="1.0" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple60/v4/64/25/4d/64254d23-781c-afec-3a1a-e25dc80f8bd0/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 1.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 1.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Simple Winmail - DAT Viewer">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/simple-winmail-dat-viewer/id1108867221?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1108867221&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Works Reader" adam-id="1062817712" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/works-reader/id1062817712?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Works Reader" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple7/v4/8c/9c/e0/8c9ce074-189b-fc2c-3cd4-add105b445c0/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple7/v4/8c/9c/e0/8c9ce074-189b-fc2c-3cd4-add105b445c0/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/works-reader/id1062817712?mt=12">Works Reader</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=1062817712&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=814829921" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/works-reader/id1062817712?mt=12&#34;}" minimumOSVersion="10.8" bundle-id="com.RootRiseTechnologies.Works-Reader" original-price="USD 4.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple49/v4/c8/2f/ea/c82fea29-6346-9b81-82f0-d2a638458f6b/encrypted6139804604413519282.pfpkg" versionID="814829921" adam-id="1062817712" dk-id="30" item-name="Works Reader" buy-params="productType=C&amp;price=4990&amp;salableAdamId=1062817712&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=814829921" version-string="1.0" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple7/v4/8c/9c/e0/8c9ce074-189b-fc2c-3cd4-add105b445c0/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 4.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 4.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Works Reader">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/works-reader/id1062817712?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=1062817712&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Works WPS Opener &ndash; View &amp; Convert Microsoft Works Documents" adam-id="981887267" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/works-wps-opener-view-convert-microsoft-works-documents/id981887267?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Works WPS Opener – View &amp; Convert Microsoft Works Documents" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple5/v4/30/10/87/30108776-23de-69c4-6d32-a98a4395c0fd/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple5/v4/30/10/87/30108776-23de-69c4-6d32-a98a4395c0fd/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/works-wps-opener-view-convert-microsoft-works-documents/id981887267?mt=12">Works WPS Opener – View &amp; Convert Microsoft Works Documents</a></li><li class="genre">Business</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=981887267&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=812125695" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/works-wps-opener-view-convert-microsoft-works-documents/id981887267?mt=12&#34;}" minimumOSVersion="10.7" bundle-id="com.yinxiaoqi.workswpsopener" original-price="USD 3.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple69/v4/c5/82/43/c582431f-86bb-8f02-2526-f5e1aeb19f89/encrypted3331612273918733451.pfpkg" versionID="812125695" adam-id="981887267" dk-id="30" item-name="Works WPS Opener – View &amp; Convert Microsoft Works Documents" buy-params="productType=C&amp;price=3990&amp;salableAdamId=981887267&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=812125695" version-string="2.0.0" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple5/v4/30/10/87/30108776-23de-69c4-6d32-a98a4395c0fd/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 3.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 3.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Works WPS Opener &ndash; View &amp; Convert Microsoft Works Documents">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/works-wps-opener-view-convert-microsoft-works-documents/id981887267?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=981887267&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="WordPerfect WPD Opener - View &amp; Convert WordPerfect Documents" adam-id="981880541" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/wordperfect-wpd-opener-view-convert-wordperfect-documents/id981880541?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="WordPerfect WPD Opener - View &amp; Convert WordPerfect Documents" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple3/v4/0c/69/c1/0c69c177-a3a2-0230-0913-857a19144f01/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple3/v4/0c/69/c1/0c69c177-a3a2-0230-0913-857a19144f01/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/wordperfect-wpd-opener-view-convert-wordperfect-documents/id981880541?mt=12">WordPerfect WPD Opener - View &amp; Convert WordPerfect Documents</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=981880541&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=812125547" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/wordperfect-wpd-opener-view-convert-wordperfect-documents/id981880541?mt=12&#34;}" minimumOSVersion="10.7" bundle-id="com.yinxiaoqi.wordperfectwpdopener" original-price="USD 4.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple69/v4/e6/61/68/e661686f-fee1-9853-3956-c595478f1b90/encrypted7801238875512567396.pfpkg" versionID="812125547" adam-id="981880541" dk-id="30" item-name="WordPerfect WPD Opener - View &amp; Convert WordPerfect Documents" buy-params="productType=C&amp;price=4990&amp;salableAdamId=981880541&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=812125547" version-string="2.0.0" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple3/v4/0c/69/c1/0c69c177-a3a2-0230-0913-857a19144f01/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 4.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 4.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for WordPerfect WPD Opener - View &amp; Convert WordPerfect Documents">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/wordperfect-wpd-opener-view-convert-wordperfect-documents/id981880541?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=981880541&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Image Extractor for Microsoft Word Documents" adam-id="989923260" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/image-extractor-for-microsoft-word-documents/id989923260?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Image Extractor for Microsoft Word Documents" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/57/11/07/5711075e-31f0-5e5f-a283-ebcbc0358f34/source/150x150bb.png" src-swap="https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/57/11/07/5711075e-31f0-5e5f-a283-ebcbc0358f34/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/image-extractor-for-microsoft-word-documents/id989923260?mt=12">Image Extractor for Microsoft Word Documents</a></li><li class="genre">Utilities</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=989923260&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=812306549" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/image-extractor-for-microsoft-word-documents/id989923260?mt=12&#34;}" minimumOSVersion="10.10" bundle-id="Writes-for-All-Inc.Word-Document-Image-Extractor" original-price="USD 2.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple69/v4/31/a7/88/31a788ac-af7b-3f1a-2b3b-db2fc9a50357/encrypted7826919815404991508.pfpkg" versionID="812306549" adam-id="989923260" dk-id="30" item-name="Image Extractor for Microsoft Word Documents" buy-params="productType=C&amp;price=2990&amp;salableAdamId=989923260&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=812306549" version-string="1.0" large-icon="https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/57/11/07/5711075e-31f0-5e5f-a283-ebcbc0358f34/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 2.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 2.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Image Extractor for Microsoft Word Documents">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/image-extractor-for-microsoft-word-documents/id989923260?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=989923260&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Go Word Plus -  Quick Document Writer for Microsoft Office Word &amp; OpenOffice" adam-id="689773838" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/go-word-plus-quick-document-writer-for-microsoft-office/id689773838?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Go Word Plus -  Quick Document Writer for Microsoft Office Word &amp; OpenOffice" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is5-ssl.mzstatic.com/image/thumb/Purple20/v4/e7/c3/7d/e7c37d5c-a368-aa85-64a5-a3c8502fadcb/source/150x150bb.png" src-swap="https://is5-ssl.mzstatic.com/image/thumb/Purple20/v4/e7/c3/7d/e7c37d5c-a368-aa85-64a5-a3c8502fadcb/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/go-word-plus-quick-document-writer-for-microsoft-office/id689773838?mt=12">Go Word Plus -  Quick Document Writer for Microsoft Office Word &amp; OpenOffice</a></li><li class="genre">Productivity</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=689773838&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=813145609" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/go-word-plus-quick-document-writer-for-microsoft-office/id689773838?mt=12&#34;}" minimumOSVersion="10.6.8" bundle-id="com.globalguide.macword" original-price="USD 14.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple69/v4/e1/b2/42/e1b242c4-55d1-a24d-f722-d6375987b007/encrypted9097532460318363343.pfpkg" versionID="813145609" adam-id="689773838" dk-id="30" item-name="Go Word Plus -  Quick Document Writer for Microsoft Office Word &amp; OpenOffice" buy-params="productType=C&amp;price=14990&amp;salableAdamId=689773838&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=813145609" version-string="1.0.6" large-icon="https://is5-ssl.mzstatic.com/image/thumb/Purple20/v4/e7/c3/7d/e7c37d5c-a368-aa85-64a5-a3c8502fadcb/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 14.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 14.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Go Word Plus -  Quick Document Writer for Microsoft Office Word &amp; OpenOffice">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/go-word-plus-quick-document-writer-for-microsoft-office/id689773838?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=689773838&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+<div rating-software="100,itunes-games" parental-rating="1" metrics-loc="Lockup_" role="group" aria-label="Word To Go - for Microsoft Word edition &amp; OpenOffice" adam-id="683642461" class="lockup small detailed option application mac-application">
+  
+  <a href="https://itunes.apple.com/ua/app/word-to-go-for-microsoft-word-edition-openoffice/id683642461?mt=12" class="artwork-link"><div class="artwork">
+    <img width="75" height="75" alt="Word To Go - for Microsoft Word edition &amp; OpenOffice" src-load-auto-after-page-load-if-not-onscreen="" src-swap-high-dpi="https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/c0/af/e9/c0afe9ed-fa3f-a40a-9d4f-082872535129/source/150x150bb.png" src-swap="https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/c0/af/e9/c0afe9ed-fa3f-a40a-9d4f-082872535129/source/75x75bb.png" class="artwork" src="https://s.mzstatic.com/htmlResources/8dee/frameworks/images/p.png" />
+    
+    
+    
+</div></a>
+  <ul class="list"><li class="name"><a href="https://itunes.apple.com/ua/app/word-to-go-for-microsoft-word-edition-openoffice/id683642461?mt=12">Word To Go - for Microsoft Word edition &amp; OpenOffice</a></li><li class="genre">Utilities</li><li class="customer-ratings"></li><li><div rating-software="100,itunes-games" parental-rating="1" class="multi-button action small application mac-application detailed">
+  <button update-buy-params="productType=C&amp;price=0&amp;salableAdamId=683642461&amp;pricingParameters=SWUPD&amp;pg=default&amp;appExtVrsId=652372782" share-message-data="{&#34;tinyUrl&#34;:&#34;https://itunes.apple.com/ua/app/word-to-go-for-microsoft-word-edition-openoffice/id683642461?mt=12&#34;}" minimumOSVersion="10.4.0" bundle-id="com.officeworkinc.writetogo" original-price="USD 19.99" preflight="http://osxapps.itunes.apple.com/apple-assets-us-std-000001/Purple49/v4/87/ea/f4/87eaf4c7-4bc4-6900-456a-0328fe35414f/encrypted1011083706188754082.pfpkg" versionID="652372782" adam-id="683642461" dk-id="30" item-name="Word To Go - for Microsoft Word edition &amp; OpenOffice" buy-params="productType=C&amp;price=19990&amp;salableAdamId=683642461&amp;pricingParameters=STDQ&amp;pg=default&amp;appExtVrsId=652372782" version-string="1.2" large-icon="https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/c0/af/e9/c0afe9ed-fa3f-a40a-9d4f-082872535129/source/175x175bb.png" metrics-leaf="1" metrics-loc="Buy" class="button-area">
+    <span class="price">USD 19.99</span>
+    <span class="left-cap"></span>
+    <div class="inner"><span>USD 19.99</span></div>
+    <span class="right-cap"></span>
+  </button>
+  
+    <select aria-label="Actions for Word To Go - for Microsoft Word edition &amp; OpenOffice">
+      
+        <option action="copy-link" href="https://itunes.apple.com/ua/app/word-to-go-for-microsoft-word-edition-openoffice/id683642461?mt=12" metrics-loc="CopyLink" metrics-leaf="1">Copy Link</option>
+      
+        <option taf-body-url="https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/tellAFriendBody?name=s&amp;type=14&amp;id=683642461&amp;displayable-kind=30" action="tell-a-friend" metrics-loc="TellAFriend" metrics-leaf="1">Tell a Friend</option>
+      
+    </select>
+    <span class="arrow"></span>
+  
+</div></li></ul>  
+</div>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+        
+
+        
+
+      </div>
+    </div>
+
+  
+
+      </div>
+
+
+      
+      
+
+    </div>
+  </div>
+
+  <footer>
+  <div class="legal">
+    <span class="copyright">Copyright © 2018 Apple Inc. <a target="_blank" href="https://www.apple.com/uk/legal/">All Rights Reserved.</a></span>
+    <ul class="list" role="presentation">
+      <li><a target="_blank" href="https://www.apple.com/legal/itunes/appstore/ukr/terms.html#PRIVACY">Privacy Policy</a></li>
+      <li><a target="_blank" href="http://www.apple.com/legal/itunes/appstore/ukr/terms.html">Terms and Conditions</a></li>
+      
+      <li><a href="https://itunes.apple.com/ua/faq">FAQ</a></li>
+    </ul>
+    
+    <div class="intl" metrics-loc="CountryPicker">
+      <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/countrySelectorPage"><img src-load-auto-after-dom-load="" width="30" height="30" src-swap-high-dpi="https://s.mzstatic.com/images/flags/-dsi-30/ukr.png" alt="My Store: Ukraine, Choose Store" src-swap="https://s.mzstatic.com/images/flags/30/ukr.png"></img></a>
+      
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script type="text/javascript">
+    var pageMetricsUrl = 'https://xp.apple.com/report/2/xp_its_main?responseType=image&eventType=page&app=MacAppStore&pageId=DAHSearchPage&pageType=finance&eventSource=server&page=finance_DAHSearchPage';
+    if (pageMetricsUrl) {
+        pageMetricsUrl += "&eventTime=" + encodeURIComponent((new Date()).getTime());
+    }
+    var billingSection = document.querySelector(".edit-billing, .creditcard");
+    if (billingSection !== null) {
+        var selectedPaymentType = document.querySelector(".credit-card-picker input.selected, #paymentTypeField");
+        if (selectedPaymentType !== null) {
+            pageMetricsUrl += "&pageDetails=pmtTyp%3D" + selectedPaymentType.value;
+        } 
+    }
+    if (its && its.cookies) {
+        var itcCt = its.cookies.getUnescaped("itcCt");
+        var itscc = its.cookies.getUnescaped("itscc");
+        var hasitcCt = false;
+        if (itcCt && itcCt !== "") {
+            pageMetricsUrl += "&cookie=itcCt%3D" + itcCt;
+            hasitcCt = true;
+        }
+        if (itscc && itscc != "") {
+            pageMetricsUrl += (hasitcCt) ? "%26" : "&cookie=";
+            pageMetricsUrl += "itscc%3D" + itscc;
+        }
+    }
+    var containingDiv = document.createElement('div');
+    containingDiv.innerHTML = "<img width='0' height='0' border='0' alt='' aria-hidden=true src='" + pageMetricsUrl + "'/>";
+    document.body.appendChild(containingDiv);
+
+    // NOTE: This should be considered temporary and replaced when a better solution is available.
+    //      right now, SFMetrics should be referenced for all of these, but MZComponents can't access anything
+    //      in MZStoreComponents so we're going to have to go with this workaround.
+    var metricsConfig = {
+        'metricsUrl' : 'https://xp.apple.com/report/2/',
+        'compoundSeparator' : '_',
+        'tokenSeparator' : '|',
+        'postFrequency' : 60000,
+        'metricsBase' : {}
+    };
+</script>
+
+</body>
+
+
+</html>

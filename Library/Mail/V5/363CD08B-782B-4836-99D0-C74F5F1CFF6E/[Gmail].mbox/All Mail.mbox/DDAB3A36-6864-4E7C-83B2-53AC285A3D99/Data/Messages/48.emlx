@@ -1,0 +1,172 @@
+6098      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a6b:c888:0:0:0:0:0 with SMTP id y130-v6csp271160iof;
+        Thu, 2 Aug 2018 18:58:17 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpfiNtnJh44KJ9gAX01pSLf6cfD2+L4AF2zyN1Pgdbje00f9Sy9k748qP4JZyP/s3uQaLpQC
+X-Received: by 2002:a50:9356:: with SMTP id n22-v6mr5314511eda.206.1533261497803;
+        Thu, 02 Aug 2018 18:58:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533261497; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CzcNHlOznvjwh9nbI5VJhKRzSynwpGysDJgpu8gGWPUruOrVzl4Czga4Y7cyi97cXj
+         dKNZqK+YQgnK5Ccpt5wSMcohJ7tnCckT82ey5jU5k38C2dQazC0H1ndXEWXT2S369Eo5
+         xLZ+eovkIbqbvk565eRWSsMCQy9dVAYyEiJSTC7Za4h6LS+Hy+xUHYXuIFf5i/WSTzDo
+         7nkGRtIPLTQO6jUxfr+4ffjR9XKEX3LbHaPCPnnD9/VSUamLkeKEsq12LWhYMhVdk/r1
+         /Hz2YkVgwDTbkzRPlZPx1gKzdEz2x9hPn+PRanoVrGjW+vTZmvGelNM05hqkQ85gWTke
+         +rbQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=v6NIC/bld/EzG1ehoPMaWpBrlNdjWQV9jVWkM7yLHgM=;
+        b=SUI1jXXMFExf9JLz5dWt+3orPeFNtiZ9B1OMG0ObPCK3/mCjtOK+qwFT1VQt4GpzJ6
+         L/i5GMu2Boa4w4yESxIPLuBixDo/Ea/Dl5JF/6SkMy7pNwsgGDY57dArySBjyKyoHasu
+         TdIVKkdPDoCbEERjoeCJSs7cBJmesYa4I8nr1O5POgbe9hpidIMB/Skr9wFuVnkY2Wy0
+         ek//MeigIzSvp5QBapSIXN7C9aVyxZvK9HpcAuxvW/7Ku8xWDUwcJpP/43sgPJUPI1bK
+         xVYSpFxpVngiLrL/gGP03PZrb7xfGDvCyS7VqRQe2NkAufOdpwh+q448SV4R1l0DTUF6
+         r63g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=gHfFiiGj;
+       spf=pass (google.com: domain of srs0+dd5c0ef5f5a65e2dc9daa84860ef235bbc7896e1@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+dd5c0ef5f5a65e2dc9daa84860ef235bbc7896e1@info.anahoret.com
+Return-Path: <srs0+dd5c0ef5f5a65e2dc9daa84860ef235bbc7896e1@info.anahoret.com>
+Received: from smtp0.mailarbor.com (smtp0.mailarbor.com. [5.104.224.181])
+        by mx.google.com with ESMTPS id t17-v6si2744272eds.246.2018.08.02.18.58.17
+        for <kr@anadeainc.com>
+        (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 02 Aug 2018 18:58:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0+dd5c0ef5f5a65e2dc9daa84860ef235bbc7896e1@info.anahoret.com designates 5.104.224.181 as permitted sender) client-ip=5.104.224.181;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.anahoret.com header.s=mail header.b=gHfFiiGj;
+       spf=pass (google.com: domain of srs0+dd5c0ef5f5a65e2dc9daa84860ef235bbc7896e1@info.anahoret.com designates 5.104.224.181 as permitted sender) smtp.mailfrom=srs0+dd5c0ef5f5a65e2dc9daa84860ef235bbc7896e1@info.anahoret.com
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 4B01C200A63
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 01:58:17 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 3E73C1600B6
+	for <kr@anadeainc.com>; Fri,  3 Aug 2018 01:58:17 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.anahoret.com; q=dns/txt; s=mail; t=1533261497; bh=v6NIC/bld/EzG1ehoPMaWpBrlNdjWQV9jVWkM7yLHgM=; h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding; b=gHfFiiGjeTIhOHZezT/xE80I9PQEJNWIR1RO7Mc712e1sGTM3ZuLXUcnI0R7Zne/ge4cgmbF5W52gPdf8YIJIE5pJGuGyU353GNbcBK8U7pfZklDNteqgWVYwSmo2wj8zwq/k7kAuqvqJhAJ0O4T09EibfNVOz7MySDRLXsk/dA=
+Date: Fri, 03 Aug 2018 01:58:17 +0000
+From: noreply@tracker.anahoret.com
+To: Konstantin Ryshchenko <kr@anadeainc.com>
+Message-ID: <dd5c0ef5f5a65e2dc9daa84860ef235bbc7896e1@info.anahoret.com>
+Subject: Just Play daily progress report
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<style type="text/css">
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  table th, table td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  table.daily-statistics {
+    width: 50%;
+  }
+  table.daily-statistics td.working_time {
+    text-align: right;
+  }
+  table.daily-statistics th {
+    background: #DDD;
+  }
+  table.digest {
+    width: 680px;
+  }
+  table.digest.planned_stories th {
+    background: #ddd;
+  }
+  table.digest.description th {
+    background: #ddd;
+  }
+  table.digest.rejected th {
+    background: red;
+  }
+  table.digest.completed th {
+    background: #d8e795;
+  }
+  table.digest.estimate th {
+    background: #dcf8ff;
+  }
+  table.digest.new_stories th {
+    background: #ddd;
+  }
+  table.digest td.time {
+    text-align: center;
+  }
+  table.digest td.story {
+    width: 400px;
+  }
+  table.digest td.name {
+    width: 130px;
+  }
+</style>
+
+  <p>Hello, Konstantin Ryshchenko.</p>
+
+
+<p>
+  This is an automated progress report generated by Anahoret tracker system.
+</p>
+  <p>
+    Today, 2018-08-03, the following user stories were re-estimated to grow:
+  </p>
+  <table class='growing-estimates'>
+    <thead>
+      <tr>
+        <th>User Story</th>
+        <th>Estimated time was</th>
+        <th>Estimated time became</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><a href="https://tracker.anahoret.com/projects/247/stories/64840">Add tabs for the &#39;Renewal reminder&#39; section.</a></td>
+          <td class='working_time estimated-was'>4:00</td>
+          <td class='working_time estimated-became'>8:00</td>
+        </tr>
+        <tr>
+          <td><a href="https://tracker.anahoret.com/projects/247/stories/64848">Alert display issue.</a></td>
+          <td class='working_time estimated-was'>2:00</td>
+          <td class='working_time estimated-became'>6:00</td>
+        </tr>
+    </tbody>
+  </table>
+
+<p>
+  More detailed statistics you can see at <a href="https://tracker.anahoret.com/projects/247/days/2018-08-03">Just Play</a>
+</p>
+
+<p>
+  <a href="https://tracker.anahoret.com/profile/default_notification_settings">Change daily report settings</a>
+</p>
+
+
+
+
+  <p>Thank you,</p>
+  Just Play Team.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>39</integer>
+	<key>date-last-viewed</key>
+	<integer>1533282001</integer>
+	<key>date-received</key>
+	<integer>1533261497</integer>
+	<key>flags</key>
+	<integer>8590195841</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>remote-id</key>
+	<string>51</string>
+</dict>
+</plist>

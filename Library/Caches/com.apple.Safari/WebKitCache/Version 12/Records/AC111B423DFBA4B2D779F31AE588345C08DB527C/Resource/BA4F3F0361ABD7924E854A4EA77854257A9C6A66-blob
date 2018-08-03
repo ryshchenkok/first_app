@@ -1,0 +1,594 @@
+<html lang="ru" dir="ltr" data-reactroot=""><head>
+    <title lang="ru">Сочетания клавиш Mac - Служба поддержки Apple</title>
+    
+    <link rel="dns-prefetch" href="https://www.apple.com/" />
+    <link rel="preconnect" href="https://www.apple.com/" crossorigin />
+  
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <meta name="description" content="Нажатие определенных сочетаний клавиш позволяет выполнять операции, для которых обычно необходима мышь, трекпад или другие устройства ввода.
+" />
+    <meta property="og:url" content="https://support.apple.com/ru-ru/HT201236" />
+    <meta property="og:title" content="Сочетания клавиш Mac" />
+    <meta property="og:description" content="Нажатие определенных сочетаний клавиш позволяет выполнять операции, для которых обычно необходима мышь, трекпад или другие устройства ввода.
+" />
+    <meta property="og:site_name" content="Apple Support" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="article" />
+    <meta name="ac-gn-search-field[locale]" content="ru_RU" />        
+  
+    
+    
+    
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@AppleSupport" />
+      <meta name="twitter:title" content="Сочетания клавиш Mac" />
+      <meta name="twitter:description" content="Нажатие определенных сочетаний клавиш позволяет выполнять операции, для которых обычно необходима мышь, трекпад или другие устройства ввода.
+"/>
+      <meta name="twitter:image" content=//support.apple.com/library/content/dam/edam/applecare/images/en_US/social/keyboards-social-card.jpg/>
+      <meta property="og:image"  content=//support.apple.com/library/content/dam/edam/applecare/images/en_US/social/keyboards-social-card.jpg/>
+      <meta property="og:image:width" content="630" />
+      <meta property="og:image:height" content="1200" />
+    
+    <link rel="stylesheet" href="//www.apple.com/wss/fonts?families=SF+Pro,v1:200,300,400,500,600|SF+Pro+Icons,v1"  type="text/css" media="all" />
+    <script type="text/javascript">
+        var contentLocale = "ru_RU";
+        window.dtmEnabled = true;
+        var _applemd = 
+        {  'page'  :
+            {
+              'site_section'       :   "kb",
+              'content_type'       :   "ht",
+              'info_type'          :   "reference",
+              'topics'             :   "shortcuts%2CPattern%2COptz",
+              'in_house'           :   "2015elcapitan%2CSu-New2Mac%2C2016fall_sierra%2COSX",
+              'locale'             :   "ru_RU",
+              'helpful'            :   "88",
+              'friendly_content'   :
+                                      {
+                                        'content_id'    :   "HT201236",
+                                        'title'         :   "%u0421%u043E%u0447%u0435%u0442%u0430%u043D%u0438%u044F%20%u043A%u043B%u0430%u0432%u0438%u0448%20Mac",
+                                        'helpful'       :   "88",
+                                        'publish_date'  :   "Mon%20Jul%2002%2018%3A15%3A19%20GMT%202018",
+                                        'status'        :   "unarchived",
+                                        'version'       :   "1.34"
+                                      },
+              'product'            :   ["acs%3A%3Akb%3A%3Aproductcategory%3A%3AMac%20OS%3A%3AmacOS"],
+              'navtag_list'        :   "",
+              'navtag_total_num'   :   "0"
+            },
+            'eventName' : "ht_link.click"
+        }
+       document.cookie = 'POD=ru~ru; path=/; domain=.apple.com; expires=Sat, 18 Aug 2018 20:35:30 GMT';
+       window.onload = function () {
+   var imgs = document.getElementsByClassName('lazyloaded-image');
+
+   for(var i = 0; i < imgs.length; i++) {
+       var dataSrc = imgs[i].getAttribute('data-src');
+       imgs[i].setAttribute('src', dataSrc); // remove old src data 
+   }
+}
+       
+  window.appState = "{\"rating\":88,\"id\":\"HT201236\",\"locale\":\"ru_RU\",\"productCategories\":\"PF6,PL166\",\"isPreview\":false,\"showHelpFulfeedBack\":true}"
+  /* TODO : Below 2 lines potential optimization to replace this with options */
+  window.defaultOptions = "{\"locale\":\"ru_RU\",\"environment\":\"PRODW\",\"currentUrl\":\"https:\u002F\u002Fsupport.apple.com\u002Fru-ru\u002FHT201236\",\"referer\":\"https:\u002F\u002Fsupport.apple.com\u002F\",\"primaryUrl\":false,\"preview\":false,\"black\":false,\"clientSide\":false,\"headerLocale\":\"ru_RU\",\"footerLocale\":\"ru_RU\",\"header\":\"&lt;meta name=&quot;ac-gn-store-key&quot; content=&quot;S2A49YFKJF2JAT22K&quot; \u002F&gt; &lt;meta name=&quot;ac-gn-search-action&quot; content=&quot;https:\u002F\u002Fsupport.apple.com\u002Fkb\u002Findex&quot; \u002F&gt; &lt;meta name=&quot;ac-gn-search-input&quot; content=&quot;q&quot; \u002F&gt; &lt;meta name=&quot;ac-gn-search-field[src]&quot; content=&quot;globalnav_support&quot; \u002F&gt; &lt;meta name=&quot;ac-gn-search-field[type]&quot; content=&quot;organic&quot; \u002F&gt; &lt;meta name=&quot;ac-gn-search-field[page]&quot; content=&quot;search&quot; \u002F&gt; &lt;meta name=&quot;ac-gn-search-field[locale]&quot; content=&quot;ru_RU&quot; \u002F&gt; &lt;link onerror=&quot;headerCssFallback()&quot; rel=&quot;stylesheet&quot; type=&quot;text\u002Fcss&quot; href=&quot;https:\u002F\u002Fwww.apple.com\u002Fac\u002Fglobalnav\u002F3\u002Fru_RU\u002Fstyles\u002Fac-globalnav.built.css&quot;&gt; &lt;aside id=&quot;ac-gn-segmentbar&quot; class=&quot;ac-gn-segmentbar&quot; lang=&quot;ru-RU&quot; dir=&quot;ltr&quot; data-strings=&quot;{ &#39;exit&#39;: &#39;Выход&#39;, &#39;view&#39;: &#39;{%STOREFRONT%} Главная страница Магазина&#39;, &#39;segments&#39;: { &#39;smb&#39;: &#39;&#39;, &#39;eduInd&#39;: &#39;Главная страница Магазина для образования&#39;, &#39;other&#39;: &#39;Главная страница Магазина&#39; } }&quot;&gt; &lt;\u002Faside&gt; &lt;input type=&quot;checkbox&quot; id=&quot;ac-gn-menustate&quot; class=&quot;ac-gn-menustate&quot; \u002F&gt; &lt;nav id=&quot;ac-globalnav&quot; class=&quot;no-js&quot; role=&quot;navigation&quot; aria-label=&quot;Глобальная навигация&quot; data-hires=&quot;false&quot; data-analytics-region=&quot;global nav&quot; lang=&quot;ru-RU&quot; dir=&quot;ltr&quot; data-store-locale=&quot;ru&quot; data-store-api=&quot;\u002F\u002Fwww.apple.com\u002F[storefront]\u002Fshop\u002Fbag\u002Fstatus&quot; data-search-locale=&quot;ru_RU&quot; data-search-api=&quot;\u002F\u002Fwww.apple.com\u002Fsearch-services\u002Fsuggestions\u002F&quot;&gt; &lt;div class=&quot;ac-gn-content&quot;&gt; &lt;ul class=&quot;ac-gn-header&quot;&gt; &lt;li class=&quot;ac-gn-item ac-gn-menuicon&quot;&gt; &lt;label class=&quot;ac-gn-menuicon-label&quot; for=&quot;ac-gn-menustate&quot; aria-hidden=&quot;true&quot;&gt; &lt;span class=&quot;ac-gn-menuicon-bread ac-gn-menuicon-bread-top&quot;&gt; &lt;span class=&quot;ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top&quot;&gt;&lt;\u002Fspan&gt; &lt;\u002Fspan&gt; &lt;span class=&quot;ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom&quot;&gt; &lt;span class=&quot;ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom&quot;&gt;&lt;\u002Fspan&gt; &lt;\u002Fspan&gt; &lt;\u002Flabel&gt; &lt;a href=&quot;#ac-gn-menustate&quot; class=&quot;ac-gn-menuanchor ac-gn-menuanchor-open&quot; id=&quot;ac-gn-menuanchor-open&quot;&gt; &lt;span class=&quot;ac-gn-menuanchor-label&quot;&gt;Открыть меню&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;a href=&quot;#&quot; class=&quot;ac-gn-menuanchor ac-gn-menuanchor-close&quot; id=&quot;ac-gn-menuanchor-close&quot;&gt; &lt;span class=&quot;ac-gn-menuanchor-label&quot;&gt;Закрыть меню&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-apple&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-apple&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002F&quot; data-analytics-title=&quot;apple home&quot; id=&quot;ac-gn-firstfocus-small&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;Apple&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-bag ac-gn-bag-small&quot; id=&quot;ac-gn-bag-small&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-bag&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002Fshop\u002Fgoto\u002Fbag&quot; data-analytics-title=&quot;bag&quot; data-analytics-click=&quot;bag&quot; aria-label=&quot;Корзина&quot; data-string-badge=&quot;Корзина для покупок с товарами&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;Корзина&lt;\u002Fspan&gt; &lt;span class=&quot;ac-gn-bag-badge&quot;&gt;&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;span class=&quot;ac-gn-bagview-caret ac-gn-bagview-caret-large&quot;&gt;&lt;\u002Fspan&gt; &lt;\u002Fli&gt; &lt;\u002Ful&gt; &lt;ul class=&quot;ac-gn-list&quot;&gt; &lt;li class=&quot;ac-gn-item ac-gn-apple&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-apple&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002F&quot; data-analytics-title=&quot;apple home&quot; id=&quot;ac-gn-firstfocus&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;Apple&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-item-menu ac-gn-mac&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-mac&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002Fmac\u002F&quot; data-analytics-title=&quot;mac&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;Mac&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-item-menu ac-gn-ipad&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-ipad&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002Fipad\u002F&quot; data-analytics-title=&quot;ipad&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;iPad&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-item-menu ac-gn-iphone&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-iphone&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002Fiphone\u002F&quot; data-analytics-title=&quot;iphone&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;iPhone&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-item-menu ac-gn-watch&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-watch&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002Fwatch\u002F&quot; data-analytics-title=&quot;watch&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;Watch&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-item-menu ac-gn-tv&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-tv&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002Ftv\u002F&quot; data-analytics-title=&quot;tv&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;TV&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-item-menu ac-gn-music&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-music&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002Fmusic\u002F&quot; data-analytics-title=&quot;music&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;Music&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-item-menu ac-gn-support&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-support&quot; href=&quot;https:\u002F\u002Fsupport.apple.com\u002Fru-ru&quot; data-analytics-title=&quot;support&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;Поддержка&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-item-menu ac-gn-search&quot; role=&quot;search&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-search&quot; href=&quot;https:\u002F\u002Fsupport.apple.com\u002Fkb\u002Findex?page=search&amp;locale=ru_RU&quot; data-analytics-title=&quot;search&quot; data-analytics-click=&quot;search&quot; aria-label=&quot;Поиск на apple.com&quot;&gt; &lt;span class=&quot;ac-gn-search-placeholder&quot; aria-hidden=&quot;true&quot;&gt;Поиск на apple.com&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;\u002Fli&gt; &lt;li class=&quot;ac-gn-item ac-gn-bag&quot; id=&quot;ac-gn-bag&quot;&gt; &lt;a class=&quot;ac-gn-link ac-gn-link-bag&quot; href=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002Fshop\u002Fgoto\u002Fbag&quot; data-analytics-title=&quot;bag&quot; data-analytics-click=&quot;bag&quot; aria-label=&quot;Корзина&quot; data-string-badge=&quot;Корзина для покупок с товарами&quot;&gt; &lt;span class=&quot;ac-gn-link-text&quot;&gt;Корзина&lt;\u002Fspan&gt; &lt;span class=&quot;ac-gn-bag-badge&quot; aria-hidden=&quot;true&quot;&gt;&lt;\u002Fspan&gt; &lt;\u002Fa&gt; &lt;span class=&quot;ac-gn-bagview-caret ac-gn-bagview-caret-large&quot;&gt;&lt;\u002Fspan&gt; &lt;\u002Fli&gt; &lt;\u002Ful&gt; &lt;aside id=&quot;ac-gn-searchview&quot; class=&quot;ac-gn-searchview&quot; role=&quot;search&quot; data-analytics-region=&quot;search&quot;&gt; &lt;div class=&quot;ac-gn-searchview-content&quot;&gt; &lt;form id=&quot;ac-gn-searchform&quot; class=&quot;ac-gn-searchform&quot; action=&quot;\u002F\u002Fwww.apple.com\u002Fru\u002Fsearch&quot; method=&quot;get&quot;&gt; &lt;div class=&quot;ac-gn-searchform-wrapper&quot;&gt; &lt;input id=&quot;ac-gn-searchform-input&quot; class=&quot;ac-gn-searchform-input&quot; type=&quot;text&quot; aria-label=&quot;Поиск на apple.com&quot; placeholder=&quot;Поиск на apple.com&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; autocomplete=&quot;off&quot; spellcheck=&quot;false&quot; \u002F&gt; &lt;input id=&quot;ac-gn-searchform-src&quot; type=&quot;hidden&quot; name=&quot;src&quot; value=&quot;globalnav&quot; \u002F&gt; &lt;button id=&quot;ac-gn-searchform-submit&quot; class=&quot;ac-gn-searchform-submit&quot; type=&quot;submit&quot; disabled aria-label=&quot;Отправить&quot;&gt;&lt;\u002Fbutton&gt; &lt;button id=&quot;ac-gn-searchform-reset&quot; class=&quot;ac-gn-searchform-reset&quot; type=&quot;reset&quot; disabled aria-label=&quot;Очистить поиск&quot;&gt;&lt;\u002Fbutton&gt; &lt;\u002Fdiv&gt; &lt;\u002Fform&gt; &lt;aside id=&quot;ac-gn-searchresults&quot; class=&quot;ac-gn-searchresults&quot; data-string-quicklinks=&quot;Быстрые ссылки&quot; data-string-suggestions=&quot;Предложенные варианты&quot; data-string-noresults=&quot;&quot;&gt;&lt;\u002Faside&gt; &lt;\u002Fdiv&gt; &lt;button id=&quot;ac-gn-searchview-close&quot; class=&quot;ac-gn-searchview-close&quot; aria-label=&quot;Закрыть поиск&quot;&gt; &lt;span class=&quot;ac-gn-searchview-close-wrapper&quot;&gt; &lt;span class=&quot;ac-gn-searchview-close-left&quot;&gt;&lt;\u002Fspan&gt; &lt;span class=&quot;ac-gn-searchview-close-right&quot;&gt;&lt;\u002Fspan&gt; &lt;\u002Fspan&gt; &lt;\u002Fbutton&gt; &lt;\u002Faside&gt; &lt;aside class=&quot;ac-gn-bagview&quot; data-analytics-region=&quot;bag&quot;&gt; &lt;div class=&quot;ac-gn-bagview-scrim&quot;&gt; &lt;span class=&quot;ac-gn-bagview-caret ac-gn-bagview-caret-small&quot;&gt;&lt;\u002Fspan&gt; &lt;\u002Fdiv&gt; &lt;div class=&quot;ac-gn-bagview-content&quot; id=&quot;ac-gn-bagview-content&quot;&gt; &lt;\u002Fdiv&gt; &lt;\u002Faside&gt; &lt;\u002Fdiv&gt; &lt;\u002Fnav&gt; &lt;div id=&quot;ac-gn-curtain&quot; class=&quot;ac-gn-curtain&quot;&gt;&lt;\u002Fdiv&gt; &lt;div id=&quot;ac-gn-placeholder&quot; class=&quot;ac-nav-placeholder&quot;&gt;&lt;\u002Fdiv&gt;   \",\"footer\":\"&lt;section class=&quot;ac-gf-footer&quot; vocab=&quot;http:\u002F\u002Fschema.org\u002F&quot; typeof=&quot;Organization&quot;&gt;          &lt;div class=&quot;ac-gf-footer-shop&quot; x-ms-format-detection=&quot;none&quot;&gt; Другие варианты оплаты: 8 800 333 5173 или &lt;a             href=&quot;https:\u002F\u002Flocate.apple.com\u002Fru\u002Fru\u002F&quot;             &gt;найдите реселлера&lt;\u002Fa&gt;. &lt;\u002Fdiv&gt;          &lt;div class=&quot;ac-gf-footer-locale&quot;&gt; &lt;a class=&quot;ac-gf-footer-locale-link&quot;             href=&quot;{localeselectorUrl}&quot;             title=&quot;Выберите свою страну или регион&quot; aria-label=&quot;Russia. Choose your country or region&quot;&gt; &lt;span class=&quot;ac-gf-footer-locale-flag&quot;&gt;&lt;\u002Fspan&gt;Россия&lt;\u002Fa&gt; &lt;\u002Fdiv&gt;          &lt;div class=&quot;ac-gf-footer-legal&quot;&gt;             &lt;div class=&quot;ac-gf-footer-legal-copyright&quot;&gt;                © Apple Inc., 2018 г. Все права защищены.             &lt;\u002Fdiv&gt;             &lt;div class=&quot;ac-gf-footer-legal-links&quot;&gt; &lt;a class=&quot;ac-gf-footer-legal-link&quot;                href=&quot;https:\u002F\u002Fwww.apple.com\u002Fru\u002Fprivacy\u002Fprivacy-policy\u002F&quot;                &gt;Политика конфиденциальности&lt;\u002Fa&gt; &lt;a class=&quot;ac-gf-footer-legal-link&quot;                href=&quot;https:\u002F\u002Fwww.apple.com\u002Fru\u002Flegal\u002Fterms\u002Fsite.html&quot;                &gt;Условия использования&lt;\u002Fa&gt; &lt;a class=&quot;ac-gf-footer-legal-link&quot;                href=&quot;https:\u002F\u002Fwww.apple.com\u002Fru\u002Fshop\u002Fgoto\u002Fhelp\u002Fsales_refunds&quot;                &gt;Продажи и возврат средств&lt;\u002Fa&gt; &lt;a class=&quot;ac-gf-footer-legal-link&quot;                href=&quot;https:\u002F\u002Fwww.apple.com\u002Fru\u002Fsitemap\u002F&quot;                &gt;Карта сайта&lt;\u002Fa&gt; &lt;a class=&quot;ac-gf-footer-legal-link&quot;                href=&quot;https:\u002F\u002Fwww.apple.com\u002Fru\u002Fcontact\u002F&quot;                &gt;Обратиться в Apple&lt;\u002Fa&gt; &lt;a class=&quot;ac-gf-footer-legal-link&quot;                href=&quot;https:\u002F\u002Fwww.apple.com\u002Flegal\u002Fprivacy\u002Fru\u002Fcookies\u002F&quot;                &gt;Использование файлов cookie&lt;\u002Fa&gt; &lt;\u002Fdiv&gt;          &lt;\u002Fdiv&gt;    &lt;\u002Fdiv&gt;    &lt;meta content=&quot;Apple&quot; property=&quot;name&quot; \u002F&gt; &lt;meta content=&quot;8 800 333 5173&quot; property=&quot;telephone&quot; \u002F&gt; &lt;\u002Fsection&gt;\",\"navTagPageNumber\":0,\"source\":\"\",\"communities\":{\"enable\":false},\"userAgent\":\"Mozilla\u002F5.0 iPhone; CPU iPhone OS 11_4 like Mac OS X AppleWebKit\u002F605.1.15 KHTML, like Gecko Version\u002F11.0 Mobile\u002F15E148 Safari\u002F604.1\",\"akamaiDomain\":\"km.support.apple.com\",\"dtmPath\":\"https:\u002F\u002Fkm.support.apple.com\u002Fclientside\u002Fbuild\u002Fapplesatellitelib.full.js\",\"vanityUrl\":\"\",\"domain\":\"support.apple.com\"}" 
+  window.resourceBundle = "{\"ols_explore_articles\":\"Просмотр статей службы поддержки\",\"helpful_yes\":\"Да\",\"ols_navtag_showing_page\":\"Показана страница {1} из {2}\",\"helpful_no\":\"Нет\",\"ols_support_text\":\"Получите поддержку в чате, по телефону или по электронной почте. Можно также оформить ремонт или записаться на прием к специалисту Genius Bar.\",\"communities_link\":\"https:\u002F\u002Fdiscussions.apple.com\",\"ols_help\":\"Чем мы можем вам помочь?\",\"ols_discussion_title\":\"Начать обсуждение\",\"helpful_yes_title\":\"Помогла решить мою проблему\",\"ols_contact_apple_support\":\"Обращение в службу поддержки Apple\",\"ols_discussion_all_ques_article\":\"См. все вопросы по этой статье\",\"ols_discussion_sub_title\":\"в сообществах поддержки Apple\",\"ols_discussion_textbox_value\":\"Спросите других пользователей об этой статье\",\"contact_support\":\"Обратиться в службу поддержки\",\"ols_last_modified\":\"Дата изменения:\",\"ols_prev_page_results\":\"Предыдущая страница с результатами\",\"ols_error_found_desc3\":\"Нам не удалось найти страницу,которую вы искали.\",\"helpful\":\"Полезна?\",\"helpful_rating_feedback\":\"Благодарим вас за отзыв.\",\"breadcrumbs_support\":\"Поддержка\",\"ols_error_found_desc2\":\"Вернитесь на &lt;a href=&quot;https:\u002F\u002Fsupport.apple.com\u002Fru-ru&quot;&gt;домашнюю страницу службы поддержки Аpple&lt;\u002Fa&gt;.\",\"open_menu\":\"Открыть меню\",\"ols_error_found_desc1\":\"Приносим свои извинения.\",\"close_menu\":\"Закрыть меню\",\"contact_support_link\":\"https:\u002F\u002Fsupport.apple.com\u002Fru-ru\u002Fcontact\",\"ols_navtag_summary\":\"Просмотреть все содержимое с тегом {1}\",\"ols_get_support\":\"Получение поддержки\",\"ols_navtag_pagination_string\":\"из\",\"meta_title\":\"Служба поддержки Apple\",\"ols_internal_content\":\"Только для внутреннего использования в компании Apple\",\"ols_next_page_results\":\"Следующая страница с результатами\",\"ols_discussion.submit\":\"Отправить мой вопрос в сообщество\",\"ols_discussion_all_ques_asked\":\"См. все заданные мной вопросы\",\"ols_warning_archived\":\"Данная статья была помещена в архив и больше не обновлялась.\",\"helpful_feedback_cancel\":\"Отмена\",\"ols_article_text\":\"Статья\",\"ols_tag\":\"Тег\",\"helpful_percentage\":\"{0} пользователей считают эту статью полезной.\",\"helpful_feedback_submit\":\"Отправить\",\"ols_tags\":\"Теги\",\"ols_navtag_title_heading\":\"Статьи с тегом «{1}»\",\"helpful_feedback_text\":\"Спасибо! Сообщите нам, как вам лучше помочь.\",\"helpful_no_title\":\"Бесполезна\",\"ols_published_date\":\"Дата публикации:\",\"ols_related_topics\":\"Связанные темы\",\"ols_discussion_error_no_question\":\"Введите свой вопрос!\",\"communities\":\"Сообщества\"}" 
+
+    </script>
+    <link rel="canonical" href="https://support.apple.com/ru-ru/HT201236" />
+    
+    <link
+      rel="alternate"
+      href="https://support.apple.com/en-am/HT201236"
+      hreflang="en-am" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-bh/HT201236"
+      hreflang="en-bh" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-bw/HT201236"
+      hreflang="en-bw" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-cm/HT201236"
+      hreflang="fr-cm" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-cf/HT201236"
+      hreflang="fr-cf" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-ci/HT201236"
+      hreflang="fr-ci" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-eg/HT201236"
+      hreflang="en-eg" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-gw/HT201236"
+      hreflang="en-gw" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-gq/HT201236"
+      hreflang="fr-gq" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-gn/HT201236"
+      hreflang="fr-gn" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-in/HT201236"
+      hreflang="en-in" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-il/HT201236"
+      hreflang="en-il" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-jo/HT201236"
+      hreflang="en-jo" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-ke/HT201236"
+      hreflang="en-ke" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-kw/HT201236"
+      hreflang="en-kw" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-mg/HT201236"
+      hreflang="fr-mg" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-ml/HT201236"
+      hreflang="fr-ml" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-ma/HT201236"
+      hreflang="fr-ma" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-mu/HT201236"
+      hreflang="fr-mu" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-mz/HT201236"
+      hreflang="en-mz" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-ne/HT201236"
+      hreflang="fr-ne" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-ng/HT201236"
+      hreflang="en-ng" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-om/HT201236"
+      hreflang="en-om" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-qa/HT201236"
+      hreflang="en-qa" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-sa/HT201236"
+      hreflang="en-sa" /><link
+      rel="alternate"
+      href="https://support.apple.com/ar-sa/HT201236"
+      hreflang="ar-sa" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-za/HT201236"
+      hreflang="en-za" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-sn/HT201236"
+      hreflang="fr-sn" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-tn/HT201236"
+      hreflang="fr-tn" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-ug/HT201236"
+      hreflang="en-ug" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-ae/HT201236"
+      hreflang="en-ae" /><link
+      rel="alternate"
+      href="https://support.apple.com/ar-ae/HT201236"
+      hreflang="ar-ae" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-au/HT201236"
+      hreflang="en-au" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-bn/HT201236"
+      hreflang="en-bn" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-gu/HT201236"
+      hreflang="en-gu" /><link
+      rel="alternate"
+      href="https://support.apple.com/id-id/HT201236"
+      hreflang="id-id" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-my/HT201236"
+      hreflang="en-my" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-nz/HT201236"
+      hreflang="en-nz" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-ph/HT201236"
+      hreflang="en-ph" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-sg/HT201236"
+      hreflang="en-sg" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-vn/HT201236"
+      hreflang="en-vn" /><link
+      rel="alternate"
+      href="https://support.apple.com/th-th/HT201236"
+      hreflang="th-th" /><link
+      rel="alternate"
+      href="https://support.apple.com/zh-cn/HT201236"
+      hreflang="zh-cn" /><link
+      rel="alternate"
+      href="https://support.apple.com/zh-tw/HT201236"
+      hreflang="zh-tw" /><link
+      rel="alternate"
+      href="https://support.apple.com/ja-jp/HT201236"
+      hreflang="ja-jp" /><link
+      rel="alternate"
+      href="https://support.apple.com/zh-mo/HT201236"
+      hreflang="zh-mo" /><link
+      rel="alternate"
+      href="https://support.apple.com/zh-hk/HT201236"
+      hreflang="zh-hk" /><link
+      rel="alternate"
+      href="https://support.apple.com/ko-kr/HT201236"
+      hreflang="ko-kr" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-hk/HT201236"
+      hreflang="en-hk" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-al/HT201236"
+      hreflang="en-al" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-be/HT201236"
+      hreflang="fr-be" /><link
+      rel="alternate"
+      href="https://support.apple.com/cs-cz/HT201236"
+      hreflang="cs-cz" /><link
+      rel="alternate"
+      href="https://support.apple.com/nl-be/HT201236"
+      hreflang="nl-be" /><link
+      rel="alternate"
+      href="https://support.apple.com/da-dk/HT201236"
+      hreflang="da-dk" /><link
+      rel="alternate"
+      href="https://support.apple.com/de-de/HT201236"
+      hreflang="de-de" /><link
+      rel="alternate"
+      href="https://support.apple.com/es-es/HT201236"
+      hreflang="es-es" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-fr/HT201236"
+      hreflang="fr-fr" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-is/HT201236"
+      hreflang="en-is" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-ie/HT201236"
+      hreflang="en-ie" /><link
+      rel="alternate"
+      href="https://support.apple.com/it-it/HT201236"
+      hreflang="it-it" /><link
+      rel="alternate"
+      href="https://support.apple.com/de-li/HT201236"
+      hreflang="de-li" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-lu/HT201236"
+      hreflang="fr-lu" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-mk/HT201236"
+      hreflang="en-mk" /><link
+      rel="alternate"
+      href="https://support.apple.com/hu-hu/HT201236"
+      hreflang="hu-hu" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-mt/HT201236"
+      hreflang="en-mt" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-md/HT201236"
+      hreflang="en-md" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-me/HT201236"
+      hreflang="en-me" /><link
+      rel="alternate"
+      href="https://support.apple.com/nl-nl/HT201236"
+      hreflang="nl-nl" /><link
+      rel="alternate"
+      href="https://support.apple.com/no-no/HT201236"
+      hreflang="no-no" /><link
+      rel="alternate"
+      href="https://support.apple.com/pl-pl/HT201236"
+      hreflang="pl-pl" /><link
+      rel="alternate"
+      href="https://support.apple.com/pt-pt/HT201236"
+      hreflang="pt-pt" /><link
+      rel="alternate"
+      href="https://support.apple.com/de-ch/HT201236"
+      hreflang="de-ch" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-ch/HT201236"
+      hreflang="fr-ch" /><link
+      rel="alternate"
+      href="https://support.apple.com/fi-fi/HT201236"
+      hreflang="fi-fi" /><link
+      rel="alternate"
+      href="https://support.apple.com/sv-se/HT201236"
+      hreflang="sv-se" /><link
+      rel="alternate"
+      href="https://support.apple.com/tr-tr/HT201236"
+      hreflang="tr-tr" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-gb/HT201236"
+      hreflang="en-gb" /><link
+      rel="alternate"
+      href="https://support.apple.com/de-at/HT201236"
+      hreflang="de-at" /><link
+      rel="alternate"
+      href="https://support.apple.com/ru-ru/HT201236"
+      hreflang="ru-ru" /><link
+      rel="alternate"
+      href="https://support.apple.com/pt-br/HT201236"
+      hreflang="pt-br" /><link
+      rel="alternate"
+      href="https://support.apple.com/es-cl/HT201236"
+      hreflang="es-cl" /><link
+      rel="alternate"
+      href="https://support.apple.com/es-co/HT201236"
+      hreflang="es-co" /><link
+      rel="alternate"
+      href="https://support.apple.com/es-mx/HT201236"
+      hreflang="es-mx" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-ca/HT201236"
+      hreflang="en-ca" /><link
+      rel="alternate"
+      href="https://support.apple.com/fr-ca/HT201236"
+      hreflang="fr-ca" /><link
+      rel="alternate"
+      href="https://support.apple.com/en-us/HT201236"
+      hreflang="en-us" /><link
+      rel="alternate"
+      href="https://support.apple.com/es-us/HT201236"
+      hreflang="es-us" />
+    <link rel="stylesheet" href="/clientside/build/app-ht.css" defer type="text/css" media="all" />
+    
+    <link rel="stylesheet" href="https://www.apple.com/ac/globalfooter/3/ru_RU/styles/ac-globalfooter.built.css"  type="text/css" media="all" />
+    </head><body itemscope="" itemType="https://schema.org/TechArticle" class="ac-gn-current-support no-js"><div id="app"><div data-reactroot=""><div><meta name="ac-gn-store-key" content="S2A49YFKJF2JAT22K" /> <meta name="ac-gn-search-action" content="https://support.apple.com/kb/index" /> <meta name="ac-gn-search-input" content="q" /> <meta name="ac-gn-search-field[src]" content="globalnav_support" /> <meta name="ac-gn-search-field[type]" content="organic" /> <meta name="ac-gn-search-field[page]" content="search" /> <meta name="ac-gn-search-field[locale]" content="ru_RU" /> <link onerror="headerCssFallback()" rel="stylesheet" type="text/css" href="https://www.apple.com/ac/globalnav/3/ru_RU/styles/ac-globalnav.built.css"> <aside id="ac-gn-segmentbar" class="ac-gn-segmentbar" lang="ru-RU" dir="ltr" data-strings="{ 'exit': 'Выход', 'view': '{%STOREFRONT%} Главная страница Магазина', 'segments': { 'smb': '', 'eduInd': 'Главная страница Магазина для образования', 'other': 'Главная страница Магазина' } }"> </aside> <input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate" /> <nav id="ac-globalnav" class="no-js" role="navigation" aria-label="Глобальная навигация" data-hires="false" data-analytics-region="global nav" lang="ru-RU" dir="ltr" data-store-locale="ru" data-store-api="//www.apple.com/[storefront]/shop/bag/status" data-search-locale="ru_RU" data-search-api="//www.apple.com/search-services/suggestions/"> <div class="ac-gn-content"> <ul class="ac-gn-header"> <li class="ac-gn-item ac-gn-menuicon"> <label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true"> <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top"> <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span> </span> <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom"> <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span> </span> </label> <a href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open"> <span class="ac-gn-menuanchor-label">Открыть меню</span> </a> <a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close"> <span class="ac-gn-menuanchor-label">Закрыть меню</span> </a> </li> <li class="ac-gn-item ac-gn-apple"> <a class="ac-gn-link ac-gn-link-apple" href="//www.apple.com/ru/" data-analytics-title="apple home" id="ac-gn-firstfocus-small"> <span class="ac-gn-link-text">Apple</span> </a> </li> <li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small"> <a class="ac-gn-link ac-gn-link-bag" href="//www.apple.com/ru/shop/goto/bag" data-analytics-title="bag" data-analytics-click="bag" aria-label="Корзина" data-string-badge="Корзина для покупок с товарами"> <span class="ac-gn-link-text">Корзина</span> <span class="ac-gn-bag-badge"></span> </a> <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span> </li> </ul> <ul class="ac-gn-list"> <li class="ac-gn-item ac-gn-apple"> <a class="ac-gn-link ac-gn-link-apple" href="//www.apple.com/ru/" data-analytics-title="apple home" id="ac-gn-firstfocus"> <span class="ac-gn-link-text">Apple</span> </a> </li> <li class="ac-gn-item ac-gn-item-menu ac-gn-mac"> <a class="ac-gn-link ac-gn-link-mac" href="//www.apple.com/ru/mac/" data-analytics-title="mac"> <span class="ac-gn-link-text">Mac</span> </a> </li> <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad"> <a class="ac-gn-link ac-gn-link-ipad" href="//www.apple.com/ru/ipad/" data-analytics-title="ipad"> <span class="ac-gn-link-text">iPad</span> </a> </li> <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone"> <a class="ac-gn-link ac-gn-link-iphone" href="//www.apple.com/ru/iphone/" data-analytics-title="iphone"> <span class="ac-gn-link-text">iPhone</span> </a> </li> <li class="ac-gn-item ac-gn-item-menu ac-gn-watch"> <a class="ac-gn-link ac-gn-link-watch" href="//www.apple.com/ru/watch/" data-analytics-title="watch"> <span class="ac-gn-link-text">Watch</span> </a> </li> <li class="ac-gn-item ac-gn-item-menu ac-gn-tv"> <a class="ac-gn-link ac-gn-link-tv" href="//www.apple.com/ru/tv/" data-analytics-title="tv"> <span class="ac-gn-link-text">TV</span> </a> </li> <li class="ac-gn-item ac-gn-item-menu ac-gn-music"> <a class="ac-gn-link ac-gn-link-music" href="//www.apple.com/ru/music/" data-analytics-title="music"> <span class="ac-gn-link-text">Music</span> </a> </li> <li class="ac-gn-item ac-gn-item-menu ac-gn-support"> <a class="ac-gn-link ac-gn-link-support" href="https://support.apple.com/ru-ru" data-analytics-title="support"> <span class="ac-gn-link-text">Поддержка</span> </a> </li> <li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search"> <a class="ac-gn-link ac-gn-link-search" href="https://support.apple.com/kb/index?page=search&locale=ru_RU" data-analytics-title="search" data-analytics-click="search" aria-label="Поиск на apple.com"> <span class="ac-gn-search-placeholder" aria-hidden="true">Поиск на apple.com</span> </a> </li> <li class="ac-gn-item ac-gn-bag" id="ac-gn-bag"> <a class="ac-gn-link ac-gn-link-bag" href="//www.apple.com/ru/shop/goto/bag" data-analytics-title="bag" data-analytics-click="bag" aria-label="Корзина" data-string-badge="Корзина для покупок с товарами"> <span class="ac-gn-link-text">Корзина</span> <span class="ac-gn-bag-badge" aria-hidden="true"></span> </a> <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span> </li> </ul> <aside id="ac-gn-searchview" class="ac-gn-searchview" role="search" data-analytics-region="search"> <div class="ac-gn-searchview-content"> <form id="ac-gn-searchform" class="ac-gn-searchform" action="//www.apple.com/ru/search" method="get"> <div class="ac-gn-searchform-wrapper"> <input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" aria-label="Поиск на apple.com" placeholder="Поиск на apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" /> <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav" /> <button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled aria-label="Отправить"></button> <button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled aria-label="Очистить поиск"></button> </div> </form> <aside id="ac-gn-searchresults" class="ac-gn-searchresults" data-string-quicklinks="Быстрые ссылки" data-string-suggestions="Предложенные варианты" data-string-noresults=""></aside> </div> <button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Закрыть поиск"> <span class="ac-gn-searchview-close-wrapper"> <span class="ac-gn-searchview-close-left"></span> <span class="ac-gn-searchview-close-right"></span> </span> </button> </aside> <aside class="ac-gn-bagview" data-analytics-region="bag"> <div class="ac-gn-bagview-scrim"> <span class="ac-gn-bagview-caret ac-gn-bagview-caret-small"></span> </div> <div class="ac-gn-bagview-content" id="ac-gn-bagview-content"> </div> </aside> </div> </nav> <div id="ac-gn-curtain" class="ac-gn-curtain"></div> <div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>   </div><section class="section section-content undefined"><div><div class="column small-12 medium-12 large-12 large-centered text-center"><div class="main" role="main" id="howto-section"><div id="content"><h1 id="howto-title" itemProp="headline">Сочетания клавиш Mac</h1><div class="intro"><p>Нажатие определенных сочетаний клавиш позволяет выполнять операции, для которых обычно необходима мышь, трекпад или другие устройства ввода.</p>
+</div><div itemProp="author" itemscope="" itemType="http://schema.org/Organization"><meta itemProp="name" content="Apple"/></div><div id="sections" itemProp="articleBody"><div><div class="extra-react-div"><p>Для использования сочетания клавиш нажмите и удерживайте одну или более клавиш модификации, а затем нажмите последнюю клавишу сочетания. Например, чтобы использовать сочетание Command-C (копировать), нажмите и удерживайте клавишу Command, затем клавишу C, затем отпустите обе клавиши. В меню и на клавиатурах Mac часто используются <a href="https://support.apple.com/ru-ru/guide/mac-help/what-are-those-symbols-shown-in-menus-cpmh0011/mac">символы для определенных клавиш</a>, в том числе для клавиш модификации:</p>
+</div></div><div class="grid3col"><div class="extra-react-div"><ul>
+<li>Command (или Cmd) ⌘</li>
+<li>Shift ⇧</li>
+</ul>
+</div></div><div class="grid3col"><div class="extra-react-div"><ul>
+<li>Option (или Alt) ⌥</li>
+<li>Control (или Ctrl) ⌃</li>
+</ul>
+</div></div><div class="grid3col"><div class="extra-react-div"><ul>
+<li>Caps Lock ⇪</li>
+<li>Fn</li>
+</ul>
+</div></div><div><div class="extra-react-div"><p><br>
+<span class="note">На клавиатурах, предназначенных для компьютеров ПК с ОС Windows, используйте клавишу Alt вместо Option и клавишу с логотипом Windows вместо Command.</span></p>
+<p>Некоторые клавиши на некоторых клавиатурах Apple имеют специальные символы и функции: яркость дисплея <img alt="" src="/library/content/dam/edam/applecare/images/en_US/il/keyboard-icon-increase-display-brightness.png" width="18" style="font-family: -webkit-standard;">, яркость клавиатуры <img alt="" src="/library/content/dam/edam/applecare/images/en_US/il/keyboard-icon-increase-keyboard-brightness.png" width="23">, Mission Control и другие. Если на клавиатуре эти функции недоступны, для некоторых из них можно <a href="https://support.apple.com/ru-ru/guide/mac-help/create-keyboard-shortcuts-for-apps-mchlp2271/mac">создать собственные сочетания клавиш</a>. В сочетании с клавишей Fn эти клавиши работают как F1, F2, F3 или другие стандартные функциональные клавиши.</p>
+</div></div><div><div class="extra-react-div"><p><img alt="" src="/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png"></p>
+</div></div><div id="copy"><h2>Сочетания клавиш для копирования, вставки и других часто используемых операций</h2><div class="extra-react-div"><ul>
+<li><strong>Command-X</strong>: вырезание выделенного объекта и его копирование в буфер обмена.</li>
+<li><strong>Command-C</strong>: копирование выделенного объекта в буфер обмена. Это сочетание клавиш также работает для файлов в Finder.</li>
+<li><strong>Command-V</strong>: вставка содержимого буфера обмена в текущий документ или программу. Это сочетание клавиш также работает для файлов в Finder.</li>
+<li><strong>Command-Z</strong>: отмена предыдущей команды. Отмену также можно обратить, нажав клавиши Command-Shift-Z для повтора отмененной команды. В некоторых программах можно отменять и повторять несколько последних команд.</li>
+<li><strong>Command-A</strong>: выбор всех объектов.</li>
+<li><strong>Command-F</strong>: поиск объектов в документе или открытие окна Find.</li>
+<li><strong>Command-G</strong> (Повторить поиск): поиск следующего вхождения ранее найденного объекта. Чтобы найти предыдущее вхождение, нажмите клавиши Shift-Command-G.</li>
+<li><strong>Command-H</strong>: скрытие окна активной программы. Чтобы оставить открытым окно активной программы, но скрыть все остальные, нажмите клавиши Option-Command-H.</li>
+<li><strong>Command-M</strong>: свертывание активного окна в значок на панели Dock. Чтобы свернуть все окна активной программы, нажмите клавиши Option-Command-M.</li>
+<li><strong>Command-O</strong>: открытие выделенного объекта или вызов диалогового окна, позволяющего выбрать файл для открытия.</li>
+<li><strong>Command-P</strong>: печать текущего документа.</li>
+<li><strong>Command-S</strong>: сохранение текущего документа.</li>
+<li><strong>Command-T</strong>: открытие новой вкладки.</li>
+<li><strong>Command-W</strong>: закрытие активного окна. Чтобы закрыть все окна программы, нажмите клавиши Option-Command-W.</li>
+<li><strong>Option-Command-Esc</strong>: <a href="https://support.apple.com/ru-ru/HT201276">принудительное завершение работы</a> программы.</li>
+<li><strong>Command-Пробел</strong>: отображение или скрытие поля поиска <a href="https://support.apple.com/ru-ru/HT204014">Spotlight</a>. Чтобы выполнить поиск Spotlight в окне Finder, нажмите клавиши Command-Option-Пробел. (Если вы <a href="https://support.apple.com/ru-ru/guide/mac-help/type-in-another-language-with-input-sources-mchlp1406/mac">используете несколько источников ввода</a> для набора текста на разных языках, эти сочетания клавиш меняют источники ввода вместо вызова Spotlight. Узнайте, как <a href="https://support.apple.com/ru-ru/guide/mac-help/change-a-conflicting-keyboard-shortcut-mh35591/mac">изменить конфликтующее сочетание клавиш</a>.)</li>
+<li><strong>Control-Command-Пробел</strong>: отображение панели «Символы», с которой можно выбирать <a href="https://support.apple.com/ru-ru/HT201586">эмодзи и другие символы</a>.</li>
+<li><strong>Control-Command-F</strong>: переход в полноэкранный режим (если поддерживается программой).</li>
+<li><strong>Пробел</strong>: использование <a href="https://support.apple.com/ru-ru/guide/mac-help/quick-look-files-and-folders-mh14119/mac">быстрого просмотра</a> для выделенного объекта.</li>
+<li><strong>Command-Tab</strong>: переключение на следующую недавно использованную программу среди открытых программ. </li>
+<li><strong>Shift-Command-3</strong>: создание снимка всего экрана. <a href="https://support.apple.com/ru-ru/HT201361">Другие сочетания клавиш для снимков экрана</a>.</li>
+<li><strong>Shift-Command-N</strong>: создание новой папки в Finder.</li>
+<li><strong>Command-Запятая (,)</strong>: открытие окна настроек активной программы.</li>
+</ul>
+</div></div><div><div class="extra-react-div"><p><img alt="" src="/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png"></p>
+</div></div><div id="sleep"><h2>Сочетания клавиш для перехода в режим сна, выхода из системы и выключения</h2><div class="extra-react-div"><p>Некоторые из этих сочетаний клавиш необходимо удерживать несколько дольше, чем другие. Это помогает избежать их непреднамеренного срабатывания.</p>
+<ul>
+<li><strong>Кнопка питания </strong>или<strong> датчик Touch ID</strong>: нажмите, чтобы включить компьютер Mac или вывести его из режима сна. Нажмите и удерживайте в течение 1,5 секунды, когда компьютер Mac находится в активном состоянии, чтобы перевести компьютер Mac в режим сна. Продолжайте удерживать клавиши, чтобы <a href="https://support.apple.com/ru-ru/HT201150">принудительно выключить компьютер Mac</a>.</li>
+<li><strong>Option-Command-Кнопка питания</strong>* или <strong>Option-Command-Клавиша извлечения диска</strong> <img alt="" src="/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" width="14">: перевод компьютера Mac в режим сна.</li>
+<li><strong>Control-Shift-Кнопка питания</strong>* или <strong>Control-Shift-Клавиша извлечения диска</strong> <img alt="" src="/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" width="14">: перевод дисплеев в режим сна.</li>
+<li><strong>Control-Кнопка питания</strong>* или <strong>Control-Клавиша извлечения диска</strong> <img alt="" src="/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" width="14">: вызов диалогового окна для выбора между перезапуском, переводом в режим сна и выключением компьютера.</li>
+<li><strong>Control-Command-Кнопка питания</strong>*: принудительный перезапуск компьютера Mac без запроса на сохранение открытых и несохраненных документов.</li>
+<li><strong>Control-Command-Клавиша извлечения диска</strong> <img alt="" src="/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" width="14">: закрытие всех программ и перезапуск компьютера Mac. Если в открытых документах имеются несохраненные изменения, появится запрос на их сохранение.</li>
+<li><strong>Control-Option-Command-Кнопка питания</strong>* или <strong>Control-Option-Command-Клавиша извлечения диска</strong> <img alt="" src="/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" width="14">: закрытие всех программ и выключение компьютера Mac. Если в открытых документах имеются несохраненные изменения, появится запрос на их сохранение.</li>
+<li><strong>Shift-Command-Q</strong>: выход из учетной записи пользователя macOS. Будет запрошено подтверждение. Для немедленного выхода без подтверждения нажмите клавиши Option-Shift-Command-Q.</li>
+</ul>
+<p><span class="note">* Неприменимо для клавиатур с <a href="https://support.apple.com/ru-ru/HT207055">панелью Touch Bar</a>.</span></p>
+</div></div><div><div class="extra-react-div"><p><img alt="" src="/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png"></p>
+</div></div><div id="finder"><h2>Сочетания клавиш Finder и системы</h2><div class="extra-react-div"><ul>
+<li><strong>Command-D</strong>: создание дубликатов выделенных файлов.</li>
+<li><strong>Command-E</strong>: извлечение выбранного диска или тома.</li>
+<li><strong>Command-F</strong>: запуск поиска Spotlight в окне Finder.</li>
+<li><strong>Command-I</strong>: отображение окна свойств для выделенного файла.</li>
+<li><strong>Shift-Command-C</strong>: открытие окна «Компьютер».</li>
+<li><strong>Shift-Command-D</strong>: открытие папки рабочего стола.</li>
+<li><strong>Shift-Command-F</strong>: открытие окна «Мои файлы».</li>
+<li><strong>Shift-Command-G</strong>: открытие окна «Переход к папке».</li>
+<li><strong>Shift-Command-H</strong>: открытие личной папки текущей учетной записи пользователя macOS.</li>
+<li><strong>Shift-Command-I</strong>: открытие iCloud Drive.</li>
+<li><strong>Shift-Command-K</strong>: открытие окна «Сеть».</li>
+<li><strong>Option-Command-L</strong>: открытие папки «Загрузки».</li>
+<li><strong>Shift-Command-N</strong>: создание новой папки.</li>
+<li><strong>Shift-Command-O</strong>: открытие папки «Документы».</li>
+<li><strong>Shift-Command-P</strong>: отображение или скрытие области предварительного просмотра в окнах Finder.</li>
+<li><strong>Shift-Command-R</strong>: открытие окна AirDrop.</li>
+<li><strong>Shift-Command-T</strong>: отображение строки вкладок в окнах Finder. </li>
+<li><strong>Control-Shift-Command-T</strong>: добавление выбранного объекта Finder на панель Dock (OS X Mavericks или более поздней версии).</li>
+<li><strong>Shift-Command-U</strong>: открытие папки «Утилиты».</li>
+<li><strong>Option-Command-D</strong>: отображение или скрытие панели Dock. </li>
+<li><strong>Control-Command-T</strong>: добавление выбранного объекта на боковую панель (OS X Mavericks или более поздней версии).</li>
+<li><strong>Option-Command-P</strong>: скрытие или отображение строки пути в окнах Finder.</li>
+<li><strong>Option-Command-S</strong>: скрытие или отображение боковой панели в окнах Finder.</li>
+<li><strong>Command-Косая черта (/)</strong>: скрытие или отображение строки состояния в окнах Finder.</li>
+<li><strong>Command-J</strong>: «Показать параметры вида».</li>
+<li><strong>Command-K</strong>: открытие окна «Подключение к серверу».</li>
+<li><strong>Command-L</strong>: создание псевдонима выделенного объекта.</li>
+<li><strong>Command-N</strong>: открытие нового окна Finder.</li>
+<li><strong>Option-Command-N</strong>: создание новой смарт-папки.</li>
+<li><strong>Command-R</strong>: отображение первоначального файла для выбранного псевдонима.</li>
+<li><strong>Command-T</strong>: отображение или скрытие панели вкладок, когда в текущем окне Finder открыта одна вкладка.</li>
+<li><strong>Shift-Command-T</strong>: отображение или скрытие вкладки Finder.</li>
+<li><strong>Option-Command-T</strong>: отображение или скрытие панели инструментов, когда в текущем окне Finder открыта одна вкладка.</li>
+<li><strong>Option-Command-V</strong> (Переместить): перемещение файлов, находящихся в буфере обмена, из исходного местоположения в текущее.</li>
+<li><strong>Command-Y</strong>: предварительный просмотр выделенных файлов с помощью функции «Быстрый просмотр».</li>
+<li><strong>Option-Command-Y</strong>: просмотр слайд-шоу «Быстрый просмотр» для выделенных файлов.</li>
+<li><strong>Command-1</strong>: просмотр объектов в окне Finder в виде значков.</li>
+<li><strong>Command-2</strong>: просмотр объектов в окне Finder в виде списка.</li>
+<li><strong>Command-3</strong>: просмотр объектов в окне Finder в виде столбцов. </li>
+<li><strong>Command-4</strong>: просмотр объектов в окне Finder в виде Cover Flow.</li>
+<li><strong>Command-Левая квадратная скобка ([)</strong>: переход к предыдущей папке.</li>
+<li><strong>Command-Правая квадратная скобка </strong>: переход к следующей папке.</li>
+<li><strong>Command-Стрелка вверх</strong>: открытие папки, содержащей текущую папку.</li>
+<li><strong>Command-Control-Стрелка вверх</strong>: открытие папки, содержащей текущую папку, в новом окне.</li>
+<li><strong>Command-Стрелка вниз</strong>: открытие выделенного объекта.</li>
+<li><strong>Стрелка вправо</strong>: открытие выделенной папки. Работает только при отображении объектов списком.</li>
+<li><strong>Стрелка вниз</strong>: закрытие выделенной папки. Работает только при отображении объектов списком.</li>
+<li><strong>Command-Delete</strong>: перемещение выделенного объекта в корзину.</li>
+<li><strong>Shift-Command-Delete</strong>: очистка корзины.</li>
+<li><strong>Option-Shift-Command-Delete</strong>: очистка корзины без вывода диалогового окна подтверждения.</li>
+<li><strong>Command-Y</strong>: предварительный просмотр выделенных файлов с помощью функции «Быстрый просмотр».</li>
+<li><strong>Command-Увеличение яркости</strong>: включение или выключение <a href="https://support.apple.com/ru-ru/HT204592">режима внешнего дисплея</a>.</li>
+<li><strong>Command-Уменьшение яркости</strong>: включение или выключение <a href="https://support.apple.com/ru-ru/HT202351#mirroring">видеоповтора</a>, когда компьютер Mac подключен к нескольким дисплеям.</li>
+<li><strong>Option-Увеличение яркости</strong>: открытие окна настроек «Мониторы». Работает с любой из клавиш настройки яркости.</li>
+<li><strong>Control-Увеличение яркости</strong> или <strong>Control-Уменьшение яркости</strong>: изменение яркости внешнего дисплея (если поддерживается дисплеем).</li>
+<li><strong>Option-Shift-Увеличение яркости</strong> или <strong>Option-Shift-Уменьшение яркости</strong>: регулирование яркости дисплея с меньшим шагом. Добавление клавиши Control к этому сочетанию клавиш позволяет регулировать яркость внешнего дисплея (если поддерживается дисплеем).</li>
+<li><strong>Option-Mission Control</strong>: открытие окна настроек Mission Control.</li>
+<li><strong>Command-Mission Control</strong>: отображение рабочего стола. </li>
+<li><strong>Control-Стрелка вниз</strong>: отображение всех окон активной программы.</li>
+<li><strong>Option-Увеличение громкости</strong>: открытие окна настроек «Звук». Работает с любой из клавиш настройки громкости.</li>
+<li><strong>Option-Shift-Увеличение громкости</strong> или <strong>Option-Shift-Уменьшение громкости</strong>: регулировка громкости с меньшим шагом.</li>
+<li><strong>Option-Увеличение яркости клавиатуры</strong>: открытие окна настроек «Клавиатура». Работает с любой из клавиш настройки яркости клавиатуры.</li>
+<li><strong>Option-Shift-Увеличение яркости клавиатуры</strong> или <strong>Option-Shift-Уменьшение яркости клавиатуры</strong>: регулировка яркости клавиатуры с меньшим шагом.</li>
+<li><strong>Двойной щелчок при нажатой клавише Option</strong>: открытие объекта в отдельном окне с закрытием исходного окна.</li>
+<li><strong>Двойной щелчок при нажатой клавише Command</strong>: открытие папки на отдельной вкладке или в отдельном окне.</li>
+<li><strong>Перетаскивание на другой том при нажатой клавише Command</strong>: перемещение перетаскиваемого объекта на другой том вместо копирования. </li>
+<li><strong>Перетаскивание при нажатой клавише Option</strong>: копирование перетаскиваемого объекта. При перетаскивании объекта указатель меняется.</li>
+<li><strong>Перетаскивание при нажатых клавишах Option-Command</strong>: создание псевдонима перетаскиваемого объекта. При перетаскивании объекта указатель меняется.</li>
+<li><strong>Щелчок треугольника раскрытия при нажатой клавише Option</strong>: открытие всех папок в выбранной папке. Работает только при отображении объектов списком.</li>
+<li><strong>Щелчок заголовка окна при нажатой клавише Command</strong>: просмотр папок, содержащих текущую папку.</li>
+<li><a href="https://support.apple.com/ru-ru/guide/mac-help/select-items-mchlp1378/mac">Узнайте, как использовать клавиши Command и Shift для выбора нескольких объектов в Finder</a>. </li>
+<li>Щелкните «Переход» в строке меню Finder, чтобы просмотреть сочетания клавиш для открытия множества часто используемых папок, таких как «Программы», «Документы», «Загрузки», «Утилиты» и iCloud Drive.</li>
+</ul>
+</div></div><div><div class="extra-react-div"><p><img alt="" src="/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png"></p>
+</div></div><div id="text"><h2>Сочетания клавиш для документов</h2><div class="extra-react-div"><p>Назначение следующих сочетаний клавиш может различаться в разных программах.</p>
+<ul>
+<li><strong>Command-B</strong>: применение полужирного начертания к выделенному тексту или включение/выключение использования полужирного шрифта. </li>
+<li><strong>Command-I</strong>: применение курсивного начертания к выделенному тексту или включение/выключение использования курсива.</li>
+<li><strong>Command-K</strong>: добавление веб-ссылки.</li>
+<li><strong>Command-U</strong>: применение подчеркивания к выделенному тексту или включение/выключение использования подчеркивания.</li>
+<li><strong>Command-T</strong>: отображение или скрытие окна «Шрифты».</li>
+<li><strong>Command-D</strong>: выбор папки «Рабочий стол» в диалоговом окне открытия или сохранения файла.</li>
+<li><strong>Control-Command-D</strong>: отображение или скрытие определения выделенного слова.</li>
+<li><strong>Shift-Command-Двоеточие (:)</strong>: открытие окна «Правописание и грамматика».</li>
+<li><strong>Command-Точка с запятой (;)</strong>: поиск неправильно написанных слов в документе.</li>
+<li><strong>Option-Delete</strong>: удаление слова слева от точки вставки.</li>
+<li><strong>Control-H</strong>: удаление символа слева от точки вставки. Или используйте клавишу Delete.</li>
+<li><strong>Control-D</strong>: Удаление символа справа от точки вставки. Или используйте клавиши Fn-Delete.</li>
+<li><strong>Fn-Delete</strong>: удаление вперед на клавиатурах, на которых отсутствует клавиша Forward Delete. Или используйте сочетание клавиш Control-D.</li>
+<li><strong>Control-K</strong>: удаление текста между точкой вставки и концом строки или абзаца.</li>
+<li><strong>Fn-Стрелка вверх</strong> (Page Up): прокрутка вверх на одну страницу. </li>
+<li><strong>Fn-Стрелка вниз</strong> (Page Down): прокрутка вниз на одну страницу.</li>
+<li><strong>Fn-Стрелка влево</strong> (Home): прокрутка к началу документа.</li>
+<li><strong>Fn-Стрелка вправо</strong> (End): прокрутка к концу документа.</li>
+<li><strong>Command-Стрелка вверх</strong>: перемещение точки вставки в начало документа.</li>
+<li><strong>Command-Стрелка вниз</strong>: перемещение точки вставки в конец документа.</li>
+<li><strong>Command-Стрелка влево</strong>: перемещение точки вставки в начало текущей строки.</li>
+<li><strong>Command-Стрелка вправо</strong>: перемещение точки вставки в конец текущей строки.</li>
+<li><strong>Option-Стрелка влево</strong>: перемещение точки вставки в начало предыдущего слова.</li>
+<li><strong>Option-Стрелка вправо</strong>: перемещение точки вставки в конец предыдущего слова.</li>
+<li><strong>Shift-Command-Стрелка вверх</strong>: выделение текста между точкой вставки и началом документа.</li>
+<li><strong>Shift-Command-Стрелка вниз</strong>: выделение текста между точкой вставки и концом документа.</li>
+<li><strong>Shift-Command-Стрелка влево</strong>: выделение текста между точкой вставки и началом текущей строки.</li>
+<li><strong>Shift-Command-Стрелка вправо</strong>: : выделение текста между точкой вставки и концом текущей строки.</li>
+<li><strong>Shift-Стрелка вверх</strong>: распространение области выделения текста до ближайшего символа в той же позиции по горизонтали на одну строку выше.</li>
+<li><strong>Shift-Стрелка вниз</strong>: распространение области выделения текста до ближайшего символа в той же позиции по горизонтали на одну строку ниже.</li>
+<li><strong>Shift-Стрелка влево</strong>: расширение области выделения текста на один символ влево.</li>
+<li><strong>Shift-Стрелка вправо</strong>: расширение области выделения текста на один символ вправо.</li>
+<li><strong>Option-Shift-Стрелка влево</strong>: расширение области выделения текста до начала текущего абзаца, при повторном нажатии — до начала следующего абзаца.</li>
+<li><strong>Option-Shift-Стрелка вниз</strong>: расширение области выделения текста до конца текущего абзаца, при повторном нажатии — до конца следующего абзаца.</li>
+<li><strong>Option-Shift-Стрелка влево</strong>: расширение области выделения текста до начала текущего слова, при повторном нажатии — до начала следующего слова.</li>
+<li><strong>Option-Shift-Стрелка вправо</strong>: расширение области выделения текста до конца текущего слова, при повторном нажатии — до конца следующего слова.</li>
+<li><strong>Control-A</strong>: переход в начало строки или абзаца.</li>
+<li><strong>Control-E</strong>: переход в конец строки или абзаца.</li>
+<li><strong>Control-F</strong>: переход на один символ вперед.</li>
+<li><strong>Control-B</strong>: переход на один символ назад.</li>
+<li><strong>Control-L</strong>: расположение курсора или выделенного фрагмента по центру видимой области.</li>
+<li><strong>Control-P</strong>: переход на одну строку вверх.</li>
+<li><strong>Control-N</strong>: переход на одну строку вниз.</li>
+<li><strong>Control-O</strong>: вставка новой строки за точкой вставки.</li>
+<li><strong>Control-T</strong>: обмен позиций символа после точки вставки и символа перед точкой вставки.</li>
+<li><strong>Command-Левая фигурная скобка ({)</strong>: выравнивание по левому краю.</li>
+<li><strong>Command-Правая фигурная скобка (})</strong>: выравнивание по правому краю.</li>
+<li><strong>Shift-Command-Вертикальная черта (|)</strong>: выравнивание по центру.</li>
+<li><strong>Option-Command-F</strong>: переход в поле поиска. </li>
+<li><strong>Option-Command-T</strong>: отображение или скрытие панели инструментов в программе.</li>
+<li><strong>Option-Command-C</strong> (Скопировать стиль): копирование параметров форматирования выбранного объекта в буфер обмена.</li>
+<li><strong>Option-Command-V</strong> (Вставить стиль): применение скопированного стиля к выбранному объекту.</li>
+<li><strong>Option-Shift-Command-V</strong> (Вставить и согласовать стиль): применение к вставленному объекту стиля окружающего текста.</li>
+<li><strong>Option-Command-I</strong>: Отображение или скрытие окна «Инспектор».</li>
+<li><strong>Shift-Command-P</strong> (Параметры страницы): отображение окна для выбора настроек документа.</li>
+<li><strong>Shift-Command-S</strong>: вызов диалогового окна «Сохранить как» или дублирование текущего документа.</li>
+<li><strong>Shift-Command-Знак минуса (-)</strong>: уменьшение размера выделенного объекта.</li>
+<li><strong>Shift-Command-Знак плюса (+)</strong>: Увеличение размера выделенного объекта. Command-Знак равенства (=) выполняет ту же функцию.</li>
+<li><strong>Shift-Command-Знак вопроса (?)</strong>: открытие меню «Справка».</li>
+</ul>
+</div></div><div><div class="extra-react-div"><p><img alt="" src="/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png"></p>
+</div></div><div id="other"><h2>Другие сочетания клавиш</h2><div class="extra-react-div"><p>Дополнительные сочетания клавиш показаны в меню программ. В каждой программе могут быть свои сочетания клавиш, и сочетания, работающие в одной программе, могут не работать в другой. </p>
+<ul>
+<li><a href="https://support.apple.com/ru-ru/HT204434">Сочетания клавиш для функций универсального доступа</a></li>
+<li><a href="https://support.apple.com/ru-ru/guide/safari/keyboard-and-other-shortcuts-cpsh003/mac">Сочетания клавиш в Safari</a></li>
+<li><a href="https://support.apple.com/ru-ru/guide/mac-help/spotlight-keyboard-shortcuts-mh26783/mac">Сочетания клавиш Spotlight</a></li>
+<li><a href="https://support.apple.com/ru-ru/HT201255">Сочетания клавиш при запуске</a></li>
+<li>Сочетания клавиш iTunes: выберите «Справка» &gt; «Сочетания клавиш» в строке меню программы iTunes.</li>
+<li>Другие сочетания клавиш: выберите меню Apple &gt; «Системные настройки», щелкните «Клавиатура», затем щелкните <a href="https://support.apple.com/guide/mac-help/use-global-keyboard-shortcuts-mchlp2262">Сочетания клавиш</a>.</li>
+</ul>
+</div></div><div><div class="extra-react-div"><p><img alt="" src="/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png"></p>
+</div></div><div id="more"><h2>Дополнительная информация</h2><div class="extra-react-div"><ul>
+<li><a href="https://support.apple.com/ru-ru/HT201586">Ввод эмодзи, диакритических знаков и символов</a></li>
+<li><a href="https://support.apple.com/ru-ru/guide/mac-help/create-keyboard-shortcuts-for-apps-mchlp2271/mac">Создание собственных сочетаний клавиш</a> и <a href="https://support.apple.com/ru-ru/guide/mac-help/if-a-keyboard-shortcut-doesnt-work-mchlp2864/mac">устранение конфликтов между сочетаниями клавиш</a></li>
+<li>Изменение назначения <a href="https://support.apple.com/ru-ru/HT204436">функциональных клавиш</a> или <a href="https://support.apple.com/ru-ru/guide/mac-help/change-the-behavior-of-the-modifier-keys-mchlp1011/mac">клавиш модификации</a></li>
+<li><a href="https://support.apple.com/ru-ru/HT203085">Использование команды диктовки для сочетания клавиш клавиатуры</a></li>
+</ul>
+</div></div></div><div itemProp="dateModified" class="mod-date"><span>Дата публикации:</span> <span itemProp="dateModified">Mon Jul 02 18:15:19 GMT 2018</span></div></div></div></div></div></section><div><div id="helpful-rating-wrapper"><div id="helpful" class="ratings"><div id="question-state" class="show"><fieldset><legend><span>Полезна?</span></legend><div class="helpful-btn-grp"><button data-ss-analytics-link-component_name="helpful" data-ss-analytics-link-component_type="helpful" data-ss-analytics-link-text="yes" data-ss-analytics-event="ht_link.click" class="five button" id="yes-button" title="Помогла решить мою проблему">Да<!-- --> </button><button data-ss-analytics-link-component_name="helpful" data-ss-analytics-link-component_type="helpful" data-ss-analytics-link-text="no" data-ss-analytics-event="ht_link.click" class="one button" id="no-button" title="Бесполезна">Нет<!-- --> </button></div></fieldset></div><div id="feedback-state" class="hide"><form><label for="feedback">Спасибо! Сообщите нам, как вам лучше помочь.</label><textarea id="feedback" maxLength="1024"></textarea><button type="submit" class="button">Отправить</button><button type="button" class="button">Отмена</button></form></div><div id="rating-done" class="hide">Благодарим вас за отзыв.</div><div id="results-helpful" class="show">88% пользователей считают эту статью полезной.</div></div></div><div id="ask-widget-wrapper" class="css-not-downloaded discussions"></div><div id="cas"></div></div><footer id="ac-globalfooter" class="js no-touch svg no-ie7 no-ie8 css-not-downloaded globalfooter" lang="ru-ru" data-analytics-region="global footer" role="contentinfo" aria-labelledby="ac-gf-label" dir="ltr"><div class="ac-gf-content"><nav class="ac-gf-breadcrumbs" aria-label="Breadcrumbs"><a href="https://www.apple.com/ru" class="home ac-gf-breadcrumbs-home"><span class="ac-gf-breadcrumbs-home-icon" aria-hidden="true"></span><span class="ac-gf-breadcrumbs-home-label">Apple</span><span class="ac-gf-breadcrumbs-home-chevron"></span><span class="ac-gf-breadcrumbs-home-mask"></span></a><div class="ac-gf-breadcrumbs-path"><ol class="ac-gf-breadcrumbs-list" vocab="http://schema.org/" typeof="BreadcrumbList"><li class="ac-gf-breadcrumbs-item" property="itemListElement" typeof="ListItem"><span property="name"><a href="https://support.apple.com/ru-ru">Поддержка</a></span><meta property="position" content="1"/></li><li class="ac-gf-breadcrumbs-item" property="itemListElement" typeof="ListItem"><span property="name">Сочетания клавиш Mac</span><meta property="position" content="2"/></li></ol></div></nav><div><section class="ac-gf-footer" vocab="http://schema.org/" typeof="Organization">          <div class="ac-gf-footer-shop" x-ms-format-detection="none"> Другие варианты оплаты: 8 800 333 5173 или <a             href="https://locate.apple.com/ru/ru/"             >найдите реселлера</a>. </div>          <div class="ac-gf-footer-locale"> <a class="ac-gf-footer-locale-link"             href="https://support.apple.com/HT201236/localeselector"             title="Выберите свою страну или регион" aria-label="Russia. Choose your country or region"> <span class="ac-gf-footer-locale-flag"></span>Россия</a> </div>          <div class="ac-gf-footer-legal">             <div class="ac-gf-footer-legal-copyright">                © Apple Inc., 2018 г. Все права защищены.             </div>             <div class="ac-gf-footer-legal-links"> <a class="ac-gf-footer-legal-link"                href="https://www.apple.com/ru/privacy/privacy-policy/"                >Политика конфиденциальности</a> <a class="ac-gf-footer-legal-link"                href="https://www.apple.com/ru/legal/terms/site.html"                >Условия использования</a> <a class="ac-gf-footer-legal-link"                href="https://www.apple.com/ru/shop/goto/help/sales_refunds"                >Продажи и возврат средств</a> <a class="ac-gf-footer-legal-link"                href="https://www.apple.com/ru/sitemap/"                >Карта сайта</a> <a class="ac-gf-footer-legal-link"                href="https://www.apple.com/ru/contact/"                >Обратиться в Apple</a> <a class="ac-gf-footer-legal-link"                href="https://www.apple.com/legal/privacy/ru/cookies/"                >Использование файлов cookie</a> </div>          </div>    </div>    <meta content="Apple" property="name" /> <meta content="8 800 333 5173" property="telephone" /> </section></div></div></footer></div></div><div id="scripts">
+    
+      <script type="text/javascript" src=https://www.apple.com/ac/globalnav/3/ru_RU/scripts/ac-globalnav.built.js></script>        
+    
+    
+      <script type="text/javascript" src=/clientside/vendor/react.16.2.0.min.js></script>        
+    
+    
+      <script type="text/javascript" src=/clientside/vendor/react-dom.16.2.0.min.js></script>        
+    
+    
+        <script defer type="text/javascript" src=/clientside/build/app-ht-route.js></script>        
+      
+    <script type="text/javascript">
+  var dateEl = document.querySelector('span[itemProp=dateModified]');
+  var lastModifiedEl = document.querySelector('span[itemProp=lastModified]');
+  if(dateEl) {
+    dateEl.innerText = new Date(dateEl.innerText).toLocaleDateString('ru-ru', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    })
+  }
+  if(lastModifiedEl) {
+  lastModifiedEl.innerText = new Date(lastModifiedEl.innerText).
+    toLocaleDateString('ru-ru', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    })
+}
+</script>
+    
+      <script type="text/javascript" src=https://km.support.apple.com/clientside/build/applesatellitelib.full.js></script>        
+    
+    
+        <script defer type="text/javascript" src=https://www.apple.com/support/assets/scripts/global/survey/accsoffer.js></script>        
+      
+    </div><div id="apd-aria-live-region" aria-live="polite" role="status" class="a11y"></div></body></html>

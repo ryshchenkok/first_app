@@ -1,0 +1,209 @@
+9921      
+Delivered-To: kr@anadeainc.com
+Received: by 2002:a0c:81f4:0:0:0:0:0 with SMTP id 49-v6csp1267280qve; Sun, 22
+ Jul 2018 23:23:15 -0700 (PDT)
+X-Received: by 2002:adf:96c3:: with SMTP id
+ u61-v6mr7389369wrb.72.1532326995263; Sun, 22 Jul 2018 23:23:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1532326995; cv=none; d=google.com;
+ s=arc-20160816;
+ b=0Zn12KB4wiy7Pn2fKOfnSYhoDtCu0EzUZkoin1EWhscggvb4aG0+WdTrv+7wpEIGGr
+ EL8wbacYgoUYs0BQMqFjEqFm3f3RESqy9D9h3GKl45QdjDz4kju1G/UvTIj5zFobm9KO
+ 1NubCI3jDIgnbHIPKqNB67IW7dr9BROfaeeTOt2DHqrEomZ8Y9ePAhGw74ft7yucOEty
+ 2zd85Fl3h502bo40xoNO1AyCp7b3ZodvcoPYpjmlvxKpGu9twV2PfkeeWrhucusLSMNG
+ PEQfa/Y3Q1qOBHD3eoYX5ViO4AE+zA/qPrJu514Nnu/bIBQyuflLS8il/Wa4HDDDtuvF NoTA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20160816; h=mime-version:user-agent:message-id:subject:to:from:date
+ :dkim-signature:arc-authentication-results;
+ bh=Sg1hSsQqj3/Z13sg4yKWvvA5ghpN6sDuD8srDvb0wU8=;
+ b=ex6ixfC54tZjSsEEOzpARC5peGQrD2gIycZKjAg5+dutg92j0IA0Bo6lQ8PV0N05ld
+ lFi0I8WEDz2WfsUxSky25rrazFWqqd5wNf5iYc8u4G44vGfkUmGtxAHR5xbHFyQ1JlXg
+ Wv8B4jwHdb7ccYcclQvNDe2/mLlpmsl1+K/86ZEa5NWlVVGr8Bq2mHr/gyKMXk0UIqWy
+ ABdI2oDa1rCxcf76K/zvWwE70RXgv4Jxx+tVEGQdxlsLqwHADDzf7L2ZOPog4CZhCCE1
+ wcc+NR4fR6Q8EzGjRlMHkpk9zQkLn98gG+KpGAtBKZjX9Z+M3+ucm3Prng1LJwiaeCND J9cg==
+ARC-Authentication-Results: i=1; mx.google.com; dkim=pass
+ header.i=@anadea.info header.s=google header.b=W9soBTQ8; spf=pass
+ (google.com: domain of itsupport@anadea.info designates 209.85.220.97 as
+ permitted sender) smtp.mailfrom=itsupport@anadea.info
+Return-Path: <itsupport@anadea.info>
+Received: from mail-sor-f97.google.com (mail-sor-f97.google.com.
+ [209.85.220.97]) by mx.google.com with SMTPS id
+ g2-v6sor2811240wru.26.2018.07.22.23.23.02 for <kr@anadeainc.com> (Google
+ Transport Security); Sun, 22 Jul 2018 23:23:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of itsupport@anadea.info designates
+ 209.85.220.97 as permitted sender) client-ip=209.85.220.97;
+Authentication-Results: mx.google.com; dkim=pass header.i=@anadea.info
+ header.s=google header.b=W9soBTQ8; spf=pass (google.com: domain of
+ itsupport@anadea.info designates 209.85.220.97 as permitted sender)
+ smtp.mailfrom=itsupport@anadea.info
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=anadea.info; s=google;
+ h=date:from:to:subject:message-id:user-agent:mime-version;
+ bh=Sg1hSsQqj3/Z13sg4yKWvvA5ghpN6sDuD8srDvb0wU8=;
+ b=W9soBTQ84fe2kO7Dqm/gowIfjjH5FvnQoxUomipitM6gLTzGm/Q52VuNNigBb3Py/T
+ V2UGhZKH9Xi1Q9lXq3QLbgneKRIgxeRpPAn5aHPj0aib35MgFIgKlkSGK0g7QL6NFYRr
+ vBl/xJYF6wTQ+FEX4t+TZKBZvEVdNGQl4p01c=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net;
+ s=20161025; h=x-gm-message-state:date:from:to:subject:message-id:user-agent
+ :mime-version; bh=Sg1hSsQqj3/Z13sg4yKWvvA5ghpN6sDuD8srDvb0wU8=;
+ b=ifKhtXZYcssCtO80Ym9LW/DFYNLqnjgayPJPpAlIzBsi7emBJdT8VLoRfhSrQh4woJ
+ y/u0cklHvhFpXAnljg8LjhdK2nJ0TLBqQoLjxV/Qjevs5VLAkO/fBtKqgWd2AVKBK8sr
+ Pqo4sxJNGrBkdhrizmPCUvYtBhhE2JDdFGZz2wdVg2zcQhJK9Aa+BG4NeW6egtO4mPy2
+ vSp0PDNIQO7DhPQvRAcq3GBC2hTuGt8KCc3NMa19bb3ryoWzH7TAmmKceuUaAesxMWMO
+ kTXymG1wiSb1pUCkr1dCk3S4nEEsEVELxipnopqmYYhy/w0F4j+FnLF5HKzwxJ9W8Ojl I4IA==
+X-Gm-Message-State: AOUpUlGb+sVsaCYsCEAN2XKjgWME0j06IMARAhdjhYbgyVCLme7oEHAx
+ IZpraMXXncbchC1Izz7zo0PiIy+JKQght7XtbLiL4zImIENWTbXt
+X-Google-Smtp-Source: AAOMgpcznSC624AP34JiaaJPOA66CZ6jOLA0UxVXR2pjFQi+jS16flDEw7s7K/fkSa0oXJPuucky+Vp0NuxI
+X-Received: by 2002:adf:c109:: with SMTP id
+ r9-v6mr7730812wre.233.1532326982056; Sun, 22 Jul 2018 23:23:02 -0700 (PDT)
+Return-Path: <itsupport@anadea.info>
+Received: from mail-out.anadeainc.com (mail-out.anadeainc.com.
+ [46.101.185.95]) by smtp-relay.gmail.com with ESMTPS id
+ v16-v6sm206820wrr.2.2018.07.22.23.23.01 (version=TLS1_2
+ cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Sun, 22 Jul 2018 23:23:02
+ -0700 (PDT)
+X-Relaying-Domain: anadea.info
+Received: from anadea (unknown [82.209.219.211]) by mail-out.anadeainc.com
+ (Postfix) with ESMTPSA id 20AA9C0129; Mon, 23 Jul 2018 06:22:01 +0000 (UTC)
+Date: Mon, 23 Jul 2018 06:23:00 +0000
+From: IT Support <itsupport@anadea.info>
+To: =?utf-8?B?0JrQvtC90YHRgtCw0L3RgtC40L0g0KDRi9GJ0LXQvdC60L4g?=<kr@anadeainc.com>
+Subject: =?utf-8?B?0JTQvtCx0YDQviDQv9C+0LbQsNC70L7QstCw0YLRjCDQsg==?=
+ =?utf-8?B?IEFuYWRlYSE=?=
+Message-ID: <5b557444.rBbw76cv7vBlPdia%itsupport@anadea.info>
+User-Agent: Heirloom mailx 12.5 6/20/10
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="=_5b557444.YUm47QZmU2Q4O1kv4KZL5sX/bX/D799RLHrymbplN0Wj2G4n"
+
+
+--=_5b557444.YUm47QZmU2Q4O1kv4KZL5sX/bX/D799RLHrymbplN0Wj2G4n
+Content-Disposition: INLINE
+Content-Type: TEXT/PLAIN;
+	charset=utf-8
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+
+=D0=9C=D1=8B =D1=80=D0=B0=D0=B4=D1=8B =D0=B2=D0=B8=D0=B4=D0=B5=D1=82=D1=
+=8C =D0=B2=D0=B0=D1=81 =D0=B2 =D0=BD=D0=B0=D1=88=D0=B5=D0=B9 =D0=BA=D0=
+=BE=D0=BC=D0=B0=D0=BD=D0=B4=D0=B5 =D0=B8 =D0=BD=D0=B5 =D1=81=D0=BE=D0=
+=BC=D0=BD=D0=B5=D0=B2=D0=B0=D0=B5=D0=BC=D1=81=D1=8F, =D1=87=D1=82=D0=BE=
+ =D1=81=D0=BA=D0=BE=D1=80=D0=BE =D1=81=D0=BC=D0=BE=D0=B6=D0=B5=D0=BC =
+=D0=B2=D0=BC=D0=B5=D1=81=D1=82=D0=B5 =D0=BE=D1=82=D0=BC=D0=B5=D1=82=D0=
+=B8=D1=82=D1=8C =D0=B2=D0=B0=D1=88=D0=B8 =D0=BF=D0=B5=D1=80=D0=B2=D1=8B=
+=D0=B5 =D1=83=D1=81=D0=BF=D0=B5=D1=85=D0=B8.
+
+=D0=96=D0=B5=D0=BB=D0=B0=D0=B5=D0=BC =D0=B2=D0=B0=D0=BC =D1=83=D1=81=D0=
+=BF=D0=B5=D1=88=D0=BD=D0=BE=D0=B9 =D1=80=D0=B0=D0=B1=D0=BE=D1=82=D1=8B =
+=D0=B8 =D0=BD=D0=BE=D0=B2=D1=8B=D1=85 =D0=B4=D1=80=D1=83=D0=B7=D0=B5=D0=
+=B9!
+
+=D0=92 =D0=BF=D1=80=D0=B8=D0=BB=D0=BE=D0=B6=D0=B5=D0=BD=D0=B8=D1=8F=D1=
+=85 =D0=BA =D1=8D=D1=82=D0=BE=D0=BC=D1=83 =D0=BF=D0=B8=D1=81=D1=8C=D0=
+=BC=D1=83 =D0=B2=D1=8B =D0=BD=D0=B0=D0=B9=D0=B4=D0=B5=D1=82=D0=B5 =D0=
+=B2=D0=B0=D1=88 =D0=BF=D1=80=D0=B8=D0=B2=D0=B0=D1=82=D0=BD=D1=8B=D0=B9 =
+=D0=B8 =D0=BF=D1=83=D0=B1=D0=BB=D0=B8=D1=87=D0=BD=D1=8B=D0=B9 =D0=BA=D0=
+=BB=D1=8E=D1=87=D0=B8 SSH. =D0=94=D0=BB=D1=8F =D0=BF=D0=BE=D0=B4=D0=BA=
+=D0=BB=D1=8E=D1=87=D0=B5=D0=BD=D0=B8=D1=8F =D0=BA =D1=81=D0=B5=D1=80=D0=
+=B2=D0=B5=D1=80=D0=B0=D0=BC =D1=81 =D0=B8=D1=85 =D0=BF=D0=BE=D0=BC=D0=
+=BE=D1=89=D1=8C=D1=8E =D0=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D1=83=
+=D0=B9=D1=82=D0=B5 =D0=BF=D0=B0=D1=80=D0=BE=D0=BB=D1=8C, =D0=BA=D0=BE=
+=D1=82=D0=BE=D1=80=D1=8B=D0=B9 =D0=B2=D1=8B=D0=B4=D0=B0=D0=BB =D0=B2=D0=
+=B0=D0=BC =D1=81=D0=B8=D1=81=D1=82=D0=B5=D0=BC=D0=BD=D1=8B=D0=B9 =D0=B0=
+=D0=B4=D0=BC=D0=B8=D0=BD=D0=B8=D1=81=D1=82=D1=80=D0=B0=D1=82=D0=BE=D1=
+=80.
+
+=D0=9C=D1=8B =D1=80=D0=B5=D0=BA=D0=BE=D0=BC=D0=B5=D0=BD=D0=B4=D1=83=D0=
+=B5=D0=BC =D0=B2=D0=B0=D0=BC =D0=B2 =D0=BF=D0=B5=D1=80=D0=B2=D1=83=D1=
+=8E =D0=BE=D1=87=D0=B5=D1=80=D0=B5=D0=B4=D1=8C =D0=BE=D0=B7=D0=BD=D0=B0=
+=D0=BA=D0=BE=D0=BC=D0=B8=D1=82=D1=8C=D1=81=D1=8F =D1=81 =D0=BD=D0=B0=D0=
+=B8=D0=B1=D0=BE=D0=BB=D0=B5=D0=B5 =D0=B2=D0=B0=D0=B6=D0=BD=D0=BE=D0=B9 =
+=D0=B8=D0=BD=D1=84=D0=BE=D1=80=D0=BC=D0=B0=D1=86=D0=B8=D0=B5=D0=B9 =D0=
+=BE =D0=BA=D0=BE=D0=BC=D0=BF=D0=B0=D0=BD=D0=B8=D0=B8 =D0=BD=D0=B0 =D0=
+=BD=D0=B0=D1=88=D0=B5=D0=B9 =D0=B2=D0=B8=D0=BA=D0=B8 https://anahoret.c=
+om/wiki/Anahoret/EmployeeDocumentation. =D0=9F=D0=BE=D1=81=D0=BB=D0=B5 =
+=D0=BE=D0=B7=D0=BD=D0=B0=D0=BA=D0=BE=D0=BC=D0=BB=D0=B5=D0=BD=D0=B8=D1=
+=8F =D0=B2=D0=B0=D0=BC =D0=B1=D1=83=D0=B4=D0=B5=D1=82 =D0=BF=D0=BE=D0=
+=BD=D1=8F=D1=82=D0=BD=D0=B5=D0=B5 =D0=BF=D1=80=D0=B5=D0=B4=D0=BD=D0=B0=
+=D0=B7=D0=BD=D0=B0=D1=87=D0=B5=D0=BD=D0=B8=D0=B5 =D1=81=D0=BB=D0=B5=D0=
+=B4=D1=83=D1=8E=D1=89=D0=B5=D0=B9 =D0=B8=D0=BD=D1=84=D0=BE=D1=80=D0=BC=
+=D0=B0=D1=86=D0=B8=D0=B8:
+
+=D0=92=D0=B0=D1=88 =D0=BB=D0=BE=D0=B3=D0=B8=D0=BD: kr - =D0=B4=D0=BB=D1=
+=8F =D0=B3=D1=80=D1=83=D0=BF=D0=BF=D1=8B =D1=80=D0=B5=D1=81=D1=83=D1=80=
+=D1=81=D0=BE=D0=B2 =D1=81 =D0=B0=D1=83=D1=82=D0=B5=D0=BD=D1=82=D0=B8=D1=
+=84=D0=B8=D0=BA=D0=B0=D1=86=D0=B8=D0=B5=D0=B9 =D1=83=D1=87=D0=B5=D1=82=
+=D0=BD=D0=BE=D0=B9 =D0=B7=D0=B0=D0=BF=D0=B8=D1=81=D0=B8 =D1=87=D0=B5=D1=
+=80=D0=B5=D0=B7 LDAP.
+=D0=92=D0=B0=D1=88 email: kr@anadeainc.com - =D0=B4=D0=BB=D1=8F =D0=B3=
+=D1=80=D1=83=D0=BF=D0=BF=D1=8B =D1=80=D0=B5=D1=81=D1=83=D1=80=D1=81=D0=
+=BE=D0=B2 =D1=81 =D0=B0=D1=83=D1=82=D0=B5=D0=BD=D1=82=D0=B8=D1=84=D0=B8=
+=D0=BA=D0=B0=D1=86=D0=B8=D0=B5=D0=B9 =D1=83=D1=87=D0=B5=D1=82=D0=BD=D0=
+=BE=D0=B9 =D0=B7=D0=B0=D0=BF=D0=B8=D1=81=D0=B8 =D1=87=D0=B5=D1=80=D0=B5=
+=D0=B7 G Suite by Google Cloud.
+
+
+=D0=A3=D1=87=D0=B5=D1=82=D0=BD=D1=8B=D0=B5 =D0=B4=D0=B0=D0=BD=D0=BD=D1=
+=8B=D0=B5 =D0=B4=D0=BB=D1=8F =D0=BF=D0=BE=D0=BA=D0=BB=D1=8E=D1=87=D0=B5=
+=D0=BD=D0=B8=D1=8F =D0=BA =D0=BA=D0=BE=D1=80=D0=BF=D0=BE=D1=80=D0=B0=D1=
+=82=D0=B8=D0=B2=D0=BD=D0=BE=D0=B9 IP =D1=82=D0=B5=D0=BB=D0=B5=D1=84=D0=
+=BE=D0=BD=D0=B8=D0=B8
+
+=D0=98=D0=BC=D1=8F =D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D0=BE=D0=B2=D0=B0=D1=
+=82=D0=B5=D0=BB=D1=8F (=D0=BD=D0=BE=D0=BC=D0=B5=D1=80): 391
+=D0=9F=D0=B0=D1=80=D0=BE=D0=BB=D1=8C =D0=BF=D0=BE=D0=B4=D0=BA=D0=BB=D1=
+=8E=D1=87=D0=B5=D0=BD=D0=B8=D1=8F: RecDifVap3
+=D0=98=D0=BC=D1=8F =D1=81=D0=B5=D1=80=D0=B2=D0=B5=D1=80=D0=B0 (=D0=B4=
+=D0=BE=D0=BC=D0=B5=D0=BD) voip.anahoret.com
+=D0=9F=D0=B0=D1=80=D0=BE=D0=BB=D1=8C =D0=BA =D1=8F=D1=89=D0=B8=D0=BA=D1=
+=83 =D0=B3=D0=BE=D0=BB=D0=BE=D1=81=D0=BE=D0=B2=D0=BE=D0=B9 =D0=BF=D0=BE=
+=D1=87=D1=82=D1=8B: 4235
+
+=D0=9F=D0=BE=D0=B4=D1=80=D0=BE=D0=B1=D0=BD=D0=BE=D1=81=D1=82=D0=B8 =D0=
+=BC=D0=BE=D0=B6=D0=BD=D0=BE =D0=BF=D0=BE=D1=81=D0=BC=D0=BE=D1=82=D1=80=
+=D0=B5=D1=82=D1=8C =D0=BD=D0=B0 =D0=BD=D0=B0=D1=88=D0=B5=D0=BC =D1=84=
+=D0=BE=D1=80=D1=83=D0=BC=D0=B5.
+
+https://forum.anadea.info/t/korporativnaya-ip-telefoniya/695
+
+=D0=A3=D0=B4=D0=B0=D1=87=D0=B8.
+
+
+--=_5b557444.YUm47QZmU2Q4O1kv4KZL5sX/bX/D799RLHrymbplN0Wj2G4n
+Content-Transfer-Encoding: 7BIT
+Content-Disposition: ATTACHMENT;
+	filename=kr
+Content-Type: TEXT/PLAIN;
+	charset=us-ascii;
+	name=kr
+X-Apple-Content-Length: 3326
+
+
+--=_5b557444.YUm47QZmU2Q4O1kv4KZL5sX/bX/D799RLHrymbplN0Wj2G4n
+Content-Transfer-Encoding: 7BIT
+Content-Disposition: ATTACHMENT;
+	filename=kr.pub
+Content-Type: TEXT/PLAIN;
+	charset=us-ascii;
+	name=kr.pub
+X-Apple-Content-Length: 742
+
+
+--=_5b557444.YUm47QZmU2Q4O1kv4KZL5sX/bX/D799RLHrymbplN0Wj2G4n--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>1</integer>
+	<key>date-last-viewed</key>
+	<integer>1533281296</integer>
+	<key>date-received</key>
+	<integer>1532326995</integer>
+	<key>flags</key>
+	<integer>25770002433</integer>
+	<key>gmail-label-ids</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>remote-id</key>
+	<string>3</string>
+</dict>
+</plist>

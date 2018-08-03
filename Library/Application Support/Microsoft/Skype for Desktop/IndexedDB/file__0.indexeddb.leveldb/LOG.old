@@ -1,0 +1,20 @@
+2018/07/23-14:32:57.192 67015 Reusing MANIFEST /Users/kr/Library/Application Support/Microsoft/Skype for Desktop/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2018/07/24-14:27:41.309 128051 Level-0 table #5: started
+2018/07/24-14:27:41.336 128051 Level-0 table #5: 1440848 bytes OK
+2018/07/24-14:27:41.337 128051 Delete type=0 #3
+2018/07/26-22:16:27.137 128051 Level-0 table #7: started
+2018/07/26-22:16:27.192 128051 Level-0 table #7: 1576705 bytes OK
+2018/07/26-22:16:27.199 128051 Delete type=0 #4
+2018/07/27-00:22:47.147 128051 Compacting 1@1 + 1@2 files
+2018/07/27-00:22:47.198 128051 Generated table #8@1: 2021 keys, 495923 bytes
+2018/07/27-00:22:47.198 128051 Compacted 1@1 + 1@2 files => 495923 bytes
+2018/07/27-00:22:47.200 128051 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/07/27-00:22:47.200 128051 Delete type=2 #5
+2018/07/27-00:22:47.201 128051 Delete type=2 #7
+2018/07/29-03:57:33.500 128051 Level-0 table #10: started
+2018/07/29-03:57:33.523 128051 Level-0 table #10: 1240425 bytes OK
+2018/07/29-03:57:33.524 128051 Delete type=0 #6
+2018/07/29-04:16:38.171 128051 Compacting 1@1 + 1@2 files
+2018/07/29-04:16:38.192 128051 Generated table #11@1: 2378 keys, 535330 bytes
+2018/07/29-04:16:38.192 128051 Compacted 1@1 + 1@2 files => 535330 bytes
+2018/07/29-04:16:38.192 128051 compacted to: files[ 0 0 1 0 0 0 0 ]
